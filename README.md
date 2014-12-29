@@ -1,1 +1,4 @@
-Chapter 1
+Understanding Electronic Circuits and Circuit Design
+
+Copyright 2015 CMCourse
+
