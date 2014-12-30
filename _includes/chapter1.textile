@@ -3,57 +3,59 @@ bq. This book is a work in progress and is currently intended for my students.
 
 h4(#chapter1-purpose). 1.1 - The Purpose of Circuits
 
-Just what is it the electric circuits actually do?  Essentially an electric circuit is a structure that takes something produced by a 'source' and transfers it to some different place called a 'load'. But exactly what is being transferred?  Most generally, circuits act to transfer one or both of two quantities, namely power (energy) and/or information (data).  Circuits may also modify the power or information as part of the transfer process.
+Just what is it that electric circuits actually do?  An electric circuit is essentially a structure that takes something produced by a 'source' and transfers it to some different place called a 'load'.  But exactly what is being transferred?  Most generally, circuits act to transfer one or both of two quantities, namely power (energy) and/or information (data).  Circuits may also modify the power or information as part of the transfer process.
 
-So graphically our circuit is some structure that connects a _source_ of power or information to a _load_ that receives the power or information, "Figure 1.1":#figure1-1. The circuit uses the electric quantities of voltage and current to move power or information from the source to the load.
+So graphically, our circuit is some structure that connects a _source_ of power or information to a _load_ that receives the power or information, as shown in "Figure 1.1":#figure1-1. The circuit uses the _electric quantities of voltage and current_ to move power or information from the source to the load.
 
 p=(#figure1-1). !{width:50%}img/1/circuitsF1.1d.jpg(Figure 1.1)!:img/1/circuitsF1.1d.jpg
-_Figure 1.1  Purpose of Circuits; Transfer Power or Information from Source to Load_
+_Figure 1.1  Purpose of Circuits; Transfer Power or Information from Source to Load._
 
-For _power_ the origin of this electric energy may be chemical, mechanical, photonic, or nuclear.  But for our electric circuits there has already been a conversion to electric energy, so our source in circuits is an _electric source_, such as a battery, generator or solar cell.  The 'receiver' of this electric energy in our circuits is the _electric load_, which acts to accept the arriving electric energy and often converts it to the desired form of useful energy.  For example, heaters, motors and light bulbs are example 'electric loads' that convert received electric power into 'useful' physical forms of heat, motion and light.
+For _power_, the origin of this electric energy may be chemical, mechanical, photonic, or nuclear.  But for our electric circuits there has already been a conversion to electric energy, so our source in circuits is an _electric source_, such as a battery, generator, or solar cell.  The 'receiver' of this electric energy in our circuits is the _electric load_, which acts to accept the arriving electric energy and often converts it to the desired form of useful energy.  For example, heaters, motors, and light bulbs are example 'electric loads' that convert received electric power into 'useful' physical forms of heat, motion and light.
 
-In a similar manner, _information_ from a source (perhaps music contained in a CD) is first converted to electric form, then transferred by a circuit to a load, where the electric signals are converted to the information they represent, such as music, video, data, and/or voice. Example information electric sources are microphones and light detectors. Example electric loads for information include loudspeaker/earphones or video displays.
+In a similar manner, _information_ from a source (perhaps music contained in a CD) is first converted to electric form, then transferred by a circuit to a load, where the electric signals are converted to the information they represent, such as music, video, data, and/or voice.  Examples of information electric sources are microphones and light detectors.  Example electric loads for information include loudspeaker/earphones or video displays.
 
-From a circuit point-of-view, we need only know what electric signals are required for a load to function. In circuit analysis we do not need to explicitly know how the load actually makes the conversion to something useful, for example how a speaker makes the audible sound we hear from the electric signals that drive.  For circuits we only need to use the required electrical quantities.  Thus our circuits are entirely electrical, even though a there may be energy conversion by useful source and load devices.
+From a circuit point-of-view, we need only know what electric signals are required for a load to function.  In circuit analysis, we do not need to explicitly know _how_ the load actually makes the conversion to something useful; for example, how a speaker makes the audible sound we hear from the electric signals that drive it.  For circuits, we only need to use the required electrical quantities.  Thus our circuits are entirely electrical, even though there may be energy conversion by useful source and load devices.
 
 h4(#chapter1-structure). 1.2 - The Structure of Electric Circuits
 
-The transfer of power/information from source to load is accomplished by an electric circuit *ONLY* when there is a *closed-path structure*, we call a 'loop'.  This is really odd!  
+The transfer of power/information from source to load is accomplished by an electric circuit _*ONLY*_ when there is a _closed-path structure_, which we call a 'loop'.  This is really odd!  
 
-bq. We are moving power/information in one direction, yet _to accomplish this one-way transfer requires electricity to flow in 'both' directions, via a closed loop_!
+bq. We are moving power/information in one direction, yet _to accomplish this one-way transfer requires electricity to flow in 'both' directions, via a closed loop!_
 
-This loop is required because electricity 'moves' only when there is a loop, a closed path.  Electricity is comprised of electric charges and since charges cannot be created nor destroyed, they are a conserved quantity.  This means we may move a charge along a path, but only in a closed path, a 'circuit', a loop; we cannot create nor destroy charge.  This is illustrated in "Figure 1.2":#figure1-2.  Here we now use the fact that moving charges are called an electric current, so the loop path produces a loop of _electric current_.  Remarkably, we will see that it is the loop of current that results in the unidirectional flow of power from source to load.
+This loop is required because electricity 'moves' only when there is a loop -- a closed path.  Electricity is comprised of electric charges and since charges cannot be created nor destroyed, they are a conserved quantity.  This means we may move a charge along a path, but only in a closed path, a 'circuit,' a loop; we cannot create nor destroy charge.  This is illustrated in "Figure 1.2":#figure1-2.  
 
 p=(#figure1-2). !{width:50%}img/1/circuitsF1.2b.jpg(Figure 1.2)!:img/1/circuitsF1.2b.jpg
-_Figure 1.2  Electric Circuit Requires a 'Loop' Path_
+_Figure 1.2  Electric Circuit Requires a 'Loop' Path._
+
+Here we now use the fact that moving charges are called an _electric current_, so the loop path produces a loop of electric current.  Remarkably, we will see that it is the loop of current that results in the unidirectional flow of power from source to load.
 
 A well-known example of an electric circuit uses a battery as the source and a light device load (such as a light bulb or LED).  This is depicted in "Figure 1.3":#figure1-3, where here there is a switch added in the loop path.  With the _switch open there is not a closed loop_ path and there is no power transfer, the LED is OFF. And when _the switch is closed there is a loop path_ so power is transferred from the battery source to the LED load and the LED illuminates ON.  This circuit corresponds to what is in a typical flashlight.
 
 table(#figure1-3).
 |\2=. !{width:90%}img/1/circuitsF1.3b.jpg(Figure 1.3)! |
 |=. (a) no-loop Light-OFF |=. closed loop Light ON |
-|\2=. _Figure 1.3  Circuit to Transfer Power and Cause Illumination, a Flashlight OFF/ON_ |
+|\2=. _Figure 1.3  Circuit to Transfer Power and Cause Illumination, a Flashlight OFF/ON._ |
 
 h4(#chapter1-complexity). 1.3 - Complexity of Electric Circuits and Constraints
 
-The actual implementation of an electric circuit to transfer power/information is usually not that of a flashlight, a single loop with one battery and one LED light, and a switch.  Rather the typical electric circuit is far more complex.  This complexity is due to a desire to have more control or functions than a simple ON/OFF.  For music we may want to control the loudness, or perhaps adjust the bass or treble sound qualities.  We may want to select different channels in a TV receiver, we may want to store some data in one place and other data in another place.  This adds complexity to our circuit.
+The actual implementation of an electric circuit to transfer power/information is usually not that of a flashlight -- a single loop with one battery and one LED light, and a switch.  Rather, the typical electric circuit is far more complex.  This complexity is due to a desire to have more control or functions than a simple ON/OFF.  For music, we may want to control the loudness, or perhaps adjust the bass or treble sound qualities.  We may want to select different channels in a TV receiver, we may want to store some data in one place and other data in another place.  This adds complexity to our circuit.
 
-Now suppose we want to do more than just turn a light ON, or OFF.  Suppose we want to be able to set the brightness of the light, in other words a dimmer with control.  This would require a more complex circuit, an example circuit structure organized to include a dimming function is depicted in "Figure 1.4":#figure1-4.
+Now suppose we want to do more than just turn a light ON, or OFF.  Suppose we want to be able to set the brightness of the light; in other words, a dimmer with control.  This would require a more complex circuit.  An example circuit structure organized to include a dimming function is depicted in "Figure 1.4":#figure1-4.
 
 p=(#figure1-4). !{width:50%}img/1/circuitsF1.4d.jpg(Figure 1.4)!:img/1/circuitsF1.4d.jpg
-_Figure 1.4  'Flashlight' with Dimmer Circuit Structure_
+_Figure 1.4  'Flashlight' with Dimmer Circuit Structure._
 
-Notice that this dimmer structure now has not only the battery source and LED load, but also a dimmer and a control to set the brightness level.  Now there are at least 3 different circuit loops, (A: battery-dimmer, B: control-dimmer and C: dimmer-LED).  And within the dimmer structure there are likely even more electrical loops.
+Notice that this dimmer structure now has not only the battery source and LED load, but also a dimmer and a control to set the brightness level.  Now there are at least 3 different circuit loops: (A) battery-dimmer, (B) control-dimmer and (C) dimmer-LED.  And within the dimmer structure, there are likely even more electrical loops.
 
-The point is, most all practical circuits involve much more control of various outcomes and hence much greater complexity than a single loop.   These complex circuits are implemented by connecting together an array of different circuit elements via more than a single loop.  This means that practical circuits involve many circuit elements that may be connected in many different ways.  A very rich range of possibilities for the circuit designer.
+The point is, most all practical circuits involve much more control of various outcomes and hence much greater complexity than a single loop.   These complex circuits are implemented by connecting together an array of different circuit elements via more than a single loop.  This means that practical circuits involve many circuit elements that may be connected in many different ways.  This presents a very rich range of possibilities for the circuit designer.
 
-A key concept therefore is that in circuits we must somehow select among many possible choices.  Fundamental to all electric circuits is the goal of their purpose AND the constraints that help define the outcome of any circuit that is constructed.
+A key concept, therefore, is that in circuits we must somehow select among many possible choices.  Fundamental to all electric circuits is the goal of their purpose AND the constraints that help define the outcome of any circuit that is constructed.
 
 h4(#chapter1-constraint). 1.4 - Constraint-Based Problems and Variables
 
-We will see that practical electric circuits are identified as _constraint-based_ type problems.  By _constraint-based_ we mean that constraints imposed by various individual elements of the entire problem are an inherent component of the total outcome.  The result, as observed at one region of a circuit _depends on what happens at all elements all over the circuit_.  This is a special type of system, one where we must know what is happening at all parts in order to know what is going to happen at a local part.  Each part of the system places local 'constraints' that influence the overall global behavior of the full system.
+We will see that practical electric circuits are identified as _constraint-based_ type problems.  By _constraint-based,_ we mean that constraints imposed by various individual elements of the entire problem are an inherent component of the total outcome.  The result, as observed at one region of a circuit _depends on what happens at all elements all over the circuit_.  This is a special type of system, one where we must know what is happening at all parts in order to know what is going to happen at a local part.  Each part of the system places local 'constraints' that influence the overall global behavior of the full system.
 
-An airline scheduling system is an example of a highly coupled constraint-based system.  When an airport is closed for bad weather, many other flights at other airports become influenced by the availability of aircraft, crews, supplies, etc. A changed local constraint causes a major change to the overall global operation.  In contrast, not all systems are so tightly coupled.  What I eat for breakfast does not influence in any way whether or not some bus starts in the morning.  The color of my apartment does not change the speed of a train.  The sales of milk at one corner grocery store, does not detectably change the economy of entire nation.
+An airline scheduling system is an example of a highly coupled constraint-based system.  When an airport is closed for bad weather, many other flights at other airports become influenced by the availability of aircraft, crews, supplies, etc. A changed local constraint causes a major change to the overall global operation.  In contrast, not all systems are so tightly coupled.  What I eat for breakfast does not influence in any way whether or not some bus starts in the morning.  The color of my apartment does not change the speed of a train.  The sales of milk at one corner grocery store does not detectably change the economy of entire nation.
 
 However, for highly coupled systems, such as a car production factory, we often seek ways to 'de-couple' the global result (the final car assembly) from local changes in some part availability; for example, to have multiple suppliers for key parts.  In circuits too, we will seek ways to achieve designs that 'de-couple' the global result from some changes at local regions.  This de-coupling has two important outcomes: 
 # it makes possible a more robust, stable design; and
@@ -61,21 +63,67 @@ However, for highly coupled systems, such as a car production factory, we often 
 
 It is a core art in engineering; sub-divide, solve in parts, and then assemble the known 'independent' parts into large working systems.
 
-In constraint problems there are also variables that need to be controlled; for example fuel usage, waiting time, labor costs, number of machines or airplanes, and maintenance costs for an airline.  Each of the variables is often related to another variable by the hardware. When the number of available airplanes increases, the labor costs increase, fuel use increases but the waiting time decreases.  Thus we can see that hardware acts to cause constraints between variables.  We will see there are key variables in circuits.
+In constraint problems, there are also variables that need to be controlled; for example, fuel usage, waiting time, labor costs, number of machines or airplanes, and maintenance costs for an airline.  Each of the variables is often related to another variable by the hardware.  When the number of available airplanes increases, labor costs  and fuel use increase, but the waiting time decreases.  Thus we can see that hardware acts to cause constraints between variables.  We will see there are key variables in circuits.
 
 h4(#chapter1-circuits). 1.5 - Circuits as Constraint-Based Problems with Two Variables
 
-For electric circuits there are 2 fundamental electric variables that are 'constrained'.  These _variables are *voltage* and *current*_.  [Note, we consider electric charge as being directly related to current (current is the time derivative of charge) and hence charge is not taken as an independent variable for our circuits analysis.]  All circuit functions such as lighting, heating or sound reproduction also cause constraints on the necessary voltages and currents required by respective devices that induce the heat, light or sound.
+For electric circuits, there are two fundamental electric variables that are 'constrained'.  These _variables are *voltage* and *current*_.  [Note, we consider electric charge as being directly related to current (current is the time derivative of charge) and hence charge is not taken as an independent variable for our circuits analysis.]  All circuit functions such as lighting, heating or sound reproduction also cause constraints on the necessary voltages and currents required by respective devices that induce the heat, light or sound.
 
-In the case of information/data we will find that voltages and/or currents are used to encode these quantities, such as in magnetic based memories activated by currents.  Hence for our circuits the _variables of concern are only *voltages* and *currents*_. For all circuit problems we will seek to identify the constraints on voltages and currents that yield the desired purpose or outcome.  In the case of power we will learn that voltage and current again provide the key quantities needed to establish the power delivered.
+In the case of information/data, we will find that voltages and/or currents are used to encode these quantities, such as in magnetic based memories activated by currents.  Hence for our circuits the _variables of concern are only *voltages* and *currents*_. For all circuit problems, we will seek to identify the constraints on voltages and currents that yield the desired purpose or outcome.  In the case of power, we will learn that voltage and current again provide the key quantities needed to establish the power delivered.
 
 h4(#chapter1-definitions). 1.6 - Definitions for Voltage and Current
 
-*Voltage* is defined as a difference in electric potential between two different points in a circuit. "Figure 1.5":#figure1-5 illustrates voltage values, where voltage $V_{1}$ is the difference in electric potentials $V_{A}$ and $V_{B}$, and $V_{2}$ is the difference in electric potentials $V_{A}$ and $V_{C}$.  Here $V_{C}$ is identified as 0 potential and hence $V_{2} = (V_{A} - V_{C}) = (V_{A} - 0)$, hence $V_{2} = V_{A}$. It is convenient to pick some point in a circuit and select it to be _"ground"_, meaning it has voltage 0 (zero).  Then every other point has a voltage defined with respect to that ground.  Because voltage is a relative quantity, we can in general pick any point in a circuit to be ground, and we would still get the same values for all voltage differences in that circuit regardless of where ground was chosen.
+*Voltage* is defined as a difference in electric potential between two different points in a circuit. "Figure 1.5":#figure1-5 illustrates voltage values, where voltage $V_1$ is the difference in electric potentials $V_A$ and $V_B$, and $V_2$ is the difference in electric potentials $V_A$ and $V_C$.  
 
-p=(#figure1-5). !{width:40%}img/1/circuitsF1.5a.jpg(Figure 1.4)!:img/1/circuitsF1.5a.jpg
-_Figure 1.5  Voltage as a Difference, Here $V_{C}$ is 'ground'_
+p=(#figure1-5). !{width:40%}img/1/circuitsF1.5a.jpg(Figure 1.5)!:img/1/circuitsF1.5a.jpg
+_Figure 1.5  Voltage as a difference; here $V_C$ is 'ground'._
 
-*Polarity* of voltage is assigned by convention. Polarity is required because we have defined voltage as a difference, but what is the order of the difference?  Is it $(V_{A} - V_{B})$ or $(V_{B} - V_{A})$?  As illustrated in "Figure 1.6":#figure1-6, we *always* assign voltage polarity with a '+' sign at one end and a '-' sign at the other end.   The meaning of the polarity, by convention, requires that the voltage value must be the difference of the '+' side, minus the '-' side.  Namely with the signs shown in Figure 1.6, the voltage $V_{1}$ is $(V_{A} - V_{B})$.
+Here $V_C$ is identified as 0 potential and hence $V_2 = (V_A - V_C) = (V_A - 0)$, hence $V_2 = V_A$. It is convenient to pick some point in a circuit and select it to be _"ground"_, meaning it has voltage 0 (zero).  Then every other point has a voltage defined with respect to that ground.  Because voltage is a relative quantity, we can in general pick any point in a circuit to be ground, and we would still get the same values for all voltage differences in that circuit regardless of where ground was chosen.
 
-next: add figure
+
+*Polarity* of voltage is assigned by convention. Polarity is required because we have defined voltage as a difference, but what is the order of the difference?  Is it $(V_A - V_B)$ or $(V_B - V_A)$?  
+
+p=(#figure1-6). !{width:40%}img/1/circuitsF1.6a.jpg(Figure 1.6)!:img/1/circuitsF1.6a.jpg
+_Figure 1.6  Polarity convention; voltage $V_1$ is the difference $(V_A - V_B)$._
+
+As illustrated in "Figure 1.6":#figure1-6, we *always* assign voltage polarity with a '$+$' sign at one end and a '$-$' sign at the other end.   The meaning of the polarity, by convention, requires that the voltage value must be the difference of the '+' side, minus the '-' side.  Namely with the signs shown in "Figure 1.6":#figure1-6, the voltage $V_1$ is $(V_A - V_B)$.
+
+Conversely, if we _instead identify_ voltage $V_2$ with the opposite polarity assignment, as depicted in "Figure 1.7":#figure1-7, then the voltage $V_2$ would necessarily be the difference $(V_B - V_A)$.  
+
+p=(#figure1-7). !{width:40%}img/1/circuitsF1.7a.jpg(Figure 1.7)!:img/1/circuitsF1.7a.jpg
+_Figure 1.7  Polarity convention; voltage $V_2$ is the difference $(V_B - V_A)$ *(WRONG FIGURE???)*._
+
+The polarity signs set the order of the voltage difference.  A voltage value between two parts of a circuit is always determined according to the polarity assigned-- the voltage value at the '$+$' polarity side minus the voltage value at the '$-$' polarity side.
+
+Another way to identify a voltage difference is to use a double subscript.  Thus $V_{AB}$ by convention is $(V_A - V_B)$, while the opposite subscript order $V_{BA}$ is the difference $(V_B - V_A)$.
+
+*Current* is a flow of electric charge thorough a path in a circuit.  Because current may flow in either direction along a path, it is necessary to _identify the direction of positive current_ value.  Hence we must be careful to label the direction of all currents that are identified in any circuit we analyze.  
+
+p=(#figure1-8). !{width:40%}img/1/circuitsF1.8a.jpg(Figure 1.8)!:img/1/circuitsF1.8a.jpg
+_Figure 1.8  Current magnitude and polarity (from $A$ to $B$) convention._
+
+"Figure 1.8":#figure1-8 illustrates the convention for the magnitude value and polarity of a current that occurs along a path between two parts of a circuit.  Here the current value of $I_1$ _is the current that goes from position '$A$' in a circuit to position '$B$'_ in a circuit.  The direction of the 'arrow' on the path identifies the direction of the current.
+
+If the current value of $I_2$ had the meaning of the _current from ``$B$" to '$A$',_ then, as depicted in "Figure 1.9":#figure1-9, the arrow must point in the direction from '$B$' to '$A$'.
+
+p=(#figure1-9). !{width:40%}img/1/circuitsF1.9a.jpg(Figure 1.9)!:img/1/circuitsF1.9a.jpg
+_Figure 1.9  Current magnitude and polarity (from $B$ to $A$) convention._
+
+h4(#chapter1-types). 1.7 - Types of Circuit Constraints
+
+Let's agree that voltage and current are the variables of interest, but now what actually causes constraints on these voltages and on these currents?  Here is the fascinating part of circuits.  We can determine, control and set _all circuit voltages and currents by two simple rules_ associated with what is in the circuit and the circuit connections.
+
+First, though, let's clarify this structure.  Our circuit is comprised of two or more circuit 'devices', also called circuit 'elements', where every element has associated with it at least one voltage and at least one current.  Additionally, our circuit must connect these devices together by some arrangement of electrical connections.  So the circuit constraint rules act on both of these circuit features: (1) the devices and (2) the connections.
+
+bq. *Rule 1* Every electric device always constrains (defines) how voltage is related to current _*at that device*_.
+
+bq. *Rule 2* Physical laws provide added constraints on voltages and currents when _*multiple devices are connected together*_.
+
+We will see that these two rules for circuit constraints, when applied in a consistent manner, provide a complete and accurate means to solve _all_ of our circuit problems!  This is a remarkable result, and it provides a clear path to solving all circuit problems -- simply find and apply all constraints.
+
+The intent of this book is to provide a logical path to collect and apply all necessary circuit constraints that determine all voltages and currents in a circuit, and hence a means to establish the necessary values for a given 
+design goal or purpose of any circuit.  This is true for both power-transfer and information-transfer circuits.
+
+h4(#chapter1-conclusion). 1.8 - Conclusion
+
+We have established that an electric circuit is a structure that transfers, possibly with modification or control, power and/or information from one place (a 'source') to one or more other places (the 'loads').  Furthermore, this transfer occurs via the electric quantities of voltage and current.  The voltage and current values must follow defined polarity conventions and in a circuit are constrained by two different types of rules.  One type of constraint (Rule 1) is associated with each device that is in the circuit.  The other type of constraint (Rule 2) is associated with a group of two or more device and the connections between the devices.
