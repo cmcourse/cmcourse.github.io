@@ -32,8 +32,8 @@ Here we now use the fact that moving charges are called an _electric current_, s
 A well-known example of an electric circuit uses a battery as the source and a light device load (such as a light bulb or LED).  This is depicted in "Figure 1.3":#figure1-3, where here there is a switch added in the loop path.  With the _switch open there is not a closed loop_ path and there is no power transfer, the LED is OFF. And when _the switch is closed there is a loop path_ so power is transferred from the battery source to the LED load and the LED illuminates ON.  This circuit corresponds to what is in a typical flashlight.
 
 table(#figure1-3).
-|\2=. !{width:90%}img/1/circuitsF1.3b.jpg(Figure 1.3)! |
-|=. (a) no-loop Light-OFF |=. closed loop Light ON |
+|\2=. !{width:90%}img/1/circuitsF1.3b.jpg(Figure 1.3)!:img/1/circuitsF1.3b.jpg |
+|=. (a) no-loop Light-OFF |=. (b) closed loop Light ON |
 |\2=. _Figure 1.3  Circuit to Transfer Power and Cause Illumination, a Flashlight OFF/ON._ |
 
 h4(#chapter1-complexity). 1.3 - Complexity of Electric Circuits and Constraints
