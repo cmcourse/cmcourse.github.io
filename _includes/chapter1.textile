@@ -1,0 +1,81 @@
+
+bq. This book is a work in progress and is currently intended for my students.  
+
+h4(#chapter1-purpose). 1.1 - The Purpose of Circuits
+
+Just what is it the electric circuits actually do?  Essentially an electric circuit is a structure that takes something produced by a 'source' and transfers it to some different place called a 'load'. But exactly what is being transferred?  Most generally, circuits act to transfer one or both of two quantities, namely power (energy) and/or information (data).  Circuits may also modify the power or information as part of the transfer process.
+
+So graphically our circuit is some structure that connects a _source_ of power or information to a _load_ that receives the power or information, "Figure 1.1":#figure1-1. The circuit uses the electric quantities of voltage and current to move power or information from the source to the load.
+
+p=(#figure1-1). !{width:50%}img/1/circuitsF1.1d.jpg(Figure 1.1)!:img/1/circuitsF1.1d.jpg
+_Figure 1.1  Purpose of Circuits; Transfer Power or Information from Source to Load_
+
+For _power_ the origin of this electric energy may be chemical, mechanical, photonic, or nuclear.  But for our electric circuits there has already been a conversion to electric energy, so our source in circuits is an _electric source_, such as a battery, generator or solar cell.  The 'receiver' of this electric energy in our circuits is the _electric load_, which acts to accept the arriving electric energy and often converts it to the desired form of useful energy.  For example, heaters, motors and light bulbs are example 'electric loads' that convert received electric power into 'useful' physical forms of heat, motion and light.
+
+In a similar manner, _information_ from a source (perhaps music contained in a CD) is first converted to electric form, then transferred by a circuit to a load, where the electric signals are converted to the information they represent, such as music, video, data, and/or voice. Example information electric sources are microphones and light detectors. Example electric loads for information include loudspeaker/earphones or video displays.
+
+From a circuit point-of-view, we need only know what electric signals are required for a load to function. In circuit analysis we do not need to explicitly know how the load actually makes the conversion to something useful, for example how a speaker makes the audible sound we hear from the electric signals that drive.  For circuits we only need to use the required electrical quantities.  Thus our circuits are entirely electrical, even though a there may be energy conversion by useful source and load devices.
+
+h4(#chapter1-structure). 1.2 - The Structure of Electric Circuits
+
+The transfer of power/information from source to load is accomplished by an electric circuit *ONLY* when there is a *closed-path structure*, we call a 'loop'.  This is really odd!  
+
+bq. We are moving power/information in one direction, yet _to accomplish this one-way transfer requires electricity to flow in 'both' directions, via a closed loop_!
+
+This loop is required because electricity 'moves' only when there is a loop, a closed path.  Electricity is comprised of electric charges and since charges cannot be created nor destroyed, they are a conserved quantity.  This means we may move a charge along a path, but only in a closed path, a 'circuit', a loop; we cannot create nor destroy charge.  This is illustrated in "Figure 1.2":#figure1-2.  Here we now use the fact that moving charges are called an electric current, so the loop path produces a loop of _electric current_.  Remarkably, we will see that it is the loop of current that results in the unidirectional flow of power from source to load.
+
+p=(#figure1-2). !{width:50%}img/1/circuitsF1.2b.jpg(Figure 1.2)!:img/1/circuitsF1.2b.jpg
+_Figure 1.2  Electric Circuit Requires a 'Loop' Path_
+
+A well-known example of an electric circuit uses a battery as the source and a light device load (such as a light bulb or LED).  This is depicted in "Figure 1.3":#figure1-3, where here there is a switch added in the loop path.  With the _switch open there is not a closed loop_ path and there is no power transfer, the LED is OFF. And when _the switch is closed there is a loop path_ so power is transferred from the battery source to the LED load and the LED illuminates ON.  This circuit corresponds to what is in a typical flashlight.
+
+table(#figure1-3).
+|\2=. !{width:90%}img/1/circuitsF1.3b.jpg(Figure 1.3)! |
+|=. (a) no-loop Light-OFF |=. closed loop Light ON |
+|\2=. _Figure 1.3  Circuit to Transfer Power and Cause Illumination, a Flashlight OFF/ON_ |
+
+h4(#chapter1-complexity). 1.3 - Complexity of Electric Circuits and Constraints
+
+The actual implementation of an electric circuit to transfer power/information is usually not that of a flashlight, a single loop with one battery and one LED light, and a switch.  Rather the typical electric circuit is far more complex.  This complexity is due to a desire to have more control or functions than a simple ON/OFF.  For music we may want to control the loudness, or perhaps adjust the bass or treble sound qualities.  We may want to select different channels in a TV receiver, we may want to store some data in one place and other data in another place.  This adds complexity to our circuit.
+
+Now suppose we want to do more than just turn a light ON, or OFF.  Suppose we want to be able to set the brightness of the light, in other words a dimmer with control.  This would require a more complex circuit, an example circuit structure organized to include a dimming function is depicted in "Figure 1.4":#figure1-4.
+
+p=(#figure1-4). !{width:50%}img/1/circuitsF1.4d.jpg(Figure 1.4)!:img/1/circuitsF1.4d.jpg
+_Figure 1.4  'Flashlight' with Dimmer Circuit Structure_
+
+Notice that this dimmer structure now has not only the battery source and LED load, but also a dimmer and a control to set the brightness level.  Now there are at least 3 different circuit loops, (A: battery-dimmer, B: control-dimmer and C: dimmer-LED).  And within the dimmer structure there are likely even more electrical loops.
+
+The point is, most all practical circuits involve much more control of various outcomes and hence much greater complexity than a single loop.   These complex circuits are implemented by connecting together an array of different circuit elements via more than a single loop.  This means that practical circuits involve many circuit elements that may be connected in many different ways.  A very rich range of possibilities for the circuit designer.
+
+A key concept therefore is that in circuits we must somehow select among many possible choices.  Fundamental to all electric circuits is the goal of their purpose AND the constraints that help define the outcome of any circuit that is constructed.
+
+h4(#chapter1-constraint). 1.4 - Constraint-Based Problems and Variables
+
+We will see that practical electric circuits are identified as _constraint-based_ type problems.  By _constraint-based_ we mean that constraints imposed by various individual elements of the entire problem are an inherent component of the total outcome.  The result, as observed at one region of a circuit _depends on what happens at all elements all over the circuit_.  This is a special type of system, one where we must know what is happening at all parts in order to know what is going to happen at a local part.  Each part of the system places local 'constraints' that influence the overall global behavior of the full system.
+
+An airline scheduling system is an example of a highly coupled constraint-based system.  When an airport is closed for bad weather, many other flights at other airports become influenced by the availability of aircraft, crews, supplies, etc. A changed local constraint causes a major change to the overall global operation.  In contrast, not all systems are so tightly coupled.  What I eat for breakfast does not influence in any way whether or not some bus starts in the morning.  The color of my apartment does not change the speed of a train.  The sales of milk at one corner grocery store, does not detectably change the economy of entire nation.
+
+However, for highly coupled systems, such as a car production factory, we often seek ways to 'de-couple' the global result (the final car assembly) from local changes in some part availability; for example, to have multiple suppliers for key parts.  In circuits too, we will seek ways to achieve designs that 'de-couple' the global result from some changes at local regions.  This de-coupling has two important outcomes: 
+# it makes possible a more robust, stable design; and
+# it allows a complex problem to be sub-divided and analyzed and designed in parts, which can then be connected together to form far more complex useful systems.
+
+It is a core art in engineering; sub-divide, solve in parts, and then assemble the known 'independent' parts into large working systems.
+
+In constraint problems there are also variables that need to be controlled; for example fuel usage, waiting time, labor costs, number of machines or airplanes, and maintenance costs for an airline.  Each of the variables is often related to another variable by the hardware. When the number of available airplanes increases, the labor costs increase, fuel use increases but the waiting time decreases.  Thus we can see that hardware acts to cause constraints between variables.  We will see there are key variables in circuits.
+
+h4(#chapter1-circuits). 1.5 - Circuits as Constraint-Based Problems with Two Variables
+
+For electric circuits there are 2 fundamental electric variables that are 'constrained'.  These _variables are *voltage* and *current*_.  [Note, we consider electric charge as being directly related to current (current is the time derivative of charge) and hence charge is not taken as an independent variable for our circuits analysis.]  All circuit functions such as lighting, heating or sound reproduction also cause constraints on the necessary voltages and currents required by respective devices that induce the heat, light or sound.
+
+In the case of information/data we will find that voltages and/or currents are used to encode these quantities, such as in magnetic based memories activated by currents.  Hence for our circuits the _variables of concern are only *voltages* and *currents*_. For all circuit problems we will seek to identify the constraints on voltages and currents that yield the desired purpose or outcome.  In the case of power we will learn that voltage and current again provide the key quantities needed to establish the power delivered.
+
+h4(#chapter1-definitions). 1.6 - Definitions for Voltage and Current
+
+*Voltage* is defined as a difference in electric potential between two different points in a circuit. "Figure 1.5":#figure1-5 illustrates voltage values, where voltage $V_{1}$ is the difference in electric potentials $V_{A}$ and $V_{B}$, and $V_{2}$ is the difference in electric potentials $V_{A}$ and $V_{C}$.  Here $V_{C}$ is identified as 0 potential and hence $V_{2} = (V_{A} - V_{C}) = (V_{A} - 0)$, hence $V_{2} = V_{A}$. It is convenient to pick some point in a circuit and select it to be _"ground"_, meaning it has voltage 0 (zero).  Then every other point has a voltage defined with respect to that ground.  Because voltage is a relative quantity, we can in general pick any point in a circuit to be ground, and we would still get the same values for all voltage differences in that circuit regardless of where ground was chosen.
+
+p=(#figure1-5). !{width:40%}img/1/circuitsF1.5a.jpg(Figure 1.4)!:img/1/circuitsF1.5a.jpg
+_Figure 1.5  Voltage as a Difference, Here $V_{C}$ is 'ground'_
+
+*Polarity* of voltage is assigned by convention. Polarity is required because we have defined voltage as a difference, but what is the order of the difference?  Is it $(V_{A} - V_{B})$ or $(V_{B} - V_{A})$?  As illustrated in "Figure 1.6":#figure1-6, we *always* assign voltage polarity with a '+' sign at one end and a '-' sign at the other end.   The meaning of the polarity, by convention, requires that the voltage value must be the difference of the '+' side, minus the '-' side.  Namely with the signs shown in Figure 1.6, the voltage $V_{1}$ is $(V_{A} - V_{B})$.
+
+next: add figure

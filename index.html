@@ -1,12 +1,68 @@
 ---
 layout: default
-title: Hello World
+title: CMCourse Book Chapters
 ---
 
+<!-- masthead -->
+<div class="masthead" id="masthead">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h1>Understanding Electronic Circuits and Circuit Design
+          <p class="lead">&copy; 2015 CMCourse</p>
+        </h1>
+        <h5>(Draft, v0.4: Solely for Use by My Students)</h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- main content -->
 <div class="container">
 
 <div class="row">
-  <div class="col-md-12">
-    <h2>hello world</h2>
-  </div>
+  
+  <!-- chapter index -->
+  <div class="col-md-3">
+    <div class="sidebar" role="complementary">
+      <ul class="nav sidenav" data-spy="affix" data-offset-top="160">
+        <li>
+          <a href="#chapter1">What is a Circuit?</a>
+          <ul class="nav">
+            <li><a href="#chapter1-purpose">The Purpose of Circuits</a></li>
+            <li><a href="#chapter1-structure">The Structure of Electric Circuits</a></li>
+            <li><a href="#chapter1-complexity">Complexity of Electric Circuits and Constraints</a></li>
+            <li><a href="#chapter1-constraint">Constraint-Based Problems and Variables</a></li>
+            <li><a href="#chapter1-circuits">Circuits as Constraint-Based Problems with Two Variables</a></li>
+            <li><a href="#chapter1-definitions">Definitions for Voltage and Current</a></li>
+          </ul>
+        </li>
+        <li><a href="#chapter2">Circuit Element Constraints; 'Rule 1'</a></li>
+      </ul>
+    </div>
+  </div> <!-- /chapter index -->
+  
+  <!-- book -->
+  <div class="col-md-9">
+    
+    <!-- chapter 1 -->
+    <div class="chapter">
+      <h2 id="chapter1">Chapter 1: What is a Circuit?</h2>
+      {% capture include_to_textilize1 %}
+      {% include chapter1.textile %}
+      {% endcapture %}
+      {{ include_to_textilize1 | textilize }}
+    </div>
+    
+    <!-- chapter 2 -->
+    <div class="chapter">
+      <h2 id="chapter2">Chapter 2: Circuit Element Constraints; 'Rule 1'</h2>
+      {% capture include_to_textilize2 %}
+      {% include chapter2.textile %}
+      {% endcapture %}
+      {{ include_to_textilize2 | textilize }}
+    </div>
+  
+  </div> <!-- /book -->
+
 </div>
