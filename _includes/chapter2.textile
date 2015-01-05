@@ -44,7 +44,7 @@ $(V_n1 - V_n2) = V_X$       Eq'n 2.2
 
 These conventions for nodes, currents and polarity apply independent of the physical orientation or graphical drawing of an element, see "Figure 2.4":#figure2-4.  Both of these representations for an element are consistent with the above three element conventions.
 
-p=(#figure2-4). !{width:50%}img/2/circuitsF2.4.jpg(Figure 2.4)!:img/2/circuitsF2.4.jpg
+p=(#figure2-4). !{width:80%}img/2/circuitsF2.4.jpg(Figure 2.4)!:img/2/circuitsF2.4.jpg
 _Figure 2.4  Consistent Circuit Element Conventions, Independent of Element Orientation_
 
 h4(#chapter2-element-power). 2.3 - Power in Circuit Elements
@@ -59,14 +59,14 @@ A _negative value_ for the power 'dissipated' corresponds to _power supplied by 
 
 We can obtain further understanding of this current-voltage-power relationship by a graphical plot.  "Figure 2.5":#figure2-5 depicts the current, $i_X$, and voltage $v_X$, for our general circuit element.  Power dissipated is positive, $v_X * i_X > 0$, (lost; does work, heating, a load) in the 1st and 3rd quadrants, and negative, $v_X * i_X < 0$, (supplied, a source) in the 2nd and 4th quadrants.
 
-p=(#figure2-5). !{width:50%}img/2/circuitsF2.5.jpg(Figure 2.5)!:img/2/circuitsF2.5.jpg
+p=(#figure2-5). !{width:70%}img/2/circuitsF2.5.jpg(Figure 2.5)!:img/2/circuitsF2.5.jpg
 _Figure 2.5  Power 'Dissipated' by a Circuit Element_
 
 h4(#chapter2-element-resistor). 2.4 - The Resistor Element Constraint, (a 'Load' Type Circuit Element)
 
 Consider another example of a practical 2-terminal element constraint, the Resistor Constraint.  The resistor circuit element, by it's physical structure, forces a very distinctive relation between voltage and current, namely the voltage across the two terminals of a resistor is _proportional to the current passing through the resistor_.  The proportionality constant is represented by the value $'R'$, a constant for each resistor.  The voltages, current, and symbol for this element are depicted in "Figure 2.6":#figure2-6.
 
-p=(#figure2-6). !{width:50%}img/2/circuitsF2.6.jpg(Figure 2.6)!:img/2/circuitsF2.6.jpg
+p=(#figure2-6). !{width:35%}img/2/circuitsF2.6.jpg(Figure 2.6)!:img/2/circuitsF2.6.jpg
 _Figure 2.6  The Resistor Circuit Element with Resistance $'R'$_
 
 The direction of the element current is chosen (as always) to be consistent with our required element conventions, here positive element current, $i_R$, is into the element from the $v_n_1$ node of the voltage difference of $(v_n_1-v_n_2)$.  With this polarity convention, the mathematical formulation for the element constraint imposed by a resistor, is given by Eq'n. 2.4.
