@@ -50,6 +50,11 @@ title: CMCourse Book Chapters
               <li><a href="#chapter2-element-constitutive">Element Constitutive (Constraint) Relations</a></li>
               <li><a href="#chapter2-element-conclusions">Conclusions</a></li>
 			</ul>
+        <li>
+			<a href="#chapter3">Circuit Connection Constraints; 'Rule 2'</a>
+            <ul class="nav">
+              <li><a href="#chapter3-KCL">Kirchoff’s Current Law. A Circuit Connection Constraint</a></li>
+			</ul>
 		</li>
       </ul>
     </div>
@@ -74,6 +79,15 @@ title: CMCourse Book Chapters
       {% include chapter2.textile %}
       {% endcapture %}
       {{ include_to_textilize2 | textilize }}
+    </div>
+    
+    <!-- chapter 3 -->
+    <div class="chapter">
+      <h2 id="chapter3">Chapter 3: Circuit Connection Constraints; 'Rule 2'</h2>
+      {% capture include_to_textilize3 %}
+      {% include chapter3.textile %}
+      {% endcapture %}
+      {{ include_to_textilize3 | textilize }}
     </div>
   
   </div> <!-- /book -->
