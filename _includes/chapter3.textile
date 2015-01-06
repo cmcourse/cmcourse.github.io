@@ -4,32 +4,57 @@ We have seen that all circuit elements have nodes to contact the element.  Now i
 p=(#figure3-1). !{width:50%}img/3/circuitsF3.1.jpg(Figure 3.1)!:img/3/circuitsF3.1.jpg
 _Figure 3.1  Voltage Source and Resistor Connected to the Same Node 1_
 
-For this ‘circuit’ of Figure 3.1 we could write the constitutive relations as:
+For this ‘circuit’ of Figure 3.1 we could write the two element constitutive relations as:
 
 p=. $(V_{n1} - V_{n2}) - V_S = 0$
 
-And:
-
 p=. $(V_{n1} - V_{n3}) - i_R R = 0$
 
-So now we have 5 variables ($v_{n1}$, $v_{n2}$, $v_{n3}$, and $i_R$ and $i_S$), but only 2 equations.  We cannot solve with 2 equations!  We need more constraints to relate the variables.
+So now we have 5 variables ($v_{n1}$, $v_{n2}$, $v_{n3}$, and $i_R$ and $i_S$), but only 2 equations.  [The source and resistor constant values are known, $V_S$ and $R$.] There are too many variables to solve with only 2 equations!  We need more constraints to relate the variables.
 
 However, first of all notice, "Figure 3.1":#figure3-1 is not actually a circuit !  There is *not* a closed loop. So to make a circuit we need _at least one closed loop_.  Lets make a loop by connecting node n2 and node n3 to yield a single node n2.  This circuit is shown in "Figure 3.2":#figure3-2.
 
 p=(#figure3-2). !{width:40%}img/3/circuitsF3.2.jpg(Figure 3.1)!:img/3/circuitsF3.2.jpg
 _Figure 3.2  Voltage Source and Resistor Connected to the Same Two Nodes: n1 and n2_
 
-Now for this circuit of "Figure 3.2":#figure3-2 we write the respective two constitutive relations as "Eq'n. 3.2":#eq3-2.:
+Now for this circuit of "Figure 3.2":#figure3-2 we write the respective two element constitutive relations as:
 
-p=(#eq3-2). $(V_{n1} - V_{n2}) - V_S = 0$
+p=. $(V_{n1} - V_{n2}) - V_S = 0$
 
-And:
-
-p=(#eq3-2). $(V_{n1} - V_{n2}) - i_R R = 0$
+p=. $(V_{n1} - V_{n2}) - i_R R = 0$
 
 So now we have 4 variables ($v_{n1}$, $v_{n2}$, and $i_R$ and $i_S$), but again _only two equations_ !!!  [The source and resistor constant values are known, $V_S$ and $R$.]  We still cannot solve.  This is where 'Rule-2' comes to the rescue in the form of Kirchoff's Current Law.
 
-These new 'Rule-2' constraints come from physical limits which the real world imposes on our circuits.  In particular, recall that charges cannot be created nor destroyed, so currents cannot just end in mid-air.  In other words, currents cannot just cease at a node.  This fact is expressed by _Kirchoff's Current Law_, which simply states that _the sum of all branch currents leaving a node must be zero_.  We can write this law in equation form "Eq'n. 3.1":#eq3-1., for any node:
+These new 'Rule-2' constraints come from physical limits which the real world imposes on our circuits.  In particular, recall that charges cannot be created nor destroyed, so currents cannot just end in mid-air.  In other words, currents cannot just cease at a node.  This fact is expressed by _Kirchoff's Current Law_, which simply states that _the sum of all branch currents leaving a node must be zero_.  We can write this law in equation form "Eq'n. 3.1":#eq3-1., for any node with 'm' branches:
 
-p=(#eq3-1). $Sum of all branch currents i_j (connected to the node) must = 0$ where $i_j$ is the branch current _leaving_ the node on branch '$j$'
+p=(#eq3-1). $Sum of all 'm' branch currents i_j must = 0$ where $i_j$ is the branch current _leaving_ the node on branch '$j$'
+
+where, the currents $i_j$ are the m branch currents that leave the node.  This constraint can be illustrated by a 4-branch node example, as shown in "Figure 3.3":#figure3-3 and the corresponding Kirchoff’s Current Law "Eq'n. 3.2":#eq3-2.
+
+p=(#figure3-3). !{width:40%}img/3/circuitsF3.3.jpg(Figure 3.1)!:img/3/circuitsF3.3.jpg
+_Figure 3.3  Kirchoff’s Current Law Applied at an Example 4-Branch Node_
+
+p=(#eq3-2). $(i_1 + i_2 + i_3 + i_4) = 0$  Eq'n 3.2
+
+Notice that there is a negative sign '$-i_2$' in this equation.  Recall we must sum all the currents _leaving_ the node, but '$i_2$' is defined by the current arrow as entering, so therefore '$-i_2$' is the current leaving via branch 2.  Also notice that "Figure 3.3":#figure3-3 is just a portion of a complete circuit that is not fully shown.  The current $i_4$ in resistor $R_4$ cannot disappear into no-where, and the same for the other branch currents.  There must be more of the circuit not depicted in "Figure 3.3":#figure3-3.  So a key point of this is that Kirchoff’s Current Law applies to *_any node_* independent of the remainder of the circuit, so it is completely accurate to write "Eq'n. 3.2":#eq3-2 with only the local knowledge at that node, and without knowledge of other parts of the circuit.
+
+So as another example lets apply the Kirchoff’s Current Law constraint to node-1 of our 2-element circuit of "Figure 3.2":#figure3-2 above, hence we collect the two forms of constraints (constitutive, and Kirchoff) as follows:
+
+_Constitutive Relations:_
+p=(#fixed source).	Fixed Voltage Source: 	$(V_{n1} - V_{n2}) - V_S = 0$
+p=(#    resistor).	Resistor: 				$(V_{n1} - V_{n2}) - i_R R = 0$
+
+_Kirchoff’s Current Law:_
+p=(#         KCL).	At node 1:				$i_S + i_R = 0$		 
+
+And finally, as a practical matter most all circuits have a reference voltage.  Namely one of the nodes is selected to be at the reference voltage, usually set at zero volts.  Thus in this case we may select the node n2 to be the reference and set it to zero.
+
+p=(#    ref node).	$i_{n2} = 0$		 
+
+Together these equations can be solved to yield the solution:
+
+p=. $v_{n1} = V_S$
+p=. $v_{n2} = 0$
+p=. $i_R = V_S/R$
+p=. $i_S = -i_R = V_S/R$
 
