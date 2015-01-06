@@ -44,13 +44,13 @@ So as another example lets apply the Kirchoff’s Current Law constraint to node
 
 _Constitutive Relations:_
 
-p=.	$Fixed Voltage Source: (V_{n1} - V_{n2}) - V_S = 0$
+p=. $Fixed Voltage Source: (V_{n1} - V_{n2}) - V_S = 0$
 
-p=.	$Resistor: (V_{n1} - V_{n2}) - i_R R = 0$
+p=. $Resistor: (V_{n1} - V_{n2}) - i_R R = 0$
 
 _Kirchoff's Current Law:_
 
-p=.	$i_S + i_R = 0$		 
+p=. $i_S + i_R = 0$		 
 
 And finally, as a practical matter most all circuits have a reference voltage.  Namely one of the nodes is selected to be at the reference voltage, usually set at zero volts.  Thus in this case we may select the node n2 to be the reference and set it to zero.
 
@@ -66,3 +66,6 @@ p=. $i_R = V_S/R$
 
 p=. $i_S = -i_R = V_S/R$
 
+If we apply numerical values and use a fixed voltage source of 5 volts, and a resistor with resistance value of 3 ohms, then the solution would be:
+
+p=. $v_{n1} = 5 volts$
