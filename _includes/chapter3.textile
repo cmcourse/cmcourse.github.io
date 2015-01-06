@@ -69,3 +69,10 @@ p=. $i_S = -i_R = V_S/R$
 If we apply numerical values and use a fixed voltage source of 5 volts, and a resistor with resistance value of 3 ohms, then the solution would be:
 
 p=. $v_{n1} = 5 volts$
+
+p=. $v_{n2} = 0$
+
+p=. $i_R = 5/3 = 1.67 ampere$
+
+p=. $i_S = -1.67 ampere$
+
