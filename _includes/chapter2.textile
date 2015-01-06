@@ -12,7 +12,7 @@ _Figure 2.1  The Fixed Voltage Source Circuit Element, with Value '$V_S$'_
 
 The mathematical form of the constraint, which this voltage source imposes between voltage and current at it's terminals is given by "Eq'n. 2.1":#eq2-1.
 
-p=(#eq2-1). $(V_{n1} - V_{n2} - V_S) = 0$ _Eq'n 2.1_
+p=(#eq2-1). $(V_{n1} - V_{n2}) - V_S = 0$ _Eq'n 2.1_
 
 Eq'n 2.1 simply states the voltage difference between node 1 and node 2, $(v_{n1} - v_{n2})$, is a fixed constant value of '$V_S$', and does not change with the current in the source, $i_S$.
 
@@ -57,25 +57,25 @@ Power is in units of watts when the voltage is in units of volts, and current is
 
 A _negative value_ for the power 'dissipated' corresponds to _power supplied by the element_.  Hence a power source is usually intended to supply power so in such cases the power dissipated by the source element would be negative.  For example, if $i_X$ is negative and $v_X$ is positive we get a negative power dissipated, and hence a power source. For the Fixed Voltage Source element, "Figure 2.1":#figure2-1, this element supplies power for negative values of element current $i_S$. Note when $i_S$ is positive then the source instead dissipates power !
 
-We can obtain further understanding of this current-voltage-power relationship by a graphical plot.  "Figure 2.5":#figure2-5 depicts the current, $i_X$, and voltage $v_X$, for our general circuit element.  Power dissipated is positive, $v_X * i_X > 0$, (lost; does work, heating, a load) in the 1st and 3rd quadrants, and negative, $v_X * i_X < 0$, (supplied, a source) in the 2nd and 4th quadrants.
+We can obtain further understanding of this current-voltage-power relationship by a graphical plot.  "Figure 2.5":#figure2-5 depicts the current, $i_X$, and voltage $v_X$, for our general circuit element.  Power dissipated is positive in the 1st and 3rd quadrants, $v_X * i_X > 0$, (power leaves circuit; does work, heating, a load); and power dissipated is negative in the 2nd and 4th quadrants, $v_X * i_X < 0$, (power supplied to circuit, a source).
 
 p=(#figure2-5). !{width:70%}img/2/circuitsF2.5.jpg(Figure 2.5)!:img/2/circuitsF2.5.jpg
 _Figure 2.5  Power 'Dissipated' by a Circuit Element_
 
 h4(#chapter2-element-resistor). 2.4 - The Resistor Element Constraint, (a 'Load' Type Circuit Element)
 
-Consider another example of a practical 2-terminal element constraint, the Resistor Constraint.  The resistor circuit element, by it's physical structure, forces a very distinctive relation between voltage and current, namely the voltage across the two terminals of a resistor is _proportional to the current passing through the resistor_.  The proportionality constant is represented by the value $'R'$, a constant for each resistor.  The voltages, current, and symbol for this element are depicted in "Figure 2.6":#figure2-6.
+Consider another example of a practical 2-terminal element constraint, the Resistor Constraint.  The resistor circuit element, by it's physical structure, forces a very distinctive relation between voltage and current, namely the voltage across the two terminals of a resistor is _proportional to the current passing through the resistor_.  The proportionality constant is represented by the value $R$, a constant for each resistor.  The voltages, current, and symbol for this element are depicted in "Figure 2.6":#figure2-6.
 
 p=(#figure2-6). !{width:35%}img/2/circuitsF2.6.jpg(Figure 2.6)!:img/2/circuitsF2.6.jpg
-_Figure 2.6  The Resistor Circuit Element with Resistance $'R'$_
+_Figure 2.6  The Resistor Circuit Element with Resistance $R$_
 
 The direction of the element current is chosen (as always) to be consistent with our required element conventions, here positive element current, $i_R$, is into the element from the $v_{n1}$ node of the voltage difference of $(v_{n1}-v_{n2})$.  With this polarity convention, the mathematical formulation for the element constraint imposed by a resistor, is given by "Eq'n. 2.4":#eq2-4.
 
 p=(#eq2-4). $(v_{n1}  - v_{n2}) - i_R R = 0$   _Eq'n 2.4_
 
-Here and for all voltages and currents we need to use a consistent set of units.  Current is expressed in the standard unit of _amperes_, while voltage is expressed in the standard unit of _volts_ for all our circuit elements.  In the case of the resistor the constant $'R'$ is in the units of _ohms_. $R$ is called the resistance value of the resistor.  Eq'n 2.4 is also known as Ohms Law.
+Here and for all voltages and currents we need to use a consistent set of units.  Current is expressed in the standard unit of _amperes_, while voltage is expressed in the standard unit of _volts_ for all our circuit elements.  In the case of the resistor the constant $R$ is in the units of _ohms_. $R$ is called the resistance value of the resistor.  Eq'n 2.4 is also known as Ohm's Law.
 
-Graphically, we can represent a resistor as current versus the element voltage $(v_n_1 – v_n_2)$, as depicted in "Figure 2.7":#figure2-7.  Notice the current-voltage values are ALWAYS constraint to be in the 1st and 3rd quadrants when R is positive; and hence, _power is always dissipated_ by any resistor with a positive value of resistance $R$ (see also "Figure 2.5":#figure2-5)
+Graphically, we can represent a resistor as current versus the element voltage $(v_{n1} – v_{n2})$, as depicted in "Figure 2.7":#figure2-7.  Notice the current-voltage values are ALWAYS constraint to be in the 1st and 3rd quadrants when R is positive; and hence, _power is always dissipated_ by any resistor with a positive value of resistance $R$ (see also "Figure 2.5":#figure2-5)
 
 p=(#figure2-7). !{width:50%}img/2/circuitsF2.7.jpg(Figure 2.7)!:img/2/circuitsF2.7.jpg
 _Figure 2.7  The Resistor Element Constraint, Graphical Presentation_
@@ -94,7 +94,7 @@ p=(#eq2-5). $i_S - I_S = 0$     _Eq'n 2.5_
 
 This Eq'n. 2.5 simply states the current from node 1 to node 2 is a constant fixed value of $I_S$ amperes, and *does not change with the amount of voltage across the element source*, $(v_{n1} – v_{n2}) = v_S$.
 
-Another way to represent the constraint imposed by this element, on the element current, $i_S$ , and element voltage, $(v_{n1} – v_{n2})$, is to present the relationship graphically.  "Figure 2.9":#figure2-9 shows in graphical form the element current, $i_S$ , versus element voltage, the node voltage difference $(v_{n1} – v_{n2})$.
+Another way to represent the constraint imposed by this element, on the element current, $i_S$ , and element voltage, $(v_{n1} – v_{n2})$, is to present the relationship graphically.  "Figure 2.9":#figure2-9 shows in graphical form for the element current, $i_S$ , versus element voltage, the node voltage difference $(v_{n1} – v_{n2})$.
 
 p=(#figure2-9). !{width:50%}img/2/circuitsF2.9.jpg(Figure 2.9)!:img/2/circuitsF2.9.jpg
 _Figure 2.9  Fixed Current Source Element Constraint, Graphical Presentation_
@@ -112,11 +112,11 @@ We can summarize the constraints imposed by 'Rule 1' (Circuit Element Constraint
 bq. *Table 2.1*
     *Constitutive Relations: Fixed Sources and Resistors*
 
-bq. Fixed Voltage Source:  $(v_{n1} - v_{n2}) - V_S = 0$
+bq. Fixed Voltage Source:  $(v_{n1} - v_{n2})  - V_S = 0$
 
-bq. Resistor:  $(v_{n1} - v_{n2}) - i_R R = 0$
+bq. Resistor:  $(v_{n1} - v_{n2})  - i_R R = 0$
 
-bq. Fixed Current Source:  $i_S - I_S = 0$
+bq. Fixed Current Source:  $i_S  - I_S = 0$
 
 These relations establish the constraints imposed by these three circuit elements.  We additionally *always* use our three element conventions of element voltages, current direction, and polarity in order to accurately represent the constraints of each element.
 
