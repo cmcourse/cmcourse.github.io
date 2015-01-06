@@ -10,9 +10,9 @@ Consider an example circuit element, a practical 2-terminal element constraint, 
 p=(#figure2-1). !{width:50%}img/2/circuitsF2.1.png(Figure 2.1)!:img/2/circuitsF2.1.png
 _Figure 2.1  The Fixed Voltage Source Circuit Element, with Value '$V_S$'_
 
-The mathematical form of the constraint, which this voltage source imposes between voltage and current at it’s terminals is given by Eq'n. 2.1.
+The mathematical form of the constraint, which this voltage source imposes between voltage and current at it's terminals is given by "Eq'n. 2.1":#eq2-1.
 
-$(V_n_1  - V_n_2  - V_S) = 0$   Eq'n 2.1
+p=(#eq2-1). $(V_{n1} - V_{n2} - V_S) = 0$ _Eq'n 2.1_
 
 Eq'n 2.1 simple states the voltage difference between node 1 and node 2, $(v_n_1 - v_n_2)$, is a fixed constant value of '$V_S$', and does not change with the current in the source, $i_S$.
 

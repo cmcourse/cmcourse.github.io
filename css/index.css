@@ -89,3 +89,8 @@ body {
 h4 {
   margin-top: 30px;
 }
+.chapter {
+  padding-bottom: 20px;
+  margin-bottom: 100px;
+  border-bottom: 1px solid #bbb;
+}
