@@ -25,6 +25,10 @@ p=. $(V_{n1} - V_{n2}) - i_R R = 0$
 
 So now we have 4 variables ($v_{n1}$, $v_{n2}$, and $i_R$ and $i_S$), but again _only two equations_ !!!  [The source and resistor constant values are known, $V_S$ and $R$.]  We still cannot solve.  This is where 'Rule-2' comes to the rescue in the form of Kirchoff's Current Law.
 
+h4(#chapter3-KCL). 3.1 - Kirchoff’s Current Law
+
+We now find an extra constraint not due to the elements themselves ('Rule-1' type constraints) because we already have those as expressed by the constitutive relations. Rather we need a new type of constraint, one associated with the _interconnections_ of circuit elements, a 'Rule-2' type constraint.
+
 These new 'Rule-2' constraints come from physical limits which the real world imposes on our circuits.  In particular, recall that charges cannot be created nor destroyed, so currents cannot just end in mid-air.  In other words, currents cannot just cease at a node.  This fact is expressed by _Kirchoff's Current Law_, which simply states that _the sum of all branch currents leaving a node must be zero_.  We can write this law in equation form "Eq'n. 3.1":#eq3-1., for any node with 'm' branches:
 
 p=(#eq3-1). $Sum of all 'm' branch currents i_j must = 0$ where $i_j$ is the branch current _leaving_ the node on branch '$j$'
@@ -84,4 +88,13 @@ p=. $P_R = (5volts)(5/3amp) = 25/3 = 8.33 watt$
 and in the fixed voltage source:
 
 p=. $P_S = (5volt)(-5/3amp) = -25/3 = -8.33 watt$
+
+
+h4(#chapter3-KVL). 3.1 - Kirchoff’s Voltage Law
+
+There is another constraint, one that is again associated with the interconnections of circuit elements, another 'Rule-2' type constraint.  And again this constraint is caused by the restrictions imposed by our physical world.  In this case we are concerned with potential energy, this is just a more general term for the quantity in our circuits we call *voltage*.  Voltage in our circuits is a _conserved_ quantity and is associated with any node.  Conservation of energy means the value of voltage at any node is _always the same independent of the path taken to get to the node_.
+
+Being conserved, means that if a node 'A' is at a voltage $V_A$, then if we follow any circuit loop and return back to node 'A' the voltage must be the same voltage value $V_A$.  In other words, the sum of all element voltages around any closed circuit loop path MUST BE ZERO.  This fact is an expression of Kirchoff’s Voltage Law, and is written in the form of "Eq'n. 3.3":#eq3-3.
+
+p=(#eq3-3). $Sum of all 'm' element voltages v_j around a closed loop must = 0$ where $v_j$ is the branch voltage _drop_ across element '$j$'
 
