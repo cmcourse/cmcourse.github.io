@@ -6,11 +6,11 @@ _Figure 3.1  Voltage Source and Resistor Connected to the Same Node 1_
 
 For this ‘circuit’ of Figure 3.1 we could write the constitutive relations as:
 
-p=(#eq3-1). $(V_{n1} - V_{n2}) - V_S = 0$
+p=. $(V_{n1} - V_{n2}) - V_S = 0$
 
 And:
 
-p=(#eq3-1). $(V_{n1} - V_{n3}) - i_R R = 0$
+p=. $(V_{n1} - V_{n3}) - i_R R = 0$
 
 So now we have 5 variables ($v_{n1}$, $v_{n2}$, $v_{n3}$, and $i_R$ and $i_S$), but only 2 equations.  We cannot solve with 2 equations!  We need more constraints to relate the variables.
 
