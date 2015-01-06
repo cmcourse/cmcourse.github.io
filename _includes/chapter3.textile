@@ -64,7 +64,7 @@ p=. $v_{n2} = 0$
 
 p=. $i_R = V_S/R$
 
-p=. $i_S = -i_R = V_S/R$
+p=. $i_S = -i_R = -V_S/R$
 
 If we apply numerical values and use a fixed voltage source of 5 volts, and a resistor with resistance value of 3 ohms, then the solution would be:
 
@@ -75,4 +75,13 @@ p=. $v_{n2} = 0$
 p=. $i_R = 5/3 = 1.67 ampere$
 
 p=. $i_S = -1.67 ampere$
+
+The power dissipated in each element can be calculated from these voltages and currents.
+In the resistor:
+
+p=. $P_R = (5volts)(5/3amp) = 25/3 = 8.33 watt$
+
+and in the fixed voltage source:
+
+p=. $P_S = (5volt)(-5/3amp) = -25/3 = -8.33 watt$
 
