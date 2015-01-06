@@ -31,7 +31,7 @@ p=(#eq3-1). $Sum of all 'm' branch currents i_j must = 0$ where $i_j$ is the bra
 
 where, the currents $i_j$ are the m branch currents that leave the node.  This constraint can be illustrated by a 4-branch node example, as shown in "Figure 3.3":#figure3-3 and the corresponding Kirchoff’s Current Law "Eq'n. 3.2":#eq3-2.
 
-p=(#figure3-3). !{width:40%}img/3/circuitsF3.3.jpg(Figure 3.1)!:img/3/circuitsF3.3.jpg
+p=(#figure3-3). !{width:40%}img/3/circuitsF3.3.jpg(Figure 3.3)!:img/3/circuitsF3.3.jpg
 _Figure 3.3  Kirchoff’s Current Law Applied at an Example 4-Branch Node_
 
 p=(#eq3-2). $(i_1 + i_2 + i_3 + i_4) = 0$  Eq'n 3.2
@@ -41,15 +41,15 @@ Notice that there is a negative sign '$-i_2$' in this equation.  Recall we must 
 So as another example lets apply the Kirchoff’s Current Law constraint to node-1 of our 2-element circuit of "Figure 3.2":#figure3-2 above, hence we collect the two forms of constraints (constitutive, and Kirchoff) as follows:
 
 _Constitutive Relations:_
-p=(#fixed source).	Fixed Voltage Source: 	$(V_{n1} - V_{n2}) - V_S = 0$
-p=(#    resistor).	Resistor: 				$(V_{n1} - V_{n2}) - i_R R = 0$
+p=.	Fixed Voltage Source: $(V_{n1} - V_{n2}) - V_S = 0$
+p=.	Resistor: $(V_{n1} - V_{n2}) - i_R R = 0$
 
 _Kirchoff’s Current Law:_
-p=(#         KCL).	At node 1:				$i_S + i_R = 0$		 
+p=.	At node 1: $i_S + i_R = 0$		 
 
 And finally, as a practical matter most all circuits have a reference voltage.  Namely one of the nodes is selected to be at the reference voltage, usually set at zero volts.  Thus in this case we may select the node n2 to be the reference and set it to zero.
 
-p=(#    ref node).	$i_{n2} = 0$		 
+p=.	$i_{n2} = 0$		 
 
 Together these equations can be solved to yield the solution:
 
