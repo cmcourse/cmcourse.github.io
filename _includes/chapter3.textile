@@ -31,12 +31,12 @@ p=(#eq3-1). $Sum of all 'm' branch currents i_j must = 0$ where $i_j$ is the bra
 
 where, the currents $i_j$ are the m branch currents that leave the node.  This constraint can be illustrated by a 4-branch node example, as shown in "Figure 3.3":#figure3-3,
 
-p=(#figure3-3). !{width:40%}img/3/circuitsF3.3a.jpg(Figure 3.3)!:img/3/circuitsF3.3a.jpg
+p=(#figure3-3). !{width:30%}img/3/circuitsF3.3a.jpg(Figure 3.3)!:img/3/circuitsF3.3a.jpg
 _Figure 3.3  Kirchoff’s Current Law Applied at an Example 4-Branch Node_
 
 and the corresponding Kirchoff’s Current Law "Eq'n. 3.2":#eq3-2.
 
-p=(#eq3-2). $(i_1 + i_2 + i_3 + i_4) = 0$  Eq'n 3.2
+p=(#eq3-2). $(i_1 - i_2 + i_3 + i_4) = 0$  Eq'n 3.2
 
 Notice that there is a negative sign '$-i_2$' in this equation.  Recall we must sum all the currents _leaving_ the node, but '$i_2$' is defined by the current arrow as entering, so therefore '$-i_2$' is the current leaving via branch 2.  Also notice that "Figure 3.3":#figure3-3 is just a portion of a complete circuit that is not fully shown.  The current $i_4$ in resistor $R_4$ cannot disappear into no-where, and the same for the other branch currents.  There must be more of the circuit not depicted in "Figure 3.3":#figure3-3.  So a key point of this is that Kirchoff’s Current Law applies to *_any node_* independent of the remainder of the circuit, so it is completely accurate to write "Eq'n. 3.2":#eq3-2 with only the local knowledge at that node, and without knowledge of other parts of the circuit.
 
@@ -44,13 +44,13 @@ So as another example lets apply the Kirchoff’s Current Law constraint to node
 
 _Constitutive Relations:_
 
-p=.	Fixed Voltage Source: $(V_{n1} - V_{n2}) - V_S = 0$
+p=.	$Fixed Voltage Source: (V_{n1} - V_{n2}) - V_S = 0$
 
-p=.	Resistor: $(V_{n1} - V_{n2}) - i_R R = 0$
+p=.	$Resistor: (V_{n1} - V_{n2}) - i_R R = 0$
 
-_Kirchoff’s Current Law:_
+_Kirchoff's Current Law:_
 
-p=.	At node 1: $i_S + i_R = 0$		 
+p=.	$i_S + i_R = 0$		 
 
 And finally, as a practical matter most all circuits have a reference voltage.  Namely one of the nodes is selected to be at the reference voltage, usually set at zero volts.  Thus in this case we may select the node n2 to be the reference and set it to zero.
 
