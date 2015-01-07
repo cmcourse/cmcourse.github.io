@@ -162,7 +162,7 @@ Collecting terms:
 
 p=. $P_{total} = e_2(i_A - i_C) + e_1(-i_A - i_B) + e_3(i_B + i_C)$
 
-But now we apply Kirchoff’s Current Law to each of the nodes 1, 2 and 3 as follows:
+But now we apply Kirchoff's Current Law to each of the nodes 1, 2 and 3 as follows:
 
 p=. At Node 1:  $(-i_A - i_B) = 0$
 
