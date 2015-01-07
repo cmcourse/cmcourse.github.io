@@ -75,7 +75,7 @@ p=(#eq2-4). $(v_{n1}  - v_{n2}) - i_R R = 0$   _Eq'n 2.4_
 
 Here and for all voltages and currents we need to use a consistent set of units.  Current is expressed in the standard unit of _amperes_, while voltage is expressed in the standard unit of _volts_ for all our circuit elements.  In the case of the resistor the constant $R$ is in the units of _ohms_. $R$ is called the resistance value of the resistor.  Eq'n 2.4 is also known as Ohm's Law.
 
-Graphically, we can represent a resistor as current versus the element voltage $(v_{n1} – v_{n2})$, as depicted in "Figure 2.7":#figure2-7.  Notice the current-voltage values are ALWAYS constraint to be in the 1st and 3rd quadrants when R is positive; and hence, _power is always dissipated_ by any resistor with a positive value of resistance $R$ (see also "Figure 2.5":#figure2-5)
+Graphically, we can represent a resistor as current versus the element voltage $(v_{n1}-v_{n2})$, as depicted in "Figure 2.7":#figure2-7.  Notice the current-voltage values are ALWAYS constraint to be in the 1st and 3rd quadrants when R is positive; and hence, _power is always dissipated_ by any resistor with a positive value of resistance $R$ (see also "Figure 2.5":#figure2-5)
 
 p=(#figure2-7). !{width:50%}img/2/circuitsF2.7.jpg(Figure 2.7)!:img/2/circuitsF2.7.jpg
 _Figure 2.7  The Resistor Element Constraint, Graphical Presentation_
