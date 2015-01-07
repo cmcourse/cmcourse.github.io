@@ -21,7 +21,7 @@ Another way to represent the constraint imposed by this element is graphically, 
 p=(#figure2-2). !{width:50%}img/2/circuitsF2.2.jpg(Figure 2.2)!:img/2/circuitsF2.2.jpg
 _Figure 2.2  Fixed Voltage Source Element Constraint, Graphical Presentation_
 
-Notice, for this fixed voltage source the element voltage, $(v_{n1} – v_{n2})$, is always fixed at the value $V_S$, and is completely independent of the element current, $i_S$, magnitude or polarity.  By convention, the fixed voltage source element is always represented by a circle with +/- signs to identify polarity as in "Figure 2.1":#figure2-1.  A positive value for $V_S$, means the voltage at node 1 is greater than the voltage at node 2.
+Notice, for this fixed voltage source the element voltage, $(v_{n1} - v_{n2})$, is always fixed at the value $V_S$, and is completely independent of the element current, $i_S$, magnitude or polarity.  By convention, the fixed voltage source element is always represented by a circle with +/- signs to identify polarity of the voltage as in "Figure 2.1":#figure2-1.  A positive value for $V_S$, means the voltage at node 1 is greater than the voltage at node 2.
 
 h4(#chapter2-volt-constraint). 2.2 - Circuit Element Conventions
 
@@ -59,7 +59,7 @@ A _negative value_ for the power 'dissipated' corresponds to _power supplied by 
 
 We can obtain further understanding of this current-voltage-power relationship by a graphical plot.  "Figure 2.5":#figure2-5 depicts the current, $i_X$, and voltage $v_X$, for our general circuit element.  Power dissipated is positive in the 1st and 3rd quadrants, $v_X * i_X > 0$, (power leaves circuit; does work, heating, a load); and power dissipated is negative in the 2nd and 4th quadrants, $v_X * i_X < 0$, (power supplied to circuit, a source).
 
-p=(#figure2-5). !{width:70%}img/2/circuitsF2.5.jpg(Figure 2.5)!:img/2/circuitsF2.5.jpg
+p=(#figure2-5). !{width:60%}img/2/circuitsF2.5.jpg(Figure 2.5)!:img/2/circuitsF2.5.jpg
 _Figure 2.5  Power 'Dissipated' by a Circuit Element_
 
 h4(#chapter2-element-resistor). 2.4 - The Resistor Element Constraint, (a 'Load' Type Circuit Element)
@@ -126,11 +126,11 @@ We can summarize the constraints imposed by 'Rule 1' (Circuit Element Constraint
 bq. *Table 2.1*
     *Constitutive Relations: Fixed Sources and Resistors*
 
-bq. Fixed Voltage Source:  $(v_{n1} - v_{n2})  - V_S = 0$
+# Fixed Voltage Source:  $(v_{n1} - v_{n2})  - V_S = 0$
 
-bq. Resistor:  $(v_{n1} - v_{n2})  - i_R R = 0$
+# Resistor:  $(v_{n1} - v_{n2})  - i_R R = 0$
 
-bq. Fixed Current Source:  $i_S  - I_S = 0$
+# Fixed Current Source:  $i_S  - I_S = 0$
 
 These relations establish the constraints imposed by these three circuit elements.  We additionally *always* use our three element conventions of element voltages, current direction, and polarity in order to accurately represent the constraints of each element.
 
