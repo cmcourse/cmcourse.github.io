@@ -104,11 +104,11 @@ _Figure 2.8  The Fixed Current Source Circuit Element, $'I_S'$_
 The mathematical form of the constraint, which this fixed current source imposes between voltage and current at it's terminals is given by "Eq'n. 2.6":#eq2-6.  Again we keep the element polarity convention that positive current is defined into the positive polarity of the element voltage, $v_S$.  The direction of the currrent $I_S$ is defined by the arrow in the current source.
 
 
-p=(#eq2-6). $i_S - I_S = 0$     _Eq'n 2.5_
+p=(#eq2-6). $i_S - I_S = 0$     _Eq'n 2.6_
 
-This "Eq'n. 2.6":#eq2-6 simply states the current from node 1 to node 2 is a constant fixed value of $I_S$ amperes, and *does not change with the amount of voltage across the element source*, $(v_{n1} – v_{n2}) = v_S$.
+This "Eq'n. 2.6":#eq2-6 simply states the current from node 1 to node 2 is a constant fixed value of $I_S$ amperes, and *does not change with the amount of voltage across the element source*, $(v_{n1} - v_{n2}) = v_S$.
 
-Another way to represent the constraint imposed by this element, on the element current, $i_S$ , and element voltage, $(v_{n1} – v_{n2})$, is to present the relationship graphically.  "Figure 2.9":#figure2-9 shows in graphical form for the element current, $i_S$ , versus element voltage, the node voltage difference $(v_{n1} - v_{n2})$.
+Another way to represent the constraint imposed by this element, on the element current, $i_S$ , and element voltage, $(v_{n1} - v_{n2})$, is to present the relationship graphically.  "Figure 2.9":#figure2-9 shows in graphical form for the element current, $i_S$ , versus element voltage, the node voltage difference $(v_{n1} - v_{n2})$.
 
 p=(#figure2-9). !{width:50%}img/2/circuitsF2.9.jpg(Figure 2.9)!:img/2/circuitsF2.9.jpg
 _Figure 2.9  Fixed Current Source Element Constraint, Graphical Presentation_
