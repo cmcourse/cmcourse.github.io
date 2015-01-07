@@ -6,9 +6,9 @@ _Figure 3.1  Voltage Source and Resistor Connected to the Same Node 1_
 
 For this ‘circuit’ of Figure 3.1 we could write the two element constitutive relations as:
 
-p=. $(V_{n1} - V_{n2}) - V_S = 0$
+p=. $(v_{n1} - v_{n2}) - V_S = 0$
 
-p=. $(V_{n1} - V_{n3}) - i_R R = 0$
+p=. $(v_{n1} - v_{n3}) - i_R R = 0$
 
 So now we have 5 variables ($v_{n1}$, $v_{n2}$, $v_{n3}$, and $i_R$ and $i_S$), but only 2 equations.  [The source and resistor constant values are known, $V_S$ and $R$.] There are too many variables to solve with only 2 equations!  We need more constraints to relate the variables.
 
@@ -19,9 +19,9 @@ _Figure 3.2  Voltage Source and Resistor Connected to the Same Two Nodes: n1 and
 
 Now for this circuit of "Figure 3.2":#figure3-2 we write the respective two element constitutive relations as:
 
-p=. $(V_{n1} - V_{n2}) - V_S = 0$
+p=. $(v_{n1} - v_{n2}) - V_S = 0$
 
-p=. $(V_{n1} - V_{n2}) - i_R R = 0$
+p=. $(v_{n1} - v_{n2}) - i_R R = 0$
 
 So now we have 4 variables ($v_{n1}$, $v_{n2}$, and $i_R$ and $i_S$), but again _only two equations_ !!!  [The source and resistor constant values are known, $V_S$ and $R$.]  We still cannot solve.  This is where 'Rule-2' comes to the rescue in the form of Kirchoff's Current Law.
 
@@ -97,4 +97,31 @@ There is another constraint, one that is again associated with the interconnecti
 Being conserved, means that if a node 'A' is at a voltage $V_A$, then if we follow any circuit loop and return back to node 'A' the voltage must be the same voltage value $V_A$.  In other words, the sum of all element voltages around any closed circuit loop path MUST BE ZERO.  This fact is an expression of Kirchoff’s Voltage Law, and is written in the form of "Eq'n. 3.3":#eq3-3.
 
 p=(#eq3-3). $Sum of all 'm' element voltages v_j around a closed loop must = 0$ where $v_j$ is the branch voltage _drop_ across element '$j$'
+
+where, the element voltage 'drops', $v_j$, are for each of all the elements in the closed loop.  This can be illustrated by a 4-element loop example, as depicted in "Figure 3.4":#figure3-4,
+
+p=(#figure3-4). !{width:50%}img/3/circuitsF3.4.jpg(Figure 3.3)!:img/3/circuitsF3.4.jpg
+_Figure 3.4  Kirchoff’s Voltage Law Applied to an Example 4-Element Loop_
+
+and the corresponding Kirchoff's Voltage Law "Eq'n. 3.4":#eq3-4.
+
+p=(#eq3-4). $(-V_1 + V_2 + V_3 + V_4) = 0$  Eq'n 3.4
+
+To follow this loop, consider that we start our loop-path at node ‘n1’ (at the lower left).  If we take a clock-wise loop-path from node n1, to node n2, to node n3, to node n4, and then back again to node n1; then the _sum of the *element voltage drops* along that path must be zero_.  These element voltages are:
+
+p=. From n1 to n2:   the voltage increases (- to +) by $V_1$, hence a voltage drop of $–V_1$,
+
+p=. From n2 to n3:   the voltage drops (+ to -) by $V_2$, hence a voltage drop of $+V_2$,
+
+p=. From n3 to n4:   the voltage drops (+ to -) by $V_3$, hence a voltage drop of $+V_3$,
+
+p=. From n4 to n1:   the voltage drops (+ to -) by $V_4$, hence a voltage drop of $+V_4$.
+
+The loop is complete and hence the sum of these voltage drops is zero as in "Eq'n. 3.4":#eq3-4.
+
+We may also apply Kirchoff’s Voltage Law to the earlier circuit example of "Figure 3.2":#figure3-2. Starting at the bottom node 'n1', and passing up along the fixed voltage source to node 'n2' the voltage increases (- to +) by element voltage $V_S$, and thus we have a voltage drop of $–V_S$ in this element.  Next passing along the resistor element from node ‘n2’ to node ‘n1’ the volt drops by element voltage $+V_R$.  Why is the voltage $V_R$ a 'drop'?  The answer is because of our convention, recall positive current arrows enter at the + voltage side of an element voltage.  Here the resistor element current is defined by the arrow as going from node 'n1' to node 'n2', so the + side of the resistor element voltage $V_R$ must be at the top 'n1' side of the resistor.  The result is Kirchoff’s Voltage Law yields the relation:
+
+p=. $-V_S + V_R = 0$
+
+where, the resistor element voltage $V_R$ is by our conventions ($v_{n1) – v_{n2}).
 
