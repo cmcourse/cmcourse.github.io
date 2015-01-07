@@ -84,9 +84,9 @@ Another way to represent the constraint imposed by a resistor element is to empl
 
 p=. $v_R = (v_{n1} - v_{n2})$
 
-We can therefore express this resisitor constitutive relation in terms of the element voltage by:
+With Eq'n 2.4 we can therefore express this resisitor constitutive relation in terms of the element voltage by:
 
-p=. $v_R - i_R R = 0$
+p=. $v_R - i_R  R = 0$
 
 Or as "Eq'n. 2.5":#eq2-5:
 
