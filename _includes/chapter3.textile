@@ -44,7 +44,7 @@ p=(#eq3-2). $(i_1 - i_2 + i_3 + i_4) = 0$  Eq'n 3.2
 
 Notice that there is a negative sign '$-i_2$' in this equation.  Recall we must sum all the currents _leaving_ the node, but '$i_2$' is defined by the current arrow as entering, so therefore '$-i_2$' is the current leaving via branch 2.  Also notice that "Figure 3.3":#figure3-3 is just a portion of a complete circuit that is not fully shown.  The current $i_4$ in resistor $R_4$ cannot disappear into no-where, and the same for the other branch currents.  There must be more of the circuit not depicted in "Figure 3.3":#figure3-3.  So a key point of this is that Kirchoff’s Current Law applies to *_any node_* independent of the remainder of the circuit, so it is completely accurate to write "Eq'n. 3.2":#eq3-2 with only the local knowledge at that node, and without knowledge of other parts of the circuit.
 
-So as another example lets apply the Kirchoff’s Current Law constraint to node-1 of our 2-element circuit of "Figure 3.2":#figure3-2 above, hence we collect the two forms of constraints (constitutive, and Kirchoff) as follows:
+So as another example lets apply the Kirchoff's Current Law constraint to node-1 of our 2-element circuit of "Figure 3.2":#figure3-2 above, hence we collect the two forms of constraints (constitutive, and Kirchoff) as follows:
 
 _Constitutive Relations:_
 
@@ -160,7 +160,7 @@ p=. $P_{total} = v_Ai_A +v_Bi_B + v_Ci_C = e_2 i_A - e_1 i_A + e_3 i_B - e_1 i_B
 
 Collecting terms:
 
-p=. $P_{total} = e_2(i_A - i_C) + e_1_(-i_A - i_B) + e_3(i_B + i_C)$
+p=. $P_{total} = e_2(i_A - i_C) + e_1(-i_A - i_B) + e_3(i_B + i_C)$
 
 But now we apply Kirchoff’s Current Law to each of the nodes 1, 2 and 3 as follows:
 
