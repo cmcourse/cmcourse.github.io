@@ -92,7 +92,7 @@ Or as "Eq'n. 2.5":#eq2-5:
 
 p=. $v_R = i_R R$  _Eq'n 2.5_
 
-This commonly used form for the resistor element voltage-current relation is called _Ohm's Law_.
+This commonly used form for the resistor element voltage-current constraint relation is called _Ohm's Law_.
 
 h4(#chapter2-element-current). 2.5 - The Fixed Current Source Constraint, (a 'Source' Type Circuit Element)
 
