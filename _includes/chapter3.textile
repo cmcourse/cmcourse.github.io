@@ -25,7 +25,7 @@ p=. $(v_{n1} - v_{n2}) - i_R R = 0$
 
 So now we have 4 variables ($v_{n1}$, $v_{n2}$, and $i_R$ and $i_S$), but again _only two equations_ !!!  [The source and resistor constant values are known, $V_S$ and $R$.]  We still cannot solve.  This is where 'Rule-2' comes to the rescue in the form of Kirchoff's Current Law.
 
-h4(#chapter3-KCL). 3.1 - Kirchoff’s Current Law
+h4(#chapter3-KCL). 3.1 - Kirchoff's Current Law
 
 We now find an extra constraint not due to the elements themselves ('Rule-1' type constraints) because we already have those as expressed by the constitutive relations. Rather we need a new type of constraint, one associated with the _interconnections_ of circuit elements, a 'Rule-2' type constraint.
 
@@ -90,7 +90,7 @@ and in the fixed voltage source:
 p=. $P_S = (5volt)(-5/3amp) = -25/3 = -8.33 watt$
 
 
-h4(#chapter3-KVL). 3.2 - Kirchoff’s Voltage Law
+h4(#chapter3-KVL). 3.2 - Kirchoff's Voltage Law
 
 There is another constraint, one that is again associated with the interconnections of circuit elements, another 'Rule-2' type constraint.  And again this constraint is caused by the restrictions imposed by our physical world.  In this case we are concerned with potential energy, this is just a more general term for the quantity in our circuits we call *voltage*.  Voltage in our circuits is a _conserved_ quantity and is associated with any node.  Conservation of energy means the value of voltage at any node is _always the same independent of the path taken to get to the node_.
 
@@ -109,7 +109,7 @@ p=(#eq3-4). $(-V_1 + V_2 + V_3 + V_4) = 0$  Eq'n 3.4
 
 To follow this loop, consider that we start our loop-path at node ‘n1’ (at the lower left).  If we take a clock-wise loop-path from node n1, to node n2, to node n3, to node n4, and then back again to node n1; then the _sum of the *element voltage drops* along that path must be zero_.  These element voltages are:
 
-p=. From n1 to n2:   the voltage increases (- to +) by $V_1$, hence a voltage drop of $–V_1$,
+p=. From n1 to n2:   the voltage increases (- to +) by $V_1$, hence a voltage drop of $-V_1$,
 
 p=. From n2 to n3:   the voltage drops (+ to -) by $V_2$, hence a voltage drop of $+V_2$,
 
@@ -119,11 +119,11 @@ p=. From n4 to n1:   the voltage drops (+ to -) by $V_4$, hence a voltage drop o
 
 The loop is complete and hence the sum of these voltage drops is zero as in "Eq'n. 3.4":#eq3-4.
 
-We may also apply Kirchoff’s Voltage Law to the earlier circuit example of "Figure 3.2":#figure3-2. Starting at the bottom node 'n1', and passing up along the fixed voltage source to node 'n2' the voltage increases (- to +) by element voltage $V_S$, and thus we have a voltage drop of $–V_S$ in this element.  Next passing along the resistor element from node ‘n2’ to node ‘n1’ the volt drops by element voltage $+V_R$.  Why is the voltage $V_R$ a 'drop'?  The answer is because of our convention, recall positive current arrows enter at the + voltage side of an element voltage.  Here the resistor element current is defined by the arrow as going from node 'n1' to node 'n2', so the + side of the resistor element voltage $V_R$ must be at the top 'n1' side of the resistor.  The result is Kirchoff’s Voltage Law yields the relation:
+We may also apply Kirchoff's Voltage Law to the earlier circuit example of "Figure 3.2":#figure3-2. Starting at the bottom node 'n1', and passing up along the fixed voltage source to node 'n2' the voltage increases (- to + ) by element voltage $V_S$, and thus we have a voltage drop of $-V_S$ in this element.  Next passing along the resistor element from node ‘n2’ to node ‘n1’ the volt drops by element voltage $+V_R$.  Why is the voltage $V_R$ a 'drop'?  The answer is because of our convention, recall positive current arrows enter at the + voltage side of an element voltage.  Here the resistor element current is defined by the arrow as going from node 'n1' to node 'n2', so the + side of the resistor element voltage $V_R$ must be at the top 'n1' side of the resistor.  The result is Kirchoff's Voltage Law yields the relation:
 
 p=. $-V_S + V_R = 0$
 
-where, the resistor element voltage $V_R$ is by our conventions ($v_{n1) – v_{n2}).
+where, the resistor element voltage $V_R$ is by our conventions ($v_{n1)$ – $v_{n2}$).
 
 We will see that the solution to multi-node circuits is most often achieved by use of node voltages rather than element voltages.  However, both have their place and are used according to convenience of the problem to be solved.  In a later Chapter 4, we develop a method to solve circuits that can be applied to solve any circuit.  It is called the 'Node Method'.
 
@@ -156,11 +156,11 @@ p=. $p_C = v_C i_C = (e_3 - e_2) i_C = e_3 i_C - e_2 i_C$
 
 Now add together all the power terms:
 
-p=. $P_total = v_Ai_A +v_Bi_B + v_Ci_C = e_2 i_A - e_1 i_A + e_3 i_B - e_1 i_B + e_3 i_C - e_2 i_C$
+p=. $P_{total} = v_Ai_A +v_Bi_B + v_Ci_C = e_2 i_A - e_1 i_A + e_3 i_B - e_1 i_B + e_3 i_C - e_2 i_C$
 
 Collecting terms:
 
-p=. $P_total = e_2(i_A - i_C) + e_1_(-i_A - i_B) + e_3(i_B + i_C)
+p=. $P_{total} = e_2(i_A - i_C) + e_1_(-i_A - i_B) + e_3(i_B + i_C)
 
 But now we apply Kirchoff’s Current Law to each of the nodes 1, 2 and 3 as follows:
 
@@ -172,27 +172,27 @@ p=. At Node :  $(i_B + i_C) = 0$
 
 By substitution:
 
-p=. $P_total = (e_2)(0) + (e_1)(0) + (e_3)(0) = 0$
+p=. $P_{total} = (e_2)(0) + (e_1)(0) + (e_3)(0) = 0$
 
 Hence we can conclude that the sum of element powers must equal zero in any circuit regardless of the elements used to construct the circuit, where $i_k$ is the current in element $k$ and $v_k$ is the voltage across element $k$ (with polarity assigned according to the polarity definition of Section 1.6).
 
-p=. $P_total = sum all (v_k i_k) = 0$
+p=. $P_{total} = sum all (v_k i_k) = 0$
 
 It is remarkable that this development used only the basic element voltage as a difference of the corresponding node voltages and Kirchoff's Current Law.  These sum-of-power = 0 constraint applie independent of element properties and also applies at any moment of time. This development method has been applied in general by Tellegen and the general relation is called Tellegen's Theorem.
 
-h4(#chapter3-contradiction). 3.4 - Contradiction of Constraints
+h4(#chapter3-contradiction). 3.4 - Conflicting of Constraints
 
-One might try to consider a circuit that is inherently ‘impossible’ from a circuits point-of-view.  For example consider a circuit composed of 3 voltage sources each of 5 volts, as connected in "Figure 3.6":#figure3-6.
+One might try to consider a circuit that is inherently '_impossible_' from a circuits point-of-view.  For example consider a circuit composed of 3 voltage sources each of 5 volts, as connected in "Figure 3.6":#figure3-6.
 
 p=(#figure3-6). !{width:50%}img/3/circuitsF3.6.jpg(Figure 3.6)!:img/3/circuitsF3.6.jpg
 _Figure 3.6  Three Equal Voltage Source Circuit_
 
 If we sum the voltage drops around the complete loop: from node A to node B, from node B to node C and from node C to node A, we obtain:
 
-p=. $-5 -5 +5 = -5 ≠ 0$
+p=. $-5 -5 +5 = -5 not-equal 0$
 
 _Impossible_ !!!  A violation of Kirchoff's Current Law. This particular circuit creates an inherent CONFLICT between element constraints and circuit constraints.  Hence this circuit has NO SOLUTION.  In general it is inconsistent to create a circuit with inherently conflicting constraints.  Though it may be interesting to speculate what would ‘break’ if such a conflicted circuit was actually built, it is more likely it would cause dangerous extreme overheating and should not be attempted.  It is one way to cause a battery to catch fire or worse.
 
 h4(#chapter3-contradiction). 3.5 - Conclusion
 
-In this chapter two key circuit constraints, the Kirchoff’s Voltage Law and the Kirchoff’s Current Law were developed.  The circuit constraints when combined with element constraints were applied to solve an example simple circuit.  Additionally, in this chapter attention was given to power dissipated by circuit elements and a general proof that the sum of element power values must be zero.  This power constraint for a circuit can be used in certain situations to quickly evaluate the power in an element when all the other element powers are known.  In the next Chapter 4 a general method of solving circuits for their voltage and current values is developed.
+In this chapter two key circuit constraints, the Kirchoff's Voltage Law and the Kirchoff's Current Law were developed.  The circuit constraints when combined with element constraints were applied to solve an example simple circuit.  Additionally, in this chapter attention was given to power dissipated by circuit elements and a general proof that the sum of element power values must be zero.  This power constraint for a circuit can be used in certain situations to quickly evaluate the power in an element when all the other element powers are known.  In the next Chapter 4 a general method of solving circuits for their voltage and current values is developed.
