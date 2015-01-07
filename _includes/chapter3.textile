@@ -189,9 +189,9 @@ _Figure 3.6  Three Equal Voltage Source Circuit_
 
 If we sum the voltage drops around the complete loop: from node A to node B, from node B to node C and from node C to node A, we obtain:
 
-p=. $-5 -5 +5 = -5 not-equal 0$
+p=. $-5 -5 +5 = -5 does-not-equal:  0$
 
-_Impossible_ !!!  A violation of Kirchoff's Current Law. This particular circuit creates an inherent CONFLICT between element constraints and circuit constraints.  Hence this circuit has NO SOLUTION.  In general it is inconsistent to create a circuit with inherently conflicting constraints.  Though it may be interesting to speculate what would ‘break’ if such a conflicted circuit was actually built, it is more likely it would cause dangerous extreme overheating and should not be attempted.  For example a wire connected across a battery is one way to cause a battery to catch fire or worse [Do NOT Try This !].
+_Impossible_ !!!  A violation of Kirchoff's Current Law. This particular circuit creates an inherent CONFLICT between element constraints and circuit constraints.  Hence this circuit has NO SOLUTION.  In general it is inconsistent to create a circuit with inherently conflicting constraints.  Though it may be interesting to speculate what would ‘break’ if such a conflicted circuit was actually built, it is more likely it would cause dangerous extreme overheating and should not be attempted.  For example a wire connected across a battery is one way to cause a battery to catch fire or worse [Danger - Do NOT Try This !].
 
 h4(#chapter3-contradiction). 3.5 - Conclusion
 
