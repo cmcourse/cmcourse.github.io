@@ -82,7 +82,7 @@ _Figure 2.7  The Resistor Element Constraint, Graphical Presentation_
 
 Another way to represent the constraint imposed by a resistor element is to employ the element voltage $v_R$ in the constraint equation.  From Section 2.2 the element voltage can be expressed in terms of the difference in corresponding node voltages as:
 
-p=. $v_R = v_{n1} - v_{n2}_
+p=. $v_R = (v_{n1} - v_{n2})$
 
 We can therefore express this resisitor constitutive relation in terms of the element voltage by:
 
