@@ -49,7 +49,7 @@ _Figure 2.4  Consistent Circuit Element Conventions, Independent of Element Orie
 
 h4(#chapter2-element-power). 2.3 - Power in Circuit Elements
 
-The reason for the polarity convention, where positive current direction is *always* pointed into the defined positive voltage terminal on the element is to have a consistent definition of power.  This is because power is the _product of current times voltage_.  So with the polarity convention we can ALWAYS state that the *power dissipated* by an element is just the product $i_X * v_X$, or $v_X * i_X$, "Eq'n. 2.3":#eq2-3.
+The reason for the polarity convention, where positive current direction is *always* pointed into the defined positive voltage terminal on the element is to have a consistent definition of power.  This is because power is the _product of current times voltage_.  So with the polarity convention we can ALWAYS state that the *power dissipated* by an element is just the product $i_X * v_X$, or $v_X$ * $i_X$, "Eq'n. 2.3":#eq2-3.
 
 p=(#eq2-3). $P_X = v_X * i_X$      _Eq'n 2.3_
 
