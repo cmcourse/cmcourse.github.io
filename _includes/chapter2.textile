@@ -123,13 +123,10 @@ h4(#chapter2-element-constitutive). 2.7 - Conclusions
 
 We can summarize the constraints imposed by 'Rule 1' (Circuit Element Constraints) by collecting the constitutive relations for each kind of element.  For the three kinds of elements we have discussed so far; the fixed voltage source, the resistor, and the fixed current source we thus have the following constitutive relations in Table 2.1.
 
-bq. *Table 2.1*
-    *Constitutive Relations: Fixed Sources and Resistors*
-
+bq. $*Table 2.1*
+    *Constitutive Relations: Fixed Sources and Resistors*$
 # Fixed Voltage Source:  $(v_{n1} - v_{n2})  - V_S = 0$
-
 # Resistor:  $(v_{n1} - v_{n2})  - i_R R = 0$
-
 # Fixed Current Source:  $i_S  - I_S = 0$
 
 These relations establish the constraints imposed by these three circuit elements.  We additionally *always* use our three element conventions of element voltages, current direction, and polarity in order to accurately represent the constraints of each element.
