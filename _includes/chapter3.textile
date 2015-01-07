@@ -123,7 +123,7 @@ We may also apply Kirchoff's Voltage Law to the earlier circuit example of "Figu
 
 p=. $-V_S + V_R = 0$
 
-where, the resistor element voltage $V_R$ is by our conventions $(v_{n1} – v_{n2})$.
+where, the resistor element voltage $V_R$ is by our conventions $(v_{n1}-v_{n2})$.
 
 We will see that the solution to multi-node circuits is most often achieved by use of node voltages rather than element voltages.  However, both have their place and are used according to convenience of the problem to be solved.  In a later Chapter 4, we develop a method to solve circuits that can be applied to solve any circuit.  It is called the 'Node Method'.
 
