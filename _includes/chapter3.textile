@@ -35,10 +35,10 @@ p=(#eq3-1). $Sum of all 'm' branch currents i_j must = 0$ where $i_j$ is the bra
 
 where, the currents $i_j$ are the m branch currents that leave the node.  This constraint can be illustrated by a 4-branch node example, as shown in "Figure 3.3":#figure3-3,
 
-p=(#figure3-3). !{width:30%}img/3/circuitsF3.3a.jpg(Figure 3.3)!:img/3/circuitsF3.3a.jpg
-_Figure 3.3  Kirchoff’s Current Law Applied at an Example 4-Branch Node_
+p=(#figure3-3). !{width:35%}img/3/circuitsF3.3a.jpg(Figure 3.3)!:img/3/circuitsF3.3a.jpg
+_Figure 3.3  Kirchoff's Current Law Applied at an Example 4-Branch Node_
 
-and the corresponding Kirchoff’s Current Law "Eq'n. 3.2":#eq3-2.
+and the corresponding Kirchoff's Current Law "Eq'n. 3.2":#eq3-2.
 
 p=(#eq3-2). $(i_1 - i_2 + i_3 + i_4) = 0$  Eq'n 3.2
 
@@ -100,14 +100,14 @@ p=(#eq3-3). $Sum of all 'm' element voltages v_j around a closed loop must = 0$ 
 
 where, the element voltage 'drops', $v_j$, are for each of all the elements in the closed loop.  This can be illustrated by a 4-element loop example, as depicted in "Figure 3.4":#figure3-4,
 
-p=(#figure3-4). !{width:50%}img/3/circuitsF3.4.jpg(Figure 3.4)!:img/3/circuitsF3.4.jpg
+p=(#figure3-4). !{width:40%}img/3/circuitsF3.4.jpg(Figure 3.4)!:img/3/circuitsF3.4.jpg
 _Figure 3.4  Kirchoff’s Voltage Law Applied to an Example 4-Element Loop_
 
 and the corresponding Kirchoff's Voltage Law "Eq'n. 3.4":#eq3-4.
 
 p=(#eq3-4). $(-V_1 + V_2 + V_3 + V_4) = 0$  Eq'n 3.4
 
-To follow this loop, consider that we start our loop-path at node ‘n1’ (at the lower left).  If we take a clock-wise loop-path from node n1, to node n2, to node n3, to node n4, and then back again to node n1; then the _sum of the *element voltage drops* along that path must be zero_.  These element voltages are:
+To follow this loop, consider that we start our loop-path at node 'n1' (at the lower left).  If we take a clock-wise loop-path from node n1, to node n2, to node n3, to node n4, and then back again to node n1; then the _sum of the *element voltage drops* along that path must be zero_.  These element voltages are:
 
 p=. From n1 to n2:   the voltage increases (- to +) by $V_1$, hence a voltage drop of $-V_1$,
 
@@ -123,11 +123,11 @@ We may also apply Kirchoff's Voltage Law to the earlier circuit example of "Figu
 
 p=. $-V_S + V_R = 0$
 
-where, the resistor element voltage $V_R$ is by our conventions ($v_{n1)$ – $v_{n2}$).
+where, the resistor element voltage $V_R$ is by our conventions ($v_{n1}$ – $v_{n2}$).
 
 We will see that the solution to multi-node circuits is most often achieved by use of node voltages rather than element voltages.  However, both have their place and are used according to convenience of the problem to be solved.  In a later Chapter 4, we develop a method to solve circuits that can be applied to solve any circuit.  It is called the 'Node Method'.
 
-h4(#chapter3-KVL). 3.2 - Power Constraint, an Overall Circuit Constraint
+h4(#chapter3-KVL). 3.3 - Power Constraint, an Overall Circuit Constraint
 
 There is another ‘circuit’ constraint that is related not to either voltage or current individually, but rather to their combination.  Specifically, we can establish that the product of (voltage) x (current) associated with all elements in a circuit have a constraint.  The basic concept is that circuits conserve power.  This conservation means _the sum of the power dissipated by all individual elements in a circuit must be zero_.  This is expressed by the power constraint "Eq'n. 3.5":#eq3-5.
 
@@ -135,7 +135,7 @@ p=(#eq3-5). $Sum of all 'm' element power dissipation P_j values for all element
 
 This constraint can be obtained by combining Kirchoff's Current Law and Kirchoff's Voltage Law.  Consider the circuit with three elements arranged in a single loop, "Figure 3.5":#figure3-5.  The specific elements need not be specified, this power relationship applies is independent of the specific type of elements.
 
-p=(#figure3-5). !{width:50%}img/3/circuitsF3.5.jpg(Figure 3.5)!:img/3/circuitsF3.5.jpg
+p=(#figure3-5). !{width:40%}img/3/circuitsF3.5.jpg(Figure 3.5)!:img/3/circuitsF3.5.jpg
 _Figure 3.5  Circuit for Proof of Conservation of Power_
 
 First of all define the node voltages at nodes 1, 2 and 3 as $e_1$, $e_2$ and $e3$.  Hence, we can express the voltage across each of the three elements A, B, and C (connected in a single loop) of $v_A$, $v_B$, and $v_C$ by the relationships:
