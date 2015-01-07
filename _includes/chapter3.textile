@@ -4,7 +4,7 @@ We have seen that all circuit elements have nodes to contact the element.  Now i
 p=(#figure3-1). !{width:50%}img/3/circuitsF3.1.jpg(Figure 3.1)!:img/3/circuitsF3.1.jpg
 _Figure 3.1  Voltage Source and Resistor Connected to the Same Node 1_
 
-For this ‘circuit’ of Figure 3.1 we could write the two element constitutive relations as:
+For this 'circuit' of Figure 3.1 we could write the two element constitutive relations as:
 
 p=. $(v_{n1} - v_{n2}) - V_S = 0$
 
@@ -48,9 +48,9 @@ So as another example lets apply the Kirchoff’s Current Law constraint to node
 
 _Constitutive Relations:_
 
-p=. $Fixed Voltage Source: (V_{n1} - V_{n2}) - V_S = 0$
+p=. $Fixed Voltage Source: (v_{n1} - v_{n2}) - V_S = 0$
 
-p=. $Resistor: (V_{n1} - V_{n2}) - i_R R = 0$
+p=. $Resistor: (v_{n1} - v_{n2}) - i_R R = 0$
 
 _Kirchoff's Current Law:_
 
@@ -123,7 +123,7 @@ We may also apply Kirchoff's Voltage Law to the earlier circuit example of "Figu
 
 p=. $-V_S + V_R = 0$
 
-where, the resistor element voltage $V_R$ is by our conventions ($v_{n1}$ – $v_{n2}$).
+where, the resistor element voltage $V_R$ is by our conventions $(v_{n1} – v_{n2})$.
 
 We will see that the solution to multi-node circuits is most often achieved by use of node voltages rather than element voltages.  However, both have their place and are used according to convenience of the problem to be solved.  In a later Chapter 4, we develop a method to solve circuits that can be applied to solve any circuit.  It is called the 'Node Method'.
 
@@ -160,7 +160,7 @@ p=. $P_{total} = v_Ai_A +v_Bi_B + v_Ci_C = e_2 i_A - e_1 i_A + e_3 i_B - e_1 i_B
 
 Collecting terms:
 
-p=. $P_{total} = e_2(i_A - i_C) + e_1_(-i_A - i_B) + e_3(i_B + i_C)
+p=. $P_{total} = e_2(i_A - i_C) + e_1_(-i_A - i_B) + e_3(i_B + i_C)$
 
 But now we apply Kirchoff’s Current Law to each of the nodes 1, 2 and 3 as follows:
 
@@ -189,7 +189,7 @@ _Figure 3.6  Three Equal Voltage Source Circuit_
 
 If we sum the voltage drops around the complete loop: from node A to node B, from node B to node C and from node C to node A, we obtain:
 
-p=. $-5 -5 +5 = -5 does-not-equal:  0$
+p=. $-5 -5 +5 = -5 :does-not-equal:  0$
 
 _Impossible_ !!!  A violation of Kirchoff's Current Law. This particular circuit creates an inherent CONFLICT between element constraints and circuit constraints.  Hence this circuit has NO SOLUTION.  In general it is inconsistent to create a circuit with inherently conflicting constraints.  Though it may be interesting to speculate what would ‘break’ if such a conflicted circuit was actually built, it is more likely it would cause dangerous extreme overheating and should not be attempted.  For example a wire connected across a battery is one way to cause a battery to catch fire or worse [Danger - Do NOT Try This !].
 
