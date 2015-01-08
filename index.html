@@ -59,6 +59,11 @@ title: CMCourse Book Chapters
               <li><a href="#chapter3-contradiction">Contradiction of Constraints</a></li>
               <li><a href="#chapter3-circuit-conclusion">Conclusion</a></li>
 			</ul>
+        <li>
+			<a href="#chapter4">Chapter-4 General and Node-Voltage Methods for Analyzing Circuits</a>
+            <ul class="nav">
+              <li><a href="#chapter4-general-solution">General Method of Solution</a></li>
+			</ul>
 		</li>
       </ul>
     </div>
@@ -92,6 +97,15 @@ title: CMCourse Book Chapters
       {% include chapter3.textile %}
       {% endcapture %}
       {{ include_to_textilize3 | textilize }}
+    </div>
+    
+    <!-- chapter 4 -->
+    <div class="chapter">
+      <h2 id="chapter4">Chapter 4: General and Node-Voltage Methods for Analyzing Circuits</h2>
+      {% capture include_to_textilize4 %}
+      {% include chapter4.textile %}
+      {% endcapture %}
+      {{ include_to_textilize4 | textilize }}
     </div>
   
   </div> <!-- /book -->
