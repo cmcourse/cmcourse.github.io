@@ -5,7 +5,7 @@ How we actually solve for all the voltages and currents in a circuit is the topi
 
 h4(#chapter4-general-soln). 4.1 - General Method of Solution
 
-In general a circuit of N elements will involve 2N variables, the N voltages across each element and the N currents through each element.  For example, the circuit in "Figure 4.1":#figure4-1 has 4 elements connected in a single loop and hence a total of 8 variable values to be determined by the circuit analysis. The 2N variables are the 4 element-voltages,$V-1$, $V_2$, $V_3$, and $V_4$ (across each element), and the 4 individual element-currents of $i_1$, $i_2$, $i_3$, and $i_4$ (through each element).
+In general a circuit of N elements will involve 2N variables, the N voltages across each element and the N currents through each element.  For example, the circuit in "Figure 4.1":#figure4-1 has 4 elements connected in a single loop and hence a total of 8 variable values to be determined by the circuit analysis. The 2N variables are the 4 element-voltages,$V_1$, $V_2$, $V_3$, and $V_4$ (across each element), and the 4 individual element-currents of $i_1$, $i_2$, $i_3$, and $i_4$ (through each element).
 
 p=(#figure4-1). !{width:50%}img/4/circuitsF4.1.jpg(Figure 4.1)!:img/4/circuitsF4.1.jpg
 _Figure 4.1  Example Circuit with 4 Elements Connected in One Loop_
