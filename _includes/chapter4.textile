@@ -1,0 +1,12 @@
+
+At this point we have determined that all circuits constrain two variables, voltage and current in order to cause a transfer of power or information from an electric source to an electric load.  The constraints are imposed in two ways: (1) by the specific properties of individual _circuit elements_ each constrain voltage and current at that element only, *and* (2) independently by the inherent _conservation laws_ that constrain how voltages and currents must be distributed amongst multiple elements connected in a circuit.
+
+How we actually solve for all the voltages and currents in a circuit is the topic of this section.  At first we look at a fully general method of solution, which is based on direct application of all constraints, but becomes awkward for large circuits.  Then we develop a very convenient, powerful and universal solution method, called the _node method_.  For completeness another solution method, called the mesh method is also presented.
+
+h4(#chapter4-general-soln). 4.1 - General Method of Solution
+
+In general a circuit of N elements will involve 2N variables, the N voltages across each element and the N currents through each element.  For example, the circuit in "Figure 4.1":#figure4-1 has 4 elements connected in a single loop and hence a total of 8 variable values to be determined by the circuit analysis. The 2N variables are the 4 element-voltages,$V-1$, $V_2$, $V_3$, and $V_4$ (across each element), and the 4 individual element-currents of $i_1$, $i_2$, $i_3$, and $i_4$ (through each element).
+
+p=(#figure4-1). !{width:50%}img/4/circuitsF4.1.jpg(Figure 4.1)!:img/4/circuitsF4.1.jpg
+_Figure 4.1  Example Circuit with 4 Elements Connected in One Loop_
+
