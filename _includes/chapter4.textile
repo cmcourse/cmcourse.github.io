@@ -173,7 +173,7 @@ p=. $-(9/5) + (4/5) + (1) =  0$  good, confirmed with KCL.
 
 We can also calculate the power dissipated in the three resistor elements.
 
-p=. $P_{R1} = (6-v_{N2})(i_1) = ((30-12)/5)$ volt (9/5) mA = 162/25  mWatt
+p=. $P_{R1} = (6-v_{N2})(i_1) = ((30-12)/5)$ volt (9/5) mA = 162/25  milliWatt
 
 p=. $P_{R2} = (v_{n2} - 0)(i_2) = (12/5)(4/5) = 48/25$ milliwatt
 
@@ -181,7 +181,7 @@ p=. $P_{R3} = (v_{n3} - 0)(i_3) = (1)(1) = 1$ milliwatt
 
 The total power dissipated in the entire circuit is:
 
-p=. (162/25)-(270/25)+ (35/25) + 1 + (48/25) = (270-270)/25 = 0$
+p=. $(162/25)-(270/25) + (35/25) + 1 + (48/25) = (270-270)/25 = 0$
 
 Notice that the sum of the power dissipated in ALL 5 elements is 0 watts !!  This is expected from the total power dissipated constraint = 0, see Section 3.3.
 
@@ -197,7 +197,7 @@ The mesh method, instead of relying on KCL, the current constraint at nodes, use
 p=(#figure4-4). !{width:50%}img/4/circuitsF4.4.jpg(Figure 4.4)!:img/4/circuitsF4.4.jpg
 _Figure 4.4  Loop Meshes in Example Problem_
 
-Note here we consider all _individual element voltages_, $V_{R1}, V_{R2}$, etc., and loop currents $i_A$ and $i_B$ , and not the individual element currents nor node voltages.  For the loops, there is a 3rd possible loop, Loop-C, that follows the 'exterior' path around $R_1$, I_{S2}, R_3$, and $V_{S1}$.  However, it is not an independent since Loop-A and Loop-B already involve all those elements, so loop-C has no new information and is therefore redundant and not needed.
+Note here we consider all _individual element voltages_, $V_{R1}, V_{R2}$, etc., and loop currents $i_A$ and $i_B$ , and *not* the individual element currents nor node voltages.  For the loops, there is a 3rd possible loop, Loop-C, that follows the 'exterior' path around $R_1$, I_{S2}, R_3$, and $V_{S1}$.  However, it is not an independent since Loop-A and Loop-B already involve all those elements, so loop-C has no new information and is therefore redundant and not needed.
 
 The loop equations (_sum voltage drops_) for these two independent meshes are, for:
 
@@ -207,7 +207,7 @@ p=. $-v_{R1} + v_{R2} - v_{S1} = 0$  and
 
 Loop B, clockwise:
 
-p=. $-v_{R2} + v_{S2} + v_{R3} = 0$
+p=. $- v_{R2} + v_{S2} + v_{R3} = 0$
 
 While these equations appear simple, the difficulty with the mesh method is that there are additional variables that must be calculated. _The loop currents are *not necessarily* the element currents_.  So the loop current variables calculated are not always the variables of interest.  [Recall with the node method, the variables were always the node voltages and elements currents, both are the variables of interest.]
 
@@ -221,9 +221,9 @@ p=. $-(-i_A)(R_1) + (i_A - i_B)(R_2) - V_{S1} = 0$
 
 For Loop-B:
 
-p=. $V_{S2} + (i_B)(R_3) - (i_A - i_B)(R_2) = 0
+p=. $V_{S2} + (i_B)(R_3) - (i_A - i_B)(R_2) = 0$
 
-and the current source, $I_{S2}, is the Loop-B current $i_B$.  We can solve these for the loop currents.  Then the element voltage can be calculated.  So even for this small example, the mesh method, although it can achieve a complete solution, is not as effective as the node method.
+and the current source, $I_{S2}$, is the Loop-B current $i_B$.  We can solve these for the loop currents.  Then the element voltage can be calculated.  So even for this small example, the mesh method, although it can achieve a complete solution, is not as effective as the node method.
 
 *** _Special Case Loop Method_
 
