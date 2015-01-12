@@ -233,7 +233,7 @@ We can use the loop method in the example depicted in Figure 4.5.  Here suppose 
 
 
 p=(#figure4-5). !{width:50%}img/4/circuitsF4.5.jpg(Figure 4.5)!:img/4/circuitsF4.5.jpg
-_Figure 4.5  Single Element Voltage Solution by a KVL Loop_
+_Figure 4.5  Single Element Voltage Solution by a KVL Loop Method_
  
 So in this case we can write KVL voltage-drops around Loop-C as:
 
