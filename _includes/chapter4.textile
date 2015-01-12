@@ -97,7 +97,7 @@ _Figure 4.3  Example 4-Node Circuit, Labeled for Node-Voltage Method of Solution
 
 *STEP 1:*
 
-We have labeled the three nodes voltages: $v_{n1}, v_{n2}, and v_{n3}, where the reference node is $v_{n4} = 0$.  However, the node voltage vn1 is already fixed at the value of 6 volts due to the constraint imposed by the voltage source.  Thus in this example problem there are actually only 2 unknown node voltages, $v_{n2}$ and $v_{n3}$.  So the node-voltage method has reduced the number of variables from 10 in the ‘general method’ of solution to just 2 variables.  Hence in this 'node-voltage' method we will need only 2 independent equations and the algebra effort required for solution is greatly reduced.
+We have labeled the three nodes voltages: $v_{n1}, v_{n2}, and v_{n3}$, where the reference node is $v_{n4} = 0$.  However, the node voltage vn1 is already fixed at the value of 6 volts due to the constraint imposed by the voltage source.  Thus in this example problem there are actually only 2 unknown node voltages, $v_{n2}$ and $v_{n3}$.  So the node-voltage method has reduced the number of variables from 10 in the 'general method' of solution to just 2 variables.  Hence in this 'node-voltage' method we will need only 2 independent equations and the algebra effort required for solution is greatly reduced.
 
 *STEP 2:*
 
@@ -114,3 +114,76 @@ Where by the current source constraint we already know that:
 p=. $i_5 = 1$
 
 Now in this node-voltage method of solution we write the currents in these KCL equations in terms of the node voltages by _direct application of the element constitutive constraints for the currents_.  And we express the element voltages as the difference of two node voltage values.  Hence we write the resistive element currents as:
+
+p=. $i_1 = (6-v_{n2})/2$
+
+p=. $i_2 = (v_{n2}-0)/3$
+
+p=. $i_3 = (v_{n3}-0)/1$
+
+By substitution into the KCL we get the following two equations for the node voltages:
+
+p=. At node n_2: $-(6-v_{n2})/2 + (v_{n2} - 0)/3 +1 = 0$
+
+p=. At node n_{n3}: $1+(v_{n3} -0)/1 = 0$
+
+Since $V_{S1}, I_{S2}, R_1, R_2, and R_3$ are all known element values we can easily collect terms in these two equations for $v_{n2}$ and $v_{n3}$ :
+
+p=. $v_{n2}(1/2 + 1/3) = 6/2 - 1 = 2$ volts
+
+p=. $v_{n3} =$ (1mA) (1kohm) = 1 volt
+
+*STEP 3:*
+
+Solving for node voltages
+
+p=. $v_{n2} = (6/5)(3-1) = 12/5$ volts
+
+and
+
+p=. $v_{n3} = 1$ volt
+
+*STEP 4:*
+
+All three node voltages are now known.  By substitution into the resistor constraints and by KCL (and the current source constraint) we can now calculate the 5 currents (where we know i5 = 1mA), as:
+
+At $R_1$:
+
+p=. $i_1 = (v_{n1} - v__{n2})R_3 = (6-(12/5))/2k = (30-12)/10k = 9/5$ mA
+
+p=. $i_2 = (v_{n2}-0)/R_2 = (12/5)/3k = 1$ mA
+
+p=. $i_3 = (v_{n3}-0)/R_3} = (1-0)/1k = 1$ mA
+
+Note the fixed voltage source DOES NOT constrain the current i4, so we must calculate this current value by application of KCL at nodes n1.
+
+p=. At node $n_1$: i_4 + i_1 = 0
+
+So the $i_4$ current is:
+
+p=. $i_4 = -i_1 = -9/5$ mA.
+
+We can check the answers by confirmation of KCL at node n2:
+
+p=.  $-i_1 _ i_2 +i_5 = 0$
+
+substitute:
+
+p=. $-(9/5) + (4/5) + (1) =  0$  good, confirmed with KCL.
+
+We can also calculate the power dissipated in the three resistor elements.
+
+p=. $P_{R1} = (6-v_{N2})(i_1) = ()(30-12)/5)$ volt (9/5) mA = 162/25  mWatt
+
+p=. $P_{R2} = (v_{n2}-0)(i_2) = (12/5)(4/5) = 48/25 milliwatt
+
+p=. $P_{R3} = (v_{n3}-0)(i_3) = (1)(1) = 1$ milliwatt
+
+The total power dissipated in the entire circuit is:
+
+p=. (162/25)-(270/25)+ (35/25) + 1 + (48/25) = (270-270)/25 = 0$
+
+Notice that the sum of the power dissipated in ALL 5 elements is 0 watts !!  This is expected from the total power dissipated constraint = 0, see Section 3.3.
+
+The node-voltage method is usually most convenient for hand calculations since it immediately solves for the node voltages. It is then straight-forward to calculate any specific quantity, such as an element voltage, current or power.  This makes a very favorable way to minimize the effort to determine just the quantity desired.
+
