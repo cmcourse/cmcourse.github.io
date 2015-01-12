@@ -67,6 +67,11 @@ title: CMCourse Book Chapters
               <li><a href="#chapter4-node-method">The 'Node Voltage Method' of Analysis</a></li>
               <li><a href="#chapter4-mesh-method">The 'Mesh Loop Method' of Analysis</a></li>
 			</ul>
+        <li>
+			<a href="#chapter5">Chapter-5 Special Circuit Topology Configurations</a>
+            <ul class="nav">
+              <li><a href="#chapter5-series-connection">Series Connection: Single-Loop Restriction</a></li>
+			</ul>
 		</li>
       </ul>
     </div>
@@ -110,7 +115,15 @@ title: CMCourse Book Chapters
       {% endcapture %}
       {{ include_to_textilize4 | textilize }}
     </div>
-  
+    
+    <!-- chapter 5 -->
+    <div class="chapter">
+      <h2 id="chapter5">Chapter 5: Special Circuit Topologies</h2>
+      {% capture include_to_textilize4 %}
+      {% include chapter5.textile %}
+      {% endcapture %}
+      {{ include_to_textilize4 | textilize }}
+    </div>  
   </div> <!-- /book -->
 
 </div>
