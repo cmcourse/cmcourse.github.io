@@ -93,17 +93,20 @@ Specifically the 4-steps are:
 We can illustrate the process of this 'node method' using the same 4-node, 5-element problem as in Section 4.2 and "Figure 4.2":#figure4-2,.  Now redrawn in "Figure 4.3":#figure4-3, with the unknown node voltages labeled, and the 'ground' reference node identified as node $n_4$, and hence $v_{n4} = 0$.  For clarity in writing KCL constraints the branch current are identified.
 
 p=(#figure4-3). !{width:50%}img/4/circuitsF4.3.jpg(Figure 4.3)!:img/4/circuitsF4.3.jpg
-_Figure 4.3  4-Node Circuit, Labeled for Node-Voltage Method Solution_
+_Figure 4.3  Example 4-Node Circuit, Labeled for Node-Voltage Method of Solution_
 
 *STEP 1:*
+
 We have labeled the three nodes voltages: $v_{n1}, v_{n2}, and v_{n3}, where the reference node is $v_{n4} = 0$.  However, the node voltage vn1 is already fixed at the value of 6 volts due to the constraint imposed by the voltage source.  Thus in this example problem there are actually only 2 unknown node voltages, $v_{n2}$ and $v_{n3}$.  So the node-voltage method has reduced the number of variables from 10 in the ‘general method’ of solution to just 2 variables.  Hence in this 'node-voltage' method we will need only 2 independent equations and the algebra effort required for solution is greatly reduced.
 
 *STEP 2:*
-We write the KCL equations for each of the two nodes with unknown voltages.  In this case these are for the two node voltages, $v_{n2} and v_{n3}$.
+
+We write the KCL equations for each of the two nodes with unknown voltages.  In this case these are for the two node voltages, $v_{n2}$ and $v_{n3}$.
 
 The two KCL equations _at these nodes_ in terms of the branch currents are: [Here currents are in units of milliamps and resistance values will be in kilohms.]
 
 p=. At node $n_2$: $-i_1 + i_2 + i_5 = 0$       and
+
 p=. At node $n_3$: $1 + i_3 = 0$   or   $i_3 = 1$
 
 Where by the current source constraint we already know that:
