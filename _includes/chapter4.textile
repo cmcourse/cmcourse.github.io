@@ -211,7 +211,7 @@ p=. $- v_{R2} + v_{S2} + v_{R3} = 0$
 
 While these equations appear simple, the difficulty with the mesh method is that there are additional variables that must be calculated. _The loop currents are *not necessarily* the element currents_.  So the loop current variables calculated are not always the variables of interest.  [Recall with the node method, the variables were always the node voltages and elements currents, both are the variables of interest.]
 
-For example with the above Loop-A and Loop-B, the element current in resistor $R_1$, according to the element polarity convention, is just $-i_A$. Even more confusing, the current in the center resistor $R_2$ has two parts: $i_A$ AND $i_B$, so the actual real current in $R_2$ is the _*difference*_: $(i_A - i_B)$, a major inconvenience and complication !
+For example with the above Loop-A and Loop-B, the element current in resistor $R_1$, according to the element polarity convention, is just $-i_A$. Even more confusing, the current in the center resistor $R_2$ has two parts: $i_A$ AND $i_B$, so the actual real current in $R_2$ is the _*difference*_ of two currents: $(i_A - i_B)$, a major inconvenience and complication !
 
 With this method we get the following equations:
 
