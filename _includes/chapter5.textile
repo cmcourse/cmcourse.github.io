@@ -5,10 +5,10 @@ In this section we apply our knowledge of constraints for elements (the constitu
 h4(#chapter5-series-restriction). 5.1 - Series Connection: Single-Loop Restriction
 
 
-Consider the first special topology the _single loop_ circuit structure, see "Figure 5.1":#figure5-1.  Here we mean that all elements of the circuit are connected so they form a single loop.  Because the circuit is a single loop, and because of our KCL current law, there can be only one current in all elements in the loop.  "Figure 5.1a":#figure5-1a depicts this arrangement, called a series connection.
+Consider the first special topology the _single loop_ circuit structure, see "Figure 5.1":#figure5-1.  Here we mean that all elements of the circuit are connected so they form a single loop.  Because the circuit is a single loop, and because of our KCL current law, there can be only one current in all elements in the loop.  "Figure 5.1":#figure5-1 depicts this arrangement, called a series connection.
 
 table(#figure5-1).
-|\2=. !{width:90%}img/5/circuitsF5.1a.jpg(Figure 5.1)!:img/1/circuitsF5.1a.jpg |=. !{width:60%}img/5/circuitsF5.1b.jpg(Figure 5.1)!:img/1/circuitsF5.1b.jpg
+|\2=. !{width:99%}img/5/circuitsF5.1a.jpg(Figure 5.1)!:img/1/circuitsF5.1a.jpg |=. !{width:50%}img/5/circuitsF5.1b.jpg(Figure 5.1)!:img/1/circuitsF5.1b.jpg
 |=. (a) Series (Single Loop) Restriction |=. (b) NOT Single-Loop |
 |\2=. _Figure 5.1  Series Connection_ |
 
