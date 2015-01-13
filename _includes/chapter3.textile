@@ -36,7 +36,7 @@ p=. h2. $\sum_{j=1 \ \mbox(all - branches)}^m i_j = 0$
 p=. 
 \h3. $\sum_{j=1 \ \mbox(all - branches)}^m i_j = 0$
 
-\p=. p{color:blue}. $\sum_{j=1 \ \mbox(all - branches)}^m i_j = 0$
+p=. p{color:blue}. $\sum_{j=1 \ \mbox(all - branches)}^m i_j = 0$
 
 p=(#eq3-1). $Sum of all 'm' branch currents i_j must = 0$ where $i_j$ is the branch current _leaving_ the node on branch '$j$'
 
