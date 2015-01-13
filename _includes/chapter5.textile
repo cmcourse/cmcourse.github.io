@@ -8,7 +8,7 @@ h4(#chapter5-series-restriction). 5.1 - Series Connection: Single-Loop Restricti
 Consider the first special topology the _single loop_ circuit structure, see "Figure 5.1":#figure5-1.  Here we mean that all elements of the circuit are connected so they form a single loop.  Because the circuit is a single loop, and because of our KCL current law, there can be only one current in all elements in the loop.  "Figure 5.1a":#figure5-1a depicts this arrangement, called a series connection.
 
 table(#figure5-1).
-|\2=. !{width:90%}img/5/circuitsF5.1a.jpg(Figure 5.1)!:img/1/circuitsF5.1a.jpg |=. !{width:40%}img/5/circuitsF5.1b.jpg(Figure 5.1)!:img/1/circuitsF5.1b.jpg
+|\2=. !{width:90%}img/5/circuitsF5.1a.jpg(Figure 5.1)!:img/1/circuitsF5.1a.jpg |=. !{width:90%}img/5/circuitsF5.1b.jpg(Figure 5.1)!:img/1/circuitsF5.1b.jpg
 |=. (a) Series (Single Loop) Restriction |=. (b) NOT Single-Loop |
 |\2=. _Figure 5.1  Series Connection_ |
 
@@ -18,3 +18,49 @@ p=(#figure5-1). !{width:35%}img/5/circuitsF5.1a.jpg(Figure 5.1a)!:img/5/circuits
 _Figure 5.1a  _
 
 In the series circuit, "Figure 5.1a":#figure5-1a, all 4 elements are connected end-to-end to form a _single loop_.  There is a single current, '$i$', in the circuit.  This current, '$i$', passes _equally_ through resistors $R_1, R_2, R_3$, and fixed voltage source $V_S$.  There is no other path for curent in this current, so KCL requires current, $i$, must be of _*equal* value in all 4 elements_.
+
+However, if we now add another element so that there is NOT a single loop, but instead two (or more) loops, see Figure 5.1b; then due to KCL at node n2, the current '$i_1$' is NOT the same in all 5 elements.  The added resistor $R_4$ in Figure 5.1b causes the current '$i_1$' to split so a portion, '$i_2$', continues on to go through $R_2$ and $R_3$; and a portion, '$i_4$', branches through $R_4$.  In Figure 5.1b, it is no longer true that the same current '$i_1$' passes through all elements.  This non-equal current is the direct consequence of there being _more than a single loop_.  That $i_2$ cannot not equal $i_1$ in Figure 5.1b, is proved by KCL at node n2:
+
+p=. $-i_1 + i_2 + i_4 = 0$
+
+Since $i_4$ is not zero, this means the current, $i_2$, in resistors $R_2$ and $R_3$ cannot equal that in resistor $R_1$.
+
+So the single-loop circuit restriction causes a special result, all currents must be equal.  A _'series connection'_ of elements thus simply means those elements in series are connected such that they all have the _same current.  If the elements do not have the same current, those elements cannot be in 'series'_.
+
+** _A Single Loop Circuit Example: the Voltage Divider_
+
+Lets consider a circuit with 3 elements as depicted in "Figure 5.2":#figure5-2.  This circuit has a single loop with a fixed voltage source and 2 resistors.  Because the 2 resistors are in the same loop we will know they must have the same current, I = iR1 = iR2, and are in series.
+
+p=(#figure5-2). !{width:50%}img/5/circuitsF5.2.jpg(Figure 5.2)!:img/5/circuitsF5.2.jpg
+_Figure 5.2  Example Circuit, 3 Elements in Single Loop _
+
+Now we employ our node-method of circuit solution to solve this circuit.
+
+*STEP-1:*
+
+In this circuit we have already selected the reference node (n3) and set the voltage of it to zero.  This is indicated by the 'ground' symbol at node n3, which means the node is connected to zero volts, $v_{n3} = 0$.  All currents and node voltages have also been labeled.
+
+*STEP-2:*
+
+We write the conservation law constraints, KCL, and directly apply the resistor constitutive constraints to express the current values.
+
+p=. At node n2: $-i_{R1} + i_{R2} = 0$
+And by substitution:
+
+p=. $(-(v_{n1} - v{n2})/R_1) + ((v_{n2} - 0)/R_2) = 0$
+
+additionally, because of the constraint by the fixed voltage source at node n1 to node n3:
+
+p=. $(v_{n1} - 0) - V_S = 0$,   so
+
+p=. $v_{n1} = v_{S}$
+
+p=. divide by R1: $(v_{n1}/R_1) = (V_S/R_1)$
+
+p=. and substitute: $v_{n2}((1/R_1) + (1/R_2)) = V_S/R_1$
+
+p=. so finally: $v_{n2} = (R_2/(R_1 + R_2))V_S$
+
+This result reveals that while the voltage at node n1 is the source voltage, $V_S$, the voltage at node n2, $v_{n2}, is a _constant fraction_ of the fixed source voltage $V_S$.  The fraction value is determined only by the resistor resistance values $R_1$ and $R_2$.
+
+This fixed fraction single-loop circuit, is often termed a _*voltage divider*_, and is a very common circuit.  It is a single loop circuit with _two resistors connected in *series*_.  Lets clearly identify the voltage divider configuration.  Both circuits in Figure 5.3 are the same voltage divider configuration, just arranged differently, and both circuits yield exactly the same outcome.  There is _one loop_ in each and hence there is a single current, $i$, that passes through all three circuit elements.
