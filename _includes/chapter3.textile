@@ -34,7 +34,7 @@ These new 'Rule-2' constraints come from physical limits which the real world im
 <h3>
 p=. $\sum_{j=1 \ \mbox(all - branches)}^m i_j = 0$ </h3>
 
-p{color:red}.<h4>
+<p{color:red}><h4>
 p=. $\sum_{j=1 \ \mbox(all - branches)}^m i_j = 0$ </h4>
 
 <h4>
