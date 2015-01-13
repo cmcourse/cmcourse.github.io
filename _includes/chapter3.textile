@@ -37,8 +37,8 @@ p=. $\sum_{j=1 \ \mbox(all - branches)}^m i_j = 0$ </h3>
 <h4>
 p=. $\sum_{j=1 \ \mbox(all - branches)}^m i_j = 0$ </h4>
 
-<p{color:red}>
-<h4>
+
+<h4> <p{color:red}>
 p=. $\sum_{j=1 \ \mbox(all - branches)}^m i_j = 0$  </h4>
 </color:red>
 
