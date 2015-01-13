@@ -41,9 +41,9 @@ p{color:red}. $\sum_{j=1 \ \mbox(all - branches)}^m i_j = 0$ </h4>
 
 <h4>
 p=(#eq3-1). $\sum_{j=1 \ \mbox(all - branches)}^m i_j = 0$
-p. where $i_j$ is the branch current _leaving_ the node on branch '$j$'
+where $i_j$ is the branch current _leaving_ the node on branch '$j$'
 
-where, the currents $i_j$ are the m branch currents that leave the node.  This constraint can be illustrated by a 4-branch node example, as shown in "Figure 3.3":#figure3-3,
+p. where, the currents $i_j$ are the m branch currents that leave the node.  This constraint can be illustrated by a 4-branch node example, as shown in "Figure 3.3":#figure3-3,
 
 p=(#figure3-3). !{width:35%}img/3/circuitsF3.3a.jpg(Figure 3.3)!:img/3/circuitsF3.3a.jpg
 _Figure 3.3  Kirchoff's Current Law Applied at an Example 4-Branch Node_
