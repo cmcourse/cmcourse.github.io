@@ -8,14 +8,9 @@ h4(#chapter5-series-restriction). 5.1 - Series Connection: Single-Loop Restricti
 Consider the first special topology the _single loop_ circuit structure, see "Figure 5.1":#figure5-1.  Here we mean that all elements of the circuit are connected so they form a single loop.  Because the circuit is a single loop, and because of our KCL current law, there can be only one current in all elements in the loop.  "Figure 5.1a":#figure5-1a depicts this arrangement, called a series connection.
 
 table(#figure5-1).
-|\2=. !{width:90%}img/5/circuitsF5.1a.jpg(Figure 5.1)!:img/1/circuitsF5.1a.jpg |=. !{width:90%}img/5/circuitsF5.1b.jpg(Figure 5.1)!:img/1/circuitsF5.1b.jpg
+|\2=. !{width:90%}img/5/circuitsF5.1a.jpg(Figure 5.1)!:img/1/circuitsF5.1a.jpg |=. !{width:60%}img/5/circuitsF5.1b.jpg(Figure 5.1)!:img/1/circuitsF5.1b.jpg
 |=. (a) Series (Single Loop) Restriction |=. (b) NOT Single-Loop |
 |\2=. _Figure 5.1  Series Connection_ |
-
-Test
-
-p=(#figure5-1). !{width:35%}img/5/circuitsF5.1a.jpg(Figure 5.1a)!:img/5/circuitsF5.1a.jpg
-_Figure 5.1a  _
 
 In the series circuit, "Figure 5.1a":#figure5-1a, all 4 elements are connected end-to-end to form a _single loop_.  There is a single current, '$i$', in the circuit.  This current, '$i$', passes _equally_ through resistors $R_1, R_2, R_3$, and fixed voltage source $V_S$.  There is no other path for curent in this current, so KCL requires current, $i$, must be of _*equal* value in all 4 elements_.
 
@@ -31,8 +26,8 @@ So the single-loop circuit restriction causes a special result, all currents mus
 
 Lets consider a circuit with 3 elements as depicted in "Figure 5.2":#figure5-2.  This circuit has a single loop with a fixed voltage source and 2 resistors.  Because the 2 resistors are in the same loop we will know they must have the same current, I = iR1 = iR2, and are in series.
 
-p=(#figure5-2). !{width:50%}img/5/circuitsF5.2.jpg(Figure 5.2)!:img/5/circuitsF5.2.jpg
-_Figure 5.2  Example Circuit, 3 Elements in Single Loop _
+p=(#figure5-2). !{width:30%}img/5/circuitsF5.2.jpg(Figure 5.2)!:img/5/circuitsF5.2.jpg
+_Figure 5.2  Example Circuit, 3 Elements in Single Loop_
 
 Now we employ our node-method of circuit solution to solve this circuit.
 
@@ -54,12 +49,15 @@ additionally, because of the constraint by the fixed voltage source at node n1 t
 p=. $(v_{n1} - 0) - V_S = 0$,   so
 
 p=. $v_{n1} = v_{S}$
+divide by R1: 
 
-p=. divide by R1: $(v_{n1}/R_1) = (V_S/R_1)$
+p=. $(v_{n1}/R_1) = (V_S/R_1)$
+and substitute:
 
-p=. and substitute: $v_{n2}((1/R_1) + (1/R_2)) = V_S/R_1$
+p=. $v_{n2}((1/R_1) + (1/R_2)) = V_S/R_1$
+so finally:
 
-p=. so finally: $v_{n2} = (R_2/(R_1 + R_2))V_S$
+p=. $v_{n2} = (R_2/(R_1 + R_2))V_S$
 
 This result reveals that while the voltage at node n1 is the source voltage, $V_S$, the voltage at node n2, $v_{n2}, is a _constant fraction_ of the fixed source voltage $V_S$.  The fraction value is determined only by the resistor resistance values $R_1$ and $R_2$.
 
