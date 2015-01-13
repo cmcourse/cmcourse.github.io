@@ -33,7 +33,7 @@ These new 'Rule-2' constraints come from physical limits which the real world im
 
 p=. h2. $\sum_{j=1 \ \mbox(all - branches)}^m i_j = 0$
 
-p{h3; =}. $\sum_{j=1 \ \mbox(all - branches)}^m i_j = 0$
+p{h3}. $\sum_{j=1 \ \mbox(all - branches)}^m i_j = 0$
 
 p{color:red; h2}. $\sum_{j=1 \ \mbox(all - branches)}^m i_j = 0$
 
