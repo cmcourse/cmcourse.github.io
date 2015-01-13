@@ -33,6 +33,8 @@ These new 'Rule-2' constraints come from physical limits which the real world im
 
 p=. $\sum x_i$
 
+p=. $\sum_{j=1 \ \mbox{({\all branches})}}^m$
+
 p=(#eq3-1). $Sum of all 'm' branch currents i_j must = 0$ where $i_j$ is the branch current _leaving_ the node on branch '$j$'
 
 where, the currents $i_j$ are the m branch currents that leave the node.  This constraint can be illustrated by a 4-branch node example, as shown in "Figure 3.3":#figure3-3,
