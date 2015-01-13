@@ -5,16 +5,16 @@ In this section we apply our knowledge of constraints for elements (the constitu
 h4(#chapter5-series-restriction). 5.1 - Series Connection: Single-Loop Restriction
 
 
-Consider the first special topology the _single loop_ circuit structure, see "Figure 5.1":#figure5-1.  Here we mean that all elements of the circuit are connected so they form a single loop.  Because the circuit is a single loop, and because of our KCL current law, there can be only one current in all elements in the loop.  "Figure 5.1":#figure5-1 depicts this arrangement, called a series connection.
+Consider the first special topology the _single loop_ circuit structure, see "Figure 5.1a":#figure5-1a.  Here we mean that all elements of the circuit are connected so they form a single loop.  Because the circuit is a single loop, and because of our KCL current law, there can be only one current in all elements in the loop.  "Figure 5.1a":#figure5-1a depicts this arrangement, called a series connection.
 
 table(#figure5-1).
-|\2=. !{width:99%}img/5/circuitsF5.1a.jpg(Figure 5.1)!:img/1/circuitsF5.1a.jpg |=. !{width:60%}img/5/circuitsF5.1b.jpg(Figure 5.1)!:img/1/circuitsF5.1b.jpg |
-|=. (a) Series (Single Loop) Restriction |=. (b) NOT Single-Loop |
+|\2=. !{width:99%}img/5/circuitsF5.1a.jpg(Figure 5.1)!:img/1/circuitsF5.1a.jpg |=. !{width:70%}img/5/circuitsF5.1b.jpg(Figure 5.1)!:img/1/circuitsF5.1b.jpg |
+|/2=. (a) Series (Single Loop) Restriction |=. (b) NOT Single-Loop |
 |\2=. _Figure 5.1  Series Connection_ |
 
 In the series circuit, "Figure 5.1a":#figure5-1a, all 4 elements are connected end-to-end to form a _single loop_.  There is a single current, '$i$', in the circuit.  This current, '$i$', passes _equally_ through resistors $R_1, R_2, R_3$, and fixed voltage source $V_S$.  There is no other path for curent in this current, so KCL requires current, $i$, must be of _*equal* value in all 4 elements_.
 
-However, if we now add another element so that there is NOT a single loop, but instead two (or more) loops, see Figure 5.1b; then due to KCL at node n2, the current '$i_1$' is NOT the same in all 5 elements.  The added resistor $R_4$ in Figure 5.1b causes the current '$i_1$' to split so a portion, '$i_2$', continues on to go through $R_2$ and $R_3$; and a portion, '$i_4$', branches through $R_4$.  In Figure 5.1b, it is no longer true that the same current '$i_1$' passes through all elements.  This non-equal current is the direct consequence of there being _more than a single loop_.  That $i_2$ cannot not equal $i_1$ in Figure 5.1b, is proved by KCL at node n2:
+However, if we now add another element so that there is NOT a single loop, but instead two (or more) loops, see "Figure 5.1b":#figure5-1b; then due to KCL at node n2, the current '$i_1$' is NOT the same in all 5 elements.  The added resistor $R_4$ in "Figure 5.1b":#figure5-1b causes the current '$i_1$' to split so a portion, '$i_2$', continues on to go through $R_2$ and $R_3$; and a portion, '$i_4$', branches through $R_4$.  In Figure 5.1b, it is no longer true that the same current '$i_1$' passes through all elements.  This non-equal current is the direct consequence of there being _more than a single loop_.  That $i_2$ cannot not equal $i_1$ in Figure 5.1b, is proved by KCL at node n2:
 
 p=. $-i_1 + i_2 + i_4 = 0$
 
