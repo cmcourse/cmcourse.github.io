@@ -22,7 +22,7 @@ Since $i_4$ is not zero, this means the current, $i_2$, in resistors $R_2$ and $
 
 So the single-loop circuit restriction causes a special result, all currents must be equal.  A _'series connection'_ of elements thus simply means those elements in series are connected such that they all have the _same current.  If the elements do not have the same current, those elements cannot be in 'series'_.
 
-** _A Single Loop Circuit Example: the Voltage Divider_
+** _5.1.1 A Single Loop Circuit Example: the Voltage Divider_
 
 Lets consider a circuit with 3 elements as depicted in "Figure 5.2":#figure5-2.  This circuit has a single loop with a fixed voltage source and 2 resistors.  Because the 2 resistors are in the same loop we will know they must have the same current, I = iR1 = iR2, and are in series.
 
@@ -67,11 +67,25 @@ This result reveals that while the voltage at node n1 is the source voltage, $V_
 
 This fixed fraction single-loop circuit, is often termed a _*voltage divider*_, and is a very common circuit.  It is a single loop circuit with _two resistors connected in *series*_.  Lets clearly identify the voltage divider configuration.  Both circuits in "Figure 5.3":#figure5-3 are the same voltage divider configuration, just arranged differently, and both circuits yield exactly the same outcome.  There is _one loop_ in each and hence there is a single current, $i$, that passes through all three circuit elements.
 
-p=(#figure5-3). !{width:70%}img/5/circuitsF5.3.jpg(Figure 5.3)!:img/5/circuitsF5.3.jpg
+p=(#figure5-3). !{width:75%}img/5/circuitsF5.3.jpg(Figure 5.3)!:img/5/circuitsF5.3.jpg
 _Figure 5.3  Two Identical Representations of the Voltage Divider Circuit_
 
 Furthermore, here in order to emphasis the voltage of interest, the '_output voltage_, $V_{out}$, these figures explicitly show the connection across resistor $R_2$ exaggerated.  Two '_open observation wires_' contact each node at the ends of resistor $R_2$.  BUT because these wire extensions DO NOT FORM A LOOP, _they carry zero current_ and do not change the voltage across $R_2$ !!  Thus $V_{out}$ is exactly the same as the voltage across $R_2$, $v_{n2}$.
 
-p=. $V_{out} = $  $(R_2/(R_1_ + R_2)) V_S$
+p=. $V_{out} = $  $(R_2/(R_1 + R_2))  V_S$
 
 Throughout the book we will often use extended '_observation wires_' connected to some nodes (as in "Figure 5.3":#figure5-3) to indicate more clearly a voltage of interest in a circuit.  Even with such extended wires these wires DO NOT form any added loop nor any added node, and hence the circuit response is exactly the same as that without the 'observation wires'.  They only make a specific voltage more recognizable, they do not change the circuit in any way.
+
+** _5.1.2  Voltage Divider Application, Light Detector Examples_
+
+The voltage divider circuit provides a very elegant means to measure light, when the circuit employs a photo-sensitive resistor as one of two in-series resistors.  But first, what is a _photo-sensitive resistor_?  It is a two terminal element that exhibits the same electrical characteristic as a usual fixed resistor, such as in Section 2.4.  However, the photo-sensitive resistor has the internal material exposed to the outside world, and the internal material changes electrical properties when exposed to light !
+
+So the photo-sensitive resistor is a resistor-type circuit element represented here by the symbol in "Figure 5.4":#figure5-4.
+
+p=(#figure5-4). !{width:70%}img/5/circuitsF5.4.jpg(Figure 5.4)!:img/5/circuitsF5.4.jpg
+_Figure 5.4  Photosensitive Resistor_
+
+The key difference for this element is that the resistance value, Rph, changes with the intensity of light that shines on the element.  Thus the formula for the constraint, "Eq'n. 5.3":#eq5-3 is the same as "Eq'n. 5.3":#eq5-3, except the value of $R_{ph}$ changes with the amount of incident light.
+
+p=(#eq5-3). $(-V_1 + V_2 + V_3 + V_4) = 0$  Eq'n 3.4
+
