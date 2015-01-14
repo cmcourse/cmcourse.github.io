@@ -106,10 +106,10 @@ By substitution, using "Eq'n. 5.4":#eq5-4 in "Eq'n. 5.5":#eq5-5, and when $SR_m 
 
 p=. $V_{out} = $  $(100/S)/(R_m + 100/S)  V_S = (100/S R_m) V_S$
 
-Alternately we might want an output voltage, $V_{out}$, that is more directly related to light level, that is, we desire an output voltage that _increases_ as the light level, $S$, _increases__, a direct relationship.  To obtain this result we 'reverse' the positions of the two resistors.  Namely we place the photo-sensitive resistor, $R_{ph}$, at the 'top' position of the divider, and the fixed $R_m$ at the 'bottom' output side of the divider circuit.
-
 
 *** _5.1.2 (ii)  ) Photo-sensor at 'top' position of voltage divider_
+
+Alternately we might want an output voltage, $V_{out}$, that is more directly related to light level, that is, we desire an output voltage that _increases_ as the light level, $S$, _increases_, a direct relationship.  To obtain this result we 'reverse' the positions of the two resistors.  Namely we place the photo-sensitive resistor, $R_{ph}$, at the 'top' position of the divider, and the fixed $R_m$ at the 'bottom' output side of the divider circuit.
 
 With the resistor positions reversed, there is still a single-loop circuit and the voltage divider is now that depicted in "Figure 5.6":#figure5-6.
 
