@@ -8,7 +8,7 @@ h4(#chapter5-series-restriction). 5.1 - Series Connection: Single-Loop Restricti
 Consider the first special topology the _single loop_ circuit structure, see "Figure 5.1a":#figure5-1a.  Here we mean that all elements of the circuit are connected so they form a single loop.  Because the circuit is a single loop, and because of our KCL current law, there can be only one current in all elements in the loop.  "Figure 5.1a":#figure5-1a depicts this arrangement, called a series connection.
 
 table(#figure5-1).
-|=. !{width:92%}img/5/circuitsF5.1a.jpg(Figure 5.1)!:img/1/circuitsF5.1a.jpg |=. !{width:52%}img/5/circuitsF5.1b.jpg(Figure 5.1)!:img/1/circuitsF5.1b.jpg |
+|=. !{width:92%}img/5/circuitsF5.1a.jpg(Figure 5.1)!:img/1/circuitsF5.1a.jpg |=. !{width:51%}img/5/circuitsF5.1b.jpg(Figure 5.1)!:img/1/circuitsF5.1b.jpg |
 |=. (a) Series (Single Loop) Restriction |=. (b) NOT Single-Loop |
 |\2=. _Figure 5.1  Series Connection_ |
 
@@ -26,7 +26,7 @@ So the single-loop circuit restriction causes a special result, all currents mus
 
 Lets consider a circuit with 3 elements as depicted in "Figure 5.2":#figure5-2.  This circuit has a single loop with a fixed voltage source and 2 resistors.  Because the 2 resistors are in the same loop we will know they must have the same current, I = iR1 = iR2, and are in series.
 
-p=(#figure5-2). !{width25%}img/5/circuitsF5.2.jpg(Figure 5.2)!:img/5/circuitsF5.2.jpg
+p=(#figure5-2). !{width:25%}img/5/circuitsF5.2.jpg(Figure 5.2)!:img/5/circuitsF5.2.jpg
 _Figure 5.2  Example Circuit, 3 Elements in Single Loop_
 
 Now we employ our node-method of circuit solution to solve this circuit.
@@ -40,6 +40,7 @@ In this circuit we have already selected the reference node (n3) and set the vol
 We write the conservation law constraints, KCL, and directly apply the resistor constitutive constraints to express the current values.
 
 p=. At node n2: $-i_{R1} + i_{R2} = 0$
+
 And by substitution:
 
 p=. $(-(v_{n1} - v{n2})/R_1) + ((v_{n2} - 0)/R_2) = 0$
@@ -49,12 +50,15 @@ additionally, because of the constraint by the fixed voltage source at node n1 t
 p=. $(v_{n1} - 0) - V_S = 0$,   so
 
 p=. $v_{n1} = v_{S}$
+
 divide by R1: 
 
 p=. $(v_{n1}/R_1) = (V_S/R_1)$
+
 and substitute:
 
 p=. $v_{n2}((1/R_1) + (1/R_2)) = V_S/R_1$
+
 so finally:
 
 p=. $v_{n2} = (R_2/(R_1 + R_2))V_S$
@@ -63,11 +67,11 @@ This result reveals that while the voltage at node n1 is the source voltage, $V_
 
 This fixed fraction single-loop circuit, is often termed a _*voltage divider*_, and is a very common circuit.  It is a single loop circuit with _two resistors connected in *series*_.  Lets clearly identify the voltage divider configuration.  Both circuits in "Figure 5.3":#figure5-3 are the same voltage divider configuration, just arranged differently, and both circuits yield exactly the same outcome.  There is _one loop_ in each and hence there is a single current, $i$, that passes through all three circuit elements.
 
-p=(#figure5-3). !{width:50%}img/5/circuitsF5.3.jpg(Figure 5.3)!:img/5/circuitsF5.3.jpg
+p=(#figure5-3). !{width:70%}img/5/circuitsF5.3.jpg(Figure 5.3)!:img/5/circuitsF5.3.jpg
 _Figure 5.3  Two Identical Representations of the Voltage Divider Circuit_
 
 Furthermore, here in order to emphasis the voltage of interest, the '_output voltage_, $V_{out}$, these figures explicitly show the connection across resistor $R_2$ exaggerated.  Two '_open observation wires_' contact each node at the ends of resistor $R_2$.  BUT because these wire extensions DO NOT FORM A LOOP, _they carry zero current_ and do not change the voltage across $R_2$ !!  Thus $V_{out}$ is exactly the same as the voltage across $R_2$, $v_{n2}$.
 
-p=. $V_{out} = (R_2/(R_1_ + R_2)) V_S$
+p=. $V_{out} = $  $(R_2/(R_1_ + R_2)) V_S$
 
 Throughout the book we will often use extended '_observation wires_' connected to some nodes (as in "Figure 5.3":#figure5-3) to indicate more clearly a voltage of interest in a circuit.  Even with such extended wires these wires DO NOT form any added loop nor any added node, and hence the circuit response is exactly the same as that without the 'observation wires'.  They only make a specific voltage more recognizable, they do not change the circuit in any way.
