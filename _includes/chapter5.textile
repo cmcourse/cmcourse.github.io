@@ -43,8 +43,9 @@ p=. At node n2: $-i_{R1} + i_{R2} = 0$
 
 And by substitution:
 
-%{font-size:18pt}
 p=. $%{font-size:18pt}\frac{3x}{2y}%$
+
+p=. $\frac{(-(v_{n1} - v{n2})}{R_1}$
 
 p=. $(-(v_{n1} - v{n2})/R_1) + ((v_{n2} - 0)/R_2) = 0$
 
