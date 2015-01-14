@@ -13,16 +13,16 @@ _Figure 4.1  Example Circuit with 4 Elements Connected in One Loop_
 To obtain the needed 2N equations we apply (1) the constitutive constraints for ALL the individual elements, and then (2) the Kirchoff Conservation Law constraints to corresponding groups of elements.  The complete combination of constraints always yields a complete set of 2N independent equations for the 2N unknown voltage and current values. For the above example circuit, "Figure 4.1":#figure4-1, we therefore have eight constraint equations for the 8 unknowns as follows:
 
 # Element Constitutive Constraints:
-## At Resistor R1: $V_1 = R_1 i_1$
-## At Resistor R2: $V_2 = R_2 i_2$
-## At Resistor R3: $V_3 = R_3 i_3$
-## At Fixed Voltage Source: $V_4 = V_S$
+** At Resistor R1: $V_1 = R_1 i_1$
+** At Resistor R2: $V_2 = R_2 i_2$
+** At Resistor R3: $V_3 = R_3 i_3$
+** At Fixed Voltage Source: $V_4 = V_S$
 # Conservation Law Constraints: KCL:
-## At Node n1: $i_1 + i_4 = 0$
-## At Node n2: $-i_1 + i_2 = 0$
-## At Node n3: $-i_2 - i_3 = 0$
+** At Node n1: $i_1 + i_4 = 0$
+** At Node n2: $-i_1 + i_2 = 0$
+** At Node n3: $-i_2 - i_3 = 0$
 # Conservation Law Constraints: KVL:
-## Around Loop 1: $-V_4 + V_1 + V_2 - V_3 = 0$
+** Around Loop 1: $-V_4 + V_1 + V_2 - V_3 = 0$
 
 Note the assignment of the element voltage polarity was arbitrary, BUT once the voltage polarity is defined then the current direction MUST be set consistently, with current defined into the “+” terminal.  There is not an independent KCL equation at node n4, since the sum of the three other node equations is the same as that at node n4.  [In general there are always only (N-1) node equations where N is the total number of nodes.]
 

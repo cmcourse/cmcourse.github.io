@@ -188,12 +188,7 @@ p=. $P_{total} = (e_2)(0) + (e_1)(0) + (e_3)(0) = 0$
 Hence we can conclude that the sum of element powers must equal zero in any circuit regardless of the elements used to construct the circuit, where $i_k$ is the current in element $k$ and $v_k$ is the voltage across element $k$ (with polarity assigned according to the polarity definition of Section 1.6).
 
 <h4>
-p=(#eq3-3). $\sum_{j=1 \ \mbox(closed - loop)}^m v_j = 0$ </h4>
-
-p=. ($v_j$ = _branch voltage-drop_ on element '$j$' in loop)  Eq'n 3-3        
-
-<h4>
-p=. $P_{total} = \sum_{ \ \mbox(all-elements)} (v_k) (i_k) = 0$ <h\4>
+p=. $P_{total} = \sum_{ \ \mbox(all-elements)} (v_k) (i_k) = 0$ <h/4>
 
 It is remarkable that this development used only the basic element voltage as a difference of the corresponding node voltages and Kirchoff's Current Law.  These sum-of-power = 0 constraint applie independent of element properties and also applies at any moment of time. This development method has been applied in general by Tellegen and the general relation is called Tellegen's Theorem.
 
@@ -208,7 +203,7 @@ If we sum the voltage drops around the complete loop: from node A to node B, fro
 
 p=. $-5 -5 +5 = -5 :does-not-equal:  0$
 
-_Impossible_ !!!  A violation of Kirchoff's Current Law. This particular circuit creates an inherent CONFLICT between element constraints and circuit constraints.  Hence this circuit has NO SOLUTION.  In general it is inconsistent to create a circuit with inherently conflicting constraints.  Though it may be interesting to speculate what would ‘break’ if such a conflicted circuit was actually built, it is more likely it would cause dangerous extreme overheating and should not be attempted.  For example a wire connected across a battery is one way to cause a battery to catch fire or worse [Danger - Do NOT Try This !].
+_Impossible_ !!!  A violation of Kirchoff's Current Law. This particular circuit creates an inherent CONFLICT between element constraints and circuit constraints.  Hence this circuit has NO SOLUTION.  In general it is inconsistent to create a circuit with inherently conflicting constraints.  Though it may be interesting to speculate what would 'break' if such a conflicted circuit was actually built, it is more likely it would cause dangerous extreme overheating and should not be attempted.  For example a wire connected across a battery is one way to cause a battery to catch fire or worse [Danger - Do NOT Try This !].
 
 h4(#chapter3-contradiction). 3.5 - Conclusion
 
