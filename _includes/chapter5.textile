@@ -93,7 +93,7 @@ For this relation, as the light intensity *decreases*, $S$ gets smaller and $R_{
 
 *** _5.1.2 (i)  Photo-sensor at 'bottom' position of voltage divider_
 
-Now if we place this photo-sensitive resistor at the 'bottom leg' of a voltage divider circuit, "Figure 5.5":#figure5-5, we can produce a voltage, vout, (taken across the photo-resistor) that changes according to the amount of light.
+Now if we place this photo-sensitive resistor at the 'bottom leg' of a voltage divider circuit, "Figure 5.5":#figure5-5, we can produce a voltage, $v_{out}$, (taken across the photo-resistor) that changes according to the amount of light.
 
 p=(#figure5-5). !{width:40%}img/5/circuitsF5.5.jpg(Figure 5.5)!:img/5/circuitsF5.5.jpg
 _Figure 5.5  Photo-Sensitive Circuit, Detects Light Intensity_
@@ -109,7 +109,7 @@ p=. $V_{out} = $  $(100/S)/(R_m + 100/S)  V_S = (100/S R_m) V_S$
 
 *** _5.1.2 (ii)  ) Photo-sensor at 'top' position of voltage divider_
 
-Alternately we might want an output voltage, $V_{out}$, that is more directly related to light level, that is, we desire an output voltage that _increases_ as the light level, $S$, _increases_, a direct relationship.  To obtain this result we 'reverse' the positions of the two resistors.  Namely we place the photo-sensitive resistor, $R_{ph}$, at the 'top' position of the divider, and the fixed $R_m$ at the 'bottom' output side of the divider circuit.
+Alternately we might want an output voltage, $V_{out}$, that is more directly related to light level, that is, we desire an output voltage that _increases_ as the light level, $S$, *increases*, a direct relationship.  To obtain this result we 'reverse' the positions of the two resistors.  Namely we place the photo-sensitive resistor, $R_{ph}$, at the 'top' position of the divider, and the fixed $R_m$ at the 'bottom' output side of the divider circuit.
 
 With the resistor positions reversed, there is still a single-loop circuit and the voltage divider is now that depicted in "Figure 5.6":#figure5-6.
 
