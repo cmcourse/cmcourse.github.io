@@ -37,10 +37,10 @@ p=. $\sum_{j=1 \ \mbox(all - branches)}^m i_j = 0$ </h3>
 <h4>
 p=. $\sum_{j=1 \ \mbox(all - branches)}^m i_j = 0$
 
-p{color:red}. $\sum_{j=1 \ \mbox(all - branches)}^m i_j = 0$ </h4>
+p=. $\sum_{j=1 \ \mbox(all - branches)}^m i_j = 0$ </h4> ($i_j$ = current _leaving_ on branch '$j$')            
 
 <h4>
-p=(#eq3-1). $\sum_{j=1 \ \mbox(all - branches)}^m i_j = 0$
+p=(#eq3-1). $\sum_{j=1 \ \mbox(all - branches)}^m i_j = 0$</h4>
 where $i_j$ is the branch current _leaving_ the node on branch '$j$'
 
 </h4> where, the currents $i_j$ are the m branch currents that leave the node.  This constraint can be illustrated by a 4-branch node example, as shown in "Figure 3.3":#figure3-3,
