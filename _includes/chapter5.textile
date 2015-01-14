@@ -85,7 +85,7 @@ The key difference for this element is that the resistance value, $R_{ph}$, chan
 
 p=(#eq5-3). $(v_{n1} - v_{n2}) - i_R R_{ph} = 0$  Eq'n 5.3
 
-Usually the photo-resistance value, $R_{ph}$, decreases as the light intensity increases.  For example, if the light intensity is normalized to full sun light, $S = 1$, (suns), then $_R{ph}$ would be of the form:
+Usually the photo-resistance value, $R_{ph}$, decreases as the light intensity increases.  For example, if the light intensity is normalized to full sun light, $S = 1$, (suns), then $R_{ph}$ would be of the form:
 
 p=(eq5-4). $(R_{ph} / S)$  - ohms Eq'n 5.4
 
