@@ -35,9 +35,10 @@ These new 'Rule-2' constraints come from physical limits which the real world im
 p=. $\sum_{j=1 \ \mbox(all - branches)}^m i_j = 0$ </h3>
 
 <h4>
-p=. $\sum_{j=1 \ \mbox{({\scriptsize all branches})}}^m i_j = 0$
+p=. $\sum_{j=1 \ \mbox{({all branches})}}^m i_j = 0$
 
-p=. $\sum_{j=1 \ \mbox(all - branches)}^m i_j = 0$ ($i_j$ = current _leaving_ on branch '$j$') </h4>         
+p=. $\sum_{j=1 \ \mbox(all - branches)}^m i_j = 0$
+($i_j$ = current _leaving_ on branch '$j$') </h4>         
 
 <h4>
 p=(#eq3-1). $\sum_{j=1 \ \mbox(all - branches)}^m i_j = 0$</h4>
