@@ -89,7 +89,7 @@ Usually the photo-resistance value, $R_{ph}$, decreases as the light intensity i
 
 p=(eq5-4). $(R_{ph} / S)$  - ohms Eq'n 5.4
 
-For this relation, as the light intensity _decreases_, $S$ gets smaller and $R_{ph}$ _gets larger_.  So for indoor conditions, if $S = 0.01$ then the value of $R_{ph}$ increases to 10,000 ohms.
+For this relation, as the light intensity *decreases*, $S$ gets smaller and $R_{ph}$ _gets larger_.  So for indoor conditions, if $S = 0.01$ then the value of $R_{ph}$ increases to 10,000 ohms.
 
 *** _5.1.2 (i)  Photo-sensor at 'bottom' position of voltage divider_
 
