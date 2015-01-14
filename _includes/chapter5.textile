@@ -60,8 +60,9 @@ p=. $(v_{n1} - 0) - V_S = 0$,   so
 p=. $v_{n1} = v_{S}$
 
 divide by R1:
+
 <h4>
-p=. $\frac{v_{n1}}{R_1} = \frac{V_S}{R_1}$ <\h4>
+p=. $\frac{v_{n1}}{R_1} = \frac{V_S}{R_1}$ </h4>
 
 and substitute: $v_{n2}((1/R_1) + (1/R_2)) = V_S/R_1$
 
