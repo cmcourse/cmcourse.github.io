@@ -33,18 +33,11 @@ These new 'Rule-2' constraints come from physical limits which the real world im
 
 <h3>
 p=. $\sum_{j=1 \ \mbox(all - branches)}^m i_j = 0$ </h3>
-
 <h4>
-p=. $\sum_{j=1 \ \mbox{({all branches})}}^m i_j = 0$
-
-p=. $\sum_{j=1 \ \mbox(all - branches)}^m i_j = 0$
+p=(#eq3-1). $\sum_{j=1 \ \mbox(all - branches)}^m i_j = 0$
 ($i_j$ = current _leaving_ on branch '$j$') </h4>         
 
-<h4>
-p=(#eq3-1). $\sum_{j=1 \ \mbox(all - branches)}^m i_j = 0$</h4>
-where $i_j$ is the branch current _leaving_ the node on branch '$j$'
-
-</h4> where, the currents $i_j$ are the m branch currents that leave the node.  This constraint can be illustrated by a 4-branch node example, as shown in "Figure 3.3":#figure3-3,
+Here the currents $i_j$ are the $m$ branch currents that leave the node.  This constraint can be illustrated by a 4-branch node example, as shown in "Figure 3.3":#figure3-3,
 
 p=(#figure3-3). !{width:35%}img/3/circuitsF3.3a.jpg(Figure 3.3)!:img/3/circuitsF3.3a.jpg
 _Figure 3.3  Kirchoff's Current Law Applied at an Example 4-Branch Node_
@@ -107,9 +100,11 @@ There is another constraint, one that is again associated with the interconnecti
 
 Being conserved, means that if a node 'A' is at a voltage $V_A$, then if we follow any circuit loop and return back to node 'A' the voltage must be the same voltage value $V_A$.  In other words, the sum of all element voltages around any closed circuit loop path MUST BE ZERO.  This fact is an expression of Kirchoff’s Voltage Law, and is written in the form of "Eq'n. 3.3":#eq3-3.
 
-p=(#eq3-3). $Sum of all 'm' element voltages v_j around a closed loop must = 0$ where $v_j$ is the branch voltage _drop_ across element '$j$'
+<h4>
+p=(#eq3-3). $\sum_{j=1 \ \mbox(_closed - loop_)}^m v_j = 0$
+($v_j$ = _branch voltage - drop_ on element '$j$' in loop) </h4>         
 
-where, the element voltage 'drops', $v_j$, are for each of all the elements in the closed loop.  This can be illustrated by a 4-element loop example, as depicted in "Figure 3.4":#figure3-4,
+where, the element voltage 'drops', $v_j$, are for each of all the '_m_' elements in the closed loop.  This can be illustrated by a 4-element loop example, as depicted in "Figure 3.4":#figure3-4,
 
 p=(#figure3-4). !{width:40%}img/3/circuitsF3.4.jpg(Figure 3.4)!:img/3/circuitsF3.4.jpg
 _Figure 3.4  Kirchoff’s Voltage Law Applied to an Example 4-Element Loop_
