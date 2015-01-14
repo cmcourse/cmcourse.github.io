@@ -135,5 +135,5 @@ h4(#chapter5-parallel-restriction). 5.2 - Special Circuit Topology, the Single N
 The second special circuit topology is one where all elements are connected between the _same 2 nodes_. "Figure 5.7":#figure5-7 depicts an example of a 2-node (single node-pair) circuit.
 
 p=(#figure5-7). !{width:40%}img/5/circuitsF5.7.jpg(Figure 5.7)!:img/5/circuitsF5.7.jpg
-_Figure 5.7  Alternate Photo-Sensitive Circuit, Detect Light Intensity_
+_Figure 5.7  Parallel Connection, Single Node-Pair Restriction_
 
