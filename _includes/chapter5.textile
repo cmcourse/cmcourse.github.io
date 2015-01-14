@@ -8,8 +8,8 @@ h4(#chapter5-series-restriction). 5.1 - Series Connection: Single-Loop Restricti
 Consider the first special topology the _single loop_ circuit structure, see "Figure 5.1a":#figure5-1a.  Here we mean that all elements of the circuit are connected so they form a single loop.  Because the circuit is a single loop, and because of our KCL current law, there can be only one current in all elements in the loop.  "Figure 5.1a":#figure5-1a depicts this arrangement, called a series connection.
 
 table(#figure5-1).
-|\2=. !{width:99%}img/5/circuitsF5.1a.jpg(Figure 5.1)!:img/1/circuitsF5.1a.jpg |=. !{width:70%}img/5/circuitsF5.1b.jpg(Figure 5.1)!:img/1/circuitsF5.1b.jpg |
-|/2=. (a) Series (Single Loop) Restriction |=. (b) NOT Single-Loop |
+|\2=. !{width:60%}img/5/circuitsF5.1a.jpg(Figure 5.1)!:img/1/circuitsF5.1a.jpg |=. !{width:70%}img/5/circuitsF5.1b.jpg(Figure 5.1)!:img/1/circuitsF5.1b.jpg |
+|=. (a) Series (Single Loop) Restriction |=. (b) NOT Single-Loop |
 |\2=. _Figure 5.1  Series Connection_ |
 
 In the series circuit, "Figure 5.1a":#figure5-1a, all 4 elements are connected end-to-end to form a _single loop_.  There is a single current, '$i$', in the circuit.  This current, '$i$', passes _equally_ through resistors $R_1, R_2, R_3$, and fixed voltage source $V_S$.  There is no other path for curent in this current, so KCL requires current, $i$, must be of _*equal* value in all 4 elements_.
@@ -61,4 +61,13 @@ p=. $v_{n2} = (R_2/(R_1 + R_2))V_S$
 
 This result reveals that while the voltage at node n1 is the source voltage, $V_S$, the voltage at node n2, $v_{n2}, is a _constant fraction_ of the fixed source voltage $V_S$.  The fraction value is determined only by the resistor resistance values $R_1$ and $R_2$.
 
-This fixed fraction single-loop circuit, is often termed a _*voltage divider*_, and is a very common circuit.  It is a single loop circuit with _two resistors connected in *series*_.  Lets clearly identify the voltage divider configuration.  Both circuits in Figure 5.3 are the same voltage divider configuration, just arranged differently, and both circuits yield exactly the same outcome.  There is _one loop_ in each and hence there is a single current, $i$, that passes through all three circuit elements.
+This fixed fraction single-loop circuit, is often termed a _*voltage divider*_, and is a very common circuit.  It is a single loop circuit with _two resistors connected in *series*_.  Lets clearly identify the voltage divider configuration.  Both circuits in "Figure 5.3":#figure5-3 are the same voltage divider configuration, just arranged differently, and both circuits yield exactly the same outcome.  There is _one loop_ in each and hence there is a single current, $i$, that passes through all three circuit elements.
+
+p=(#figure5-3). !{width:50%}img/5/circuitsF5.3.jpg(Figure 5.3)!:img/5/circuitsF5.3.jpg
+_Figure 5.3  Two Identical Representations of the Voltage Divider Circuit_
+
+Furthermore, here in order to emphasis the voltage of interest, the '_output voltage_, $V_{out}$, these figures explicitly show the connection across resistor $R_2$ exaggerated.  Two '_open observation wires_' contact each node at the ends of resistor $R_2$.  BUT because these wire extensions DO NOT FORM A LOOP, _they carry zero current_ and do not change the voltage across $R_2$ !!  Thus $V_{out}$ is exactly the same as the voltage across $R_2$, $v_{n2}$.
+
+p=. $V_{out} = (R_2/(R_1_ + R_2)) V_S$
+
+Throughout the book we will often use extended '_observation wires_' connected to some nodes (as in "Figure 5.3":#figure5-3) to indicate more clearly a voltage of interest in a circuit.  Even with such extended wires these wires DO NOT form any added loop nor any added node, and hence the circuit response is exactly the same as that without the 'observation wires'.  They only make a specific voltage more recognizable, they do not change the circuit in any way.
