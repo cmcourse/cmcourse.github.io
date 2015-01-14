@@ -137,9 +137,19 @@ h4(#chapter3-KVL). 3.3 - Power Constraint, an Overall Circuit Constraint
 
 There is another ‘circuit’ constraint that is related not to either voltage or current individually, but rather to their combination.  Specifically, we can establish that the product of (voltage) x (current) associated with all elements in a circuit have a constraint.  The basic concept is that circuits conserve power.  This conservation means _the sum of the power dissipated by all individual elements in a circuit must be zero_.  This is expressed by the power constraint "Eq'n. 3.5":#eq3-5.
 
-p=(#eq3-5). $Sum of all 'm' element power dissipation P_j values for all elements in a circuit must = 0$ where $P_j$ is the power dissipated in the '$j$' element  Eq'n 3.5
+<h4>
+p=(#eq3-3). $\sum_{j=1 \ \mbox(closed - loop)}^m v_j = 0$ </h4>
 
-This constraint can be obtained by combining Kirchoff's Current Law and Kirchoff's Voltage Law.  Consider the circuit with three elements arranged in a single loop, "Figure 3.5":#figure3-5.  The specific elements need not be specified, this power relationship applies is independent of the specific type of elements.
+p=. ($v_j$ = _branch voltage-drop_ on element '$j$' in loop)  Eq'n 3-3        
+
+<h4>
+p=(#eq3-5). $\sum_{j=1 \ \mbox(all-elements)}^m P_j = 0$ </h4>
+
+p=. ($P_j$ is the power dissipated in the '$j$' element)  Eq'n 3.5
+
+Here the summation must be over *all elements in the circuit*.
+
+This power constraint can be obtained by combining Kirchoff's Current Law and Kirchoff's Voltage Law.  Consider the circuit with three elements arranged in a single loop, "Figure 3.5":#figure3-5.  The specific elements need not be specified, this power relationship applies is independent of the specific type of elements.
 
 p=(#figure3-5). !{width:40%}img/3/circuitsF3.5.jpg(Figure 3.5)!:img/3/circuitsF3.5.jpg
 _Figure 3.5  Circuit for Proof of Conservation of Power_
