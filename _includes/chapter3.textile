@@ -188,9 +188,9 @@ p=. $P_{total} = (e_2)(0) + (e_1)(0) + (e_3)(0) = 0$
 Hence we can conclude that the sum of element powers must equal zero in any circuit regardless of the elements used to construct the circuit, where $i_k$ is the current in element $k$ and $v_k$ is the voltage across element $k$ (with polarity assigned according to the polarity definition of Section 1.6).
 
 <h4>
-p=. $P_{total} = \sum_{ \ \mbox(all-elements)} (v_k) (i_k) = 0$ <h/4>
+p=. $P_{total} = \sum_{ \ \mbox(all-elements)} (v_k) (i_k) = 0$ <h\4>
 
-It is remarkable that this development used only the basic element voltage as a difference of the corresponding node voltages and Kirchoff's Current Law.  These sum-of-power = 0 constraint applie independent of element properties and also applies at any moment of time. This development method has been applied in general by Tellegen and the general relation is called Tellegen's Theorem.
+It is remarkable that this development used only (1) the basic element voltage (the difference of the corresponding node voltages) and (2) Kirchoff's Current Law at the circuit nodes.  This 'sum-of-power = 0' constraint applies independent of element properties and also applies at any moment of time. This development method has been applied in general by Tellegen and the general relation is called Tellegen's Theorem.
 
 h4(#chapter3-contradiction). 3.4 - Conflicting Constraints
 
