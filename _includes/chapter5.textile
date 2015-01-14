@@ -43,14 +43,12 @@ p=. At node n2: $-i_{R1} + i_{R2} = 0$
 
 And by substitution:
 
-p=. %{font-size:18pt}3x%
-
 p=. %{font-size:14pt}$3x$%
 
 p=. $%{font-size:14pt}\frac{3}{x}%$
 
 <h3>
-p=. $\frac{-(v_{n1} - v_{n2})}{R_1} + \frac{(v_{n2} - 0)}{R_2}$ </h3>
+p=. $\frac{-(v_{n1} - v_{n2})}{R_1} + \frac{(v_{n2} - 0)}{R_2} = 0$ </h3>
 
 
 p=. $%{font-size:18pt}\frac{3x}{2y}5z$%
