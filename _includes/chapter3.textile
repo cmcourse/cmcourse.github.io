@@ -32,10 +32,11 @@ We now find an extra constraint not due to the elements themselves ('Rule-1' typ
 These new 'Rule-2' constraints come from physical limits which the real world imposes on our circuits.  In particular, recall that charges cannot be created nor destroyed, so currents cannot just end in mid-air.  In other words, currents cannot just cease at a node.  This fact is expressed by _Kirchoff's Current Law_, which simply states that _the sum of all branch currents leaving a node must be zero_.  We can write this law in equation form "Eq'n. 3.1":#eq3-1., for any node with 'm' branches:
 
 <h4>
-p=. $\sum_{j=1 \ \mbox(all - branches)}^m i_j = 0$ </h4> ($i_j$ = current _leaving_ on branch '$j$')
+p=. $\sum_{j=1 \ \mbox(all - branches)}^m i_j = 0$ </h4>
+p=. ($i_j$ = current _leaving_ on branch '$j$')
 
 p=(#eq3-1). $\sum_{j=1 \ \mbox(all - branches)}^m i_j = 0$  Eq'n 3.1
-($i_j$ = current _leaving_ on branch '$j$') </h4>         
+($i_j$ = current _leaving_ on branch '$j$')        
 
 Here the currents $i_j$ are the $m$ branch currents that leave the node.  This constraint can be illustrated by a 4-branch node example, as shown in "Figure 3.3":#figure3-3,
 
