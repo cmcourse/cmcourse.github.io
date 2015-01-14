@@ -78,7 +78,7 @@ The voltage divider circuit provides a very elegant means to measure light, when
 
 So the photo-sensitive resistor is a resistor-type circuit element represented here by the symbol in "Figure 5.4":#figure5-4.
 
-p=(#figure5-4). !{width:70%}img/5/circuitsF5.4.jpg(Figure 5.4)!:img/5/circuitsF5.4.jpg
+p=(#figure5-4). !{width:30%}img/5/circuitsF5.4.jpg(Figure 5.4)!:img/5/circuitsF5.4.jpg
 _Figure 5.4  Photosensitive Resistor_
 
 The key difference for this element is that the resistance value, $R_{ph}$, changes with the intensity of light that shines on the element.  Thus the formula for the constraint, "Eq'n. 5.3":#eq5-3 is the same as "Eq'n. 2.4":#eq2-4, except the value of resistor $R_{ph}$ changes with the amount of incident light.
@@ -95,7 +95,7 @@ For this relation, as the light intensity _decreases_, $S$ gets smaller and $R_{
 
 Now if we place this photo-sensitive resistor at the 'bottom leg' of a voltage divider circuit, "Figure 5.5":#figure5-5, we can produce a voltage, vout, (taken across the photo-resistor) that changes according to the amount of light.
 
-p=(#figure5-5). !{width:70%}img/5/circuitsF5.5.jpg(Figure 5.5)!:img/5/circuitsF5.5.jpg
+p=(#figure5-5). !{width:30%}img/5/circuitsF5.5.jpg(Figure 5.5)!:img/5/circuitsF5.5.jpg
 _Figure 5.5  Photo-Sensitive Circuit, Detects Light Intensity_
 
 To find out the light response, we first recognize this circuit as a single-loop circuit series connection restriction. Thus, we can apply the _voltage divider_ "Eq'n. 5.2":#eq5-2 to this single loop structure, and thereby directly write the output response equation of "Eq'n. 5.5":#eq5-5.  Here the photo-resistor value decreases as the light intensity increases, and hence the voltage at the output, $v_{out}$, also decreases as light intensity increases.  Thus, as calculated below the circuit of Figure 5.5 yields an _output voltage that decreases as the light increases_, an inverse relationship.
@@ -118,13 +118,13 @@ _Figure 5.6  Alternate Photo-Sensitive Circuit, Detect Light Intensity_
 
 We can apply the voltage divider equation, and now get the output response of "Eq'n. 5.6":#eq5-6.  So in this case the voltage at the output, $v_{out}$, increases as the photo-resistor value decreases, and correspondingly when the light intensity increases.  Thus the circuit of Figure 5.6":#figure5-6 yields an _output voltage that increases as the light increases_.
 
-p=(#eq5-6). $V_{out} = $  $(R_m}/(R_m + R_{ph}))  V_S$  Eq'n 5.6
+p=(#eq5-6). $V_{out} = $  $(R_m}/(R_m + R_{ph})) V_S$  Eq'n 5.6
 
 and, by substitution of "Eq'n. 5.4":#eq5-4 for the photo-sensitive resistor we obtain:
 
-p=. $V_{out} = $  $(R_m)/(R_m + 100/S)  V_S = $(S R_M/100) V_S$
+p=. $V_{out} = $  $(R_m)/(R_m + 100/S)  V_S = (S R_M/100) V_S$
 
-So the output voltage is about proportional to the light level, $S$, provided we keep the light level small, $S•R_m << 100$.
+So the output voltage is about proportional to the light level, $S$, provided we keep the light level small, $S R_m << 100$.
 
 Already with a simple single-loop circuit we can create a light-sensitive voltage and thus make a light detection circuit.  Furthermore, with a minor change of only the circuit position of the resistors we can change the voltage response from either increasing or decreasing as the light intensity increases.  By simple application of our constraint based analysis methods we can get distinct expressions for the actual expected voltage response.
 
@@ -132,8 +132,8 @@ Note that our analysis in this case has taken a simplified solution approach, th
 
 h4(#chapter5-parallel-restriction). 5.2 - Special Circuit Topology, the Single Node-Pair Restriction (Parallel)
 
-The second special circuit topology is one where all elements are connected between the _same 2 nodes_. 5.7":#figure5-7 depicts an example of a 2-node (single node-pair) circuit.
+The second special circuit topology is one where all elements are connected between the _same 2 nodes_. "Figure 5.7":#figure5-7 depicts an example of a 2-node (single node-pair) circuit.
 
-p=(#figure5-7). !{width:70%}img/5/circuitsF5.7.jpg(Figure 5.7)!:img/5/circuitsF5.7.jpg
+p=(#figure5-7). !{width:30%}img/5/circuitsF5.7.jpg(Figure 5.7)!:img/5/circuitsF5.7.jpg
 _Figure 5.7  Alternate Photo-Sensitive Circuit, Detect Light Intensity_
 
