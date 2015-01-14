@@ -189,7 +189,7 @@ Hence we can conclude, "Eq'n. 3.6":#eq3-6 that the sum of all branch powers must
 
 <h4>
 p=(#eq3-6). $P_{total} = \sum_{ \ \mbox(all-branchs)} (v_k) (i_k) = 0$ </h4>
-p=. Eq'n 3-6 -- Tellegen's Theorem
+_Eq'n 3-6 -- Tellegen's Theorem_
 
 It is remarkable that this development used only (1) the basic branch voltages (the difference of the corresponding node voltages) and (2) Kirchoff's Current Law at the circuit nodes.  This 'sum-of-power = 0' constraint applies independent of element properties and also applies at any moment of time. This development method has been applied in general by Tellegen and the general relation is called Tellegen's Theorem.
 
