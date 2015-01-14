@@ -47,8 +47,8 @@ p=. %{font-size:14pt}$3x$%
 
 p=. %{font-size:14pt}$\frac{3}{x}$%
 
-<h3.5>
-p=. $\frac{-(v_{n1} - v_{n2})}{R_1} + \frac{(v_{n2} - 0)}{R_2} = 0$ </h3.5>
+p=.
+<h4. $\frac{-(v_{n1} - v_{n2})}{R_1} + \frac{(v_{n2} - 0)}{R_2} = 0$
 
 <h3>
 p=. $\frac{-(v_{n1} - v_{n2})}{R_1} + \frac{(v_{n2} - 0)}{R_2} = 0$ </h3>
