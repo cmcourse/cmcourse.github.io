@@ -85,9 +85,9 @@ The key difference for this element is that the resistance value, $R_{ph}$, chan
 
 p=(#eq5-3). $(v_{n1} - v_{n2}) - i_R R_{ph} = 0$  Eq'n 5.3
 
-Usually the photo-resistance value, $R_{ph}$, decreases as the light intensity increases.  For example, if the light intensity is normalized to full sun light, $S = 1$, (suns), then Rph would be of the form:
+Usually the photo-resistance value, $R_{ph}$, decreases as the light intensity increases.  For example, if the light intensity is normalized to full sun light, $S = 1$, (suns), then $_R{ph}$ would be of the form:
 
-p=(eq5-4). $(R_{ph} / S) - ohms$ Eq'n 5.4
+p=(eq5-4). $(R_{ph} / S)$  - ohms Eq'n 5.4
 
 For this relation, as the light intensity _decreases_, $S$ gets smaller and $R_{ph}$ _gets larger_.  So for indoor conditions, if $S = 0.01$ then the value of $R_{ph}$ increases to 10,000 ohms.
 
@@ -102,7 +102,7 @@ To find out the light response, we first recognize this circuit as a single-loop
 
 p=(#eq5-5). $V_{out} = $  $(R_{ph}/(R_m + R_{ph}))  V_S$  Eq'n 5.5
 
-By substitution, using "Eq'n. 5.4":#eq5-4 in "Eq'n. 5.5":#eq5-5, and when $S•R_m >> 100$, (i.e. at brighter light levels, larger $S$) we get an output voltage, which is inversely related to the light strength $S$, given the fixed voltage source, $V_S$, is a constant.
+By substitution, using "Eq'n. 5.4":#eq5-4 in "Eq'n. 5.5":#eq5-5, and when $SR_m >> 100$, (i.e. at brighter light levels, larger $S$) we get an output voltage, which is inversely related to the light strength $S$, given the fixed voltage source, $V_S$, is a constant.
 
 p=. $V_{out} = $  $(100/S)/(R_m + 100/S)  V_S = (100/S R_m) V_S$
 
@@ -128,7 +128,7 @@ So the output voltage is about proportional to the light level, $S$, provided we
 
 Already with a simple single-loop circuit we can create a light-sensitive voltage and thus make a light detection circuit.  Furthermore, with a minor change of only the circuit position of the resistors we can change the voltage response from either increasing or decreasing as the light intensity increases.  By simple application of our constraint based analysis methods we can get distinct expressions for the actual expected voltage response.
 
-Note that our analysis in this case has taken a simplified solution approach, the last "Eq'ns 5.6":#eq5-5: and #eq5-6 and were found, not by complete constraint analysis, but rather by recognition that the problem circuit was the specialized configuration of the voltage divider.  We therefore could apply the voltage divider result and did not have to calculate a solution from the element constraint equations.  The recognition of the voltage divider configuration is a convenient and often used short-cut to a circuit solution.
+Note that our analysis in this case has taken a simplified solution approach, the last "Eq'ns 5.5":#eq5-5: and "Eq'n. 5.6":#eq5-6 and were found, not by complete constraint analysis, but rather by recognition that the problem circuit was the specialized configuration of the voltage divider.  We therefore could apply the voltage divider result and did not have to calculate a solution from the element constraint equations.  The recognition of the voltage divider configuration is a convenient and often used short-cut to a circuit solution.
 
 h4(#chapter5-parallel-restriction). 5.2 - Special Circuit Topology, the Single Node-Pair Restriction (Parallel)
 
