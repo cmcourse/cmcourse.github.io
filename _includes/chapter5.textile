@@ -104,7 +104,7 @@ p=(#eq5-5). $V_{out} = $  $(R_{ph}/(R_m + R_{ph}))  V_S$  Eq'n 5.5
 
 By substitution, using "Eq'n. 5.4":#eq5-4 in "Eq'n. 5.5":#eq5-5, and when $S•R_m >> 100$, (i.e. at brighter light levels, larger $S$) we get an output voltage, which is inversely related to the light strength $S$, given the fixed voltage source, $V_S$, is a constant.
 
-p=. $V_{out} = $  $(100/S)/(R_m + 100/S)  V_S = $(100/S R_m) V_S$
+p=. $V_{out} = $  $(100/S)/(R_m + 100/S)  V_S = (100/S R_m) V_S$
 
 Alternately we might want an output voltage, $V_{out}$, that is more directly related to light level, that is, we desire an output voltage that _increases_ as the light level, $S$, _increases__, a direct relationship.  To obtain this result we 'reverse' the positions of the two resistors.  Namely we place the photo-sensitive resistor, $R_{ph}$, at the 'top' position of the divider, and the fixed $R_m$ at the 'bottom' output side of the divider circuit.
 
@@ -118,11 +118,11 @@ _Figure 5.6  Alternate Photo-Sensitive Circuit, Detect Light Intensity_
 
 We can apply the voltage divider equation, and now get the output response of "Eq'n. 5.6":#eq5-6.  So in this case the voltage at the output, $v_{out}$, increases as the photo-resistor value decreases, and correspondingly when the light intensity increases.  Thus the circuit of Figure 5.6":#figure5-6 yields an _output voltage that increases as the light increases_.
 
-p=(#eq5-6). $V_{out} = $  $(R_m}/(R_m + R_{ph})) V_S$  Eq'n 5.6
+p=(#eq5-6). $V_{out} = (R_m/(R_m + R_{ph})) V_S$  Eq'n 5.6
 
 and, by substitution of "Eq'n. 5.4":#eq5-4 for the photo-sensitive resistor we obtain:
 
-p=. $V_{out} = $  $(R_m)/(R_m + 100/S)  V_S = (S R_M/100) V_S$
+p=. $V_{out} = $  $(R_m)/(R_m + 100/S)  V_S = (S R_m/100) V_S$
 
 So the output voltage is about proportional to the light level, $S$, provided we keep the light level small, $S R_m << 100$.
 
