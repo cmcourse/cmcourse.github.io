@@ -45,6 +45,8 @@ And by substitution:
 
 p=. %{font-size:18pt}3x%
 
+p=. %{font-size:18pt}$3x$%
+
 p=. $\frac{-(v_{n1} - v_{n2})}{R_1}$
 
 p=. $%{font-size:18pt}\frac{3x}{2y}5z$%
