@@ -80,7 +80,7 @@ The voltage divider circuit provides a very elegant means to measure light, when
 
 So the photo-sensitive resistor is a resistor-type circuit element represented here by the symbol in "Figure 5.4":#figure5-4.
 
-p=(#figure5-4). !{width:40%}img/5/circuitsF5.4.jpg(Figure 5.4)!:img/5/circuitsF5.4.jpg
+p=(#figure5-4). !{width:35%}img/5/circuitsF5.4.jpg(Figure 5.4)!:img/5/circuitsF5.4.jpg
 _Figure 5.4  Photosensitive Resistor_
 
 The key difference for this element is that the resistance value, $R_{ph}$, changes with the intensity of light that shines on the element.  Thus the formula for the constraint, "Eq'n. 5.3":#eq5-3 is the same as "Eq'n. 2.4":#eq2-4, except the value of resistor $R_{ph}$ changes with the amount of incident light.
@@ -134,8 +134,9 @@ Note that our analysis in this case has taken a simplified solution approach, th
 
 h4(#chapter5-parallel-restriction). 5.2 - Special Circuit Topology, the Single Node-Pair Restriction (Parallel)
 
-The second special circuit topology is one where all elements are connected between the _same 2 nodes_. "Figure 5.7":#figure5-7 depicts an example of a 2-node (single node-pair) circuit.
+The second special circuit topology is one where all elements are connected between the _same 2 nodes_. "Figure 5.7a":#figure5-7a$ depicts an example of a 2-node (single node-pair) circuit.
 
-p=(#figure5-7). !{width:40%}img/5/circuitsF5.7.jpg(Figure 5.7)!:img/5/circuitsF5.7.jpg
-_Figure 5.7  Parallel Connection, Single Node-Pair Restriction_
+p=(#figure5-7a). !{width:40%}img/5/circuitsF5.7a.jpg(Figure 5.7a)!:img/5/circuitsF5.7a.jpg
+_Figure 5.7a  Parallel Connection, Single Node-Pair Restriction_
 
+Because the circuit has a single node-pair, and because of our KVL voltage law, there can be only one voltage that is across all elements in the circuit.  In Figure 5.7a all elements are connected between the single node-pair, node n1 and node n2, they are in a parallel connection.  In this case the voltage across all the elements is the difference $(v_{n1} – v_{n2})$.  A fixed voltage source $V_S$ also connected between these two nodes, and thus we know all three resistors have the same voltage value of $(v_{n1}-v_{n2}) = V_S$ across every element.
