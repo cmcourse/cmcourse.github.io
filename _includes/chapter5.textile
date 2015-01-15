@@ -24,7 +24,7 @@ So the single-loop circuit restriction causes a special result, all currents mus
 
 ** _5.1.1 A Single Loop Circuit Example: the Voltage Divider_
 
-Lets consider a circuit with 3 elements as depicted in "Figure 5.2":#figure5-2.  This circuit has a single loop with a fixed voltage source and 2 resistors.  Because the 2 resistors are in the same loop we will know they must have the same current, $I = i_{R} = i_{R2}, and are in series.
+Lets consider a circuit with 3 elements as depicted in "Figure 5.2":#figure5-2.  This circuit has a single loop with a fixed voltage source and 2 resistors.  Because the 2 resistors are in the same loop we will know they must have the same current, $I = i_{R} = i_{R2}$, and are in series.
 
 p=(#figure5-2). !{width:25%}img/5/circuitsF5.2.jpg(Figure 5.2)!:img/5/circuitsF5.2.jpg
 _Figure 5.2  Example Circuit, 3 Elements in Single Loop_
@@ -37,14 +37,14 @@ In this circuit we have already selected the reference node (n3) and set the vol
 
 *STEP-2:*
 
-We write the conservation law constraints, KCL, and directly apply the resistor constitutive constraints to express the current values.
+We write the conservation law constraints, KCL, and directly apply the resistor constitutive constraints to express the current values. At node n2:
 
-p=. At node n2: $-i_{R1} + i_{R2} = 0$
+p=. $-i_{R1} + i_{R2} = 0$
 
 And by substitution:
 
-<h4>
-p=. $\frac{-(v_{n1} - v_{n2})}{R_1} + \frac{(v_{n2} - 0)}{R_2} = 0$ </h4>
+<h3>
+p=. $\frac{-(v_{n1} - v_{n2})}{R_1} + \frac{(v_{n2} - 0)}{R_2} = 0$ </h3>
 
 additionally, because of the constraint by the fixed voltage source at node n1 to node n3:
 
@@ -56,9 +56,9 @@ divide by $R_1$ so that: $\frac{v_{n1}}{R_1} = \frac{V_S}{R_1}$
 
 and by substitution: $v_{n2}(\frac{1}{R_1} + \frac{1}{R_2}) = \frac{V_S}{R_1}$
 
-so finally: <h4>
+so finally, "Eq'n. 5.2":#eq5-2: <h4>
 	
-p=. $v_{n2} = \frac{R_2}{(R_1 + R_2)}$  </h4>
+p=(#eq5-2).  $v_{n2} = \frac{R_2}{(R_1 + R_2)}$  Eq'n 5-2</h4>
 
 This result reveals that while the voltage at node n1 is the source voltage, $V_S$, the voltage at node n2, $v_{n2}$, is a _constant fraction_ of the fixed source voltage $V_S$.  The fraction value is determined only by the resistor resistance values $R_1$ and $R_2$.
 
