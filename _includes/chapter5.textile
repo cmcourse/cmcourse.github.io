@@ -52,7 +52,7 @@ p=. $(v_{n1} - 0) - V_S = 0$,   so
 
 p=. $v_{n1} = v_{S}$
 
-$v_3 = \\mathlarger{v_x}$
+$v_3 = \displaystyle{v_x}$
 
 divide by $R_1$ so that: $\frac{v_{n1}}{R_1} = \frac{V_S}{R_1}$
 
