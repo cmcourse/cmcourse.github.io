@@ -88,7 +88,7 @@ p=(#eq5-3). $(v_{n1} - v_{n2}) - i_R R_{ph} = 0$  Eq'n 5.3
 
 Usually the photo-resistance value, $R_{ph}$, decreases as the light intensity increases.  For example, if the light intensity is normalized to full sun light, $S = 1$, (suns), then $R_{ph}$ would be of the form:
 
-p=(eq5-4). $frac\{R_{ph}}{S}$  - ohms Eq'n 5.4
+p=(eq5-4). $frac\{R_p}{S}$  - ohms Eq'n 5.4
 
 For this relation, as the light intensity *decreases*, $S$ gets smaller and $R_{ph}$ *gets larger*.  So for indoor conditions, if $S = 0.01$ then the value of $R_{ph}$ increases to 10,000 ohms.
 
@@ -101,11 +101,11 @@ _Figure 5.5  Photo-Sensitive Circuit, Detects Light Intensity_
 
 To find out the light response, we first recognize this circuit as a single-loop circuit series connection restriction. Thus, we can apply the _voltage divider_ "Eq'n. 5.2":#eq5-2 to this single loop structure, and thereby directly write the output response equation of "Eq'n. 5.5":#eq5-5.  Here the photo-resistor value decreases as the light intensity increases, and hence the voltage at the output, $v_{out}$, also decreases as light intensity increases.  Thus, as calculated below the circuit of Figure 5.5 yields an _output voltage that decreases as the light increases_, an inverse relationship.
 
-p=(#eq5-5). $V_{out} = $  $(R_{ph}/(R_m + R_{ph}))  V_S$  Eq'n 5.5
+p=(#eq5-5). p=. $V_{out} = $  $(\frac{R_p}{(R_m + R_p)})  V_S$  Eq'n 5.5
 
 By substitution, using "Eq'n. 5.4":#eq5-4 in "Eq'n. 5.5":#eq5-5, and when $SR_m >> 100$, (i.e. at brighter light levels, larger $S$) we get an output voltage, which is inversely related to the light strength $S$, given the fixed voltage source, $V_S$, is a constant.
 
-p=. $V_{out} = $  $(100/S)/(R_m + 100/S)  V_S = (100/S R_m) V_S$
+p=. $V_{out} = $  $\frac{100/S}{(R_m + 100/S)}  V_S = frac\{100/S{S R_m}} V_S$
 
 
 *** _5.1.2 (ii)  ) Photo-sensor at 'top' position of voltage divider_
