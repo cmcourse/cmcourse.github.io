@@ -14,7 +14,7 @@ table(#figure5-1).
 
 In the series circuit, "Figure 5.1a":#figure5-1a, all 4 elements are connected end-to-end to form a _single loop_.  There is a single current, '$i$', in the circuit.  This current, '$i$', passes _equally_ through resistors $R_1, R_2, R_3$, and fixed voltage source $V_S$.  There is no other path for curent in this current, so KCL requires current, $i$, must be of _*equal* value in all 4 elements_.
 
-However, if we now add another element so that there is NOT a single loop, but instead two (or more) loops, see "Figure 5.1b":#figure5-1b; then due to KCL at node n2, the current '$i_1$' is NOT the same in all 5 elements.  The added resistor $R_4$ in "Figure 5.1b":#figure5-1b causes the current '$i_1$' to split so a portion, '$i_2$', continues on to go through $R_2$ and $R_3$; and a portion, '$i_4$', branches through $R_4$.  In Figure 5.1b, it is no longer true that the same current '$i_1$' passes through all elements.  This non-equal current is the direct consequence of there being _more than a single loop_.  That $i_2$ cannot not equal $i_1$ in Figure 5.1b, is proved by KCL at node n2:
+However, if we now add another element so that there is NOT a single loop, but instead two (or more) loops, see "Figure 5.1b":#figure5-1b; then due to KCL at node n2, the current '$i_1$' is NOT the same in all 5 elements.  The added resistor $R_4$ in "Figure 5.1b":#figure5-1b causes the current '$i_1$' to split so a portion, '$i_2$', continues on to go through $R_2$ and $R_3$; and a portion, '$i_4$', branches through $R_4$.  In Figure 5.1b, it is no longer true that the same current '$i_1$' passes through all elements.  This non-equal current is the direct consequence of there being *more than a single loop*.  That $i_2$ cannot not equal $i_1$ in Figure 5.1b, is proved by KCL at node n2:
 
 p=. $-i_1 + i_2 + i_4 = 0$
 
@@ -22,9 +22,9 @@ Since $i_4$ is not zero, this means the current, $i_2$, in resistors $R_2$ and $
 
 So the single-loop circuit restriction causes a special result, all currents must be equal.  A _'series connection'_ of elements thus simply means those elements in series are connected such that they all have the _same current.  If the elements do not have the same current, those elements cannot be in 'series'_.
 
-** _5.1.1 A Single Loop Circuit Example: the Voltage Divider_
+<h5 _5.1.1 A Single Loop Circuit Example: the Voltage Divider_>
 
-Lets consider a circuit with 3 elements as depicted in "Figure 5.2":#figure5-2.  This circuit has a single loop with a fixed voltage source and 2 resistors.  Because the 2 resistors are in the same loop we will know they must have the same current, I = iR1 = iR2, and are in series.
+Lets consider a circuit with 3 elements as depicted in "Figure 5.2":#figure5-2.  This circuit has a single loop with a fixed voltage source and 2 resistors.  Because the 2 resistors are in the same loop we will know they must have the same current, $I = i_{R} = i_{R2}, and are in series.
 
 p=(#figure5-2). !{width:25%}img/5/circuitsF5.2.jpg(Figure 5.2)!:img/5/circuitsF5.2.jpg
 _Figure 5.2  Example Circuit, 3 Elements in Single Loop_
