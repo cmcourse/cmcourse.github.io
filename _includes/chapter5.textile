@@ -50,7 +50,9 @@ additionally, because of the constraint by the fixed voltage source at node n1 t
 
 p=. $(v_{n1} - 0) - V_S = 0$,   so
 
-p=. $v_{n1} = \mathlarger{v_{S}}$
+p=. $v_{n1} = v_{S}$
+
+$v_3 = \mathlarger{v_x}$
 
 divide by $R_1$ so that: $\frac{v_{n1}}{R_1} = \frac{V_S}{R_1}$
 
