@@ -97,7 +97,7 @@ For this relation, as the light intensity *decreases*, $S$ gets smaller and $R_{
 
 Now if we place this photo-sensitive resistor at the 'bottom leg' of a voltage divider circuit, "Figure 5.5":#figure5-5, we can produce a voltage, $v_{out}$, (taken across the photo-resistor) that changes according to the amount of light.
 
-p=(#figure5-5). !{width:40%}img/5/circuitsF5.5.jpg(Figure 5.5)!:img/5/circuitsF5.5.jpg
+p=(#figure5-5). !{width:38%}img/5/circuitsF5.5.jpg(Figure 5.5)!:img/5/circuitsF5.5.jpg
 _Figure 5.5  Photo-Sensitive Circuit, Detects Light Intensity_
 
 To find out the light response, we first recognize this circuit as a single-loop circuit series connection restriction. Thus, we can apply the _voltage divider_ "Eq'n. 5.2":#eq5-2 to this single loop structure, and thereby directly write the output response equation of "Eq'n. 5.5":#eq5-5.  Here the photo-resistor value decreases as the light intensity increases, and hence the voltage at the output, $v_{out}$, also decreases as light intensity increases.  Thus, as calculated below the circuit of Figure 5.5 yields an _output voltage that decreases as the light increases_, an inverse relationship.
@@ -115,7 +115,7 @@ Alternately we might want an output voltage, $V_{out}$, that is more directly re
 
 With the resistor positions reversed, there is still a single-loop circuit and the voltage divider is now that depicted in "Figure 5.6":#figure5-6.
 
-p=(#figure5-6). !{width:40%}img/5/circuitsF5.6.jpg(Figure 5.6)!:img/5/circuitsF5.6.jpg
+p=(#figure5-6). !{width:38%}img/5/circuitsF5.6.jpg(Figure 5.6)!:img/5/circuitsF5.6.jpg
 _Figure 5.6  Alternate Photo-Sensitive Circuit, Detect Light Intensity_
 
 We can apply the voltage divider equation, and now get the output response of "Eq'n. 5.6":#eq5-6.  So in this case the voltage at the output, $v_{out}$, increases as the photo-resistor value decreases, and correspondingly when the light intensity increases.  Thus the circuit of "Figure 5.6":#figure5-6 yields an _output voltage that increases as the light increases_.
@@ -161,7 +161,7 @@ Now we will employ our ‘node-method’ to solve this circuit.
 
 *STEP 1:*
 
-All currents and node voltages have also been labeled. In this circuit we have selected the reference to be node n2 and set the voltage of it to zero.  In this circuit with only 2 nodes we seek to calculate currents, we can see that the fixed voltage source connected to the same two nodes forces a known voltage difference value, $(v_{n1} – v_{n2}) = V_S$.
+All currents and node voltages have also been labeled. In this circuit we have selected the reference to be node n2 and set the voltage of it to zero.  In this circuit with only 2 nodes we seek to calculate currents, we can see that the fixed voltage source connected to the same two nodes forces a known voltage difference value, $(v_{n1}-v_{n2}) = V_S$.
 
 *STEP 2:*
 
