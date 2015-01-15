@@ -54,14 +54,14 @@ p=. $v_{n1} = v_{S}$
 
 divide by R1 so that: $\frac{v_{n1}}{R_1} = \frac{V_S}{R_1}$
 
-and by substitution: $v_{n2}()\frac{1}{R_1} + \frac{1}{R_2}) = \frac{V_S}{R_1}
+and by substitution: $v_{n2}\frac{1}{R_1} + \frac{1}{R_2}) = \frac{V_S}{R_1}$
 
 p=. $v_{n2}((1/R_1) + (1/R_2)) = V_S/R_1$
 
 so finally:
 
 <h4>
-p=. $v_{n2} = \frac{R_2}{(R_1 + R_2)}  </h4>
+p=. $v_{n2} = \frac{R_2}{(R_1 + R_2)}$  </h4>
 
 p=. $v_{n2} = (R_2/(R_1 + R_2))V_S$
 
