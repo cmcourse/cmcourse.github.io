@@ -74,7 +74,7 @@ p=. $V_{out} = $  $(\frac{R_2}{(R_1 + R_2)})  V_S$  <----  Voltage Divider Eq'n 
 
 Throughout the book we will often use extended '_observation wires_' connected to some nodes (as in "Figure 5.3":#figure5-3) to indicate more clearly a voltage of interest in a circuit.  Even with such extended wires these wires DO NOT form any added loop nor any added node, and hence the circuit response is exactly the same as that without the 'observation wires'.  They only make a specific voltage more recognizable, they do not change the circuit in any way.
 
-** _5.1.2  Voltage Divider Application, Light Detector Examples_
+** _5.1.2  Example Voltage Divider Application, Light Detectors_
 
 The voltage divider circuit provides a very elegant means to measure light, when the circuit employs a photo-sensitive resistor as one of two in-series resistors.  But first, what is a _photo-sensitive resistor_?  It is a two terminal element that exhibits the same electrical characteristic as a usual fixed resistor, such as in Section 2.4.  However, the photo-sensitive resistor has the internal material exposed to the outside world, and the internal material changes electrical properties when exposed to light !
 
@@ -139,7 +139,7 @@ The second special circuit topology is one where all elements are connected betw
 p=(#figure5-7a). !{width:50%}img/5/circuitsF5.7a.jpg(Figure 5.7a)!:img/5/circuitsF5.7a.jpg
 _Figure 5.7a  Parallel Connection, Single Node-Pair Restriction_
 
-Because the circuit has a single node-pair, and because of our KVL voltage law, there can be only one voltage that is across all elements in the circuit.  In Figure 5.7a all elements are connected between the single node-pair, node n1 and node n2, they are in a parallel connection.  In this case the voltage across all the elements is the difference $(v_{n1} – v_{n2})$.  A fixed voltage source $V_S$ also connected between these two nodes, and thus we know all three resistors have the same voltage value of $(v_{n1}-v_{n2}) = V_S$ across every element.
+Because the circuit has a single node-pair, and because of our KVL voltage law, there can be only one voltage that is across all elements in the circuit.  In Figure 5.7a all elements are connected between the single node-pair, node n1 and node n2, they are in a parallel connection.  In this case the voltage across all the elements is the difference $(v_{n1}-v_{n2})$.  A fixed voltage source $V_S$ also connected between these two nodes, and thus we know all three resistors have the same voltage value of $(v_{n1}-v_{n2}) = V_S$ across every element.
 
 But, if there is an added element that goes to ANOTHER node, say n3, then all elements are *NOT* _connected to the same 2 nodes_, and hence all elements DO NOT have the same element voltage.  "Figure 5.7b":#figure5-7b depicts such a case where a 3rd node, n3, has been added.
 
@@ -148,11 +148,11 @@ _Figure 5.7b  More than Two Nodes, *NOT* a Single Node-Pair Circuit_
 
 Now in Figure 5.2b resistors $R_3$ and $R_4$ are not connected only between nodes n1, and n2, and thus these resistors do not have the same voltage as resistors $R_1$, $R_2$ and source $V_S$.  This is not a single node-pair circuit.
 
-There is a name used for 2-node circuits, the elements are said to be in parallel.  A ‘parallel connection’ restriction requires those elements are connected so ALL connect between the same 2 nodes and therefore also all have the same voltage.  If there are more than two nodes, then those connected elements cannot be all in ‘parallel’.
+There is a name used for 2-node circuits, the elements are said to be in parallel.  A '_parallel connection_' restriction requires those elements are connected so ALL connect between the same 2 nodes and therefore also all have the same voltage.  If there are more than two nodes, then those connected elements cannot be all in 'parallel'.
 
 ** _5.2.1 A Single Node-Pair Circuit Example, the *Current Divider*_
 
-Lets consider a circuit with 3 elements as depicted in "Figure 5.8":#figure5-8.  This circuit has a single node-pair with a fixed voltage source and 2 resistors.  Because the 2 resistors are between the same nodes we know they must have the same voltage, $V = v_{R1} = v_{R2} = (v_{n1}-v_{n2})$.
+Lets consider a circuit with 3 elements as depicted in "Figure 5.8":#figure5-8.  This circuit has a single node-pair with a fixed voltage source and 2 resistors.  Because the 2 resistors are between the same nodes we know they must have the same voltage, $V_S = v_{R1} = v_{R2} = (v_{n1}-v_{n2})$.
 
 p=(#figure5-8). !{width:50%}img/5/circuitsF5.8.jpg(Figure 5.8)!:img/5/circuitsF5.8.jpg
 _Figure 5.8  Example Circuit, 2 Resistors in Single Node-Pair Configuration_
