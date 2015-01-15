@@ -54,16 +54,10 @@ p=. $v_{n1} = v_{S}$
 
 divide by R1 so that: $\frac{v_{n1}}{R_1} = \frac{V_S}{R_1}$
 
-and by substitution: $v_{n2}\frac{1}{R_1} + \frac{1}{R_2}) = \frac{V_S}{R_1}$
+and by substitution: $v_{n2}(\frac{1}{R_1} + \frac{1}{R_2}) = \frac{V_S}{R_1}$
 
-p=. $v_{n2}((1/R_1) + (1/R_2)) = V_S/R_1$
-
-so finally:
-
-<h4>
+so finally: <h4>
 p=. $v_{n2} = \frac{R_2}{(R_1 + R_2)}$  </h4>
-
-p=. $v_{n2} = (R_2/(R_1 + R_2))V_S$
 
 This result reveals that while the voltage at node n1 is the source voltage, $V_S$, the voltage at node n2, $v_{n2}$, is a _constant fraction_ of the fixed source voltage $V_S$.  The fraction value is determined only by the resistor resistance values $R_1$ and $R_2$.
 
