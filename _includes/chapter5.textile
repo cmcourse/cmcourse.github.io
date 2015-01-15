@@ -136,13 +136,33 @@ h4(#chapter5-parallel-restriction). 5.2 - Special Circuit Topology, the Single N
 
 The second special circuit topology is one where all elements are connected between the _same 2 nodes_. "Figure 5.7a":#figure5-7a depicts an example of a 2-node (single node-pair) circuit.
 
-p=(#figure5-7a). !{width:40%}img/5/circuitsF5.7a.jpg(Figure 5.7a)!:img/5/circuitsF5.7a.jpg
+p=(#figure5-7a). !{width:50%}img/5/circuitsF5.7a.jpg(Figure 5.7a)!:img/5/circuitsF5.7a.jpg
 _Figure 5.7a  Parallel Connection, Single Node-Pair Restriction_
 
 Because the circuit has a single node-pair, and because of our KVL voltage law, there can be only one voltage that is across all elements in the circuit.  In Figure 5.7a all elements are connected between the single node-pair, node n1 and node n2, they are in a parallel connection.  In this case the voltage across all the elements is the difference $(v_{n1} – v_{n2})$.  A fixed voltage source $V_S$ also connected between these two nodes, and thus we know all three resistors have the same voltage value of $(v_{n1}-v_{n2}) = V_S$ across every element.
 
 But, if there is an added element that goes to ANOTHER node, say n3, then all elements are *NOT* _connected to the same 2 nodes_, and hence all elements DO NOT have the same element voltage.  "Figure 5.7b":#figure5-7b depicts such a case where a 3rd node, n3, has been added.
 
-p=(#figure5-7b). !{width:40%}img/5/circuitsF5.7b.jpg(Figure 5.7b)!:img/5/circuitsF5.7b.jpg
+p=(#figure5-7b). !{width:50%}img/5/circuitsF5.7b.jpg(Figure 5.7b)!:img/5/circuitsF5.7b.jpg
 _Figure 5.7b  More than Two Nodes, *NOT* a Single Node-Pair Circuit_
 
+Now in Figure 5.2b resistors $R_3$ and $R_4$ are not connected only between nodes n1, and n2, and thus these resistors do not have the same voltage as resistors $R_1$, $R_2$ and source $V_S$.  This is not a single node-pair circuit.
+
+There is a name used for 2-node circuits, the elements are said to be in parallel.  A ‘parallel connection’ restriction requires those elements are connected so ALL connect between the same 2 nodes and therefore also all have the same voltage.  If there are more than two nodes, then those connected elements cannot be all in ‘parallel’.
+
+** _5.2.1 A Single Node-Pair Circuit Example, the *Current Divider*_
+
+Lets consider a circuit with 3 elements as depicted in "Figure 5.8":#figure5-8.  This circuit has a single node-pair with a fixed voltage source and 2 resistors.  Because the 2 resistors are between the same nodes we know they must have the same voltage, $V = v_{R1} = v_{R2} = (v_{n1}-v_{n2})$.
+
+p=(#figure5-8). !{width:50%}img/5/circuitsF5.8.jpg(Figure 5.8)!:img/5/circuitsF5.8.jpg
+_Figure 5.8  Example Circuit, 2 Resistors in Single Node-Pair Configuration_
+
+Now we will employ our ‘node-method’ to solve this circuit.
+
+*STEP 1:*
+
+All currents and node voltages have also been labeled. In this circuit we have selected the reference to be node n2 and set the voltage of it to zero.  In this circuit with only 2 nodes we seek to calculate currents, we can see that the fixed voltage source connected to the same two nodes forces a known voltage difference value, $(v_{n1} – v_{n2}) = V_S$.
+
+*STEP 2:*
+
+We will write the conservation law constraints, KCL, and directly apply the resistor constitutive constraints to express the current values.
