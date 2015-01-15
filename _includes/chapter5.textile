@@ -154,7 +154,7 @@ There is a name used for 2-node circuits, the elements are said to be in paralle
 
 Lets consider a circuit with 3 elements as depicted in "Figure 5.8":#figure5-8.  This circuit has a single node-pair with a fixed voltage source and 2 resistors.  Because the 2 resistors are between the same nodes we know they must have the same voltage, $V_S = v_{R1} = v_{R2} = (v_{n1}-v_{n2})$.
 
-p=(#figure5-8). !{width:45%}img/5/circuitsF5.8.jpg(Figure 5.8)!:img/5/circuitsF5.8.jpg
+p=(#figure5-8). !{width:43%}img/5/circuitsF5.8.jpg(Figure 5.8)!:img/5/circuitsF5.8.jpg
 _Figure 5.8  Example Circuit, 2 Resistors in Single Node-Pair Configuration_
 
 Now we will employ our ‘node-method’ to solve this circuit.
