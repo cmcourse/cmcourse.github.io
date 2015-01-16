@@ -74,7 +74,7 @@ p=. $V_{out} = $  $(\frac{R_2}{(R_1 + R_2)})  V_S$  <----  Voltage Divider Eq'n 
 
 Throughout the book we will often use extended '_observation wires_' connected to some nodes (as in "Figure 5.3":#figure5-3) to indicate more clearly a voltage of interest in a circuit.  Even with such extended wires these wires DO NOT form any added loop nor any added node, and hence the circuit response is exactly the same as that without the 'observation wires'.  They only make a specific voltage more recognizable, they do not change the circuit in any way.
 
-** _5.1.2  Example Voltage Divider Application, Light Detectors_
+** _5.2.1  Example Voltage Divider Application, Light Detectors_
 
 The voltage divider circuit provides a very elegant means to measure light, when the circuit employs a photo-sensitive resistor as one of two in-series resistors.  But first, what is a _photo-sensitive resistor_?  It is a two terminal element that exhibits the same electrical characteristic as a usual fixed resistor, such as in Section 2.4.  However, the photo-sensitive resistor has the internal material exposed to the outside world, and the internal material changes electrical properties when exposed to light !
 
@@ -93,7 +93,7 @@ p=(eq5-4). $R_{ph} = \frac{100}{S}$  - ohms Eq'n 5.4
 
 For this relation, as the light intensity *decreases*, $S$ gets smaller and $R_{ph}$ *gets larger*.  So for indoor conditions, at $S = 0.01$ then the value of $R_{ph}$ increases to 10,000 ohms.
 
-*** _5.1.2 (i)  Photo-sensor at 'bottom' position of voltage divider_
+*** _5.2.1 (i)  Photo-sensor at 'bottom' position of voltage divider_
 
 Now if we place this photo-sensitive resistor at the 'bottom leg' of a voltage divider circuit, "Figure 5.5":#figure5-5, we can produce a voltage, $v_{out}$, (taken across the photo-resistor) that changes according to the amount of light.
 
@@ -109,7 +109,7 @@ By substitution, using "Eq'n. 5.4":#eq5-4 in "Eq'n. 5.5":#eq5-5, and when $SR_m 
 p=. $V_{out} = $  $\frac{100/S}{(R_m + 100/S)}$  $V_S = \frac{100}{S R_m} V_S$
 
 
-*** _5.1.2 (ii)  ) Photo-sensor at 'top' position of voltage divider_
+*** _5.2.1 (ii)  ) Photo-sensor at 'top' position of voltage divider_
 
 Alternately we might want an output voltage, $V_{out}$, that is more directly related to light level, that is, we desire an output voltage that _increases_ as the light level, $S$, *increases*, a direct relationship.  To obtain this result we 'reverse' the positions of the two resistors.  Namely we place the photo-sensitive resistor, $R_{ph}$, at the 'top' position of the divider, and the fixed $R_m$ at the 'bottom' output side of the divider circuit.
 
