@@ -209,6 +209,7 @@ The source voltage terms in numerator and denominator cancel, and this result re
 <h4>
 p=. $i_{R1} = (\frac{R_2}{R_1+R_2}) i_S$, </h4>
 and
+
 <h4>
 p=. $i_{R2} = (\frac{R_1}{R_1+R_2}) i_S$ </h4>
 
