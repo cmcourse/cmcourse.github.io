@@ -93,7 +93,7 @@ Conversely, if we _instead identify_ voltage $V_2$ with the opposite polarity as
 p=(#figure1-7). !{width:40%}img/1/circuitsF1.7a.jpg(Figure 1.7)!:img/1/circuitsF1.7a.jpg
 _Figure 1.7  Polarity convention; voltage $V_2$ is the difference $(V_B - V_A)$._
 
-The polarity signs set the order of the voltage difference.  A voltage value between two parts of a circuit is always determined according to the polarity assigned-- the voltage value at the '$+$' polarity side minus the voltage value at the '$-$' polarity side.
+The polarity signs set the order of the voltage difference.  A voltage value between two parts of a circuit is always determined according to the polarity assigned: the voltage value at the '$+$' polarity side minus the voltage value at the '$-$' polarity side.
 
 Another way to identify a voltage difference is to use a double subscript.  Thus $V_{AB}$ by convention is $(V_A - V_B)$, while the opposite subscript order $V_{BA}$ is the difference $(V_B - V_A)$.
 
