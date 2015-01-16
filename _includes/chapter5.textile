@@ -2,7 +2,7 @@
 In this section we apply our knowledge of constraints for elements (the constitutive relations), and the constraints for circuits (KCL and KVL) to examine two major circuit topologies that appear repeatedly in many practical circuits.  By circuit topology we refer to a specific arrangement of circuit elements.  The two arrangements here involve specific _restrictions_, ones that simplify our work and enable a very rapid evaluation once the configuration is correctly recognized.  It is also true that incorrect assessment of the configuration will result in an incorrect result, so it is really important to understand the two specific types of restrictions that we consider in this section.
 
 
-h4(#chapter5-series-restriction). 5.1 - Series Connection: Single-Loop Restriction
+h4(#chapter5-series-connection). 5.1 - Series Connection: Single-Loop Restriction
 
 
 Consider the first special topology the _single loop_ circuit structure, see "Figure 5.1a":#figure5-1a.  Here we mean that all elements of the circuit are connected so they form a single loop.  Because the circuit is a single loop, and because of our KCL current law, there can be only one current in all elements in the loop.  "Figure 5.1a":#figure5-1a depicts this arrangement, called a series connection.
@@ -132,7 +132,7 @@ Already with a simple single-loop circuit we can create a light-sensitive voltag
 
 Note that our analysis in this case has taken a simplified solution approach, the last "Eq'ns 5.5":#eq5-5: and "Eq'n. 5.6":#eq5-6 and were found, not by complete constraint analysis, but rather by recognition that the problem circuit was the specialized configuration of the voltage divider.  We therefore could apply the voltage divider result and did not have to calculate a solution from the element constraint equations.  The recognition of the voltage divider configuration is a convenient and often used short-cut to a circuit solution.
 
-h4(#chapter5-parallel-restriction). 5.2 - Special Circuit Topology, the Single Node-Pair Restriction (Parallel)
+h4(#chapter5-parallel-connection). 5.2 - Parallel Connection: Single Node-Pair Restriction
 
 The second special circuit topology is one where all elements are connected between the _same 2 nodes_. "Figure 5.7a":#figure5-7a depicts an example of a 2-node (single node-pair) circuit.
 

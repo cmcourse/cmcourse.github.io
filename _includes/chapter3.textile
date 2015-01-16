@@ -133,7 +133,7 @@ where, the resistor element voltage $V_R$ is by our conventions $(v_{n1}-v_{n2})
 
 We will see that the solution to multi-node circuits is most often achieved by use of node voltages rather than element voltages.  However, both have their place and are used according to convenience of the problem to be solved.  In a later Chapter 4, we develop a method to solve circuits that can be applied to solve any circuit.  It is called the 'Node Method'.
 
-h4(#chapter3-KVL). 3.3 - Power Constraint, an Overall Circuit Constraint
+h4(#chapter3-power-law). 3.3 - Circuit Power Constraint
 
 There is another 'circuit' constraint that is related not to either voltage or current individually, but rather to their combination.  Specifically, we can establish that all the *products* of (element voltage) x (element current) associated with each element in a circuit have a constraint.  Recall these products are the power dissipated by each element.  The basic concept is that circuits must conserve power.  This conservation means _the sum of the power dissipated by all individual elements in a circuit must be zero_.  This is expressed by the power constraint "Eq'n. 3.5":#eq3-5.
 
@@ -208,6 +208,6 @@ p=. $-5 -5 +5 = -5 :does-not-equal:  0$
 
 _Impossible_ !!!  A violation of Kirchoff's Voltage Law. This particular circuit creates an inherent CONFLICT between the individual element constraints and the connected circuit constraints.  Hence this circuit has NO SOLUTION.  In general it is inconsistent to create a circuit with inherently conflicting constraints.  Though it may be interesting to speculate what would 'break' if such a conflicted circuit was actually built, it is more likely it would cause dangerous extreme overheating and should not be attempted.  For example a wire connected across a battery is one way to cause a battery to catch fire or worse [Danger - Do *NOT* Try This with Real Elements !].
 
-h4(#chapter3-contradiction). 3.5 - Conclusion
+h4(#chapter3-conclusion). 3.5 - Conclusion
 
 In this chapter two key circuit constraints, the Kirchoff's Voltage Law and the Kirchoff's Current Law were developed.  The circuit constraints when combined with element constraints were applied to solve an example simple circuit.  Additionally, in this chapter attention was given to power dissipated by circuit elements and a general proof that the sum of element power values must be zero.  This power constraint for a circuit can be used in certain situations to quickly evaluate the power in an element when all the other element powers are known.  In the next Chapter 4 a general method of solving circuits for their voltage and current values is developed.
