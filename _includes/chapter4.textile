@@ -24,7 +24,7 @@ To obtain the needed 2N equations we apply (1) the constitutive constraints for 
 # Conservation Law Constraints: KVL:
 ** Around Loop 1: $-V_4 + V_1 + V_2 - V_3 = 0$
 
-Note the assignment of the element voltage polarity was arbitrary, BUT once the voltage polarity is defined then the current direction MUST be set consistently, with current defined into the “+” terminal.  There is not an independent KCL equation at node n4, since the sum of the three other node equations is the same as that at node n4.  [In general there are always only (N-1) node equations where N is the total number of nodes.]
+Note the assignment of the element voltage polarity was arbitrary, BUT once the voltage polarity is defined then the current direction MUST be set consistently, with current defined into the '+' terminal.  There is not an independent KCL equation at node n4, since the sum of the three other node equations is the same as that at node n4.  [In general there are always only (N-1) node equations where N is the total number of nodes.]
 
 These eight equations can be solved for the 8 element voltage and current values.  Finally these solution values can then be used to calculate additional values of interest such as power dissipated by an element or the total voltage across several elements.
 
@@ -58,36 +58,36 @@ Thus we have 10 equations for the 10 unknowns, and with algebra they can be solv
 
 h4(#chapter4-node-method). 4.3 - The 'Node Voltage Method' of Circuit Analysis
 
-Notice in the general solution method above, we calculated the element voltages and the element current all by one set of equations.  We now employ a simplification of the solution process by ‘directly’ writing a reduced set of equations, _written in terms of the unknown node voltages only_.  This solution method does not directly calculate element voltages.
+Notice in the general solution method above, we calculated the element voltages and the element current all by one set of equations.  We now employ a simplification of the solution process by 'directly' writing a reduced set of equations, _written in terms of the unknown node voltages only_.  This solution method does not directly calculate element voltages.
 
 The _node-voltage method_ breaks the total solution of all element voltages and currents into separate smaller parts.  In this way one need not calculate element values that are not of interest and more directly solve for specific desired quantities.  The small set of node voltage values are often an intermediate step since individual branch voltages are determined subsequently from the difference of node voltages; also element currents can be determined from the known voltages, and element characteristics.  In this manner all voltage and current values of the original problem can be calculated as needed.
 
 We organize the node-method solution process into 4 steps:
 
 # Identification and label all unknown node-voltage variables,
-## select one node as the reference node (ground)
+** select one node as the reference node (ground)
 # Write the KCL equations at each unknown node in terms of the node voltages,
 # Solve the set of equations for the node voltages, and finally
 # Calculate the variables of interest:
-## element or group voltages
-## element currents
-## power dissipated in elements
+** element or group voltages
+** element currents
+** power dissipated in elements
 
 Specifically the 4-steps are:
 
-# STEP 1:  Identification/label of node-voltage variables
+# *STEP 1:*  Identification/label of node-voltage variables
 ** (a) select a reference node and set it’s voltage to zero (ground)
 ** (b) label all other unknown node voltages
-# STEP 2:  Write KCL constraint equations for all nodes via unknown node voltages
+# *STEP 2:*  Write KCL constraint equations for all nodes via unknown node voltages
 ** (a) write each KCL branch current according to element constraints
-# STEP 3:  Solve the resulting set of equations for all node voltage values
+# *STEP 3:*  Solve the resulting set of equations for all node voltage values
 ** (a) these will be linear equations for our problems
 ** (b) solve sequentially or by matrix methods
-** (c) if non-linear, then iterative/computer solution is required
-# STEP 4:  Calculate particular individual variable or values of interest
+** (\c) if non-linear, then iterative/computer solution is required
+# *STEP 4:*  Calculate particular individual variable or values of interest
 ** (a) element voltages
 ** (b) element currents
-** (c) power dissipated by an element
+** (\c) power dissipated by an element
 ** (d) groups of voltages, currents
 
 We can illustrate the process of this 'node method' using the same 4-node, 5-element problem as in Section 4.2 and "Figure 4.2":#figure4-2,.  Now redrawn in "Figure 4.3":#figure4-3, with the unknown node voltages labeled, and the 'ground' reference node identified as node $n_4$, and hence $v_{n4} = 0$.  For clarity in writing KCL constraints the branch current are identified.
