@@ -104,6 +104,12 @@ p=(#eq3-3). $\sum_{j=1 \ \mbox(closed - loop)}^m v_j = 0$ </h4>
 
 p=. ($v_j$ = _branch voltage-drop_ on element '$j$' in loop)  Eq'n 3-3        
 
+
+<h4>
+p=. $\sum_{j=1 \(closed - loop)}^{m} v_j = 0$ </h4>
+
+
+
 Here the element voltage 'drops', $v_j$, are for each of all the '_m_' elements *in the closed loop*.  This can be illustrated by a 4-element loop example, as depicted in "Figure 3.4":#figure3-4,
 
 p=(#figure3-4). !{width:40%}img/3/circuitsF3.4.jpg(Figure 3.4)!:img/3/circuitsF3.4.jpg
