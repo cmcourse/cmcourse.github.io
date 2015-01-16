@@ -135,7 +135,7 @@ We will see that the solution to multi-node circuits is most often achieved by u
 
 h4(#chapter3-KVL). 3.3 - Power Constraint, an Overall Circuit Constraint
 
-There is another ‘circuit’ constraint that is related not to either voltage or current individually, but rather to their combination.  Specifically, we can establish that the product of (voltage) x (current) associated with all elements in a circuit have a constraint.  The basic concept is that circuits conserve power.  This conservation means _the sum of the power dissipated by all individual elements in a circuit must be zero_.  This is expressed by the power constraint "Eq'n. 3.5":#eq3-5.
+There is another 'circuit' constraint that is related not to either voltage or current individually, but rather to their combination.  Specifically, we can establish that all the *products* of (element voltage) x (element current) associated with each element in a circuit have a constraint.  Recall these products are the power dissipated by each element.  The basic concept is that circuits must conserve power.  This conservation means _the sum of the power dissipated by all individual elements in a circuit must be zero_.  This is expressed by the power constraint "Eq'n. 3.5":#eq3-5.
 
 <h4>
 p=(#eq3-5). $$\sum_{j=1 \ \mbox(all-elements)}^{m} P_j = 0$$ </h4>
