@@ -97,7 +97,7 @@ h4(#chapter3-KVL). 3.2 - Kirchoff's Voltage Law
 
 There is another constraint, one that is again associated with the interconnections of circuit elements, another 'Rule-2' type constraint.  And again this constraint is caused by the restrictions imposed by our physical world.  In this case we are concerned with potential energy, this is just a more general term for the quantity in our circuits we call *voltage*.  Voltage in our circuits is a _conserved_ quantity and is associated with any node.  Conservation of energy means the value of voltage at any node is _always the same independent of the path taken to get to the node_.
 
-Being conserved, means that if a node 'A' is at a voltage $V_A$, then if we follow any circuit loop and return back to node 'A' the voltage must be the same voltage value $V_A$.  In other words, the sum of all element voltages around any closed circuit loop path MUST BE ZERO.  This fact is an expression of Kirchoff's Voltage Law, and is written in the form of "Eq'n. 3.3":#eq3-3.
+Being conserved, means that if a node 'A' is at a voltage $V_A$, then if we follow any circuit loop and return back to node 'A' the voltage must be the same voltage value $V_A$.  In other words, the sum of all element voltages around *any closed circuit loop* path MUST BE ZERO.  This fact is an expression of _Kirchoff's Voltage Law_, and is written in the form of "Eq'n. 3.3":#eq3-3.
 
 <h4>
 p=(#eqn3-3). $$\sum_{j=1 \ \mbox(closed - loop)}^{m} v_j = 0$$ </h4>
