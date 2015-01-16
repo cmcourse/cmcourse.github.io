@@ -207,7 +207,10 @@ p=. $\frac{i_{R2}}{i_S}$ = $\frac{V_S/R_2}{\frac{(R_1+R_2)}{R_1R_2} V_S}$ = $\fr
 The source voltage terms in numerator and denominator cancel, and this result reveals that the total current , $i_S$, splits_ into two currents, $i_{R1}$ and $i_{R2}$, according to the resistor values $R_1$ and R_2$ as follows:
 
 <h4>
-p=. $i_{R1} = (\frac{R_2}{R_1+R_2}) i_S$, \ \ $i_{R2} = (\frac{R_1}{R_1+R_2}) i_S$ </h4>
+p=. $i_{R1} = (\frac{R_2}{R_1+R_2}) i_S$, </h4>
+and
+<h4>
+p=. $i_{R2} = (\frac{R_1}{R_1+R_2}) i_S$ </h4>
 
 We see that each resistor current is a fixed fraction of the total current, and thus this circuit is often termd a *_current divider_*.
 
