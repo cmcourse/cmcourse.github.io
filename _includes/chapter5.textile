@@ -22,9 +22,9 @@ Since $i_4$ is not zero, this means the current, $i_2$, in resistors $R_2$ and $
 
 So the single-loop circuit restriction causes a special result, all currents must be equal.  A _'series connection'_ of elements thus simply means those elements in series are connected such that they all have the _same current.  If the elements do not have the same current, those elements cannot be in 'series'_.
 
-** _5.1.1 A Single Loop Circuit Example: the Voltage Divider_
+h4(#chapter5-voltage-divider). 5.2 - Voltage Divider: Example Series Connection
 
-Lets consider a circuit with 3 elements as depicted in "Figure 5.2":#figure5-2.  This circuit has a single loop with a fixed voltage source and 2 resistors.  Because the 2 resistors are in the same loop we will know they must have the same current, $I = i_{R} = i_{R2}$, and are in series.
+Lets consider a circuit with 3 elements as depicted in "Figure 5.2":#figure5-2.  This circuit has a single loop with a fixed voltage source and 2 resistors.  Because the 2 resistors are in the same loop (with no other current path) we know all elements must have the same current, $I = i_{R} = i_{R2}$, and they are in _series_.
 
 p=(#figure5-2). !{width:25%}img/5/circuitsF5.2.jpg(Figure 5.2)!:img/5/circuitsF5.2.jpg
 _Figure 5.2  Example Circuit, 3 Elements in Single Loop_
@@ -132,7 +132,7 @@ Already with a simple single-loop circuit we can create a light-sensitive voltag
 
 Note that our analysis in this case has taken a simplified solution approach, the last "Eq'ns 5.5":#eq5-5: and "Eq'n. 5.6":#eq5-6 and were found, not by complete constraint analysis, but rather by recognition that the problem circuit was the specialized configuration of the voltage divider.  We therefore could apply the voltage divider result and did not have to calculate a solution from the element constraint equations.  The recognition of the voltage divider configuration is a convenient and often used short-cut to a circuit solution.
 
-h4(#chapter5-parallel-connection). 5.2 - Parallel Connection: Single Node-Pair Restriction
+h4(#chapter5-parallel-connection). 5.3 - Parallel Connection: Single Node-Pair Restriction
 
 The second special circuit topology is one where all elements are connected between the _same 2 nodes_. "Figure 5.7a":#figure5-7a depicts an example of a 2-node (single node-pair) circuit.
 
@@ -150,14 +150,14 @@ Now in Figure 5.2b resistors $R_3$ and $R_4$ are not connected only between node
 
 There is a name used for 2-node circuits, the elements are said to be in parallel.  A '_parallel connection_' restriction requires those elements are connected so ALL connect between the same 2 nodes and therefore also all have the same voltage.  If there are more than two nodes, then those connected elements cannot be all in 'parallel'.
 
-** _5.2.1 A Single Node-Pair Circuit Example, the *Current Divider*_
+h4(#chapter5-current-divider). 5.4 - Current Divider: Example Parallel Connection
 
 Lets consider a circuit with 3 elements as depicted in "Figure 5.8":#figure5-8.  This circuit has a single node-pair with a fixed voltage source and 2 resistors.  Because the 2 resistors are between the same nodes we know they must have the same voltage, $V_S = v_{R1} = v_{R2} = (v_{n1}-v_{n2})$.
 
 p=(#figure5-8). !{width:43%}img/5/circuitsF5.8.jpg(Figure 5.8)!:img/5/circuitsF5.8.jpg
 _Figure 5.8  Example Circuit, 2 Resistors in Single Node-Pair Configuration_
 
-Now we will employ our ‘node-method’ to solve this circuit.
+Now we will employ our 'node-method' to solve this circuit.
 
 *STEP 1:*
 
@@ -173,7 +173,7 @@ p=. *At node n1:* $-i_S + i_{R1} + i_{R2}$
 
 so
 
-p=. $i_S + \frac{v_{n1}-v{n2}}{R_1} + \frac{v_{n1}-v_{R2}}{R_2} = 0$
+p=. $i_S + \frac{v_{n1}-v_{n2}}{R_1} + \frac{v_{n1}-v_{n2}}{R_2} = 0$
 
 and because of the constraint by the fixed voltage source at node n1 to node n2:
 
@@ -220,3 +220,10 @@ _TAKE CARE:_ The current in $R_1$ depends on the ratio of ${R_2}/(R_1+R_2)$, whi
 
 The current divider structure is not found as frequently in many circuits as compared to the voltage divider in Section 5.3, none-the-less it is a useful circuit toplogy to know and understand.
 
+h4(#chapter5-conclusion). 5.5 - Conclusion
+
+In this chapter two really really important circuit topology arrangements were developed, one is the _series_ connection and the other the _parallel_ connection.  Series has current in a _single loop_ (with no other current paths from that loop) construction, whereas Parallel has the voltage on all elements across a _single node-pair_ (with no other nodes for those elements).  These two connections occur very often and when recognized can greatly simplify circuit analysis.  This is because when the current is known in one element of a series circuit it is known for all those series elements.  And correspondingly when the voltage is known on one element of a parallel circuit it is the same for those parallel elements.
+
+The chapter also applied the series and parallel configurations to develop the circuit response for two very common circuit arrangements the _voltage divider_ and the _current divider_.  For each the resultant voltage or current responses can determined by a fixed ratio of resistor values and the applied voltage or current.
+
+These circuit arrangements most often appear not individually, but as part of a more complex circuit, and hence these series, parallel and divider relations will be seen to provide a means to greatly simplify the solution process with complex circuits.
