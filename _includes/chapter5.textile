@@ -172,7 +172,7 @@ p=. *At node n1:* $-i_S + i_{R1} + i_{R2}$
 
 so
 
-p=. $i_S + \frac{v_{n1}-v{n2}}{R_1} + \frac{v_{n1}-v_{R2}{R_2}} = 0$
+p=. $i_S + \frac{v_{n1}-v{n2}}{R_1} + \frac{v_{n1}-v_{R2}}{R_2} = 0$
 
 and because of the constraint by the fixed voltage source at node n1 to node n2:
 
@@ -186,4 +186,18 @@ p=. $i_S = \frac{V_S}{R_1} + \frac{V_S}{R_2}$
 
 and thus
 
-p=. $i_S = \frac{R_1+R_2}{R_1R_2} V_S$
+p=. $i_S = (\frac{R_1+R_2}{R_1R_2}) V_S$
+
+We can also calculate values for the two resistor currents, $i{R1}$ and $i_{R2}$ by substitution of $V_S$ for the voltage difference $(v_{n1}-v{n2}) as :
+
+p=. $i_{R1} = \frac{(v_{n1}-v_{n2})}{R_1} = \frac{V_S}{R_1}$
+
+and similarly,
+
+p=. $i_{R2} = \frac{(v_{n1}-v_{n2})}{R_2} = \frac{V_S}{R_2}$
+
+Because all three currents $i_{S}, i_{R1} and i_{R2}$ all depend on voltage source $V_S$, we can form the current ratios:
+
+p=. $\frac{i_{R1}}{i_S} = \frac{\frac{V_S}{R_1}}}{\frac{R_1+R_2}{R_1R_2}V_S} = \frac{R_2}{R_1+R_2}
+
+and
