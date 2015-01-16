@@ -198,6 +198,6 @@ p=. $i_{R2} = \frac{(v_{n1}-v_{n2})}{R_2} = \frac{V_S}{R_2}$
 
 Because all three currents $i_{S}, i_{R1}$ and $i_{R2}$ all depend on voltage source $V_S$, we can form the current ratios:
 
-p=. $\frac{i_{R1}}{i_S}$ = $\frac{\frac{V_S}{R_1}}}{\frac{R_1+R_2}{R_1R_2}V_S}$ = $\frac{R_2}{R_1+R_2}$
+p=. $\frac{i_{R1}}{i_S}$ = $\frac{V_S/R_1}{\frac{(R_1+R_2)}{R_1R_2} V_S}$ = $\frac{R_2}{R_1+R_2}$
 
 and
