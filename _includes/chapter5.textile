@@ -202,4 +202,4 @@ p=. $\frac{i_{R1}}{i_S}$ = $\frac{V_S/R_1}{\frac{(R_1+R_2)}{R_1R_2} V_S}$ = $\fr
 
 and
 
-p=. $\frac{i_{R2}}{i_S}$ = $\frac{\frac{V_S}{R_2}{\frac{(R_1+R_2)}{R_1R_2} V_S}$ = $\frac{R_2}{R_1+R_2}$
+p=. $\frac{i_{R2}}{i_S}$ = $\frac{\frac{V_S}{R_2}}{\frac{(R_1+R_2)}{R_1R_2} V_S}$ = $\frac{R_2}{R_1+R_2}$
