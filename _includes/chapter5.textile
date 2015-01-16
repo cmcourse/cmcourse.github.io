@@ -201,3 +201,5 @@ Because all three currents $i_{S}, i_{R1}$ and $i_{R2}$ all depend on voltage so
 p=. $\frac{i_{R1}}{i_S}$ = $\frac{V_S/R_1}{\frac{(R_1+R_2)}{R_1R_2} V_S}$ = $\frac{R_2}{R_1+R_2}$
 
 and
+
+p=. $\frac{i_{R2}}{i_S}$ = $\frac{\frac{V_S}{R_2}{\frac{(R_1+R_2)}{R_1R_2} V_S}$ = $\frac{R_2}{R_1+R_2}$
