@@ -193,20 +193,20 @@ p=(#eq3-6). $P_{total} = \sum_{ \ \mbox(all-branchs)} (v_k) (i_k) = 0$ </h4>
 
 p=. _Eq'n 3-6 -- Tellegen's Theorem_
 
-It is remarkable that this development used only (1) the basic branch voltages (the difference of the corresponding node voltages) and (2) Kirchoff's Current Law at the circuit nodes.  This 'sum-of-power = 0' constraint applies independent of element properties and also applies at any moment of time. This development method has been applied in general by Tellegen and the general relation is called Tellegen's Theorem.
+It is remarkable that this development used only (1) the basic branch voltages (the difference of the corresponding node voltages) and (2) Kirchoff's Current Law at the circuit nodes.  This 'sum-of-power = 0' constraint applies independent of element properties and also applies at any moment of time. This development method has been applied in general by Tellegen and the general relation is called _Tellegen's Theorem_.
 
 h4(#chapter3-contradiction). 3.4 - Constraint Conflicts
 
-One might try to consider a circuit that is inherently '_impossible_' from a circuits point-of-view due to conflicting constraints.  For example consider a loop circuit composed of 3 voltage sources each of 5 volts, as connected in "Figure 3.6":#figure3-6.
+One might try to consider a circuit that is inherently '_impossible_' from a circuit solution point-of-view due to conflicting constraints.  For example consider a loop circuit composed of 3 voltage sources each of 5 volts, as connected in "Figure 3.6":#figure3-6.
 
 p=(#figure3-6). !{width:50%}img/3/circuitsF3.6.jpg(Figure 3.6)!:img/3/circuitsF3.6.jpg
-_Figure 3.6  Three Equal Voltage Source Circuit_
+_Figure 3.6  Three Equal Voltage Source Circuit - Conflicting Constraints_
 
 If we sum the voltage drops around the complete loop: from node A to node B, from node B to node C and from node C to node A, we obtain:
 
 p=. $-5 -5 +5 = -5 :does-not-equal:  0$
 
-_Impossible_ !!!  A violation of Kirchoff's Voltage Law. This particular circuit creates an inherent CONFLICT between element constraints and circuit constraints.  Hence this circuit has NO SOLUTION.  In general it is inconsistent to create a circuit with inherently conflicting constraints.  Though it may be interesting to speculate what would 'break' if such a conflicted circuit was actually built, it is more likely it would cause dangerous extreme overheating and should not be attempted.  For example a wire connected across a battery is one way to cause a battery to catch fire or worse [Danger - Do *NOT* Try This with Real Elements !].
+_Impossible_ !!!  A violation of Kirchoff's Voltage Law. This particular circuit creates an inherent CONFLICT between the individual element constraints and the connected circuit constraints.  Hence this circuit has NO SOLUTION.  In general it is inconsistent to create a circuit with inherently conflicting constraints.  Though it may be interesting to speculate what would 'break' if such a conflicted circuit was actually built, it is more likely it would cause dangerous extreme overheating and should not be attempted.  For example a wire connected across a battery is one way to cause a battery to catch fire or worse [Danger - Do *NOT* Try This with Real Elements !].
 
 h4(#chapter3-contradiction). 3.5 - Conclusion
 
