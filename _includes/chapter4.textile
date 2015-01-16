@@ -83,7 +83,7 @@ Specifically the 4-steps are:
 # *STEP 3:*  Solve the resulting set of equations for all node voltage values
 ** (a) these will be linear equations for our problems
 ** (b) solve sequentially or by matrix methods
-** (\c) if non-linear, then iterative/computer solution is required
+** (c) if non-linear, then iterative/computer solution is required
 # *STEP 4:*  Calculate particular individual variable or values of interest
 ** (a) element voltages
 ** (b) element currents
