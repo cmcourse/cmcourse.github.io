@@ -1,6 +1,6 @@
 body {
   position: relative;
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 /* main top navigation bar */
@@ -32,7 +32,7 @@ body {
   color:#333;
 }
 .masthead h1 {
-  font-size: 28px;
+  font-size: 38px;
   /* font-size: 200%; */
 }
 
