@@ -162,6 +162,7 @@ Now we will employ our ‘node-method’ to solve this circuit.
 *STEP 1:*
 
 All currents and node voltages have also been labeled. In this circuit we have selected the reference to be node n2 and set the voltage of it to zero.  In this circuit with only 2 nodes we seek to calculate currents, we can see that the fixed voltage source connected to the same two nodes forces a known voltage difference value,
+
 p=. $(v_{n1}-v_{n2}) = V_S$.
 
 *STEP 2:*
@@ -188,7 +189,7 @@ and thus
 
 p=. $i_S = (\frac{R_1+R_2}{R_1R_2}) V_S$
 
-We can also calculate values for the two resistor currents, $i{R1}$ and $i_{R2}$ by substitution of $V_S$ for the voltage difference $(v_{n1}-v{n2})$ as :
+We can also calculate values for the two resistor currents, $i{R1}$ and $i_{R2}$ by substitution of $V_S$ for the voltage difference $(v_{n1}-v_{n2})$ as :
 
 p=. $i_{R1} = \frac{(v_{n1}-v_{n2})}{R_1} = \frac{V_S}{R_1}$
 
@@ -204,18 +205,18 @@ and
 
 p=. $\frac{i_{R2}}{i_S}$ = $\frac{V_S/R_2}{\frac{(R_1+R_2)}{R_1R_2} V_S}$ = $\frac{R_2}{R_1+R_2}$
 
-The source voltage terms in numerator and denominator cancel, and this result reveals that the total current , $i_S$, splits_ into two currents, $i_{R1}$ and $i_{R2}$, according to the resistor values $R_1$ and R_2$ as follows:
+The source voltage terms in numerator and denominator cancel, and this result reveals that the total current , $i_S$, splits into two currents, $i_{R1}$ and $i_{R2}$, according to the resistor values $R_1$ and R_2$ as follows:
 
 <h4>
-p=. $i_{R1} = (\frac{R_2}{R_1+R_2}) i_S$, </h4>
+p=. $i_{R1} = (\frac{R_2}{R_1+R_2}) i_S$ </h4>
 and
 
 <h4>
 p=. $i_{R2} = (\frac{R_1}{R_1+R_2}) i_S$ </h4>
 
-We see that each resistor current is a fixed fraction of the total current, and thus this circuit is often termd a *_current divider_*.
+We see that each resistor current is a fixed fraction of the total current, and thus this circuit is often termed a *_current divider_*.
 
-_TAKE CARE:_ The current in $R_1$ depends on the ratio of ${R_2}/(R_1+R_2)$, while the current in $R_2$ depneds upon the ratio ${R_1}/(R_1+R_2)$.
+_TAKE CARE:_ The current in $R_1$ depends on the ratio of ${R_2}/(R_1+R_2)$, while the current in $R_2$ depends upon the ratio ${R_1}/(R_1+R_2)$.
 
 The current divider structure is not found as frequently in many circuits as compared to the voltage divider in Section 5.3, none-the-less it is a useful circuit toplogy to know and understand.
 
