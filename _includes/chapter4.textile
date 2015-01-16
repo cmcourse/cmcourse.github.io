@@ -28,7 +28,7 @@ Note the assignment of the element voltage polarity was arbitrary, BUT once the 
 
 These eight equations can be solved for the 8 element voltage and current values.  Finally these solution values can then be used to calculate additional values of interest such as power dissipated by an element or the total voltage across several elements.
 
-h4(#chapter4-general-example-5elements). 4.2 - Numerical Example, 5-Element Circuit
+h4(#chapter4-example-5elements). 4.2 - Numerical Example, 5-Element Circuit
 
 A 5-element circuit (4 nodes) is now considered with numerical values, "Figure 4.2":#figure4-2, where we already label all element voltage and element current values (_polarity consistent !!_).
 
