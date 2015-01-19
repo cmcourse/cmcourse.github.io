@@ -1,0 +1,21 @@
+
+In prior sections we have developed a consistent method to solve electric circuits.  This solution process employed (1) constraints associated with each individual element in a circuit and additionally (2) conservation laws that yield further constraints associated with the connections of a group of elements, especially Kirchoff's Current Law (KCL).  Although we can always obtain a solution via this process, the more elements in a problem, then the more voltage values that need to be determined.  Thus 'larger' problems with more circuit element require many equations with many variables.
+
+For example, consider the group of 8 resistors and a fixed voltage source depicted in "Figure 6.1":#figure6-1.  To solve this with our ‘classical’ node method, we will need to write KCL equations at 4 nodes and go through a lengthy math solution.  And of course, the situation would be much worse if there were 20 resistors and over 10 nodes.  While a ‘classical’ node-method solution does always work, it would be far better to be able to solve such problems as this, almost ‘by inspection’ !  Namely, by a better understanding of circuits we seek to achieve solutions in a greatly simplified manner.
+
+p=(#figure6-1). !{width:50%}img/6/circuitsF6.1.jpg(Figure 6.1)!:img/6/circuitsF6.1d.jpg
+_Figure 6.1  Multi-Resistor, Multi-Node Problem (8 Resistors, 6 Nodes)_
+
+In this section we will apply a couple of circuit topology constraints that will allow us to take initially 'complex' problems, such as in "Figure 6.1":#figure6-1, and reduce them to greatly simplified equivalent configurations.  And then with such simple configurations we can easily solve, often by inspection. These simplifications involve certain restrictions, ones that enable a very rapid evaluation once the configuration is correctly recognized.  It is also true that incorrect assessment of a configuration will result in an incorrect result, so _it is really important to understand the two specific types of topologies_ that we consider in this section.  Lets learn this concept of Equivalence and Circuit Reduction.
+
+h4(#chapter6-equivalnece-series). 1.1 - Circuit Equivalent for Resistors in 'Series'  (Single Path Connection)
+
+Recall our special topology the _single loop_ circuit structure, such as from Section 5, "Figure 5.1a":#figure5-1a.  Here as before our elements are in a _series connection_, and we mean that all elements of the circuit are connected so they form a single loop.  Because the circuit is a single loop, and because of our KCL current law, there can be _only one single current_ that is in all elements in the loop.  "Figure 6.2":#figure6-2 depicts this arrangement for 3 resistors and a fixed voltage source connected in a single loop.
+
+ p=(#figure6-2). !{width:50%}img/6/circuitsF6.2.jpg(Figure 6.2)!:img/6/circuitsF6.2.jpg
+ _Figure 6.2  Single Loop 'Series' Resistor Circuit Configuration_
+ 
+For this circuit, Figure 6.2, all 4 elements are connected end-to-end to form a single loop, and there _must be only a single current_, shown as '$i$' in the circuit.  This current, '$i$', passes equally through $R_1$, $R_2$, $R_3$, and fixed source $V_S$.  There is no other side-branch for this current, so the current must be of equal value in all these 4 elements.
+
+Lets focus on the three resistors between node n1 and node n4, these 3 resistors form a _single path_, and they must always have the _same current_.  The value of this current, $i$, is calculated to be:
+
