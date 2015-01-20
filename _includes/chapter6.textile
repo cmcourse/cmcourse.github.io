@@ -19,3 +19,4 @@ For this circuit, Figure 6.2, all 4 elements are connected end-to-end to form a 
 
 Lets focus on the three resistors between node n1 and node n4, these 3 resistors form a _single path_, and they must always have the _same current_.  The value of this current, $i$, is calculated to be:
 
+p=. $i = \frac{(V_{n1} - V_{n2})}{R_1}$
