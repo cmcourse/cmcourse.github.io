@@ -76,6 +76,11 @@ title: CMCourse Book Chapters
               <li><a href="#chapter5-current-divider">Current Divider, Example Parallel Connection</a></li>
               <li><a href="#chapter5-conclusion">Conclusion</a></li>
 			</ul>
+        <li>
+			<a href="#chapter6">Chapter-6 Resistor Equivalents, Circuit Reduction</a>
+            <ul class="nav">
+              <li><a href="#chapter6-series-equivalent">Series Equivalent Resistors: Single-Loop</a></li>
+			</ul>
 		</li>
       </ul>
     </div>
@@ -120,11 +125,20 @@ title: CMCourse Book Chapters
       {{ include_to_textilize4 | textilize }}
     </div>
     
-    <!-- chapter 5 -->
+    <!-- chapter 5-->
     <div class="chapter">
       <h2 id="chapter5">Chapter 5: Special Circuit Topologies</h2>
       {% capture include_to_textilize4 %}
       {% include chapter5.textile %}
+      {% endcapture %}
+      {{ include_to_textilize4 | textilize }}
+    </div>  
+    
+    <!-- chapter 6 -->
+    <div class="chapter">
+      <h2 id="chapter6">Chapter 6: Resistor Equivalents, Circuit Reduction</h2>
+      {% capture include_to_textilize4 %}
+      {% include chapter6.textile %}
       {% endcapture %}
       {{ include_to_textilize4 | textilize }}
     </div>  
