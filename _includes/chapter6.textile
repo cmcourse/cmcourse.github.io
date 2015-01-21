@@ -25,8 +25,8 @@ Now add the three resistor element voltages, [(vn1 – vn2) +(vn2 – vn3) +(vn3
 
 p=. $iR_1 + iR_2 + iR_3 = (V_{n1}-V_{n4})$ and hence $i = \frac{(V_{n1}-V_{n4})}{(R_1+R_2+R_3)}$ = $\frac{V_S}{(R_1+R_2+R_3)}$
 
-Now we can obtain exactly the same value of loop current from another circuit, "Figure 6.3":#figure6-3.  This ‘equivalent’ circuit has a single resistor of specific value: $R = (R_1+R_2+R_3)$.
+Now we can obtain exactly the same value of loop current from another circuit, "Figure 6.3":#figure6-3.  This 'equivalent' circuit has a single resistor of specific value: $R = (R_1+R_2+R_3)$.
 
-p=(#figure6-3). !{width:30%}img/6/circuitsF6.3.jpg(Figure 6.3)!:img/6/circuitsF6.3.jpg
+p=(#figure6-3). !{width:50%}img/6/circuitsF6.3.jpg(Figure 6.3)!:img/6/circuitsF6.3.jpg
 _Figure 6.3  Single Loop, Single Resistor Equivalent_
 
