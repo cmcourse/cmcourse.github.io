@@ -44,7 +44,7 @@ _Figure 6.4  Equivalent Resistance for 10 Resistors Connected in 'Series'_
 Here, *_as seen from the end terminals_* of $v_{n1}$ and $v_{n2}$, these two circuits 6.4(a) and 6.4(b) are exactly the same.  This means we can replace a group of N _series-connected_ resistors with a single 'equivalent' resistor of value, $R_{equiv}$, equal to the sum of those N separate values, "Eq'n. 6.1":#eq6-1.
 
 <h4>
-p=(#eq6-1). $\sum_{j=1}^{N} R_j$ </h4>
+p=(#eq6-1). $R_{equiv}$ = $\sum_{j=1}^{N} R_j$ </h4>
 
 p=. (Resistor Equivalence)  Eq'n 6.1 
 
