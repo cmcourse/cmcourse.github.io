@@ -62,10 +62,12 @@ _Figure 6.6  Single Node-Pair Resistor Circuit Configuration_
 
 For this circuit, "Figure 6.6":#figure6-6, all 4 elements are connected to a single node-pair, n1 and n2, and there is a single element voltage of '$(v_{n1} – v_{n2})$' in the circuit.  This element voltage is equally across $R_1, R_2, R_3$, and fixed source $V_S$.  There are no other nodes for the voltage, so it must be of equal value in all these 4 elements.  Furthermore, there is a current, $i$, into the ‘group’ of single node-pair connected resistors.  The value of this current, $i$, is calculated by KCL as:
 
-p=. $i = \frac{(V_{n1}-V_{n2})}{R_1}$ = $\frac{(V_{n1}-V_{n2})}{R_2}$ = $\frac{(V_{n1}-V_{n2})}{R_3}$ = $(V_S)$ $(\frac{1}{R_1} + \frac{1}{R_2} + \frac{1{R_3}})$
+p=. $i = \frac{(V_{n1}-V_{n2})}{R_1}$ + $\frac{(V_{n1}-V_{n2})}{R_2}$ + $\frac{(V_{n1}-V_{n2})}{R_3}$ = $(V_S)$ $(\frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3})$
 
 Now we can obtain exactly the same value of current from another circuit, "Figure 6.7":#figure6-7.  This has a single resistor. $R{equiv}$.
 
 p=(#figure6-7). !{width:60%}img/6/circuitsF6.7.jpg(Figure 6.7)!:img/6/circuitsF6.7.jpg
 _Figure 6.7  Single Node-Pair, Parallel Single Resistor Equivalent_
+
+Notice that this second circuit, "Figure 6.7":#figure6-7, has exactly the same value for current, $i$, of:
 
