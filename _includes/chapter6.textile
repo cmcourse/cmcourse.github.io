@@ -64,7 +64,11 @@ For this circuit, "Figure 6.6":#figure6-6, all 4 elements are connected to a sin
 
 p=. $i = \frac{(V_{n1}-V_{n2})}{R_1}$ + $\frac{(V_{n1}-V_{n2})}{R_2}$ + $\frac{(V_{n1}-V_{n2})}{R_3}$ = $(V_S)$ $(\frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3})$
 
-Now we can obtain exactly the same value of current from another circuit, "Figure 6.7":#figure6-7.  This has a single resistor. $R{equiv}$.
+so
+
+p=. \frac{i}{V_S} = \frac{1}{R_{eq}$ = $(\frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3})$
+
+Now we can obtain exactly the same value of current from another circuit, "Figure 6.7":#figure6-7.  This has a single resistor. $R_{equiv}$.
 
 p=(#figure6-7). !{width:60%}img/6/circuitsF6.7.jpg(Figure 6.7)!:img/6/circuitsF6.7.jpg
 _Figure 6.7  Single Node-Pair, Parallel Single Resistor Equivalent_
