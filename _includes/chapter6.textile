@@ -23,6 +23,6 @@ p=. $i = \frac{(V_{n1}-V_{n2})}{R_1}$ = $\frac{(V_{n2}-V_{n3)}{R_2}$ = $\frac{(V
 
 Now add the three resistor element voltages, [(vn1 – vn2) +(vn2 – vn3) +(vn3 – vn4) = (vn1-vn4)], and then by substitution of the element constraints:
 
-p=. $iR_1 + iR_2 + iR_3$
+p=. $iR_1 + iR_2 + iR_3 = (V_{n1} - V_{n4})
 
 Now we can obtain exactly the same value of loop current from another circuit, Figure 6.3.  This ‘equivalent’ circuit has a single resistor of specific value: R = (R1+R2+R3).
