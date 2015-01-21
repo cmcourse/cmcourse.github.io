@@ -12,10 +12,10 @@ h4(#chapter6-equivalnece-series). 6.1 - Circuit Equivalent for Resistors in 'Ser
 
 Recall our special topology the _single loop_ circuit structure, such as from Section 5, "Figure 5.1a":#figure5-1a.  Here as before our elements are in a _series connection_, and we mean that all elements of the circuit are connected so they form a single loop.  Because the circuit is a single loop, and because of our KCL current law, there can be _only one single current_ that is in all elements in the loop.  "Figure 6.2":#figure6-2 depicts this arrangement for 3 resistors and a fixed voltage source connected in a single loop.
 
-p=(#figure6-2). !{width:50%}img/6/circuitsF6.2.jpg(Figure 6.2)!:img/6/circuitsF6.2.jpg
+p=(#figure6-2). !{width:30%}img/6/circuitsF6.2.jpg(Figure 6.2)!:img/6/circuitsF6.2.jpg
 _Figure 6.2  Single Loop 'Series' Resistor Circuit Configuration_
  
-For this circuit, Figure 6.2, all 4 elements are connected end-to-end to form a single loop, and there _must be only a single current_, shown as '$i$' in the circuit.  This current, '$i$', passes equally through $R_1$, $R_2$, $R_3$, and fixed source $V_S$.  There is no other side-branch for this current, so the current must be of equal value in all these 4 elements.
+For this circuit, "Figure 6.2":#figure6-2, all 4 elements are connected end-to-end to form a single loop, and there _must be only a single current_, shown as '$i$' in the circuit.  This current, '$i$', passes equally through $R_1$, $R_2$, $R_3$, and fixed source $V_S$.  There is no other side-branch for this current, so the current must be of equal value in all these 4 elements.
 
 Lets focus on the three resistors between node n1 and node n4, these 3 resistors form a _single path_, and they must always have the _same current_.  The value of this current, $i$, is calculated to be:
 
