@@ -1,7 +1,7 @@
 
 In prior sections we have developed a consistent method to solve electric circuits.  This solution process employed (1) constraints associated with each individual element in a circuit and additionally (2) conservation laws that yield further constraints associated with the connections of a group of elements, especially Kirchoff's Current Law (KCL).  Although we can always obtain a solution via this process, the more elements in a problem, then the more voltage values that need to be determined.  Thus 'larger' problems with more circuit element require many equations with many variables.
 
-For example, consider the group of 8 resistors and a fixed voltage source depicted in "Figure 6.1":#figure6-1.  To solve this with our ‘classical’ node method, we will need to write KCL equations at 4 nodes and go through a lengthy math solution.  And of course, the situation would be much worse if there were 20 resistors and over 10 nodes.  While a ‘classical’ node-method solution does always work, it would be far better to be able to solve such problems as this, almost ‘by inspection’ !  Namely, by a better understanding of circuits we seek to achieve solutions in a greatly simplified manner.
+For example, consider the group of 8 resistors and a fixed voltage source depicted in "Figure 6.1":#figure6-1.  To solve this with our 'classical' node method, we will need to write KCL equations at 4 nodes and go through a lengthy math solution.  And of course, the situation would be much worse if there were 20 resistors and over 10 nodes.  While a 'classical' node-method solution does always work, it would be far better to be able to solve such problems as this, almost ‘by inspection’ !  Namely, by a better understanding of circuits we seek to achieve solutions in a greatly simplified manner.
 
 p=(#figure6-1). !{width:70%}img/6/circuitsF6.1.jpg(Figure 6.1)!:img/6/circuitsF6.1d.jpg
 _Figure 6.1  Multi-Resistor, Multi-Node Problem (8 Resistors, 6 Nodes)_
@@ -35,3 +35,9 @@ Notice that this second circuit, "Figure 6.3":#figure6-3, has exactly the same v
 p=. $i= \frac{(V_{n1}-V_{n4})}{R}$ = $\frac{(V_{n1}-V_{n4})}{(R_1+R_2+R_3)}$ = $\frac{V_S}{(R_1+R_2+R_3)}$
 
 As observed at the two nodes, n1 and n4, these two circuits, "Figure 6.2":#figure6-2 and "Figure 6.3":#figure6-3, _yield exactly the same results_.
+
+Thus more generally, we can take any 'single path' (ie. equal current) connection of resistors (we call this a 'series' connection) and replace all those resistors with a single resistor, Requivalent of value equal to the sum of the series connected resistors, "Figure 6.4":#figure6-4,
+
+p=(#figure6-4). !{width:50%}img/6/circuitsF6.4.jpg(Figure 6.4)!:img/6/circuitsF6.4.jpg
+_Figure 6.4  Equivalent Resistance for 10 Resistors Connected in 'Series'_
+
