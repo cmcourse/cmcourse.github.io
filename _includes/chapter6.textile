@@ -38,15 +38,18 @@ As observed at the two nodes, n1 and n4, these two circuits, "Figure 6.2":#figur
 
 Thus more generally, we can take any 'single path' (ie. equal current) connection of resistors (we call this a 'series' connection) and replace all those resistors with a single resistor, Requivalent of value equal to the sum of the series connected resistors, "Figure 6.4":#figure6-4,
 
-p=(#figure6-4). !{width:90%}img/6/circuitsF6.4.jpg(Figure 6.4)!:img/6/circuitsF6.4.jpg
+p=(#figure6-4). !{width:95%}img/6/circuitsF6.4.jpg(Figure 6.4)!:img/6/circuitsF6.4.jpg
 _Figure 6.4  Equivalent Resistance for 10 Resistors Connected in 'Series'_
 
 Here, *_as seen from the end terminals_* of $v_{n1}$ and $v_{n2}$, these two circuits 6.4(a) and 6.4(b) are exactly the same.  This means we can replace a group of N _series-connected_ resistors with a single 'equivalent' resistor of value, $R_{equiv}$, equal to the sum of those N separate values, "Eq'n. 6.1":#eq6-1.
 
 <h4>
-p=(#eq6-1). $$\sum_{j=1}^{N} R_j$ </h4>
+p=(#eq6-1). $\sum_{j=1}^{N} R_j$ </h4>
 
 p=. (Resistor Equivalence)  Eq'n 6.1 
 
-For example, if all 10 resistors in Figure 6.4 were each 10 ohms, then the equivalent resistor would be a single resistor of 100 ohm value, Figure 6.5.
+For example, if all 10 resistors in "Figure 6.4":#figure6-4 were each 10 ohms, then the equivalent resistor would be a single resistor of 100 ohm value, "Figure 6.5":#figure6-5.
+
+p=(#figure6-5). !{width:95%}img/6/circuitsF6.5.jpg(Figure 6.5)!:img/6/circuitsF6.5.jpg
+_Figure 6.5  Ten resistor of 10 ohms Each Connected in Series, $R_{equiv} = 100 ohms_
 
