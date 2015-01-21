@@ -55,5 +55,9 @@ _Figure 6.5  Ten resistor of 10 ohms Each Connected in Series, $R_{equiv}$ = 100
 
 h4(#chapter6-equivalence-parallel). 6.2 - Parallel Equivalent Resistors: Single-Node-Pair
 
-Recall our second special topology the _single node-pair_ circuit structure, such as from Section 5, Figure 5.7a.  Here all elements of the circuit are connected so they only connect between 2 nodes.  Because the circuit has a node-pair, and because of our KVL voltage law, there can be only one single voltage across all elements in this circuit.  Figure 6.6 depicts this arrangement for 3 resistors and a fixed voltage source.
+Recall our second special topology the _single node-pair_ circuit structure, such as from Section 5, Figure 5.7a.  Here all elements of the circuit are connected so they only connect between 2 nodes.  Because the circuit has a node-pair, and because of our KVL voltage law, there can be only one single voltage across all elements in this circuit.  "Figure 6.6":#figure6-6 depicts this arrangement for 3 resistors and a fixed voltage source.
+
+p=(#figure6-6). !{width:95%}img/6/circuitsF6.6.jpg(Figure 6.6)!:img/6/circuitsF6.6.jpg
+_Figure 6.6  Single Node-Pair Resistor Circuit Configuration_
+
 
