@@ -30,3 +30,8 @@ Now we can obtain exactly the same value of loop current from another circuit, "
 p=(#figure6-3). !{width:50%}img/6/circuitsF6.3.jpg(Figure 6.3)!:img/6/circuitsF6.3.jpg
 _Figure 6.3  Single Loop, Single Resistor Equivalent_
 
+Notice that this second circuit, "Figure 6.3":#figure6-3, has exactly the same value for current, $i$, of:
+
+p=. $i= \frac{(V_{n1}-V_{n4})}{R}$ = $\frac{(V_{n1}-V_{n4})}{(R_1+R_2+R_3)}$ = $\frac{V_S}{(R_1+R_2+R_3)}$
+
+As observed at the two nodes, n1 and n4, these two circuits, "Figure 6.2":#figure6-2 and "Figure 6.3":#figure6-3, _yield exactly the same results_.
