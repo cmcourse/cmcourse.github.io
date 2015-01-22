@@ -187,7 +187,7 @@ p=. !{width:50%}img/6/circuitsF6.14d.jpg(Figure 6.14d)!:img/6/circuitsF6.14d.jpg
 
 And again by reduction the two parallel 6 ohm resistors on the right side become, $R_{eq4} = 3$ ohm; so the 'fully reduced' circuit of the original 6-resistor circuit is reduced to just 2-resistors. "Figure 6.15":#figure6-15.
 
-p=(#figure6-15). !{width:45%}img/6/circuitsF6.14e.jpg(Figure 6.15)!:img/6/circuitsF6.14e.jpg
+p=(#figure6-15). !{width:40%}img/6/circuitsF6.14e.jpg(Figure 6.15)!:img/6/circuitsF6.14e.jpg
 _Figure 6.15  Fully Reduced Circuit to Calculate Node Voltage, $V_b$_
 
 *TASK C:* Solving for Vout. Since "Figure 6.15":#figure6-15 is a voltage-divider circuit we can write by inspection:
@@ -196,9 +196,10 @@ p=. $V_b$ = $(\frac{3}{3+3})(12)$ = 6 volts
 
 Now with the value for $V_b$ we look at the preceding reduced circuit, "Figure 6.14b":#figure6-14b, that relates $V_b$. to $V_a$.  As solved above, this too is a voltage-divider relation, so:
 
-p=. $V_a$ = $(\frac{3}{3+3})(12) V_b$ = =$\frac{1}(2}6 = 3 volts
+p=. $V_a$ = $(\frac{3}{3+3})(12) V_b$ = =$\frac{1}(2} 6$ = 3 volts
 
 and finally from the reduced circuit with $V_a$,"Figure 6.14a":#figure6-14a, by voltage-divider again we use the calculated the node voltage $V_a$, and hence the output voltage, $V_{out}$, is 1 volt, by:
 
-p=. $V_{out}$ = $(\frac{2}{2+4})V_a$ = 
+p=. $V_{out}$ = $(\frac{2}{2+4})V_a$ = $(\frac{2}{2+4})(\frac{3}{3+3}) V_b$ = $(\frac{1}{3})(\frac{1}{2}) 6$ = 1 volt
+
 
