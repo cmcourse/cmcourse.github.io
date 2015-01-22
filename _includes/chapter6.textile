@@ -174,7 +174,7 @@ p=. $R_{eq2}$ = $\frac{6 6}{6+6}$ = 3 ohm
 
 So now the further reduced circuit becomes:
 
-p=(#figure6-14c). !{width:50%}img/6/circuitsF6.14c.jpg(Figure 6.14c)!:img/6/circuitsF6.14c.jpg
+p=(#figure6-14c). !{width:45%}img/6/circuitsF6.14c.jpg(Figure 6.14c)!:img/6/circuitsF6.14c.jpg
 _Figure 6.14b  Voltage Divider, Portion of Full Mixed Circuit Problem_
 
 Here there is again a voltage divider relation between $V_a$ and $V_b$, $V_a = ½ V_b$.
@@ -187,7 +187,7 @@ p=. !{width:50%}img/6/circuitsF6.14d.jpg(Figure 6.14d)!:img/6/circuitsF6.14d.jpg
 
 And again by reduction the two parallel 6 ohm resistors on the right side become, $R_{eq4} = 3$ ohm; so the 'fully reduced' circuit of the original 6-resistor circuit is reduced to just 2-resistors. "Figure 6.15":#figure6-15.
 
-p=(#figure6-15). !{width:34%}img/6/circuitsF6.14e.jpg(Figure 6.15)!:img/6/circuitsF6.14e.jpg
+p=(#figure6-15). !{width:50%}img/6/circuitsF6.14e.jpg(Figure 6.15)!:img/6/circuitsF6.14e.jpg
 _Figure 6.15  Fully Reduced Circuit to Calculate Node Voltage, $V_b$_
 
 *TASK C:* Solving for Vout. Since Figure 6.15 is a voltage-divider circuit we can write by inspection:
