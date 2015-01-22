@@ -153,11 +153,11 @@ _Figure 6.14  Mixed Circuit Problem_
 
 Here we are not just asking for only an equivalent resistance, rather we want a numerical value for a specific voltage.  In this case we want the voltage across the 'final' right-most 2 ohm resistor.  We break the solution process into a sequence of several simple tasks, our first task is to determine what is needed in order to obtain the output voltage, $v_{out}$.
 
-# Task A:  Notice the output voltage, $V_{out}$, can be calculated via a voltage divider if $V_a$ is known
-** And by a similar process $V_a$  can be calcuate via another voltage divider if $V_b$ is known
-# Task B:  Find the voltage $V_b$ valaue by use of several resistance reductions and a voltage divider
-** First reduce the resistances to obtain a single equivalent at $V_b$.
-# Task C:  Use the voltage $V_b$ to calculate $V_a$, and then the desired $V_{out}$
+# *Task A:*  Notice the output voltage, $V_{out}$, can be calculated via a voltage divider if $V_a$ is known
+** And by a similar process $V_a$  can be calcuated via another voltage divider if $V_b$ is known
+# *Task B:*  Find the voltage $V_b$ value by use of several resistance reductions and a voltage divider
+** First reduce the resistances to obtain a single equivalent resistance at $V_b$.
+# *Task C:*  Use the voltage $V_b$ to calculate $V_a$, and then the desired $V_{out}$
 
 *Task A:* We recognize the 4 and 2 ohm resistors near the output, right-most, are connected in series, AND THUS we see that they cause a voltage divider relationship for voltage $V_{out}$, from voltage $V_a$, "Figure 6.14a":#figure6-14a.
 
