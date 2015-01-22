@@ -81,12 +81,12 @@ From the two nodes n1 and n2, these two circuits, "Figure 6.6":#figure6-6 and "F
 
 Thus more generally, we can take any 'single node-pair', (ie. _equal voltage_) connection of resistors (_we call this a 'parallel' connection_) and replace those resistors with a single resistor, $R_{equivalent} of inverse value equal to the sum of the inverses of the parallel-connected resistors, "Figure 6.8":#figure6-8,
 
-p=(#figure6-8). !{width:60%}img/6/circuitsF6.8.jpg(Figure 6.8)!:img/6/circuitsF6.8.jpg
+p=(#figure6-8). !{width:95%}img/6/circuitsF6.8.jpg(Figure 6.8)!:img/6/circuitsF6.8.jpg
 _Figure 6.8  Equivalent Resistance for 10 Resistors Connected in 'Parallel'_
 
 Thus, *_from the node terminals_* of $v_{n1}$ and $v_{n2}$, and same total current, $i$, these two circuits 6.8(a) and 6.8(b) are exactly the same.  This means we can replace a 'group' of N parallel-connected resistors with a single resistor of value, Requiv, where 1/Requiv is equal to the sum of inverses of those N values, Eq’n 6.2.
 
-p=. $\frac{1}{R_{equiv}$ = $\sum_{j=1}^{N} \frac{1}{R_j}$
+p=. $\frac{1}{R_{equiv}}$ = $\sum_{j=1}^{N} \frac{1}{R_j}$
 
 For example, if all 10 resistors in "Figure 6.8":#figure6-8 were each 10 ohms, then the equivalent resistance would be a single resistor of 1 ohm value.
 
@@ -99,7 +99,7 @@ h4(#chapter6-equivalence-series-parallel). 6.3 - Series and Parallel Equivalents
 
 To apply our circuit configuration constraints of _series_ (single-path) and _parallel_ (single-node-pair) configurations, it is important to understand that these arrangements refer to their _electrical connections and *NOT* the physical positions_ of the resistors.
 
-Thus two resistors in _series_ may look like any of the following arrangements (and even many more), "Figure 6.10":#figure6-10, yet still be in a single path (_equal current_); and thus have a series equivalent resistance value between the two end terminals, A-A’, of Eq’n 6.3.  Note some are shown to be 'physically' in side-by-side, yet _electrically_ they are _in-series_, be careful, do not be fooled by the physical looks of circuits, understand the electrical connections.
+Thus two resistors in _series_ may look like any of the following arrangements (and even many more), "Figure 6.10":#figure6-10, yet still be in a single path (_equal current_); and thus have a series equivalent resistance value between the two end terminals, A-A', of Eq'n 6.3.  Note some are shown to be 'physically' in side-by-side, yet _electrically_ they are _in-series_, be careful, do not be fooled by the physical looks of circuits, understand the electrical connections.
 
 
 p=(#figure6-10). !{width:95%}img/6/circuitsF6.10.jpg(Figure 6.10)!:img/6/circuitsF6.10.jpg
