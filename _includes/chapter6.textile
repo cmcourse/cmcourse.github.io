@@ -148,10 +148,19 @@ Lets look at another example where we can use our reduction methods concept, but
 
 Consider a circuit configured as in Figure 6.14.  Here this is also a 'mixed' circuit that is neither all-series, nor all-parallel, this is like the circuit of Figure 6.1.  Of course, we could solve this by writing the 4 node-voltage equations for each of the 4 nodes, but this is a lengthy process.  Instead, now we will solve it by reduction and find a numerical solution value for the voltage $V_{out}$.
 
-p=(#figure6-14). !{width:75%}img/6/circuitsF6.14.jpg(Figure 6.14)!:img/6/circuitsF6.14.jpg
+p=(#figure6-14). !{width:60%}img/6/circuitsF6.14.jpg(Figure 6.14)!:img/6/circuitsF6.14.jpg
 _Figure 6.14  Mixed Circuit Problem_
 
 Here we are not just asking for only an equivalent resistance, rather we want a numerical value for a specific voltage.  In this case we want the voltage across the ‘final’ right-most 2 ohm resistor.  We break the solution process into a sequence of several simple tasks, our first task is to determine what is needed in order to obtain the output voltage, $v_{out}$.
+
+Task A: We recognize the 4 and 2 ohm resistors near the output, right-most, are connected in series, AND THUS we see that they cause a voltage divider relationship for voltage $V_{out}$, from voltage $V_a$, Figure 6.14(a).
+
+p=(#figure6-14a). !{width:60%}img/6/circuitsF6.14a.jpg(Figure 6.14a)!:img/6/circuitsF6.14a.jpg
+_Figure 6.14a  Sub-Part: Voltage Divider of Full Mixed Circuit Problem_
+
+We use the voltage-divider relation to determine voltage $V_{out}$ when we know the voltage $V_a$, because the output, $v_{out}$, is just 1/3rd of $V_a$, as calculated by:
+
+p=. $V_{out}$ = $\frac{2}{2+4} V_a$ = $\frac{1}{3} V_a$
 
 
 
