@@ -132,7 +132,7 @@ p=(#figure6-13). !{width:85%}img/6/circuitsF6.13.jpg(Figure 6.13)!:img/6/circuit
 p=. _Figure13(A)  Figure 13(B)   Figure 13(C)_
 _Figure 6.13  Sequential Reduction of a Mixed Configuration_
 
-So we can calculate the value of $R_{eq-a}$  (of $R_1$ and $R_3$ in parallel) from eq'n 6.4 as:
+So we can calculate the value of $R_{eq-a}$  (as $R_1$ and $R_3$ in parallel) from eq'n 6.4 as:
 
 p=. $R_{eq-a}$ = $\frac{R_1 R_3}{R_1 + R_3}$
 
@@ -141,3 +141,17 @@ After the reduction of $R_1$ and $R_3$ to $R_{eq-a}$, the circuit now has two re
 p=. $R_{eq-b}$ = $R_2 + R_{eq-a}$ = $R_2$ + $\frac{R_1 R_3}{R_1 + R_3}$
 
 So a _sequential reduction_ using the _series_ and _parallel equivalents_ applied separately to *parts* of the circuit (when correctly applied) enables us to reduce a complex circuit down to a single resistor.
+
+h4(#chapter6-voltage-divider). 6.5 - Resistor Equivalents and Voltage-Dividers
+
+Lets look at another example where we can use our reduction methods concept, but this time we will additionally use our 'voltage-divider' concept as well.  Furthermore we seek to obtain a solution for the circuit voltages via these techniques.
+
+Consider a circuit configured as in Figure 6.14.  Here this is also a 'mixed' circuit that is neither all-series, nor all-parallel, this is like the circuit of Figure 6.1.  Of course, we could solve this by writing the 4 node-voltage equations for each of the 4 nodes, but this is a lengthy process.  Instead, now we will solve it by reduction and find a numerical solution value for the voltage $V_{out}$.
+
+p=(#figure6-14). !{width:75%}img/6/circuitsF6.14.jpg(Figure 6.14)!:img/6/circuitsF6.14.jpg
+_Figure 6.14  Mixed Circuit Problem_
+
+Here we are not just asking for only an equivalent resistance, rather we want a numerical value for a specific voltage.  In this case we want the voltage across the ‘final’ right-most 2 ohm resistor.  We break the solution process into a sequence of several simple tasks, our first task is to determine what is needed in order to obtain the output voltage, $v_{out}$.
+
+
+
