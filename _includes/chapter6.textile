@@ -109,6 +109,6 @@ _Figure 6.10  Examples; Series (Single-Path) Connections of Two Resistors, $R_1$
 
 Furthermore, two resistors connected in _parallel_ may look like any of the following configurations (and even more), Figure 6.11, yet still be a single node-pair and thus have a _parallel_ equivalent resistance value between the two end terminals, B-B', of Eq'n 6.4
 
-p=.  $\frac{1}{R_{equiv}}$ = $\frac{1}{R_1} + \frac{1}{R_2_}$
+p=.  $\frac{1}{R_{equiv}}$ = $\frac{1}{R_1}$ + $\frac{1}{R_2_}$
 
 
