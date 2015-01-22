@@ -107,8 +107,20 @@ p=(#figure6-10). !{width:85%}img/6/circuitsF6.10.jpg(Figure 6.10)!:img/6/circuit
 _Figure 6.10  Examples; Series (Single-Path) Connections of Two Resistors, $R_1$ and $R_2$
 [equal current in all _in-series_ connected resistors]_
 
-Furthermore, two resistors connected in _parallel_ may look like any of the following configurations (and even more), Figure 6.11, yet still be a single node-pair and thus have a _parallel_ equivalent resistance value between the two end terminals, B-B', of Eq'n 6.4
+Furthermore, two resistors connected in _parallel_ may look like any of the following configurations (and even more),  "Figure 6.11":#figure6-11, yet still be a single node-pair and thus have a _parallel_ equivalent resistance value between the two end terminals, B-B', of Eq'n 6.4
 
-p=.  $\frac{1}{R_{equiv}}$ = $\frac{1}{R_1}$ + $\frac{1}{R_2_}$
+p=.  $\frac{1}{R_{equiv}}$ = $\frac{1}{R_1}$ + $\frac{1}{R_2}$ and so $R_{equiv}$ = $\frac{R_1 R_2}{R_1 + R_2}
 
+p=(#figure6-11). !{width:85%}img/6/circuitsF6.11.jpg(Figure 6.11)!:img/6/circuitsF6.11.jpg
+_Figure 6.11  Examples; _Parallel__ (Single Node-Pair) Connections of Two Resistors, $R_1$ and $R_2$_
+_[equal voltage across all _in-parallel_ connected resistors]_
+
+Because the equivalent resistances for _series_ vs _parallel_ arrangements are totally different, it is critical that in every case you accurately identify when the elements are connected as a _single-path (series)_ or as a _single node-pair (parallel)_.  An incorrect assumption results in an incorrect answer.  BE CAREFUL to correctly identify the electrical configuration.
+
+h4(#chapter6-circuit-reductions). 6.4 - Circuit Reduction by Resistor Equivalents
+
+Of course, many circuits are _*NOT ALL* in series, *NOR ALL* in parallel_ !!  They can be a mixture of configurations.  "Figure 6.12":#figure6-12 depicts a 'mixed' configuration of three resistors.
+
+p=(#figure6-12). !{width:85%}img/6/circuitsF6.12.jpg(Figure 6.12)!:img/6/circuitsF6.12.jpg
+_Figure 6.12  'Mixed' Configuration of Resistors_
 
