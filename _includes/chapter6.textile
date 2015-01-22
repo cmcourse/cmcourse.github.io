@@ -75,6 +75,6 @@ _Figure 6.7  Single Node-Pair, Parallel Single Resistor Equivalent_
 
 Notice that this second circuit, "Figure 6.7":#figure6-7, has exactly the same value for current, $i$, of:
 
-p=. $i = (V_{n1}-V_{n2})\frac{1}{R_1}$ + $\frac{1}{R_2}$ + $\frac{(1}{R_3}$ = $(V_S)$ $(\frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3})$
+p=. $i = (V_{n1}-V_{n2})$ $(\frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3})$ = $(V_S)$ $(\frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3})$
 
 From the two nodes n1 and n2, these two circuits, Fig 6.6 and Fig 6.7, yield exactly the same result.
