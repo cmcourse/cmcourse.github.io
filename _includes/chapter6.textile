@@ -155,7 +155,7 @@ Here we are not just asking for only an equivalent resistance, rather we want a 
 
 Task A: We recognize the 4 and 2 ohm resistors near the output, right-most, are connected in series, AND THUS we see that they cause a voltage divider relationship for voltage $V_{out}$, from voltage $V_a$, Figure 6.14(a).
 
-p=(#figure6-14a). !{width:40%}img/6/circuitsF6.14a.jpg(Figure 6.14a)!:img/6/circuitsF6.14a.jpg
+p=(#figure6-14a). !{width:35%}img/6/circuitsF6.14a.jpg(Figure 6.14a)!:img/6/circuitsF6.14a.jpg
 _Figure 6.14a  Sub-Part: Voltage Divider of Full Mixed Circuit Problem_
 
 We use the voltage-divider relation to determine voltage $V_{out}$ when we know the voltage $V_a$, because the output, $v_{out}$, is just 1/3rd of $V_a$, as calculated by:
@@ -173,7 +173,7 @@ p=. $R_{eq2}$ = $\frac{6 6}{6+6}$ = 3 ohm
 
 So now the further reduced circuit becomes:
 
-p=(#figure6-14b). !{width:40%}img/6/circuitsF6.14b.jpg(Figure 6.14b)!:img/6/circuitsF6.14b.jpg
+p=(#figure6-14b). !{width:50%}img/6/circuitsF6.14b.jpg(Figure 6.14b)!:img/6/circuitsF6.14b.jpg
 _Figure 6.14b  Voltage Divider, Portion of Full Mixed Circuit Problem_
 
 Here there is again a voltage divider relation between Va and Vb, Va = ½ Vb.
