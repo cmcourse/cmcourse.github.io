@@ -166,6 +166,7 @@ TASK B: But as of yet, we do not have a value for Va.  So lets get it.  If we kn
 
 We can reduce the circuit to the right of node Va, since the 4 and 2 ohm resistors are in series and result in Req1 = 6 ohms, so the resultant circuit becomes:
 
+p=. !{width:60%}img/6/circuitsF6.14b.jpg(Figure 6.14b)!:img/6/circuitsF6.14b.jpg
 
 but now notice the two 6 ohm resistors are both connected at node Va and so are in parallel, and that means they can also be reduced to an equivalent Req2 = 3 ohms:
 
@@ -173,12 +174,12 @@ p=. $R_{eq2}$ = $\frac{6 6}{6+6}$ = 3 ohm
 
 So now the further reduced circuit becomes:
 
-p=(#figure6-14b). !{width:60%}img/6/circuitsF6.14b.jpg(Figure 6.14b)!:img/6/circuitsF6.14b.jpg
+p=(#figure6-14c). !{width:60%}img/6/circuitsF6.14c.jpg(Figure 6.14c)!:img/6/circuitsF6.14c.jpg
 _Figure 6.14b  Voltage Divider, Portion of Full Mixed Circuit Problem_
 
-Here there is again a voltage divider relation between Va and Vb, Va = ½ Vb.
+Here there is again a voltage divider relation between $V_a$ and $V_b$, $V_a = ½ V_b$.
  
 p=. $V_a$ = $(\frac{3}{3+3})V_{b}$ = $\frac{1}{2}V_b$
 
-And now we need to obtain voltage Vb, but by further reduction, the two right-side 3 ohm resistors are in series, so we get the still further reduced circuit with Req3 = 6:
+And now we need to obtain voltage $V_b$, but by further reduction, the two right-side 3 ohm resistors are _in series_, so we get the still further reduced circuit with $R_{eq3} = 6$:
 
