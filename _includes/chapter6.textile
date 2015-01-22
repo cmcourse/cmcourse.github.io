@@ -121,6 +121,23 @@ h4(#chapter6-circuit-reductions). 6.4 - Circuit Reduction by Resistor Equivalent
 
 Of course, many circuits are _*NOT ALL* in series, *NOR ALL* in parallel_ !!  They can be a mixture of configurations.  "Figure 6.12":#figure6-12 depicts a 'mixed' configuration of three resistors.
 
-p=(#figure6-12). !{width:40%}img/6/circuitsF6.12.jpg(Figure 6.12)!:img/6/circuitsF6.12.jpg
+p=(#figure6-12). !{width:30%}img/6/circuitsF6.12.jpg(Figure 6.12)!:img/6/circuitsF6.12.jpg
 _Figure 6.12  'Mixed' Configuration of Resistors_
 
+This circuit has more that 1 path, and more than 2 nodes, so the whole 'group' is neither an all-series circuit, nor an all-parallel circuit.  HOWEVER, this circuit can still be reduced to a single equivalent by series and parallel thinking.  !!
+
+The first thing when trying to reduce a circuit is to identify if ANY localized _sub-portion_ of the circuit satisfies either single-path or single-node-pair constraints.  In "Figure 6.12":#figure6-12 we can see that resistors $R_1$ and $R_3$ are both connected to the same two nodes, and thus are _'in-parallel'_; and hence we can reduce them to a single equivalent resistor, Req-a.  This is depicted in "Figure 6.13":#figure6-13.  BE CAREFUL, _resistors R1 and R2 are NOT in series_ because they are not in a single-path. That is, $R_1$ and $R_2$ *DO NOT have the same current*.  On the other hand, resistors R1 and R3 DO CONNECT TO THE SAME TWO NODES so they are in _parallel_.
+
+p=(#figure6-13). !{width:85%}img/6/circuitsF6.13.jpg(Figure 6.13)!:img/6/circuitsF6.13.jpg
+p=. _Figure13(a)  Figure 13(b)   Figure 13(c)_
+_Figure 6.13  Sequential Reduction of a Mixed Configuration_
+
+So we can calculate the value of Req-a  (of R1 and R3 in parallel) from eq’n 6.4 as:
+
+p=. $R_{eq-a}$ = $\frac{R_1 R_3}{R_1 + R_3}
+
+After the reduction of $R_1$ and $R_3$ to $R_{eq-a}$, the circuit now has two resistors, $R_{eq-a}$ and $R_2$, Figure 6.13(b).  But now both of these are in a single-path configuration (_series_), Figure 6.13(b).  So the final equivalent resistance $R_{eq-b}$ between terminals C-C', 6.13(c) is:
+
+p=. $R_{eq-b}$ = $R_2 + R_{eq-a}$ = $R_2$ + $\frac{R_1 + R_3}{R_1R_3}$
+
+So a _sequential reduction_ using the _series_ and _parallel equivalents_ applied separately to *parts* of the circuit (when correctly applied) enables us to reduce a complex circuit down to a single resistor.
