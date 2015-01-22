@@ -183,11 +183,11 @@ p=. $V_a$ = $(\frac{3}{3+3})V_{b}$ = $\frac{1}{2}V_b$
 
 And now we need to obtain voltage $V_b$, but by further reduction, the two right-side 3 ohm resistors are _in series_, so we get the still further reduced circuit with $R_{eq3} = 6$:
 
-p=. !{width:55%}img/6/circuitsF6.14d.jpg(Figure 6.14d)!:img/6/circuitsF6.14d.jpg
+p=. !{width:50%}img/6/circuitsF6.14d.jpg(Figure 6.14d)!:img/6/circuitsF6.14d.jpg
 
 And again by reduction the two parallel 6 ohm resistors on the right side become, $R_{eq4} = 3$ ohm; so the 'fully reduced' circuit of the original 6-resistor circuit is reduced to just 2-resistors. "Figure 6.15":#figure6-15.
 
-p=(#figure6-15). !{width:34%}img/6/circuitsF6.15.jpg(Figure 6.15)!:img/6/circuitsF6.15.jpg
+p=(#figure6-15). !{width:34%}img/6/circuitsF6.14e.jpg(Figure 6.15)!:img/6/circuitsF6.14e.jpg
 _Figure 6.15  Fully Reduced Circuit to Calculate Node Voltage, $V_b$_
 
 *TASK C:* Solving for Vout. Since Figure 6.15 is a voltage-divider circuit we can write by inspection:
