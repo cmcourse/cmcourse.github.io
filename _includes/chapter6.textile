@@ -196,7 +196,7 @@ p=. $V_b$ = $(\frac{3}{3+3})(12)$ = 6 volts
 
 Now with the value for $V_b$ we look at the preceding reduced circuit, "Figure 6.14b":#figure6-14b, that relates $V_b$. to $V_a$.  As solved above, this too is a voltage-divider relation, so:
 
-p=. $V_a$ = $(\frac{3}{3+3})(12) V_b$ = =$\frac{1}(2} 6$ = 3 volts
+p=. $V_a$ = $(\frac{3}{3+3})(12) V_b$ = $\frac{1}(2}$ 6 = 3 volts
 
 and finally from the reduced circuit with $V_a$,"Figure 6.14a":#figure6-14a, by voltage-divider again we use the calculated the node voltage $V_a$, and hence the output voltage, $V_{out}$, is 1 volt, by:
 
