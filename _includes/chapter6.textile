@@ -132,7 +132,7 @@ p=(#figure6-13). !{width:85%}img/6/circuitsF6.13.jpg(Figure 6.13)!:img/6/circuit
 p=. _Figure13(A)  Figure 13(B)   Figure 13(C)_
 _Figure 6.13  Sequential Reduction of a Mixed Configuration_
 
-So we can calculate the value of $R_{eq-a}  (of $R_1$ and $R_3$ in parallel) from eq'n 6.4 as:
+So we can calculate the value of $R_{eq-a}$  (of $R_1$ and $R_3$ in parallel) from eq'n 6.4 as:
 
 p=. $R_{eq-a}$ = $\frac{R_1 R_3}{R_1 + R_3}$
 
