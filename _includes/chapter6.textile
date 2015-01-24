@@ -191,7 +191,7 @@ Here there is again a voltage divider relation between 12 volts and $V_a$, there
  
 p=. $V_a$ = $(\frac{3}{3+3})(12)$ = $\frac{1}{2}(12)$ = 6 volts
 
-*TASK C:* Solving for $V_{out}. Since "Figure 6.14":#figure6-14 from Task-A is a voltage-divider circuit between $V_{out}$ and $V_a$ we can write by inspection:
+*TASK C:* Solving for $V_{out}$. Since "Figure 6.14":#figure6-14 from Task-A is a voltage-divider circuit between $V_{out}$ and $V_a$ we can write by inspection:
 
 p=. $V_{out}$ = $(\frac{2}{4+2})V_a$ = $(\frac{1}{3})(\frac{3}{3+3}) (12)$ = $(\frac{1}{3})(\frac{1}{2}) 12$ = 2 volt
 
