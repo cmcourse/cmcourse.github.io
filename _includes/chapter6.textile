@@ -148,7 +148,7 @@ Lets look at another example where we can use our reduction methods concept, but
 
 Consider a circuit configured as in Figure "Figure 6.14":#figure6-14.  Here this is also a 'mixed' circuit that is neither all-series, nor all-parallel, this is like the circuit of Figure "Figure 6.1":#figure6-1.  Of course, we could solve this by writing the 4 node-voltage equations for each of the 4 nodes, but this is a lengthy process.  Instead, now we will solve it by reduction and find a numerical solution value for the voltage at the output terminals: $V_{out}$.
 
-p=(#figure6-14). !{width:60%}img/6/circuitsF6.14.jpg(Figure 6.14)!:img/6/circuitsF6.14.jpg
+p=(#figure6-14). !{width:50%}img/6/circuitsF6.14.jpg(Figure 6.14)!:img/6/circuitsF6.14.jpg
 _Figure 6.14  Mixed Circuit Problem_
 
 Here we are not just asking for only an equivalent resistance, rather we want a numerical value for a specific voltage.  In this case we want the voltage across the 'final' right-most 2 ohm resistor.  We break the solution process into a sequence of several simple tasks, our first task is to determine what is needed in order to obtain the output voltage, $v_{out}$.
@@ -156,8 +156,9 @@ Here we are not just asking for only an equivalent resistance, rather we want a 
 # *Task A:*  Notice the output voltage, $V_{out}$, can be calculated via a voltage divider if $V_a$ is known
 ** But $V_a$ is NOT known
 # *Task B:*  Find the voltage $V_a$ value by use of resistance reductions and a voltage divider
-** First reduce the resistances to obtain a single equivalent resistance at $V_a$.
- $V_{out}$ 
+** First, equivalence to obtain a single equivalent resistance at $V_a$.
+** Second, voltage divider to calculate $V_a$
+# *Task C:*  Calculate $V_{out}$ from $V_a$ via Task A.
 
 *Task A:* We recognize the 4 and 2 ohm resistors near the output, right-most, are connected in series, AND THUS we see that they cause a voltage divider relationship for voltage $V_{out}$, from voltage $V_a$, "Figure 6.14a":#figure6-14a.
 
