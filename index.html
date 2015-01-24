@@ -85,6 +85,11 @@ title: CMCourse Book Chapters
               <li><a href="#chapter6-circuit-reductions">Circuit Reduction by Resistor Equivalents</a></li>
               <li><a href="#chapter6-voltage-divider">Example Equivalents and Voltage-Dividers</a></li>
 			</ul>
+        <li>
+			<a href="#chapter7">Chapter-7 Power in Resistive Circuits</a>
+            <ul class="nav">
+              <li><a href="#chapter7-uniform-power">Uniform Power Over Multiple Resistors</a></li>
+			</ul>
 		</li>
       </ul>
     </div>
@@ -145,6 +150,15 @@ title: CMCourse Book Chapters
       {% include chapter6.textile %}
       {% endcapture %}
       {{ include_to_textilize6 | textilize }}
+    </div>  
+    
+    <!-- chapter 7 -->
+    <div class="chapter">
+      <h2 id="chapter7">Chapter 7: Power in Resistive Circuits</h2>
+      {% capture include_to_textilize7 %}
+      {% include chapter7.textile %}
+      {% endcapture %}
+      {{ include_to_textilize7 | textilize }}
     </div>  
 	
   </div> <!-- /book -->
