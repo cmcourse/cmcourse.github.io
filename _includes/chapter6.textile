@@ -187,13 +187,11 @@ Thus now the further reduced circuit becomes:
 p=(#figure6-14c). !{width:40%}img/6/circuitsF6.14c.jpg(Figure 6.14c)!:img/6/circuitsF6.14c.jpg
 _Figure 6.14c  Voltage Divider, Portion of Full Mixed Circuit Problem_
 
-Here there is again a voltage divider relation between 12 volts and $V_a$, therefore $V_a = (½) 12$.
+Here there is again a voltage divider relation between 12 volts and $V_a$, therefore:
  
 p=. $V_a$ = $(\frac{3}{3+3})(12)$ = $\frac{1}{2}(12)$ = 6 volts
 
-*TASK C:* Solving for $_{Vout}. Since "Figure 6.14":#figure6-14 is a voltage-divider circuit between $V_{out}$ and $V_a$ we can write by inspection:
-
-and finally from the reduced circuit with $V_a$,"Figure 6.14a":#figure6-14a, by voltage-divider again we use the calculated the node voltage $V_a$, and hence the output voltage, $V_{out}$, is 1 volt, by:
+*TASK C:* Solving for $V_{out}. Since "Figure 6.14":#figure6-14 from Task-A is a voltage-divider circuit between $V_{out}$ and $V_a$ we can write by inspection:
 
 p=. $V_{out}$ = $(\frac{2}{4+2})V_a$ = $(\frac{1}{3})(\frac{3}{3+3}) (12)$ = $(\frac{1}{3})(\frac{1}{2}) 12$ = 2 volt
 
