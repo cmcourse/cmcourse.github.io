@@ -178,14 +178,14 @@ We can reduce the circuit to the right of node $V_a$, since the 4 and 2 ohm resi
 
 p=. !{width:60%}img/6/circuitsF6.14b.jpg(Figure 6.14b)!:img/6/circuitsF6.14b.jpg
 
-but now notice the two 6 ohm resistors are both connected at node Va and so are in parallel, and that means they can also be reduced to an equivalent $R_{eq2}$ = 3 ohms:
+but now notice there are two 6 ohm resistors both connected at node Va to ground, and so are in parallel.  And that means they can be reduced to an equivalent $R_{eq2}$ = 3 ohms, via:
 
 p=. $R_{eq2}$ = $\frac{6 6}{6+6}$ = 3 ohm
 
 So now the further reduced circuit becomes:
 
 p=(#figure6-14c). !{width:45%}img/6/circuitsF6.14c.jpg(Figure 6.14c)!:img/6/circuitsF6.14c.jpg
-_Figure 6.14b  Voltage Divider, Portion of Full Mixed Circuit Problem_
+_Figure 6.14c  Voltage Divider, Portion of Full Mixed Circuit Problem_
 
 Here there is again a voltage divider relation between $V_a$ and $V_b$, $V_a = ½ V_b$.
  
