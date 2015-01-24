@@ -169,12 +169,12 @@ We use the voltage-divider relation to determine voltage $V_{out}$ when we know 
 
 p=. $V_{out}$ = $\frac{2}{2+4} V_a$ = $\frac{1}{3} V_a$
 
-**  Note it is *WRONG* to think that $V_a$ is determined as a voltage divider with just the two resistors of 3 ohm and 6 ohms !!
-***  (The correct way will be shown below.)
+**  Note it is *WRONG* to think that $V_a$ is determined as a voltage divider with just the two resistors of 3 ohm and 6 ohms !  They are NOT in series !!
+***  (The correct method will be shown below.)
 
-*TASK B:* But as of yet, we do not have a value for $V_a$.  So lets get it.  If we know the value of the node voltage $V_b$, then we can obtain the voltage $V_a$, lets see how.
+*TASK B:* But as of yet, we do not have a value for $V_a$.  So lets get it.
 
-We can reduce the circuit to the right of node $V_a$, since the 4 and 2 ohm resistors are in series and result in Req1 = 6 ohms, so the resultant circuit becomes:
+We can reduce the circuit to the right of node $V_a$, since the 4 and 2 ohm resistors are in series and result in $R_{eq1} = 6$ ohms, so the resultant circuit becomes:
 
 p=. !{width:60%}img/6/circuitsF6.14b.jpg(Figure 6.14b)!:img/6/circuitsF6.14b.jpg
 
