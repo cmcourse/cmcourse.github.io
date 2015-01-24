@@ -157,7 +157,7 @@ Here we are not just asking for only an equivalent resistance, rather we want a 
 ** But $V_a$ is NOT known
 # *Task B:*  Find the voltage $V_a$ value by use of resistance reductions and a voltage divider
 ** First reduce the resistances to obtain a single equivalent resistance at $V_a$.
-# *Task C:*  Use the voltage $V_a$ to calculate by voltage divider relationthe value for $V_{out}$ 
+ $V_{out}$ 
 
 *Task A:* We recognize the 4 and 2 ohm resistors near the output, right-most, are connected in series, AND THUS we see that they cause a voltage divider relationship for voltage $V_{out}$, from voltage $V_a$, "Figure 6.14a":#figure6-14a.
 
