@@ -184,7 +184,7 @@ p=. $R_{eq2}$ = $\frac{(6) (6)}{6+6}$ = 3 ohm
 
 Thus now the further reduced circuit becomes:
 
-p=(#figure6-14c). !{width:40%}img/6/circuitsF6.14c.jpg(Figure 6.14c)!:img/6/circuitsF6.14c.jpg
+p=(#figure6-14c). !{width:35%}img/6/circuitsF6.14c.jpg(Figure 6.14c)!:img/6/circuitsF6.14c.jpg
 _Figure 6.14c  Voltage Divider, Portion of Full Mixed Circuit Problem_
 
 Here there is again a voltage divider relation between 12 volts and $V_a$, therefore:
