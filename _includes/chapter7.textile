@@ -52,10 +52,31 @@ p=. $R_1 = (\frac{v}{i}) = R_2$
 
 Again to get equal power dissipation the two _series_ resistor values need to be equal, $R_1 = R_2$ .
 
-h4(#chapter7-uniform-power). 7.3 - Example: Four Resistor Uniform Heating
+h4(#chapter7-uniform-power). 7.3 - Example: Four Resistor Equal Heating
 
 A more complex equal power example occurs with the symmetric 4-resistor network connected to a constant voltage source, depicted in "Figure 7.4":#figure7-4.  The goal here is that all 4 individual resistors produce the same heating power.  In other words the design constraint in this problem is to have the product (v)  (i) be the same in _each_ of the four resistors.
 
-p=(#figure7-4). !{width:37%}img/7/circuitsF7.4.jpg(Figure 7.4)!:img/7/circuitsF7.4.jpg
+p=(#figure7-4). !{width:42%}img/7/circuitsF7.4.jpg(Figure 7.4)!:img/7/circuitsF7.4.jpg
 _Figure 7.4  Example Four-Resistor Equal Power Heater_
+
+Notice, that in this Figure there are only two resistor values $R_1$ and $R_2$.  The reason is that we already found that two parallel-connected resistors must be of the same value to exhibit equal heating.  And also we know two series-connected resistors must be equal for equal heating.  Thus, the two $R_1$ resistors are in parallel and must be equal.  And similarly, the two $R_2$ resistors are in series and must be equal.
+
+Our task is to find the relationship between $R_1$ and $R_2$ that makes both pairs dissipate the same power.  This equal power constraint is thus:
+
+p=. $p_{resistor} = p_1 = (v_1 i_1) = p_2 = (v_2 i_2)$
+
+In the circuit these voltages and currents are depicted in "Figure 7.5":#figure7-5.
+
+p=(#figure7-5). !{width:42%}img/7/circuitsF7.5.jpg(Figure 7.5)!:img/7/circuitsF7.5.jpg
+_Figure 7.5  Circuit Details for Uniform Heating_
+
+By KCL, these currents must be related:
+
+p=. $-i_2 + i_1 + i_1 = 0$  so  $i_2 = i_1 + i_1$ = $2i_1$
+
+Now we can express the power dissipated in resistors $R_1$ and $R_2$, respectively, as:
+
+p=. $p_1 = v_1i_1$  =  $i_1R_1i_1$  =  $R_1 i_1^2$
+
+so the result is:
 
