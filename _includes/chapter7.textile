@@ -23,9 +23,24 @@ To better understand the uniform heating constraint, lets first consider a paral
 p=(#figure7-2). !{width:70%}img/7/circuitsF7.2.jpg(Figure 7.2)!:img/7/circuitsF7.2.jpg
 _Figure 7.2  Two Resistor Heater, Parallel Connected_
 
-The goal is to select the value of resistor $R_2$ in relation to resistor $R_1$, so that both resistors dissipate the same power.  To do this we need to equate the power dissipated in each resistor, equation [7.1].
+The goal is to select the value of resistor $R_2$ in relation to resistor $R_1$, so that both resistors dissipate the _same power_.  To do this we need to equate the power dissipated in each resistor, equation [7.1].
 
 p=. $p_{resistor} = p_1 = (v_1)(i_1) = p_2 = (v_2)(i_2)$
 
-where, i1 and i2 are the currents in resistors R1 and R2 respectively, and v1 and v2 are the voltages across R1 and R2, respectively.  But here the two resistors are connected in parallel, to same node-pair, an equal voltage connection.  Hence v1 = v2.  Also they are in parallel with the voltage source VS, so by substitution: v1 = v2=VS, and thus, equation [2].
+where, $i_1$ and $i_2$ are the currents in resistors $R_1$ and $R_2$ respectively, and $v_1$ and $v_2$ are the voltages _across_ $R_1$ and $R_2$, respectively.  But here the two resistors are connected in _parallel_, to same node-pair, an equal voltage connection.  Hence $v_1 = v_2$.  Also they are in parallel with the voltage source $V_S$, so by substitution: $v_1 = v_2 = V_S$, and thus, equation [2].
+
+p=. $(V_S i_1) = (V_S i_2)$
+
+Hence to get equal power dissipated by these 2 _parallel_ resistors we need $i_1 = i_2$.  Now for each resistor we can apply ohm’s law, this leads to the obvious answer: when  , there is equal power dissipated in both resistors.
+
+Alternately the two resistors could be connected in series, a single path (equal current), see "Figure 7.3":#figure7-3.
+
+p=(#figure7-3). !{width:70%}img/7/circuitsF7.3.jpg(Figure 7.3)!:img/7/circuitsF7.3.jpg
+_Figure 7.3  Two Resistor Heater, Series Connected_
+
+Again for equal power the product of voltage-across and current-in each resistor must be the same, hence:
+
+p=. $p_{resistor} = p_1 = (v_1 i_1) = p_2 = (v_2 i_2)$
+
+but, since a series circuit; $i_1 = i_2 = i$ :
 
