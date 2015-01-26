@@ -76,7 +76,35 @@ p=. $-i_2 + i_1 + i_1 = 0$  so  $i_2 = i_1 + i_1$ = $2i_1$
 
 Now we can express the power dissipated in resistors $R_1$ and $R_2$, respectively, as:
 
-p=. $p_1 = v_1i_1$  =  $i_1R_1i_1$  =  $R_1 i_1^2$
+p=. $p_1 = v_1i_1$  =  $i_1R_1i_1$  =  $R_1 (i_1)^2$
+
+and
+
+p=. $p_2 = v_2i_2$  =  $i_2R_2i_2$  =  $R_2 (i_2)^2$
+
+Equating:
+
+p=. R_1(i_1)^2 = R_2(i_2)^2$
+
+And by substitution of the KCL constraint Eqn [4]:
+
+p=. R_1(i_1)^2 = R_2(i_2)^2$  =  $R_2(2i_1)^2$
 
 so the result is:
 
+p=. $R_1 = 4 R_2$
+
+To determine the value for the power dissipated in terms of the voltage source $V_S$, we use the equivalent circuit of "Figure 7.6":#figure7-6, with resistor values given in terms of $R_1$.
+
+ p=(#figure7-6). !{width:42%}img/7/circuitsF7.6.jpg(Figure 7.6)!:img/7/circuitsF7.6.jpg
+ _Figure 7.6  Equivalent Circuit with Equal Power Constraint on *4 Resistors*_
+ 
+ The total equivalent resistance of these three series connected resistors is just $R_1$.  So the total power dissipated by *all four resistors* is therefore:
+
+p=. $p_{total} = \frac{(V_S)^2^}{R_1}$
+
+And so for each of the four original resistors the power dissipated is 1/4 of this, or:
+
+p=. $p_{resistor} = \frac{(V_S)^2^}{4R_1}$
+
+Finally, to design specific values for the resistances to be used we need to select the desired power level and supply voltage.  If we use ¼ watt resistors, and if we are able to notice heating by touch at about ½ that rated power; then we should design for 1/8 watt dissipation _in each resistor_.
