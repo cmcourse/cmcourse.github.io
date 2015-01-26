@@ -101,11 +101,11 @@ _Figure 7.6  Equivalent Circuit with Equal Power Constraint on *4 Resistors*_
  
 The total equivalent resistance of these three series connected resistors is just $R_1$.  So the total power dissipated by *all four resistors* is therefore:
 
-p=. $p_{total}$ = $\frac{(V_S)^2^}{R_1}$
+p=. $p_{total}$ = $\frac{(V_S)^2}{R_1}$
 
 And so for each of the four original resistors the power dissipated is 1/4 of this, or:
 
-p=. $p_{resistor}$ = $\frac{(V_S)^2^}{4R_1}$
+p=. $p_{resistor}$ = $\frac{(V_S)^2}{4R_1}$
 
 Finally, to design specific values for the resistances to be used we need to select the desired power level and supply voltage.  If we use 1/4 watt resistors, and if we are able to notice heating by touch at about 1/2 that rated power; then we should design for 1/8 watt dissipation _in each resistor_.
 
@@ -134,11 +134,11 @@ p=. $P_{R3}$  =  $V_S i_{R3}$  =  $V_S(\frac{V_S}{R_3})$
 
 and we need to set the power dissipated by $R_{eq}$, to be $3P_{R3}$, so:
 
-p=. $\frac{(V_S)^2}{R_{eq}}$  =  $3 P_{R3}$  =  $3()\frac{(V_S)^2}{R_3})$
+p=. $\frac{(V_S)^2}{R_{eq}}$  =  $3 P_{R3}$  =  $3(\frac{(V_S)^2}{R_3})$
 
 However, from above $R_{eq} = 3R_1$, so by substitution:
 
-p=. $\frac{(V_S)^2}{3R_1}$  =  $3\frac{(V_s)^2}{R_3}
+p=. $\frac{(V_S)^2}{3R_1}$  =  $3\frac{(V_s)^2}{R_3}$
 
 So finally for equal power dissipation in all four resistors in Figure 7-7, we require:
 
