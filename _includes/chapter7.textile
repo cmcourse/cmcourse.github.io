@@ -84,11 +84,11 @@ p=. $p_2 = v_2i_2$  =  $i_2R_2i_2$  =  $R_2 (i_2)^2$
 
 Equating:
 
-p=. R_1(i_1)^2 = R_2(i_2)^2$
+p=. $R_1(i_1)^2 = R_2(i_2)^2$
 
 And by substitution of the KCL constraint Eqn [4]:
 
-p=. R_1(i_1)^2 = R_2(i_2)^2$  =  $R_2(2i_1)^2$
+p=. $R_1(i_1)^2 = R_2(i_2)^2$  =  $R_2(2i_1)^2$
 
 so the result is:
 
@@ -96,10 +96,10 @@ p=. $R_1 = 4 R_2$
 
 To determine the value for the power dissipated in terms of the voltage source $V_S$, we use the equivalent circuit of "Figure 7.6":#figure7-6, with resistor values given in terms of $R_1$.
 
- p=(#figure7-6). !{width:42%}img/7/circuitsF7.6.jpg(Figure 7.6)!:img/7/circuitsF7.6.jpg
- _Figure 7.6  Equivalent Circuit with Equal Power Constraint on *4 Resistors*_
+p=(#figure7-6). !{width:42%}img/7/circuitsF7.6.jpg(Figure 7.6)!:img/7/circuitsF7.6.jpg
+_Figure 7.6  Equivalent Circuit with Equal Power Constraint on *4 Resistors*_
  
- The total equivalent resistance of these three series connected resistors is just $R_1$.  So the total power dissipated by *all four resistors* is therefore:
+The total equivalent resistance of these three series connected resistors is just $R_1$.  So the total power dissipated by *all four resistors* is therefore:
 
 p=. $p_{total} = \frac{(V_S)^2^}{R_1}$
 
@@ -107,4 +107,12 @@ And so for each of the four original resistors the power dissipated is 1/4 of th
 
 p=. $p_{resistor} = \frac{(V_S)^2^}{4R_1}$
 
-Finally, to design specific values for the resistances to be used we need to select the desired power level and supply voltage.  If we use ¼ watt resistors, and if we are able to notice heating by touch at about ½ that rated power; then we should design for 1/8 watt dissipation _in each resistor_.
+Finally, to design specific values for the resistances to be used we need to select the desired power level and supply voltage.  If we use 1/4 watt resistors, and if we are able to notice heating by touch at about 1/2 that rated power; then we should design for 1/8 watt dissipation _in each resistor_.
+
+Hence for a supply voltage of Vs = 10 volts, and 1/8 watt power dissipation per resistor, the designed value of $R_1$ becomes:
+
+p=. $R_1 = \frac{(V_S)^2^}{4(1/8)}$  =  2 x 10^2$  =  200 ohms
+
+and thus using eq’n [9] we also design the $R_2$ value as:
+
+p=. $R_2 = (\frac{1}{4})8(\frac{(V_S)^2^}{4})$  =  50 ohms.
