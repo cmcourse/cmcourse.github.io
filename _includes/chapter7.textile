@@ -168,13 +168,13 @@ Notice with the finite source resistance, $R_S$, when the load current increases
 
 p=. $V_L = V_S - i_L R_S$
 
-Here we can see when $i_L$ increases. $V_L$ must decrease.  So $V_L$ even becomes zero when $i_L$ is $V_S$/$i_S$.  But power into the load is the $V_L$ • $i_L$ product, and thus becomes zero at this current.
+Here we can see when $i_L$ increases. $V_L$ must decrease.  So $V_L$ even becomes zero when $i_L$ is $V_S$ / $i_S$.  But power into the load is the $(V_L$)  $(i_L)$ product, and thus becomes zero at this current.
 
-So the power delivered to the load is *zero* when either $V_L$ is zero or $i_L$ is zero.  Said in another way, the power to the load becomes very small when either $V_L$ is very small or $i_L$ is very small.  These two extremes occur when the load resistance $R_L$ is either very small ($V_L$ small), or very large ($i_L$ small), respectively.  Thus, we see that the load resistance cannot be too small nor too large, but rather, there is an _optimum_ resistance of the load, $R_{L-opt}, where there is a _maximum power transfer from fixed source to load_.  Now assume we have a practical source with fixed voltage value, $V_S$, and with fixed equivalent source resistance, $R_S$.  Our task is to find the optimum value of the load resistance that _*maximizes*_ the power dissipated in the load resistance with this fixed real source.
+So the power delivered to the load is *zero* when either $V_L$ is zero or $i_L$ is zero.  Said in another way, the power to the load becomes very small when either $V_L$ is very small or $i_L$ is very small.  These two extremes occur when the load resistance $R_L$ is either very small ($V_L$ small), or very large ($i_L$ small), respectively.  Thus, we see that the load resistance cannot be too small nor too large, but rather, there is an _optimum_ resistance of the load, $R_{L-opt}$, where there is a _maximum power transfer from fixed source to load_.  Now assume we have a practical source with fixed voltage value, $V_S$, and with fixed equivalent source resistance, $R_S$.  Our task is to find the optimum value of the load resistance that _*maximizes*_ the power dissipated in the load resistance with this fixed real source.
 
 This can be represented graphically by the power curve in "Figure 7.10":#figure7-10, a small $R_L$ yields small power to the load and a large $R_L$ also yields small power to the load.
 
-p=(#figure7-10). !{width:75%}img/7/circuitsF7.10.jpg(Figure 7.10)!:img/7/circuitsF7.10.jpg
+p=(#figure7-10). !{width:80%}img/7/circuitsF7.10.jpg(Figure 7.10)!:img/7/circuitsF7.10.jpg
 _Figure 7.10  Estimated Power Transfer to Load, Maximum at $R_{L-opt}$_
 
 Lets calculate the current in this single-loop circuit.  By equivalent total resistance of $R_S+R_L$, we can write:
@@ -189,11 +189,39 @@ Thus, the power dissipated by the load is:
 
 p=. $P_{L-dissipated}$ = $(V_L) (i_L)$ = $(i_L R_L) (i_L)$ = $(i_L)^2 R_L$
 
-By substitution and in terms of fixed source value constants: $V_S$, and $R_S$; the power dissipated in the load is, Eq’n 12:
+By substitution and in terms of fixed source value constants: $V_S$, and $R_S$; the power dissipated in the load is, Eq'n 12:
 
 p=. $P_{L-dissipated}$ = $(\frac{V_S}{R_S + R_L})^2$ $R_L$ = $[\frac{R_L}{(R_S + R_L)^2}]$ $(V_S)^2$
 
 To get the maximum power point, notice that the peak occurs at the point where the slope of the power curve is zero, "Figure 7.10":#figure7-10.  But the derivative of the curve is the slope, thus to find the peak power to the load we calculate the derivative of power dissipated in load $P_L$ with respect to $R_L$ and set it to zero, Eq'n 13.
 
+p=. $\frac{dP_L}{dR_L}$ = $[\frac{(R_S + R_L)^2 - R_L (2)(R_S + R_L)(1)]}{(R_S + R_L)^4}$ $(V_S)^2$
 
+Note, $V_S$ and $R_S$ are constants and hence are fixed in regard to taking the derivative, solving:
+
+p=. $(R_S + R_L)^2$ - $2 (R_L) (R_S + R_L)$ = 0
+
+so
+
+p=.$(R_S + R_L) - 2R_L$ = 0
+
+and thus:
+
+p=. $R_L$ = $R_S$
+
+_The maximum power transfer occurs under this *'Matched Condition'* when the value of the load resistance, $R_L$, is equal to the fixed source resistance, $R_S$._
+
+This is an exceedingly important result and applies to signal communications for satellites, TV, audio systems, and ethernet cables.  The maximum signal acquired by a 'load' occurs with the _matched resistance_ condition.
+
+There are a number of practical examples of these 'matched-load' systems.  The Table 7-1 below lists the application and typical industry accepted 'standard' source resistance values.
+
+p=. Table 7-1
+p=. *Common Industry Standard Matched Loads*
+p=. Application Standardized Resistance Value
+p=. Audio: 600 ohm
+p=. Open Air TV Antennna: 300 ohm
+p=. Data Network Cables: 100 ohm
+p=. Video: 75 ohm
+p=. Instrumentation: 50 ohm
+p=. Sensors: 1k to 100k (typical)
 
