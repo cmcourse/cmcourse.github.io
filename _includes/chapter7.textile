@@ -33,7 +33,7 @@ where, $i_1$ and $i_2$ are the currents in resistors $R_1$ and $R_2$ respectivel
 
 p=. $(V_S i_1) = (V_S i_2)$
 
-Hence to get equal power dissipated by these 2 _parallel_ resistors we need $i_1 = i_2$.  Now for each resistor we can apply ohm's law, this leads to the obvious answer: when  , there is equal power dissipated in both resistors.
+Hence to get equal power dissipated by these 2 _parallel_ resistors we need $i_1 = i_2$.  Now for each resistor we can apply ohm's law, this leads to the obvious answer: when $R_1 = R_2$ there is equal power dissipated in both resistors.
 
 ** _(ii) Series Cnnected Resistors_
 
