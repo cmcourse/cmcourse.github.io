@@ -69,9 +69,9 @@ Our task is to find the relationship between $R_1$ and $R_2$ that makes both pai
 
 p=. $p_{resistor} = p_1 = (v_1 i_1) = p_2 = (v_2 i_2)$
 
-In the circuit these voltages and currents are depicted in "Figure 7.5":#figure7-5.  Note the two $R_2$ resistors are in series so they both have the same current $i_2$, and the two $R_1$ resistors are in parallel and have the same current $i_1$ because they have the smae resistnace value.
+For this circuit the voltages and currents are depicted in "Figure 7.5":#figure7-5.  Note the two $R_2$ resistors are in series so they both have the same current $i_2$, and the two $R_1$ resistors are in parallel and have the same current $i_1$ because they have the smae resistnace value.
 
-p=(#figure7-5). !{width:42%}img/7/circuitsF7.5.jpg(Figure 7.5)!:img/7/circuitsF7.5.jpg
+p=(#figure7-5). !{width:42%}img/7/circuitsF7.5a.jpg(Figure 7.5)!:img/7/circuitsF7.5a.jpg
 _Figure 7.5  Circuit Details for Uniform Heating_
 
 By KCL, these currents must be related:
