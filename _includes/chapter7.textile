@@ -152,29 +152,29 @@ Consider the case where we are given a particular power source.  If we could 'de
 
 Now lets consider a fixed voltage source depicted in "Figure 7.8":#figure7-8.  Here we use an _ideal_ voltage source, which by definition keeps the load voltage at fixed value _independent of the amount of current from the source_.
 
-p=(#figure7-8). !{width:42%}img/7/circuitsF7.8.jpg(Figure 7.8)!:img/7/circuitsF7.8.jpg
+p=(#figure7-8). !{width:40%}img/7/circuitsF7.8.jpg(Figure 7.8)!:img/7/circuitsF7.8.jpg
 _Figure 7.8  Ideal Fixed Voltage Source Connected to a Load_
 
-By polarity convention, the power dissipated in the load is $V_{load}$ • $i_S$.  And the power dissipated by the source is $V_S$ • $(-i_S)$.  Of course the sum of all power dissipated by the circuit is zero, in agreement with these two values for source and load.
+By polarity convention, the power dissipated in the load is ($V_{load}$)  ($i_S$).  And the power dissipated by the source is ($V_S$) ($(-i_S)$).  Of course the sum of all power dissipated by the circuit is zero, in agreement with these two values for source and load.
 
-However, in the _real world_ one cannot draw an infinite amount of current from a source, because that would mean infinite power. More typically for real sources the source ‘output’ voltage decreases as the current drawn from the source increases.  This real-world limit of _*finite source current*_ can be represented in our circuits by a finite value of _internal source resistance_, $R_S$, which is an inherent internal part of any real source. "Figure 7.9":#figure7-9 depicts this 'real-world' source with finite source resistance, $R_S$.
+However, in the _real world_ one cannot draw an infinite amount of current from a source, because that would mean infinite power. More typically for real sources the source 'output' voltage decreases as the current drawn from the source increases.  This real-world limit of _*finite source current*_ can be represented in our circuits by a finite value of _internal source resistance_, $R_S$, which is an inherent internal part of any real source. "Figure 7.9":#figure7-9 depicts this 'real-world' source with finite source resistance, $R_S$.
 
-p=(#figure7-9). !{width:42%}img/7/circuitsF7.9.jpg(Figure 7.9)!:img/7/circuitsF7.9.jpg
+p=(#figure7-9). !{width:45%}img/7/circuitsF7.9.jpg(Figure 7.9)!:img/7/circuitsF7.9.jpg
 _Figure 7.9  Practical Model with Source Resistance, $R_S$, and Load Resistance, $R_L$_
 
-Here the load is specifically represented as an equivalent resistance, $R_L$.  The source current iS equals the load current, $i_L$, because there is a single loop circuit.
+Here the load is specifically represented as an equivalent resistance, $R_L$.  The source current $i_S$ equals the load current, $i_L$, because there is a single loop circuit.
 
-Notice with the finite source resistance, $R_S$, when the load current increases ($R_L$ smaller), then the voltage at the load, $V_L$, decreases due to the voltage drop across $R_S$.  This reduction in load voltage, $V_L$, is expressed by Eq’n. 11, where by ohm’s law:
+Notice with the finite source resistance, $R_S$, when the load current increases ($R_L$ smaller), then the voltage at the load, $V_L$, decreases due to the voltage drop across $R_S$.  This reduction in load voltage, $V_L$, is expressed by Eq'n. 11, where by ohm’s law and KVL:
 
 p=. $V_L = V_S - i_L R_S$
 
-Here we can see when iL increases. $V_L$ must decrease.  So $V_L$ even becomes zero when $i_L$ is $V_S$/$i_S$.  But power into the load is the $V_L$ • $i_L$ product, and thus becomes zero at this current.
+Here we can see when $i_L$ increases. $V_L$ must decrease.  So $V_L$ even becomes zero when $i_L$ is $V_S$/$i_S$.  But power into the load is the $V_L$ • $i_L$ product, and thus becomes zero at this current.
 
 So the power delivered to the load is *zero* when either $V_L$ is zero or $i_L$ is zero.  Said in another way, the power to the load becomes very small when either $V_L$ is very small or $i_L$ is very small.  These two extremes occur when the load resistance $R_L$ is either very small ($V_L$ small), or very large ($i_L$ small), respectively.  Thus, we see that the load resistance cannot be too small nor too large, but rather, there is an _optimum_ resistance of the load, $R_{L-opt}, where there is a _maximum power transfer from fixed source to load_.  Now assume we have a practical source with fixed voltage value, $V_S$, and with fixed equivalent source resistance, $R_S$.  Our task is to find the optimum value of the load resistance that _*maximizes*_ the power dissipated in the load resistance with this fixed real source.
 
 This can be represented graphically by the power curve in "Figure 7.10":#figure7-10, a small $R_L$ yields small power to the load and a large $R_L$ also yields small power to the load.
 
-p=(#figure7-10). !{width:42%}img/7/circuitsF7.10.jpg(Figure 7.10)!:img/7/circuitsF7.10.jpg
+p=(#figure7-10). !{width:60%}img/7/circuitsF7.10.jpg(Figure 7.10)!:img/7/circuitsF7.10.jpg
 _Figure 7.10  Estimated Power Transfer to Load, Maximum at $R_{L-opt}$_
 
 Lets calculate the current in this single-loop circuit.  By equivalent total resistance of $R_S+R_L$, we can write:
