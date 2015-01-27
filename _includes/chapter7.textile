@@ -254,15 +254,15 @@ p=. $R_S$ = $R_L$ ($\frac{V_{out-open}}{V_{out-Load}}$)
 
 Notice that if the load resistor, $R_L$ , value during this Test-2 measurement is adjusted so that the output voltage is exactly 1/2 the open-circuit value, then that specific $R_L$ is equal to $R_S$.  Hence, the two voltage tests, where $V_{out-L}$ is set equal to 1/2 $V_{out-open}$, enables measurement of $R_S$, by knowing the $R_L$ value required to obtain 1/2 output,  Eq'n. 15.
 
-p=. $R_S$ = $R_L$ when $(V_{out-Load}$ = ($\frac{1}{2}$) $V_{out-open}$
+p=. $R_S$ = $R_L$ when $(V_{out-Load}$ = ($\frac{1}{2}$) $V_{out-open}$-1)
 
 For example, with common lab instrumentation, the output resistance of a signal generator is often specified to be 50 ohms.  This can be confirmed with the simple 2-step tests as above with RL set at 50 ohms.  If the voltage ratio, $v_{Load}$ / $v_{Open}$ is 1/2 then $R_S$ is 50 ohms, but if the voltage ratio is > 1/2, $R_S$ is less than 50 ohms; or if < 1/2, $R_S$ is > 50 ohms.
 
 A simple calculation for the ratio of test voltages, ($v_{Load}$ / $v_{Open}$), is obtained from the prior calculation where:
 
-p=. $\frac{R_S}{R_L}$ = ($\frac{V_{out-open}{V_{out-Load}}$-1)
+p=. $\frac{R_S}{R_L}$ = ($\frac{V_{out-open}}{V_{out-Load}}$-1)
 
-More generally we can make the normalized plot of $R_S$ / $R_L$, versus the 2 tests voltage ratio, vLoad/vOpen as depicted in "Figure 7.12":#figure7-12.  Here the region where RS is within about a factor of 2 from the connected load resistance, $R_L$, is shown.
+More generally we can make the normalized plot of $R_S$ / $R_L$, versus the 2 tests voltage ratio, vLoad/vOpen as depicted in "Figure 7.12":#figure7-12.  Here the region where $R_S$ is within about a factor of 2 from the connected load resistance, $R_L$, is shown.
 
 p=(#figure7-12). !{width:90%}img/7/circuitsF7.12.jpg(Figure 7.12)!:img/7/circuitsF7.12.jpg
 _Figure 7.12  Calculated Resistance Ratio for a Measured Voltage Ratio_
