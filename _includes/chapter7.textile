@@ -71,7 +71,7 @@ p=. $p_{resistor} = p_1 = (v_1 i_1) = p_2 = (v_2 i_2)$
 
 For this circuit the voltages and currents are depicted in "Figure 7.5":#figure7-5.  Note the two $R_2$ resistors are in series so they both have the same current $i_2$, and the two $R_1$ resistors are in parallel and have the same current $i_1$ because they have the same resistance value.
 
-p=(#figure7-5). !{width:42%}img/7/circuitsF7.5a.jpg(Figure 7.5)!:img/7/circuitsF7.5a.jpg
+p=(#figure7-5). !{width:47%}img/7/circuitsF7.5a.jpg(Figure 7.5)!:img/7/circuitsF7.5a.jpg
 _Figure 7.5  Circuit Details for Uniform Heating_
 
 By KCL, these currents must be related:
@@ -152,7 +152,7 @@ More elaborate arrangements such as "Figure 7.1":#figure7-1 require repeated app
 
 h4(#chapter7-max-power-xfer). 7.5 - Maximum Power Transfer
 
-Consider the case where we are given a particular power source.  If we could 'design' a resistive load, what would it be in order to extract the maximum power possible from the given source.  Recall power is the _product_ of the voltage across an element times the current through that element, with polarity conventions to set the positive product as power dissipated.
+Consider the case where we are given a particular power source.  If we could 'design' a resistive load, what would it be in order to extract the maximum power possible from the *given* source.  Recall power is the _product_ of the voltage across an element times the current through that element, with polarity conventions to set the positive product as power dissipated.
 
 Now lets consider a fixed voltage source depicted in "Figure 7.8":#figure7-8.  Here we use an _ideal_ voltage source, which by definition keeps the load voltage at fixed value _independent of the amount of current from the source_.
 
@@ -161,7 +161,7 @@ _Figure 7.8  Ideal Fixed Voltage Source Connected to a Load_
 
 By polarity convention, the power dissipated in the load is ($V_{load}$)  ($i_S$).  And the power dissipated by the source is ($V_S$) $(-i_S)$.  Of course the sum of all power dissipated by the circuit is zero, in agreement with these two values for source and load.
 
-However, in the _real world_ one cannot draw an infinite amount of current from a source, because that would mean infinite power. More typically for real sources the source 'output' voltage decreases as the current drawn from the source increases.  This real-world limit of _*finite source current*_ can be represented in our circuits by a finite value of _internal source resistance_, $R_S$, which is an inherent internal part of any real source. "Figure 7.9":#figure7-9 depicts this 'real-world' source with finite source resistance, $R_S$.
+However, in the _real world_ one cannot draw an infinite amount of current from a source, because that would mean infinite power. More typically for real sources the source 'output' voltage decreases as the current drawn from the source increases.  This real-world limit of _*finite source current*_ can be represented in our circuits by a finite value of internal source resistance, $R_S$, which is an inherent internal part of any real source. "Figure 7.9":#figure7-9 depicts this 'real-world' source with finite source resistance, $R_S$.
 
 p=(#figure7-9). !{width:50%}img/7/circuitsF7.9.jpg(Figure 7.9)!:img/7/circuitsF7.9.jpg
 _Figure 7.9  Practical Model with Source Resistance, $R_S$, and Load Resistance, $R_L$_
