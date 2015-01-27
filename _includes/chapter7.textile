@@ -264,7 +264,7 @@ A simple calculation for the ratio of test voltages, ($v_{Load}$ / $v_{Open}$), 
 p=. $\frac{R_S}{R_L}$ = ($\frac{V_{out-open}}{V_{out-Load}}$-1) = $\frac{1-A}{A}$</h4>
 where $A$ = $\frac{Test-2}{Test-1}$
 
-More generally we can make the normalized plot for the ratio: $R_S$ / $R_L$, versus the ratio of the 2 tests voltages, $v_{Load}/v_{Open} as depicted in "Figure 7.12":#figure7-12.  Here the region where $R_S$ is within about a factor of 2 from the connected load resistance, $R_L$, is shown.
+More generally we can make the normalized plot for the ratio: $R_S$ / $R_L$, versus the ratio of the 2 tests voltages, $v_{Load}/v_{Open}$ as depicted in "Figure 7.12":#figure7-12.  Here the region where $R_S$ is within about a factor of 2 from the connected load resistance, $R_L$, is shown.
 
 p=(#figure7-12). !{width:90%}img/7/circuitsF7.12.jpg(Figure 7.12)!:img/7/circuitsF7.12.jpg
 _Figure 7.12  Calculated Resistance Ratio for a Measured Voltage Ratio_
