@@ -261,7 +261,7 @@ For example, with common lab instrumentation, the output resistance of a signal 
 A simple calculation for the ratio of test voltages, ($v_{Load}$ / $v_{Open}$), is obtained from the prior calculation where:
 
 <h4>
-p=. $\frac{R_S}{R_L}$ = ($\frac{V_{out-open}}{V_{out-Load}}$-1) = $(\frac{(\frac{Test2}{Test1})}{(\frac{Test2}{Test1}))$</h4>
+p=. $\frac{R_S}{R_L}$ = ($\frac{V_{out-open}}{V_{out-Load}}$-1) = $(\frac{2}{1}\frac{3}{1})$</h4>
 
 More generally we can make the normalized plot of $R_S$ / $R_L$, versus the 2 tests voltage ratio, vLoad/vOpen as depicted in "Figure 7.12":#figure7-12.  Here the region where $R_S$ is within about a factor of 2 from the connected load resistance, $R_L$, is shown.
 
