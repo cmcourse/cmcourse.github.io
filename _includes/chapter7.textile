@@ -18,7 +18,7 @@ _Figure 7.1  An Example Array of Resistors Used to Uniformly Heat an Area_
 
 h4(#chapter7-uniform-power). 7.2 - Example: Two Resistor Uniform Heating
 
-** _(i) Parallel Connect Resistors_
+** _(i) Parallel Connected Resistors_
 
 To better understand the uniform heating constraint, lets first consider a parallel two-resistor network connected to a constant voltage source as depicted in "Figure 7.2":#figure7-2.
 
@@ -35,7 +35,7 @@ p=. $(V_S i_1) = (V_S i_2)$
 
 Hence to get equal power dissipated by these 2 _parallel_ resistors we need $i_1 = i_2$.  Now for each resistor we can apply ohm's law, this leads to the answer: when $R_1 = R_2$ there is equal power dissipated in both resistors.
 
-** _(ii) Series Cnnected Resistors_
+** _(ii) Series Connected Resistors_
 
 Alternately the two resistors could be connected in series, a single path (equal current), see "Figure 7.3":#figure7-3.
 
@@ -69,7 +69,7 @@ Our task is to find the relationship between $R_1$ and $R_2$ that makes both pai
 
 p=. $p_{resistor} = p_1 = (v_1 i_1) = p_2 = (v_2 i_2)$
 
-For this circuit the voltages and currents are depicted in "Figure 7.5":#figure7-5.  Note the two $R_2$ resistors are in series so they both have the same current $i_2$, and the two $R_1$ resistors are in parallel and have the same current $i_1$ because they have the smae resistnace value.
+For this circuit the voltages and currents are depicted in "Figure 7.5":#figure7-5.  Note the two $R_2$ resistors are in series so they both have the same current $i_2$, and the two $R_1$ resistors are in parallel and have the same current $i_1$ because they have the same resistance value.
 
 p=(#figure7-5). !{width:42%}img/7/circuitsF7.5a.jpg(Figure 7.5)!:img/7/circuitsF7.5a.jpg
 _Figure 7.5  Circuit Details for Uniform Heating_
@@ -130,7 +130,7 @@ _Figure 7.7  Equal Power Circuit Configuration II_
 
 Note this circuit is a simplified view of a larger 'grid' of resistors that might be used to cause a large area of uniform heating, as shown in "Figure 7.1":#figure7-1. To solve the equal power condition for "Figure 7.1":#figure7-1 just requires more math compared to the solution for "Figure 7.7":#figure7-7.
 
-The calculation process for Configuration II, "Figure 7.7":#figure7-7 proceeds by recognition that there are three resistors in series, $R_1$ and $R_2$ resistors.  Hence for equal power these three must all have the same value, namely $R_2 = R_1$.
+The calculation process for Configuration II, "Figure 7.7":#figure7-7 proceeds by recognition that there are three resistors in series, the $R_1$ and $R_2$ resistors.  Hence from Section 7.2 above, for equal power these three resistors must all have the same value, namely $R_2 = R_1$.
 
 The three series resistors exhibit an equivalent resistance, $R_{eq}$, of $3(R_1)$. And that equivalent resistance is in parallel with $R_3$.  Thus for all four resistors to dissipate equal power we need $R_3$ to dissipate 1/3 of the power dissipated by $R_{eq}$.  But the power dissipated in $R_3$ is just:
 
