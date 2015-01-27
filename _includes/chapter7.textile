@@ -18,6 +18,8 @@ _Figure 7.1  An Example Array of Resistors Used to Uniformly Heat an Area_
 
 h4(#chapter7-uniform-power). 7.2 - Example: Two Resistor Uniform Heating
 
+** _(i) Parallel Connect Resistors_
+
 To better understand the uniform heating constraint, lets first consider a parallel two-resistor network connected to a constant voltage source as depicted in "Figure 7.2":#figure7-2.
 
 p=(#figure7-2). !{width:40%}img/7/circuitsF7.2.jpg(Figure 7.2)!:img/7/circuitsF7.2.jpg
@@ -32,6 +34,8 @@ where, $i_1$ and $i_2$ are the currents in resistors $R_1$ and $R_2$ respectivel
 p=. $(V_S i_1) = (V_S i_2)$
 
 Hence to get equal power dissipated by these 2 _parallel_ resistors we need $i_1 = i_2$.  Now for each resistor we can apply ohm's law, this leads to the obvious answer: when  , there is equal power dissipated in both resistors.
+
+** _(ii) Series Cnnected Resistors_
 
 Alternately the two resistors could be connected in series, a single path (equal current), see "Figure 7.3":#figure7-3.
 
@@ -65,7 +69,7 @@ Our task is to find the relationship between $R_1$ and $R_2$ that makes both pai
 
 p=. $p_{resistor} = p_1 = (v_1 i_1) = p_2 = (v_2 i_2)$
 
-In the circuit these voltages and currents are depicted in "Figure 7.5":#figure7-5.
+In the circuit these voltages and currents are depicted in "Figure 7.5":#figure7-5.  Note the two $R_2$ resistors are in series so they both have the same current $i_2$, and the two $R_1$ resistors are in parallel and have the same current $i_1$ because they have the smae resistnace value.
 
 p=(#figure7-5). !{width:42%}img/7/circuitsF7.5.jpg(Figure 7.5)!:img/7/circuitsF7.5.jpg
 _Figure 7.5  Circuit Details for Uniform Heating_
@@ -196,19 +200,19 @@ p=. $P_{L-dissipated}$ = $(\frac{V_S}{R_S + R_L})^2$ $R_L$ = $[\frac{R_L}{(R_S +
 To get the maximum power point, notice that the peak occurs at the point where the slope of the power curve is zero, "Figure 7.10":#figure7-10.  But the derivative of the curve is the slope, thus to find the peak power to the load we calculate the derivative of power dissipated in load $P_L$ with respect to $R_L$ and set it to zero, Eq'n 13.
 
 <h4>
-p=. $\frac{dP_L}{dR_L}$ = $[\frac{(R_S + R_L)^2 - R_L (2)(R_S + R_L)(1)]}{(R_S + R_L)^4}]$ $(V_S)^2$ </h4>
+p=. $\frac{dP_L}{dR_L}$ = $[\frac{(R_S + R_L)^2 - R_L (2)(R_S + R_L)(1)]}{(R_S + R_L)^4}]$ $(V_S)^2$ = 0</h4>
 
-Note, $V_S$ and $R_S$ are constants and hence are fixed in regard to taking the derivative, solving:
+The solution to this equation gives the value for $R_L$ that is $R_{L-opt}$ for max power transfer to the load. Note, $V_S$ and $R_S$ are constants and hence are fixed in regard to taking the derivative, solving:
 
-p=. $(R_S + R_L)^2$ - $2 (R_L) (R_S + R_L)$ = 0
+p=. $(R_S + R_(L-opt})^2$ - $2 (R_{L-opt}) (R_S + R_{L-opt})$ = 0
 
 so
 
-p=. $(R_S + R_L) - 2R_L$ = 0
+p=. $(R_S + R_{L-opt}) - 2R_{L-opt}$ = 0
 
 and thus:
 
-p=. $R_L$ = $R_S$
+p=. $R_{Lopt}$ = $R_S$
 
 _The maximum power transfer occurs under this *'Matched Condition'* when the value of the load resistance, $R_L$, is equal to the fixed source resistance, $R_S$._
 
