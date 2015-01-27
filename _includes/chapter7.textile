@@ -237,30 +237,30 @@ At times for some equipment the equivalent source resistance may not be known.  
 One simple way to measure RS, is to make two different voltage measurements at the output of the source, Test-1 and Test-2.  First we measure the output with NO-LOAD connected.  This Test-1 yields the value for the internal source voltage VS.  Since there is no load, there is no current in RS and the voltage measured at the source terminals is the internal voltage VS, "Figure 7.11":#figure7-11 (a).
 
 p=(#figure7-11). !{width:90%}img/7/circuitsF7.11.jpg(Figure 7.11)!:img/7/circuitsF7.11.jpg
-$(a)$ Test-1   ..............   $(b)$ Test-2
+$(a)$ Test-1   .......................................   $(b)$ Test-2
 _Figure 7.11  Two Tests to Measure Unknown Source Resistance, $R_S$_
 
 Secondly, Test-2, we make another voltage measurement at the source output, but this time with a known load resistance, $R_L$, connected at the output, "Figure 7.11":#figure7-11 (b).  With the load resistor connected, the voltage at the output must be lower than the no-load value, $V_S$.  By voltage divider relation the load-connected output voltage is:
 
 p=. $V_{out-L}$ = $(\frac{R_L}{R_S + R_L})$ $V_S$
 
-But from Test-1 ($R_L$ >> $R_S) :
+But from Test-1 ($R_L$ >> $R_S$) :
 
 p=. $V_{out-open}$ = $V_S$
 
 By substitution and solving for $R_S$, we get:
 
-p=. $R_S$ = $R_L(\frac{V__{out-open}}{V{out-L}}-1)$
+p=. $R_S$ = $R_L$ $(\frac{V__{out-open}}{V{out-L}}-1)$
 
-Notice that if the load resistor, $R_L$ , value during this Test-2 measurement is adjusted so that the output voltage is exactly 1/2 the open-circuit value, then that specific $R_L$ is equal to $R_S$.  Hence, the two voltage tests, where $V_{out-L} is set equal to 1/2 $V_{out-open}, enables measurement of $R_S$, by knowing the $R_L$ value for 1/2 output,  Eq'n. 15.
+Notice that if the load resistor, $R_L$ , value during this Test-2 measurement is adjusted so that the output voltage is exactly 1/2 the open-circuit value, then that specific $R_L$ is equal to $R_S$.  Hence, the two voltage tests, where $V_{out-L}$ is set equal to 1/2 $V_{out-open}$, enables measurement of $R_S$, by knowing the $R_L$ value required to obtain 1/2 output,  Eq'n. 15.
 
-p=. $R_S$ = R_L$ when $(V_{out-L} = (1/2)V_{out-open}$
+p=. $R_S$ = $R_L$ when $(V_{out-L} = (1/2)V_{out-open}$
 
 For example, with common lab instrumentation, the output resistance of a signal generator is often specified to be 50 ohms.  This can be confirmed with the simple 2-step tests as above with RL set at 50 ohms.  If the voltage ratio, $v_{Load}$ / $v_{Open}$ is 1/2 then $R_S$ is 50 ohms, but if the voltage ratio is > 1/2, $R_S$ is less than 50 ohms; or if < 1/2, $R_S$ is > 50 ohms.
 
-A simple calculation for the ratio of test voltages, ($v_{Load}$ / $v_{Open}), is obtained from the prior calculation where:
+A simple calculation for the ratio of test voltages, ($v_{Load}$ / $v_{Open}$), is obtained from the prior calculation where:
 
-p=. $\frac{R_S}{R_L}$ = $(\frac{V_{out-open}{V_{out-Load}}-1)$
+p=. $\frac{R_S}{R_L}$ = ($\frac{V_{out-open}{V_{out-Load}}-1$)
 
 More generally we can make the normalized plot of RS/RL, versus the 2 tests voltage ratio, vLoad/vOpen as depicted in "Figure 7.12":#figure7-12.  Here the region where RS is within about a factor of 2 from the connected load resistance, $R_L$, is shown.
 
