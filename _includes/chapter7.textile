@@ -224,7 +224,6 @@ p=. *Table 7-1*
 *Common Industry Standard Matched Loads*
 
 table.
-|\2 | *Common Industry Standard Matched Loads* |
 | *Application:* |=. *Standard Resistance Value* |
 | Audio: |=. 600 ohm |
 | Open Air TV Antennna:   |=. 300 ohm |
@@ -233,8 +232,9 @@ table.
 | Instrumentation: |=. 50 ohm |
 | Sensors: |=. 1k to 100k (typical) |
 
+p=.
 
-**  7.5.1  Measurement of Unknown Source Resistance, $R_S$
+**  7.5.1  _Measurement of Unknown Source Resistance, $R_S$_
 
 At times for some equipment the equivalent source resistance may not be known.  The source may be a complex instrument so that an ohm-meter cannot be applied, since it would inject a voltage into the source output and perhaps damage the source.  Many sources are designed to ONLY have a load resistance connected at the output. Thus a non-destructive means is needed to measure $R_S$.
 
