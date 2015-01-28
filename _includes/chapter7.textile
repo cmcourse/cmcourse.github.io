@@ -218,7 +218,7 @@ _The maximum power transfer occurs under this *'Matched Condition'* when the val
 
 This is an exceedingly important result and applies to signal communications for satellites, TV, audio systems, and ethernet cables.  The maximum signal acquired by a 'load' occurs with the _matched resistance_ condition.
 
-There are a number of practical examples of these 'matched-load' systems.  The Table 7-1 below lists the application and typical industry accepted 'standard' source resistance values.
+There are a number of practical examples of these 'matched-load' systems.  The Table 7-1 below lists the application and the corresponding industry accepted 'standard' source resistance values.
 
 p=. *Table 7-1*
 *Common Industry Standard Matched Loads*
@@ -232,7 +232,7 @@ table.
 | Instrumentation: |=. 50 ohm |
 | Sensors: |=. 1k to 100k (typical) |
 
-p=.
+.
 
 **  7.5.1  _Measurement of Unknown Source Resistance, $R_S$_
 
