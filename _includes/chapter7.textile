@@ -222,20 +222,23 @@ There are a number of practical examples of these 'matched-load' systems.  The T
 
 p=. *Table 7-1*
 *Common Industry Standard Matched Loads*
+
+p=. 
+table=.
 | Application | Standard Resistance Value |
 | Audio: | 600 ohm |
 | Open Air TV Antennna: | 300 ohm |
 
 table=.
-| Data Network Cables: | 100 ohm |
-| Video: | 75 ohm |
+ | Data Network Cables: | 100 ohm |
+=.| Video: | 75 ohm |
 |=. Instrumentation: |=. 50 ohm |
 |=. Sensors: |=. 1k to 100k (typical) |
 
 p=. Table 7-1
 *Common Industry Standard Matched Loads*
 Application Standardized Resistance Value
-Audio: 600 ohm
+|Audio:|600 ohm|
 Open Air TV Antennna: 300 ohm
 Data Network Cables: 100 ohm
 Video: 75 ohm
