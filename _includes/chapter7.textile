@@ -220,19 +220,25 @@ This is an exceedingly important result and applies to signal communications for
 
 There are a number of practical examples of these 'matched-load' systems.  The Table 7-1 below lists the application and typical industry accepted 'standard' source resistance values.
 
-table(#table7-1).
+table(#table7-1). Table 7-1
+*Common Industry Standard Matched Loads*
 |\2=. Application |=. Standard Resistance Value |
-|\2=. Audio |=. 600 ohm |
+|\2=. Audio: |=. 600 ohm |
+|=. Open Air TV Antennna: |=. 300 ohm |
+|=. Data Network Cables: |=. 100 ohm |
+|=. Video: |=. 75 ohm |
+|=. Instrumentation: |=. 50 ohm |
+|=. Sensors: |=. 1k to 100k (typical) |
 
 p=. Table 7-1
-p=. *Common Industry Standard Matched Loads*
-p=. Application Standardized Resistance Value
-p=. Audio: 600 ohm
-p=. Open Air TV Antennna: 300 ohm
-p=. Data Network Cables: 100 ohm
-p=. Video: 75 ohm
-p=. Instrumentation: 50 ohm
-p=. Sensors: 1k to 100k (typical)
+*Common Industry Standard Matched Loads*
+Application Standardized Resistance Value
+Audio: 600 ohm
+Open Air TV Antennna: 300 ohm
+Data Network Cables: 100 ohm
+Video: 75 ohm
+Instrumentation: 50 ohm
+Sensors: 1k to 100k (typical)
 
 **  7.5.1  Measurement of Unknown Source Resistance, $R_S$
 
