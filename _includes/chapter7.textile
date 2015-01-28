@@ -224,7 +224,7 @@ p=. *Table 7-1*
 *Common Industry Standard Matched Loads*
 
 table.
-| *Application:* |=. *Standard Resistance Value* |
+| +*Application:*+ |=. +*Standard Resistance Value*+ |
 | Audio: |=. 600 ohm |
 | Open Air TV Antennna:   |=. 300 ohm |
 | Data Network Cables:  |=. 100 ohm |
