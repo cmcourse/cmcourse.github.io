@@ -241,7 +241,7 @@ At times for some equipment the equivalent source resistance may not be known.  
 One simple way to measure RS, is to make two different voltage measurements at the output of the source, Test-1 and Test-2.  First we measure the output with NO-LOAD connected.  This Test-1 yields the value for the internal source voltage VS.  Since there is no load, there is no current in RS and the voltage measured at the source terminals is the internal voltage VS, "Figure 7.11":#figure7-11 (a).
 
 p=(#figure7-11). !{width:90%}img/7/circuitsF7.11.jpg(Figure 7.11)!:img/7/circuitsF7.11.jpg
-$(a)$ Test-1   .......................................   $(b)$ Test-2
+$(a)$ Test-1   ................................................   $(b)$ Test-2
 _Figure 7.11  Two Tests to Measure Unknown Source Resistance, $R_S$_
 
 Secondly, Test-2, we make another voltage measurement at the source output, but this time with a known load resistance, $R_L$, connected at the output, "Figure 7.11":#figure7-11 (b).  With the load resistor connected, the voltage at the output must be lower than the no-load value, $V_S$.  By voltage divider relation the load-connected output voltage is:
@@ -266,7 +266,7 @@ A simple calculation for the ratio of test voltages, ($v_{Load}$ / $v_{Open}$), 
 
 <h4>
 p=. $\frac{R_S}{R_L}$ = ($\frac{V_{out-open}}{V_{out-Load}}$-1) = $\frac{1-A}{A}$</h4>
-where $A$ = $\frac{Test-2}{Test-1}$
+where $A$ = $\frac{V_{Test-2}}{V_{Test-1}}$
 
 More generally we can make the normalized plot for the ratio: $R_S$ / $R_L$, versus the ratio of the 2 tests voltages, $v_{Load}/v_{Open}$ as depicted in "Figure 7.12":#figure7-12.  Here the region where $R_S$ is within about a factor of 2 from the connected load resistance, $R_L$, is shown.
 
