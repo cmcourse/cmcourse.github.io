@@ -225,9 +225,14 @@ p=. *Table 7-1*
 
 
 table.
-| *Application* | *Standard Resistance Value* |
-| Audio | 600 ohm |
-| Open Air TV Antennna: | 300 ohm |
+| *Application* |=. *Standard Resistance Value* |
+| Audio |=. 600 ohm |
+| Open Air TV Antennna:   |=. 300 ohm |
+| Data Network Cables:  |=. 100 ohm |
+| Video: |=. 75 ohm |
+| Instrumentation: |=. 50 ohm |
+| Sensors: |=. 1k to 100k (typical) |
+
 
 table.
 |\2=. Tryit |
