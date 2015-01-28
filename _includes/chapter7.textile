@@ -223,10 +223,10 @@ There are a number of practical examples of these 'matched-load' systems.  The T
 p=. *Table 7-1*
 *Common Industry Standard Matched Loads*
 
-
 table.
-| *Application* |=. *Standard Resistance Value* |
-| Audio |=. 600 ohm |
+|\2=. | *Common Industry Standard Matched Loads* |
+| *Application:* |=. *Standard Resistance Value* |
+| Audio: |=. 600 ohm |
 | Open Air TV Antennna:   |=. 300 ohm |
 | Data Network Cables:  |=. 100 ohm |
 | Video: |=. 75 ohm |
