@@ -50,11 +50,11 @@ but, since a series circuit; $i_1 = i_2 = i$ :
 
 p=. $(v_1 i) = (v_2 i)$
 
-So both resistors must have the same voltage, $v$, but they have the same current, so
+So for equal power in both resistors must have the same voltage, $v_1 = v_2 = v$, and since they have the same current, $i$, hence
 
 p=. $R_1 = (\frac{v}{i}) = R_2$
 
-Again to get equal power dissipation the two _series_ resistor values need to be equal, $R_1 = R_2$ .
+We conclude to get equal power dissipation for two _series_ connected resistors their values need to be equal, $R_1 = R_2$ .
 
 h4(#chapter7-four-resistor). 7.3 - Example: Four Resistor Equal Heating
 
@@ -78,19 +78,18 @@ By KCL, these currents must be related:
 
 p=. $-i_2 + i_1 + i_1 = 0$  so  $i_2 = i_1 + i_1$ = $2i_1$
 
-Now we can express the power dissipated in resistors $R_1$ and $R_2$, respectively, as:
+Now we can express the power dissipated in resistors $R_1$ and $R_2$, respectively, as for $R_1$:
 
 p=. $p_1 = v_1i_1$  =  $(i_1R_1)i_1$  =  $R_1 (i_1)^2$
-
-and
+and for $R_2$:
 
 p=. $p_2 = v_2i_2$  =  $(i_2R_2)i_2$  =  $R_2 (i_2)^2$
 
-Equating:
+Equating power values:
 
 p=. $R_1(i_1)^2 = R_2(i_2)^2$
 
-And by substitution of the KCL constraint Eqn [4]:
+And by substitution of the KCL constraint Eqn: $i_2 = 2 i_1$:
 
 p=. $R_1(i_1)^2 = R_2(i_2)^2$  =  $R_2(2i_1)^2$
 

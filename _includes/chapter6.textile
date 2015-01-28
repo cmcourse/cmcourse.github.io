@@ -151,7 +151,7 @@ Consider a circuit configured as in Figure "Figure 6.14":#figure6-14.  Here this
 p=(#figure6-14). !{width:50%}img/6/circuitsF6.14.jpg(Figure 6.14)!:img/6/circuitsF6.14.jpg
 _Figure 6.14  Mixed Circuit Problem_
 
-Here we are not just asking for only an equivalent resistance, rather we want a numerical value for a specific voltage.  In this case we want the voltage across the 'final' right-most 2 ohm resistor.  We break the solution process into a sequence of several simple tasks, our first task is to determine what is needed in order to obtain the output voltage, $v_{out}$.
+Here we are not just asking for only an equivalent resistance, rather we want a numerical value for a specific voltage.  In this case we want the voltage across the 'final' right-most 2 ohm resistor, $v_{out}$.  We break the solution process into a sequence of several simple tasks, our first task is to determine what is needed in order to obtain the output voltage, $v_{out}$.
 
 # *Task A:*  Notice the output voltage, $V_{out}$, can be calculated via a voltage divider if $V_a$ is known
 ** But $V_a$ is NOT known
@@ -160,7 +160,7 @@ Here we are not just asking for only an equivalent resistance, rather we want a 
 ** Second, voltage divider to calculate $V_a$
 # *Task C:*  Calculate $V_{out}$ from $V_a$ via Task A.
 
-*Task A:* We recognize the 4 and 2 ohm resistors near the output, right-most, are connected in series, AND THUS we see that they cause a voltage divider relationship for voltage $V_{out}$, from voltage $V_a$, "Figure 6.14a":#figure6-14a.
+*Task A:* We recognize the 4 and 2 ohm resistors near the output, right-most, are connected *in series*, AND THUS we see that they cause a voltage divider relationship for voltage $V_{out}$, from voltage $V_a$, "Figure 6.14a":#figure6-14a.
 
 p=(#figure6-14a). !{width:38%}img/6/circuitsF6.14a.jpg(Figure 6.14a)!:img/6/circuitsF6.14a.jpg
 _Figure 6.14a  Sub-Part: Voltage Divider of Full Mixed Circuit Problem_
@@ -169,16 +169,16 @@ We use the voltage-divider relation to determine voltage $V_{out}$ when we know 
 
 p=. $V_{out}$ = $\frac{2}{2+4} V_a$ = $\frac{1}{3} V_a$
 
-**  Note it is *WRONG* to think that $V_a$ is determined as a voltage divider with just the two resistors of 3 ohm and 6 ohms !  They are NOT in series, "Figure 6.14":#figure6-14 !!
-***  (The correct method will be shown below.)
+**  Note it is *WRONG* to think that $V_a$ is determined as a voltage divider with just the two resistors of 3 ohm and 6 ohms, "Figure 6.14":#figure6-14 !  These two are _NOT in series_  !!
+***  (The correct solution method will be shown below.)
 
 *TASK B:* But as of yet, we do not have a value for $V_a$.  So lets get it.
 
-We can reduce the circuit to the right of node $V_a$, since the 4 and 2 ohm resistors are in series and result in $R_{eq1} = 6$ ohms, so the resultant circuit becomes:
+We can reduce the circuit to the right of node $V_a$, since the 4 and 2 ohm resistors are in series and result in $R_{eq1} = 6$ ohms, so the resultant 'reduced' circuit becomes:
 
 p=. !{width:50%}img/6/circuitsF6.14b.jpg(Figure 6.14b)!:img/6/circuitsF6.14b.jpg
 
-but now notice there are two 6 ohm resistors both connected at node Va to ground, and so they are in parallel.  And that means they can be reduced to an equivalent single resistor $R_{eq2}$ = 3 ohms, via:
+but now notice there are two 6 ohm resistors both connected at node Va to ground, and so they are _in parallel_.  And that means they can be reduced to an equivalent single resistor $R_{eq2}$ = 3 ohms, via:
 
 p=. $R_{eq2}$ = $\frac{(6) (6)}{6+6}$ = 3 ohm
 
@@ -191,11 +191,15 @@ Here there is again a voltage divider relation between 12 volts and $V_a$, there
  
 p=. $V_a$ = $(\frac{3}{3+3})(12)$ = $\frac{1}{2}(12)$ = 6 volts
 
-*TASK C:* Solving for $V_{out}$. Since "Figure 6.14":#figure6-14 from Task-A is a voltage-divider circuit between $V_{out}$ and $V_a$ we can write by inspection:
+*TASK C:* Solving for $V_{out}$. Since "Figure 6.14":#figure6-14 from Task-A is a voltage-divider circuit between $V_{out}$ and $V_a$ we can write by inspection using the above known value for $V_a$:
 
 p=. $V_{out}$ = $(\frac{2}{4+2})V_a$ = $(\frac{1}{3})(\frac{3}{3+3}) (12)$ = $(\frac{1}{3})(\frac{1}{2}) 12$ = 2 volt
 
-The overall process of sequential reduction is thus a _sequence of small calculations_, often easily done by hand.  And when collected together these small calculations are combined to determine the result for a complex problem, like that in "Figure 6.1":#figure6-1 or "Figure 6.14":#figure6-14.
+so
+
+p=. $V_{out}$ = 2 volt
+
+This method we just used to obtain our result is a process of sequential reductions and is a _sequence of small calculations_, often easily done by hand.  And when collected together these small calculations are combined to determine the result for a complex problem, like that in "Figure 6.1":#figure6-1 or "Figure 6.14":#figure6-14.
 
 While it does take practice to quickly and accurately recognize _series, parallel_ and _voltage-divider_ configurations, once mastered, circuit calculation by reduction goes more quickly and oven with better understanding than a many node equation analysis.  In the above example, from the reduced circuits we can see that the "Figure 6.1":#figure6-1 circuit is a series of voltage-dividers that can be calculated when the localized _equivalent resistances_ are determined.
 
