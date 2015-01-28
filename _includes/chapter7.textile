@@ -221,8 +221,8 @@ This is an exceedingly important result and applies to signal communications for
 There are a number of practical examples of these 'matched-load' systems.  The Table 7-1 below lists the application and typical industry accepted 'standard' source resistance values.
 
 table(#table7-1).
-|=. Application |=. Standard Resistance Value |
-|=. Audio |=. 600 ohm |
+|\2=. Application |=. Standard Resistance Value |
+|\2=. Audio |=. 600 ohm |
 
 p=. Table 7-1
 p=. *Common Industry Standard Matched Loads*
