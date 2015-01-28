@@ -78,9 +78,10 @@ By KCL, these currents must be related:
 
 p=. $-i_2 + i_1 + i_1 = 0$  so  $i_2 = i_1 + i_1$ = $2i_1$
 
-Now we can express the power dissipated in resistors $R_1$ and $R_2$, respectively, as for $R_1$:
+Now we can express the power dissipated in resistors $R_1$ and $R_2$, respectively; for $R_1$:
 
 p=. $p_1 = v_1i_1$  =  $(i_1R_1)i_1$  =  $R_1 (i_1)^2$
+
 and for $R_2$:
 
 p=. $p_2 = v_2i_2$  =  $(i_2R_2)i_2$  =  $R_2 (i_2)^2$
