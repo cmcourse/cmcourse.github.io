@@ -238,7 +238,7 @@ table.
 
 At times for some equipment the equivalent source resistance may not be known.  The source may be a complex instrument so that an ohm-meter cannot be applied, since it would inject a voltage into the source output and perhaps damage the source.  Many sources are designed to ONLY have a load resistance connected at the output. Thus a non-destructive means is needed to measure $R_S$.
 
-One simple way to measure RS, is to make two different voltage measurements at the output of the source, Test-1 and Test-2.  First we measure the output with NO-LOAD connected.  This Test-1 yields the value for the internal source voltage VS.  Since there is no load, there is no current in RS and the voltage measured at the source terminals is the internal voltage VS, "Figure 7.11":#figure7-11 (a).
+One simple way to measure $R_S$, is to make two different voltage measurements at the output of the source, Test-1 and Test-2.  First we measure the output with NO-LOAD connected.  This Test-1 yields the value for the internal source voltage $V_S$.  Since there is no load, there is no current in $R_S$ and the voltage measured at the source terminals is the internal voltage $V_S$, "Figure 7.11":#figure7-11 (a).
 
 p=(#figure7-11). !{width:90%}img/7/circuitsF7.11.jpg(Figure 7.11)!:img/7/circuitsF7.11.jpg
 $(a)$ Test-1   ................................................   $(b)$ Test-2
