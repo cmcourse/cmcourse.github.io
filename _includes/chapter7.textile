@@ -272,7 +272,7 @@ More generally we can make the normalized plot for the ratio: $R_S$ / $R_L$, ver
 p=(#figure7-12). !{width:90%}img/7/circuitsF7.12.jpg(Figure 7.12)!:img/7/circuitsF7.12.jpg
 _Figure 7.12  Calculated Resistance Ratio for a Measured Voltage Ratio_
 
-As we have seen above, when the voltage ratio is exactly ½ then $R_S$ is the connected RL value.  On the other hand, if the voltage ratio is *greater than* 1/2, $R_S$ is smaller than $R_L$, whereas when the voltage ratio is *less than* 1/2, $R_S$ is larger than $R_L$.
+As we have seen above, when the voltage ratio is exactly 1/2 then $R_S$ is the connected $R_L$ value.  On the other hand, if the voltage ratio is *greater than* 1/2, $R_S$ is smaller than $R_L$, whereas when the voltage ratio is *less than* 1/2, $R_S$ is larger than $R_L$.
 
 More specifically, this calculation indicates: when the voltage ratio is 10% higher than 0.5, ie. 0.55, then $R_S$ is about 22% greater than the connected $R_L$.  Or if the voltage ratio is 10% lower than 0.5, ie., 0.45, then $R_S$ is about 18% smaller than the connected $R_L$.  Approximately, for each 1% difference in voltage ratio from the matched condition of 1/2, the source resistance is about 2% different from the matched value, but in the inverse direction.
 
