@@ -94,6 +94,11 @@ title: CMCourse Book Chapters
               <li><a href="#chapter7-2nd-four-resistor">2nd Example: Four Resistor Equal Heating</a></li>
               <li><a href="#chapter7-max-power-xfer">Maximum Power Transfer</a></li>
 			</ul>
+        <li>
+			<a href="#chapter8">Chapter-8 Resistive Attenuators, Ladders, Transformations</a>
+            <ul class="nav">
+              <li><a href="#chapter8-signal-attenuator">Signal Attenuators</a></li>
+			</ul>
 		</li>
       </ul>
     </div>
@@ -164,7 +169,16 @@ title: CMCourse Book Chapters
       {% endcapture %}
       {{ include_to_textilize7 | textilize }}
     </div>  
-	
+    
+    <!-- chapter 8 -->
+    <div class="chapter">
+      <h2 id="chapter7">Chapter 8: Resistive Attenuators, Ladders, Transformations</h2>
+      {% capture include_to_textilize8 %}
+      {% include chapter8.textile %}
+      {% endcapture %}
+      {{ include_to_textilize8 | textilize }}
+    </div>  
+		
   </div> <!-- /book -->
 
 </div>

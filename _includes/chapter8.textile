@@ -1,0 +1,7 @@
+
+There are a number of very practical and interesting circuits that make use of resistors.  In this Section we will examine several resistor circuits that are often found in practical electronic systems.  These include signal attenuators, binary ladders and bridge circuits.  They employ only resistors yet are found in one form or another at the work-bench of essentially every circuit designer/developer.
+
+h4(#chapter8-signal-attenuator). 8.1 - Signal Attenuators
+
+While we are already familiar with the classic voltage divider, we will see that the '_attenuator_' circuit is a special kind of voltage divider.  The attenuator is a circuit, which when added into a signal path _always reduces_ the signal magnitude by a fixed known amount, for example by a factor of 2x or 10x (ie. to 1/2 or 1/10th of the original size).  But first we examine why the usual voltage divider is not this circuit.
+
