@@ -5,3 +5,25 @@ h4(#chapter8-signal-attenuator). 8.1 - Signal Attenuators
 
 While we are already familiar with the classic voltage divider, we will see that the '_attenuator_' circuit is a special kind of voltage divider.  The attenuator is a circuit, which when added into a signal path _always reduces_ the signal magnitude by a fixed known amount, for example by a factor of 2x or 10x (ie. to 1/2 or 1/10th of the original size).  But first we examine why the usual voltage divider is not this circuit.
 
+Recall the voltage divider circuit is comprised of two resistors connected in series (single loop).  Two examples are depicted in "Figure 8.1":#figure8-1, divide by 2 and divide by 10.
+
+p=(#figure8-1). !{width:70%}img/8/circuitsF8.1.jpg(Figure 8.1)!:img/8/circuitsF8.1.jpg
+p=. signal reduced by ½                            signal reduced by 1/10
+_Figure 8.1  Voltage Dividers of 1/2 and 1/10_
+
+A very important _constraint_ for all such classical voltage divider circuits is that there is no current taken at the output terminals, v2 or v4.  _This constraint is because the calculations assume two series connected resistors and hence nothing can be connected at the output terminals._  For example "Figure 8.2":#figure8-2 depicts the connection of a 10k resistor at the output of the ½ voltage divider, but with the added resistance across v2, *now the output IS NO LONGER 1/2 the input*, rather (by resistor equivalent reduction) the divider ratio is 1/3rd.
+
+p=(#figure8-2). !{width:60%}img/8/circuitsF8.2.jpg(Figure 8.2)!:img/8/circuitsF8.2.jpg
+_Figure 8.2  Voltage Divider with Added Resistor, Changes the First Divider Ratio to 1/3rd_
+
+Furthermore, if the two divider circuits of "Figure 8.1":#figure8-1 are connected in cascade, the first no longer exhibits the original divider ratio (of 1/2) because the connection destroys the constraint that the divider be a series circuit of two resistors, "Figure 8.3":#figure8-3.  The first divider ratio is changed to 1/3rd .
+
+p=(#figure8-3). !{width:70%}img/8/circuitsF8.3.jpg(Figure 8.3)!:img/8/circuitsF8.3.jpg
+_Figure 8.3  Cascade of Voltage Dividers Alters Individual Divider Ratio_
+
+
+		8.1.1  The Matched Attenuator Concept
+
+A different approach to signal size reduction is the ‘matched attenuator’.  The matched attenuator involves an added constraint to our circuit design.  This added constraint is that the attenuator circuit will be connected to a ‘matched’ circuit.  Recall the idea for maximum power is to have the load resistance equal (match) to the source resistance, as seen in Figure 8-4.
+
+
