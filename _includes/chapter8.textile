@@ -13,12 +13,12 @@ _Figure 8.1  Voltage Dividers of 1/2 and 1/10_
 
 A very important _constraint_ for all such classical voltage divider circuits is that there is no current taken at the output terminals, v2 or v4.  _This constraint is because the calculations assume two series connected resistors and hence nothing can be connected at the output terminals._  For example "Figure 8.2":#figure8-2 depicts the connection of a 10k resistor at the output of the 1/2 voltage divider, but with the added resistance across v2, *now the output IS NO LONGER 1/2 the input*, rather (by resistor equivalent reduction) the divider ratio is 1/3rd.
 
-p=(#figure8-2). !{width:45%}img/8/circuitsF8.2.jpg(Figure 8.2)!:img/8/circuitsF8.2.jpg
+p=(#figure8-2). !{width:42%}img/8/circuitsF8.2.jpg(Figure 8.2)!:img/8/circuitsF8.2.jpg
 _Figure 8.2  Voltage Divider with Added Resistor, Changes the First Divider Ratio to 1/3rd_
 
 Furthermore, if the two divider circuits of "Figure 8.1":#figure8-1 are connected in cascade, the first no longer exhibits the original divider ratio (of 1/2) because the connection destroys the constraint that the divider be a series circuit of two resistors, "Figure 8.3":#figure8-3.  The first divider ratio is changed to 1/3rd .
 
-p=(#figure8-3). !{width:65%}img/8/circuitsF8.3.jpg(Figure 8.3)!:img/8/circuitsF8.3.jpg
+p=(#figure8-3). !{width:62%}img/8/circuitsF8.3.jpg(Figure 8.3)!:img/8/circuitsF8.3.jpg
 _Figure 8.3  Cascade of Voltage Dividers Alters Individual Divider Ratio_
 
 ## 8.1.1  The Matched Attenuator Concept
@@ -30,7 +30,7 @@ _Figure 8.4   Load Resistance 'Matched' to Equal Source Resistance_
 
 Now with the concept of a matched attenuator, "Figure 8.5":#figure8-5, this attenuator can be inserted between the source and load and then acts to reduce the output voltage at the load by the fixed known amount of 1/k.  Here "k" is a design value constant; for example with k = 5, the output voltage $v_O$ would then be 1/5 the input voltage, $v_i$.
 
-p=(#figure8-5). !{width:70%}img/8/circuitsF8.5.jpg(Figure 8.5)!:img/8/circuitsF8.5.jpg
+p=(#figure8-5). !{width:65%}img/8/circuitsF8.5.jpg(Figure 8.5)!:img/8/circuitsF8.5.jpg
 _Figure 8.5   Attenuator Added Between Source and Load_
 
 
@@ -38,7 +38,7 @@ _Figure 8.5   Attenuator Added Between Source and Load_
 
 To accomplish this desired goal of a fix attenuation with a connected matched load, a symmetric “TEE” resistor circuit is used.  This is depicted in "Figure 8.6":#figure8-6.
 
-p=(#figure8-6). !{width:70%}img/8/circuitsF8.6.jpg(Figure 8.6)!:img/8/circuitsF8.6.jpg
+p=(#figure8-6). !{width:65%}img/8/circuitsF8.6.jpg(Figure 8.6)!:img/8/circuitsF8.6.jpg
 _Figure 8.6   Symmetric_ "TEE" _Attenuator Circuit of Resistors_
 
 Notice there are two constraints: (1) to keep a 'matched' system, the equivalent resistance 'seen' by the source looking into the attenuator, $R_{eq-in}$, must be the value of matched resistance $R_S$.  And (2) the attenuation factor "k" is specified, where by definition:
@@ -50,3 +50,12 @@ p=. $\frac{v_O}{v_i}$ = $\frac{1}{k}$
 
 Now lets apply these constraints, for $R_{eq-in}$ = $R_S$, we have:
 
+p=. $R_{eq-in}$ = $R_1$ + $\frac{(R_1 + R_S)R_2}{R_1 + R_S + R_2}$ = $R_S$
+
+and for attenuation factor of "k", by equivalent resistance and voltage divider: requires:
+
+h4. $\frac{v_O}{v_i}$
+
+These are two equations for $R_1$, $R_2$, _k_, and $R_S$.  But the matched resistance, $R_S$, and _k_ are known, so we solve for $R_1$:
+
+p=. $R_1$ = $R_S$ $\frac{k-1}{k+1}$
