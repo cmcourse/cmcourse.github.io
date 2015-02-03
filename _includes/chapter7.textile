@@ -260,7 +260,7 @@ Notice that if the load resistor, $R_L$ , value is adjusted during this Test-2 m
 
 p=. $R_S$ = $R_L$ when $V_{out-Load}$ = ($\frac{1}{2}$) ($V_{out-open})$
 
-For example, with common lab instrumentation, the output resistance of a signal generator is often specified to be 50 ohms.  This can be confirmed with the simple 2-step tests as above with RL set at 50 ohms.  If the voltage ratio, $v_{Load}$ / $v_{Open}$ is 1/2 then $R_S$ is 50 ohms, but if the voltage ratio is > 1/2, $R_S$ is less than 50 ohms; or if < 1/2, $R_S$ is > 50 ohms.
+For example, with common lab instrumentation, the output resistance of a signal generator is often specified to be 50 ohms.  This can be confirmed with the simple 2-step tests as above with $R_L$ set at 50 ohms.  If the voltage ratio, $v_{Load}$ / $v_{Open}$ is: 1/2 then $R_S$ is 50 ohms; but if the voltage ratio is: > 1/2, $R_S$ is less than 50 ohms; or if the ratio is: < 1/2, $R_S$ is > 50 ohms.
 
 A simple calculation for the ratio of test voltages, ($v_{Load}$ / $v_{Open}$), is obtained from the prior calculation where:
 
