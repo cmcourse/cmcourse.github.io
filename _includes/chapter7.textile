@@ -254,7 +254,7 @@ p=. $V_{out-open}$ = $V_S$
 
 By substitution and solving for $R_S$, we get:
 
-p=. $R_S$ = $R_L$ ($\frac{V_{out-open}}{V_{out-Load}}$)
+p=. $R_S$ = $R_L$ ($\frac{(V_{out-open}-V_{out-load})}{V_{out-Load}}$)
 
 Notice that if the load resistor, $R_L$ , value during this Test-2 measurement is adjusted so that the output voltage is exactly 1/2 the open-circuit value, then that specific $R_L$ is equal to $R_S$.  Hence, the two voltage tests, where $V_{out-L}$ is set equal to 1/2 $V_{out-open}$, enables measurement of $R_S$, by knowing the $R_L$ value required to obtain 1/2 output,  Eq'n. 15.
 
