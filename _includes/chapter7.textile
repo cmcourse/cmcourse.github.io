@@ -236,7 +236,7 @@ table.
 
 **  7.5.1  _Measurement of Unknown Source Resistance, $R_S$_
 
-At times for some equipment the equivalent source resistance may not be known.  The source may be a complex instrument so that an ohm-meter cannot be applied, since it would inject a voltage into the source output and perhaps damage the source.  Many sources are designed to ONLY have a load resistance connected at the output. Thus a non-destructive means is needed to measure $R_S$.
+For some sources the equivalent source resistance may not be known.  The source may be a complex instrument so that an ohm-meter cannot be applied, since it would inject a voltage into the source output and perhaps damage the source.  Many sources are designed to ONLY have a load resistance connected at the output. Thus a non-destructive means is needed to measure $R_S$.
 
 One simple way to measure $R_S$, is to make two different voltage measurements at the output of the source, Test-1 and Test-2.  First we measure the output with NO-LOAD connected.  This Test-1 yields the value for the internal source voltage $V_S$.  Since there is no load, there is no current in $R_S$ and the voltage measured at the source terminals is the internal voltage $V_S$, "Figure 7.11":#figure7-11 (a).
 
@@ -256,7 +256,7 @@ By substitution and solving for $R_S$, we get:
 
 p=. $R_S$ = $R_L$ ($\frac{(V_{out-open}-V_{out-load})}{V_{out-Load}}$)
 
-Notice that if the load resistor, $R_L$ , value during this Test-2 measurement is adjusted so that the output voltage is exactly 1/2 the open-circuit value, then that specific $R_L$ is equal to $R_S$.  Hence, the two voltage tests, where $V_{out-L}$ is set equal to 1/2 $V_{out-open}$, enables measurement of $R_S$, by knowing the $R_L$ value required to obtain 1/2 output,  Eq'n. 15.
+Notice that if the load resistor, $R_L$ , value is adjusted during this Test-2 measurement so that the output voltage is exactly 1/2 the open-circuit value, then that specific $R_L$ is equal to $R_S$.  Hence, the two voltage tests, where $V_{out-L}$ is set (by adjustment of $R_L$) to equal 1/2 $V_{out-open}$, then this $R_L$ value is $R_S$, (Eq'n. 15).
 
 p=. $R_S$ = $R_L$ when $V_{out-Load}$ = ($\frac{1}{2}$) ($V_{out-open})$
 
