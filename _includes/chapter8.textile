@@ -23,7 +23,7 @@ _Figure 8.3  Cascade of Voltage Dividers Alters Individual Divider Ratio_
 
 ** 8.1.1  The Matched Attenuator Concept
 
-A different approach to signal size reduction is the ‘matched attenuator’.  The matched attenuator involves an added constraint to our circuit design.  This added constraint is that the attenuator circuit will be connected to a ‘matched’ circuit.  Recall the idea for maximum power is to have the load resistance equal (match) to the source resistance, as seen in "Figure 8.4":#figure8-4.
+A different approach to signal size reduction is the 'matched attenuator'.  The matched attenuator involves an added constraint to our circuit design.  This added constraint is that the attenuator circuit will be connected to a 'matched' circuit.  Recall the idea for maximum power is to have the load resistance equal (match) to the source resistance, as seen in "Figure 8.4":#figure8-4.
 
 p=(#figure8-4). !{width:42%}img/8/circuitsF8.4.jpg(Figure 8.4)!:img/8/circuitsF8.4.jpg
 _Figure 8.4   Load Resistance 'Matched' to Equal Source Resistance_
@@ -56,7 +56,7 @@ p=. $R_{eq-in}$ = $R_1$ + $\frac{(R_1 + R_S)R_2}{R_1 + R_S + R_2}$ = $R_S$
 and for attenuation factor of "k", by equivalent resistance and voltage divider: requires:
 
 <h4>
-p=. $\frac{v_O}{v_i}$ = $(\frac{\frac{(R_1+R_S)R_2}{R_1+R_S+R_2}}{3})$\frac{1}{k}$ </h4>
+p=. $\frac{v_O}{v_i}$ = $(\frac{\frac{(R_1+R_S)R_2}{R_1+R_S+R_2}}{(R_1+{(R_1+R_S)R_2}{R_1+R_S+R_2}})})$ = $\frac{1}{k}$ </h4>
 
 These are two equations for $R_1$, $R_2$, _k_, and $R_S$.  But the matched resistance, $R_S$, and _k_ are known, so we solve for $R_1$:
 
