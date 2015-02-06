@@ -232,7 +232,7 @@ table.
 | Instrumentation: |=. 50 ohm |
 | Sensors: |=. 1k to 100k (typical) |
 
-.
+
 
 **  7.5.1  _Measurement of Unknown Source Resistance, $R_S$_
 
