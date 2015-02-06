@@ -60,7 +60,7 @@ p=. $\frac{v_O}{v_i}$ = $\frac{1}{k}$ </h4>
 
 These are two equations for $R_1$, $R_2$, _k_, and $R_S$.  But the matched resistance, $R_S$, and _k_ are known, so we solve for $R_1$:
 
-p=. $R_1$ = $R_S$ <h4>$\frac{(k-1)}{(k+1)}$ </h4>
+p=. $R_1$ = $R_S$ $\frac{(k-1)}{(k+1)}$
 
 and we have for $R_2$:
 
