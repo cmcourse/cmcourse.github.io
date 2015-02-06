@@ -85,7 +85,7 @@ A ladder network is composed of a series of repeated sets of resistors.  "Figure
 
 
 table(#figure8-8).
-|\2=. !{width:90%}img/8/circuitsF8.8a.jpg(Figure 8.8)!:img/1/circuitsF8.8a.jpg |
+|\2=. !{width:90%}img/8/circuitsF8.8.jpg(Figure 8.8)!:img/1/circuitsF8.8.jpg |
 |=. (a) single 'mesh' |=. (b) double 'mesh' |
 |\2=. _Figure 8.8  Ladder Binary Divider_ |
 
