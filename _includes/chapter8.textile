@@ -85,8 +85,9 @@ A ladder network is composed of a series of repeated sets of resistors.  "Figure
 
 
 table(#figure8-8).
-|\2=. !{width:90%}img/8/circuitsF8.8.jpg(Figure 8.8)!:img/1/circuitsF8.8.jpg |
-|=. (a) single 'mesh' |=. (b) double 'mesh' |
+|\2=. !{width:30%}img/8/circuitsF8.8a.jpg(Figure 8.8a)!:img/1/circuitsF8.8a.jpg |
+|=. (a) single 'stage' |=. (b) double 'double' |
+!{width:60%}img/8/circuitsF8.8c.jpg(Figure 8.8)!:img/8/circuitsF8.8c.jpg
 |\2=. _Figure 8.8  Ladder Binary Divider_ |
 
 These particular ladder networks (with 'vertical' resistors of 2x the 'horizontal' resistors, except the last is 1x) produce a sequence of voltages that progressively get smaller.  Each additional stage acts to reduce the source voltage by a factor of 2.  Hence for the xth stage the voltage becomes, Eq’n 8.3:
