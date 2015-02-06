@@ -74,8 +74,12 @@ and
 
 p=. $R_2$ = $\frac{(33.3 + 100)}{(2-1)}$ = 133.3 ohm
 
-The resultant attenuator circuit is depicted in "Figure 8.67":#figure8-7.
+The resultant attenuator circuit is depicted in "Figure 8.7":#figure8-7.
 
 p=(#figure8-7). !{width:60%}img/8/circuitsF8.7.jpg(Figure 8.7)!:img/8/circuitsF8.7.jpg
 _Figure 8.7   Attenuator with "k" attenuation factor = 2, and $R_S$ = 100 ohm_
+
+h4(#chapter8-ladder-networks). 8.2 - Ladder Networks
+
+A ladder network is composed of a series of repeated sets of resistors.  "Figure 8.8a":#figure8-8a , 8b, and 8c illustrate such ladder networks, with 1, 2 and 3-stages respectively.
 
