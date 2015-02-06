@@ -56,7 +56,7 @@ p=. $R_{eq-in}$ = $R_1$ + $\frac{(R_1 + R_S)R_2}{R_1 + R_S + R_2}$ = $R_S$
 and for attenuation factor of "k", by equivalent resistance and voltage divider: requires:
 
 <h4>
-p=. $\frac{v_O}{v_i}$ = $(\frac{\frac{(R_1+R_S)R_2}{R_1+R_S+R_2}}{(R_1+3)})$ = $\frac{1}{k}$ </h4>
+p=. $\frac{v_O}{v_i}$ = $(\frac{\frac{(R_1+R_S)R_2}{R_1+R_S+R_2}}{(R_1+((R_1+R_S)R_2}{R_1+R_S+R_2}))})$ = $\frac{1}{k}$ </h4>
 
 These are two equations for $R_1$, $R_2$, _k_, and $R_S$.  But the matched resistance, $R_S$, and _k_ are known, so we solve for $R_1$:
 
