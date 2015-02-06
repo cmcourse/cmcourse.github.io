@@ -85,9 +85,31 @@ A ladder network is composed of a series of repeated sets of resistors.  "Figure
 
 
 table(#figure8-8).
-|=. !{width:30%}img/8/circuitsF8.8a.jpg(Figure 8.8a)!:img/8/circuitsF8.8a.jpg |=. !{width:40%}img/8/circuitsF8.8b.jpg(Figure 8.8a)!:img/8/circuitsF8.8b.jpg |
+|=. !{width:60%}img/8/circuitsF8.8a.jpg(Figure 8.8a)!:img/8/circuitsF8.8a.jpg |=. !{width:80%}img/8/circuitsF8.8b.jpg(Figure 8.8a)!:img/8/circuitsF8.8b.jpg |
 |=. (a) single 'stage' |=. (b) double 'stage' |
 |\2=. !{width:60%}img/8/circuitsF8.8c.jpg(Figure 8.8)!:img/8/circuitsF8.8c.jpg |
 |\2=. _Figure 8.8  Ladder Binary Divider_ |
 
-These particular ladder networks (with 'vertical' resistors of 2x the 'horizontal' resistors, except the last is 1x) produce a sequence of voltages that progressively get smaller.  Each additional stage acts to reduce the source voltage by a factor of 2.  Hence for the xth stage the voltage becomes, Eq’n 8.3:
+
+These particular ladder networks (with 'vertical' resistors of 2x the 'horizontal' resistors, except the last is 1x) produce a sequence of voltages that progressively get smaller.  Each additional stage acts to reduce the source voltage by a factor of 2.  Hence for the xth stage the voltage becomes, Eq'n 8.3:
+
+p=. $V_{nx}$ = $\frac{V_S}{2^x}$
+
+We can extend the resistive ladder idea to one that is infinitely long, "Figure 8.9":#figure8-9.  Furthermore, we ask what is the equivalent resistance, $R_{eq}$, at the terminal pair A-A' at the beginning of the infinitely long ladder.
+
+p=(#figure8-9). !{width:60%}img/8/circuitsF8.9.jpg(Figure 8.9)!:img/8/circuitsF8.9.jpg
+_Figure 8.9   Infinite Ladder_
+
+This structure is one that illustrates the concept of recursion.  If at A-A' there is an equivalent resistance, Req, then there must be the same value of $R_{eq}$ looking to the right at terminals B-B', "Figure 8.10":#figure8-10.  Why?  Adding or subtracting one resistor pair to an infinite series does not change the result, since in both cases there is the same infinite ladder of resistors in the same arrangement.
+
+p=(#figure8-10). !{width:60%}img/8/circuitsF8.10.jpg(Figure 8.10)!:img/8/circuitsF8.10.jpg
+_Figure 8.10   Separation of Single 'Stage' of Infinite Ladder_
+
+The infinite ladder circuit can now be represented by an equivalent circuit, which contains just 3 resistors, "Figure 8.11":#figure8-11.  Here the unknown value of $R_{eq}$ is used to calculate the value of $R_{eq}$.
+
+p=(#figure8-11). !{width:60%}img/8/circuitsF8.11.jpg(Figure 8.11)!:img/8/circuitsF8.11.jpg
+_Figure 8.11   Recursive Equivalent Circuit for Infinite Ladder_
+
+Solving this by parallel and series equivalent resistances, yields:
+
+
