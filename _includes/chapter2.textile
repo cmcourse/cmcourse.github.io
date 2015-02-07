@@ -3,7 +3,9 @@ All circuit elements are physical pieces of hardware that use the electric varia
 
 From an abstract circuit point of view, _we need not_ know how (or even the exact physical processes involved in how) the circuit element actually achieves the voltage-current constraint.  We only need to know the constraint relationship in order to analyze a circuit.
 
-h4(#chapter2-volt-constraint). 2.1 - Fixed Voltage Source Constraint, ('Source' Circuit Element)
+<a class="anchor" id="chapter2-volt-constraint"></a>
+
+h4. 2.1 - Fixed Voltage Source Constraint, ('Source' Circuit Element)
 
 Consider an example circuit element, a practical 2-terminal element constraint, the Fixed Voltage Source Constraint.  The fixed voltage source circuit element, by it's physical structure, forces a very distinctive relationship between voltage and current, namely the voltage across the two terminals of the source is always a fixed constant value independent of the current passing through the source. We need the value of the voltage constant '$V_S$'.  The voltages and current for this element are depicted in "Figure 2.1":#figure2-1.
 
@@ -23,7 +25,9 @@ _Figure 2.2  Fixed Voltage Source Element Constraint, Graphical Presentation_
 
 Notice, for this fixed voltage source the element voltage, $(v_{n1} - v_{n2})$, is always fixed at the value $V_S$, and is completely independent of the element current, $i_S$, magnitude or polarity.  By convention, the fixed voltage source element is always represented by a circle with +/- signs to identify polarity of the voltage as in "Figure 2.1":#figure2-1.  A positive value for $V_S$, means the voltage at node 1 is greater than the voltage at node 2.
 
-h4(#chapter2-element-conventions). 2.2 - Circuit Element Conventions
+<a class="anchor" id="chapter2-element-conventions"></a>
+
+h4. 2.2 - Circuit Element Conventions
 
 In the above fixed voltage source element there were important conventions that were employed and are now adopted for all our circuit elements. Three conventions to consider are:
 
@@ -45,7 +49,9 @@ These conventions for nodes, currents and polarity apply independent of the phys
 p=(#figure2-4). !{width:80%}img/2/circuitsF2.4.jpg(Figure 2.4)!:img/2/circuitsF2.4.jpg
 _Figure 2.4  Consistent Circuit Element Conventions, Independent of Element Orientation_
 
-h4(#chapter2-element-power). 2.3 - Power in Circuit Elements
+<a class="anchor" id="chapter2-element-power"></a>
+
+h4. 2.3 - Power in Circuit Elements
 
 The reason for the polarity convention, where positive current direction is *always* pointed into the defined positive voltage terminal on the element is to have a consistent definition of power.  This is because power is the *product* of *current times voltage*.  So with the polarity convention we can ALWAYS state that the *power dissipated* by an element is just the product $(i_X * v_X)$, or $(v_X * i_X)$, "Eq'n. 2.3":#eq2-3.
 
@@ -60,7 +66,9 @@ We can obtain further understanding of this current-voltage-power relationship b
 p=(#figure2-5). !{width:60%}img/2/circuitsF2.5.jpg(Figure 2.5)!:img/2/circuitsF2.5.jpg
 _Figure 2.5  Power 'Dissipated' by a Circuit Element_
 
-h4(#chapter2-element-resistor). 2.4 - The Resistor Element, (a 'Load' Type Circuit Element)
+<a class="anchor" id="chapter2-element-resistor"></a>
+
+h4. 2.4 - The Resistor Element, (a 'Load' Type Circuit Element)
 
 Consider another example of a practical 2-terminal element constraint, the Resistor Constraint.  The resistor circuit element, by it's physical structure, forces a very distinctive relation between voltage and current, namely the voltage across the two terminals of a resistor is _proportional to the current passing through the resistor_.  The proportionality constant is represented by the value $R$, a constant for each resistor.  The voltages, current, and symbol for this element are depicted in "Figure 2.6":#figure2-6.
 
@@ -92,7 +100,9 @@ p=. $v_R = i_R R$  _Eq'n 2.5_
 
 This commonly used form for the resistor element voltage-current constraint relation is called _Ohm's Law_.
 
-h4(#chapter2-element-current). 2.5 - The Fixed Current Source, (a 'Source' Type Circuit Element)
+<a class="anchor" id="chapter2-element-current"></a>
+
+h4. 2.5 - The Fixed Current Source, (a 'Source' Type Circuit Element)
 
 Consider a third example of a practical 2-terminal element constraint, the Fixed Current Source Constraint.  A fixed current source is similar to a fixed voltage source in concept, except for the current source, the current $I_S$ is fixed, and this current value is independent of the voltage across the current source.  The voltages, current and symbol for this element are depicted in "Figure 2.8":#figure2-8.
 
@@ -113,11 +123,15 @@ _Figure 2.9  Fixed Current Source Element Constraint, Graphical Presentation_
 
 Notice for this fixed current source the element current, $(i_S = I_S)$, is always fixed at the value $I_S$, independent of the element voltage, $v_S$, magnitude or polarity.  Again by convention, the fixed current source element is always represented by a circle with an arrow sign as depicted in "Figure 2.8":#figure2-8.
 
-h4(#chapter2-element-constitutive). 2.6 - Element Constitutive (Constraint) Relations
+<a class="anchor" id="chapter2-element-constitutive"></a>
+
+h4. 2.6 - Element Constitutive (Constraint) Relations
 
 We have seen examples of the fact that all circuit elements provide very specific constraints on the _voltages and current *associated with that element*_.  These element constraints are sometimes given a name called the 'constitutive relations'. They are one form of constraint used to analyze circuits.  Recall from Section 1.5 there are two basic rules, 'Rule 1' is for these constitutive constraints caused by elements, whereas 'Rule 2' is for constraints associate with how multiple elements are connected together, see Chapter 3.
 
-h4(#chapter2-element-conclusions). 2.7 - Conclusions
+<a class="anchor" id="chapter2-element-conclusions"></a>
+
+h4. 2.7 - Conclusions
 
 We can summarize the constraints imposed by 'Rule 1' (Circuit Element Constraints) by collecting the constitutive relations for each kind of element.  For the three kinds of elements we have discussed so far; the fixed voltage source, the resistor, and the fixed current source we thus have the following constitutive relations in Table 2.1.
 

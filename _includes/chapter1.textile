@@ -1,7 +1,9 @@
 
 bq. This book is a work in progress and is currently intended for my students.  
 
-h4(#chapter1-purpose). 1.1 - The Purpose of Circuits
+<a class="anchor" id="chapter1-purpose"></a>
+
+h4.  1.1 - The Purpose of Circuits
 
 Just what is it that electric circuits actually do?  An electric circuit is essentially a structure that takes something produced by a 'source' and transfers it to some different place called a 'load'.  But exactly what is being transferred?  Most generally, circuits act to transfer one or both of two quantities, namely power (energy) and/or information (data).  Circuits may also modify the power or information as part of the transfer process.
 
@@ -16,7 +18,9 @@ In a similar manner, _information_ from a source (perhaps music contained in a C
 
 From a circuit point-of-view, we need only know what electric signals are required for a load to function.  In circuit analysis, we do not need to explicitly know _how_ the load actually makes the conversion to something useful; for example, how a speaker makes the audible sound we hear from the electric signals that drive it.  For circuits, we only need to use the required electrical quantities.  Thus our circuits are entirely electrical, even though there may be energy conversion by useful source and load devices.
 
-h4(#chapter1-structure). 1.2 - The Structure of Electric Circuits
+<a class="anchor" id="chapter1-structure"></a>
+
+h4. 1.2 - The Structure of Electric Circuits
 
 The transfer of power/information from source to load is accomplished by an electric circuit _*ONLY*_ when there is a _closed-path structure_, which we call a 'loop'.  This is really odd!  
 
@@ -36,7 +40,9 @@ table(#figure1-3).
 |=. (a) no-loop Light-OFF |=. (b) closed loop Light ON |
 |\2=. _Figure 1.3  Circuit to Transfer Power and Cause Illumination, a Flashlight OFF/ON._ |
 
-h4(#chapter1-complexity). 1.3 - Complexity of Electric Circuits and Constraints
+<a class="anchor" id="chapter1-complexity"></a>
+
+h4. 1.3 - Complexity of Electric Circuits and Constraints
 
 The actual implementation of an electric circuit to transfer power/information is usually not that of a flashlight -- a single loop with one battery and one LED light, and a switch.  Rather, the typical electric circuit is far more complex.  This complexity is due to a desire to have more control or functions than a simple ON/OFF.  For music, we may want to control the loudness, or perhaps adjust the bass or treble sound qualities.  We may want to select different channels in a TV receiver, we may want to store some data in one place and other data in another place.  This adds complexity to our circuit.
 
@@ -51,7 +57,9 @@ The point is, most all practical circuits involve much more control of various o
 
 A key concept, therefore, is that in circuits we must somehow select among many possible choices.  Fundamental to all electric circuits is the goal of their purpose AND the constraints that help define the outcome of any circuit that is constructed.
 
-h4(#chapter1-constraint). 1.4 - Constraint-Based Problems and Variables
+<a class="anchor" id="chapter1-constraint"></a>
+
+h4. 1.4 - Constraint-Based Problems and Variables
 
 We will see that practical electric circuits are identified as _constraint-based_ type problems.  By _constraint-based,_ we mean that constraints imposed by various individual elements of the entire problem are an inherent component of the total outcome.  The result, as observed at one region of a circuit _depends on what happens at all elements all over the circuit_.  This is a special type of system, one where we must know what is happening at all parts in order to know what is going to happen at a local part.  Each part of the system places local 'constraints' that influence the overall global behavior of the full system.
 
@@ -65,13 +73,17 @@ It is a core art in engineering; sub-divide, solve in parts, and then assemble t
 
 In constraint problems, there are also variables that need to be controlled; for example, fuel usage, waiting time, labor costs, number of machines or airplanes, and maintenance costs for an airline.  Each of the variables is often related to another variable by the hardware.  When the number of available airplanes increases, labor costs  and fuel use increase, but the waiting time decreases.  Thus we can see that hardware acts to cause constraints between variables.  We will see there are key variables in circuits.
 
-h4(#chapter1-circuits). 1.5 - Circuits as Constraint-Based Problems with Two Variables
+<a class="anchor" id="chapter1-circuits"></a>
+
+h4. 1.5 - Circuits as Constraint-Based Problems with Two Variables
 
 For electric circuits, there are two fundamental electric variables that are 'constrained'.  These _variables are *voltage* and *current*_.  [Note, we consider electric charge as being directly related to current (current is the time derivative of charge) and hence charge is not taken as an independent variable for our circuits analysis.]  All circuit functions such as lighting, heating or sound reproduction also cause constraints on the necessary voltages and currents required by respective devices that induce the heat, light or sound.
 
 In the case of information/data, we will find that voltages and/or currents are used to encode these quantities, such as in magnetic based memories activated by currents.  Hence for our circuits the _variables of concern are only *voltages* and *currents*_. For all circuit problems, we will seek to identify the constraints on voltages and currents that yield the desired purpose or outcome.  In the case of power, we will learn that voltage and current again provide the key quantities needed to establish the power delivered.
 
-h4(#chapter1-definitions). 1.6 - Definitions for Voltage and Current
+<a class="anchor" id="chapter1-definitions"></a>
+
+h4. 1.6 - Definitions for Voltage and Current
 
 *Voltage* is defined as a difference in electric potential between two different points in a circuit. "Figure 1.5":#figure1-5 illustrates voltage values, where voltage $V_1$ is the difference in electric potentials $V_A$ and $V_B$, and $V_2$ is the difference in electric potentials $V_A$ and $V_C$.  
 
@@ -109,7 +121,9 @@ If the current value of $I_2$ had the meaning of the _current from ``$B$" to '$A
 p=(#figure1-9). !{width:40%}img/1/circuitsF1.9a.jpg(Figure 1.9)!:img/1/circuitsF1.9a.jpg
 _Figure 1.9  Current magnitude and polarity (from $B$ to $A$) convention._
 
-h4(#chapter1-types). 1.7 - Types of Circuit Constraints
+<a class="anchor" id="chapter1-types"></a>
+
+h4. 1.7 - Types of Circuit Constraints
 
 Let's agree that voltage and current are the variables of interest, but now what actually causes constraints on these voltages and on these currents?  Here is the fascinating part of circuits.  We can determine, control and set _all circuit voltages and currents by two simple rules_ associated with what is in the circuit and the circuit connections.
 
@@ -124,6 +138,8 @@ We will see that these two rules for circuit constraints, when applied in a cons
 The intent of this book is to provide a logical path to collect and apply all necessary circuit constraints that determine all voltages and currents in a circuit, and hence a means to establish the necessary values for a given 
 design goal or purpose of any circuit.  This is true for both power-transfer and information-transfer circuits.
 
-h4(#chapter1-conclusion). 1.8 - Conclusion
+<a class="anchor" id="chapter1-conclusion"></a>
+
+h4. 1.8 - Conclusion
 
 We have established that an electric circuit is a structure that transfers, possibly with modification or control, power and/or information from one place (a 'source') to one or more other places (the 'loads').  Furthermore, this transfer occurs via the electric quantities of voltage and current.  The voltage and current values must follow defined polarity conventions at every circuit element; and when in a circuit all voltages and currents are constrained by two different types of rules.  One type of constraint (Rule 1) is associated with each device (element or component) that is in the circuit.  The other type of constraint (Rule 2) is associated with a group of two or more devices and the connections between the devices.

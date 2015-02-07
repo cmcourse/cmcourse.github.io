@@ -3,7 +3,9 @@ Recall that power transfer is one of the major goals for electric circuits.  The
 
 In this chapter we examine power in circuits, and use two specific problems to illustrate ways to understand the impact of power constraints on circuits.  Firstly, we will look at ways to distribute power uniformly over a desired set of resistor elements. This might occur when trying to make a uniformly heated surface.  For efficient communications it is often important to maximize the amount of signal captured from a source of limited power. Thus for our second example we seek to maximize the power transferred from a given source into a resistive load.
 
-h4(#chapter7-uniform-power). 7.1 - Uniform Power Over Multiple Resistors
+<a class="anchor" id="chapter7-uniform-power"></a>
+
+h4. 7.1 - Uniform Power Over Multiple Resistors
 
 Here we seek to design a resistive circuit that dissipates a uniform amount of _heat per resistor_.  And furthermore we would like to do this on an array of multiple resistors.  Recall that the heat dissipation produced by a single resistor is the product of the voltage across the resistor times the current through the resistor (with our polarity convention).
 
@@ -16,7 +18,9 @@ One example is a spatially extended 'grid' of resistors, "Figure 7.1":#figure7-1
 p=(#figure7-1). !{width:60%}img/7/circuitsF7.1.jpg(Figure 7.1)!:img/7/circuitsF7.1.jpg
 _Figure 7.1  An Example Array of Resistors Used to Uniformly Heat an Area_
 
-h4(#chapter7-uniform-power). 7.2 - Example: Two Resistor Uniform Heating
+<a class="anchor" id="chapter7-two-resistor"></a>
+
+h4. 7.2 - Example: Two Resistor Uniform Heating
 
 ** _(i) Parallel Connected Resistors_
 
@@ -56,7 +60,9 @@ p=. $R_1 = (\frac{v}{i}) = R_2$
 
 We conclude to get equal power dissipation for two _series_ connected resistors their values need to be equal, $R_1 = R_2$ .
 
-h4(#chapter7-four-resistor). 7.3 - Example: Four Resistor Equal Heating
+<a class="anchor" id="chapter7-four-resistor"></a>
+
+h4. 7.3 - Example: Four Resistor Equal Heating
 
 A more complex equal power example occurs with the symmetric 4-resistor network connected to a constant voltage source, depicted in "Figure 7.4":#figure7-4.  The goal here is that all 4 individual resistors produce the same heating power.  In other words the design constraint in this problem is to have the product (v)  (i) be the same in _each_ of the four resistors.
 
@@ -121,7 +127,9 @@ and thus using eq'n [9] we also design the $R_2$ value as:
 
 p=. $R_2$ = $(\frac{1}{4})8(\frac{(V_S)^2}{4})$  =  50 ohms.
 
-h4(#chapter7-2nd-four-resistor). 7.4 - 2nd Example: Four Resistor Equal Heating
+<a class="anchor" id="chapter7-2nd-four-resistor"></a>
+
+h4. 7.4 - 2nd Example: Four Resistor Equal Heating
 
 A slightly different resistor configuration for the goal of uniform heating is depicted in "Figure 7.7":#figure7-7.
 
@@ -150,7 +158,9 @@ p=. $R_2 = R_1$  and  $R_3 = 9 R_1$
 
 More elaborate arrangements such as "Figure 7.1":#figure7-1 require repeated application of these basic constraint concepts.
 
-h4(#chapter7-max-power-xfer). 7.5 - Maximum Power Transfer
+<a class="anchor" id="chapter7-max-power-xfer"></a>
+
+h4. 7.5 - Maximum Power Transfer
 
 Consider the case where we are given a particular power source.  If we could 'design' a resistive load, what would it be in order to extract the maximum power possible from the *given* source.  Recall power is the _product_ of the voltage across an element times the current through that element, with polarity conventions to set the positive product as power dissipated.
 
