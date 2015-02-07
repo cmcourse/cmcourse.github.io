@@ -87,11 +87,12 @@ A ladder network is composed of a series of repeated sets of resistors.  "Figure
 table(#figure8-8).
 |=. !{width:65%}img/8/circuitsF8.8a.jpg(Figure 8.8a)!:img/8/circuitsF8.8a.jpg |=. !{width:70%}img/8/circuitsF8.8b.jpg(Figure 8.8a)!:img/8/circuitsF8.8b.jpg |
 |=. (a) single 'stage' |=. (b) double 'stage' |
-|\2=. !{width:58%}img/8/circuitsF8.8c.jpg(Figure 8.8)!:img/8/circuitsF8.8c.jpg |
+|\2=. !{width:57%}img/8/circuitsF8.8c.jpg(Figure 8.8)!:img/8/circuitsF8.8c.jpg |
 |\2=. _Figure 8.8  Ladder Binary Divider_ |
 
 
 These particular ladder networks (with 'vertical' resistors of 2x the 'horizontal' resistors, except the last is 1x) produce a sequence of voltages that progressively get smaller.  Each additional stage acts to reduce the source voltage by a factor of 2.  Hence for the xth stage the voltage becomes, Eq'n 8.3:
+
 <h4>
 p=. $V_{nx}$ = $\frac{V_S}{2^X}$ </h4>
 
@@ -164,5 +165,33 @@ The left-side equivalent resistance is calculated in just the same way and is al
 
 p=. $R_{B-B'}$ = $\frac{3}{2}R$
 
-h4(#chapter8-delta-wye). 8.4 - Transformations, 'Delta-Wye'  (∆-Y); Bridge Circuits
+h4(#chapter8-delta-wye). 8.4 - Transformations, 'Delta-Wye'  (\Delta-Y); Bridge Circuits
+
+There are some circuits that we would like to understand, but include neither a series connection nor a parallel connection.  Such circuits seem not possible to reduce.  However, there is a technique, called _transformation_, which enables our reduction methods to be applied.  One common transformation is the 'delta-wye'.  It allows us to replace a group of resistors with a different group of resistors.  ESSENTIAL to the replacement is that the two _groups_ yield identical equivalent resistance values _as seen at the terminals of the group_.
+
+Consider the circuit in "Figure 8.16":#figure8-16.  It is called a 'bridge' circuit.  This circuit contains 5 resistors, where resistor $R_3$ 'bridges' (connects) between the two sides of $R_1$ & $R_4$ and $R_2$ & $R_5$.  Note that there are no two resistors either in series or in parallel.  Hence it appears this circuit cannot be reduced to an equivalent single resistance, $R_{eq}$, at least not by simple series-parallel reductions.
+
+p=(#figure8-16). !{width:45%}img/8/circuitsF8.16.jpg(Figure 8.16)!:img/8/circuitsF8.16.jpg
+_Figure 8.16   General Bridge Circuit_
+
+For emphasis, this Figure identifies 4 nodes; A, B, C, and D.  Now lets make a sub-section of this circuit that only contains the 3-nodes A, B, and C, and also only the three resistors that connect to those nodes, $R_1$, $R_2$ and $R_3$.  We redraw this three-resistor circuit, as shown in "Figure 8.17":#figure8-17, with the exact same 3-nodes and the same 3 individual resistors.  This arrangement forms a 'delta' configuration.
+
+p=(#figure8-17). !{width:45%}img/8/circuitsF8.17.jpg(Figure 8.17)!:img/8/circuitsF8.17.jpg
+_Figure 8.17   3-Node 'Delta' Connection of 3 Resistors_
+
+Now we consider, this circuit has three nodes, and if we look at the equivalent resistance between any 2 of these nodes we can calculate an equivalent resistance value.  For example between nodes A and B, the equivalent resistance is $R_1$ in parallel with the series combination of $(R_2 + R_3)$ [Provided node C is an open circuit at the time of this measurement.].
+
+p=. $R_{AB}$ = $R_1$ || $(R_2 + R_3)$
+
+Similarly we could look at the nodes A and C and find the equivalent resistance of $R_2$ in parallel with the series combination of $(R_1 + R_3)$ [provided node B is an open circuit].  A similar value of $R_3$ in parallel with the series $(R_1+R_2)$ value occurs for the node-pair B and C [with node A an open circuit].  Thus, we see there is an equivalent resistance that can be evaluated between each of the node pairs, A-B, A-C and B-C.
+
+p=. $R_{AC}$ = $R_2$ || $(R_1 + R_3)$
+$R_{BC}$ = $R_3$ || $(R_1 + R_2)$
+
+Now consider _another_ circuit with the same 3 node-pairs, but a _different arrangement of different resistors_.  If this different arrangement yielded the identical equivalent resistance between the 3 nodes, then from the outside the two circuits would yield identical results.  The other circuit to consider is depicted in "Figure 8.18":#figure8-18.  It is in the shape of a "Y", and hence the transformation is called a 'delta-wye' transform.
+
+p=(#figure8-18). !{width:75%}img/8/circuitsF8.18.jpg(Figure 8.18)!:img/8/circuitsF8.18.jpg
+_Figure 8.18   Delta and Wye Equivalent Circuits_
+
+By proper calculation for the values of $R_A$, $R_B$, and $R_C$ these two circuits will look identical as seen from the same 3 nodes A, B, and C.  It is true that the 'Y' shape circuit has an extra 4th node, but it is internal to the circuit.  But that internal node is NOT connected to the outside of the circuit, so it is not 'accessible'.  Hence we need only make the equivalent resistances apply to nodes A, B, and C.  Thus, we calculate the equivalent resistances between nodes A-B as RAB, between nodes A-C as $R_{AC}$ and between nodes B-C as $R_{BC}$.  We then equate the three equivalent resistances for the two circuits and solve for the relationships between resistors.
 
