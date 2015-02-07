@@ -87,17 +87,17 @@ A ladder network is composed of a series of repeated sets of resistors.  "Figure
 table(#figure8-8).
 |=. !{width:65%}img/8/circuitsF8.8a.jpg(Figure 8.8a)!:img/8/circuitsF8.8a.jpg |=. !{width:70%}img/8/circuitsF8.8b.jpg(Figure 8.8a)!:img/8/circuitsF8.8b.jpg |
 |=. (a) single 'stage' |=. (b) double 'stage' |
-|\2=. !{width:55%}img/8/circuitsF8.8c.jpg(Figure 8.8)!:img/8/circuitsF8.8c.jpg |
+|\2=. !{width:58%}img/8/circuitsF8.8c.jpg(Figure 8.8)!:img/8/circuitsF8.8c.jpg |
 |\2=. _Figure 8.8  Ladder Binary Divider_ |
 
 
 These particular ladder networks (with 'vertical' resistors of 2x the 'horizontal' resistors, except the last is 1x) produce a sequence of voltages that progressively get smaller.  Each additional stage acts to reduce the source voltage by a factor of 2.  Hence for the xth stage the voltage becomes, Eq'n 8.3:
-
-p=. $V_{nx}$ = $\frac{V_S}{2^X}$
+<h4>
+p=. $V_{nx}$ = $\frac{V_S}{2^X}$ </h4>
 
 We can extend the resistive ladder idea to one that is infinitely long, "Figure 8.9":#figure8-9.  Furthermore, we ask what is the equivalent resistance, $R_{eq}$, at the terminal pair A-A' at the beginning of the infinitely long ladder.
 
-p=(#figure8-9). !{width:65%}img/8/circuitsF8.9.jpg(Figure 8.9)!:img/8/circuitsF8.9.jpg
+p=(#figure8-9). !{width:67%}img/8/circuitsF8.9.jpg(Figure 8.9)!:img/8/circuitsF8.9.jpg
 _Figure 8.9   Infinite Ladder_
 
 This structure is one that illustrates the concept of recursion.  If at A-A' there is an equivalent resistance, Req, then there must be the same value of $R_{eq}$ looking to the right at terminals B-B', "Figure 8.10":#figure8-10.  Why?  Adding or subtracting one resistor pair to an infinite series does not change the result, since in both cases there is the same infinite ladder of resistors in the same arrangement.
@@ -124,11 +124,11 @@ p=. $R_{eq}^2 - R_1R_{eq} + R_1R_2$ = 0
 
 and thus Eq'n 8.4:
 
-p=. $R_{eq}$ = $\frac{R_1±(R_1^2 + 4R_1R_2)^{1/2}{2}$
+p=. $R_{eq}$ = $\frac{R_1 ±(R_1^2 + 4R_1R_2)^{1/2}}{2}$
 
 Where only a positive value is accepted.  Notice that if $R_2$ = $2R_1$, then $R_{eq}$ becomes:
 
-p=. $R_{eq}$ = $\frac{R_1±(R_1^2 + 8R_1^2)^{1/2}{2}$
+p=. $R_{eq}$ = $\frac{R_1 ±(R_1^2 + 8R_1^2)^{1/2}{2}$
 
 and thus
 
@@ -145,7 +145,7 @@ _Figure 8.12   Symmetric Single Mesh Resistor_
 
 This circuit can be reduced by the method of equivalents.  Firstly, there are two pairs of two 3k resistors each in series.  Hence the circuit reduces to two 6k resistors in parallel.  And these reduce to 1 single equivalent resistor between terminals A-A' of $3 k$.  This reduction is depicted in "Figure 8.13":#figure8-13.
 
-p=(#figure8-13). !{width:60%}img/8/circuitsF8.13.jpg(Figure 8.13)!:img/8/circuitsF8.13.jpg
+p=(#figure8-13). !{width:70%}img/8/circuitsF8.13.jpg(Figure 8.13)!:img/8/circuitsF8.13.jpg
 _Figure 8.13   Reduction of Single Mesh to an Equivalent Resistor_
 
 Now consider a 4-mesh symmetric circuit, depicted in "Figure 8.14":#figure8-14.  There are 12 resistors, each of value R ohms.
@@ -158,7 +158,7 @@ The quickest way to solve this circuit is to realize that it is symmetric about 
 p=(#figure8-15). !{width:45%}img/8/circuitsF8.15.jpg(Figure 8.15)!:img/8/circuitsF8.15.jpg
 _Figure 8.15   Right-Side Only Equivalent Circuit_
 
-This can be further reduced to 3 resistors of R ohms each connected in series, which yields a final equivalent resistance for the right-side of $3R$ ohms.
+This can be further reduced to 3 resistors of $R$ ohms each connected in series, which yields a final equivalent resistance for the right-side of $3R$ ohms.
 
 The left-side equivalent resistance is calculated in just the same way and is also $3R$ ohms.  When combined the two sides (left and right) are in parallel, and hence the final total equivalent resistance, Req, between the terminals B-B' is $3/2 R$.
 
