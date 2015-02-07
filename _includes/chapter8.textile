@@ -206,9 +206,9 @@ Eq'n 8-5  Transformation from 'Delta' to 'Wye' Representations
 
 Alternately, if starting from the 'Y' configuration, then the 'delta' can be calculated from:
 
-p=. $R_1$ = $\frac{(R_A R_B) + (R_B R_C) + (R_A R_C_)}{R_C}$,
-$R_2$ = $\frac{(R_A R_B) + (R_B R_C) + (R_A R_C_)}{R_B}$, and
-$R_3$ = $\frac{(R_A R_B) + (R_B R_C) + (R_A R_C_)}{R_A}$
+p=. $R_1$ = $\frac{(R_A R_B)+(R_B R_C)+(R_A R_C_)}{R_C}$,
+$R_2$ = $\frac{(R_A R_B)+(R_B R_C)+(R_A R_C_)}{R_B}$, and
+$R_3$ = $\frac{(R_A R_B)+(R_B R_C)+(R_A R_C_)}{R_A}$
 
 Now lets apply our 'delta-wye' transformation to the original 'bridge' problem.  The upper portion of the bridge is a 'delta', and hence we can replace it with the corresponding 'wye' configuration, with the correct resistor values for $R_A$, $R_B$, and $R_C$, as follows.  The bridge circuit of "Figure 8.16":#figure8-16, becomes the circuit in "Figure 8.19":#figure8-19.
 
