@@ -128,7 +128,7 @@ p=. $R_{eq}$ = $\frac{R_1 ±(R_1^2 + 4R_1R_2)^{1/2}}{2}$
 
 Where only a positive value is accepted.  Notice that if $R_2$ = $2R_1$, then $R_{eq}$ becomes:
 
-p=. $R_{eq}$ = $\frac{R_1 ±(R_1^2 + 8R_1^2)^{1/2}{2}$
+p=. $R_{eq}$ = $\frac{R_1 ±(R_1^2 + 8R_1^2)^{1/2}}{2}$
 
 and thus
 
@@ -163,3 +163,6 @@ This can be further reduced to 3 resistors of $R$ ohms each connected in series,
 The left-side equivalent resistance is calculated in just the same way and is also $3R$ ohms.  When combined the two sides (left and right) are in parallel, and hence the final total equivalent resistance, Req, between the terminals B-B' is $3/2 R$.
 
 p=. $R_{B-B'}$ = $\frac{3}{2}R$
+
+h4(#chapter8-delta-wye). 8.4 - Transformations, 'Delta-Wye'  (∆-Y); Bridge Circuits
+
