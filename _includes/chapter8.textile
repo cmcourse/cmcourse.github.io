@@ -85,7 +85,7 @@ A ladder network is composed of a series of repeated sets of resistors.  "Figure
 
 
 table(#figure8-8).
-|=. !{width:70%}img/8/circuitsF8.8a.jpg(Figure 8.8a)!:img/8/circuitsF8.8a.jpg |=. !{width:70%}img/8/circuitsF8.8b.jpg(Figure 8.8a)!:img/8/circuitsF8.8b.jpg |
+|=. !{width:65%}img/8/circuitsF8.8a.jpg(Figure 8.8a)!:img/8/circuitsF8.8a.jpg |=. !{width:70%}img/8/circuitsF8.8b.jpg(Figure 8.8a)!:img/8/circuitsF8.8b.jpg |
 |=. (a) single 'stage' |=. (b) double 'stage' |
 |\2=. !{width:55%}img/8/circuitsF8.8c.jpg(Figure 8.8)!:img/8/circuitsF8.8c.jpg |
 |\2=. _Figure 8.8  Ladder Binary Divider_ |
@@ -102,7 +102,7 @@ _Figure 8.9   Infinite Ladder_
 
 This structure is one that illustrates the concept of recursion.  If at A-A' there is an equivalent resistance, Req, then there must be the same value of $R_{eq}$ looking to the right at terminals B-B', "Figure 8.10":#figure8-10.  Why?  Adding or subtracting one resistor pair to an infinite series does not change the result, since in both cases there is the same infinite ladder of resistors in the same arrangement.
 
-p=(#figure8-10). !{width:65%}img/8/circuitsF8.10.jpg(Figure 8.10)!:img/8/circuitsF8.10.jpg
+p=(#figure8-10). !{width:70%}img/8/circuitsF8.10.jpg(Figure 8.10)!:img/8/circuitsF8.10.jpg
 _Figure 8.10   Separation of Single 'Stage' of Infinite Ladder_
 
 The infinite ladder circuit can now be represented by an equivalent circuit, which contains just 3 resistors, "Figure 8.11":#figure8-11.  Here the unknown value of $R_{eq}$ is used to calculate the value of $R_{eq}$.
@@ -114,4 +114,35 @@ Solving this by parallel and series equivalent resistances, yields:
 
 p=. $R_{eq}$ = $R_1$ + $\frac{R_2 R_{eq}}{R_2 + R_{eq}}$
 
+and expanding:
+
+p=. $R_{eq}(R_2 + R_{eq})$ = $R_1(R_2 + R_{eq}) + R_2R_{eq}$
+
+collecting terms
+
+p=. $R_{eq}^2 - R_1R_{eq} + R_1R_2$ = 0
+
+and thus Eq’n 8.4:
+
+p=. $R_{eq}$ = $\frac{R_1 ± (R_1^2 + 4R_1R_2)^1/2}{2}$
+
+Where only a positive value is accepted.  Notice that if $R_2$ = $2R_1$, then $R_{eq}$ becomes:
+
+p=.	$R_{eq}$ = $\frac{R_1 ± (R_1^2 + 8R_1^2)^1/2}$
+
+and thus
+
+p=. $R_{eq}$ = $2R_1$
+
+A simple answer to an infinite string of resistors, obtained by 'recursion'.
+
+h4(#chapter8-mesh-networks). 8.3 - Symmetric Mesh Networks
+
+Another form of resistive circuit employs structures that are physically symmetric around some 'axis' and form a mesh. "Figure 8.12":#figure8-12 depicts a single mesh.
+
+p=(#figure8-12). !{width:50%}img/8/circuitsF8.12.jpg(Figure 8.12)!:img/8/circuitsF8.12.jpg
+_Figure 8.12   Symmetric Single Mesh Resistor_
+
+This circuit can be reduced by the method of equivalents.  Firstly, there are two pairs of two 3k resistors each in series.  Hence the circuit reduces to two 6 k resistors in parallel.  And these reduce to 1 single equivalent resistor between terminals A-A' of $3 k$.  This reduction is depicted in "Figure 8.13":#figure8-13.
+ 
 
