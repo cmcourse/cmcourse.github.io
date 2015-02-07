@@ -122,13 +122,13 @@ collecting terms
 
 p=. $R_{eq}^2 - R_1R_{eq} + R_1R_2$ = 0
 
-and thus Eq’n 8.4:
+and thus Eq'n 8.4:
 
-p=. $R_{eq}$ = $\frac{R_1 ± (R_1^2 + 4R_1R_2)^1/2}{2}$
+p=. $R_{eq}$ = $\frac{R_1±(R_1^2 + 4R_1R_2)^1/2}{2}$
 
 Where only a positive value is accepted.  Notice that if $R_2$ = $2R_1$, then $R_{eq}$ becomes:
 
-p=.	$R_{eq}$ = $\frac{R_1 ± (R_1^2 + 8R_1^2)^1/2}$
+p=.	$R_{eq}$ = $\frac{R_1±(R_1^2 + 8R_1^2)^1/2}{2}$
 
 and thus
 
@@ -140,9 +140,26 @@ h4(#chapter8-mesh-networks). 8.3 - Symmetric Mesh Networks
 
 Another form of resistive circuit employs structures that are physically symmetric around some 'axis' and form a mesh. "Figure 8.12":#figure8-12 depicts a single mesh.
 
-p=(#figure8-12). !{width:50%}img/8/circuitsF8.12.jpg(Figure 8.12)!:img/8/circuitsF8.12.jpg
+p=(#figure8-12). !{width:40%}img/8/circuitsF8.12.jpg(Figure 8.12)!:img/8/circuitsF8.12.jpg
 _Figure 8.12   Symmetric Single Mesh Resistor_
 
-This circuit can be reduced by the method of equivalents.  Firstly, there are two pairs of two 3k resistors each in series.  Hence the circuit reduces to two 6 k resistors in parallel.  And these reduce to 1 single equivalent resistor between terminals A-A' of $3 k$.  This reduction is depicted in "Figure 8.13":#figure8-13.
- 
+This circuit can be reduced by the method of equivalents.  Firstly, there are two pairs of two 3k resistors each in series.  Hence the circuit reduces to two 6k resistors in parallel.  And these reduce to 1 single equivalent resistor between terminals A-A' of $3 k$.  This reduction is depicted in "Figure 8.13":#figure8-13.
 
+p=(#figure8-13). !{width:40%}img/8/circuitsF8.13.jpg(Figure 8.13)!:img/8/circuitsF8.13.jpg
+_Figure 8.13   Reduction of Single Mesh to an Equivalent Resistor_
+
+Now consider a 4-mesh symmetric circuit, depicted in "Figure 8.14":#figure8-14.  There are 12 resistors, each of value R ohms.
+
+p=(#figure8-14). !{width:40%}img/8/circuitsF8.14.jpg(Figure 8.14)!:img/8/circuitsF8.14.jpg
+_Figure 8.14   Symmetric 4-Mesh Circuit of 12 Resistors of R ohms Each_
+
+The quickest way to solve this circuit is to realize that it is symmetric about the diagonal dashed line.  There are 6 resistors to the right-side of the diagonal and symmetrically there are 6 resistors to the left-side of the diagonal.  Because of symmetry there is no current that goes from the left-side to the right-side, and hence we can make an equivalent circuit for each side separately.  The ride-side equivalent is seen in "Figure 8.15":#figure8-15.
+
+p=(#figure8-15). !{width:40%}img/8/circuitsF8.15.jpg(Figure 8.15)!:img/8/circuitsF8.15.jpg
+_Figure 8.15   Right-Side Only Equivalent Circuit_
+
+This can be further reduced to 3 resistors of R ohms each connected in series, which yields a final equivalent resistance for the right-side of $3R$ ohms.
+
+The left-side equivalent resistance is calculated in just the same way and is also $3R$ ohms.  When combined the two sides (left and right) are in parallel, and hence the final total equivalent resistance, Req, between the terminals B-B' is $3/2 R$.
+
+p=. $R_{B-B'}$ = $\frac{3}{2}R$
