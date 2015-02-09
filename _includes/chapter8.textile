@@ -201,15 +201,16 @@ $R_{BC-open A}$ = $R_3$ || $(R_1 + R_2)$ = $R_B$ + $R_C$
 
 Solving these three equations for $R_A$, $R_B$, and $R_C$, yields, Eq'n 8-5:
 
-p=. $R_A$ = $\frac{R_1R_2}{(R_1 + R_2 + R_3)}$, .... $R_B$ = $\frac{R_1R_3}{(R_1 + R_2 + R_3)}$, and .... $R_C$ = $\frac{R_2R_3}{(R_1 + R_2 + R_3)}$
-_Eq'n 8-5  Transformation from 'Delta' to 'Wye' Representations_
+<h4>
+p=. $R_A$ = $\frac{R_1R_2}{(R_1 + R_2 + R_3)}$, .... $R_B$ = $\frac{R_1R_3}{(R_1 + R_2 + R_3)}$, and .... $R_C$ = $\frac{R_2R_3}{(R_1 + R_2 + R_3)}$ </h4>
+p=. _Eq'n 8-5  Transformation from 'Delta' to 'Wye' Representations_
 
 Alternately, _if starting from the 'Y' configuration_, then the 'delta' resistor values can be calculated from:
 
+<h4>
 p=. $R_1$ = $\frac{(R_A R_B) + (R_B R_C) + (R_A R_C)}{R_C}$
 $R_2$ = $\frac{(R_A R_B) + (R_B R_C) + (R_A R_C)}{R_B}$
-$R_3$ = $\frac{(R_A R_B) + (R_B R_C) + (R_A R_C)}{R_A}$
-
+$R_3$ = $\frac{(R_A R_B) + (R_B R_C) + (R_A R_C)}{R_A}$ </h4>
 p=. _Eq'n 8-6:  Transformation from 'Wye' to the 'Delta'; Representations_
 
 Now lets apply our 'delta-wye' transformation to the original 'bridge' problem.  The upper portion of the bridge is a 'delta', and hence we can replace it with the corresponding 'wye' configuration, with the correct resistor values for $R_A$, $R_B$, and $R_C$, as follows.  The bridge circuit of "Figure 8.16":#figure8-16, becomes the circuit in "Figure 8.19":#figure8-19.
@@ -224,7 +225,8 @@ _Figure 8.20   Reduced Bridge Circuit_
 
 Hence by parallel and series reductions, we arrive at the final value for the total equivalent resistance, $R_{eq}$.
 
-p=. $R_{eq}$ = $R_A$ + $\frac{(R_B + R_4)(R_C + R_5)}{(R_B + R_4) + (R_C + R_5)}$
+<h4>
+p=. $R_{eq}$ = $R_A$ + $\frac{(R_B + R_4)(R_C + R_5)}{(R_B + R_4) + (R_C + R_5)}$ </h4>
 
 The delta-wye transformation is an important 'tool', especially when bridge circuits are part of a circuit of interest.  While they take some math, this transformation enables us to understand how each of the different resistors contributes to the total effective resistance.  In this case, $R_A$ is a distinct additive term to the equivalent resistance.  And we know that $R_A$ is the simple product of $R_1$ and $R_2$, divided by the sum of $R_1$, $R_2$ and $R_3$.  So here the product of two resistors $R_1$ and $R_2$ can have a significant impact on the final $R_{eq}$.
 
