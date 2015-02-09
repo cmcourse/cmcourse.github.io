@@ -230,11 +230,11 @@ The delta-wye transformation is an important 'tool', especially when bridge circ
 
 Now lets further restrict the bridge circuit of "Figure 8.16":#figure8-16 to the condition where the resistor that 'bridges' the two sides, namely $R_3$, is constrained to be of relatively high value compared to $R_1$ and $R_2$, meaning there is only a relatively small current in $R_3$. Hence we restrict:
 
-p=. $R_3$ >> $R_1$, $R_2$
+p=. $R_3$ >> $R_1$, or $R_2$
 
 Thus we can simplify our equivalent resistance values as follows:
 
-p=. $R_B + R_4$ = 
+p=. $R_B + R_4$ = $\frac{(R_1R_3)}{(R_1+R_2+R_3)} + R_4 
 
 and
 
@@ -281,7 +281,7 @@ So _at bridge balance_ when $R_4$ is adjusted so $V_{BC}$ = 0, then $R_5$ is equ
 
 With this 'balanced' condition for the bridge circuit, we can again ask what is the effective equivalent resistance, $R_{eq}$, as seen at the terminals 'A' - 'D', see "Figure 8.22":#figure8-22.
 
-p=(#figure8-22). !{width:45%}img/8/circuitsF8.22.jpg(Figure 8.22)!:img/8/circuitsF8.22.jpg
+p=(#figure8-22). !{width:42%}img/8/circuitsF8.22.jpg(Figure 8.22)!:img/8/circuitsF8.22.jpg
 _Figure 8.22   Balanced Bridge Equivalent Resistance, Electrically Open 'B' to 'C'_
 
 By substitution, we calculate with the parallel connection of two series resistors as:
@@ -298,21 +298,21 @@ The equivalent resistance _*at balance*_ is just equal to the parallel combinati
 
 Finally, lets consider the 'balance bridge' condition, but now also _allow a large (but finite) value for_ $R_3$, "Figure 8.23":#figure8-23.   In other words, we include a relatively small resistive current between 'B' and 'C'.
 
-p=(#figure8-23). !{width:45%}img/8/circuitsF8.23.jpg(Figure 8.23)!:img/8/circuitsF8.23.jpg
+p=(#figure8-23). !{width:42%}img/8/circuitsF8.23.jpg(Figure 8.23)!:img/8/circuitsF8.23.jpg
 _Figure 8.23   Balanced Bridge Equivalent Resistance, With Bridge Resistor $R_3$_
 
 From the prior subsection (8.4.1) we calculated the equivalent resistance to be approximately:
 
 p=. $R_{eq}$ = $\frac{R_1R_2}{R_3}$ + $\frac{(R_1 + R_4)(R_2 + R_5)}{(R_1 + R_4) + (R_2 + R_5)}$
 
-But if we now additionally require the circuit to be in the ‘balance’ condition, then the constraint of the above subsection (8.4.2) applies.  By substitution:
+But if we now additionally require the circuit to be in the 'balance' condition, then the constraint of the above subsection (8.4.2) applies.  By substitution:
 
 p=. $R_{eq}$ = $\frac{R_1R_2}{R_3}$ + $\frac{(R_1 + R_4)(R_2 + (\frac{R_2}{R_1})R_4)}{(R_1 + R_4) + (R_2 + (\frac{R_2}{R_1})R_4))}$
 
 and by simplification:
 
-p=. $R_{eq}$ = $\frac{R_1R_2}{R_3}$ + $\frac{(R_1 R_2)}{R_1+R_2}{(R_1+R_4)}{R_1}$
+p=. $R_{eq}$ = $\frac{R_1R_2}{R_3}$ + $\frac{(R_1 R_2)}{(R_1+R_2)}(\frac{(R_1+R_4)}{R_1)}$
 
-At balance, the equivalent resistance for our bridge circuit is just the scaled increased parallel resistance of $R_1$ and $R_2$ (as found before in subsection (8.4.2) without $R_3$) and with an added small correction term.  This added term with $R_3$ in the denominator tends toward zero as the cross resistance $R_3$ is increased to larger and larger values.
+At balance, the equivalent resistance for our bridge circuit is just the scaled increased parallel resistance of $R_1$ and $R_2$ (as found before in subsection (8.4.2) without $R_3$) and with an added small correction term.  This added term with $R_3$ in the denominator tends toward zero as the cross resistance $R_3$ is increased to larger and larger values, consistent with Section 8.4.2.
 
 
