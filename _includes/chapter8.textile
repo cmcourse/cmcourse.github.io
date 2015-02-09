@@ -236,7 +236,7 @@ Now lets further restrict the bridge circuit of "Figure 8.16":#figure8-16 to the
 
 p=. $R_3$ >> $R_1$, or $R_2$
 
-Thus we can simplify our equivalent resistance values as follows:
+Thus with a large value $R_3$ we can simplify our equivalent resistance values as follows:
 
 p=. $R_B + R_4$ = $\frac{(R_1R_3)}{(R_1+R_2+R_3)} + R_4$ $\cong$ $R_1 + R_4$
 
@@ -246,17 +246,17 @@ p=. $R_C + R_5$ = $\frac{(R_2R_3)}{(R_1+R_2+R_3)} + R_5$ $\cong$ $R_2 + R_5$
 
 and
 
-p=. $R_A$ = $\frac{R_1R_2}{(R_1 + R_2 + R_3)}$ = $\frac{R_1R_2}{R_3}$
+p=. $R_A$ = $\frac{R_1R_2}{(R_1 + R_2 + R_3)}$ $\cong$ $\frac{R_1R_2}{R_3}$
 
 The total $R_{eq}$, under the constraint of a high value for $R_3$ thus becomes approximately:
 
-p=. $R_{eq}$ = $\frac{R_1R_2}{R_3}$ + $\frac{(R_1 + R_4)(R_2 + R_5)}{(R_1 + R_4) + (R_2 + R_5)}$
+p=. $R_{eq}$ $\cong$ $\frac{R_1R_2}{R_3}$ + $\frac{(R_1 + R_4)(R_2 + R_5)}{(R_1 + R_4) + (R_2 + R_5)}$
 
 This high value $R_3$ restriction corresponds to a 'small current' in $R_3$, and can occur in practice when the $R_3$ resistor might be a high effective input resistance of a measurement meter set to measure the voltage between the two bridge nodes 'B' and 'C' in "Figure 8.16":#figure8-16.
 
 ** _8.4.2 'At Balance' Bridge Circuit_
 
-Lets now consider another constraint to our bridge circuit.  Here we further constrain our bridge circuit and select specific values, which are called a 'balanced bridge'.  First, _we assume there is no current in_ $R_3$, _and thus remove it_.  This is depicted in "Figure 8.21":#figure8-21, where there is also an added voltage source, $V_S$, across the bridge to better illustrate the 'balance' condition.
+Lets now consider another constraint to our bridge circuit.  Here we further constrain our bridge circuit and select specific values, which are called a 'balanced bridge'.  First, we _assume there is no current_ in $R_3$, and thus remove it.  This is depicted in "Figure 8.21":#figure8-21, where there is also an added voltage source, $V_S$, across the bridge to better illustrate the 'balance' condition.
 
 p=(#figure8-21). !{width:40%}img/8/circuitsF8.21.jpg(Figure 8.21)!:img/8/circuitsF8.21.jpg
 _Figure 8.21   Bridge Circuit with Voltage Source_
