@@ -254,7 +254,7 @@ This high value $R_3$ restriction corresponds to a 'small current' in $R_3$, and
 
 Lets now consider another constraint to our bridge circuit.  Here we further constrain our bridge circuit and select specific values, which are called a 'balanced bridge'.  First, _we assume there is no current in_ $R_3$, _and thus remove it_.  This is depicted in "Figure 8.21":#figure8-21, where there is also an added voltage source, $V_S$, across the bridge to better illustrate the 'balance' condition.
 
-p=(#figure8-21). !{width:50%}img/8/circuitsF8.21.jpg(Figure 8.21)!:img/8/circuitsF8.21.jpg
+p=(#figure8-21). !{width:40%}img/8/circuitsF8.21.jpg(Figure 8.21)!:img/8/circuitsF8.21.jpg
 _Figure 8.21   Bridge Circuit with Voltage Source_
 
 Secondly, we restrict the remaining four resistor values so the bridge nodes 'B' and 'C' are at the same voltage, in other words the difference voltage, $V_{BC}$ = 0. This is the 'balanced' condition, where there is no current between 'B' and 'C' and requires the two voltage dividers, on the 'left' and 'right' sides, must yield the same ratio, so:
@@ -279,10 +279,26 @@ p=. $R_5$ = $(\frac{R_2}{R_1})R_4$
 
 So _at bridge balance_ when $R_4$ is adjusted so $V_{BC}$ = 0, then $R_5$ is equal to $R_4$ scaled by the ratio $R_2$ / $R_1$.  Note, it is the ratio value of ($R_2$ / $R_1$) that needs to be known, not the individual values of $R_2$ and $R_1$ in this balance.  If we know the $R_2/R_1$ ratio and adjust R4 to get 'balance', then we can measure the resistor $R_5$ value from the balance value of known $R_4$.
 
-With this 'balanced' condition for the bridge circuit, we can again ask what is the effective equivalent resistance, $R_{eq}$, as seen at the terminals 'A' – 'D', see "Figure 8.22":#figure8-22.
+With this 'balanced' condition for the bridge circuit, we can again ask what is the effective equivalent resistance, $R_{eq}$, as seen at the terminals 'A' - 'D', see "Figure 8.22":#figure8-22.
 
-p=(#figure8-22). !{width:50%}img/8/circuitsF8.22.jpg(Figure 8.22)!:img/8/circuitsF8.22.jpg
-_Figure 8.22   Balanced Bridge Equivalent Resistance, No Current 'B' to 'C'_
+p=(#figure8-22). !{width:45%}img/8/circuitsF8.22.jpg(Figure 8.22)!:img/8/circuitsF8.22.jpg
+_Figure 8.22   Balanced Bridge Equivalent Resistance, Electrically Open 'B' to 'C'_
 
+By substitution, we calculate with the parallel connection of two series resistors as:
 
+p=. $R_{eq}$ = $\frac{(R_1+R_4)(R_2+R_5)}{(R_1+R_4)+(R_2+R_5)}$  .... where .... $\frac{(R_2+R_5)}{(R_1+R_4)}$ = $\frac{R_5}{R_4}$ = $\frac{R_2}{R_1}$
 
+and simplifying:
+
+p=. $R_{eq}$ = $\frac{(R_1+R_4)R_2}{R_1+R_2}$ = $[\frac{R_1R_2}{R_1+R_2}](\frac{R_1+R_4}{R_1})$
+
+The equivalent resistance _*at balance*_ is just equal to the parallel combination of $R_1$ and $R_2$ increased by the divider ratio. 
+
+** _8.4.3 'Near-Balance' Bridge Circuit_
+
+Finally, lets consider the 'balance bridge' condition, but now also _allow a large (but finite) value for_ $R_3$, "Figure 8.23":#figure8-23.   In other words, we include a relatively small resistive current between 'B' and 'C'.
+
+p=(#figure8-23). !{width:45%}img/8/circuitsF8.23.jpg(Figure 8.23)!:img/8/circuitsF8.23.jpg
+_Figure 8.23   Balanced Bridge Equivalent Resistance, With Bridge Resistor $R_3$_
+
+From the prior subsection ($i$) we calculated the equivalent resistance to be approximately:
