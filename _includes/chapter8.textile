@@ -201,7 +201,7 @@ $R_{BC-open A}$ = $R_3$ || $(R_1 + R_2)$ = $R_B$ + $R_C$
 
 Solving these three equations for $R_A$, $R_B$, and $R_C$, yields, Eq'n 8-3:
 
-p=. $R_A$ = $\frac{R_1R_2}{(R_1 + R_2 + R_3)}$, $R_B$ = $\frac{R_1R_3}{(R_1 + R_2 + R_3)}$, and $R_C$ = $\frac{R_2R_3}{(R_1 + R_2 + R_3)}$
+p=. $R_A$ = $\frac{R_1R_2}{(R_1 + R_2 + R_3)}$, .... $R_B$ = $\frac{R_1R_3}{(R_1 + R_2 + R_3)}$, and .... $R_C$ = $\frac{R_2R_3}{(R_1 + R_2 + R_3)}$
 Eq'n 8-5  Transformation from 'Delta' to 'Wye' Representations
 
 Alternately, if starting from the 'Y' configuration, then the 'delta' can be calculated from:
