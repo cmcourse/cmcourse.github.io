@@ -176,7 +176,7 @@ _Figure 8.16   General Bridge Circuit_
 
 For emphasis, this Figure identifies 4 nodes; A, B, C, and D.  Now lets make a sub-section of this circuit that only contains the 3-nodes A, B, and C, and also only the three resistors that connect to those nodes, $R_1$, $R_2$ and $R_3$.  We redraw this three-resistor circuit, as shown in "Figure 8.17":#figure8-17, with the exact same 3-nodes and the same 3 individual resistors.  This arrangement forms a 'delta' configuration.
 
-p=(#figure8-17). !{width:30%}img/8/circuitsF8.17.jpg(Figure 8.17)!:img/8/circuitsF8.17.jpg
+p=(#figure8-17). !{width:28%}img/8/circuitsF8.17.jpg(Figure 8.17)!:img/8/circuitsF8.17.jpg
 _Figure 8.17   3-Node 'Delta' Connection of 3 Resistors_
 
 Now we consider, this circuit has three nodes, and if we look at the equivalent resistance between any 2 of these nodes we can calculate an equivalent resistance value.  For example between nodes A and B, the equivalent resistance is $R_1$ in parallel with the series combination of $(R_2 + R_3)$ [Provided node C is an open circuit at the time of this measurement.].
@@ -190,7 +190,7 @@ $R_{BC-open A}$ = $R_3$ || $(R_1 + R_2)$
 
 Now consider _another_ circuit with the same 3 node-pairs, but a _different arrangement of different resistors_.  If this different arrangement yielded the identical equivalent resistance between the 3 nodes, then from the outside the two circuits would yield identical results.  The other circuit to consider is depicted in "Figure 8.18":#figure8-18.  It is in the shape of a "Y", and hence the transformation is called a 'delta-wye' transform.
 
-p=(#figure8-18). !{width:75%}img/8/circuitsF8.18.jpg(Figure 8.18)!:img/8/circuitsF8.18.jpg
+p=(#figure8-18). !{width:65%}img/8/circuitsF8.18.jpg(Figure 8.18)!:img/8/circuitsF8.18.jpg
 _Figure 8.18   Delta and Wye Equivalent Circuits_
 
 By proper calculation for the values of $R_A$, $R_B$, and $R_C$ these two circuits will look identical as seen from the same 3 nodes A, B, and C.  It is true that the 'Y' shape circuit has an extra 4th node, but it is internal to the circuit.  But that internal node is NOT connected to the outside of the circuit, so it is not 'accessible'.  Hence we need only make the equivalent resistances apply to nodes A, B, and C.  Thus, we calculate the equivalent resistances between nodes A-B as $R_{AB}$, between nodes A-C as $R_{AC}$ and between nodes B-C as $R_{BC}$.  We then equate the three equivalent resistances for the two circuits and solve for the relationships between resistors.
