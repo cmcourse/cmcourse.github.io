@@ -199,23 +199,25 @@ p=. $R_{AB-open C}$ = $R_1$ || $(R_2 + R_3)$ = $R_A$ + $R_B$
 $R_{AC-open B}$ = $R_2$ || $(R_1 + R_3)$ = $R_A$ + $R_C$
 $R_{BC-open A}$ = $R_3$ || $(R_1 + R_2)$ = $R_B$ + $R_C$
 
-Solving these three equations for $R_A$, $R_B$, and $R_C$, yields, Eq'n 8-3:
+Solving these three equations for $R_A$, $R_B$, and $R_C$, yields, Eq'n 8-5:
 
 p=. $R_A$ = $\frac{R_1R_2}{(R_1 + R_2 + R_3)}$, .... $R_B$ = $\frac{R_1R_3}{(R_1 + R_2 + R_3)}$, and .... $R_C$ = $\frac{R_2R_3}{(R_1 + R_2 + R_3)}$
-Eq'n 8-5  Transformation from 'Delta' to 'Wye' Representations
+_Eq'n 8-5  Transformation from 'Delta' to 'Wye' Representations_
 
-Alternately, if starting from the 'Y' configuration, then the 'delta' can be calculated from:
+Alternately, _if starting from the 'Y' configuration_, then the 'delta' resistor values can be calculated from:
 
 p=. $R_1$ = $\frac{(R_A R_B) + (R_B R_C) + (R_A R_C)}{R_C}$
 $R_2$ = $\frac{(R_A R_B) + (R_B R_C) + (R_A R_C)}{R_B}$
 $R_3$ = $\frac{(R_A R_B) + (R_B R_C) + (R_A R_C)}{R_A}$
+
+p=. _Eq'n 8-6:  Transformation from 'Wye' to the 'Delta'; Representations_
 
 Now lets apply our 'delta-wye' transformation to the original 'bridge' problem.  The upper portion of the bridge is a 'delta', and hence we can replace it with the corresponding 'wye' configuration, with the correct resistor values for $R_A$, $R_B$, and $R_C$, as follows.  The bridge circuit of "Figure 8.16":#figure8-16, becomes the circuit in "Figure 8.19":#figure8-19.
 
 p=(#figure8-19). !{width:45%}img/8/circuitsF8.19.jpg(Figure 8.19)!:img/8/circuitsF8.19.jpg
 _Figure 8.19   Modified Bridge Circuit, After Delta-Wye Transformation_
 
-Where, the values of $R_A$, $R_B$, and $R_C$ are those in Eq’n 8-3.  Now we have two sets of two resistors in series, so the circuit can be reduced to "Figure 8.20":#figure8-20:
+Where, the values of $R_A$, $R_B$, and $R_C$ are those in Eq'n 8-5.  Now we have two sets of two resistors in series, so the circuit can be reduced to "Figure 8.20":#figure8-20:
 
 p=(#figure8-20). !{width:50%}img/8/circuitsF8.20.jpg(Figure 8.20)!:img/8/circuitsF8.20.jpg
 _Figure 8.20   Reduced Bridge Circuit_
@@ -234,11 +236,11 @@ p=. $R_3$ >> $R_1$, or $R_2$
 
 Thus we can simplify our equivalent resistance values as follows:
 
-p=. $R_B + R_4$ = $\frac{(R_1R_3)}{(R_1+R_2+R_3)} + R_4 
+p=. $R_B + R_4$ = $\frac{(R_1R_3)}{(R_1+R_2+R_3)} + R_4$ $\cong$ $R_1 + R_4$
 
 and
 
-p=. $R_C + R_5$ = 
+p=. $R_C + R_5$ = $\frac{(R_2R_3)}{(R_1+R_2+R_3)} + R_5$ $\cong$ $R_2 + R_5$ 
 
 and
 
