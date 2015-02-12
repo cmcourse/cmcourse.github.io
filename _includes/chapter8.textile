@@ -269,7 +269,7 @@ Lets now consider another constraint to our bridge circuit.  Here we further con
 p=(#figure8-21). !{width:40%}img/8/circuitsF8.21.jpg(Figure 8.21)!:img/8/circuitsF8.21.jpg
 _Figure 8.21   Bridge Circuit with Voltage Source_
 
-Secondly, we restrict the remaining four resistor values so the bridge nodes 'B' and 'C' are at the same voltage, in other words the difference voltage, $V_{BC}$ = 0. This is the 'balanced' condition, where there is no current between 'B' and 'C' and requires the two voltage dividers, on the 'left' and 'right' sides, must yield the same ratio, so:
+Secondly, we restrict the remaining four resistor values so the bridge nodes 'B' and 'C' are at the same voltage, in other words the difference voltage, $V_{BC}$ = 0. This is the 'balanced' condition, where there is no current between 'B' and 'C' (even if we added a resistor $R_3$ between them) and requires the two voltage dividers, on the 'left' and 'right' sides, must yield the same ratio, so:
 
 p=. $V_B$ = ($\frac{R_4}{R_1 + R_4})V_S$ and $V_C$ = ($\frac{R_5}{R_2 + R_5})V_S$
 
@@ -287,7 +287,10 @@ p=. $R_4(R_2)$ = $R_5(R_1)$
 
 Or solving for R_5, *bridge circuit balance* occurs when:
 
-p=. $R_5$ = $(\frac{R_2}{R_1})R_4$
+<h4>
+p=. $R_5$ = $(\frac{R_2}{R_1})R_4$ </h4>
+
+p=. _Eq'n 8-9  'Balance' Condition for the Bridge Circuit_
 
 So _at bridge balance_ when $R_4$ is adjusted so $V_{BC}$ = 0, then $R_5$ is equal to $R_4$ scaled by the ratio $R_2$ / $R_1$.  Note, it is the ratio value of ($R_2$ / $R_1$) that needs to be known, not the individual values of $R_2$ and $R_1$ in this balance.  If we know the $R_2/R_1$ ratio and adjust R4 to get 'balance', then we can measure the resistor $R_5$ value from the balance value of known $R_4$.
 
@@ -306,7 +309,10 @@ p=. $\frac{(R_2+R_5)}{(R_1+R_4)}$ = $\frac{R_5}{R_4}$ = $\frac{R_2}{R_1}$
 
 and simplifying:
 
-p=. $R_{eq}$ = $\frac{(R_1+R_4)R_2}{R_1+R_2}$ = $[\frac{R_1R_2}{R_1+R_2}](\frac{R_1+R_4}{R_1})$
+<h4>
+p=. $R_{eq}$ = $\frac{(R_1+R_4)R_2}{R_1+R_2}$ = $[\frac{R_1R_2}{R_1+R_2}](\frac{R_1+R_4}{R_1})$ </h4>
+
+p=. _Eq'n 8-10  'At Balance' Equivalent Resistance of the Bridge Circuit_
 
 The equivalent resistance _*at balance*_ is just equal to the parallel combination of $R_1$ and $R_2$ increased by the divider ratio. 
 
