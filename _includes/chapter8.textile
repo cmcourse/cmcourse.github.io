@@ -318,7 +318,7 @@ The equivalent resistance _*at balance*_ is just equal to the parallel combinati
 
 ** _8.4.3 'Near-Balance' Bridge Circuit_
 
-Finally, lets consider the 'balance bridge' condition, but now also _allow a large (but finite) value for_ $R_3$, "Figure 8.23":#figure8-23.   In other words, we include a relatively small resistive current between 'B' and 'C'.
+Finally, lets consider the 'balance bridge' condition, but now also _allow a large (but finite) value for_ $R_3$, "Figure 8.23":#figure8-23.   In other words, we include a relatively small resistive current between 'B' and 'C'.  This is the constraint of Section 8.4.1 with the added constraint of being near 'balance'.
 
 p=(#figure8-23). !{width:42%}img/8/circuitsF8.23.jpg(Figure 8.23)!:img/8/circuitsF8.23.jpg
 _Figure 8.23   Balanced Bridge Equivalent Resistance, With Bridge Resistor $R_3$_
