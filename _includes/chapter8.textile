@@ -1,7 +1,9 @@
 
 There are a number of very practical and interesting circuits that make use of resistors.  In this Section we will examine several resistor circuits that are often found in practical electronic systems.  These include signal attenuators, binary ladders and bridge circuits.  They employ only resistors yet are found in one form or another at the work-bench of essentially every circuit designer/developer.
 
-h4(#chapter8-signal-attenuator). 8.1 - Signal Attenuators
+<a class="anchor" id="chapter8-signal-attenuator"></a>
+
+h4. 8.1 - Signal Attenuators
 
 While we are already familiar with the classic voltage divider, we will see that the '_attenuator_' circuit is a special kind of voltage divider.  The attenuator is a circuit, which when added into a signal path _always reduces_ the signal magnitude by a fixed known amount, for example by a factor of 2x or 10x (ie. to 1/2 or 1/10th of the original size).  But first we examine why the usual voltage divider is not this circuit.
 
@@ -80,7 +82,9 @@ The resultant attenuator circuit is depicted in "Figure 8.7":#figure8-7.
 p=(#figure8-7). !{width:60%}img/8/circuitsF8.7.jpg(Figure 8.7)!:img/8/circuitsF8.7.jpg
 _Figure 8.7   Attenuator with "k" attenuation factor = 2, and $R_S$ = 100 ohm_
 
-h4(#chapter8-ladder-networks). 8.2 - Ladder Networks
+<a class="anchor" id="chapter8-ladder-networks"></a>
+
+h4. 8.2 - Ladder Networks
 
 A ladder network is composed of a series of repeated sets of resistors.  "Figure 8.8a":#figure8-8a , 8b, and 8c illustrate such ladder networks, with 1, 2 and 3-stages respectively.
 
@@ -138,7 +142,9 @@ p=. $R_{eq}$ = $2R_1$
 
 This is a very simple closed-form answer to an infinite string of resistors, obtained by 'recursion'.
 
-h4(#chapter8-mesh-networks). 8.3 - Symmetric Mesh Networks
+<a class="anchor" id="chapter8-mesh-networks"></a>
+
+h4. 8.3 - Symmetric Mesh Networks
 
 Another form of resistive circuit employs structures that are physically symmetric around some 'axis' and form a mesh. "Figure 8.12":#figure8-12 depicts a single mesh.
 
@@ -166,7 +172,9 @@ The left-side equivalent resistance is calculated in just the same way and is al
 
 p=. $R_{B-B'}$ = $\frac{3}{2}R$
 
-h4(#chapter8-delta-wye). 8.4 - Transformations, 'Delta-Wye'  ($\Delta$-Y); Bridge Circuits
+<a class="anchor" id="chapter8-delta-wye"></a>
+
+h4. 8.4 - Transformations, 'Delta-Wye'  (<span>&Delta;</span>-Y); Bridge Circuits
 
 There are some circuits that we would like to understand, but include neither a series connection nor a parallel connection.  Such circuits seem not possible to reduce.  However, there is a technique, called _*transformation*_, which enables our reduction methods to be applied.  One common transformation is the 'delta-wye'.  It allows us to replace a group of resistors with a different group of resistors.  ESSENTIAL to the replacement is that the two _groups_ yield identical equivalent resistance values _as seen at the terminals of the group_.
 
@@ -339,5 +347,3 @@ p=. $R_{eq}$ = $\frac{R_1R_2}{R_3}$ + $\frac{(R_1 R_2)}{(R_1+R_2)}(\frac{(R_1+R_
 p=. _Eq'n 8-11  'Near-Balance' Equivalent Resistance of the Bridge Circuit_
 
 At balance, the equivalent resistance for our bridge circuit is just the scaled increased parallel resistance of $R_1$ and $R_2$ (as found before in subsection (8.4.2) without $R_3$) and with an added small correction term.  This added term with $R_3$ in the denominator tends toward zero as the cross resistance $R_3$ is increased to larger and larger values, consistent with Section 8.4.2.
-
-
