@@ -33,10 +33,11 @@ Now with the concept of a matched attenuator, "Figure 8.5":#figure8-5, this atte
 p=(#figure8-5). !{width:63%}img/8/circuitsF8.5.jpg(Figure 8.5)!:img/8/circuitsF8.5.jpg
 _Figure 8.5   Attenuator Added Between Source and Load_
 
+The need for this signal reduction occurs when some source is too large for the measurement and the magnitude must be reduced in order to be accurately recorded.  Hence if the signal is reduced by a known factor, $k$, then the measured value of the reduced signal strength can be scaled up by this $k$ factor to give the strength of the original signal.
 
 ** 8.1.2  The Signal Attenuator 'TEE' Circuit
 
-To accomplish this desired goal of a fix attenuation with a connected matched load, a symmetric “TEE” resistor circuit is used.  This is depicted in "Figure 8.6":#figure8-6.
+To accomplish this desired goal of a fix attenuation with a connected matched load, a symmetric "TEE" resistor circuit is used.  This is depicted in "Figure 8.6":#figure8-6.
 
 p=(#figure8-6). !{width:62%}img/8/circuitsF8.6.jpg(Figure 8.6)!:img/8/circuitsF8.6.jpg
 _Figure 8.6   Symmetric_ "TEE" _Attenuator Circuit of Resistors_
