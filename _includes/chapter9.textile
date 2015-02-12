@@ -15,3 +15,5 @@ At this time we will formally introduce an added constraint that is to apply to 
 p=. _(i) Definitions_
 
 Here we will define a ‘linear’ system as one that satisfies two properties:
+
+** 	(1) the _homogeneity property_,   where:   f(ax)=af(x) for all real a, and
