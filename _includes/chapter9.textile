@@ -13,3 +13,5 @@ h4(#chapter9-linearity). 9.1 - Linearity
 At this time we will formally introduce an added constraint that is to apply to all the elements we may use in circuits in this course.  This new constraint concerns an added property of circuits.  It is called _linearity_.  Here we mean linear in a 'systems' sense.  As we will see, this is more restrictive than the idea of a linear graph, which refers to any straight-line graph.  In our case for linear circuits we need to apply a more specific constraint, one that ensures there is a highly predictable output (also called a 'response') for an applied input (also sometimes called the 'drive').  We will use a very specific and concise definition for linearity.  Because of the power of the linearity constraint we will see that a circuit comprised of all linear circuit elements will also be linear.
 
 p=. _(i) Definitions_
+
+Here we will define a ‘linear’ system as one that satisfies two properties:
