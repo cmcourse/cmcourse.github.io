@@ -257,7 +257,7 @@ The total $R_{eq}$, under the constraint of a high value for $R_3$ thus becomes 
 
 p=. $R_{eq}$ $\cong$ $\frac{R_1R_2}{R_3}$ + $\frac{(R_1 + R_4)(R_2 + R_5)}{(R_1 + R_4) + (R_2 + R_5)}$
 
-This high value $R_3$ restriction corresponds to a 'small current' in $R_3$, and can occur in practice when the $R_3$ resistor might be a high effective input resistance of a measurement meter set to measure the voltage between the two bridge nodes 'B' and 'C' in "Figure 8.16":#figure8-16.
+This high value $R_3$ restriction corresponds to a 'small current' in $R_3$, and can occur in practice when the $R_3$ resistor might be a high effective input resistance of a measurement meter set to measure the voltage between the two bridge nodes 'B' and 'C' in "Figure 8.16":#figure8-16.  Notice the difference between this equivalent resistance with a large $R_3$, and one with No $R_3$ is the first term of $R_1R_2$ / $R_3$. As $R_3$ gets larger this added term gets smaller, and the equivalent resistance tends toward that of just two parallel sets of series resistors.
 
 ** _8.4.2 'At Balance' Bridge Circuit_
 
