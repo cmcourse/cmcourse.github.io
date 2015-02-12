@@ -333,7 +333,10 @@ p=. $R_{eq}$ = $\frac{R_1R_2}{R_3}$ + $\frac{(R_1 + R_4)(R_2 + (\frac{R_2}{R_1})
 
 and by simplification:
 
-p=. $R_{eq}$ = $\frac{R_1R_2}{R_3}$ + $\frac{(R_1 R_2)}{(R_1+R_2)}(\frac{(R_1+R_4)}{R_1)}$
+<h4>
+p=. $R_{eq}$ = $\frac{R_1R_2}{R_3}$ + $\frac{(R_1 R_2)}{(R_1+R_2)}(\frac{(R_1+R_4)}{R_1)}$ </h4>
+
+p=. _Eq'n 8-11  'Near-Balance' Equivalent Resistance of the Bridge Circuit_
 
 At balance, the equivalent resistance for our bridge circuit is just the scaled increased parallel resistance of $R_1$ and $R_2$ (as found before in subsection (8.4.2) without $R_3$) and with an added small correction term.  This added term with $R_3$ in the denominator tends toward zero as the cross resistance $R_3$ is increased to larger and larger values, consistent with Section 8.4.2.
 
