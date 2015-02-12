@@ -136,7 +136,7 @@ and thus
 
 p=. $R_{eq}$ = $2R_1$
 
-A simple answer to an infinite string of resistors, obtained by 'recursion'.
+This is a very simple closed-form answer to an infinite string of resistors, obtained by 'recursion'.
 
 h4(#chapter8-mesh-networks). 8.3 - Symmetric Mesh Networks
 
@@ -168,7 +168,7 @@ p=. $R_{B-B'}$ = $\frac{3}{2}R$
 
 h4(#chapter8-delta-wye). 8.4 - Transformations, 'Delta-Wye'  ($\Delta$-Y); Bridge Circuits
 
-There are some circuits that we would like to understand, but include neither a series connection nor a parallel connection.  Such circuits seem not possible to reduce.  However, there is a technique, called _transformation_, which enables our reduction methods to be applied.  One common transformation is the 'delta-wye'.  It allows us to replace a group of resistors with a different group of resistors.  ESSENTIAL to the replacement is that the two _groups_ yield identical equivalent resistance values _as seen at the terminals of the group_.
+There are some circuits that we would like to understand, but include neither a series connection nor a parallel connection.  Such circuits seem not possible to reduce.  However, there is a technique, called _*transformation*_, which enables our reduction methods to be applied.  One common transformation is the 'delta-wye'.  It allows us to replace a group of resistors with a different group of resistors.  ESSENTIAL to the replacement is that the two _groups_ yield identical equivalent resistance values _as seen at the terminals of the group_.
 
 Consider the circuit in "Figure 8.16":#figure8-16.  It is called a 'bridge' circuit.  This circuit contains 5 resistors, where resistor $R_3$ 'bridges' (connects) between the two sides of $R_1$ & $R_4$ and $R_2$ & $R_5$.  Note that there are no two resistors either in series or in parallel.  Hence it appears this circuit cannot be reduced to an equivalent single resistance, $R_{eq}$, at least not by simple series-parallel reductions.
 
@@ -194,7 +194,7 @@ Now consider _another_ circuit with the same 3 node-pairs, but a _different arra
 p=(#figure8-18). !{width:65%}img/8/circuitsF8.18.jpg(Figure 8.18)!:img/8/circuitsF8.18.jpg
 _Figure 8.18   Delta and Wye Equivalent Circuits_
 
-By proper calculation for the values of $R_A$, $R_B$, and $R_C$ these two circuits will look identical as seen from the same 3 nodes A, B, and C.  It is true that the 'Y' shape circuit has an extra 4th node, but it is internal to the circuit.  But that internal node is NOT connected to the outside of the circuit, so it is not 'accessible'.  Hence we need only make the equivalent resistances apply to nodes A, B, and C.  Thus, we calculate the equivalent resistances between nodes A-B as $R_{AB}$, between nodes A-C as $R_{AC}$ and between nodes B-C as $R_{BC}$.  We then equate the three equivalent resistances for the two circuits and solve for the relationships between resistors.
+By proper calculation for the values of $R_A$, $R_B$, and $R_C$ these two circuits will look identical as seen from the same 3 nodes A, B, and C.  It is true that the 'Y' shape circuit has an extra 4th node, but it is _internal_ to the circuit.  But that internal node is NOT connected to the outside of the circuit, so it is not 'accessible'.  Hence we need only make the equivalent resistances apply to nodes A, B, and C.  Thus, we calculate the equivalent resistances between nodes A-B as $R_{AB}$, between nodes A-C as $R_{AC}$ and between nodes B-C as $R_{BC}$.  We then equate the three equivalent resistances for the two circuits and solve for the relationships between resistors.
 
 p=. $R_{AB-open C}$ = $R_1$ || $(R_2 + R_3)$ = $R_A$ + $R_B$
 $R_{AC-open B}$ = $R_2$ || $(R_1 + R_3)$ = $R_A$ + $R_C$
@@ -230,6 +230,8 @@ Hence by parallel and series reductions, we arrive at the final value for the to
 
 <h4>
 p=. $R_{eq}$ = $R_A$ + $\frac{(R_B + R_4)(R_C + R_5)}{(R_B + R_4) + (R_C + R_5)}$ </h4>
+
+p=. _Eq'n 8-7  Equivalent Resistance of the 'Bridge' Circuit_
 
 The delta-wye transformation is an important 'tool', especially when bridge circuits are part of a circuit of interest.  While they take some math, this transformation enables us to understand how each of the different resistors contributes to the total effective resistance.  In this case, $R_A$ is a distinct additive term to the equivalent resistance.  And we know that $R_A$ is the simple product of $R_1$ and $R_2$, divided by the sum of $R_1$, $R_2$ and $R_3$.  So here the product of two resistors $R_1$ and $R_2$ can have a significant impact on the final $R_{eq}$.
 
