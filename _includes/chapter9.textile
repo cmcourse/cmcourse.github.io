@@ -1,0 +1,15 @@
+
+At this point we introduce a key concept that enables valuable simplifications for circuit analysis and design, it is called _*linearity*_.  Linearity represents an important new constraint associated with our circuit elements.  While much of the real world is in fact actually _non-linear_, fortunately, in many cases we can _consider real circuit elements to be linear_ and thereby greatly simplify our analysis and design of circuits.
+
+Lets consider our total physical world and then further confine ourselves to electrical circuits, so this new linearity restriction represents a sub-set of all circuits, "Figure 9.1":#figure9-1.
+
+p=(#figure9-1). !{width:40%}img/9/circuitsF9.1.jpg(Figure 9.1)!:img/9/circuitsF9.1.jpg
+_Figure 9.1  Linear Circuits is a Sub-Set, but Crucial Part of All Electrical Circuits_
+
+We will see in this Section exactly how linearity provides such a powerful opportunity for engineers, and especially circuit engineers.  Additionally, with linearity a major new solution method becomes possible, called _*superposition*_.  Complex problems can be greatly simplified with linearity.  And then finally in this Section we examine a new means to represent linear circuits in a highly 'compressed' format, achieved via _Thevenin_ and _Norton_ theorems.  With these theorems, circuits of hundreds, even thousands of elements will be compressed to just two elements.  Thus this Section brings very powerful methods that enable engineers to tackle immensely complex problems.
+
+h4(#chapter9-linearity). 9.1 - Linearity
+
+At this time we will formally introduce an added constraint that is to apply to all the elements we may use in circuits in this course.  This new constraint concerns an added property of circuits.  It is called _linearity_.  Here we mean linear in a 'systems' sense.  As we will see, this is more restrictive than the idea of a linear graph, which refers to any straight-line graph.  In our case for linear circuits we need to apply a more specific constraint, one that ensures there is a highly predictable output (also called a 'response') for an applied input (also sometimes called the 'drive').  We will use a very specific and concise definition for linearity.  Because of the power of the linearity constraint we will see that a circuit comprised of all linear circuit elements will also be linear.
+
+p=. _(i) Definitions_
