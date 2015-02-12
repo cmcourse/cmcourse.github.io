@@ -52,6 +52,10 @@ body {
   color: #716b7a;
   padding: 5px;
 }
+.sidenav > li > a {
+  display: block;
+  padding: 4px;
+}
 .sidebar .nav > .active > a, .sidebar .nav > .active:hover > a, .sidebar .nav > .active:focus > a {
   font-weight: bold;
   color: #000;
@@ -93,4 +97,10 @@ h4 {
   padding-bottom: 20px;
   margin-bottom: 100px;
   border-bottom: 3px solid #bbb;
+}
+a.anchor{
+  display: block;
+  position: relative;
+  top: -50px;
+  visibility: hidden;
 }

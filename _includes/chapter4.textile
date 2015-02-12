@@ -3,7 +3,9 @@ At this point we have determined that all circuits constrain two variables, volt
 
 How we actually solve for all the voltages and currents in a circuit is the topic of this section.  At first we look at a fully general method of solution, which is based on direct application of all constraints, but becomes awkward for large circuits.  Then we develop a very convenient, powerful and universal solution method, called the _node method_.  For completeness another solution method, called the mesh method is also presented.
 
-h4(#chapter4-general-soln). 4.1 - General Method of Solution
+<a class="anchor" id="chapter4-general-soln"></a>
+
+h4. 4.1 - General Method of Solution
 
 In general a circuit of N elements will involve 2N variables, the N voltages across each element and the N currents through each element.  For example, the circuit in "Figure 4.1":#figure4-1 has 4 elements connected in a single loop and hence a total of 8 variable values to be determined by the circuit analysis. The 2N variables are the 4 element-voltages,$V_1$, $V_2$, $V_3$, and $V_4$ (across each element), and the 4 individual element-currents of $i_1$, $i_2$, $i_3$, and $i_4$ (through each element), _keeping polarity consistent_.
 
@@ -28,7 +30,9 @@ Note the assignment of the element voltage polarity was arbitrary, BUT once the 
 
 These eight equations can be solved for the 8 element voltage and current values.  Finally these solution values can then be used to calculate additional values of interest such as power dissipated by an element or the total voltage across several elements.
 
-h4(#chapter4-example-5elements). 4.2 - Numerical Example, 5-Element Circuit
+<a class="anchor" id="chapter4-example-5elements"></a>
+
+h4. 4.2 - Numerical Example, 5-Element Circuit
 
 A 5-element circuit (4 nodes) is now considered with numerical values, "Figure 4.2":#figure4-2, where we already label all element voltage and element current values (_polarity consistent !!_).
 
@@ -56,7 +60,9 @@ Where all currents are in units of milliamps and resistances in kilohms.
 
 Thus we have 10 equations for the 10 unknowns, and with algebra they can be solved.  The 4th KCL equation at node n4 is redundant and hence not written since it equals the sum of the KCL equations at the other 3 nodes. And the 3rd  KVL equation around the 'outer loop' of elements $( -V_4 + V_1 + V_5 + V_3 = 0)$ is also redundant and hence not written since it is the same as the sum of the other two KVL loops.  There are always (N-1) KCL node equations, where N is the number of nodes, and (M-1) KVL loop equations, where M is the total number of loops (loop = 'mesh').
 
-h4(#chapter4-node-method). 4.3 - The 'Node Voltage Method'
+<a class="anchor" id="chapter4-node-method"></a>
+
+h4. 4.3 - The 'Node Voltage Method'
 
 Notice in the general solution method above, we calculated the element voltages and the element current all by one set of equations.  We now employ a simplification of the solution process by 'directly' writing a reduced set of equations, _written in terms of the unknown node voltages only_.  This solution method does not directly calculate element voltages.
 
@@ -187,8 +193,9 @@ Notice that the sum of the power dissipated in ALL 5 elements is 0 watts !!  Thi
 
 The node-voltage method is usually most convenient for hand calculations since it immediately solves for the node voltages. It is then straight-forward to calculate any specific quantity, such as an element voltage, current or power.  This makes a very favorable way to minimize the effort to determine just the quantity desired.
 
+<a class="anchor" id="chapter4-mesh-method"></a>
 
-h4(#chapter4-mesh-method). 4.4 - The 'Mesh Loop Method'
+h4. 4.4 - The 'Mesh Loop Method'
 
 Because the preceding node methods are most often the preferred methods of solution to understand circuits they will be the dominant method for our circuit studies.  However, it is worth noting for completeness that there is an alternate method of solution termed the _'mesh loop method'_.  [Also sometimes called the 'mesh' method.]
 
