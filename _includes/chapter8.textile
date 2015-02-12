@@ -42,13 +42,13 @@ To accomplish this desired goal of a fix attenuation with a connected matched lo
 p=(#figure8-6). !{width:62%}img/8/circuitsF8.6.jpg(Figure 8.6)!:img/8/circuitsF8.6.jpg
 _Figure 8.6   Symmetric_ "TEE" _Attenuator Circuit of Resistors_
 
-Notice there are two constraints: (1) to keep a 'matched' system, the equivalent resistance 'seen' by the source looking into the attenuator, $R_{eq-in}$, must be the value of matched resistance $R_S$.  And (2) the attenuation factor "k" is specified, where by definition:
+Notice there are three constraints: (1) to keep a 'matched' system, the equivalent resistance 'seen' by the source looking into the attenuator, $R_{eq-in}$, must equal the value of the source resistance $R_S$. (2) The Load resistor $R_L$ is set to match the source resistance $R_S$. And (3) the attenuation factor "k" is specified, where by definition:
 
 <h4>
 p=. $\frac{v_O}{v_i}$ = $\frac{1}{k}$ </h4>
 
 
-** 8.1.3  The Signal Attenuator 'Tee' Circuit Analysis
+** 8.1.3  The Signal Attenuator 'TEE' Circuit Analysis
 
 Now lets apply these constraints, for $R_{eq-in}$ = $R_S$, we have:
 
