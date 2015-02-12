@@ -334,7 +334,7 @@ p=. $R_{eq}$ = $\frac{R_1R_2}{R_3}$ + $\frac{(R_1 + R_4)(R_2 + (\frac{R_2}{R_1})
 and by simplification:
 
 <h4>
-p=. $R_{eq}$ = $\frac{R_1R_2}{R_3}$ + $\frac{(R_1 R_2)}{(R_1+R_2)}(\frac{(R_1+R_4)}{R_1)}$ </h4>
+p=. $R_{eq}$ = $\frac{R_1R_2}{R_3}$ + $\frac{(R_1 R_2)}{(R_1+R_2)}(\frac{(R_1+R_4)}{R_1})$ </h4>
 
 p=. _Eq'n 8-11  'Near-Balance' Equivalent Resistance of the Bridge Circuit_
 
