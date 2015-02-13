@@ -3,7 +3,7 @@ At this point we introduce a key concept that enables valuable simplifications f
 
 Lets consider our total physical world and then further confine ourselves to electrical circuits, so this new linearity restriction represents a sub-set of all circuits, "Figure 9.1":#figure9-1.
 
-p=(#figure9-1). !{width:40%}img/9/circuitsF9.1.jpg(Figure 9.1)!:img/9/circuitsF9.1.jpg
+p=(#figure9-1). !{width:50%}img/9/circuitsF9.1.jpg(Figure 9.1)!:img/9/circuitsF9.1.jpg
 _Figure 9.1  Linear Circuits is a Sub-Set, but Crucial Part of All Electrical Circuits_
 
 We will see in this Section exactly how linearity provides such a powerful opportunity for engineers, and especially circuit engineers.  Additionally, with linearity a major new solution method becomes possible, called _*superposition*_.  Complex problems can be greatly simplified with linearity.  And then finally in this Section we examine a new means to represent linear circuits in a highly 'compressed' format, achieved via _Thevenin_ and _Norton_ theorems.  With these theorems, circuits of hundreds, even thousands of elements will be compressed to just two elements.  Thus this Section brings very powerful methods that enable engineers to tackle immensely complex problems.
@@ -46,14 +46,65 @@ _Figure 9.2  Example Non-Linear i-v Characteristic_
 
 Both the fixed voltage source and the fixed current sources are also linear.  This is because when you double the size of the source voltage, $V_S$, the element voltage doubles.  Similarly for the fixed current source, if we double the size of the source current, $I_S$, then, the element current also doubles.
 
-A very important property of linearity is that a circuit comprised entirely of linear elements results in a complete circuit that is also linear.  This is because our conservation laws of KCL and KVL do not violate linearity.  To illustrate, consider the circuit of "Figure 9.3":#figure9-3.  Here we can calculate that the 10 volt voltage source causes a resistor current, IB, of ½ milliamp.
+A very important property of linearity is that a circuit comprised entirely of linear elements results in a complete circuit that is also linear.  This is because our conservation laws of KCL and KVL do not violate linearity.  To illustrate, consider the circuit of "Figure 9.3":#figure9-3.  Here we can calculate that the 10 volt voltage source causes a resistor current, $I_B$, of 1/2 milliamp.
  
 p=(#figure9-3). !{width:40%}img/9/circuitsF9.3.jpg(Figure 9.3)!:img/9/circuitsF9.3.jpg
 _Figure 9.3  Example Linear Circuit_
 
 If the voltage source in "Figure 9.3":#figure9-3 is changed to double value, 20 volts, then $I_B$ also is seen to double to 1mA.  And if the voltage source is reduced all the way to zero, the response, $I_B$, would be zero.  This circuit is comprised of linear elements and it yields a linear response with respect to the input sources.  This circuit is a linear system.
 
-h4(#chapter9-superposition). 9.1 - Superposition Method
+h4(#chapter9-superposition). 9.2 - Superposition Method
+
+When we have a linear system, we can apply a solution method called the _superposition method_.  Superposition fails if the system is NOT linear.  So linearity is a _necessary condition_ to be able to apply the superposition method.
+
+For the superposition method, consider we have a network of many linear resistors and multiple linear sources.  Furthermore, we draw this circuit by bringing all the sources to an ‘exterior’ (visible) part of the circuit.  This is illustrated in "Figure 9.4":#figure9-4.
+ 
+p=(#figure9-4). !{width:80%}img/9/circuitsF9.4.jpg(Figure 9.4)!:img/9/circuitsF9.4.jpg
+_Figure 9.4  Circuit of Linear Resistors and Linear Sources._
+
+In this illustration we have a circuit of 8 resistors, 4 voltage sources, and 2 current sources.  Although connected, the actual circuit node connections are not depicted because they are not needed for this discussion.  Also explicitly identified for this illustration are a voltage, $V_{R7}$, across resistor $R_7$; and a current, $I_{R3}$, in resistor $R_3$.
+
+We can write an expression for the voltage across resistor $R_7$ as:
+
+p=. $V_{R7}$ = $a_1 V_{S1} + a_2 V_{S2} + a_3 V_{S3} + a_4 V_{S4} + b_1 I_{S1} + b_2 I_{S2}$
+
+where, all the 'a' and 'b' values are fixed constants for the given circuit.  In other words, the voltage on resistor $R_7$, (and in fact on any resistor in the circuit or for any current in the circuit), is a sum of six terms, each a fixed constant times a source quantity.  These 'a' and 'b' constants are fixed and determined by the circuit connections, resistor values and which voltage or current is being calculated.  These constants _do not depend_ on the value of the source voltages, $V_{Sn}$,  or source currents, $I_{Sn}$.
+
+We could also write a corresponding equation for the current $i_{R3}$.  Indeed as well as for any voltage or any current in our circuit.  Thus, we will always find that any voltage or any current is calculated as a sum of terms with each source contributing some portion to the total sum of terms.
+
+Now we *take the HUGE leap*, one that is permitted explicitly because of the additivity property of linearity. Instead of having all sources ON at the same time, lets make a 'thought' experiment where we turn on ONLY ONE SOURCE AT A TIME, and ALL OTHER SOURCES ARE 'SET-TO-ZERO'.  Hence in the above case, when we have ONLY voltage source VS1 ON (the other 5 sources are set-to-zero), so the resistor $R_7$ voltage would be:
+
+p=. $V_{R7-1}$ = $a_1 V_{S1} + 0 + 0 + 0 + 0 + 0$  .....  so  .....  $V_{R7}$ = $a_1 V_{S1}$
+
+We see, because all other sources are set-to-zero, the only non-zero contribution is from a1VS1.  Similarly, for ONLY voltage source $V_{S2}$ ON, all other sources set-to-zero:
+
+p=. $V_R7-2}$ = $a_2 V_{S2}$
+
+and for ONLY voltage sources VS3 and VS4 ON individually, others set-to-zero:
+
+p=. $V_{R7-3}$ = 
+
+and for ONLY current sources IS1 and IS2 ON individually, others set-to-zero:
+
+p=. $V_{R7-5}$ =
+
+Notice when we add _all 6 of these individual calculations_ they yield exactly the same answer as if all sources were ON at the same time.  In other words, by activating one source at a time _with all other sources 'set-to-zero'_, then the summation of these individual responses, yields the response of the entire circuit with all sources ON.
+
+We have taken a complex multi-source problem and reduced it to the summation of single-source problems.  This is called the SUPERPOSITION METHOD.
+
+** 9.2.1 Example #1: Solution by Superposition Method
+
+Consider the circuit of "Figure 9.5":#figure9-5.  It has two voltage sources and 3 resistors and we seek to calculate the output voltage Vout.
+ 
+p=(#figure9-5). !{width:50%}img/9/circuitsF9.5.jpg(Figure 9.5)!:img/9/circuitsF9.5.jpg
+_Figure 9.5  Example Two-Source Circuit_
+
+This is a linear circuit; hence we can apply the method of superposition.  We make two separate circuits: one with 8 volt ON and 12 volt SET-TO-ZERO; and the other with 12 volt ON and 8 volt SET-TO-ZERO, as depicted in "Figure 9.6":#figure9-6.
+ 
+p=(#figure9-6). !{width:50%}img/9/circuitsF9.6.jpg(Figure 9.6)!:img/9/circuitsF9.6.jpg
+(1) 8volt Active, 12 volt set-to-zero ........................... (2)  12 volt active, 8 volt set-to-zero
+_Figure 9.6  Separate Circuits, One for Each Source Active, other Source 'Set-To-Zero'_
+
 
 
 
