@@ -25,3 +25,35 @@ In words, these two properties mean:
 ## If we apply double the input, then the response must also double. Notice when input x is zero, then output f(x) must also be zero.
 ## The response for two simultaneous inputs applied at the same time is the same result as for the two inputs applied separately and their individual responses added together.  The additivity property is often in circuits referred to as superposition.
 
+** 9.1.1 Implications and Understandiing
+
+A linear circuit element is one where the current-voltage relation for that element is restricted to being linear in the above definition.
+
+This linearity is DIFFERENT from simple algebra polynomials, which refer to *any* straight line as 'linear'.  For example, y= mx+b.  However, for the discussion of a linear operation, then a typical straight line *does NOT satisfy our definition of linearity* because a non-zero constant 'b' means when we double x, we do not double y.
+
+All three of *our circuit elements* discussed so far (resistors, fixed voltage, and fixed current sources) *are 'linear' elements*. For example with the resistor:
+
+p=. $(v_{n1} - v_{n2}) - i_{R}R$ = 0
+
+So if the resistor element voltage, ($v_{n1}-v_{n2}), is doubled then the current $i_R$ must also double, since $R$ is a constant, which does not change with voltage or current.  As an example of a non-linear circuit element, if the resistance $R$ *did change with voltage*, then the element would NOT be linear.  For example, suppose we had an element where the 'resistance' increased with current, $R = k iR$.  Then the constraint equation would become:
+
+p=. $(v_{n1} - v_{n2}) - i_{R}(kR)$ = $(v_{n1} - v_{n2})$-$ki_R^2$ = 0
+
+Now if the element voltage (vn1-vn2) doubled, the current iR would NOT double, due to the ‘square’ term.  This fictitious element is NOT linear.  "Figure 9.2":#figure9-2 shows the i-v characteristic for this type of non-linearity.  Notice the graph is not a straight line, it is non-linear.  In this course all elements we use are linear.
+ 
+p=(#figure9-2). !{width:40%}img/9/circuitsF9.2.jpg(Figure 9.2)!:img/9/circuitsF9.2.jpg
+_Figure 9.2  Example Non-Linear i-v Characteristic_
+
+Both the fixed voltage source and the fixed current sources are also linear.  This is because when you double the size of the source voltage, $V_S$, the element voltage doubles.  Similarly for the fixed current source, if we double the size of the source current, $I_S$, then, the element current also doubles.
+
+A very important property of linearity is that a circuit comprised entirely of linear elements results in a complete circuit that is also linear.  This is because our conservation laws of KCL and KVL do not violate linearity.  To illustrate, consider the circuit of "Figure 9.3":#figure9-3.  Here we can calculate that the 10 volt voltage source causes a resistor current, IB, of ½ milliamp.
+ 
+p=(#figure9-3). !{width:40%}img/9/circuitsF9.3.jpg(Figure 9.3)!:img/9/circuitsF9.3.jpg
+_Figure 9.3  Example Linear Circuit_
+
+If the voltage source in "Figure 9.3":#figure9-3 is changed to double value, 20 volts, then $I_B$ also is seen to double to 1mA.  And if the voltage source is reduced all the way to zero, the response, $I_B$, would be zero.  This circuit is comprised of linear elements and it yields a linear response with respect to the input sources.  This circuit is a linear system.
+
+h4(#chapter9-superposition). 9.1 - Superposition Method
+
+
+
