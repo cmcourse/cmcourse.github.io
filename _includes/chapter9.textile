@@ -59,7 +59,7 @@ When we have a linear system, we can apply a solution method called the _superpo
 
 For the superposition method, consider we have a network of many linear resistors and multiple linear sources.  Furthermore, we draw this circuit by bringing all the sources to an ‘exterior’ (visible) part of the circuit.  This is illustrated in "Figure 9.4":#figure9-4.
  
-p=(#figure9-4). !{width:80%}img/9/circuitsF9.4.jpg(Figure 9.4)!:img/9/circuitsF9.4.jpg
+p=(#figure9-4). !{width:65%}img/9/circuitsF9.4.jpg(Figure 9.4)!:img/9/circuitsF9.4.jpg
 _Figure 9.4  Circuit of Linear Resistors and Linear Sources._
 
 In this illustration we have a circuit of 8 resistors, 4 voltage sources, and 2 current sources.  Although connected, the actual circuit node connections are not depicted because they are not needed for this discussion.  Also explicitly identified for this illustration are a voltage, $V_{R7}$, across resistor $R_7$; and a current, $I_{R3}$, in resistor $R_3$.
