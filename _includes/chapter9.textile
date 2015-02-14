@@ -105,6 +105,169 @@ p=(#figure9-6). !{width:50%}img/9/circuitsF9.6.jpg(Figure 9.6)!:img/9/circuitsF9
 (1) 8volt Active, 12 volt set-to-zero ........................... (2)  12 volt active, 8 volt set-to-zero
 _Figure 9.6  Separate Circuits, One for Each Source Active, other Source 'Set-To-Zero'_
 
+These two sub-problems can be solved by the method of reduction and voltage divider to yield values for the two sub-problem output voltages: $V_{out1}$ and $V_{out2}$.
 
+p=. $V_{out-1}$ = $(\frac{3}{3+3})8$ = 4 volt  .....  and  ..... $V_{out-2}$ = $(\frac{2}{6+2})12$ = 3 volt
 
+And hence by superposition the total output voltage, $V_{out}$, is the sum of the two sub-problems:
 
+p=. $V_{out}$ = $V_{out-1} + V_{out-2}$ = 4 + 3 = 7 volts
+
+While this is not a complicated problem it does illustrate the process of solution by the superposition method.  An additional benefit of the obtaining the output for each source separately is that we also get important understanding about how the circuit works.  For example in this case, we can see that the smaller 8 volt source actually contributes more (4 volts) to the output than contributed by the larger 12 volt source (3 volts).
+
+** 9.2.2 Example #2, Solution by Superposition Method with Current Source
+
+This example circuit employs one voltage source and one current source with 2 resistors, "Figure 9.7":#figure9-7.
+ 
+p=(#figure9-7). !{width:55%}img/9/circuitsF9.7.jpg(Figure 9.7)!:img/9/circuitsF9.7.jpg
+_Figure 9.7  Example #2 Linear Circuit_
+
+We will again apply the superposition method, BUT BE CAREFUL!  Recall when we turn a source OFF, we 'set-to-zero' the source value.  Hence when OFF, the '*set-to-zero*' requires we set the _value_ of the source to zero.  WE DO NOT REMOVE THE SOURCE.
+
+This means a _*voltage source* that is 'set-to-zero' (OFF) makes a *short-circuit*, zero_ volts between it's two terminals.  To see why this is a short-circuit, the voltage source constraint requires the voltage across the source to be fixed at _the value_ of the source (_zero when OFF_), but of course by definition any current can flow through this source, hence it acts as a ‘wire’ and is a SHORT-CIRCUIT between its’ two terminals.
+
+In contrast, a _*current source* that is 'set-to-zero' (OFF) makes an *open-circuit*_, zero amperes between its’ two terminals.  To see why this is an open-circuit, the current source constraint requires the current through the source to be fixed at the value of the source (_zero when OFF_), but by definition of a current source any voltage can be across this source, hence it is an OPEN-CIRCUIT between its’ two terminals.  These two cases are depicted in "Figure 9.8":#figure9-8.
+ 
+p=(#figure9-8). !{width:55%}img/9/circuitsF9.8.jpg(Figure 9.8)!:img/9/circuitsF9.8.jpg
+_Figure 9.8  Voltage Source 'Set-To-Zero' and Current Source 'Set-To-Zero'_
+
+With this specific method to 'set-to-zero' our sources, we can now proceed to prepare the two sub-circuits, "Figure 9.9":#figure9-9 for the 2nd example of "Figure 9.7":#figure9-7.
+ 
+p=(#figure9-9). !{width:50%}img/9/circuitsF9.9.jpg(Figure 9.9)!:img/9/circuitsF9.9.jpg
+(1) 6 volt Active, 4 mA set-to-zero ........................... (2)  4 mA active, 6 volt set-to-zero
+_Figure 9.9  Example #2, Separate Circuits, One for Each Source Active,_
+_with the other Source 'Set-To-Zero'_
+
+These two sub-problems can be solved by the method of reduction, voltage divider, and ohm's law to yield values for the two sub-problem output voltages: $V_{out1}$ and $V_{out2}$.
+
+p=. $V_{out-1}$ = ($\frac{4}{4+4})$6 = 3 volts  .....  and  .....  $V_{out-2}$ = ($2k$) 4mA = 8 volts
+
+And hence by superposition the total output voltage, $V_{out}$, is the sum of the two sub-problems:
+
+p=. $V_{out}$ = $V_{out-1}$ + $V_{out-2}$ = 3 + 8 = 11 volts
+
+Notice that the current source has been replaced by an _open-circuit_ when it is 'set-to-zero', and the voltage source has been replaced by a _short-circuit_ when it is 'set-to-zero'.  This is a very important distinction to remember when applying the superposition method to any problem.
+
+Again this example #2 is not a complicated problem, but it does illustrate the _process_ of solution by the superposition method with voltage and current sources.  And again by obtaining the output for each source separately we get important understanding about how the circuit works.  In this case, we can see that the current source contributes much more (8 volts) to the output than contributed by the 6 volt voltage source (3 volts).
+
+It often occurs that in circuit evaluations we need to know not only the final value, but also what contributes by how much to that value.  We see that the superposition method is a valuable tool, not only to make calculations, but also to bring understanding as to how the circuit functions.
+
+h4(#chapter9-thevenin). 9.3 - Thevenin's Theorem
+
+We now develop perhaps the most valuable 'tool' in all electric circuit analysis and design.  It is called _Thevenin's Theorem_, and basically it allows us to replace an entire complex circuit, perhaps with many resistors and many sources, with a very simple circuit with just two elements.  This is the ultimate in 'compression'.  We can even go from thousands of elements to just 2 elements.  This is an enormous reduction in complexity and enables great insight about complex systems.  It is an amazing abstraction.  It seems no other field has this feature.  Certainly for the case of software one cannot typically expect to be able to take 1000s of lines of code and reduce them to just 2 lines, and keep all output information.
+
+The key constraint that enables Thevenin's Theorem to work in circuits is that the CIRCUIT *MUST BE LINEAR*.  So here is another case of where the constraint of linearity allows us to be able to simplify analysis and understand the operation of circuits.  Lets see the concept of Thevenin's Theorem.
+
+We consider a circuit comprised of any combination of resistors and sources, and we 'observe' this circuit from 2-terminals (here shown as A-A') connected to any 2 nodes in the circuit.  This arrangement is depicted in "Figure 9.10":#figure9-10.
+ 
+p=(#figure9-10). !{width:55%}img/9/circuitsF9.10.jpg(Figure 9.10)!:img/9/circuitsF9.10.jpg
+_Figure 9.10  Any Circuit with a Single Terminal-Pair, A-A'_
+
+Because this is a linear circuit (_with sources_), we know that it must always have a straight-line i-v relationship, at terminals A-A', as depicted in "Figure 9.11":#figure9-11.
+ 
+p=(#figure9-11). !{width:30%}img/9/circuitsF9.11.jpg(Figure 9.11)!:img/9/circuitsF9.11.jpg
+_Figure 9.11  Linear Circuit with Sources, i-v Relationship at a Terminal-Pair_
+ 
+Furthermore, because it is a linear circuit, we know that if _all independent_ sources are set-to-zero, then the i-v line MUST go through zero, there cannot be an 'offset'.  There cannot be a non-zero output when the input is zero.  Recall from linearity if the input is zero then the response must be zero too.  Thus, when all inputs are set-to-zero, in "Figure 9.11":#figure9-11 the line must shift and go through the origin, (0,0).  The slope of this line does not change when the voltage is 'set-to-zero', and remains constant with an equivalent resistance, $R_{eq}$, at the terminals A-A', when all independent source(s) are 'set-to-zero'.
+
+p=. _slope_ = $frac{1}{R_{eq}}$
+
+Furthermore, the 'intercept' value on the voltage-axis, is where the current is zero, and hence is the 'open-circuit' voltage, $V_{OC}$, for the circuit.
+
+p=. _intercept_ = $V_{OC}$
+
+Here is _*the great insight*_ !  Another circuit _with just two elements_ can produce _*exactly the same line*_ as in "Figure 9.11":#figure9-11, this other circuit, the Thevenin Circuit, is depicted in "Figure 9.12":#figure9-12; and it produces the i-v relation as seen in "Figure 9.13":#figure9-13.
+
+p=(#figure9-12). !{width:30%}img/9/circuitsF9.12.jpg(Figure 9.12)!:img/9/circuitsF9.12.jpg
+_Figure 9.12  Thevenin Circuit, Two Elements_
+
+p=(#figure9-13). !{width:30%}img/9/circuitsF9.13.jpg(Figure 9.13)!:img/9/circuitsF9.13.jpg
+_Figure 9.13  Current-Voltage Relation for Thevenin Circuit_
+
+Notice this i-v line becomes _EXACTLY THE SAME_ as the i-v line in "Figure 9.11":#figure9-11 when Vth and Rth have the following specific values.  To be identical i-v relations, we require:
+
+p=. $V_{th}$ = $V_{OC}$
+
+and
+
+p=. $R_{th}$ = $R_{eq}$ (with independent sources set-to-zero)
+
+Notice for the Thevenin circuit, "Figure 9.12":#figure9-12, when $i$ = 0, there is no voltage across $R_{th}$, and hence $V = V_{th}$, as required.  Thevenin's Theorem simply states what we have just developed, namely: any linear circuit with two terminals can be replaced by the Thevenin equivalent circuit of "Figure 9.12":#figure9-12, where $V_{th}$ = $V_{OC}$ and $R_{th}$ = $R_{eq}$ (with all independent sources 'set to zero').
+
+** 9.3.1 Example Thevenin Equivalent Circuit
+
+Consider the circuit in "Figure 9.14":#figure9-14.
+
+p=(#figure9-14). !{width:30%}img/9/circuitsF9.14.jpg(Figure 9.14)!:img/9/circuitsF9.14.jpg
+_Figure 9.14  Circuit with Terminal-Pair A-A'_
+
+The open-circuit condition requires there be NO current at the terminals A-A', and hence there is no current in the 1 ohm resistor.  The open-circuit voltage is thus just the voltage across the 6 ohm resistor.  And this voltage is calculated by the voltage-divider relation.  Hence:
+
+p=. $V_{out-OpenCircuit}$ = $V_{th}$ = $(\frac{6}{6+3})9$ = 6 volt
+
+The Thevenin equivalent resistance $R_{th}$ is found by setting the source-to-zero, hence the equivalent circuit becomes:
+
+p=(#figure9-15). !{width:50%}img/9/circuitsF9.15.jpg(Figure 9.15)!:img/9/circuitsF9.15.jpg
+_Figure 9.15  Equivalent Circuit for Calculation of $R_{th}$
+
+Notice the independent voltage source becomes a short-circuit.  By simple reduction the value of $R_{th}$ is:
+
+p=. $R_{th}$ = $(\frac{(6) (3)}{6+3}) + 1 = 3 ohms
+
+The Thevenin equivalent circuit is thus comprised of $V_{th}$ = 6 volt and $R_{th}$ = 3 ohm, as depicted in "Figure 9.16":#figure9-16.
+
+p=(#figure9-16). !{width:30%}img/9/circuitsF9.16.jpg(Figure 9.16)!:img/9/circuitsF9.16.jpg
+_Figure 9.16  Thevenin Equivalent for Circuit of "Figure 9.14":#figure9-14_
+
+h4(#chapter9-norton). 9.4 - Norton's Theorem
+
+An alternate two element circuit that can produce the same linear i-v characteristic of "Figure 9.11":#figure9-11 is comprised of a current source and a resistance.  This circuit is called the _Norton Equivalent_ and is shown in "Figure 9.17":#figure9-17.
+
+p=(#figure9-17). !{width:30%}img/9/circuitsF9.17.jpg(Figure 9.17)!:img/9/circuitsF9.17.jpg
+_Figure 9.17  Norton Equivalent Circuit_
+
+The source is now implemented as a current source, IN, and the resistance is the same $R_{th}$ as in the Thevenin equivalent, but here $R_{th}$ is in parallel with the current source.  Notice that when the current source is 'set-to-zero', it is an open-circuit, and hence the equivalent resistance seen from the terminal-pair is $R_{th}$.
+
+When the Norton equivalent is open circuit, all the current from the current source goes through $R_{th}$.  Hence the open-circuit voltage is the product:
+
+p=. $V_{OC}$ = $I_N$ $R_{th}$
+
+The relationship between the i-v characteristics and the Norton and Thevenin equivalent circuit values is depicted in "Figure 9.18":#figure9-18.
+
+p=(#figure9-18). !{width:30%}img/9/circuitsF9.18.jpg(Figure 9.18)!:img/9/circuitsF9.18.jpg
+_Figure 9.18  Norton and Thevenin Equivalent Circuit Value Relations_
+
+Also when the output terminals have an applied short-circuit, then all the current, $I_N$, must go through the short.  In other words the Norton current source is the value of current , $-i$, when there is zero volts across the output terminal pair, this is depicted in "Figure 9.19":#figure9-19.
+
+p=(#figure9-19). !{width:30%}img/9/circuitsF9.19.jpg(Figure 9.19)!:img/9/circuitsF9.19.jpg
+_Figure 9.19  Short-Circuit Determination of Norton Current Source_
+
+where,
+
+p=. $-i$ = $i_{SC}$ = $I_N$
+
+** 9.4.1 Example Norton Equivalent Circuit
+
+Consider the circuit of "Figure 9.14":#figure9-14, we calculate the Norton equivalent resistance, Rth, the same as for the Thevenin equivalent, hence "Figure 9.15":#figure9-15 is used to arrive at the same value of 3 ohms.  However, the Norton current source value can be found from the relationship to Thevenin, since: 
+
+p=. $I_N$ = $\frac{V_{OC}}{R_{th}}$
+
+and so in this example: $I_N$ = 6v/3ohm = 2Amp. "Figure 9.20":#figure9-20 is the complete Norton equivalent circuit.
+
+p=(#figure9-20). !{width:30%}img/9/circuitsF9.20.jpg(Figure 9.20)!:img/9/circuitsF9.20.jpg
+_Figure 9.20  Norton Equivalent of Example Problem_
+
+An alternate way to determine the Norton current source value, $I_N$, is to calculate the short circuit current, and thus in this case by calculating the current in the 1 ohm resistor of "Figure 9.14":#figure9-14 with the terminals shorted, "Figure 9.21":#figure9-21:
+
+p=(#figure9-21). !{width:60%}img/9/circuitsF9.21.jpg(Figure 9.21)!:img/9/circuitsF9.21.jpg
+_Figure 9.21  Example Circuit, Terminals Short-Circuited, to Calculate Norton Current $I_N$_
+
+Hence we get
+
+p=. $I_N$ = $i_{SC}$ = $(\frac{9}{3+\frac{6}{7}})$ $\frac{6}{6+1}$ = $\frac{7}{3}$ $\frac{6}{7}$ = 2 amp.
+
+The Norton current value of 2 amps is the same as that calculated by the equivalence above:
+
+p=. $I_N$ = $\frac{V_{OC}{R_{th}}}$.
+
+This demonstrates the consistency of the Thevenin and Norton equivalent circuits.  Either can be used to fully represent any linear circuit.  The choice of which one to use is only a matter of convenience.
