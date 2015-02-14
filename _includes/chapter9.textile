@@ -133,7 +133,7 @@ _Figure 9.8  Voltage Source 'Set-To-Zero' and Current Source 'Set-To-Zero'_
 
 With this specific method to 'set-to-zero' our sources, we can now proceed to prepare the two sub-circuits, "Figure 9.9":#figure9-9 for the 2nd example of "Figure 9.7":#figure9-7.
  
-p=(#figure9-9). !{width:80%}img/9/circuitsF9.9.jpg(Figure 9.9)!:img/9/circuitsF9.9.jpg
+p=(#figure9-9). !{width:85%}img/9/circuitsF9.9.jpg(Figure 9.9)!:img/9/circuitsF9.9.jpg
 (1) 6 volt Active, 4 mA set-to-zero ........................... (2)  4 mA active, 6 volt set-to-zero
 _Figure 9.9  Example #2, Separate Circuits, One for Each Source Active,_
 _with the other Source 'Set-To-Zero'_
