@@ -35,9 +35,9 @@ All three of *our circuit elements* discussed so far (resistors, fixed voltage, 
 
 p=. $(v_{n1} - v_{n2}) - i_{R}R$ = 0
 
-So if the resistor element voltage, $(v_{n1}-v_{n2})$, is doubled then the current $i_R$ must also double, since $R$ is a constant, which does not change with voltage or current.  As an example of a non-linear circuit element, if the resistance $R$ *did change with voltage*, then the element would NOT be linear.  For example, suppose we had an element where the 'resistance' increased with current, $R = k iR$.  Then the constraint equation would become:
+So if the resistor element voltage, $(v_{n1}-v_{n2})$, is doubled then the current $i_R$ must also double, since $R$ is a constant, which does not change with voltage or current.  As an example of a non-linear circuit element, *if* the resistance $R$ *did change with voltage*, then the element would NOT be linear.  For example, suppose we had an element where the 'resistance' increased with current, $R = k i_R$.  Then the constraint equation would become:
 
-p=. $(v_{n1} - v_{n2}) - i_{R}(kR)$ = $(v_{n1} - v_{n2})$-$ki_R^2$ = 0
+p=. $(v_{n1} - v_{n2}) - i_{R}(ki_R)$ = $(v_{n1} - v_{n2})$-$ki_R^2$ = 0
 
 Now if the element voltage $(v_{n1}-v_{n2})$ doubled, the current $i_R$ would NOT double, due to the 'square' term.  This fictitious element is NOT linear.  "Figure 9.2":#figure9-2 shows the i-v characteristic for this type of non-linearity.  Notice the graph is not a straight line, it is non-linear.  In this course all elements we use are linear.
  
