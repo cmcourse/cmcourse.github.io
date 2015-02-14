@@ -74,7 +74,7 @@ We could also write a corresponding equation for the current $i_{R3}$.  Indeed a
 
 Now we *take the HUGE leap*, one that is permitted explicitly because of the additivity property of linearity. Instead of having all sources ON at the same time, lets make a 'thought' experiment where we turn on ONLY ONE SOURCE AT A TIME, and ALL OTHER SOURCES ARE 'SET-TO-ZERO'.  Hence in the above case, when we have ONLY voltage source VS1 ON (the other 5 sources are set-to-zero), so the resistor $R_7$ voltage would be:
 
-p=. $V_{R7-1}$ = $a_1 V_{S1} + 0 + 0 + 0 + 0 + 0$  .....  so  .....  $V_{R7}$ = $a_1 V_{S1}$
+p=. $V_{R7-1}$ = $a_1 V_{S1} + 0 + 0 + 0 + 0 + 0$  .....  so  .....  $V_{R7-1}$ = $a_1 V_{S1}$
 
 We see, because all other sources are set-to-zero, the only non-zero contribution is from $a_1 V_{S1}$.  Similarly, for ONLY voltage source $V_{S2}$ ON, all other sources set-to-zero:
 
@@ -101,7 +101,7 @@ _Figure 9.5  Example Two-Source Circuit_
 
 This is a linear circuit; hence we can apply the method of superposition.  We make two separate circuits: one with 8 volt ON and 12 volt SET-TO-ZERO; and the other with 12 volt ON and 8 volt SET-TO-ZERO, as depicted in "Figure 9.6":#figure9-6.
  
-p=(#figure9-6). !{width:90%}img/9/circuitsF9.6.jpg(Figure 9.6)!:img/9/circuitsF9.6.jpg
+p=(#figure9-6). !{width:95%}img/9/circuitsF9.6.jpg(Figure 9.6)!:img/9/circuitsF9.6.jpg
 (1) 8volt Active, 12 volt set-to-zero ........................... (2)  12 volt active, 8 volt set-to-zero
 _Figure 9.6  Separate Circuits, One for Each Source Active, other Source 'Set-To-Zero'_
 
