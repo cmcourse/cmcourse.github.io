@@ -3,7 +3,7 @@ At this point we introduce a key concept that enables valuable simplifications f
 
 Lets consider our total physical world and then further confine ourselves to electrical circuits, so this new linearity restriction represents a sub-set of all circuits, "Figure 9.1":#figure9-1.
 
-p=(#figure9-1). !{width:50%}img/9/circuitsF9.1.jpg(Figure 9.1)!:img/9/circuitsF9.1.jpg
+p=(#figure9-1). !{width:60%}img/9/circuitsF9.1.jpg(Figure 9.1)!:img/9/circuitsF9.1.jpg
 _Figure 9.1  Linear Circuits is a Sub-Set, but Crucial Part of All Electrical Circuits_
 
 We will see in this Section exactly how linearity provides such a powerful opportunity for engineers, and especially circuit engineers.  Additionally, with linearity a major new solution method becomes possible, called _*superposition*_.  Complex problems can be greatly simplified with linearity.  And then finally in this Section we examine a new means to represent linear circuits in a highly 'compressed' format, achieved via _Thevenin_ and _Norton_ theorems.  With these theorems, circuits of hundreds, even thousands of elements will be compressed to just two elements.  Thus this Section brings very powerful methods that enable engineers to tackle immensely complex problems.
@@ -35,11 +35,11 @@ All three of *our circuit elements* discussed so far (resistors, fixed voltage, 
 
 p=. $(v_{n1} - v_{n2}) - i_{R}R$ = 0
 
-So if the resistor element voltage, ($v_{n1}-v_{n2}), is doubled then the current $i_R$ must also double, since $R$ is a constant, which does not change with voltage or current.  As an example of a non-linear circuit element, if the resistance $R$ *did change with voltage*, then the element would NOT be linear.  For example, suppose we had an element where the 'resistance' increased with current, $R = k iR$.  Then the constraint equation would become:
+So if the resistor element voltage, $(v_{n1}-v_{n2})$, is doubled then the current $i_R$ must also double, since $R$ is a constant, which does not change with voltage or current.  As an example of a non-linear circuit element, if the resistance $R$ *did change with voltage*, then the element would NOT be linear.  For example, suppose we had an element where the 'resistance' increased with current, $R = k iR$.  Then the constraint equation would become:
 
 p=. $(v_{n1} - v_{n2}) - i_{R}(kR)$ = $(v_{n1} - v_{n2})$-$ki_R^2$ = 0
 
-Now if the element voltage (vn1-vn2) doubled, the current iR would NOT double, due to the ‘square’ term.  This fictitious element is NOT linear.  "Figure 9.2":#figure9-2 shows the i-v characteristic for this type of non-linearity.  Notice the graph is not a straight line, it is non-linear.  In this course all elements we use are linear.
+Now if the element voltage $(v_{n1}-v_{n2})$ doubled, the current $i_R$ would NOT double, due to the 'square' term.  This fictitious element is NOT linear.  "Figure 9.2":#figure9-2 shows the i-v characteristic for this type of non-linearity.  Notice the graph is not a straight line, it is non-linear.  In this course all elements we use are linear.
  
 p=(#figure9-2). !{width:40%}img/9/circuitsF9.2.jpg(Figure 9.2)!:img/9/circuitsF9.2.jpg
 _Figure 9.2  Example Non-Linear i-v Characteristic_
@@ -59,7 +59,7 @@ When we have a linear system, we can apply a solution method called the _superpo
 
 For the superposition method, consider we have a network of many linear resistors and multiple linear sources.  Furthermore, we draw this circuit by bringing all the sources to an ‘exterior’ (visible) part of the circuit.  This is illustrated in "Figure 9.4":#figure9-4.
  
-p=(#figure9-4). !{width:65%}img/9/circuitsF9.4.jpg(Figure 9.4)!:img/9/circuitsF9.4.jpg
+p=(#figure9-4). !{width:60%}img/9/circuitsF9.4.jpg(Figure 9.4)!:img/9/circuitsF9.4.jpg
 _Figure 9.4  Circuit of Linear Resistors and Linear Sources._
 
 In this illustration we have a circuit of 8 resistors, 4 voltage sources, and 2 current sources.  Although connected, the actual circuit node connections are not depicted because they are not needed for this discussion.  Also explicitly identified for this illustration are a voltage, $V_{R7}$, across resistor $R_7$; and a current, $I_{R3}$, in resistor $R_3$.
@@ -78,15 +78,15 @@ p=. $V_{R7-1}$ = $a_1 V_{S1} + 0 + 0 + 0 + 0 + 0$  .....  so  .....  $V_{R7}$ = 
 
 We see, because all other sources are set-to-zero, the only non-zero contribution is from a1VS1.  Similarly, for ONLY voltage source $V_{S2}$ ON, all other sources set-to-zero:
 
-p=. $V_R7-2}$ = $a_2 V_{S2}$
+p=. $V_{R7-2}$ = $a_2 V_{S2}$
 
-and for ONLY voltage sources VS3 and VS4 ON individually, others set-to-zero:
+and for ONLY voltage sources $V_{S3}$ and $V_{S4}$ ON individually, others set-to-zero:
 
-p=. $V_{R7-3}$ = 
+p=. $V_{R7-3}$ = $a_3 V_{S3}$ _and_ $V_{R7-4}$ =$a_4 V_{S4}$
 
-and for ONLY current sources IS1 and IS2 ON individually, others set-to-zero:
+and for ONLY current sources $I_{S1}$ and $I_{S2}$ ON individually, others set-to-zero:
 
-p=. $V_{R7-5}$ =
+p=. $V_{R7-5}$ = $b_1 I_{S1}$ _and_ $V_{R7-6}$ = $b_2 V_{S2}$
 
 Notice when we add _all 6 of these individual calculations_ they yield exactly the same answer as if all sources were ON at the same time.  In other words, by activating one source at a time _with all other sources 'set-to-zero'_, then the summation of these individual responses, yields the response of the entire circuit with all sources ON.
 
@@ -101,7 +101,7 @@ _Figure 9.5  Example Two-Source Circuit_
 
 This is a linear circuit; hence we can apply the method of superposition.  We make two separate circuits: one with 8 volt ON and 12 volt SET-TO-ZERO; and the other with 12 volt ON and 8 volt SET-TO-ZERO, as depicted in "Figure 9.6":#figure9-6.
  
-p=(#figure9-6). !{width:50%}img/9/circuitsF9.6.jpg(Figure 9.6)!:img/9/circuitsF9.6.jpg
+p=(#figure9-6). !{width:80%}img/9/circuitsF9.6.jpg(Figure 9.6)!:img/9/circuitsF9.6.jpg
 (1) 8volt Active, 12 volt set-to-zero ........................... (2)  12 volt active, 8 volt set-to-zero
 _Figure 9.6  Separate Circuits, One for Each Source Active, other Source 'Set-To-Zero'_
 
@@ -128,12 +128,12 @@ This means a _*voltage source* that is 'set-to-zero' (OFF) makes a *short-circui
 
 In contrast, a _*current source* that is 'set-to-zero' (OFF) makes an *open-circuit*_, zero amperes between its’ two terminals.  To see why this is an open-circuit, the current source constraint requires the current through the source to be fixed at the value of the source (_zero when OFF_), but by definition of a current source any voltage can be across this source, hence it is an OPEN-CIRCUIT between its’ two terminals.  These two cases are depicted in "Figure 9.8":#figure9-8.
  
-p=(#figure9-8). !{width:55%}img/9/circuitsF9.8.jpg(Figure 9.8)!:img/9/circuitsF9.8.jpg
+p=(#figure9-8). !{width:80%}img/9/circuitsF9.8.jpg(Figure 9.8)!:img/9/circuitsF9.8.jpg
 _Figure 9.8  Voltage Source 'Set-To-Zero' and Current Source 'Set-To-Zero'_
 
 With this specific method to 'set-to-zero' our sources, we can now proceed to prepare the two sub-circuits, "Figure 9.9":#figure9-9 for the 2nd example of "Figure 9.7":#figure9-7.
  
-p=(#figure9-9). !{width:50%}img/9/circuitsF9.9.jpg(Figure 9.9)!:img/9/circuitsF9.9.jpg
+p=(#figure9-9). !{width:70%}img/9/circuitsF9.9.jpg(Figure 9.9)!:img/9/circuitsF9.9.jpg
 (1) 6 volt Active, 4 mA set-to-zero ........................... (2)  4 mA active, 6 volt set-to-zero
 _Figure 9.9  Example #2, Separate Circuits, One for Each Source Active,_
 _with the other Source 'Set-To-Zero'_
@@ -160,17 +160,17 @@ The key constraint that enables Thevenin's Theorem to work in circuits is that t
 
 We consider a circuit comprised of any combination of resistors and sources, and we 'observe' this circuit from 2-terminals (here shown as A-A') connected to any 2 nodes in the circuit.  This arrangement is depicted in "Figure 9.10":#figure9-10.
  
-p=(#figure9-10). !{width:55%}img/9/circuitsF9.10.jpg(Figure 9.10)!:img/9/circuitsF9.10.jpg
+p=(#figure9-10). !{width:50%}img/9/circuitsF9.10.jpg(Figure 9.10)!:img/9/circuitsF9.10.jpg
 _Figure 9.10  Any Circuit with a Single Terminal-Pair, A-A'_
 
 Because this is a linear circuit (_with sources_), we know that it must always have a straight-line i-v relationship, at terminals A-A', as depicted in "Figure 9.11":#figure9-11.
  
-p=(#figure9-11). !{width:30%}img/9/circuitsF9.11.jpg(Figure 9.11)!:img/9/circuitsF9.11.jpg
+p=(#figure9-11). !{width:40%}img/9/circuitsF9.11.jpg(Figure 9.11)!:img/9/circuitsF9.11.jpg
 _Figure 9.11  Linear Circuit with Sources, i-v Relationship at a Terminal-Pair_
  
 Furthermore, because it is a linear circuit, we know that if _all independent_ sources are set-to-zero, then the i-v line MUST go through zero, there cannot be an 'offset'.  There cannot be a non-zero output when the input is zero.  Recall from linearity if the input is zero then the response must be zero too.  Thus, when all inputs are set-to-zero, in "Figure 9.11":#figure9-11 the line must shift and go through the origin, (0,0).  The slope of this line does not change when the voltage is 'set-to-zero', and remains constant with an equivalent resistance, $R_{eq}$, at the terminals A-A', when all independent source(s) are 'set-to-zero'.
 
-p=. _slope_ = $frac{1}{R_{eq}}$
+p=. _slope_ = $\frac{1}{R_{eq}}$
 
 Furthermore, the 'intercept' value on the voltage-axis, is where the current is zero, and hence is the 'open-circuit' voltage, $V_{OC}$, for the circuit.
 
@@ -178,10 +178,10 @@ p=. _intercept_ = $V_{OC}$
 
 Here is _*the great insight*_ !  Another circuit _with just two elements_ can produce _*exactly the same line*_ as in "Figure 9.11":#figure9-11, this other circuit, the Thevenin Circuit, is depicted in "Figure 9.12":#figure9-12; and it produces the i-v relation as seen in "Figure 9.13":#figure9-13.
 
-p=(#figure9-12). !{width:30%}img/9/circuitsF9.12.jpg(Figure 9.12)!:img/9/circuitsF9.12.jpg
+p=(#figure9-12). !{width:40%}img/9/circuitsF9.12.jpg(Figure 9.12)!:img/9/circuitsF9.12.jpg
 _Figure 9.12  Thevenin Circuit, Two Elements_
 
-p=(#figure9-13). !{width:30%}img/9/circuitsF9.13.jpg(Figure 9.13)!:img/9/circuitsF9.13.jpg
+p=(#figure9-13). !{width:40%}img/9/circuitsF9.13.jpg(Figure 9.13)!:img/9/circuitsF9.13.jpg
 _Figure 9.13  Current-Voltage Relation for Thevenin Circuit_
 
 Notice this i-v line becomes _EXACTLY THE SAME_ as the i-v line in "Figure 9.11":#figure9-11 when Vth and Rth have the following specific values.  To be identical i-v relations, we require:
@@ -198,7 +198,7 @@ Notice for the Thevenin circuit, "Figure 9.12":#figure9-12, when $i$ = 0, there 
 
 Consider the circuit in "Figure 9.14":#figure9-14.
 
-p=(#figure9-14). !{width:30%}img/9/circuitsF9.14.jpg(Figure 9.14)!:img/9/circuitsF9.14.jpg
+p=(#figure9-14). !{width:50%}img/9/circuitsF9.14.jpg(Figure 9.14)!:img/9/circuitsF9.14.jpg
 _Figure 9.14  Circuit with Terminal-Pair A-A'_
 
 The open-circuit condition requires there be NO current at the terminals A-A', and hence there is no current in the 1 ohm resistor.  The open-circuit voltage is thus just the voltage across the 6 ohm resistor.  And this voltage is calculated by the voltage-divider relation.  Hence:
@@ -216,14 +216,14 @@ p=. $R_{th}$ = $(\frac{(6) (3)}{6+3}) + 1 = 3 ohms
 
 The Thevenin equivalent circuit is thus comprised of $V_{th}$ = 6 volt and $R_{th}$ = 3 ohm, as depicted in "Figure 9.16":#figure9-16.
 
-p=(#figure9-16). !{width:30%}img/9/circuitsF9.16.jpg(Figure 9.16)!:img/9/circuitsF9.16.jpg
+p=(#figure9-16). !{width:50%}img/9/circuitsF9.16.jpg(Figure 9.16)!:img/9/circuitsF9.16.jpg
 _Figure 9.16  Thevenin Equivalent for Circuit of "Figure 9.14":#figure9-14_
 
 h4(#chapter9-norton). 9.4 - Norton's Theorem
 
 An alternate two element circuit that can produce the same linear i-v characteristic of "Figure 9.11":#figure9-11 is comprised of a current source and a resistance.  This circuit is called the _Norton Equivalent_ and is shown in "Figure 9.17":#figure9-17.
 
-p=(#figure9-17). !{width:30%}img/9/circuitsF9.17.jpg(Figure 9.17)!:img/9/circuitsF9.17.jpg
+p=(#figure9-17). !{width:40%}img/9/circuitsF9.17.jpg(Figure 9.17)!:img/9/circuitsF9.17.jpg
 _Figure 9.17  Norton Equivalent Circuit_
 
 The source is now implemented as a current source, IN, and the resistance is the same $R_{th}$ as in the Thevenin equivalent, but here $R_{th}$ is in parallel with the current source.  Notice that when the current source is 'set-to-zero', it is an open-circuit, and hence the equivalent resistance seen from the terminal-pair is $R_{th}$.
@@ -234,12 +234,12 @@ p=. $V_{OC}$ = $I_N$ $R_{th}$
 
 The relationship between the i-v characteristics and the Norton and Thevenin equivalent circuit values is depicted in "Figure 9.18":#figure9-18.
 
-p=(#figure9-18). !{width:30%}img/9/circuitsF9.18.jpg(Figure 9.18)!:img/9/circuitsF9.18.jpg
+p=(#figure9-18). !{width:40%}img/9/circuitsF9.18.jpg(Figure 9.18)!:img/9/circuitsF9.18.jpg
 _Figure 9.18  Norton and Thevenin Equivalent Circuit Value Relations_
 
 Also when the output terminals have an applied short-circuit, then all the current, $I_N$, must go through the short.  In other words the Norton current source is the value of current , $-i$, when there is zero volts across the output terminal pair, this is depicted in "Figure 9.19":#figure9-19.
 
-p=(#figure9-19). !{width:30%}img/9/circuitsF9.19.jpg(Figure 9.19)!:img/9/circuitsF9.19.jpg
+p=(#figure9-19). !{width:40%}img/9/circuitsF9.19.jpg(Figure 9.19)!:img/9/circuitsF9.19.jpg
 _Figure 9.19  Short-Circuit Determination of Norton Current Source_
 
 where,
@@ -254,7 +254,7 @@ p=. $I_N$ = $\frac{V_{OC}}{R_{th}}$
 
 and so in this example: $I_N$ = 6v/3ohm = 2Amp. "Figure 9.20":#figure9-20 is the complete Norton equivalent circuit.
 
-p=(#figure9-20). !{width:30%}img/9/circuitsF9.20.jpg(Figure 9.20)!:img/9/circuitsF9.20.jpg
+p=(#figure9-20). !{width:40%}img/9/circuitsF9.20.jpg(Figure 9.20)!:img/9/circuitsF9.20.jpg
 _Figure 9.20  Norton Equivalent of Example Problem_
 
 An alternate way to determine the Norton current source value, $I_N$, is to calculate the short circuit current, and thus in this case by calculating the current in the 1 ohm resistor of "Figure 9.14":#figure9-14 with the terminals shorted, "Figure 9.21":#figure9-21:
@@ -268,6 +268,6 @@ p=. $I_N$ = $i_{SC}$ = $(\frac{9}{3+\frac{6}{7}})$ $\frac{6}{6+1}$ = $\frac{7}{3
 
 The Norton current value of 2 amps is the same as that calculated by the equivalence above:
 
-p=. $I_N$ = $\frac{V_{OC}{R_{th}}}$.
+p=. $I_N$ = $\frac{V_{OC}}{R_{th}}$.
 
 This demonstrates the consistency of the Thevenin and Norton equivalent circuits.  Either can be used to fully represent any linear circuit.  The choice of which one to use is only a matter of convenience.
