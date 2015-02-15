@@ -107,7 +107,7 @@ _Figure 9.6  Separate Circuits, One for Each Source Active, other Source 'Set-To
 
 These two sub-problems can be solved by the method of reduction and voltage divider to yield values for the two sub-problem output voltages: $V_{out1}$ and $V_{out2}$.
 
-p=. $V_{out-1}$ = $(\frac{3}{3+3})8$ = 4 volt  ........  and  ........ $V_{out-2}$ = $(\frac{2}{6+2})12$ = 3 volt
+p=. $V_{out-1}$ = $(\frac{3}{3+3})8$ = 4 volt  ............  and  ............ $V_{out-2}$ = $(\frac{2}{6+2})12$ = 3 volt
 
 And hence by superposition the total output voltage, $V_{out}$, is the sum of the two sub-problems:
 
