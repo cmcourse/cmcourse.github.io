@@ -39,12 +39,12 @@ So if the resistor element voltage, $(v_{n1}-v_{n2})$, is doubled then the curre
 
 p=. $(v_{n1} - v_{n2}) - i_{R}(ki_R)$ = $(v_{n1} - v_{n2})$-$ki_R^2$ = 0
 
-Now if the element voltage $(v_{n1}-v_{n2})$ doubled, the current $i_R$ would NOT double, due to the 'square' term.  This fictitious element is NOT linear.  "Figure 9.2":#figure9-2 shows the i-v characteristic for this type of non-linearity.  Notice the graph is not a straight line, it is non-linear.  In this course all elements we use are linear.
+Now if the element voltage $(v_{n1}-v_{n2})$ doubled, the current $i_R$ would NOT double, due to the 'square' term.  This fictitious element is NOT linear.  "Figure 9.2":#figure9-2 shows the i-v characteristic for this type of non-linearity.  Notice the graph is not a straight line, it is non-linear.  In these chapters all elements we use are linear.
  
 p=(#figure9-2). !{width:40%}img/9/circuitsF9.2.jpg(Figure 9.2)!:img/9/circuitsF9.2.jpg
 _Figure 9.2  Example Non-Linear i-v Characteristic_
 
-Both the fixed voltage source and the fixed current sources are also linear.  This is because when you double the size of the source voltage, $V_S$, the element voltage doubles.  Similarly for the fixed current source, if we double the size of the source current, $I_S$, then, the element current also doubles.
+Both fixed voltage sources and fixed current sources are also linear elements.  This is because when you double the size of a source voltage, $V_S$, the element voltage doubles.  Similarly for a fixed current source, if we double the size of the source current, $I_S$, then, the element current also doubles.
 
 A very important property of linearity is that a circuit comprised entirely of linear elements results in a complete circuit that is also linear.  This is because our conservation laws of KCL and KVL do not violate linearity.  To illustrate, consider the circuit of "Figure 9.3":#figure9-3.  Here we can calculate that the 10 volt voltage source causes a resistor current, $I_B$, of 1/2 milliamp.
  
@@ -57,7 +57,7 @@ h4(#chapter9-superposition). 9.2 - Superposition Method
 
 When we have a linear system, we can apply a solution method called the _superposition method_.  Superposition fails if the system is NOT linear.  So linearity is a _necessary condition_ to be able to apply the superposition method.
 
-For the superposition method, consider we have a network of many linear resistors and multiple linear sources.  Furthermore, we draw this circuit by bringing all the sources to an ‘exterior’ (visible) part of the circuit.  This is illustrated in "Figure 9.4":#figure9-4.
+For the superposition method, consider we have a network of many linear resistors and multiple linear sources.  Furthermore, we draw this circuit by bringing all the sources to an 'exterior' (visible) part of the circuit.  This is illustrated in "Figure 9.4":#figure9-4.
  
 p=(#figure9-4). !{width:60%}img/9/circuitsF9.4.jpg(Figure 9.4)!:img/9/circuitsF9.4.jpg
 _Figure 9.4  Circuit of Linear Resistors and Linear Sources._
@@ -72,7 +72,7 @@ where, all the 'a' and 'b' values are fixed constants for the given circuit.  In
 
 We could also write a corresponding equation for the current $i_{R3}$.  Indeed as well as for any voltage or any current in our circuit.  Thus, we will always find that any voltage or any current is calculated as a sum of terms with each source contributing some portion to the total sum of terms.
 
-Now we *take the HUGE leap*, one that is permitted explicitly because of the additivity property of linearity. Instead of having all sources ON at the same time, lets make a 'thought' experiment where we turn on ONLY ONE SOURCE AT A TIME, and ALL OTHER SOURCES ARE 'SET-TO-ZERO'.  Hence in the above case, when we have ONLY voltage source VS1 ON (the other 5 sources are set-to-zero), so the resistor $R_7$ voltage would be:
+Now we *take the HUGE leap*, one that is permitted explicitly because of the additivity property of linearity. Instead of having all sources ON at the same time, lets make a 'thought' experiment where we turn on ONLY ONE SOURCE AT A TIME, and ALL OTHER SOURCES ARE 'SET-TO-ZERO'.  Hence in the above case, when we have ONLY voltage source $V_{S1}$ ON (the other 5 sources are set-to-zero), so the resistor $R_7$ voltage would be:
 
 p=. $V_{R7-1}$ = $a_1 V_{S1} + 0 + 0 + 0 + 0 + 0$  .....  so  .....  $V_{R7-1}$ = $a_1 V_{S1}$
 
@@ -86,15 +86,15 @@ p=. $V_{R7-3}$ = $a_3 V_{S3}$ _and_ $V_{R7-4}$ =$a_4 V_{S4}$
 
 and for ONLY current sources $I_{S1}$ and $I_{S2}$ ON individually, others set-to-zero:
 
-p=. $V_{R7-5}$ = $b_1 I_{S1}$ _and_ $V_{R7-6}$ = $b_2 V_{S2}$
+p=. $V_{R7-5}$ = $b_1 I_{S1}$ _and_ $V_{R7-6}$ = $b_2 I_{S2}$
 
 Notice when we add _all 6 of these individual calculations_ they yield exactly the same answer as if all sources were ON at the same time.  In other words, by activating one source at a time _with all other sources 'set-to-zero'_, then the summation of these individual responses, yields the response of the entire circuit with all sources ON.
 
 We have taken a complex multi-source problem and reduced it to the summation of single-source problems.  This is called the SUPERPOSITION METHOD.
 
-** 9.2.1 Example #1: Solution by Superposition Method
+** *9.2.1 Example #1: Solution by Superposition Method*
 
-Consider the circuit of "Figure 9.5":#figure9-5.  It has two voltage sources and 3 resistors and we seek to calculate the output voltage Vout.
+Consider the circuit of "Figure 9.5":#figure9-5.  It has two voltage sources and 3 resistors and we seek to calculate the output voltage $V_{out}$.
  
 p=(#figure9-5). !{width:50%}img/9/circuitsF9.5.jpg(Figure 9.5)!:img/9/circuitsF9.5.jpg
 _Figure 9.5  Example Two-Source Circuit_
@@ -107,7 +107,7 @@ _Figure 9.6  Separate Circuits, One for Each Source Active, other Source 'Set-To
 
 These two sub-problems can be solved by the method of reduction and voltage divider to yield values for the two sub-problem output voltages: $V_{out1}$ and $V_{out2}$.
 
-p=. $V_{out-1}$ = $(\frac{3}{3+3})8$ = 4 volt  .....  and  ..... $V_{out-2}$ = $(\frac{2}{6+2})12$ = 3 volt
+p=. $V_{out-1}$ = $(\frac{3}{3+3})8$ = 4 volt  ........  and  ........ $V_{out-2}$ = $(\frac{2}{6+2})12$ = 3 volt
 
 And hence by superposition the total output voltage, $V_{out}$, is the sum of the two sub-problems:
 
