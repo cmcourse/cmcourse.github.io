@@ -126,7 +126,7 @@ We will again apply the superposition method, BUT BE CAREFUL!  Recall when we tu
 
 This means a _*voltage source*_ that is 'set-to-zero' (OFF) makes a _*short-circuit*_, zero volts between it's two terminals.  To see why this is a short-circuit, the voltage source constraint requires the voltage across the source to be fixed at _the value_ of the source (_zero when OFF_), but of course by definition any current can flow through this source, hence it acts as a 'wire' and is a SHORT-CIRCUIT between its' two terminals.
 
-In contrast, a _*current source*_ that is 'set-to-zero' (OFF) makes an _*open-circuit*_, zero amperes between its' two terminals.  To see why this is an open-circuit, the current source constraint requires the current through the source to be fixed at the value of the source (zero when OFF), but by definition of a current source any voltage can be across this source, hence it is an OPEN-CIRCUIT between its’ two terminals.  These two cases are depicted in "Figure 9.8":#figure9-8.
+In contrast, a _*current source*_ that is 'set-to-zero' (OFF) makes an _*open-circuit*_, zero amperes between its' two terminals.  To see why this is an open-circuit, the current source constraint requires the current through the source to be fixed at the value of the source (_zero when OFF_), but by definition of a current source any voltage can be across this source, hence it is an OPEN-CIRCUIT between its’ two terminals.  These two cases are depicted in "Figure 9.8":#figure9-8.
  
 p=(#figure9-8). !{width:85%}img/9/circuitsF9.8.jpg(Figure 9.8)!:img/9/circuitsF9.8.jpg
 _Figure 9.8  Voltage Source 'Set-To-Zero' and Current Source 'Set-To-Zero'_
