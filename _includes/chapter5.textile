@@ -77,7 +77,7 @@ p=. $V_{out} = $  $(\frac{R_2}{(R_1 + R_2)})  V_S$  <----  Voltage Divider Eq'n 
 
 Throughout the book we will often use extended '_observation wires_' connected to some nodes (as in "Figure 5.3":#figure5-3) to indicate more clearly a voltage of interest in a circuit.  Even with such extended wires these wires DO NOT form any added loop nor any added node, and hence the circuit response is exactly the same as that without the 'observation wires'.  They only make a specific voltage more recognizable, they do not change the circuit in any way.
 
-** _5.2.1  Example Voltage Divider Application, Light Detectors_
+** *5.2.1  Example Voltage Divider Application, Light Detectors*
 
 The voltage divider circuit provides a very elegant means to measure light, when the circuit employs a photo-sensitive resistor as one of two in-series resistors.  But first, what is a _photo-sensitive resistor_?  It is a two terminal element that exhibits the same electrical characteristic as a usual fixed resistor, such as in Section 2.4.  However, the photo-sensitive resistor has the internal material exposed to the outside world, and the internal material changes electrical properties when exposed to light !
 

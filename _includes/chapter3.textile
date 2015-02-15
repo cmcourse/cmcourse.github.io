@@ -194,7 +194,7 @@ p=. $P_{total} = (e_2)(0) + (e_1)(0) + (e_3)(0) = 0$
 Hence we can conclude, "Eq'n. 3.6":#eq3-6 that the sum of all branch powers must equal zero in any circuit regardless of the elements used to construct the circuit, where $i_k$ is the current in element $k$ and $v_k$ is the voltage across element $k$ (with polarity assigned according to the polarity definition of Section 1.6).
 
 <h4>
-p=(#eq3-6). $P_{total} = \sum_{ \ \mbox(all-branchs)} (v_k) (i_k) = 0$ </h4>
+p=(#eq3-6). $P_{total}$ = $$\sum_{ \ \mbox(all-branchs)} (v_k) (i_k) = 0$$ </h4>
 
 p=. _Eq'n 3-6 -- Tellegen's Theorem_
 
