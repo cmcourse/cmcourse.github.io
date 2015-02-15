@@ -244,7 +244,7 @@ table.
 
 .
 
-**  7.5.1  _Measurement of Unknown Source Resistance, $R_S$_
+**  *7.5.1  Measurement of Unknown Source Resistance, $R_S$*
 
 For some sources the equivalent source resistance may not be known.  The source may be a complex instrument so that an ohm-meter cannot be applied, since it would inject a voltage into the source output and perhaps damage the source.  Many sources are designed to ONLY have a load resistance connected at the output. Thus a non-destructive means is needed to measure $R_S$.
 
