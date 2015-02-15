@@ -239,7 +239,7 @@ p=. _Eq'n 8-7  Equivalent Resistance of the 'Bridge' Circuit_
 
 The delta-wye transformation is an important 'tool', especially when bridge circuits are part of a circuit of interest.  While they take some math, this transformation enables us to understand how each of the different resistors contributes to the total effective resistance.  In this case, $R_A$ is a distinct additive term to the equivalent resistance.  And we know that $R_A$ is the simple product of $R_1$ and $R_2$, divided by the sum of $R_1$, $R_2$ and $R_3$.  So here the product of two resistors $R_1$ and $R_2$ can have a significant impact on the final $R_{eq}$.
 
-** _8.4.1 'Near Open' Bridge Circuit, $R_3$ Large_
+** _*8.4.1 'Near Open' Bridge Circuit, $R_3$ Large*_
 
 Now lets further restrict the bridge circuit of "Figure 8.16":#figure8-16 to the condition where the resistor that 'bridges' the two sides, namely $R_3$, is constrained to be of relatively high value compared to $R_1$ and $R_2$, meaning there is only a relatively small current in $R_3$. Hence we restrict:
 
@@ -266,7 +266,7 @@ p=. _Eq'n 8-8  'Near-Open' Equivalent Resistance of the Bridge Circuit_
 
 This high value $R_3$ restriction corresponds to a 'small current' in $R_3$, and can occur in practice when the $R_3$ resistor might be a high effective input resistance of a measurement meter set to measure the voltage between the two bridge nodes 'B' and 'C' in "Figure 8.16":#figure8-16.  Notice the difference between this equivalent resistance with a large $R_3$, and one with No $R_3$ is the first term of $R_1R_2$ / $R_3$. As $R_3$ gets larger this added term gets smaller, and the equivalent resistance tends toward that of just two parallel sets of series resistors.
 
-** _8.4.2 'At Balance' Bridge Circuit_
+** _*8.4.2 'At Balance' Bridge Circuit*_
 
 Lets now consider another constraint to our bridge circuit.  Here we further constrain our bridge circuit and select specific values, which are called a 'balanced bridge'.  First, we _assume there is no current_ in $R_3$, and thus remove it.  This is depicted in "Figure 8.21":#figure8-21, where there is also an added voltage source, $V_S$, across the bridge to better illustrate the 'balance' condition.
 
@@ -320,7 +320,7 @@ p=. _Eq'n 8-10  'At Balance' Equivalent Resistance of the Bridge Circuit_
 
 The equivalent resistance _*at balance*_ is just equal to the parallel combination of $R_1$ and $R_2$ increased by the divider ratio. 
 
-** _8.4.3 'Near-Balance' Bridge Circuit_
+** _*8.4.3 'Near-Balance' Bridge Circuit*_
 
 Finally, lets consider the 'balance bridge' condition, but now also _allow a large (but finite) value for_ $R_3$, "Figure 8.23":#figure8-23.   In other words, we include a relatively small resistive current between 'B' and 'C'.  This is the constraint of Section 8.4.1 with the added constraint of being near 'balance'.
 
