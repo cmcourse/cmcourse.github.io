@@ -1,8 +1,6 @@
 
 There are a number of very practical and interesting circuits that make use of resistors.  In this Section we will examine several resistor circuits that are often found in practical electronic systems.  These include signal attenuators, binary ladders and bridge circuits.  They employ only resistors yet are found in one form or another at the work-bench of essentially every circuit designer/developer.
 
-<a class="anchor" id="chapter8-signal-attenuator"></a>
-
 h4. 8.1 - Signal Attenuators
 
 While we are already familiar with the classic voltage divider, we will see that the '_attenuator_' circuit is a special kind of voltage divider.  The attenuator is a circuit, which when added into a signal path _always reduces_ the signal magnitude by a fixed known amount, for example by a factor of 2x or 10x (ie. to 1/2 or 1/10th of the original size).  But first we examine why the usual voltage divider is not this circuit.
@@ -23,7 +21,7 @@ Furthermore, if the two divider circuits of "Figure 8.1":#figure8-1 are connecte
 p=(#figure8-3). !{width:60%}img/8/circuitsF8.3.jpg(Figure 8.3)!:img/8/circuitsF8.3.jpg
 _Figure 8.3  Cascade of Voltage Dividers Alters Individual Divider Ratio_
 
-** 8.1.1  The Matched Attenuator Concept
+** *8.1.1  The Matched Attenuator Concept*
 
 A different approach to signal size reduction is the 'matched attenuator'.  The matched attenuator involves an *added constraint* to our circuit design.  This added constraint is that _the attenuator circuit will always be connected to a 'matched' circuit_.  Recall the idea for maximum power is to have the load resistance equal (match) to the source resistance, as seen in "Figure 8.4":#figure8-4.
 
@@ -37,7 +35,7 @@ _Figure 8.5   Attenuator Added Between Source and Load_
 
 The need for this signal reduction occurs when some source is too large for the measurement and the magnitude must be reduced in order to be accurately recorded.  Hence if the signal is reduced by a known factor, $k$, then the measured value of the reduced signal strength can be scaled up by this $k$ factor to give the strength of the original signal.
 
-** 8.1.2  The Signal Attenuator 'TEE' Circuit
+** *8.1.2  The Signal Attenuator 'TEE' Circuit*
 
 To accomplish this desired goal of a fix attenuation with a connected matched load, a symmetric "TEE" resistor circuit is used.  This is depicted in "Figure 8.6":#figure8-6.
 
@@ -50,7 +48,7 @@ Notice there are three constraints: (1) to keep a 'matched' system, the equivale
 p=. $\frac{v_O}{v_i}$ = $\frac{1}{k}$ </h4>
 
 
-** 8.1.3  The Signal Attenuator 'TEE' Circuit Analysis
+** *8.1.3  The Signal Attenuator 'TEE' Circuit Analysis*
 
 Now lets apply these constraints, for $R_{eq-in}$ = $R_S$, we have (by parallel and series combinations):
 
@@ -81,8 +79,6 @@ The resultant attenuator circuit is depicted in "Figure 8.7":#figure8-7.
 
 p=(#figure8-7). !{width:60%}img/8/circuitsF8.7.jpg(Figure 8.7)!:img/8/circuitsF8.7.jpg
 _Figure 8.7   Attenuator with "k" attenuation factor = 2, and $R_S$ = 100 ohm_
-
-<a class="anchor" id="chapter8-ladder-networks"></a>
 
 h4. 8.2 - Ladder Networks
 
@@ -174,7 +170,7 @@ p=. $R_{B-B'}$ = $\frac{3}{2}R$
 
 <a class="anchor" id="chapter8-delta-wye"></a>
 
-h4. 8.4 - Transformations, 'Delta-Wye'  (<span>&Delta;</span>-Y); Bridge Circuits
+h4. 8.4 - Transformations, 'Delta-Wye'  ($\Delta$-Y); Bridge Circuits
 
 There are some circuits that we would like to understand, but include neither a series connection nor a parallel connection.  Such circuits seem not possible to reduce.  However, there is a technique, called _*transformation*_, which enables our reduction methods to be applied.  One common transformation is the 'delta-wye'.  It allows us to replace a group of resistors with a different group of resistors.  ESSENTIAL to the replacement is that the two _groups_ yield identical equivalent resistance values _as seen at the terminals of the group_.
 
