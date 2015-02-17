@@ -20,7 +20,7 @@ Dependent elements that are _dependent sources_ have output terminals that yield
 
 A _dependent voltage source_ provides a defined voltage at its' output terminals.  In that sense it is the same as our prior element the fixed voltage source.  The difference here is the value of the voltage is not fixed, but rather _depends_ upon on the voltage or current at the control terminals.
 
-In order to clearly identify that a source is a _dependent source and not a fixed source_, the dependent source has a different symbol, a _diamond shape_, "Figure 10.2":#figure10-2.  Additionally, we must identify the control for the source.  There are two types of control, a voltage control, and a current control.  Notice the voltage source value is some constant, here called $K_1$, times the control voltage for the VC-VS, and some constant, here called $K_2$, times the control current for the CC-VS.
+In order to clearly identify that a source is a _dependent source and not a fixed source_, the dependent source has a different symbol, a *diamond shape*, "Figure 10.2":#figure10-2.  Additionally, we must identify the control for the source.  There are two types of control, a voltage control, and a current control.  Notice the voltage source value is some constant, here called $K_1$, times the control voltage for the VC-VS, and some constant, here called $K_2$, times the control current for the CC-VS.
  
 p=(#figure10-2). !{width:90%}img/10/circuitsF10.2.jpg(Figure 10.2)!:img/10/circuitsF10.2.jpg
 (a) Voltage-Controlled-Voltage-Source ........................... (b)  Current-Controlled-Voltage-Source
@@ -180,7 +180,6 @@ _Figure 10.8  Operational Amplifier Structure;  Control, Output and Power Source
 
 The simplified view of the same opamp diagram is depicted in "Figure 10.9":#figure10-9.  Notice that the implied ground in the simplified figure is in fact always the common ground of the fixed power sources, Vcc and Vee, that energize the opamp, as explicitly depicted in "Figure 10.8":#figure10-8.  The power supplies are most often not explicitly shown, rather they are implied by the use of arrows and corresponding fixed voltage value labels, VCC and VEE.
 
-
 p=(#figure10-9). !{width:70%}img/10/circuitsF10.9.jpg(Figure 10.9)!:img/10/circuitsF10.9.jpg
 _Figure 10.9  'Standard' Simplified Representation; Opamp with Fixed Power Sources_
 
@@ -190,8 +189,13 @@ The ideal opamp circuit element imposes very specific relationships for currents
 
 # The currents into the (+) and (-) input terminals are zero. [$i_(+)$ = 0 ...... and ...... $i_(-)$ = 0]
 # The two voltages $V+$ and $V-$ are equal.  [$V+ = V-$]
-$ The range of $V_{out}$ is less than $V_{CC}$ and greater than $-V_{EE}$:
-p=. $-V_{EE} < V_{out} < V_{CC}$
+$ The range of $V_{out}$ is less than $V_{CC}$ and greater than $-V_{EE}$: [$-V_{EE}$ < $V_{out}$ < $V_{CC}$]
 
-But what is inside this new element, the opamp, which enables the device to implement these constraints?  Inside is effectively a voltage-dependent, voltage-source (VCVS) !  The control for the dependent voltage source is the difference voltage of (v+ - v-).  In other words, this dependent-source is controlled by the control voltage, vC, between the two input terminals, vC =  (v+ - v-).  Furthermore, at the output terminals the real electronics that implement this dependent-source are not perfectly ideal, so the dependent-source has an effective (Thevenin Equivalent) output resistance, rO.  Thus, we represent the output internal electronics of an opamp by a dependent-source, A(v+ - v-), and series equivalent resistance, rO, Figure 10-10, where A is the fixed gain of the VCVS.
+But what is inside this new element, the opamp, which enables the device to implement these constraints?  Inside is effectively a voltage-dependent, voltage-source (VCVS) !  The control for the dependent voltage source is the difference voltage of (v+ - v-).  In other words, this dependent-source is controlled by the control voltage, $V_C$, between the two input terminals, $V_C$ =  (v+ - v-).  Furthermore, at the output terminals the real electronics that implement this dependent-source are not perfectly ideal, so the dependent-source has an effective (Thevenin Equivalent) output resistance, rO.  Thus, we represent the output internal electronics of an opamp by a dependent-source, A(v+ - v-), and series equivalent resistance, rO, "Figure 10.10":#figure10-10, where A is the fixed gain of the VCVS.
+
+p=(#figure10-10). !{width:70%}img/10/circuitsF10.10.jpg(Figure 10.10)!:img/10/circuitsF10.10.jpg
+_Figure 10.10  Equivalent Circuit Model For Opamp_
+
+
+
 
