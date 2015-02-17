@@ -187,7 +187,7 @@ _Figure 10.9  'Standard' Simplified Representation; Opamp with Fixed Power Sourc
 
 The ideal opamp circuit element imposes very specific relationships for currents and voltages at its' input and output terminals, these are the _*element constraints* for an ideal opamp_, there are three:
 
-# The currents into the $(+)$ and $(-)$ input terminals are zero. [$i_(+)$ = 0 .. and .. $i_(-)$ = 0]
+# The currents into the $(pos)$ and $(neg)$ input terminals are zero. [$i_(+)$ = 0 .. and .. $i_(-)$ = 0]
 # The two voltages $V+$ and $V-$ are equal.  [$V+ = V-$]
 # The range of $V_{out}$ is less than $V_{CC}$ and greater than $-V_{EE}$.
 
