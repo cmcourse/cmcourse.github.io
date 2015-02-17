@@ -113,7 +113,8 @@ p=. $\frac{\Delta V_{out}}{\Delta V_{in}}$ = -5
 
 Where the 'delta' is the symbol for the amount of  'change'.  The 'Gain' of this circuit is -5. This circuit amplifies (takes an input voltage and makes a larger replica at the output).
 
-p=. Gain = $\frac{\Delta V_{out}}{\Delta V_{in}}$ = -5
+<h4>
+p=. Gain = $\frac{\Delta V_{out}}{\Delta V_{in}}$ = -5</h4>
 
 Thus with our dependent source element, driven at the input by a voltage source, this circuit provides a specific function of amplification, whereby when an input voltage changes it produces a larger change of the output voltage
 
@@ -127,3 +128,19 @@ p=(#figure10-7). !{width:65%}img/10/circuitsF10.7.jpg(Figure 10.7)!:img/10/circu
 _Figure 10.7  Fixed Gain Amplifier Circuit_
 
 In this circuit the dependent voltage source has a constant of 'A' and the control voltage is the voltage difference between two nodes ($v_C$).  The input voltage is connected directly to the + side of $v_C$ node. The output voltage has resistor $R_2$ connected from the output to the negative side of $v_C$ node.  And finally resistor $R_1$ is connected from this node to ground.
+
+These circuit elements and their connection produces the following three constraints:
+
+# $V_{in}$ =
+# $V_{out}$ =
+# $I_1$ =
+
+By substitution these three constraints can be reduced to the following:
+
+p=. $V_{out}$ = $A[V_C]$ = $A[V_{in}-(\frac{R_1}{R_1+R_2})V_{out}]
+
+collecting terms in $V_{out}$:
+
+p=. $V_{out}[A(\frac{R_1}{R_1+R_2})]$ = $A[V_{in}]
+
+and solving:
