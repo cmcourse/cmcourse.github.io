@@ -169,3 +169,13 @@ p=. $(V_C)$ = $\frac{V_{out}}{A}$ << 1 ...... or ...... $V_C \approx $ very smal
 
 Furthermore, the requirement for a large 'A' causes the control voltage , ($V_C$), to be very small.  This is a key constraint employed in operational amplifiers and is discussed further in the next subsection.
 
+
+h4(#chapter10-opamp-element). 10.4 - Operational Amplifier Circuit Elements
+
+At this point we turn our attention toward a specific class of circuit elements, the operational amplifier.  This element is achieved by a 'dependent source' (within the opamp element, which is _energized by external fixed voltage sources_.  This arrangement is depicted in "Figure 10.8":#figure10-8.  Here $V_{CC}$ and $V_{EE}$ are the external fixed voltage sources.
+
+
+p=(#figure10-8). !{width:70%}img/10/circuitsF10.8.jpg(Figure 10.8)!:img/10/circuitsF10.8.jpg
+_Figure 10.8  Operational Amplifier Structure;  Control, Output and Power Source_
+
+The simplified view of the same opamp diagram is depicted in Figure 10-9.  Notice that the implied ground in the simplified figure is in fact always the common ground of the fixed power sources, Vcc and Vee, that energize the opamp, as explicitly depicted in Figure 10-8.  The power supplies are most often not explicitly shown, rather they are implied by the use of arrows and corresponding fixed voltage value labels, VCC and VEE.
