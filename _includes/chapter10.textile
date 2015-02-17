@@ -78,7 +78,7 @@ p=. $V_{out}$ = $(-2k) 5$ $[(\frac{1}{2})(mA)]$ = 5 _volts_
 
 The example circuit of "Figure 10.5":#figure10-5 can be ‘generalized’ by replacing the fixed input voltage of 1 volt with a 'general' input of $V_{in}$, this is depicted in "Figure 10.6":#figure10-6.
 
-p=(#figure10-6). !{width:80%}img/10/circuitsF10.6.jpg(Figure 10.6)!:img/10/circuitsF10.6.jpg
+p=(#figure10-6). !{width:70%}img/10/circuitsF10.6.jpg(Figure 10.6)!:img/10/circuitsF10.6.jpg
 _Figure 10.6  Amplifier Circuit with Dependent Current Source_
 
 Now we recalculate the output voltage, $V_{out}$, but this time, keep the general value for the input voltage as, $V_{in}$.  By use of the above relation, the output voltage remains as:
@@ -98,13 +98,15 @@ This equation establishes the 'input-output' relationship that is produced by ou
 p=. *Input - Output Relation*
 For the Dependent Source Circuit "Figure 10.6":#figure10-6
 
-p=. $V_{in} (volt)$  $V_{out} (volt)$
+table(#InOut Relations).
+|$V_{in} (volt)$ |$V_{out} (volt)$ |
 
-0 0
-0.5 -2.5
-1 -5
-1.5 -7.5
-2 -10
+|0 |0 |
+|0.5 |-2.5 |
+|1 |-5 |
+|1.5 |-7.5 |
+|2 |-10 |
+
 
 This table reveals that when the input voltage, $V_{in}$, is changed by +1 volt, the output voltage, $V_{out}$, changes by -5 volts.  This relationship could be expressed as:
 
