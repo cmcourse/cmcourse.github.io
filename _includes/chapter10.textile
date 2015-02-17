@@ -131,16 +131,41 @@ In this circuit the dependent voltage source has a constant of 'A' and the contr
 
 These circuit elements and their connection produces the following three constraints:
 
-# $V_{in}$ =
-# $V_{out}$ =
-# $I_1$ =
+# $V_{in}$ = $V_C + I_1R_1$
+# $V_{out}$ = $A (V_C)$
+# $I_1$ = $V_{out} / (R_1 + R_2)$
 
 By substitution these three constraints can be reduced to the following:
 
-p=. $V_{out}$ = $A[V_C]$ = $A[V_{in}-(\frac{R_1}{R_1+R_2})V_{out}]
+p=. $V_{out}$ = $A[V_C]$ = $A[V_{in}-(\frac{R_1}{R_1+R_2})V_{out}]$
 
 collecting terms in $V_{out}$:
 
-p=. $V_{out}[A(\frac{R_1}{R_1+R_2})]$ = $A[V_{in}]
+p=. $V_{out}[A(\frac{R_1}{R_1+R_2})]$ = $A[V_{in}]$
 
 and solving:
+
+p=. $V_{out}$ = \frac{A}{[1+A(\frac{R_1}{R_1+R_2})]}$ $[V_{in}]$
+
+So Vout is a constant times $V_{in}$.  Now take the case where A is a large value, in particular:
+
+p=. $A(\frac{R_1}{R_1+R_2}) >> 1$ ...... or ...... $A >> (\frac{R_1+R_2}{R_1})$
+
+Then the '1' in the denominator is relatively small and is negligible compared to the 'A' term.  With this large 'A' value the expression for $V_{out}$ becomes:
+
+p=. $V_{out}$ = $\frac{A}{[A(\frac{R_1}{R_1+R_2})]}$
+
+The 'A' terms cancel, and the result is just:
+
+p=. $V_{out}$ = (\frac{R_1+R_2}{R_1})[V_{in}]$
+
+The *amplifier voltage gain*, $V_{out}/V_{in}$, is therefore:
+
+p=. $\frac{V_{out}}{V_{in}}$ = $(\frac{R_1+R_2}{R_1})$
+
+The voltage gain is _*independent*_ of the value of the constant 'A' in the dependent source (provided it is large enough).  The amplifier gain only depends on the ratio of terms with resistors values only.  It is relatively easy to make the ratio of resistor values accurate and reasonably constant.  Notice because 'A' is very large, the voltage difference ($v_C$) must be very small for any moderate size $V_{out}$.
+
+p=. $(V_C)$ = $\frac{V_{out}}{A}$ << 1 ...... or ...... $V_C$ \approx very small$
+
+Furthermore, the requirement for a large 'A' causes the control voltage , ($V_C$), to be very small.  This is a key constraint employed in operational amplifiers and is discussed further in the next subsection.
+
