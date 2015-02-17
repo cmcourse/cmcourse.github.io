@@ -98,13 +98,13 @@ This equation establishes the 'input-output' relationship that is produced by ou
 p=. *Input - Output Relation*
 For the Dependent Source Circuit "Figure 10.6":#figure10-6
 
-p=.
-|=.$V_{in} (volt)$ |=.$V_{out} (volt)$ |
-|=.0 |=.0 |
-|=.0.5 |=.-2.5 |
-|=.1 |=.-5 |
-|=.1.5 |=.-7.5 |
-|=.2 |=.-10 |
+table.
+|=. $V_{in} (volt)$ |=. $V_{out} (volt)$ |
+|=. 0 |=. 0 |
+|=. 0.5 |=. -2.5 |
+|=. 1 |=. -5 |
+|=. 1.5 |=. -7.5 |
+|=. 2 |=. -10 |
 
 
 This table reveals that when the input voltage, $V_{in}$, is changed by +1 volt, the output voltage, $V_{out}$, changes by -5 volts.  This relationship could be expressed as:
