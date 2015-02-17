@@ -98,7 +98,7 @@ This equation establishes the 'input-output' relationship that is produced by ou
 p=. *Input - Output Relation*
 For the Dependent Source Circuit "Figure 10.6":#figure10-6
 
-table.
+p=.
 |=. $V_{in} (volt)$ |=. $V_{out} (volt)$ |
 |=. 0 |=. 0 |
 |=. 0.5 |=. -2.5 |
