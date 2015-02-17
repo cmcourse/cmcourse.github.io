@@ -22,7 +22,7 @@ A _dependent voltage source_ provides a defined voltage at its' output terminals
 
 In order to clearly identify that a source is a _dependent source and not a fixed source_, the dependent source has a different symbol, a _diamond shape_, "Figure 10.2":#figure10-2.  Additionally, we must identify the control for the source.  There are two types of control, a voltage control, and a current control.  Notice the voltage source value is some constant, here called $K_1$, times the control voltage for the VC-VS, and some constant, here called $K_2$, times the control current for the CC-VS.
  
-p=(#figure10-2). !{width:95%}img/10/circuitsF10.2.jpg(Figure 10.2)!:img/10/circuitsF10.2.jpg
+p=(#figure10-2). !{width:90%}img/10/circuitsF10.2.jpg(Figure 10.2)!:img/10/circuitsF10.2.jpg
 (a) Voltage-Controlled-Voltage-Source ........................... (b)  Current-Controlled-Voltage-Source
 _Figure 10.2  Dependent Voltage Sources, VC-VS and CC-VS_
 
@@ -30,7 +30,7 @@ Typically the voltage control terminals are two nodes identified as being the co
 
 A _dependent current source_ is similar; there are voltage controlled and current controlled sources.  This is depicted in "Figure 10.3":#figure10-3.  Again these are _dependent_ sources and thus the diamond shape is used.  There are two types of control, a voltage control, and a current control.  The current source value is some constant, here called $K_3$, times the control voltage for the VC-CS, and some constant, here called $K_4$, times the control current for the CC-CS.
  
-p=(#figure10-3). !{width:95%}img/10/circuitsF10.3.jpg(Figure 10.3)!:img/10/circuitsF10.3.jpg
+p=(#figure10-3). !{width:90%}img/10/circuitsF10.3.jpg(Figure 10.3)!:img/10/circuitsF10.3.jpg
 (a) Voltage-Controlled-Current-Source ........................... (b)  Current-Controlled-Current-Source
 _Figure 10.3  Dependent Current Sources, VC-CS and CC-CS_
 
@@ -40,7 +40,7 @@ The control is specified as being a voltage or current between two nodes, respec
 
 As an illustration of the voltage-controlled-voltage-source (VCVS) consider the following circuit, "Figure 10.4":#figure10-4.
 
-p=(#figure10-4). !{width:60%}img/10/circuitsF10.4.jpg(Figure 10.4)!:img/10/circuitsF10.4.jpg
+p=(#figure10-4). !{width:70%}img/10/circuitsF10.4.jpg(Figure 10.4)!:img/10/circuitsF10.4.jpg
 _Figure 10.4  Example Circuit with Dependent Voltage Source_
 
 The output voltage is calculated as a voltage divider, which reduces the 5 $V_C$ voltage from the dependent voltage source.
@@ -59,7 +59,7 @@ p=. $V_{out}$ = $(\frac{4}{6}) 5$ $[(\frac{1}{3})7]$ = $\frac{70}{9}$ _volts_
 
 As an illustration of the voltage-controlled-current-source (VCCS) consider the following circuit, "Figure 10.5":#figure10-5.  The output voltage is the voltage across the current source.  But this may seem odd, since the voltage on a current source is NOT constrained by the current source itself.  However, other parts of this circuit DO constrain the output voltage.
 
-p=(#figure10-5). !{width:80%}img/10/circuitsF10.5.jpg(Figure 10.5)!:img/10/circuitsF10.5.jpg
+p=(#figure10-5). !{width:70%}img/10/circuitsF10.5.jpg(Figure 10.5)!:img/10/circuitsF10.5.jpg
 _Figure 10.5  Example Circuit with Dependent Current Source_
 
 Here that the output voltage must be the voltage across the 2k resistor relative to ground.  So by KCL and ohm's law, we can write the output voltage, $V_{out}$, as the current from the current source times the 2k resistance.  The negative sign comes from the direction of the current source relative to $V_{out}$.
@@ -98,9 +98,8 @@ This equation establishes the 'input-output' relationship that is produced by ou
 p=. *Input - Output Relation*
 For the Dependent Source Circuit "Figure 10.6":#figure10-6
 
-table(#InOut Relations).
-|$V_{in} (volt)$ |$V_{out} (volt)$ |
-
+table.
+|\2$V_{in} (volt)$ |$V_{out} (volt)$ |
 |0 |0 |
 |0.5 |-2.5 |
 |1 |-5 |
@@ -124,7 +123,7 @@ h4(#chapter10-fixed-gain). 10.3 - Dependent Source Fixed Gain Amplifier
 Now lets use a dependent voltage source to produce a different form of amplifier, one with a fixed gain, which is _independent_ of the exact value of the dependent source and only dependent on a couple of fixed resistors.  To start, consider the circuit of "Figure 10.7":#figure10-7.
 
 
-p=(#figure10-7). !{width:80%}img/10/circuitsF10.7.jpg(Figure 10.7)!:img/10/circuitsF10.7.jpg
+p=(#figure10-7). !{width:65%}img/10/circuitsF10.7.jpg(Figure 10.7)!:img/10/circuitsF10.7.jpg
 _Figure 10.7  Fixed Gain Amplifier Circuit_
 
 In this circuit the dependent voltage source has a constant of 'A' and the control voltage is the voltage difference between two nodes ($v_C$).  The input voltage is connected directly to the + side of $v_C$ node. The output voltage has resistor $R_2$ connected from the output to the – side of $v_C$ node.  And finally resistor $R_1$ is connected from this node to ground.
