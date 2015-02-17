@@ -97,6 +97,8 @@ This equation establishes the 'input-output' relationship that is produced by ou
 
 p=. *Input - Output Relation*
 For the Dependent Source Circuit "Figure 10.6":#figure10-6
+
+table. 
 |=. $V_{in} (volt)$ |=. $V_{out} (volt)$ |
 |=. 0 |=. 0 |
 |=. 0.5 |=. -2.5 |
@@ -124,4 +126,4 @@ Now lets use a dependent voltage source to produce a different form of amplifier
 p=(#figure10-7). !{width:65%}img/10/circuitsF10.7.jpg(Figure 10.7)!:img/10/circuitsF10.7.jpg
 _Figure 10.7  Fixed Gain Amplifier Circuit_
 
-In this circuit the dependent voltage source has a constant of 'A' and the control voltage is the voltage difference between two nodes ($v_C$).  The input voltage is connected directly to the + side of $v_C$ node. The output voltage has resistor $R_2$ connected from the output to the – side of $v_C$ node.  And finally resistor $R_1$ is connected from this node to ground.
+In this circuit the dependent voltage source has a constant of 'A' and the control voltage is the voltage difference between two nodes ($v_C$).  The input voltage is connected directly to the + side of $v_C$ node. The output voltage has resistor $R_2$ connected from the output to the negative side of $v_C$ node.  And finally resistor $R_1$ is connected from this node to ground.
