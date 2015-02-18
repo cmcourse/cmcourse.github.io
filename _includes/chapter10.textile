@@ -214,6 +214,14 @@ p=. $(v_{+} - v_{-})$ = $\frac{v_0}{A}$
 
 But since A is very very large, and $v_O$ cannot be very large only some volts ($v_O$ stays within the supply voltages $V_{CC}$ and $V_{EE}$) we find the control difference voltage must be very very small (think microvolts), so:
 
-p=. $(v_{+} - v_{-})$ = $\Rightarrow \frac{v_0}{\infty}$ $Rightarrow$ = 0 ... as ... A $\Rightarrow \infty$
+p=. $(v_{+} - v_{-})$ = $\Rightarrow \frac{v_0}{\infty}$ $\Rightarrow$ = 0 ... as ... A $\Rightarrow \infty$
 
+This yields the _second opamp element constraint_:
 
+** *(2)	The two voltages $v_{+}$ and $v_{-}$ are considered to be equal !*
+
+p=. $v_{+}$ = $v_{-}$
+
+The last element constraint is to set the range limit for the output voltage.  As stated above this limit is due to the two fixed value voltage sources used to power the opamp and they limit the maximum and minimum output values to their values, respectively.  Thus _the third element constraint_ for the opamp is:
+
+** *(3)	The range of $V_{out}$ is less than $V_{CC}$ and greater than $V_{EE}$:*
