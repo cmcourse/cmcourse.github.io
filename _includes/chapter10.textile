@@ -180,7 +180,7 @@ _Figure 10.8  Operational Amplifier Structure;  Control, Output and Power Source
 
 The simplified view of the same opamp diagram is depicted in "Figure 10.9":#figure10-9.  Notice that the implied ground in the simplified figure is in fact always the common ground of the fixed power sources, Vcc and Vee, that energize the opamp, as explicitly depicted in "Figure 10.8":#figure10-8.  The power supplies are most often not explicitly shown, rather they are implied by the use of arrows and corresponding fixed voltage value labels, VCC and VEE.
 
-p=(#figure10-9). !{width:40%}img/10/circuitsF10.9.jpg(Figure 10.9)!:img/10/circuitsF10.9.jpg
+p=(#figure10-9). !{width:50%}img/10/circuitsF10.9.jpg(Figure 10.9)!:img/10/circuitsF10.9.jpg
 _Figure 10.9  'Standard' Simplified Representation; Opamp with Fixed Power Sources_
 
 ** *10.4.1  Opamp Circuit Element Constraints*
@@ -204,6 +204,6 @@ p=. $i_{(+)}$ = 0 ...... and ......$i_{(-)}$ = 0
 
 Hence, when a circuit is connected to the input terminals of an opamp, the currents into the opamp _at the input terminals_ are zero.
 
-Now lets consider the output of our opamp.  The output dependent-source has the value of: a _constant_ (A) times the _voltage difference_ (v+ - v-).  For all our opamps the value of the gain constant, A, is _very very very large_.  Think a million or more.  The result of this very large gain, A → ∞, is to limit the voltage difference (v+ - v-).  Why?  Well notice that the open-circuit voltage vO is:
+Now lets consider the output of our opamp.  The output dependent-source has the value of: a _constant_ (A) times the _voltage difference_ (v+ - v-).  For all our opamps the value of the gain constant, A, is _very very very large_.  Think a million or more.  The result of this very large gain, A $\to \infty$, is to limit the voltage difference (v+ - v-).  Why?  Well notice that the open-circuit voltage vO is:
 
 
