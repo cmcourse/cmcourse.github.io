@@ -204,4 +204,6 @@ p=. $i_{(+)}$ = 0 ...... and ......$i_{(-)}$ = 0
 
 Hence, when a circuit is connected to the input terminals of an opamp, the currents into the opamp _at the input terminals_ are zero.
 
+Now lets consider the output of our opamp.  The output dependent-source has the value of: a _constant_ (A) times the _voltage difference_ (v+ - v-).  For all our opamps the value of the gain constant, A, is _very very very large_.  Think a million or more.  The result of this very large gain, A → ∞, is to limit the voltage difference (v+ - v-).  Why?  Well notice that the open-circuit voltage vO is:
+
 
