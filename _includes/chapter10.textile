@@ -206,10 +206,12 @@ Hence, when a circuit is connected to the input terminals of an opamp, the curre
 
 Now lets consider the output of our opamp.  The output dependent-source has the value of: a _constant_ (A) times the _voltage difference_ (v+ - v-).  For all our opamps the value of the gain constant, A, is _very very very large_.  Think a million or more.  The result of this very large gain, A $\to \infty$, is to limit the voltage difference (v+ - v-).  Why?  Well notice that the open-circuit voltage vo is:
 
-p=. $v_0$ = $A(v_{\plus} - v_{\minus})$
+p=. $v_0$ = $A(v_{+} - v_{-})$
 
 And hence,
 
 p=. $(v_{+} - v_{-})$ = $\frac{v_0}{A}$
+
+But since A is very very large, and $v_O$ cannot be very large only some volts ($v_O$ stays within the supply voltages $V_{CC}$ and $V_{EE}$) we find the control difference voltage must be very very small (think microvolts), so:
 
 
