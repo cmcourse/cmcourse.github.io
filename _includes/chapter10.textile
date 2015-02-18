@@ -236,7 +236,17 @@ h4(#chapter10-noninvert-opamp). 10.5 - Example: Opamp Circuit, the Non-Inverting
 Consider the opamp circuit depicted in "Figure 10.11":#figure10-11.  Here we use the standard simplified representation, with fixed voltage supplies represented by the corresponding arrows.
 
 
-p=(#figure10-11). !{width:70%}img/10/circuitsF10.11.jpg(Figure 10.11)!:img/10/circuitsF10.11.jpg
+p=(#figure10-11). !{width:60%}img/10/circuitsF10.11.jpg(Figure 10.11)!:img/10/circuitsF10.11.jpg
 _Figure 10.11  Non-Inverting Amplifier Opamp Circuit_
 
 We solve this circuit by application of the element and circuit constraints.  From the wiring to v+ and the opamp constraint (2), we have:
+
+p=. $v_{in}$ = $v_{+}$ = $v_{-}$
+
+and also by opamp constraint (1), the input current, $i_{in}$, is:
+
+p=. $i{in$}$ = $i_{+}$ = 0
+
+and also by application of KCL, along with opamp constraint (1) at the opamp negative input terminal we get the sum of currents leaving the node $v_{-}$ as: 
+
+
