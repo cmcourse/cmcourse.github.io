@@ -200,7 +200,7 @@ In order for the opamp to be _controlled by voltages_ at the two input terminals
 
 ** *(1) The current into the '+' and '-' control inputs is zero !*
 
-p=. $i_{(+)}$ = 0 ...... and ......$i_{(-)}$ = 0
+p=. $i_{+}$ = 0 ...... and ......$i_{-}$ = 0
 
 Hence, when a circuit is connected to the input terminals of an opamp, the currents into the opamp _at the input terminals_ are zero.
 
@@ -218,10 +218,13 @@ p=. $(v_{+} - v_{-})$ = $\Rightarrow \frac{v_0}{\infty}$ $\Rightarrow$ = 0 ... a
 
 This yields the _second opamp element constraint_:
 
-** *(2)	The two voltages $v_{+}$ and $v_{-}$ are considered to be equal !*
+** *(2)	The two voltages $v_{+}$ and $v_{-}$ are considered to be equal (though not wired together) !*
 
 p=. $v_{+}$ = $v_{-}$
 
 The last element constraint is to set the range limit for the output voltage.  As stated above this limit is due to the two fixed value voltage sources used to power the opamp and they limit the maximum and minimum output values to their values, respectively.  Thus _the third element constraint_ for the opamp is:
 
 ** *(3)	The range of $V_{out}$ is less than $V_{CC}$ and greater than $V_{EE}$:*
+
+p=. $V_{EE}$ $<$ $V_{out}$ $<$ $V_{CC}$
+
