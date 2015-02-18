@@ -218,7 +218,7 @@ p=. $(v_{+} - v_{-})$ = $\Rightarrow \frac{v_0}{\infty}$ $\Rightarrow$ = 0 ... a
 
 This yields the _second opamp element constraint_:
 
-** *(2)	The two voltages $v_{+}$ and $v_{-}$ are considered to be equal (though not wired together) !*
+** *(2)	The two voltages $v_{+}$ and $v_{-}$ are considered to be equal (though NOT wired together) !*
 
 p=. $v_{+}$ = $v_{-}$
 
@@ -228,3 +228,15 @@ The last element constraint is to set the range limit for the output voltage.  A
 
 p=. $V_{EE}$ $<$ $V_{out}$ $<$ $V_{CC}$
 
+We can now use the opamp as a circuit element by connecting it into a circuit of resistors and sources.  We can solve circuits by application of the various element constraints, and the circuit conservation law constraints, in a manner similar to our prior solutions.
+
+
+h4(#chapter10-noninvert-opamp). 10.5 - Example: Opamp Circuit, the Non-Inverting Amplifier
+
+Consider the opamp circuit depicted in "Figure 10.11":#figure10-11.  Here we use the standard simplified representation, with fixed voltage supplies represented by the corresponding arrows.
+
+
+p=(#figure10-11). !{width:70%}img/10/circuitsF10.11.jpg(Figure 10.11)!:img/10/circuitsF10.11.jpg
+_Figure 10.11  Non-Inverting Amplifier Opamp Circuit_
+
+We solve this circuit by application of the element and circuit constraints.  From the wiring to v+ and the opamp constraint (2), we have:
