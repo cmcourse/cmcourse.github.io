@@ -196,7 +196,7 @@ But what is inside this new element, the opamp, which enables the device to impl
 p=(#figure10-10). !{width:57%}img/10/circuitsF10.10.jpg(Figure 10.10)!:img/10/circuitsF10.10.jpg
 _Figure 10.10  Equivalent Circuit Model For Opamp_
 
-In order for the opamp to be _controlled by voltages_ at the two input terminals, v+ and v-, the opamp employs internal electronics that require essentially _no input current_.  While in fact the input current is not absolutely zero, it is effectively so small, such as 10-8 ampere or smaller, that it can be neglected compared to other currents in the circuit.  Thus, we have our _first element constraint for an opamp_:
+In order for the opamp to be _controlled by voltages_ at the two input terminals, $v_{+}$ and $v_{-}$, the opamp employs internal electronics that require essentially _no input current_.  While in fact the input current is not absolutely zero, it is effectively so small, such as 10-8 ampere or smaller, that it can be neglected compared to other currents in the circuit.  Thus, we have our _first element constraint for an opamp_:
 
 ** *(1) The current into the '+' and '-' control inputs is zero !*
 
@@ -204,7 +204,7 @@ p=. $i_{(+)}$ = 0 ...... and ......$i_{(-)}$ = 0
 
 Hence, when a circuit is connected to the input terminals of an opamp, the currents into the opamp _at the input terminals_ are zero.
 
-Now lets consider the output of our opamp.  The output dependent-source has the value of: a _constant_ (A) times the _voltage difference_ (v+ - v-).  For all our opamps the value of the gain constant, A, is _very very very large_.  Think a million or more.  The result of this very large gain, A $\to \infty$, is to limit the voltage difference (v+ - v-).  Why?  Well notice that the open-circuit voltage vo is:
+Now lets consider the output of our opamp.  The output dependent-source has the value of: a _constant_ (A) times the _voltage difference_ $(v_{+} - v_{-})$.  For all our opamps the value of the gain constant, A, is _very very very large_.  Think a million or more.  The result of this very large gain, A $\to \infty$, is to limit the voltage difference $(v_{+} - v_{-})$.  Why?  Well notice that the open-circuit voltage vo is:
 
 p=. $v_0$ = $A(v_{+} - v_{-})$
 
@@ -213,5 +213,7 @@ And hence,
 p=. $(v_{+} - v_{-})$ = $\frac{v_0}{A}$
 
 But since A is very very large, and $v_O$ cannot be very large only some volts ($v_O$ stays within the supply voltages $V_{CC}$ and $V_{EE}$) we find the control difference voltage must be very very small (think microvolts), so:
+
+p=. $(v_{+} - v_{-})$ = $\Rightarrow \frac{v_0}{\infty}$ $Rightarrow$ = 0 ... as ... A $\Rightarrow \infty$
 
 
