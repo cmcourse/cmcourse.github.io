@@ -253,7 +253,7 @@ p=. $\frac{(v_{-}+0)}{R_i}$ + $\frac{(v_{-}-v_{out})}{R_f}$ + 0 = 0
 
 collecting terms:
 
-p=. $v_{-}(\frac{\frac{1}[R_i]}+\frac{1}{R_f})$ = $\frac{(v_{out})}{R_f}$
+p=. $v_{-}(\frac{\frac{1}{R_i}+\frac{1}{R_f})$ = $\frac{(v_{out})}{R_f}$
 
 and thus,
 
@@ -261,7 +261,7 @@ p=. $v_{in}(\frac{R_f+R_i}{R_iR_f})$ = $\frac{(v_{out})}{R_f}$
 
 so:
 
-p=. $\frac{v_{out}}{v_{in}}$ = (\frac{R_f+R_i}{R_i})$
+p=. $\frac{v_{out}}{v_{in}}$ = $(\frac{R_f+R_i}{R_i})$
 
 Thus the 'gain' of our non-inverting amplifier, $v_{out}$/$v_{in}$, is positive, and is determined by the ratio of two resistive values.  Furthermore, the input is directly at the $v_{+}$ terminal of the opamp and hence by the opamp constraint takes zero current from any circuit connected to it.
 
@@ -289,4 +289,12 @@ However, since the opamp input at the v+ connection takes no current, i+ = 0, fr
 p=(#figure10-13). !{width:50%}img/10/circuitsF10.13.jpg(Figure 10.13)!:img/10/circuitsF10.13.jpg
 _Figure 10.13  Voltage Divider at Input Region_
 
-Notice that because of the opamp zero input current, it 'isolates' the divider from the remainder of the circuit.  Thus it is possible to calculate the voltage value, Va, by the usual divider relation, independent from what the remainder of the circuit does.  This allows us to think of these problems in 'modular' form, where each section (= 'module') is easily evaluated.  In this case there is no-effect on the value of $V_a$ due to the connection of the opamp.  This ‘no-effect’ is often termed ‘no-loading’ by the subsequent part of the circuit.  Here we get:
+Notice that because of the opamp zero input current, it 'isolates' the divider from the remainder of the circuit.  Thus it is possible to calculate the voltage value, Va, by the usual divider relation, independent from what the remainder of the circuit does.  This allows us to think of these problems in 'modular' form, where each section (= 'module') is easily evaluated.  In this case there is no-effect on the value of $V_a$ due to the connection of the opamp.  This 'no-effect' is often termed 'no-loading' by the subsequent part of the circuit.  Here we get:
+
+p=. $v_a$ = $(\frac{1}{3+1})5$ = $\frac{5}{4}$ _volt_
+
+We can apply this value of va to calculate $v_{out}$ by:
+
+p=. $v_{out}$ = 7 $(\frac{5}{4})$ = \frac{35}{4} _volt_
+
+Here the value of $v_{out}$ is determined by the ideal opamp, so the connected load resistor, $R_L$ = 1k, _does not change_ the output!
