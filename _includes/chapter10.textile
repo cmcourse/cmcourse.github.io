@@ -259,9 +259,10 @@ and thus,
 
 p=. $v_{in}(\frac{R_f+R_i}{R_iR_f})$ = $\frac{(v_{out})}{R_f}$
 
-so:
+Hence, the resultant non-inverting gain is:
 
-p=. $\frac{v_{out}}{v_{in}}$ = $(\frac{R_f+R_i}{R_i})$
+<h4>
+p=. $\frac{v_{out}}{v_{in}}$ = $(\frac{R_f+R_i}{R_i})$</h4>
 
 Thus the 'gain' of our non-inverting amplifier, $v_{out}$/$v_{in}$, is positive, and is determined by the ratio of two resistive values.  Furthermore, the input is directly at the $v_{+}$ terminal of the opamp and hence by the opamp constraint takes zero current from any circuit connected to it.
 
@@ -323,9 +324,10 @@ equating:
 
 p=. $\frac{(v_{in}-0)}{R_i}$ = $\frac{(0-v_{out})}{R_f}$
 
-and thus,
+and thus the inverting gain is,
 
-p=. $\frac{v_{out}}{v_{in}}$ = $- \frac{R_f}{R_i}$
+<h4>
+p=. $\frac{v_{out}}{v_{in}}$ = $- \frac{R_f}{R_i}$</h4>
 
 Thus the 'gain' of our inverter amplifier, $v_{out}$ / $v_{in}$, is negative and is determined by the ratio of the two resistors, $R_f$/$R_i$.  For example, if $R_f$ is 3k and $R_i$ is 1k then the gain is -3.  Thus for this inverter, if 2 volts is applied to the input, the output will be -6 volts.
 
