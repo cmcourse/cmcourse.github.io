@@ -295,6 +295,57 @@ p=. $v_a$ = $(\frac{1}{3+1})5$ = $\frac{5}{4}$ _volt_
 
 We can apply this value of va to calculate $v_{out}$ by:
 
-p=. $v_{out}$ = 7 $(\frac{5}{4})$ = \frac{35}{4} _volt_
+p=. $v_{out}$ = 7 $(\frac{5}{4})$ = $\frac{35}{4}$ _volt_
 
 Here the value of $v_{out}$ is determined by the ideal opamp, so the connected load resistor, $R_L$ = 1k, _does not change_ the output!
+
+
+h4(#chapter10-invert-opamp). 10.7 - Example: Opamp Circuit, the Inverting Amplifier
+
+Now we consider a second opamp circuit, an amplifier with a fixed value of negative gain.  It is called an _inverter_ since the value at the output _inverts the polarity_ of the input. It uses an opamp, and two resistors, as depicted in "Figure 10.14":#figure10-14.  Notice the power supply connections to $V_{CC}$ and $V_{EE}$ are _NOT shown_, again this is normal drawing practice, of course in fact they must be connected for the actual opamp to work.
+
+p=(#figure10-14). !{width:50%}img/10/circuitsF10.14.jpg(Figure 10.14)!:img/10/circuitsF10.14.jpg
+_Figure 10.14  Inverting (Negative-Gain) Opamp Amplifier_
+
+We can calculate the output voltage by application of the various element constraints.  First from the wiring and the opamp constraint (2), we have:
+
+p=. $v_{-}$ = $v_{+}$ = 0
+
+and thus the current at the input is:
+
+p=. $i_{in}$ = $\frac{(v_{in}-0)}{R_i}$
+
+and by KCL, and with opamp constraint (1) where i_ = 0, then all $i_{in}$ must go through $R_f$ so:
+
+p=. $i_{in}$ = $\frac{(0-v_{out})}{R_f}$
+
+equating:
+
+p=. $\frac{(v_{in}-0)}{R_i}$ = $\frac{(0-v_{out})}{R_f}$
+
+and thus,
+
+p=. $\frac{v_{out}}{v_{in}}$ = $- \frac{R_f}{R_i}$
+
+Thus the 'gain' of our inverter amplifier, $v_{out}$ / $v_{in}$, is negative and is determined by the ratio of the two resistors, $R_f$/$R_i$.  For example, if $R_f$ is 3k and $R_i$ is 1k then the gain is -3.  Thus for this inverter, if 2 volts is applied to the input, the output will be -6 volts.
+
+
+h4(#chapter10-modular). 10.8 - Modular Representation
+
+An important difference between this inverting amplifier and the prior example non-inverting amplifier is the effective input resistance.  For the non-inverting amplifier the input was at the $v_{+}$ terminal, which by element constraint has zero current.  Thus the _non-inverting amplifier does not 'load'_ any other parts of a circuit that are connected to it.
+
+Hence we may represent the non-inverting amplifier by a simple block, or module, "Figure 10.15":#figure10-15.
+
+p=(#figure10-15). !{width:50%}img/10/circuitsF10.15.jpg(Figure 10.15)!:img/10/circuitsF10.15.jpg
+_Figure 10.15  Non-Inverting Amplifier 'Modular' Equivalent Circuit_
+
+In contrast, the inverting amplifier has the input connected to the negative terminal via a series resistor, $R_i$. And furthermore, the negative terminal, $v_{-}$, of the opamp must be a zero voltage because the positive terminal in this configuration is wired directly to ground, "Figure 10.14":#figure10-14.  The opamp constraint (2) forces the v- terminal to also be at ground voltage.  *Effectively, the input to the inverting opamp has one end of the input resistor, $R_i$, connected to ground*.  This means the effective input current to the inverting opamp is not zero, rather it is:
+
+p=. $i_{in}$ = $\frac{v_{in}}{R_i}$
+
+Thus, the effective input resistance to the inverting opamp is $R_i$.  The inverting opamp has an effective ‘modular diagram’ that has an input equivalent resistance and output voltage and equivalent resistance, $r_O$, of the opamp, "Figure 10.16":#figure10-16.
+
+p=(#figure10-16). !{width:50%}img/10/circuitsF10.16.jpg(Figure 10.16)!:img/10/circuitsF10.16.jpg
+_Figure 10.16  Inverting Amplifier 'Modular' Equivalent Circuit_
+
+Often when the opamp is considered to be ideal, then the 'internal' series resistance at the output, $r_O$, is neglected, ie. we take $r_O$ = 0.
