@@ -245,7 +245,7 @@ p=. $v_{in}$ = $v_{+}$ = $v_{-}$
 
 and also by opamp constraint (1), the input current, $i_{in}$, is:
 
-p=. $i{in}$ = $i_{+}$ = 0
+p=. $i_{in}$ = $i_{+}$ = 0
 
 and also by application of KCL, along with opamp constraint (1) at the opamp negative input terminal we get the sum of currents leaving the node $v_{-}$ as: 
 
@@ -257,7 +257,7 @@ p=. $v_{-}(\frac{\frac{1}[R_i]}+\frac{1}{R_f})$ = $\frac{(v_{out})}{R_f}$
 
 and thus,
 
-p=. $v__{in}(\frac{R_f+R_i}{R_iR_f})$ = $\frac{(v_{out})}{R_f}$
+p=. $v_{in}(\frac{R_f+R_i}{R_iR_f})$ = $\frac{(v_{out})}{R_f}$
 
 so:
 
@@ -270,4 +270,23 @@ A remarkable feature of opamp circuits is how they can achieve 'gain', an increa
 The _internal_ effective series resistance in the opamp output, $r_O$, can act to limit the output voltage.  However, in practice it is often relatively small, typically 100 ohms and even much less in some cases.  As a simplification, often the opamp is considered to be '_ideal_'.  When 'ideal', the opamp is considered to have a zero effective output resistance, $r_O$ = 0, zero input currents, and internal gain 'A' is infinite.  This makes the constraints (1), (2), and (3) above an accurate model for the opamp.
 
 
+h4(#chapter10-noninvert-load). 10.6 - Example: A Non-Inverting Amplifier with Source and Load
 
+Consider the opamp circuit depicted in "Figure 10.12":#figure10-12.  This is the same non-inverting amplifier, but now it is connected to a signal source, and drives a load resistance $R_L$.
+
+p=(#figure10-12). !{width:70%}img/10/circuitsF10.12.jpg(Figure 10.12)!:img/10/circuitsF10.12.jpg
+_Figure 10.12  Non-Inverting Opamp Circuit with Source and Load_
+
+Notice here we adopt the usual simple circuit symbol where the power supplies and their connections are not explicitly shown.  They of course are in the actual circuit but since they do concern the signal analysis they are not included in the signal analysis circuit.
+
+We recognize this is a non-inverting amplifier configuration and hence we know the 'gain' for it is:
+
+p=. $\frac{v_{out}}{v_{a}}$ = $\frac{6+1}{1}$ = 7
+
+However, since the opamp input at the v+ connection takes no current, i+ = 0, from constraint (1), the input portion of the circuit can be calculated as a simple voltage divider, "Figure 10.12":#figure10-12:
+
+
+p=(#figure10-13). !{width:50%}img/10/circuitsF10.13.jpg(Figure 10.13)!:img/10/circuitsF10.13.jpg
+_Figure 10.13  Voltage Divider at Input Region_
+
+Notice that because of the opamp zero input current, it 'isolates' the divider from the remainder of the circuit.  Thus it is possible to calculate the voltage value, Va, by the usual divider relation, independent from what the remainder of the circuit does.  This allows us to think of these problems in 'modular' form, where each section (= 'module') is easily evaluated.  In this case there is no-effect on the value of $V_a$ due to the connection of the opamp.  This ‘no-effect’ is often termed ‘no-loading’ by the subsequent part of the circuit.  Here we get:
