@@ -329,7 +329,7 @@ and thus the inverting gain is,
 <h4>
 p=. $\frac{v_{out}}{v_{in}}$ = $- \frac{R_f}{R_i}$</h4>
 
-Thus the 'gain' of our inverter amplifier, $v_{out}$ / $v_{in}$, is negative and is determined by the ratio of the two resistors, $R_f$/$R_i$.  For example, if $R_f$ is 3k and $R_i$ is 1k then the gain is -3.  Thus for this inverter, if 2 volts is applied to the input, the output will be -6 volts.
+Thus the 'gain' of our inverter amplifier, $v_{out}$ / $v_{in}$, is negative and is determined by the ratio of the two resistors, $R_f$/$R_i$.  For example, if $R_f$ is 3k and $R_i$ is 1k then the gain is -3.  With these resistors, if 2 volts is applied to the input, the output will be -6 volts.
 
 
 h4(#chapter10-modular). 10.8 - Modular Representation
@@ -345,7 +345,7 @@ In contrast, the inverting amplifier has the input connected to the negative ter
 
 p=. $i_{in}$ = $\frac{v_{in}}{R_i}$
 
-Thus, the effective input resistance to the inverting opamp is $R_i$.  The inverting opamp has an effective ‘modular diagram’ that has an input equivalent resistance and output voltage and equivalent resistance, $r_O$, of the opamp, "Figure 10.16":#figure10-16.
+Thus, the effective input resistance to the inverting opamp is $R_i$.  The inverting opamp has an effective 'modular diagram' that has an input equivalent resistance and output voltage and equivalent resistance, $r_O$, of the opamp, "Figure 10.16":#figure10-16.
 
 p=(#figure10-16). !{width:50%}img/10/circuitsF10.16.jpg(Figure 10.16)!:img/10/circuitsF10.16.jpg
 _Figure 10.16  Inverting Amplifier 'Modular' Equivalent Circuit_
