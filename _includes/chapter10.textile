@@ -253,7 +253,7 @@ p=. $\frac{(v_{-}+0)}{R_i}$ + $\frac{(v_{-}-v_{out})}{R_f}$ + 0 = 0
 
 collecting terms:
 
-p=. $v_{-}(\frac{\frac{1}{R_i}+\frac{1}{R_f})$ = $\frac{(v_{out})}{R_f}$
+p=. $v_{-}$ $(\frac{1}{R_i}+\frac{1}{R_f})$ = $\frac{(v_{out})}{R_f}$
 
 and thus,
 
