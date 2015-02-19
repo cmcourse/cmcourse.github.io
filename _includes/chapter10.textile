@@ -274,7 +274,7 @@ h4(#chapter10-noninvert-load). 10.6 - Example: A Non-Inverting Amplifier with So
 
 Consider the opamp circuit depicted in "Figure 10.12":#figure10-12.  This is the same non-inverting amplifier, but now it is connected to a signal source, and drives a load resistance $R_L$.
 
-p=(#figure10-12). !{width:70%}img/10/circuitsF10.12.jpg(Figure 10.12)!:img/10/circuitsF10.12.jpg
+p=(#figure10-12). !{width:85%}img/10/circuitsF10.12.jpg(Figure 10.12)!:img/10/circuitsF10.12.jpg
 _Figure 10.12  Non-Inverting Opamp Circuit with Source and Load_
 
 Notice here we adopt the usual simple circuit symbol where the power supplies and their connections are not explicitly shown.  They of course are in the actual circuit but since they do concern the signal analysis they are not included in the signal analysis circuit.
