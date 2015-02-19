@@ -360,9 +360,11 @@ Often when the opamp is considered to be ideal, then the 'internal' series resis
 
 This approach to modularize amplifier circuits according to their Thevenin equivalent representations greatly simplifies the calculations of the results when the amplifiers are connected to various sources.  I also makes the calculation of the result when more than one amplifier is connected in cascade.  To illustrate such a cascade configuration "Figure 10.17":#figure10-17 depicts the equivalent circuit when two amplifiers are connected together and driven by a source with an equivalent source resistance of $R_S$.
 
-p=(#figure10-17). !{width:80%}img/10/circuitsF10.17.jpg(Figure 10.17)!:img/10/circuitsF10.17.jpg
+p=(#figure10-17). !{width:90%}img/10/circuitsF10.17.jpg(Figure 10.17)!:img/10/circuitsF10.17.jpg
 _Figure 10.17  Modular Representation of Cascaded Amplifiers_
 
+The resultant total amplifier gain from source input to cascade output, $v_{out2}$ / $V_S$, when the output resistance values, $r_0$ are negligibly small becomes by voltage divider and the two gain values:
 
+p=. $\frac{v_{out2}}{V_S}$ = $(frac{R_i}{R_i + R_S})$ $(-\frac{R-f}{R_i})$ $(\frac{R_i + R_f}{R_i})$
 
-
+It is seen that the use of the modular representation format for the cascade problem enables a rapid, essentially 'by-inspection' solution.  Modular or block representations of complex circuits in a simple but still accurate format is a very common technique in engineering.
