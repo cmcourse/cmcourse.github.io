@@ -367,4 +367,8 @@ The resultant total amplifier gain from source input to cascade output, $v_{out2
 
 p=. $\frac{v_{out2}}{V_S}$ = $(\frac{R_i}{R_i + R_S})$ $(-\frac{R_f}{R_i})$ $(\frac{R_i + R_f}{R_i})$
 
+or cancelling terms:
+
+p=. $\frac{v_{out2}}{V_S}$ = $(-\frac{R_f}{R_i})$ $(\frac{R_i + R_f}{R_i + R_S})$
+
 It is seen that the use of the modular representation format for the cascade problem enables a rapid, essentially 'by-inspection' solution.  Modular or block representations of complex circuits in a simple but still accurate format is a very common technique in engineering.
