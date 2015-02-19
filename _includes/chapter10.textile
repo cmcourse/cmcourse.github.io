@@ -245,8 +245,29 @@ p=. $v_{in}$ = $v_{+}$ = $v_{-}$
 
 and also by opamp constraint (1), the input current, $i_{in}$, is:
 
-p=. $i{in$}$ = $i_{+}$ = 0
+p=. $i{in}$ = $i_{+}$ = 0
 
 and also by application of KCL, along with opamp constraint (1) at the opamp negative input terminal we get the sum of currents leaving the node $v_{-}$ as: 
+
+p=. $\frac{(v_{-}+0)}{R_i}$ + $\frac{(v_{-}-v_{out})}{R_f}$ + 0 = 0
+
+collecting terms:
+
+p=. $v_{-}(\frac{\frac{1}[R_i]}+\frac{1}{R_f})$ = $\frac{(v_{out})}{R_f}$
+
+and thus,
+
+p=. $v__{in}(\frac{R_f+R_i}{R_iR_f})$ = $\frac{(v_{out})}{R_f}$
+
+so:
+
+p=. $\frac{v_{out}}{v_{in}}$ = (\frac{R_f+R_i}{R_i})$
+
+Thus the 'gain' of our non-inverting amplifier, $v_{out}$/$v_{in}$, is positive, and is determined by the ratio of two resistive values.  Furthermore, the input is directly at the $v_{+}$ terminal of the opamp and hence by the opamp constraint takes zero current from any circuit connected to it.
+
+A remarkable feature of opamp circuits is how they can achieve 'gain', an increase in the magnitude of an input signal, but the gain amount is dependent essentially only on values of passive resistors connected around the opamp element!
+
+The _internal_ effective series resistance in the opamp output, $r_O$, can act to limit the output voltage.  However, in practice it is often relatively small, typically 100 ohms and even much less in some cases.  As a simplification, often the opamp is considered to be '_ideal_'.  When 'ideal', the opamp is considered to have a zero effective output resistance, $r_O$ = 0, zero input currents, and internal gain 'A' is infinite.  This makes the constraints (1), (2), and (3) above an accurate model for the opamp.
+
 
 
