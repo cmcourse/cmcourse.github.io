@@ -183,20 +183,22 @@ At this point we turn our attention toward a specific class of circuit elements,
 p=(#figure10-8). !{width:70%}img/10/circuitsF10.8.jpg(Figure 10.8)!:img/10/circuitsF10.8.jpg
 _Figure 10.8  Operational Amplifier Structure;  Control, Output and Power Source_
 
-The simplified view of the same opamp diagram is depicted in "Figure 10.9":#figure10-9.  Notice that the implied ground in the simplified figure is in fact always the common ground of the fixed power sources, Vcc and Vee, that energize the opamp, as explicitly depicted in "Figure 10.8":#figure10-8.  The power supplies are most often not explicitly shown, rather they are implied by the use of arrows and corresponding fixed voltage value labels, $V_{CC}$ and $V_{EE}$.
+The simplified view of the same opamp diagram is depicted in "Figure 10.9":#figure10-9.  Notice that the implied ground in the simplified figure is in fact always the common ground of the fixed power sources, $V_{CC}$ and $V_{EE}$, that energize the opamp, as explicitly depicted in "Figure 10.8":#figure10-8.  The power supplies are most often NOT explicitly shown, rather they are _implied_ by the use of arrows and corresponding fixed voltage value labels, $V_{CC}$ and $V_{EE}$.
 
 p=(#figure10-9). !{width:50%}img/10/circuitsF10.9.jpg(Figure 10.9)!:img/10/circuitsF10.9.jpg
 _Figure 10.9  'Standard' Simplified Representation; Opamp with Fixed Power Sources_
+
+Furthermore, many circuits depict the opamp element without explicitly showing any connection to the power supplies.  It is assumed that although the supply connections are of course present, they do not influence the ideal opamp circuit performance and are therefore not depicted.  In these situations the opamp is shown with only 3 connections: two inputs and a single output terminal (the output ground is implied).
 
 ** *10.4.1  Opamp Circuit Element Constraints*
 
 The ideal opamp circuit element imposes very specific relationships for currents and voltages at its' input and output terminals, these are the _*element constraints* for an ideal opamp_, there are three:
 
-# The currents into the $(pos)$ and $(neg)$ input terminals are zero. [$i_{+}$ = 0 .. and .. $i_{-}$ = 0]
+# The currents into the $(pos)$ and $(neg)$ input terminals are zero. [$i_{+}$ = 0 ... and ... $i_{-}$ = 0]
 # The two node voltages $v_{+}$ and $v_{-}$ are equal.  [$v_{+} = v_{-}$]
 # The range of $V_{out}$ is less than $V_{CC}$ and greater than $-V_{EE}$.
 
-But what is inside this new element, the opamp, which enables the device to implement these constraints?  Inside is effectively a voltage-dependent, voltage-source (VCVS) !  The control for the dependent voltage source is the difference voltage of $(v_{+} - v_{-})$.  In other words, this dependent-source is controlled by the control voltage, $V_C$, between the two input terminals, $V_C$ =  $(v_{+} - v_{-})$.  Furthermore, at the output terminals the real electronics that implement this dependent-source are not perfectly ideal, so the dependent-source has an effective (Thevenin Equivalent) output resistance, $r_O$.  Thus, we represent the output internal electronics of an opamp by a dependent-source, A$(v_{+} - v_{-})$, and series equivalent resistance, $r_O$, "Figure 10.10":#figure10-10, where A is the fixed gain of the VCVS.
+But what is inside this new element, the opamp, which enables the device to implement these constraints?  Inside is effectively a voltage-dependent, voltage-source (VC-VS) !  The control for the dependent voltage source is the difference voltage of $(v_{+} - v_{-})$.  In other words, this dependent-source is controlled by the control voltage, $V_C$, between the two input terminals, $V_C$ =  $(v_{+} - v_{-})$.  Furthermore, at the output terminals the real electronics that implement this dependent-source are not perfectly ideal, so the dependent-source has an effective (Thevenin Equivalent) output resistance, $r_O$.  Thus, we represent the output internal electronics of an opamp by a dependent-source, A$(v_{+} - v_{-})$, and series equivalent resistance, $r_O$, "Figure 10.10":#figure10-10, where A is the fixed gain of the VC-VS.
 
 p=(#figure10-10). !{width:57%}img/10/circuitsF10.10.jpg(Figure 10.10)!:img/10/circuitsF10.10.jpg
 _Figure 10.10  Equivalent Circuit Model For Opamp_
