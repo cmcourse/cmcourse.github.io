@@ -177,7 +177,7 @@ Furthermore, the requirement for a large 'A' causes the control voltage , ($v_C$
 
 h4(#chapter10-opamp-element). 10.4 - Operational Amplifier Circuit Elements
 
-At this point we turn our attention toward a specific class of circuit elements, the operational amplifier.  This element is achieved by a 'dependent source' (within the opamp element, which is _energized by external fixed voltage sources_.  This arrangement is depicted in "Figure 10.8":#figure10-8.  Here $V_{CC}$ and $V_{EE}$ are the external fixed voltage sources.
+At this point we turn our attention toward a specific class of circuit elements, the *operational amplifier*.  This element is achieved by a 'dependent source' (within the opamp element) which is energized by external fixed voltage sources.  This arrangement is depicted in "Figure 10.8":#figure10-8.  Here $V_{CC}$ and $V_{EE}$ are the external fixed voltage sources.
 
 
 p=(#figure10-8). !{width:70%}img/10/circuitsF10.8.jpg(Figure 10.8)!:img/10/circuitsF10.8.jpg
