@@ -120,7 +120,7 @@ And since when $V_{in}$ = 0 the circuit yields $V_{out}$ = 0, the gain of this c
 <h4>
 p=. Gain = $\frac{V_{out}}{V_{in}}$ = -5</h4>
 
-Thus with the dependent current source element this circuit provides a specific function of amplification, meaning the input voltage applied to this circuit produces a larger and proportional voltage at the output.  The proportionality constant is the gain.
+Thus with the dependent current source element this circuit provides a specific function of amplification, meaning the input voltage applied to this circuit produces a larger magnitude and proportional voltage at the output.  The proportionality constant is the gain.
 
 
 h4(#chapter10-fixed-gain). 10.3 - Dependent Source Fixed Gain Amplifier
@@ -131,17 +131,17 @@ Now lets use a dependent voltage source to produce a different form of amplifier
 p=(#figure10-7). !{width:65%}img/10/circuitsF10.7.jpg(Figure 10.7)!:img/10/circuitsF10.7.jpg
 _Figure 10.7  Fixed Gain Amplifier Circuit_
 
-In this circuit the dependent voltage source has a constant of 'A' and the control voltage is the voltage difference between two nodes ($v_C$).  The input voltage is connected directly to the + side of $v_C$ node. The output voltage has resistor $R_2$ connected from the output to the negative side of $v_C$ node.  And finally resistor $R_1$ is connected from this node to ground.
+In this circuit the dependent voltage source has a constant of 'A' and the control voltage is the voltage difference between two nodes ($v_C$), (neither at ground potential).  The input voltage is connected directly to the + side of $v_C$ node. The output voltage has resistor $R_2$ connected from the output to the negative side of $v_C$ node.  And finally resistor $R_1$ is connected from this node to ground.
 
 These circuit elements and their connection produces the following three constraints:
 
-# $V_{in}$ = $V_C + I_1R_1$
-# $V_{out}$ = $A (V_C)$
+# $V_{in}$ = $v_C + I_1R_1$
+# $V_{out}$ = $A (v_C)$
 # $I_1$ = $V_{out} / (R_1 + R_2)$
 
 By substitution these three constraints can be reduced to the following:
 
-p=. $V_{out}$ = $A[V_C]$ = $A[V_{in}-(\frac{R_1}{R_1+R_2})V_{out}]$
+p=. $V_{out}$ = $A[v_C]$ = $A[V_{in}-(\frac{R_1}{R_1+R_2})V_{out}]$
 
 collecting terms in $V_{out}$:
 
@@ -165,7 +165,8 @@ p=. $V_{out}$ = $(\frac{R_1+R_2}{R_1})[V_{in}]$
 
 The *amplifier voltage gain*, $V_{out}/V_{in}$, is therefore:
 
-p=. $\frac{V_{out}}{V_{in}}$ = $(\frac{R_1+R_2}{R_1})$
+<h4>
+p=. $\frac{V_{out}}{V_{in}}$ = $(\frac{R_1+R_2}{R_1})$</h4>
 
 The voltage gain is _*independent*_ of the value of the constant 'A' in the dependent source (provided it is large enough).  The amplifier gain only depends on the ratio of terms with resistors values only.  It is relatively easy to make the ratio of resistor values accurate and reasonably constant.  Notice because 'A' is very large, the voltage difference ($v_C$) must be very small for any moderate size $V_{out}$.
 
