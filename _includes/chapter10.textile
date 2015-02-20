@@ -118,7 +118,7 @@ p=. Gain = $\frac{\Delta V_{out}}{\Delta V_{in}}$ = -5
 And since when $V_{in}$ = 0 the circuit yields $V_{out}$ = 0, the gain of this circuit is:
 
 <h4>
-p=. Gain = $\frac{V_{out}}{V_{in}}$ = 5</h4>
+p=. Gain = $\frac{V_{out}}{V_{in}}$ = -5</h4>
 
 Thus with the dependent current source element this circuit provides a specific function of amplification, meaning the input voltage applied to this circuit produces a larger and proportional voltage at the output.  The proportionality constant is the gain.
 
