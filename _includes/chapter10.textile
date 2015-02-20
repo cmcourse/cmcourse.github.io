@@ -170,9 +170,9 @@ p=. $\frac{V_{out}}{V_{in}}$ = $(\frac{R_1+R_2}{R_1})$</h4>
 
 The voltage gain is _*independent*_ of the value of the constant 'A' in the dependent source (provided it is large enough).  The amplifier gain only depends on the ratio of terms with resistors values only.  It is relatively easy to make the ratio of resistor values accurate and reasonably constant.  Notice because 'A' is very large, the voltage difference ($v_C$) must be very small for any moderate size $V_{out}$.
 
-p=. $(V_C)$ = $\frac{V_{out}}{A}$ << 1 ...... or ...... $V_C \approx $ very small
+p=. $(v_C)$ = $\frac{V_{out}}{A}$ << 1 ...... or ...... $v_C \approx $ very small
 
-Furthermore, the requirement for a large 'A' causes the control voltage , ($V_C$), to be very small.  This is a key constraint employed in operational amplifiers and is discussed further in the next subsection.
+Furthermore, the requirement for a large 'A' causes the control voltage , ($v_C$), to be very small.  This is a key constraint employed in operational amplifiers and is discussed further in the next subsection.
 
 
 h4(#chapter10-opamp-element). 10.4 - Operational Amplifier Circuit Elements
