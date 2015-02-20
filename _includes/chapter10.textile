@@ -113,10 +113,14 @@ p=. $\frac{\Delta V_{out}}{\Delta V_{in}}$ = -5
 
 Where the 'delta' is the symbol for the amount of  'change'.  The 'Gain' of this circuit is -5. This circuit amplifies (takes an input voltage and makes a larger replica at the output).
 
-<h4>
-p=. Gain = $\frac{\Delta V_{out}}{\Delta V_{in}}$ = -5</h4>
+p=. Gain = $\frac{\Delta V_{out}}{\Delta V_{in}}$ = -5
 
-Thus with our dependent source element, driven at the input by a voltage source, this circuit provides a specific function of amplification, whereby when an input voltage changes it produces a larger change of the output voltage.
+And since when $V_{in}$ = 0 the circuit yields $V_{out}$ = 0, the gain of this circuit is:
+
+<h4>
+p=. Gain = $\frac{V_{out}}{V_{in}}$ = 5</h4>
+
+Thus with the dependent current source element this circuit provides a specific function of amplification, meaning the input voltage applied to this circuit produces a larger and proportional voltage at the output.  The proportionality constant is the gain.
 
 
 h4(#chapter10-fixed-gain). 10.3 - Dependent Source Fixed Gain Amplifier
