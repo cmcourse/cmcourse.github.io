@@ -195,23 +195,23 @@ Furthermore, many circuits depict the opamp element without explicitly showing a
 The ideal opamp circuit element imposes very specific relationships for currents and voltages at its' input and output terminals, these are the _*element constraints* for an ideal opamp_, there are three:
 
 # The currents into the $(pos)$ and $(neg)$ input terminals are zero. [$i_{+}$ = 0 ... and ... $i_{-}$ = 0]
-# The two node voltages $v_{+}$ and $v_{-}$ are equal.  [$v_{+} = v_{-}$]
+# The two input terminal node voltages $v_{+}$ and $v_{-}$ are equal.  [$v_{+} = v_{-}$]
 # The range of $V_{out}$ is less than $V_{CC}$ and greater than $-V_{EE}$.
 
-But what is inside this new element, the opamp, which enables the device to implement these constraints?  Inside is effectively a voltage-dependent, voltage-source (VC-VS) !  The control for the dependent voltage source is the difference voltage of $(v_{+} - v_{-})$.  In other words, this dependent-source is controlled by the control voltage, $V_C$, between the two input terminals, $V_C$ =  $(v_{+} - v_{-})$.  Furthermore, at the output terminals the real electronics that implement this dependent-source are not perfectly ideal, so the dependent-source has an effective (Thevenin Equivalent) output resistance, $r_O$.  Thus, we represent the output internal electronics of an opamp by a dependent-source, A$(v_{+} - v_{-})$, and series equivalent resistance, $r_O$, "Figure 10.10":#figure10-10, where A is the fixed gain of the VC-VS.
+But what is inside this new element, the opamp, that enables the device to implement these constraints?  Inside is effectively a voltage-controlled, voltage-source (VC-VS) !  The control voltage for the dependent voltage source is the difference voltage of $(v_{+} - v_{-})$.  In other words, this dependent-source is controlled by the control voltage, $V_C$, between the two input terminals, $V_C$ =  $(v_{+} - v_{-})$.  Furthermore, at the output terminals the real electronics that implement this dependent-source are not perfectly ideal, so the dependent-source has an effective (Thevenin Equivalent) output resistance, $r_O$.  Thus, we represent the output internal electronics of an opamp by a dependent-voltage-source, A$(v_{+} - v_{-})$, and series equivalent resistance, $r_O$, "Figure 10.10":#figure10-10, where A is the fixed gain of the VC-VS.
 
 p=(#figure10-10). !{width:57%}img/10/circuitsF10.10.jpg(Figure 10.10)!:img/10/circuitsF10.10.jpg
 _Figure 10.10  Equivalent Circuit Model For Opamp_
 
 In order for the opamp to be _controlled by voltages_ at the two input terminals, $v_{+}$ and $v_{-}$, the opamp employs internal electronics that require essentially _no input current_.  While in fact the input current is not absolutely zero, it is effectively so small, such as 10-8 ampere or smaller, that it can be neglected compared to other currents in the circuit.  Thus, we have our _first element constraint for an opamp_:
 
-** *(1) The current into the '+' and '-' control inputs is zero !*
+** *Opamp Constraint (1): The current into the '+' and '-' control inputs is zero !*
 
 p=. $i_{+}$ = 0 ...... and ......$i_{-}$ = 0
 
 Hence, when a circuit is connected to the input terminals of an opamp, the currents into the opamp _at the input terminals_ are zero.
 
-Now lets consider the output of our opamp.  The output dependent-source has the value of: a _constant_ (A) times the _voltage difference_ $(v_{+} - v_{-})$.  For all our opamps the value of the gain constant, A, is _very very very large_.  Think a million or more.  The result of this very large gain, A $\to \infty$, is to limit the voltage difference $(v_{+} - v_{-})$.  Why?  Well notice that the open-circuit voltage vo is:
+Now for the second constraint, consider the output of our opamp.  The output dependent-voltage-source has the value of: a _constant_ (A) times the _voltage difference_ $(v_{+} - v_{-})$.  For all our opamps the value of the gain constant, A, is very very very large.  Think a million or more.  The result of this very large gain, A $\to \infty$, is to limit the voltage difference $(v_{+}$ - $v_{-})$.  Why?  Well notice that the open-circuit voltage $v_0$ is:
 
 p=. $v_0$ = $A(v_{+} - v_{-})$
 
@@ -219,23 +219,23 @@ And hence,
 
 p=. $(v_{+} - v_{-})$ = $\frac{v_0}{A}$
 
-But since A is very very large, and $v_O$ cannot be very large only some volts ($v_O$ stays within the supply voltages $V_{CC}$ and $V_{EE}$) we find the control difference voltage must be very very small (think microvolts), so:
+But since A is very very large, and $v_O$ cannot be very large, only some volts ($v_O$ stays within the supply voltages $V_{CC}$ and $V_{EE}$), we find the control difference voltage must be very very small (think microvolts), so:
 
 p=. $(v_{+} - v_{-})$ = $\Rightarrow \frac{v_0}{\infty}$ $\Rightarrow$ = 0 ... as ... A $\Rightarrow \infty$
 
 This yields the _second opamp element constraint_:
 
-** *(2)	The two voltages $v_{+}$ and $v_{-}$ are considered to be equal (though NOT wired together) !*
+** *Constraint (2):	The two voltages $v_{+}$ and $v_{-}$ are considered to be equal (though NOT wired together) !*
 
 p=. $v_{+}$ = $v_{-}$
 
-The last element constraint is to set the range limit for the output voltage.  As stated above this limit is due to the two fixed value voltage sources used to power the opamp and they limit the maximum and minimum output values to their values, respectively.  Thus _the third element constraint_ for the opamp is:
+The last element constraint is to set the range limit for the output voltage.  As stated above this limit is due to the two fixed value voltage sources used to power the opamp and they limit the maximum and minimum output values to their respective values.  Thus _the third element constraint_ for the opamp is:
 
-** *(3)	The range of $V_{out}$ is less than $V_{CC}$ and greater than $V_{EE}$:*
+** *Opamp Constraint (3): The range of output voltage $V_{out}$ is less than $V_{CC}$ and greater than $V_{EE}$:*
 
 p=. $V_{EE}$ $<$ $V_{out}$ $<$ $V_{CC}$
 
-We can now use the opamp as a circuit element by connecting it into a circuit of resistors and sources.  We can solve circuits by application of the various element constraints, and the circuit conservation law constraints, in a manner similar to our prior solutions.
+We can now use the opamp as a circuit element connected into a circuit of resistors and sources.  We can solve such circuits by application of the various element constraints, and the circuit conservation law constraints, in a manner similar to our prior solutions.
 
 
 h4(#chapter10-noninvert-opamp). 10.5 - Example: Opamp Circuit, the Non-Inverting Amplifier
