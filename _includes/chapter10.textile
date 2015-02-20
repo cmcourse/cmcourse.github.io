@@ -12,7 +12,7 @@ We consider two forms of dependent elements: the *dependent source* and the *ope
 
 We will see in this Section exactly how to introduce control in our electronic circuits. This is a major change from all our prior elements, but also greatly expands the opportunities to implement a wide range of new results.
 
-In particular, dependent elements enable the chance for 'power gain'. This 'gain' occurs when an increase in power provided at the output terminals requires far less power to drive the control terminals.  For example, a small voltage change at an input could actuate control of a very high power motor in a car, train or ship.  Until now all resistive circuits dissipate power, for example the voltage divider, and so the output voltage was always less than the input.  With dependent elements we can actually increase the amount of voltage at the output compared to that supplied at the input.
+In particular, dependent elements enable the chance for 'power gain'. This 'gain' occurs when an increase in power output provided at the output terminals requires far less power at the input to drive the control terminals.  For example, a small voltage change at an input could actuate control of a very high power motor in a car, train or ship.  Until now all resistive circuits dissipate power, for example the voltage divider, and so the output voltage was always less than the input.  With dependent elements we can actually increase the amount of voltage at the output compared to that supplied at the input.
 
 h4(#chapter10-dependent-sources). 10.2 - Dependent Voltage and Dependent Current Sources
 
@@ -20,7 +20,7 @@ Dependent elements that are _dependent sources_ have output terminals that yield
 
 A _dependent voltage source_ provides a defined voltage at its' output terminals.  In that sense it is the same as our prior element the fixed voltage source.  The difference here is the value of the voltage is not fixed, but rather _depends_ upon on the voltage or current at the control terminals.
 
-In order to clearly identify that a source is a _dependent source and not a fixed source_, the dependent source has a different symbol, a *diamond shape*, "Figure 10.2":#figure10-2.  Additionally, we must identify the control for the source.  There are two types of control, a voltage control, and a current control.  Notice the voltage source value is some constant, here called $K_1$, times the control voltage for the VC-VS, and some constant, here called $K_2$, times the control current for the CC-VS.
+In order to clearly identify that a source is a *dependent source* and not a fixed source, the dependent source has a different symbol, a *diamond shape*, "Figure 10.2":#figure10-2.  Additionally, we must identify the control for the source.  There are two types of control, a voltage control, and a current control.  Notice the voltage source value is some constant, here called $K_1$, times the control voltage for the "VC-VS", and some constant, here called $K_2$, times the control current for the "CC-VS".
  
 p=(#figure10-2). !{width:90%}img/10/circuitsF10.2.jpg(Figure 10.2)!:img/10/circuitsF10.2.jpg
 (a) Voltage-Controlled-Voltage-Source ........................... (b)  Current-Controlled-Voltage-Source
