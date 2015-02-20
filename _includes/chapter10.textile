@@ -8,7 +8,7 @@ We now consider new elements that have _two terminal-pairs_.  This new element i
 p=(#figure10-1). !{width:60%}img/10/circuitsF10.1.jpg(Figure 10.1)!:img/10/circuitsF10.1.jpg
 _Figure 10.1  'Dependent' Element Structure, a Control Input Side and an Output Side_
 
-We consider two forms of dependent elements: the _dependent source_ and the _operational amplifier_.  With both forms we will identify the current and voltage values at each of the two ports.  For example, the control side terminal pair might be represented by a voltage $v_C$ across these terminals, or alternately by current $i_C$, that circulates in these terminals.  The output side terminals would use voltage $v_O$ and current $i_O$.  For such _dependent_ elements inherently the output i-v characteristic of $i_O$ - $v_O$ is altered or adjusted by the applied control side values of $v_C$ and/or $i_C$ at the control input.
+We consider two forms of dependent elements: the *dependent source* and the *operational amplifier*.  With both forms we will identify the current and voltage values at each of the two ports.  For example, the control side terminal pair might be represented by a voltage $v_C$ across these terminals, or alternately by current $i_C$, that circulates in these terminals.  The output side terminals would use voltage $v_O$ and current $i_O$.  For such _dependent_ elements inherently the output i-v characteristic of $i_O$ - $v_O$ is altered or adjusted by the applied control side values of $v_C$ and/or $i_C$ at the control input.
 
 We will see in this Section exactly how to introduce control in our electronic circuits. This is a major change from all our prior elements, but also greatly expands the opportunities to implement a wide range of new results.
 
