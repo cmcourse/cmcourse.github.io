@@ -172,7 +172,7 @@ The voltage gain is _*independent*_ of the value of the constant 'A' in the depe
 
 p=. $(v_C)$ = $\frac{V_{out}}{A}$ << 1 ...... or ...... $v_C \approx $ very small
 
-Furthermore, the requirement for a large 'A' causes the control voltage , ($v_C$), to be very small.  This is a key constraint employed in operational amplifiers and is discussed further in the next subsection.
+Furthermore, the requirement for a large 'A' causes the control voltage , ($v_C$), to be very small.  The voltage controlled voltage source with very large constant 'A', and hence a very small $v_C$ is a key constraint for a large class of circuits.  It is the key concept employed in circuits called 'operational amplifiers' and is the topic the next subsection.
 
 
 h4(#chapter10-opamp-element). 10.4 - Operational Amplifier Circuit Elements
