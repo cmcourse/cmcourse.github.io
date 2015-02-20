@@ -57,7 +57,7 @@ p=. $V_{out}$ = $(\frac{4}{6})$ $5$ $[(\frac{1}{3})7]$ = $\frac{70}{9}$ _volts_
 
 ** *10.2.2  Example: Dependent Current Source Circuit*
 
-As an illustration of the voltage-controlled-current-source (VCCS) consider the following circuit, "Figure 10.5":#figure10-5.  The output voltage is the voltage across the current source.  But this may seem odd, since the voltage on a current source is NOT constrained by the current source itself.  However, other parts of this circuit DO constrain the output voltage.
+As an illustration of the voltage-controlled-current-source (VC-CS) consider the following circuit, "Figure 10.5":#figure10-5.  The output voltage is the voltage across the current source.  But this may seem odd, since the voltage on a current source is NOT constrained by the current source itself.  However, other parts of this circuit DO constrain the output voltage.
 
 p=(#figure10-5). !{width:70%}img/10/circuitsF10.5.jpg(Figure 10.5)!:img/10/circuitsF10.5.jpg
 _Figure 10.5  Example Circuit with Dependent Current Source_
@@ -72,11 +72,11 @@ p=. $V_C$ = $(\frac{1k}{2k}) 1$ = $\frac{1}{2}$ _volts_
 
 Hence, the output voltage, $V_{out}$, is:
 
-p=. $V_{out}$ = $(-2k) 5$ $[(\frac{1}{2})(mA)]$ = 5 _volts_
+p=. $V_{out}$ = $(-2k)$ $5$ $[(\frac{1}{2})(mA)]$ = 5 _volts_
 
 ** *10.2.3  Example: Dependent Current Source Amplifier*
 
-The example circuit of "Figure 10.5":#figure10-5 can be ‘generalized’ by replacing the fixed input voltage of 1 volt with a 'general' input of $V_{in}$, this is depicted in "Figure 10.6":#figure10-6.
+The example circuit of "Figure 10.5":#figure10-5 can be 'generalized' by replacing the fixed input voltage of 1 volt with a 'general' input of $V_{in}$, this is depicted in "Figure 10.6":#figure10-6.
 
 p=(#figure10-6). !{width:70%}img/10/circuitsF10.6.jpg(Figure 10.6)!:img/10/circuitsF10.6.jpg
 _Figure 10.6  Amplifier Circuit with Dependent Current Source_
@@ -87,11 +87,11 @@ p=. $V_{out}$ = $-(2k)(5V_C)$
 
 But now we calculate the control voltage $V_C$ by voltage divider acting on the $V_{in}$ volt input source as:
 
-p=. $V_{C}$ = $(\frac{1k}{2k})$ $V_{in}$ = $\frac{1}{2}$ $V_{in$}$ _volts_ 
+p=. $V_{C}$ = $(\frac{1k}{2k})$ $V_{in}$ = $\frac{1}{2}$ $V_{in}$ _volts_ 
 
 Hence, the output voltage, $V_{out}$, is:
 
-p=. $V_{out}$ = $-(2k)[5(frac{1}{2})V_{in} (mA)]$ = $-5V_{in}$ _volts_
+p=. $V_{out}$ = $-(2k)$ $[5(\frac{1}{2})V_{in} (mA)]$ = $-5V_{in}$ _volts_
 
 This equation establishes the 'input-output' relationship that is produced by our circuit.  Notice that when we change the value of the input $V_{in}$, the output voltage, $V_{out}$, changes.  We could make a table of input and output values.
 
@@ -116,7 +116,7 @@ Where the 'delta' is the symbol for the amount of  'change'.  The 'Gain' of this
 <h4>
 p=. Gain = $\frac{\Delta V_{out}}{\Delta V_{in}}$ = -5</h4>
 
-Thus with our dependent source element, driven at the input by a voltage source, this circuit provides a specific function of amplification, whereby when an input voltage changes it produces a larger change of the output voltage
+Thus with our dependent source element, driven at the input by a voltage source, this circuit provides a specific function of amplification, whereby when an input voltage changes it produces a larger change of the output voltage.
 
 
 h4(#chapter10-fixed-gain). 10.3 - Dependent Source Fixed Gain Amplifier
