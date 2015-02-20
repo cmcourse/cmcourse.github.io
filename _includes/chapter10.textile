@@ -3,7 +3,7 @@ At this point we turn our attention toward a new class of circuit elements.  The
 
 h4(#chapter10-control-teminals). 10.1 - Circuit Elements with Control Terminals
 
-We now consider new elements that have _two terminal-pairs_.  This new element is '_dependent_' meaning it has a _control port_ which acts to influence a separate output port.  This structure is illustrated in "Figure 10.1":#figure10-1.
+We now consider new elements that have _two terminal-pairs_.  This new element is '*dependent*' meaning it has a _control port_ which acts to influence a separate output port.  This structure is illustrated in "Figure 10.1":#figure10-1.
 
 p=(#figure10-1). !{width:60%}img/10/circuitsF10.1.jpg(Figure 10.1)!:img/10/circuitsF10.1.jpg
 _Figure 10.1  'Dependent' Element Structure, a Control Input Side and an Output Side_
