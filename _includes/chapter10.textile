@@ -28,7 +28,7 @@ _Figure 10.2  Dependent Voltage Sources, VC-VS and CC-VS_
 
 Typically the voltage control terminals are two nodes identified as being the control, $V_C$.  And alternately, the control current is identified as the current between some two nodes, $I_C$.  As with a fixed voltage source, the dependent voltage source DOES NOT constrain the output current, only the output voltage.
 
-A _dependent current source_ is similar; there are voltage controlled and current controlled sources.  This is depicted in "Figure 10.3":#figure10-3.  Again these are _dependent_ sources and thus the diamond shape is used.  There are two types of control, a voltage control, and a current control.  The current source value is some constant, here called $K_3$, times the control voltage for the VC-CS, and some constant, here called $K_4$, times the control current for the CC-CS.
+A _dependent current source_ is similar; there are voltage controlled and current controlled sources.  This is depicted in "Figure 10.3":#figure10-3.  Again these are _dependent_ sources and thus the diamond shape is used.  There are two types of control, a voltage control, and a current control.  The current source value is some constant, here called $K_3$, times the control voltage for the "VC-CS", and some constant, here called $K_4$, times the control current for the "CC-CS".
  
 p=(#figure10-3). !{width:90%}img/10/circuitsF10.3.jpg(Figure 10.3)!:img/10/circuitsF10.3.jpg
 (a) Voltage-Controlled-Current-Source ........................... (b)  Current-Controlled-Current-Source
@@ -45,7 +45,7 @@ _Figure 10.4  Example Circuit with Dependent Voltage Source_
 
 The output voltage is calculated as a voltage divider, which reduces the 5 $V_C$ voltage from the dependent voltage source.
 
-p=. $V_{out}$ = $(\frac{4k}{6k}) 5$ $V_C$
+p=. $V_{out}$ = $(\frac{4k}{6k})$ $5$ $V_C$
 
 However, the dependent voltage source has the control, $V_C$.  The control voltage value, $V_C$, is determined from a voltage-divider relation applied to the 7 volt fixed voltage source.
 
