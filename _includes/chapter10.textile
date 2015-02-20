@@ -229,32 +229,32 @@ This yields the _second opamp element constraint_:
 
 p=. $v_{+}$ = $v_{-}$
 
-The last element constraint is to set the range limit for the output voltage.  As stated above this limit is due to the two fixed value voltage sources used to power the opamp and they limit the maximum and minimum output values to their respective values.  Thus _the third element constraint_ for the opamp is:
+The last opamp element constraint is to set the range limit for the output voltage.  As stated above this limit is due to the two fixed value voltage sources used to power the opamp and they limit the maximum and minimum output values to their respective values.  Thus _the third element constraint_ for the opamp is:
 
 ** *Opamp Constraint (3): The range of output voltage $V_{out}$ is less than $V_{CC}$ and greater than $V_{EE}$:*
 
 p=. $V_{EE}$ $<$ $V_{out}$ $<$ $V_{CC}$
 
-We can now use the opamp as a circuit element connected into a circuit of resistors and sources.  We can solve such circuits by application of the various element constraints, and the circuit conservation law constraints, in a manner similar to our prior solutions.
+We can now use the opamp as a circuit element connected into a circuit of resistors and sources.  We can solve such circuits by application of the various element constraints and the circuit conservation law constraints, in a manner similar to our prior solutions.
 
 
 h4(#chapter10-noninvert-opamp). 10.5 - Example: Opamp Circuit, the Non-Inverting Amplifier
 
-Consider the opamp circuit depicted in "Figure 10.11":#figure10-11.  Here we use the standard simplified representation, with fixed voltage supplies represented by the corresponding arrows.
+Consider the opamp circuit depicted in "Figure 10.11":#figure10-11.  Here we use the standard simplified representation, with connection to $fixed voltage supplies represented by the corresponding arrows.
 
 
 p=(#figure10-11). !{width:60%}img/10/circuitsF10.11.jpg(Figure 10.11)!:img/10/circuitsF10.11.jpg
 _Figure 10.11  Non-Inverting Amplifier Opamp Circuit_
 
-We solve this circuit by application of the element and circuit constraints.  From the wiring to v+ and the opamp constraint (2), we have:
+We solve this circuit by application of the element and circuit constraints.  From the wiring to $v_{+}$ and the opamp constraint (2), we have:
 
 p=. $v_{in}$ = $v_{+}$ = $v_{-}$
 
-and also by opamp constraint (1), the input current, $i_{in}$, is:
+and also by opamp constraint (1), the input current, $i_{in}$, is zero:
 
 p=. $i_{in}$ = $i_{+}$ = 0
 
-and also by application of KCL, along with opamp constraint (1) at the opamp negative input terminal we get the sum of currents leaving the node $v_{-}$ as: 
+and now by application of KCL, along with opamp constraint (1) at the opamp negative input terminal we get the sum of currents leaving the node $v_{-}$ as: 
 
 p=. $\frac{(v_{-}+0)}{R_i}$ + $\frac{(v_{-}-v_{out})}{R_f}$ + 0 = 0
 
@@ -271,9 +271,9 @@ Hence, the resultant non-inverting gain is:
 <h4>
 p=. $\frac{v_{out}}{v_{in}}$ = $(\frac{R_f+R_i}{R_i})$</h4>
 
-Thus the 'gain' of our non-inverting amplifier, $v_{out}$/$v_{in}$, is positive, and is determined by the ratio of two resistive values.  Furthermore, the input is directly at the $v_{+}$ terminal of the opamp and hence by the opamp constraint takes zero current from any circuit connected to it.
+The 'gain' of our non-inverting amplifier, $v_{out}$/$v_{in}$, is positive, and is determined by the ratio of two resistive values.  Furthermore, the input is directly at the $v_{+}$ terminal of the opamp and hence by the opamp constraint takes zero current from any circuit connected to it.
 
-A remarkable feature of opamp circuits is how they can achieve 'gain', an increase in the magnitude of an input signal, but the gain amount is dependent essentially only on values of passive resistors connected around the opamp element!
+A remarkable feature of opamp circuits is how they can achieve 'gain', an increase in the magnitude of an input signal, yet this gain amount is dependent essentially *only* on values of passive resistors connected around the opamp element!  Note this result as well as the circuit configuration correponds to that of the above subsection 10.3.
 
 The _internal_ effective series resistance in the opamp output, $r_O$, can act to limit the output voltage.  However, in practice it is often relatively small, typically 100 ohms and even much less in some cases.  As a simplification, often the opamp is considered to be '_ideal_'.  When 'ideal', the opamp is considered to have a zero effective output resistance, $r_O$ = 0, zero input currents, and internal gain 'A' is infinite.  This makes the constraints (1), (2), and (3) above an accurate model for the opamp.
 
@@ -291,13 +291,13 @@ We recognize this is a non-inverting amplifier configuration and hence we know t
 
 p=. $\frac{v_{out}}{v_{a}}$ = $\frac{6+1}{1}$ = 7
 
-However, since the opamp input at the v+ connection takes no current, i+ = 0, from constraint (1), the input portion of the circuit can be calculated as a simple voltage divider, "Figure 10.12":#figure10-12:
+However, since the opamp input at the $v_{+}$ connection takes no current, $i_{+}$ = 0 [from constraint (1)], the input portion of the circuit can be calculated as a simple voltage divider, "Figure 10.13":#figure10-13:
 
 
 p=(#figure10-13). !{width:50%}img/10/circuitsF10.13.jpg(Figure 10.13)!:img/10/circuitsF10.13.jpg
 _Figure 10.13  Voltage Divider at Input Region_
 
-Notice that because of the opamp zero input current, it 'isolates' the divider from the remainder of the circuit.  Thus it is possible to calculate the voltage value, Va, by the usual divider relation, independent from what the remainder of the circuit does.  This allows us to think of these problems in 'modular' form, where each section (= 'module') is easily evaluated.  In this case there is no-effect on the value of $V_a$ due to the connection of the opamp.  This 'no-effect' is often termed 'no-loading' by the subsequent part of the circuit.  Here we get:
+Notice that because of the opamp zero input current, it 'isolates' the divider from the remainder of the circuit.  Thus it is possible to calculate the voltage value, $v_a$, by the usual divider relation, independent from what the remainder of the circuit does.  This allows us to think of these problems in 'modular' form, where each section (= 'module') is easily evaluated.  In this case there is no-effect on the value of $v_a$ due to the connection of the opamp.  This 'no-effect' is often termed 'no-loading' by the subsequent part of the circuit.  Here we get:
 
 p=. $v_a$ = $(\frac{1}{3+1})5$ = $\frac{5}{4}$ _volt_
 
@@ -343,18 +343,18 @@ h4(#chapter10-modular). 10.8 - Modular Representation
 
 Although it is comon to depict an entire opamp circuit, often it is very convenient to simplify the circuit and represent amplifier circuits by their Thevenin equivalents.  A Thevenin representation is made separately for the equivalent at input teminals and an equivant at the output terminals.  The result is a simple circuit that is often referred to as a 'modular' or block format.  The Thevenin has at most two elements but still fully represents the i-v relations at the respective terminals.
 
-Typically the Thevenin equivalent for the input terminals of amplifiers is an equivalent resistance, while the equivalent at the poutput terminals is a voltage source and series output resistance.  The Thevenin output voltage source is a controlled source since the value depends upon the voltage at the input terminals.
+Typically the Thevenin equivalent for the input terminals of amplifiers is an equivalent resistance, while the equivalent at the output terminals is a voltage source and series output resistance.  The Thevenin output voltage source is a controlled source since the value depends upon the voltage at the input terminals.
 
 Two examples are presented here, one for the non-inverting amplifier and another for the inverting amplifier opamp configurations.
 
 An important difference between the inverting amplifier and the non-inverting amplifier is the effective input resistance.  For the non-inverting amplifier the input is applied at the $v_{+}$ terminal, which by element constraint has zero current.  Thus the _non-inverting amplifier does not 'load'_ or cause current when connected to any other circuitry.
 
-Hence we may represent the non-inverting amplifier by a simple block, or module, "Figure 10.15":#figure10-15.  The input is an open-circuit, while the output has the equivalent controlled voltage source woth series resistor.
+Hence we may represent the non-inverting amplifier by a simple block, or module, "Figure 10.15":#figure10-15.  The input is an open-circuit, while the output has the equivalent controlled voltage source with series resistor.
 
 p=(#figure10-15). !{width:50%}img/10/circuitsF10.15.jpg(Figure 10.15)!:img/10/circuitsF10.15.jpg
 _Figure 10.15  Non-Inverting Amplifier 'Modular' Equivalent Circuit_
 
-In contrast, the inverting amplifier has the input connected to the negative terminal *via a series resistor*, $R_i$. And furthermore, the negative terminal, $v_{-}$, of the opamp must be a zero voltage because the positive terminal in this configuration is wired directly to ground, "Figure 10.14":#figure10-14.  The opamp constraint (2) forces the $v_{-}$ terminal to also be at ground voltage.  *Effectively, the input to the inverting opamp has one end of the input resistor, $R_i$, connected to ground*.  This means the effective input current to the inverting opamp is not zero, rather it is:
+In contrast, the inverting amplifier has the input connected to the negative terminal *via a series resistor*, $R_i$. And furthermore, the negative terminal, $v_{-}$, of the opamp must be a zero voltage because the positive terminal, $v_{+}$ in this configuration is wired directly to ground, "Figure 10.14":#figure10-14.  The opamp constraint (2) forces the $v_{-}$ terminal to also be at ground voltage.  *Effectively, the input to the inverting opamp has one end of the input resistor, $R_i$, connected to ground*.  This means the effective input current to the inverting opamp is not zero, rather it is:
 
 p=. $i_{in}$ = $\frac{v_{in}}{R_i}$
 
