@@ -39,15 +39,15 @@ _Figure 11.3  Switch Circuit with Switch Closure at t = t1_
 p=(#figure11-4). !{width:50%}img/11/circuitsF11.4.jpg(Figure 11.4)!:img/11/circuitsF11.4.jpg
 _Figure 11.4  Time Wave Response for Switch Closure at t = $t_1$_
 
-Now consider a circuit with a Thevenin equivalent 'source' connected to a switch and a load resistor $R_L$.  "Figure 11.5":#figure11-5 depicts the case where the switch '_closes_' at t = 0.  Here the voltage starts at zero and then increases to the 'high' state for t > 0.
+Now consider a circuit with a Thevenin equivalent 'source' [comprised of voltage source $V_{th}$ and series resistance $R_{th}$] connected to a switch and a load resistor $R_L$.  "Figure 11.5":#figure11-5 depicts the case where the switch '_closes_' at t = 0.  Here the voltage starts at zero and then increases to the 'high' state for t > 0.
 
 
 p=(#figure11-5). !{width:50%}img/11/circuitsF11.5a.jpg(Figure 11.5)!:img/11/circuitsF11.5a.jpg
 _Figure 11.5  Source with Series Switch to Load Resistor, SW *Closes* at t = 0_
 
 table(#figure11-5).
-| !{width:90%}img/11/circuitsF11.5a.jpg(Figure 11.5)!:img/11/circuitsF11.5a.jpg |=. !{width:90%}img/11/circuitsF11.5b.jpg(Figure 11.5)!:img/11/circuitsF11.5b.jpg |
-|\2 _Figure 11.5  Source with Series Switch to Load Resistor, SW *Closes* at t = 0_ |
+| !{width:100%}img/11/circuitsF11.5a.jpg(Figure 11.5)!:img/11/circuitsF11.5a.jpg |=. !{width:90%}img/11/circuitsF11.5b.jpg(Figure 11.5)!:img/11/circuitsF11.5b.jpg |
+|\2=. _Figure 11.5  Source with Series Switch to Load Resistor, SW *Closes* at t = 0_ |
 
 
 p=(#figure11-6). !{width:50%}img/11/circuitsF11.6.jpg(Figure 11.6)!:img/11/circuitsF11.6.jpg
