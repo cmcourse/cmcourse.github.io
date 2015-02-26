@@ -1,0 +1,19 @@
+
+Until now the circuits we have considered have been 'static' circuits in the sense that each circuit has specific voltage and current values that _do NOT change_ when sources are fixed.  In this Section we introduce a new class of circuit elements, ones that can possess voltages and currents that may *change with time*, even during times when all sources are fixed and not changing.  We introduce two different ways that changes in voltages and currents can occur both employ new kinds of circuit elements; one uses a '_switch_', while the other uses an element that can _store and release electric energy_.
+
+In regard to the storage and release of energy, we consider two forms of circuit elements that possess energy storage, the _capacitor_ and the _inductor_. The capacitor stores energy in an electric field, whereas the inductor stores energy in a magnetic field.  These are two different and independent forms of energy storage and they yield very different electrical current-voltage relationships at the terminals of their respective circuit elements.  We then combine energy storage elements  with switches to yield controlled time variations.
+
+An ideal switch is a two-state two-terminal element that is either an open circuit (no current between terminals), or a short-circuit (no voltage between terminals).  When a switch is connected to our other elements it therefore causes two node terminals to be either directly connected or not.  In other words, _*the action of a switch actually changes the circuit*_.  Therefore the switch action alters the connections of the other elements in that circuit, and this means the circuit voltages and currents will also change.
+
+In this section we confine ourselves to circuits with a _single energy storage circuit element_, either a capacitor or an inductor. Such arrangements cause either a steady increase or steady decrease in the stored energy and this yields a specific (exponential) type of time variation for circuit currents and voltages.  [Circuits that include both capacitor and inductor at the same time yield more complex results because the energy can 'swap' or 'slosh' back and forth between the two forms of energy storage.]
+
+
+h4(#chapter11-switch-circuits). 11.1 - Circuits with Switch-Induced Time Variation
+
+One means to cause a time variation in voltage and current in a circuit is to 'physically' _change the circuit_.  The new circuit element that effectively changes the circuit is an *ideal switch* = 'SW'.  An ideal switch is a two-terminal circuit element, that has _two-states_, it is either a pure 'disconnection' in other words an _open circuit_, or a pure 'connection' in other words a _short-circuit_.  This switch circuit element is depicted in "Figure 11.1":#figure11-1.
+
+
+p=(#figure11-1). !{width:60%}img/11/circuitsF11.1.jpg(Figure 11.1)!:img/11/circuitsF11.1.jpg
+_Figure 11.1  Switch Circuit Element, Two-States: Open and Closed_
+
+When a switch is in the _open state_: the two nodes, n1 and n2, are isolated separate nodes with no current through the switch, $i_{SW}$ = 0, called an _open-circuit__.  In contrast, when in the _closed state_: where the switch connects the two nodes n1 and n2 with no voltage difference, and hence they act as a single node. The switch closed is a _short-circuit_ and acts as any other wire in the circuit.  There is no 'in-between' state, an ideal switch is _only_ in an open or a closed position.
