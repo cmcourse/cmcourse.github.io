@@ -13,7 +13,19 @@ h4(#chapter11-switch-circuits). 11.1 - Circuits with Switch-Induced Time Variati
 One means to cause a time variation in voltage and current in a circuit is to 'physically' _change the circuit_.  The new circuit element that effectively changes the circuit is an *ideal switch* = 'SW'.  An ideal switch is a two-terminal circuit element, that has _two-states_, it is either a pure 'disconnection' in other words an _open circuit_, or a pure 'connection' in other words a _short-circuit_.  This switch circuit element is depicted in "Figure 11.1":#figure11-1.
 
 
-p=(#figure11-1). !{width:60%}img/11/circuitsF11.1.jpg(Figure 11.1)!:img/11/circuitsF11.1.jpg
+p=(#figure11-1). !{width:85%}img/11/circuitsF11.1.jpg(Figure 11.1)!:img/11/circuitsF11.1.jpg
 _Figure 11.1  Switch Circuit Element, Two-States: Open and Closed_
 
 When a switch is in the *open state*: the two nodes, n1 and n2, are isolated separate nodes with no current through the switch, $i_{SW}$ = 0, called an _open-circuit_.  In contrast, when in the *closed state*: where the switch connects the two nodes n1 and n2 with no voltage difference, and hence they act as a single node. The switch closed is a _short-circuit_ and acts as any other wire in the circuit.  There is no 'in-between' state, an ideal switch is _only_ in an open or a closed position.
+
+If we put a switch into a circuit, the result is two possible configurations. One with it open and one with it closed.  Consider the example circuit in "Figure 11.2":#figure11-2 with three resistors, one switch and one fixed voltage source.
+
+
+p=(#figure11-2). !{width:90%}img/11/circuitsF11.2.jpg(Figure 11.2)!:img/11/circuitsF11.2.jpg
+_Figure 11.2  Example Circuit with Switch SW, Two Circuits_
+
+For the switch _*SW open*_ [Figure 11-2a], the response voltage $v_1$ is (by voltage divider) 12(1/2) = 6 volts.  In contrast, with the switch _*SW closed*_ [Figure 11-2b], the 6k and 3k resistors are then in parallel and the voltage divider is then changed; thus the voltage $v_1$ takes a different value of 12(1/4) = 3 volts.  The switch open or closed makes *two different circuits* and thus, accordingly, we get two different results, 6v or 3v in this case.
+
+Switches are common elements in some circuits, most often they are used in ON/ OFF situations where they connect a power source to a circuit, think wall mounted light switch, or a camera flash circuit.  But additionally switches are used in logic circuits where they are synchronized and each connect or isolate two parts of a circuit.  When there are thousands and now-a-days millions of such switches in a circuit we make digital systems, such as microcontrollers and computers.
+
+It is very useful to consider a circuit with a switch as one circuit with _two states_.  When the switch changes state, then the circuit response changes value.  The link to the change in value is the change in switch state.  The circuit makes an 'instantaneous' change at the exact moment the switch changes state.  "Figure 11.3":#figure11-3 shows the prior circuit of "Figure 11.2":#figure11-2, but now the switch has an identified moment in time, at t = $t_1$, when the state change occurs.  Thus we can represent the corresponding response voltage value, $v_1$, on a time axis, where $v_1$ has one value (6 volts)  for t less than $t_1$, and another value (3 volts) for t greater than $t_1$, "Figure 11.4":#figure11-4.
