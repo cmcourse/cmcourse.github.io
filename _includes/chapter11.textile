@@ -47,10 +47,6 @@ table(#figure11-5).
 |\2=. _Figure 11.5  Source with Series Switch to Load Resistor, SW *Closes* at t = 0_ |
 
 
-p=(#figure11-6). !{width:50%}img/11/circuitsF11.6a.jpg(Figure 11.6)!:img/11/circuitsF11.6a.jpg
-_Figure 11.6  Source with Series Switch to Load Resistor, SW *Opens* at t = 0_
-
-
 table(#figure11-6).
 | !{width:150%}img/11/circuitsF11.6a.jpg(Figure 11.6)!:img/11/circuitsF11.6a.jpg |=. !{width:70%}img/11/circuitsF11.6b.jpg(Figure 11.6)!:img/11/circuitsF11.6b.jpg |
 |\2=. _Figure 11.6  Source with Series Switch to Load Resistor, SW *Closes* at t = 0_ |
