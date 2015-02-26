@@ -130,6 +130,12 @@ title: CMCourse Book Chapters
             <li><a href="#chapter10-invert-opamp">Example: Opamp Circuit, the Inverting Amplifier</a></li>
           </ul>
 		</li>
+        <li>
+          <a href="#chapter11">Chapter-11 Switched Circuits; Capacitive Energy Storage Elements</a>
+          <ul class="nav">
+            <li><a href="#chapter11-switch-circuits">Circuits with Switch-Induced Time Variation</a></li>
+          </ul>
+		</li>
       </ul>
     </div>
   </div> <!-- /chapter index -->
@@ -233,6 +239,15 @@ title: CMCourse Book Chapters
       {% include chapter10.textile %}
       {% endcapture %}
       {{ include_to_textilize10 | textilize }}
+    </div>  
+
+    <!-- chapter 11 -->
+    <div class="chapter">
+      <h2 id="chapter11">Chapter 11: Switched Circuits; Capacitive Energy Storage Elements</h2>
+      {% capture include_to_textilize11 %}
+      {% include chapter11.textile %}
+      {% endcapture %}
+      {{ include_to_textilize11 | textilize }}
     </div>  
 		
   </div> <!-- /book -->
