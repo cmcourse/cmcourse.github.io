@@ -151,7 +151,7 @@ and solving:
 
 p=. $V_{out}$ = $\frac{A}{[1+A(\frac{R_1}{R_1+R_2})]}$ $[V_{in}]$
 
-So Vout is a constant times $V_{in}$.  Now take the case where A is a large value, in particular:
+So $V_{out}$ is a constant times $V_{in}$.  Now take the case where A is a large value, in particular:
 
 p=. $A(\frac{R_1}{R_1+R_2}) >> 1$ ...... or ...... $A >> (\frac{R_1+R_2}{R_1})$
 
@@ -168,11 +168,11 @@ The *amplifier voltage gain*, $V_{out}/V_{in}$, is therefore:
 <h4>
 p=. $\frac{V_{out}}{V_{in}}$ = $(\frac{R_1+R_2}{R_1})$</h4>
 
-The voltage gain is _*independent*_ of the value of the constant 'A' in the dependent source (provided it is large enough).  The amplifier gain only depends on the ratio of terms with resistors values only.  It is relatively easy to make the ratio of resistor values accurate and reasonably constant.  Notice because 'A' is very large, the voltage difference ($v_C$) must be very small for any moderate size $V_{out}$.
+The voltage gain is _*independent*_ of the value of the constant 'A' in the dependent source (provided it is large enough).  The amplifier gain only depends on the ratio of terms with resistors values only.  It is relatively easy to make the ratio of resistor values accurate and reasonably constant.  Notice because 'A' is very large, the control voltage difference ($v_C$) must be very small for any moderate size $V_{out}$.
 
 p=. $(v_C)$ = $\frac{V_{out}}{A}$ << 1 ...... or ...... $v_C \approx $ very small
 
-Furthermore, the requirement for a large 'A' causes the control voltage , ($v_C$), to be very small.  The voltage controlled voltage source with very large constant 'A', and hence a very small $v_C$ is a key constraint for a large class of circuits.  It is the key concept employed in circuits called 'operational amplifiers' and is the topic the next subsection.
+This arrangement with dependent voltage controlled voltage source that has a very large control gain constant 'A' which thus causes a very small control voltage $v_C$, is a key constraint for a large class of circuits.  It is the key concept employed in circuits called 'operational amplifiers' and is the topic the next subsection.
 
 
 h4(#chapter10-opamp-element). 10.4 - Operational Amplifier Circuit Elements
@@ -231,9 +231,9 @@ p=. $v_{+}$ = $v_{-}$
 
 The last opamp element constraint is to set the range limit for the output voltage.  As stated above this limit is due to the two fixed value voltage sources used to power the opamp and they limit the maximum and minimum output values to their respective values.  Thus _the third element constraint_ for the opamp is:
 
-** *Opamp Constraint (3): The range of output voltage $V_{out}$ is less than $V_{CC}$ and greater than $V_{EE}$:*
+** *Opamp Constraint (3): The range of output voltage $V_{out}$ is less than $V_{CC}$ and greater than $-V_{EE}$:*
 
-p=. $V_{EE}$ $<$ $V_{out}$ $<$ $V_{CC}$
+p=. $-V_{EE}$ $<$ $V_{out}$ $<$ $V_{CC}$
 
 We can now use the opamp as a circuit element connected into a circuit of resistors and sources.  We can solve such circuits by application of the various element constraints and the circuit conservation law constraints, in a manner similar to our prior solutions.
 
