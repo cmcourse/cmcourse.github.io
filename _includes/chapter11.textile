@@ -23,7 +23,7 @@ If we put a switch into a circuit, the result is two possible configurations. On
 
 p=(#figure11-2). !{width:95%}img/11/circuitsF11.2.jpg(Figure 11.2)!:img/11/circuitsF11.2.jpg
 (a) Switch SW _Open_ ........................................... (b)  Switch SW _Closed_
-_Figure 11.2  Example Circuit with Switch SW, Two Circuits_
+_Figure 11.2  Example Circuit with Switch SW, Two States and Two Circuits_
 
 For the switch _*SW open*_ [Figure 11-2a], the response voltage $v_1$ is (by voltage divider) 12(1/2) = 6 volts.  In contrast, with the switch _*SW closed*_ [Figure 11-2b], the 6k and 3k resistors are then in parallel and the voltage divider is then changed; thus the voltage $v_1$ takes a different value of 12(1/4) = 3 volts.  The switch open or closed makes *two different circuits* and thus, accordingly, we get two different results, 6v or 3v in this case.
 
@@ -37,21 +37,23 @@ _Figure 11.3  Switch Circuit with Switch Closure at t = t1_
 
 
 p=(#figure11-4). !{width:50%}img/11/circuitsF11.4.jpg(Figure 11.4)!:img/11/circuitsF11.4.jpg
-_Figure 11.4  Time Wave Response for Switch Closure at t = $t_1$_
+_Figure 11.4  Time Wave Response for Switch Closure at t = $t_1$ (from open to closed)_
 
 Now consider a circuit with a Thevenin equivalent 'source' [comprised of voltage source $V_{th}$ and series resistance $R_{th}$] connected to a switch and a load resistor $R_L$.  "Figure 11.5":#figure11-5 depicts the case where the switch '_closes_' at t = 0.  Here the voltage starts at zero and then increases to the 'high' state for t > 0.
 
 
-p=(#figure11-5). !{width:50%}img/11/circuitsF11.5a.jpg(Figure 11.5)!:img/11/circuitsF11.5a.jpg
-_Figure 11.5  Source with Series Switch to Load Resistor, SW *Closes* at t = 0_
-
 table(#figure11-5).
-| !{width:100%}img/11/circuitsF11.5a.jpg(Figure 11.5)!:img/11/circuitsF11.5a.jpg |=. !{width:90%}img/11/circuitsF11.5b.jpg(Figure 11.5)!:img/11/circuitsF11.5b.jpg |
+| !{width:110%}img/11/circuitsF11.5a.jpg(Figure 11.5)!:img/11/circuitsF11.5a.jpg |=. !{width:90%}img/11/circuitsF11.5b.jpg(Figure 11.5)!:img/11/circuitsF11.5b.jpg |
 |\2=. _Figure 11.5  Source with Series Switch to Load Resistor, SW *Closes* at t = 0_ |
 
 
 p=(#figure11-6). !{width:50%}img/11/circuitsF11.6.jpg(Figure 11.6)!:img/11/circuitsF11.6.jpg
 _Figure 11.6  Source with Series Switch to Load Resistor, SW *Opens* at t = 0_
+
+
+table(#figure11-6).
+| !{width:100%}img/11/circuitsF11.6a.jpg(Figure 11.6)!:img/11/circuitsF11.6a.jpg |=. !{width:90%}img/11/circuitsF11.6b.jpg(Figure 11.6)!:img/11/circuitsF11.6b.jpg |
+|\2=. _Figure 11.6  Source with Series Switch to Load Resistor, SW *Closes* at t = 0_ |
 
 "Figure 11.6":#figure11-6 depicts the same circuit, _except_ now the switch SW is *initially closed, and it opens* at t = 0.  Here observe that the output voltage starts 'high' and then drops to zero for t > 0.  The solution corresponds to the position of the switch, and the problem definition identifies the timing of the switch state.
 
