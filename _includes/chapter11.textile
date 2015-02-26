@@ -44,12 +44,12 @@ Now consider a circuit with a Thevenin equivalent 'source' [comprised of voltage
 
 table(#figure11-5).
 | !{width:110%}img/11/circuitsF11.5a.jpg(Figure 11.5)!:img/11/circuitsF11.5a.jpg |=. !{width:90%}img/11/circuitsF11.5b.jpg(Figure 11.5)!:img/11/circuitsF11.5b.jpg |
-|\2=. _Figure 11.5  Source with Series Switch to Load Resistor, SW *Closes* at t = 0_ |
+|\2=. _Figure 11.5  Source with Series Switch to Load Resistor, SW open, then *Closes* at t = 0_ |
 
 
 table(#figure11-6).
 | !{width:175%}img/11/circuitsF11.6a.jpg(Figure 11.6)!:img/11/circuitsF11.6a.jpg |=. .............!{width:62%}img/11/circuitsF11.6b.jpg(Figure 11.6)!:img/11/circuitsF11.6b.jpg |
-|\2=. _Figure 11.6  Source with Series Switch to Load Resistor, SW *Opens* at t = 0_ |
+|\2=. _Figure 11.6  Source with Series Switch to Load Resistor, SW closed then *Opens* at t = 0_ |
 
 p=. .
 
@@ -73,3 +73,18 @@ p=. Energy = (power) x (time)
 $U$ = $(p)$ $(t)$
 
 where $U$ is energy.  Now consider power, $p$, at some finite amount of power, $p_0$, then the change in energy, $\Delta U$, is proportional to the amount of time, $\Delta t$.
+
+p=. $\Delta U$ = $(p_0)$ $()\Delta t)$
+
+Now if $\Delat t$ $\Rightarrow$ zero, in other words an instantaneous change, the  $\Delta U$ $\Rightarrow$  zero too.  This simply reveals that _we cannot change energy in something instantaneously_ !!!
+
+<h3>
+p=. *It takes time to change energy !* </h3>
+
+
+h4(#chapter11-capacitor-element). 11.3 - Capacitor, an Energy Storage Circuit Element
+
+Consider a specific kind of energy-storage circuit element, the capacitor.  This is a two-terminal element and has the circuit symbol and circuit constraint depicted n "Figure 11.8":#figure11-8.
+
+
+
