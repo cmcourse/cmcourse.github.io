@@ -48,9 +48,10 @@ table(#figure11-5).
 
 
 table(#figure11-6).
-| !{width:150%}img/11/circuitsF11.6a.jpg(Figure 11.6)!:img/11/circuitsF11.6a.jpg |=. !{width:70%}img/11/circuitsF11.6b.jpg(Figure 11.6)!:img/11/circuitsF11.6b.jpg |
+| !{width:170%}img/11/circuitsF11.6a.jpg(Figure 11.6)!:img/11/circuitsF11.6a.jpg |=. !{width:65%}img/11/circuitsF11.6b.jpg(Figure 11.6)!:img/11/circuitsF11.6b.jpg |
 |\2=. _Figure 11.6  Source with Series Switch to Load Resistor, SW *Closes* at t = 0_ |
 
+p=.
 
 Starting from the closed state "Figure 11.6":#figure11-6 depicts the same circuit, _except_ now the switch SW is *initially closed, and it opens* at t = 0.  Here observe that the output voltage starts 'high' and then drops to zero for t > 0.  The solution corresponds to the position of the switch, and the problem definition identifies the timing of the switch state.
 
