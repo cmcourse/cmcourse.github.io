@@ -58,7 +58,7 @@ Starting from the closed state "Figure 11.6":#figure11-6 depicts the same circui
 Note that for these switched resistive circuits _all voltages and currents change *instantaneously*_ to the solution corresponding to the state of the switch.  
 
 
-h4(#chapter11-energy-storage). 11.2 - Special Constraint with Circuit Elements that Possess Energy Storage
+h4(#chapter11-energy-storage). 11.2 - Special Constraint Energy Storage
 
 Now consider a new type of circuit element, specifically an element that can store energy _within the element itself_.  If such an 'energy-storage' element is used in our circuits, there is a fundamental change in how the circuit can respond.  We can understand this change by once again using the Thevenin source with switch circuit of "Figure 11.5":#figure11-5,  but in this case, we change the load resistor to an element that has energy storage.  This is depicted in "Figure 11.7":#figure11-7.  At this point details about the energy storage element are not needed, only that it can store energy with electric current / voltage applied at its’ terminals.
 
