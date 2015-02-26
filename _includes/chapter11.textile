@@ -49,7 +49,7 @@ table(#figure11-5).
 
 table(#figure11-6).
 | !{width:175%}img/11/circuitsF11.6a.jpg(Figure 11.6)!:img/11/circuitsF11.6a.jpg |=. .............!{width:62%}img/11/circuitsF11.6b.jpg(Figure 11.6)!:img/11/circuitsF11.6b.jpg |
-|\2=. _Figure 11.6  Source with Series Switch to Load Resistor, SW *Closes* at t = 0_ |
+|\2=. _Figure 11.6  Source with Series Switch to Load Resistor, SW *Opens* at t = 0_ |
 
 p=. .
 
@@ -63,13 +63,13 @@ h4(#chapter11-energy-storage). 11.2 - Special Constraint with Circuit Elements t
 Now consider a new type of circuit element, specifically an element that can store energy _within the element itself_.  If such an 'energy-storage' element is used in our circuits, there is a fundamental change in how the circuit can respond.  We can understand this change by once again using the Thevenin source with switch circuit of "Figure 11.5":#figure11-5,  but in this case, we change the load resistor to an element that has energy storage.  This is depicted in "Figure 11.7":#figure11-7.  At this point details about the energy storage element are not needed, only that it can store energy with electric current / voltage applied at its’ terminals.
 
 
-p=(#figure11-7). !{width:50%}img/11/circuitsF11.7.jpg(Figure 11.7)!:img/11/circuitsF11.7.jpg
+p=(#figure11-7). !{width:60%}img/11/circuitsF11.7.jpg(Figure 11.7)!:img/11/circuitsF11.7.jpg
 _Figure 11.7  Switched Thevenin Source with Energy Storage Element_
 
-What happens when the switch SW closes?  Suppose initially there is no energy in the element, when the SW closes, the element is connect to the source and current must occur in this single loop whenever $V_{th}$ ≠ $v_e$.  This implies energy must now flow into the energy storage element.  But consider the basic definition of energy as the product of power, p, times time, t:
+What happens when the switch SW closes?  Suppose initially there is no energy in the element, when the SW closes, the element is connect to the source and current must occur in this single loop whenever $V_{th}$ $\neq$ $v_e$.  This implies energy must now flow into the energy storage element.  But consider the basic definition of energy as the product of power, $p$, times time, $t$:
 
 p=. Energy = (power) x (time)
 1 Joule = (1 Watt) x (1 second)
 $U$ = $(p)$ $(t)$
 
-where U is energy.  Now consider power, p, at some finite amount of power, po, then the change in energy, ∆U, is proportional to the amount of time, ∆t.
+where $U$ is energy.  Now consider power, $p$, at some finite amount of power, $p_0$, then the change in energy, $\Delta U$, is proportional to the amount of time, $\Delta t$.
