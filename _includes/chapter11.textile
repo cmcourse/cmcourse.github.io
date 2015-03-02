@@ -84,7 +84,28 @@ p=. *It takes time to change energy !* </h3>
 
 h4(#chapter11-capacitor-element). 11.3 - Capacitor, an Energy Storage Circuit Element
 
-Consider a specific kind of energy-storage circuit element, the capacitor.  This is a two-terminal element and has the circuit symbol and circuit constraint depicted n "Figure 11.8":#figure11-8.
+Consider a specific kind of energy-storage circuit element, the capacitor.  This is a two-terminal element and has the circuit symbol and circuit constraint depicted in "Figure 11.8":#figure11-8.
 
+
+p=(#figure11-8). !{width:60%}img/11/circuitsF11.8.jpg(Figure 11.8)!:img/11/circuitsF11.8.jpg
+_Figure 11.8  Capacitor Symbol and Capacitor Constraint_
+
+The capacitor element symbol uses the same polarity convention used by all our circuit elements; positive current is _directed toward_ the positive polarity of the element voltage.  The basic circuit constraint for a capacitor is unusual for us because it relates the _charge_ held by the capacitor as a constant times the capacitor voltage.  The constant is called the _capacitance_, $C$.  The units are charge in Coulombs, capacitance in Farads, and voltage in Volts.  To relate this constraint to a voltage and current relationship we add the *basic definition* of current as the time derivative of charge:
+
+p=. $i$ = $\frac{dQ}{dt}$
+
+hence, for the capacitor:
+
+p=. $i_C$ = $\frac{dQ_C}{dt}$ = $\frac{d}{dt}[CV_C]$
+
+by differentiation by parts:
+
+p=. $i_C$ = $C\frac{d}{dt}[V_C]$ = $V_C\frac{d}{dt}[C]$
+
+but in our circuits capacitance $C$ is a constant and hence the 2nd term is zero, so the capacitor circuit element current-voltage constraint is:
+
+p=. $i_C(t)$ = C\frac{d}{dt}V_C(t)$
+
+This means the capacitor element current, $i_C$, is proportional to the _time derivative_ of the capacitor voltage, $v_C$.  This is a new type of constraint in that current depends upon the _*rate* that the voltage changes_ and not on the voltage value itself.  Notice if there is no time variation, meaning the capacitor voltage is constant, then the derivative is zero.  Hence, _under constant no-variation (*equilibrium*) conditions the capacitor current is zero, an open circuit_.
 
 
