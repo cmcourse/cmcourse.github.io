@@ -76,7 +76,7 @@ where $U$ is energy.  Now consider power, $p$, at some finite amount of power, $
 
 p=. $\Delta U$ = $(p_0)$ $()\Delta t)$
 
-Now if $\Delat t$ $\Rightarrow$ zero, in other words an instantaneous change, the  $\Delta U$ $\Rightarrow$  zero too.  This simply reveals that _we cannot change energy in something instantaneously_ !!!
+Now if $\Delata t$ $\Rightarrow$ zero, in other words an instantaneous change, the  $\Delta U$ $\Rightarrow$  zero too.  This simply reveals that _we cannot change energy in something instantaneously_ !!!
 
 <h3>
 p=. *It takes time to change energy !* </h3>
@@ -87,7 +87,7 @@ h4(#chapter11-capacitor-element). 11.3 - Capacitor, an Energy Storage Circuit El
 Consider a specific kind of energy-storage circuit element, the capacitor.  This is a two-terminal element and has the circuit symbol and circuit constraint depicted in "Figure 11.8":#figure11-8.
 
 
-p=(#figure11-8). !{width:60%}img/11/circuitsF11.8.jpg(Figure 11.8)!:img/11/circuitsF11.8.jpg
+p=(#figure11-8). !{width:45%}img/11/circuitsF11.8.jpg(Figure 11.8)!:img/11/circuitsF11.8.jpg
 _Figure 11.8  Capacitor Symbol and Capacitor Constraint_
 
 The capacitor element symbol uses the same polarity convention used by all our circuit elements; positive current is _directed toward_ the positive polarity of the element voltage.  The basic circuit constraint for a capacitor is unusual for us because it relates the _charge_ held by the capacitor as a constant times the capacitor voltage.  The constant is called the _capacitance_, $C$.  The units are charge in Coulombs, capacitance in Farads, and voltage in Volts.  To relate this constraint to a voltage and current relationship we add the *basic definition* of current as the time derivative of charge:
@@ -104,8 +104,50 @@ p=. $i_C$ = $C\frac{d}{dt}[V_C]$ = $V_C\frac{d}{dt}[C]$
 
 but in our circuits capacitance $C$ is a constant and hence the 2nd term is zero, so the capacitor circuit element current-voltage constraint is:
 
-p=. $i_C(t)$ = C\frac{d}{dt}V_C(t)$
+p=. $i_C(t)$ = $C\frac{d}{dt}V_C(t)$
 
 This means the capacitor element current, $i_C$, is proportional to the _time derivative_ of the capacitor voltage, $v_C$.  This is a new type of constraint in that current depends upon the _*rate* that the voltage changes_ and not on the voltage value itself.  Notice if there is no time variation, meaning the capacitor voltage is constant, then the derivative is zero.  Hence, _under constant no-variation (*equilibrium*) conditions the capacitor current is zero, an open circuit_.
 
+Additionally, a capacitor stores energy with a value, $U_C$, of: [Derived from $U$ = $p$ * $t$.]
 
+p=. $U_C (t)$ = $\frac{1}{2}$ $C$ $V_C^2$$(t)$
+
+Notice, the stored energy in a capacitor depends on the capacitance value, but more importantly also on the _capacitor voltage_, $V_C$.  Now consider the constraint on any energy storage element where the energy cannot change instantaneously.  Hence we find there is an _added constraint_ for capacitors: _the capacitor voltage *cannot* change instantaneously__, which means _the capacitor voltage must be *continuous* with variation over time_.
+
+p=. Capacitor Energy Constraint is: $\RightArrow$ $V_C(t)$ is *always continuous.*
+
+We will find that this requirement for voltage continuity on a capacitor is very significant, especially for switched circuits.  The voltage on a capacitor must be the same immediately before to immediately after a switch closes or opens.
+
+** 11.3.1 _Capacitor-Current Waveform Example_
+
+Since the time derivative represents the instantaneous slope, we can find the capacitor current given we know the time waveform of the capacitor voltage.  This derivative relationship is depicted in "Figure 11.9":#figure11-9, which shows an example with given voltage waveform and the corresponding resultant current for a capacitor of 3 Farads.
+
+
+p=(#figure11-9). !{width:60%}img/11/circuitsF11.9.jpg(Figure 11.9)!:img/11/circuitsF11.9.jpg
+_Figure 11.9  Example Voltage and Current Waveforms for a Capacitor of 3 Farads_
+
+This current waveform can be calculated by considering each of 5 distinct regions of constant slope in the given voltage waveform, as discussed below.
+
+## In the time interval: $t < 0$: The capacitor voltage is given to be a constant value (zero in this case, but it is constant), and hence the capacitor current, iC, is zero.
+## In the time interval: $0 < t < 1$ second: The capacitor voltage is changing at a constant rate of slope 5 volts / 1 sec, and hence the capacitor current is 3 x 5 = 15 amperes.
+## In the time interval: $1 < t < 3$ second: The capacitor voltage is a fixed constant of 5 volts, and hence the time derivative is zero, so the capacitor current is zero.
+## In the time interval: $3 < t < 5$ second: The capacitor voltage is again changing, this time it is reducing at a constant rate of -5 volts in 2 seconds, and hence the capacitor current is 3 x (-5/2) = -7.5 amperes.
+## In the time interval: $t > 5$ second: The capacitor voltage is again given to be constant so the current is again zero.
+
+Notice the derivative relation means the current is a constant when the slope of the voltage versus time is a constant. At a voltage slope of +5 volts/sec, the current in this case is a constant 15 amperes.  And for a voltage slope of – 5/2 volts/sec, the element current is – 15/2 amperes.
+
+Hence, the element constraint relation for a capacitor causes a very different relationship between the voltage across the capacitor and the corresponding element current through the capacitor.  Unlike a resistor element (where the voltage and current are proportional and have the same 'shape' of time variation) the capacitor forces a time varying element current to have a very different ‘shape’ or form compared to the element voltage.  There is a relationship of course, the current is proportional to the derivative-in-time of the voltage, but this constraint causes the current waveform to 'look' different than the voltage waveform, see "Figure 11.9":#figure11-9 above as an example.
+
+
+h4(#chapter11-switched-RC). 11.4 - Resistor-Capacitor Switched Circuits, Transient Time Response
+
+At this point we now combine the various circuit elements into a circuit and determine an entirely new response, one where energy storage strongly influences the voltages and currents.  To understand this energy storage effect we consider a Thevenin-like circuit connected to a single capacitor, "Figure 11.10":#figure11-10.
+
+
+p=(#figure11-10). !{width:60%}img/11/circuitsF11.10.jpg(Figure 11.10)!:img/11/circuitsF11.10.jpg
+_Figure 11.10  Resistor-Capacitor Series Circuit with Switch_
+
+This series connection of fixed voltage source, $V_S$, and resistor, $R$, that may also be considered as a Thevenin equivalent circuit for a more complex network.  Hence, this simple RC circuit represents a more complex problem where the complex linear circuit surrounding a capacitor is represented by its' Thevenin equivalent.  Here the capacitor voltage and current are identified, $v_C(t)$ and $i_C(t)$, and the resistor voltage and current, $v_R(t)$ and $i_R(t)$, are also identified.  We can proceed to solve this switched RC circuit by direct application of element and circuit _constraints_, according to the switch position.
+
+*Before: $t$ = 0, with the switch open:*
+The capacitor current, iC, must be zero since there is no connected path to any other elements.  But zero capacitor current (by the capacitor constraint) requires a constant capacitor voltage, $v_C(t)$ = constant.  The value of this constant voltage will be set by any prior connections to the capacitor, and for now is taken to be zero, $v_C(t=0-)$ = 0.
