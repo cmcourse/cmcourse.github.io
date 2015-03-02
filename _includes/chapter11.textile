@@ -187,7 +187,7 @@ p=. $v_C(t)$ = A$e^\frac{-t}{\tau}$ + B [Eq'n 3]
 The exponential term is inherent to ALL 1st order LCCDE systems and is often referred to as the '*homogeneous*' part of the solution.  In this case the second term, the constant B, is selected to match the drive, which in this case is a constant.  This second term of the general solution is often referred to as the '*particular*' part of the solution, since it is chosen to match the equation form of the drive of the problem.  To better understand the exponential relation, we first graphically depict the exponential function "Figure 11.11":#figure11-11.
 
 
-p=(#figure11-11). !{width:90%}img/11/circuitsF11.11.jpg(Figure 11.11)!:img/11/circuitsF11.11.jpg
+p=(#figure11-11). !{width:80%}img/11/circuitsF11.11.jpg(Figure 11.11)!:img/11/circuitsF11.11.jpg
 _Figure 11.11  The Exponential Decay Function_
 
 Notice the units of time, t, are in tau, ($\tau$ ).  At time t = 0 the value of the exponential function is e0 = 1, and at t = 1 tau the value has decayed to $e^(-1)$ = 0.368 (36.8%).  And by 3 tau the value of the exponential is just $e^(-3)$ = 0.0498  (5% of the initial value at t = 0); at 5 tau the value is $e^(-5)$ = 0.0067, less than 1% the value at t = 0.  As a practical matter, we often identify the completion of the exponential transient decay to be at the time of 5 tau.  We cannot wait forever and hence take the practical answer of essentially negligible remaining change.  Hence this selected end point of _5 tau_ corresponds to our 'completed' transient (and is accurate to within an error of less than 1%).
@@ -206,12 +206,12 @@ p=. $v_C(\infty)$ = B = $v_{Cfnl}$
 
 Thus, if we express the exponential decay as beginning at t = 0 with value of $v_{Cinitial}$, and the decay ending with a value of $v_{Cfinal}$, we can rewrite Eq'n 3 as Eq'n 4.
 
-p=. $v_C(t)$ = $(v_{Cinit} - v__{Cfnl})$ $e^\frac{-t}{\tau}$ + $v_{Cfnl}$  [eq'n 4]
+p=. $v_C(t)$ = $(v_{Cinit} - v_{Cfnl})$ $e^\frac{-t}{\tau}$ + $v_{Cfnl}$  [eq'n 4]
 
 This general solution expresses a full range of possible solutions.  Consider the cases where the final value is smaller than the initial value, 'falling' curve 'A'; and where the final value is larger than the initial value, 'rising' curve 'B' as depicted in "Figure 11.12":#figure11-12.
 
 
-p=(#figure11-12). !{width:90%}img/11/circuitsF11.12.jpg(Figure 11.12)!:img/11/circuitsF11.12.jpg
+p=(#figure11-12). !{width:80%}img/11/circuitsF11.12.jpg(Figure 11.12)!:img/11/circuitsF11.12.jpg
 _Figure 11.12  Rising  and Falling Cases of Exponential Transient Time Responses_
 
 Notice the time variation is always the same, a simple 'exponential-in-time' relation.  The responses are either increasing or decreasing, but the time variation 'shape' is the same just the simple exponential, $e^\frac{-t}{\tau}$ .
