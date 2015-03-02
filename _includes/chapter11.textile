@@ -60,7 +60,7 @@ Note that for these switched resistive circuits _all voltages and currents chang
 
 h4(#chapter11-energy-storage). 11.2 - Special Constraint Energy Storage
 
-Now consider a new type of circuit element, specifically an element that can store energy _within the element itself_.  If such an 'energy-storage' element is used in our circuits, there is a fundamental change in how the circuit can respond.  We can understand this change by once again using the Thevenin source with switch circuit of "Figure 11.5":#figure11-5,  but in this case, we change the load resistor to an element that has energy storage.  This is depicted in "Figure 11.7":#figure11-7.  At this point details about the energy storage element are not needed, only that it can store energy with electric current / voltage applied at its’ terminals.
+Now consider a new type of circuit element, specifically an element that can store energy _within the element itself_.  If such an 'energy-storage' element is used in our circuits, there is a fundamental change in how the circuit can respond.  We can understand this change by once again using the Thevenin source with switch circuit of "Figure 11.5":#figure11-5,  but in this case, we change the load resistor to an element that has energy storage.  This is depicted in "Figure 11.7":#figure11-7.  At this point details about the energy storage element are not needed, only that it can store energy with electric current / voltage applied at its' terminals.
 
 
 p=(#figure11-7). !{width:60%}img/11/circuitsF11.7.jpg(Figure 11.7)!:img/11/circuitsF11.7.jpg
@@ -76,7 +76,7 @@ where $U$ is energy.  Now consider power, $p$, at some finite amount of power, $
 
 p=. $\Delta U$ = $(p_0)$ $()\Delta t)$
 
-Now if $\Delata t$ $\Rightarrow$ zero, in other words an instantaneous change, the  $\Delta U$ $\Rightarrow$  zero too.  This simply reveals that _we cannot change energy in something instantaneously_ !!!
+Now if $\Delta t$ $\Rightarrow$ zero, in other words an instantaneous change, the  $\Delta U$ $\Rightarrow$  zero too.  This simply reveals that _we cannot change energy in something instantaneously_ !!!
 
 <h3>
 p=. *It takes time to change energy !* </h3>
@@ -100,7 +100,7 @@ p=. $i_C$ = $\frac{dQ_C}{dt}$ = $\frac{d}{dt}[CV_C]$
 
 by differentiation by parts:
 
-p=. $i_C$ = $C\frac{d}{dt}[V_C]$ = $V_C\frac{d}{dt}[C]$
+p=. $i_C$ = $C\frac{d}{dt}[V_C]$ = $V_C\frac{d}{dt}$$[C]$
 
 but in our circuits capacitance $C$ is a constant and hence the 2nd term is zero, so the capacitor circuit element current-voltage constraint is:
 
@@ -114,7 +114,7 @@ p=. $U_C (t)$ = $\frac{1}{2}$ $C$ $V_C^2$$(t)$
 
 Notice, the stored energy in a capacitor depends on the capacitance value, but more importantly also on the _capacitor voltage_, $V_C$.  Now consider the constraint on any energy storage element where the energy cannot change instantaneously.  Hence we find there is an _added constraint_ for capacitors: _the capacitor voltage *cannot* change instantaneously__, which means _the capacitor voltage must be *continuous* with variation over time_.
 
-p=. Capacitor Energy Constraint is: $\RightArrow$ $V_C(t)$ is *always continuous.*
+p=. Capacitor Energy Constraint is: $\Rightarrow$ $V_C(t)$ is *always continuous.*
 
 We will find that this requirement for voltage continuity on a capacitor is very significant, especially for switched circuits.  The voltage on a capacitor must be the same immediately before to immediately after a switch closes or opens.
 
@@ -134,9 +134,9 @@ This current waveform can be calculated by considering each of 5 distinct region
 ## In the time interval: $3 < t < 5$ second: The capacitor voltage is again changing, this time it is reducing at a constant rate of -5 volts in 2 seconds, and hence the capacitor current is 3 x (-5/2) = -7.5 amperes.
 ## In the time interval: $t > 5$ second: The capacitor voltage is again given to be constant so the current is again zero.
 
-Notice the derivative relation means the current is a constant when the slope of the voltage versus time is a constant. At a voltage slope of +5 volts/sec, the current in this case is a constant 15 amperes.  And for a voltage slope of – 5/2 volts/sec, the element current is – 15/2 amperes.
+Notice the derivative relation means the current is a constant when the slope of the voltage versus time is a constant. At a voltage slope of +5 volts/sec, the current in this case is a constant 15 amperes.  And for a voltage slope of - 5/2 volts/sec, the element current is - 15/2 amperes.
 
-Hence, the element constraint relation for a capacitor causes a very different relationship between the voltage across the capacitor and the corresponding element current through the capacitor.  Unlike a resistor element (where the voltage and current are proportional and have the same 'shape' of time variation) the capacitor forces a time varying element current to have a very different ‘shape’ or form compared to the element voltage.  There is a relationship of course, the current is proportional to the derivative-in-time of the voltage, but this constraint causes the current waveform to 'look' different than the voltage waveform, see "Figure 11.9":#figure11-9 above as an example.
+Hence, the element constraint relation for a capacitor causes a very different relationship between the voltage across the capacitor and the corresponding element current through the capacitor.  Unlike a resistor element (where the voltage and current are proportional and have the same 'shape' of time variation) the capacitor forces a time varying element current to have a very different 'shape' or form compared to the element voltage.  There is a relationship of course, the current is proportional to the derivative-in-time of the voltage, but this constraint causes the current waveform to 'look' different than the voltage waveform, see "Figure 11.9":#figure11-9 above as an example.
 
 
 h4(#chapter11-switched-RC). 11.4 - Resistor-Capacitor Switched Circuits, Transient Time Response
@@ -150,4 +150,68 @@ _Figure 11.10  Resistor-Capacitor Series Circuit with Switch_
 This series connection of fixed voltage source, $V_S$, and resistor, $R$, that may also be considered as a Thevenin equivalent circuit for a more complex network.  Hence, this simple RC circuit represents a more complex problem where the complex linear circuit surrounding a capacitor is represented by its' Thevenin equivalent.  Here the capacitor voltage and current are identified, $v_C(t)$ and $i_C(t)$, and the resistor voltage and current, $v_R(t)$ and $i_R(t)$, are also identified.  We can proceed to solve this switched RC circuit by direct application of element and circuit _constraints_, according to the switch position.
 
 *Before: $t$ = 0, with the switch open:*
-The capacitor current, iC, must be zero since there is no connected path to any other elements.  But zero capacitor current (by the capacitor constraint) requires a constant capacitor voltage, $v_C(t)$ = constant.  The value of this constant voltage will be set by any prior connections to the capacitor, and for now is taken to be zero, $v_C(t=0-)$ = 0.
+The capacitor current, $i_C$, must be zero since there is no connected path to any other elements.  But zero capacitor current (by the capacitor constraint) requires a constant capacitor voltage, $v_C(t)$ = constant.  The value of this constant voltage will be set by any prior connections to the capacitor, and for now is taken to be zero, $v_C(t=0-)$ = 0.
+
+*At: t = 0+, just after the switch closes:*
+By the energy constraint, the capacitor voltage _cannot change instantaneously_, and thus:
+
+p=. $v_C(t=0+)$ = $v_C(t=0-)$ = 0
+
+*After: t = 0: further after the switch closure:*
+Element constraints require the voltage across the resistor to be $v_R$ = ($V_S$ – $v_C$), and thus by ohm's law and KCL we can write:
+
+p=. $i_R(t)$ = $\frac{(V_S - v_C(t))}{R}$ = $i_C(t)$
+
+Here we recognize that the circuit has a single loop so the resistor current, $i_R$, must equal the capacitor current $i_C$.  Additionally, the constraint relation for a capacitor requires:
+
+p=. $i_C(t)$ = $C\frac{d}{dt}V_C(t)$
+
+equating; we obtain:
+
+p=. $C\frac{dv_C(t)}{dt}$ = $\frac{(V_S - v_C(t))}{R}$
+
+collecting terms:
+
+p=. $\frac{dv_C(t)}{dt}$ + $\frac{1}{RC}v_C(t)$ = $\frac{V_S}{RC}$ [Eq'n 1]
+
+This equation is a _differential equation_, and more specifically it is a Linear, Constant Coefficient Differential Equation of first order.  Hence in 'short-hand' it is a 1st-order LCCDE.  It describes the capacitor voltage for all time greater than zero (after the switch is closed).  The corresponding generic form for a _capacitor voltage in a switched circuit_ is:
+
+p=. $\frac{dv_C(t)}{dt}$ + $\frac{1}{\tau}v_C(t)$ = $K$ (= constant) [Eq'n 2]
+
+where, the constant tau, $\tau$ , must have the units of time to match the units of the derivative term, so   (\tau) = $RC$ (ohm-farads = seconds).  All three terms in equation 2 here have units of volts/sec.
+
+This LCCDE has a general solution of the form:
+
+p=. $v_C(t)$ = A$e^\frac{-t}{\tau}$ + B [Eq'n 3]
+
+The exponential term is inherent to ALL 1st order LCCDE systems and is often referred to as the '*homogeneous*' part of the solution.  In this case the second term, the constant B, is selected to match the drive, which in this case is a constant.  This second term of the general solution is often referred to as the '*particular*' part of the solution, since it is chosen to match the equation form of the drive of the problem.  To better understand the exponential relation, we first graphically depict the exponential function "Figure 11.11":#figure11-11.
+
+
+p=(#figure11-11). !{width:90%}img/11/circuitsF11.11.jpg(Figure 11.11)!:img/11/circuitsF11.11.jpg
+_Figure 11.11  The Exponential Decay Function_
+
+Notice the units of time, t, are in tau, (\tau ).  At time t = 0 the value of the exponential function is e0 = 1, and at t = 1 tau the value has decayed to e^(-1) = 0.368 (36.8%).  And by 3 tau the value of the exponential is just e-3 = 0.0498  (5% of the initial value at t = 0); at 5 tau the value is e^(-5) = 0.0067, less than 1% the value at t = 0.  As a practical matter, we often identify the completion of the exponential transient decay to be at the time of 5 tau.  We cannot wait forever and hence take the practical answer of essentially negligible remaining change.  Hence this selected end point of _5 tau_ corresponds to our 'completed' transient (and is accurate to within an error of less than 1%).
+
+Notice also the initial slope of the exponential decay is the _tangent line_ at t = 0 that goes through the final value = 0, time axis, at a time of 1 tau.  This makes graphing the exponential relatively easy since *all exponential decays* take exactly this shape.
+
+** 11.4.1 _Convenient Form for the Universal Switch Response Solution_
+
+A 'universal' response characteristic for all switched capacitive circuits can be obtained by starting from the switch response solution form of Eq’n 3 and then evaluate two extremes, one at t = 0+, and the other when the transient is fully over at t = \infty.  At time t = 0+ the exponential term is 1, and hence the LCCDE solution has the value of:
+
+p=. $v_C(0)$ = A + B = $v_{Cinit}$
+
+and at t = \infty, the exponential term is zero so:
+
+p=. $v_C(\infty)$ = B = $v_{Cfnl}$
+
+Thus, if we express the exponential decay as beginning at t = 0 with value of $v_{Cinitial}$, and the decay ending with a value of $v_{Cfinal}$, we can rewrite Eq'n 3 as Eq'n 4.
+
+p=. $v_C(t)$ = $(v_{Cinit} - v__{Cfnl})$ $e^\frac{-t}{\tau}$ + $v_{Cfnl}$  [eq'n 4]
+
+This general solution expresses a full range of possible solutions.  Consider the cases where the final value is smaller than the initial value, 'falling' curve 'A'; and where the final value is larger than the initial value, 'rising' curve 'B' as depicted in "Figure 11.12":#figure11-12.
+
+
+p=(#figure11-12). !{width:90%}img/11/circuitsF11.12.jpg(Figure 11.12)!:img/11/circuitsF11.12.jpg
+_Figure 11.12  Rising  and Falling Cases of Exponential Transient Time Responses_
+
+Notice the time variation is always the same, a simple 'exponential-in-time' relation.  The responses are either increasing or decreasing, but the time variation 'shape' is the same just the simple exponential, $e^\frac{-t}{\tau}$ .
