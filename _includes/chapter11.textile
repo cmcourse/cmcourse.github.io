@@ -178,7 +178,7 @@ This equation is a _differential equation_, and more specifically it is a Linear
 
 p=. $\frac{dv_C(t)}{dt}$ + $\frac{1}{\tau}v_C(t)$ = $K$ (= constant) [Eq'n 2]
 
-where, the constant tau, $\tau$ , must have the units of time to match the units of the derivative term, so   (\tau) = $RC$ (ohm-farads = seconds).  All three terms in equation 2 here have units of volts/sec.
+where, the constant tau, $\tau$ , must have the units of time to match the units of the derivative term, so   ($\tau$) = $RC$ (ohm-farads = seconds).  All three terms in equation 2 here have units of volts/sec.
 
 This LCCDE has a general solution of the form:
 
@@ -190,17 +190,17 @@ The exponential term is inherent to ALL 1st order LCCDE systems and is often ref
 p=(#figure11-11). !{width:90%}img/11/circuitsF11.11.jpg(Figure 11.11)!:img/11/circuitsF11.11.jpg
 _Figure 11.11  The Exponential Decay Function_
 
-Notice the units of time, t, are in tau, (\tau ).  At time t = 0 the value of the exponential function is e0 = 1, and at t = 1 tau the value has decayed to e^(-1) = 0.368 (36.8%).  And by 3 tau the value of the exponential is just e-3 = 0.0498  (5% of the initial value at t = 0); at 5 tau the value is e^(-5) = 0.0067, less than 1% the value at t = 0.  As a practical matter, we often identify the completion of the exponential transient decay to be at the time of 5 tau.  We cannot wait forever and hence take the practical answer of essentially negligible remaining change.  Hence this selected end point of _5 tau_ corresponds to our 'completed' transient (and is accurate to within an error of less than 1%).
+Notice the units of time, t, are in tau, ($\tau$ ).  At time t = 0 the value of the exponential function is e0 = 1, and at t = 1 tau the value has decayed to $e^(-1)$ = 0.368 (36.8%).  And by 3 tau the value of the exponential is just $e^(-3)$ = 0.0498  (5% of the initial value at t = 0); at 5 tau the value is $e^(-5)$ = 0.0067, less than 1% the value at t = 0.  As a practical matter, we often identify the completion of the exponential transient decay to be at the time of 5 tau.  We cannot wait forever and hence take the practical answer of essentially negligible remaining change.  Hence this selected end point of _5 tau_ corresponds to our 'completed' transient (and is accurate to within an error of less than 1%).
 
 Notice also the initial slope of the exponential decay is the _tangent line_ at t = 0 that goes through the final value = 0, time axis, at a time of 1 tau.  This makes graphing the exponential relatively easy since *all exponential decays* take exactly this shape.
 
 ** 11.4.1 _Convenient Form for the Universal Switch Response Solution_
 
-A 'universal' response characteristic for all switched capacitive circuits can be obtained by starting from the switch response solution form of Eq’n 3 and then evaluate two extremes, one at t = 0+, and the other when the transient is fully over at t = \infty.  At time t = 0+ the exponential term is 1, and hence the LCCDE solution has the value of:
+A 'universal' response characteristic for all switched capacitive circuits can be obtained by starting from the switch response solution form of Eq'n 3 and then evaluate two extremes, one at t = 0+, and the other when the transient is fully over at t = $\infty$.  At time t = 0+ the exponential term is 1, and hence the LCCDE solution has the value of:
 
 p=. $v_C(0)$ = A + B = $v_{Cinit}$
 
-and at t = \infty, the exponential term is zero so:
+and at t = $\infty$, the exponential term is zero so:
 
 p=. $v_C(\infty)$ = B = $v_{Cfnl}$
 
