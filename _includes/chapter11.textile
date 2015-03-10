@@ -172,17 +172,17 @@ p=. $C\frac{dv_C(t)}{dt}$ = $\frac{(V_S - v_C(t))}{R}$
 
 collecting terms:
 
-p=. $\frac{dv_C(t)}{dt}$ + $\frac{1}{RC}v_C(t)$ = $\frac{V_S}{RC}$ [Eq'n 1]
+p=. $\frac{dv_C(t)}{dt}$ + $\frac{1}{RC}v_C(t)$ = $\frac{V_S}{RC}$ ... [Eq'n 1]
 
 This equation is a _differential equation_, and more specifically it is a Linear, Constant Coefficient Differential Equation of first order.  Hence in 'short-hand' it is a 1st-order LCCDE.  It describes the capacitor voltage for all time greater than zero (after the switch is closed).  The corresponding generic form for a _capacitor voltage in a switched circuit_ is:
 
-p=. $\frac{dv_C(t)}{dt}$ + $\frac{1}{\tau}v_C(t)$ = $K$ (= constant) [Eq'n 2]
+p=. $\frac{dv_C(t)}{dt}$ + $\frac{1}{\tau}v_C(t)$ = $K$ (= constant) ... [Eq'n 2]
 
 where, the constant tau, $\tau$ , must have the units of time to match the units of the derivative term, so   ($\tau$) = $RC$ (ohm-farads = seconds).  All three terms in equation 2 here have units of volts/sec.
 
 This LCCDE has a general solution of the form:
 
-p=. $v_C(t)$ = A$e^\frac{-t}{\tau}$ + B [Eq'n 3]
+p=. $v_C(t)$ = A$e^\frac{-t}{\tau}$ + B ... [Eq'n 3]
 
 The exponential term is inherent to ALL 1st order LCCDE systems and is often referred to as the '*homogeneous*' part of the solution.  In this case the second term, the constant B, is selected to match the drive, which in this case is a constant.  This second term of the general solution is often referred to as the '*particular*' part of the solution, since it is chosen to match the equation form of the drive of the problem.  To better understand the exponential relation, we first graphically depict the exponential function "Figure 11.11":#figure11-11.
 
@@ -206,12 +206,35 @@ p=. $v_C(\infty)$ = B = $v_{Cfnl}$
 
 Thus, if we express the exponential decay as beginning at t = 0 with value of $v_{Cinitial}$, and the decay ending with a value of $v_{Cfinal}$, we can rewrite Eq'n 3 as Eq'n 4.
 
-p=. $v_C(t)$ = $(v_{Cinit} - v_{Cfnl})$ $e^\frac{-t}{\tau}$ + $v_{Cfnl}$  [eq'n 4]
+p=. $v_C(t)$ = $(v_{Cinit} - v_{Cfnl})$ $e^\frac{-t}{\tau}$ + $v_{Cfnl}$ ... [eq'n 4]
 
-This general solution expresses a full range of possible solutions.  Consider the cases where the final value is smaller than the initial value, 'falling' curve 'A'; and where the final value is larger than the initial value, 'rising' curve 'B' as depicted in "Figure 11.12":#figure11-12.
+This *general solution* expresses a full range of possible solutions.  Consider the cases where the final value is smaller than the initial value, 'falling' curve 'A'; and where the final value is larger than the initial value, 'rising' curve 'B' as depicted in "Figure 11.12":#figure11-12.
 
 
 p=(#figure11-12). !{width:80%}img/11/circuitsF11.12.jpg(Figure 11.12)!:img/11/circuitsF11.12.jpg
 _Figure 11.12  Rising  and Falling Cases of Exponential Transient Time Responses_
 
 Notice the time variation is always the same, a simple 'exponential-in-time' relation.  The responses are either increasing or decreasing, but the time variation 'shape' is the same just the simple exponential, $e^\frac{-t}{\tau}$ .
+
+** 11.4.1  _Example Exponential Time Response Curves_
+
+Lets consider a couple of numerical cases of the exponential response.  If the _initial value_ of an exponential response for voltage $v_C(t)$ for time, $t$ > 0, is 12 volts and the _final value_ is -4 volts, and the _time-constant_ tau is 3 seconds, then the equation for the response is:
+
+p=. $v_C(0)$ = $(12 - (-4))$ $e^(\frac{-t}{3})$ + $(-4)$ ... for $t$ > 0
+
+p=. $v_C(0)$ = $(16)$ $e^(\frac{-t}{3})$ - $4$ ... for $t$ > 0
+
+This response starts at a high value and decays to a lower value and thus is of the form of 'falling' curve 'A' in "Figure 11.12":#figure11-12.
+
+Another example response (valid for $t$ > 0) could have an _initial value_ of +5 volts, a _final value_ of +14 volts, with a _time-constant_ tau = 5 seconds.  The response equation is then:
+
+p=. $v_C(0)$ = $(5 - (14))$ $e^(\frac{-t}{3})$ + $(14)$ ... for $t$ > 0
+
+so, reducing:
+
+p=. $v_C(0)$ = $(-9)$ $e^(\frac{-t}{3})$ - $14$ ... for $t$ > 0
+
+This response starts at a lower initial value of +5 and ends higher at the final value of +14 and thus is of the form of 'rising' curve 'B' in "Figure 11.12":#figure11-12.
+
+
+
