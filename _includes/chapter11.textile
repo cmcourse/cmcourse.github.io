@@ -239,6 +239,6 @@ This response starts at a lower initial value of +5 and ends higher at the final
 
 h4(#chapter11-example-switchedRC). 11.5 - Example Resistor-Capacitor Switched Circuits
 
-
+We can apply our transient solution method to the switched R-C (Resistor-Capacitor) circuit problem.  Using the basic structure of Figure 11-10 with numerical values consider the circuit in Figure 11-13, we desire to determine the output voltage vout(t) for t > 0.
 
 
