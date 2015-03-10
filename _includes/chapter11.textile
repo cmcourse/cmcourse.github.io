@@ -220,19 +220,19 @@ Notice the time variation is always the same, a simple 'exponential-in-time' rel
 
 Lets consider a couple of numerical cases of the exponential response.  If the _initial value_ of an exponential response for voltage $v_C(t)$ for time, $t$ > 0, is 12 volts and the _final value_ is -4 volts, and the _time-constant_ tau is 3 seconds, then the equation for the response is:
 
-p=. $v_C(0)$ = $(12 - (-4))$ $e^(\frac{-t}{3})$ + $(-4)$ ... for $t$ > 0
+p=. $v_C(0)$ = $(12 - (-4))$ $e^{\frac{-t}{3}}$ + $(-4)$ ... for $t$ > 0
 
-p=. $v_C(0)$ = $(16)$ $e^(\frac{-t}{3})$ - $4$ ... for $t$ > 0
+p=. $v_C(0)$ = $(16)$ $e^\frac{-t}{3}$ - $4$ ... for $t$ > 0
 
 This response starts at a high value and decays to a lower value and thus is of the form of 'falling' curve 'A' in "Figure 11.12":#figure11-12.
 
 Another example response (valid for $t$ > 0) could have an _initial value_ of +5 volts, a _final value_ of +14 volts, with a _time-constant_ tau = 5 seconds.  The response equation is then:
 
-p=. $v_C(0)$ = $(5 - (14))$ $e^(\frac{-t}{3})$ + $(14)$ ... for $t$ > 0
+p=. $v_C(0)$ = $(5 - (14))$ $e^\frac{-t}{3}$ + $(14)$ ... for $t$ > 0
 
 so, reducing:
 
-p=. $v_C(0)$ = $(-9)$ $e^(\frac{-t}{3})$ - $14$ ... for $t$ > 0
+p=. $v_C(0)$ = $(-9)$ $e^\frac{-t}{3}$ - $14$ ... for $t$ > 0
 
 This response starts at a lower initial value of +5 and ends higher at the final value of +14 and thus is of the form of 'rising' curve 'B' in "Figure 11.12":#figure11-12.
 
