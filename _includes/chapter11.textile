@@ -58,7 +58,7 @@ Starting from the closed state "Figure 11.6":#figure11-6 depicts the same circui
 Note that for these switched resistive circuits _all voltages and currents change *instantaneously*_ to the solution corresponding to the state of the switch.  
 
 
-h4(#chapter11-energy-storage). 11.2 - Special Constraint Energy Storage
+h4(#chapter11-energy-constraints). 11.2 - Special Constraint Energy Storage
 
 Now consider a new type of circuit element, specifically an element that can store energy _within the element itself_.  If such an 'energy-storage' element is used in our circuits, there is a fundamental change in how the circuit can respond.  We can understand this change by once again using the Thevenin source with switch circuit of "Figure 11.5":#figure11-5,  but in this case, we change the load resistor to an element that has energy storage.  This is depicted in "Figure 11.7":#figure11-7.  At this point details about the energy storage element are not needed, only that it can store energy with electric current / voltage applied at its' terminals.
 
@@ -74,7 +74,7 @@ $U$ = $(p)$ $(t)$
 
 where $U$ is energy.  Now consider power, $p$, at some finite amount of power, $p_0$, then the change in energy, $\Delta U$, is proportional to the amount of time, $\Delta t$.
 
-p=. $\Delta U$ = $(p_0)$ $()\Delta t)$
+p=. $\Delta U$ = $(p_0)$ $(\Delta t)$
 
 Now if $\Delta t$ $\Rightarrow$ zero, in other words an instantaneous change, the  $\Delta U$ $\Rightarrow$  zero too.  This simply reveals that _we cannot change energy in something instantaneously_ !!!
 
@@ -100,7 +100,7 @@ p=. $i_C$ = $\frac{dQ_C}{dt}$ = $\frac{d}{dt}[CV_C]$
 
 by differentiation by parts:
 
-p=. $i_C$ = $C\frac{d}{dt}[V_C]$ = $V_C\frac{d}{dt}$$[C]$
+p=. $i_C$ = $C\frac{d}{dt}[V_C]$ = $V_C\frac{d}{dt}$ $C$
 
 but in our circuits capacitance $C$ is a constant and hence the 2nd term is zero, so the capacitor circuit element current-voltage constraint is:
 
@@ -108,7 +108,7 @@ p=. $i_C(t)$ = $C\frac{d}{dt}V_C(t)$
 
 This means the capacitor element current, $i_C$, is proportional to the _time derivative_ of the capacitor voltage, $v_C$.  This is a new type of constraint in that current depends upon the _*rate* that the voltage changes_ and not on the voltage value itself.  Notice if there is no time variation, meaning the capacitor voltage is constant, then the derivative is zero.  Hence, _under constant no-variation (*equilibrium*) conditions the capacitor current is zero, an open circuit_.
 
-Additionally, a capacitor stores energy with a value, $U_C$, of: [Derived from $U$ = $p$ * $t$.]
+Additionally, a capacitor stores energy with a value, $U_C$, of: [Derived from $U$ = $p$ * $t$]
 
 p=. $U_C (t)$ = $\frac{1}{2}$ $C$ $V_C^2$$(t)$
 
@@ -118,7 +118,7 @@ p=. Capacitor Energy Constraint is: $\Rightarrow$ $V_C(t)$ is *always continuous
 
 We will find that this requirement for voltage continuity on a capacitor is very significant, especially for switched circuits.  The voltage on a capacitor must be the same immediately before to immediately after a switch closes or opens.
 
-** 11.3.1 _Capacitor-Current Waveform Example_
+** _*11.3.1 Capacitor-Current Waveform Example*_
 
 Since the time derivative represents the instantaneous slope, we can find the capacitor current given we know the time waveform of the capacitor voltage.  This derivative relationship is depicted in "Figure 11.9":#figure11-9, which shows an example with given voltage waveform and the corresponding resultant current for a capacitor of 3 Farads.
 
@@ -194,7 +194,7 @@ Notice the units of time, t, are in tau, ($\tau$ ).  At time t = 0 the value of 
 
 Notice also the initial slope of the exponential decay is the _tangent line_ at t = 0 that goes through the final value = 0, time axis, at a time of 1 tau.  This makes graphing the exponential relatively easy since *all exponential decays* take exactly this shape.
 
-** 11.4.1 _Convenient Form for the Universal Switch Response Solution_
+** _*11.4.1 Convenient Form for the Universal Switch Response Solution*_
 
 A 'universal' response characteristic for all switched capacitive circuits can be obtained by starting from the switch response solution form of Eq'n 3 and then evaluate two extremes, one at t = 0+, and the other when the transient is fully over at t = $\infty$.  At time t = 0+ the exponential term is 1, and hence the LCCDE solution has the value of:
 
@@ -216,7 +216,7 @@ _Figure 11.12  Rising  and Falling Cases of Exponential Transient Time Responses
 
 Notice the time variation is always the same, a simple 'exponential-in-time' relation.  The responses are either increasing or decreasing, but the time variation 'shape' is the same just the simple exponential, $e^\frac{-t}{\tau}$ .
 
-** 11.4.1  _Example Exponential Time Response Curves_
+** _*11.4.2  Example Exponential Time Response Curves*_
 
 Lets consider a couple of numerical cases of the exponential response.  If the _initial value_ of an exponential response for voltage $v_C(t)$ for time, $t$ > 0, is 12 volts and the _final value_ is -4 volts, and the _time-constant_ tau is 3 seconds, then the equation for the response is:
 
@@ -235,6 +235,10 @@ so, reducing:
 p=. $v_C(0)$ = $(-9)$ $e^(\frac{-t}{3})$ - $14$ ... for $t$ > 0
 
 This response starts at a lower initial value of +5 and ends higher at the final value of +14 and thus is of the form of 'rising' curve 'B' in "Figure 11.12":#figure11-12.
+
+
+h4(#chapter11-example-switchedRC). 11.5 - Example Resistor-Capacitor Switched Circuits
+
 
 
 
