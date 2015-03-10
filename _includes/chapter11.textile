@@ -228,7 +228,7 @@ This response starts at a high value and decays to a lower value and thus is of 
 
 Another example response (valid for $t$ > 0) could have an _initial value_ of +5 volts, a _final value_ of +14 volts, with a _time-constant_ tau = 5 seconds.  The response equation is then:
 
-p=. $v_C(0)$ = $[(]5 - (14)]$ $e^\frac{-t}{3}$ + $(14)$ ... for $t$ > 0
+p=. $v_C(0)$ = $[5 - (14)]$ $e^\frac{-t}{3}$ + $(14)$ ... for $t$ > 0
 
 so, reducing:
 
@@ -239,6 +239,10 @@ This response starts at a lower initial value of +5 and ends higher at the final
 
 h4(#chapter11-example-switchedRC). 11.5 - Example Resistor-Capacitor Switched Circuits
 
-We can apply our transient solution method to the switched R-C (Resistor-Capacitor) circuit problem.  Using the basic structure of Figure 11-10 with numerical values consider the circuit in Figure 11-13, we desire to determine the output voltage vout(t) for t > 0.
+We can apply our transient solution method to the switched R-C (Resistor-Capacitor) circuit problem.  Using the basic structure of "Figure 11.10":#figure11-10 with numerical values consider the circuit in "Figure 11.13":#figure11-13, we desire to determine the output voltage $v_{out(t)}$ for $t$ > 0.
 
 
+p=(#figure11-13). !{width:60%}img/11/circuitsF11.13.jpg(Figure 11.13)!:img/11/circuitsF11.13.jpg
+_Figure 11.13  Example Switched R-C Circuit_
+
+To solve this problem we also need to know the initial value of the capacitor voltage _just before_ the switch closes at $t$ = 0.  Assume that it is given that just _before_ $t$ = 0 we know $v_{out(0-)}$ = 0.  Then, since the _energy constraint_ for a capacitor requires a continuous capacitor voltage, so therefore just after $t$ = 0, the value $v_{out(0+)}$ must also be zero.  This $t$ = 0+ value of zero is the _*initial*_ value of the output voltage response.
