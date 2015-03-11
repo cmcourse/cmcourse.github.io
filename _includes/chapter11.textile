@@ -246,3 +246,21 @@ p=(#figure11-13). !{width:60%}img/11/circuitsF11.13.jpg(Figure 11.13)!:img/11/ci
 _Figure 11.13  Example Switched R-C Circuit_
 
 To solve this problem we also need to know the initial value of the capacitor voltage _just before_ the switch closes at $t$ = 0.  Assume that it is given that just _before_ $t$ = 0 we know $v_{out(0-)}$ = 0.  Then, since the _energy constraint_ for a capacitor requires a continuous capacitor voltage, so therefore just after $t$ = 0, the value $v_{out(0+)}$ must also be zero.  This $t$ = 0+ value of zero is the _*initial*_ value of the output voltage response.
+
+Additionally, we need to know the final value of the output voltage.  To find this we need to recognize that the final value means there is no further change, in other words the circuit is in _equilibrium_.  But 'equilibrium' means all $d/dt$ (time derivative) terms must be zero, since *nothing is changing in equilibrium*.  Since $dv_C/dt$, this means there can be no current ( iC = C dvC/dt ) in a capacitor at equilibrium.  For our circuit in "Figure 11.13":#figure11-13, ($t$ > 0), zero capacitor current also means no resistor current, and thus no voltage across the resistor.  By application of KVL, the _final value_ of the output voltage must be the same as the fixed voltage source, 8 volts.
+
+From Eq'n 1 and Eq'n 2 the _time-constant_ tau is the product $RC$, and this is value for our circuit is 3000 x 2 = 6000 seconds.  We now apply our specific values to our general solution of Eq’n 4, and get:
+
+p=. $v_{out}(t)$ = $[0-(8)]$ $e^{\frac{-t}{6000}}$ + $(8)$ ... for $t$ > 0
+
+or
+
+p=. $v_{out}(t)$ = $-8$ $e^{\frac{-t}{6000}}$ + 8 ... for $t$ > 0
+
+The graphical plot versus time for this switched circuit output voltage is shown in "Figure 11.14":#figure11-14 and is a rinsing response (of the type 'B' curve).  The final value is attained in 5 time constants = 30,000 seonds.
+
+
+p=(#figure11-14). !{width:70%}img/11/circuitsF11.14.jpg(Figure 11.14)!:img/11/circuitsF11.14.jpg
+_Figure 11.14  Output Voltage Response of Example RC Circuit_
+
+
