@@ -289,7 +289,7 @@ _Figure 11.17  Equivalent Circuit for 'Final Value' Calculation, Switch Closed_
 And finally we calculate the time-constant.  But from Eq'n 2 and Eq'n 3 the equivalent  ‘resistance’ value in the time-constant RC calculation is the Thevenin equivalent resistance as seen by the capacitor.  To find the Thevenin equivalent resistance at the terminals of the capacitor we set all independent sources to zero, so the equivalent resistance circuit is just the 3k and 6k in parallel, and therefore Rth is 2k, "Figure 11.18":#figure11-18.
 
 
-p=(#figure11-18). !{width:60%}img/11/circuitsF11.18.jpg(Figure 11.18)!:img/11/circuitsF11.18.jpg
+p=(#figure11-18). !{width:65%}img/11/circuitsF11.18.jpg(Figure 11.18)!:img/11/circuitsF11.18.jpg
 _Figure 11.18  Equivalent Circuit for Time-Constant Calculation, SW Closed,
 Sources Set-to-Zero (Thevenin Equivalent)_
 
@@ -309,4 +309,4 @@ _Figure 11.19  Output Response of Example Circuit_
 
 Notice from this above example we see a useful general method to solve switched $R-C$ circuit problems.   There are three basic unknowns; (1) the initial value, (2) the final value and (3) the time constant.  These values are then applied to the general form of solution, Eq'n 4, to get the resultant time response answer.
 
-The inherent exponential form for the $RC$ solution takes care of all the remaining time variation of the solution. To achieve a reliable answer for these three constants it often is _a good idea to make three separate equivalent circuits_, one for each of the three conditions.  The prior example is an illustration of this process.  It also helps understand why the solution has the features that it contains since you get to see how each value is produced and what part of the circuit influences the outcome.
+The inherent exponential form for the $RC$ solution takes care of all the remaining time variation of the solution. To achieve a reliable answer for these three constants it often is _a good idea to make three separate equivalent circuits_, one for each of the three conditions: initial, final and time-constant.  The prior example is an illustration of this process.  It also helps understand why the solution has the features that it contains since you get to see how each value is produced and what part of the circuit influences the outcome.
