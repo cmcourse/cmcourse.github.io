@@ -264,3 +264,33 @@ p=(#figure11-14). !{width:70%}img/11/circuitsF11.14.jpg(Figure 11.14)!:img/11/ci
 _Figure 11.14  Output Voltage Response of Example RC Circuit_
 
 
+h4(#chapter11-example-switchedRC). 11.6 - Thevenin Equivalent Resistor-Capacitor Switched Circuits
+
+The solution process we just used in the above example can now be extended to more complex circuits with a single capacitor.  The way to solve more complex circuits is to apply the Thevenin equivalent _*as seen by the capacitor*_ to reduce the complex circuit to the same form as in "Figure 11.10":#figure11-10.
+
+To better understand this process let consider an example where there are multiple resistors.  An example circuit for such a situation is shown in "Figure 11.15":#figure11-15.
+
+
+p=(#figure11-15). !{width:60%}img/11/circuitsF11.15.jpg(Figure 11.15)!:img/11/circuitsF11.15.jpg
+_Figure 11.15  Complex Switched R-C Circuit Example_
+
+This circuit is assumed to have the switch SW _open_ for a long period of time, prior to $t$ = 0.  Hence the circuit is in _equilibrium_ at $t$ = 0-.  Because in equilibrium (with the switch open) the capacitor has zero current, so $v_{out}(t=0-)$ is the source voltage 9 volts, "Figure 11.16":#figure11-16.  This is the 'initial value' for our solution.
+
+
+p=(#figure11-16). !{width:60%}img/11/circuitsF11.16.jpg(Figure 11.16)!:img/11/circuitsF11.16.jpg
+_Figure 11.16  Equivalent Circuit for 'Initial Value' Calculation, Switch Open_
+
+Next we calculate the 'final value' of the output voltage with the switch closed.  The 'at equilibrium' circuit with closed switch is therefore in "Figure 11.17":#figure11-17. This circuit is a simple voltage divider and yield $v_{out}(t = \infty)$ = (2/3)9 = 6 volts.
+
+
+p=(#figure11-17). !{width:60%}img/11/circuitsF11.17.jpg(Figure 11.17)!:img/11/circuitsF11.17.jpg
+_Figure 11.17  Equivalent Circuit for 'Final Value' Calculation, Switch Closed_
+
+And finally we calculate the time-constant.  But from Eq’n 2 and Eq’n 3 the equivalent  ‘resistance’ value in the time-constant RC calculation is the Thevenin equivalent resistance as seen by the capacitor.  To find the Thevenin equivalent resistance at the terminals of the capacitor we set all independent sources to zero, so the equivalent resistance circuit is just the 3k and 6k in parallel, and therefore Rth is 2k, "Figure 11.18":#figure11-18.
+
+
+p=(#figure11-18). !{width:60%}img/11/circuitsF11.18.jpg(Figure 11.18)!:img/11/circuitsF11.18.jpg
+_Figure 11.18  Equivalent Circuit for Time-Constant Calculation, SW Closed,
+Sources Set-to-Zero (Thevenin Equivalent)_
+
+Combining these three values of _initial_ (9 volts), _final_ (6 volts) and _time-constant_ (2000 x 2x10-6) we obtain the equation for $v_{out}(t)$ for $t$ > 0 as;
