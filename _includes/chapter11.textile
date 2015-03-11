@@ -286,11 +286,11 @@ Next we calculate the 'final value' of the output voltage with the switch closed
 p=(#figure11-17). !{width:60%}img/11/circuitsF11.17.jpg(Figure 11.17)!:img/11/circuitsF11.17.jpg
 _Figure 11.17  Equivalent Circuit for 'Final Value' Calculation, Switch Closed_
 
-And finally we calculate the time-constant.  But from Eq’n 2 and Eq’n 3 the equivalent  ‘resistance’ value in the time-constant RC calculation is the Thevenin equivalent resistance as seen by the capacitor.  To find the Thevenin equivalent resistance at the terminals of the capacitor we set all independent sources to zero, so the equivalent resistance circuit is just the 3k and 6k in parallel, and therefore Rth is 2k, "Figure 11.18":#figure11-18.
+And finally we calculate the time-constant.  But from Eq'n 2 and Eq'n 3 the equivalent  ‘resistance’ value in the time-constant RC calculation is the Thevenin equivalent resistance as seen by the capacitor.  To find the Thevenin equivalent resistance at the terminals of the capacitor we set all independent sources to zero, so the equivalent resistance circuit is just the 3k and 6k in parallel, and therefore Rth is 2k, "Figure 11.18":#figure11-18.
 
 
 p=(#figure11-18). !{width:60%}img/11/circuitsF11.18.jpg(Figure 11.18)!:img/11/circuitsF11.18.jpg
 _Figure 11.18  Equivalent Circuit for Time-Constant Calculation, SW Closed,
 Sources Set-to-Zero (Thevenin Equivalent)_
 
-Combining these three values of _initial_ (9 volts), _final_ (6 volts) and _time-constant_ (2000 x 2x10-6) we obtain the equation for $v_{out}(t)$ for $t$ > 0 as;
+Combining these three values of _*initial*_ (9 volts), _*final*_ (6 volts) and _*time-constant*_ (2000 x 2x10-6) we obtain the equation for $v_{out}(t)$ for $t$ > 0 as;
