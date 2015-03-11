@@ -214,7 +214,7 @@ This *general solution* expresses a full range of possible solutions for Switche
 p=(#figure11-12). !{width:80%}img/11/circuitsF11.12.jpg(Figure 11.12)!:img/11/circuitsF11.12.jpg
 _Figure 11.12  Rising  and Falling Cases of Exponential Transient Time Responses_
 
-Notice the time variation is always the same, a simple 'exponential-in-time' relation.  The responses are either increasing or decreasing, but the time variation 'shape' is the same just the simple exponential, $e^\frac{-t}{\tau}$ .
+Notice the time variation is always the same form, a simple 'exponential-in-time' relation.  The responses are either increasing or decreasing, but the time variation 'shape' is the same just the simple exponential, $e^\frac{-t}{\tau}$, with time-constant tau, $\tau$.
 
 ** _*11.4.2  Example Exponential Time Response Curves*_
 
