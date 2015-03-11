@@ -327,7 +327,9 @@ The transient response has an _initial value_ of $0$ volts (the 6k resistor casu
 
 p=. $v_O$ = $-16$ $e^{\frac{t}{6x10^{-3}}}$ + $16$
 
+where time $t$ is in seconds.
+
 p=(#figure11-21). !{width:60%}img/11/circuitsF11.21.jpg(Figure 11.21)!:img/11/circuitsF11.21.jpg
 _Figure 11.21  Output Response of Example Circuit_
 
-The switched $RC$ circuit response is inherently a transition from an initial state to a final state.  The rate of transition is dependent upon the effective time-constant of the capacitor and the equivalent resistance  at the capacitor terminals.
+The switched $RC$ circuit response is inherently a transition from an initial state to a final state.  The rate of transition is dependent upon the effective time-constant of the capacitor and the Thevenin equivalent resistance at the capacitor terminals.
