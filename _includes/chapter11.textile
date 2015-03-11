@@ -316,16 +316,16 @@ h4(#chapter11-opamp-switchedRC). 11.7 - Opamp Switched R-C Circuits
 
 A switch element can also be part of a a circuit with an operational amplifier.  An example of such a circuit is depicted in "Figure 11.20":#figure11-20.
 
-p=(#figure11-19). !{width:70%}img/11/circuitsF11.19.jpg(Figure 11.20)!:img/11/circuitsF11.19.jpg
-_Figure 11.19  Example Opamp Circuit with Switched RC Elements_
+p=(#figure11-20). !{width:70%}img/11/circuitsF11.20.jpg(Figure 11.20)!:img/11/circuitsF11.20.jpg
+_Figure 11.20  Example Opamp Circuit with Switched RC Elements_
 
 Here the $RC$ transient response occurs before the input to the operational amplifier.  Furthermore this particular opamp configuration with non-inverting structure connects to the positive input of the opamp and therefore draws no current from the $RC$ portion of the circuit.  Hence in this case the $RC$ transient develops entirely independent from the opamp portion of the circuit.
 
 The $RC$ transient is the result of the 6 volt source, the 3k and 6k resistors and the 3 microfarad capacitor.  The voltage on the capacitor provides the input to the non-inverting amplifier that has a gain of: (1k + 3k) / (1k) = +4.
 
-The transient response has an _initial value_ of $0$ volts (the 6k resistor casues a zero initial capacitor voltage), a _final value_ of (6) / (3+6) x 6 volts = 4 volts (due the voltage divider configuration of these two resistors), and a _time-constant_ of (3k || 6k) x 3 $\mu$F = 6 milliseconds (due to the net 2k equivalent resistance seen by the capacitor).  This result is amplified x4 by the non-inverting amplifier, and hence the result is the rising exponential response that starts at $t$ = 0 as depicted in "Figure 11.20":#figure11-20.
+The transient response has an _initial value_ of $0$ volts (the 6k resistor casues a zero initial capacitor voltage), a _final value_ of (6) / (3+6) x 6 volts = 4 volts (due the voltage divider configuration of these two resistors), and a _time-constant_ of (3k || 6k) x 3 $\mu$F = 6 milliseconds (due to the net 2k equivalent resistance seen by the capacitor).  This result is amplified x4 by the non-inverting amplifier, and hence the result is the rising exponential response that starts at $t$ = 0 as depicted in "Figure 11.21":#figure11-21.
 
-p=(#figure11-20). !{width:60%}img/11/circuitsF11.20.jpg(Figure 11.20)!:img/11/circuitsF11.20.jpg
-_Figure 11.20  Output Response of Example Circuit_
+p=(#figure11-21). !{width:60%}img/11/circuitsF11.21.jpg(Figure 11.21)!:img/11/circuitsF11.21.jpg
+_Figure 11.21  Output Response of Example Circuit_
 
 The switched $RC$ circuit response is inherently a transition from an initial state to a final state.  The rate of transition is dependent upon the effective time-constant of the capacitor and the equivalent resistance  at the capacitor terminals.
