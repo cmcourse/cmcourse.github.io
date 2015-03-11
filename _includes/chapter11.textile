@@ -274,7 +274,7 @@ To better understand this process let consider an example where there are multip
 p=(#figure11-15). !{width:60%}img/11/circuitsF11.15.jpg(Figure 11.15)!:img/11/circuitsF11.15.jpg
 _Figure 11.15  Complex Switched R-C Circuit Example_
 
-This circuit is assumed to have the switch SW _open_ for a long period of time, prior to $t$ = 0.  Hence the circuit is in _equilibrium_ at $t$ = 0-.  Because in equilibrium (with the switch open) the capacitor has zero current, so $v_{out}(t=0-)$ is the source voltage 9 volts, "Figure 11.16":#figure11-16.  This is the 'initial value' for our solution.
+This circuit is assumed to have the switch SW _open_ for a long period of time, prior to $t$ = 0.  Hence the circuit is in _equilibrium_ at $t$ = $0-$.  Because in equilibrium (with the switch open) the capacitor has zero current, so $v_{out}(t=0-)$ is the source voltage 9 volts, "Figure 11.16":#figure11-16.  This is the 'initial value' for our solution.
 
 
 p=(#figure11-16). !{width:60%}img/11/circuitsF11.16.jpg(Figure 11.16)!:img/11/circuitsF11.16.jpg
