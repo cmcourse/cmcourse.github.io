@@ -325,7 +325,7 @@ The $RC$ transient is the result of the 6 volt source, the 3k and 6k resistors a
 
 The transient response has an _initial value_ of $0$ volts (the 6k resistor casues a zero initial capacitor voltage), a _final value_ of (6) / (3+6) x 6 volts = 4 volts (due the voltage divider configuration of these two resistors), and a _time-constant_ of (3k || 6k) x 3 $\mu$F = 6 milliseconds (due to the net 2k equivalent resistance seen by the capacitor).  This result is amplified x4 by the non-inverting amplifier, and hence the result is the rising exponential response that starts at $t$ = 0 as depicted in "Figure 11.21":#figure11-21, and by the equation:
 
-p=. $v_O$ = $-16$ $e^\frac{t}{6x10^{-3}}$ + $16$
+p=. $v_O$ = $-16$ $e^{\frac{t}{6x10^{-3}}}$ + $16$
 
 p=(#figure11-21). !{width:60%}img/11/circuitsF11.21.jpg(Figure 11.21)!:img/11/circuitsF11.21.jpg
 _Figure 11.21  Output Response of Example Circuit_
