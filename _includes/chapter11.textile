@@ -264,7 +264,7 @@ p=(#figure11-14). !{width:70%}img/11/circuitsF11.14.jpg(Figure 11.14)!:img/11/ci
 _Figure 11.14  Output Voltage Response of Example RC Circuit_
 
 
-h4(#chapter11-example-switchedRC). 11.6 - Thevenin Equivalent Resistor-Capacitor Switched Circuits
+h4(#chapter11-thevenin-switchedRC). 11.6 - Thevenin Equivalent Switched R-C Circuits
 
 The solution process we just used in the above example can now be extended to more complex circuits with a single capacitor.  The way to solve more complex circuits is to apply the Thevenin equivalent _*as seen by the capacitor*_ to reduce the complex circuit to the same form as in "Figure 11.10":#figure11-10.
 
