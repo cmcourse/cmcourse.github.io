@@ -314,7 +314,7 @@ The inherent exponential form for the $RC$ solution takes care of all the remain
 
 h4(#chapter11-opamp-switchedRC). 11.7 - Opamp Switched R-C Circuits
 
-** _* 11.7.1 Non-Inverting Opamp Configuration*_
+** _*11.7.1 Non-Inverting Opamp Configuration*_
 
 A switch element can also be part of a a circuit with an operational amplifier.  An example of such a circuit with a non-iverting opamp configurations is depicted in "Figure 11.20":#figure11-20.
 
@@ -336,7 +336,7 @@ _Figure 11.21  Output Transient Response of Example Opamp Circuit_
 
 The switched $RC$ circuit response is inherently a transition from an initial state to a final state.  The rate of transition is dependent upon the effective time-constant of the capacitor and hence upon the Thevenin equivalent resistance at the capacitor terminals.
 
-** _* 11.7.2 Inverting Opamp Configuration*_
+** _*11.7.2 Inverting Opamp Configuration*_
 
 An example of such an opamp switched $RC$ circuit with a non-iverting opamp configurations is depicted in "Figure 11.22":#figure11-22.
 
