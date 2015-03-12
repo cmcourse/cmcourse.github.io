@@ -330,6 +330,6 @@ p=. $v_O$ = $-16$ $e^{\frac{t}{6x10^{-3}}}$ + $16$.
 Here the output $v_O$ is in volts and time $t$ is in seconds.
 
 p=(#figure11-21). !{width:70%}img/11/circuitsF11.21.jpg(Figure 11.21)!:img/11/circuitsF11.21.jpg
-_Figure 11.21  Output Response of Example Circuit_
+_Figure 11.21  Output Transient Response of Example Opamp Circuit_
 
 The switched $RC$ circuit response is inherently a transition from an initial state to a final state.  The rate of transition is dependent upon the effective time-constant of the capacitor and hence upon the Thevenin equivalent resistance at the capacitor terminals.
