@@ -338,8 +338,17 @@ The switched $RC$ circuit response is inherently a transition from an initial st
 
 ** _*11.7.2 Inverting Opamp Configuration*_
 
-An example of such an opamp switched $RC$ circuit with a non-iverting opamp configurations is depicted in "Figure 11.22":#figure11-22.
+The form of opamp configuration employed in a circuit can influence the $RC$ transient response.  Consider the same switched $RC$ drive circuit employed in "Figure 11.20":#figure11-20, but now apply it to a non-inverting opamp configuration. this arrangement is depicted in "Figure 11.22":#figure11-22.
 
 p=(#figure11-22). !{width:70%}img/11/circuitsF11.22.jpg(Figure 11.22)!:img/11/circuitsF11.22.jpg
 _Figure 11.22  Example Inverting Opamp Circuit with Switched RC Elements_
+
+The same 6 volt source with 3k series resistor is switched into the same parallel 6k resistor and 3 $\muF$ capacitor. However, this time the capacitor is connected to an inverting opamp.  This means there is an additional 1k resistor connected to the capacitor and hene the thevenin equivalent resistance seen by the capacitor changes from that in "Figure 11.20":#figure11-20.
+
+Here the opamp ($+$) terminal is wired to ground and hence by the opamp constraint the ($-$) terminal is at zero volts.  The thevenin equivalent resistance seen at the capacitor is thus determined from the equivalent circuit in "Figure 11.23":#figure11-23
+
+p=(#figure11-23). !{width:70%}img/11/circuitsF11.23.jpg(Figure 11.23)!:img/11/circuitsF11.23.jpg
+_Figure 11.23  Circuit for Thevenin Equivalent Resistance at the Capacitor_
+
+
 
