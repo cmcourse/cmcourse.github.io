@@ -358,10 +358,10 @@ p=. $v_{Cfinal}$ = $\frac{(6\parallel1)}{(6 || 1) + 3}$ $(6)$ = $\frac{\frac{6}{
 
 p=. $\tau$ = $[3k || 6k || 1k]$ $(3\mu F)$ = 2 millisec
 
-Hence the output voltage, $V_{O}$, with the inverting configuration has a shorter time constant and smaller value, as depicted in "Figure 11.24":#figure11-24.
+Hence the output voltage, $v_O$, with the inverting configuration has a shorter time constant and smaller value compared to that for the non-inverting configuration, as depicted in "Figure 11.24":#figure11-24.
 
 
 p=(#figure11-24). !{width:70%}img/11/circuitsF11.24.jpg(Figure 11.24)!:img/11/circuitsF11.24.jpg
 _Figure 11.24  Output Transient Response of Example Inverting Opamp Circuit_
 
-
+This change in response for the inverting configuration is caused by the 'loading' due to the smaller input resistance required by the inverting inout resistance, 1 kohm in this example.  So attention to the effects of the different amplifier configurations is important to keep in mind when calculating transient responses.
