@@ -1,0 +1,130 @@
+
+In this Section, we continue the development of circuits with time-varying currents and voltages, started in Chapter 11. Now we introduce a second type of energy storage element, _*the inductor*_ and it's unique constraint on circuit currents and voltages.  The energy constraint, whereby the stored energy in any circuit element cannot change instantaneously also applies to the inductor, because all inductors store energy.  Furthermore, we consider the inductor in switched resistor circuits as a second independent way to produce exponential time transient responses.  [See Chapter 11 for capacitor produced exponential responses.]
+
+
+h4(#chapter12-inductor-element). 12.1 - The Inductor, an Energy Storage Circuit Element
+
+Consider a new kind of circuit energy storage element, the _inductor_.  This is a two-terminal element with circuit symbol and circuit constraint depicted in "Figure 12.1":#figure12-1.
+
+
+p=(#figure12-1). !{width:50%}img/12/circuitsF12.1.jpg(Figure 12.1)!:img/12/circuitsF12.1.jpg
+_Figure 12.1  Inductor Symbol and Inductor Constraint_
+
+The inductor element symbol uses the same polarity convention used by all our circuit elements; positive current is directed toward the positive polarity of the element voltage.  The basic circuit constraint for an inductor is unusual because it relates the magnetic flux held by the inductor as a constant times the inductor current.  The constant, $L$, is called the inductance.  The units are: flux in Webers, inductance $L$ in Henrys, and current in Amps.  To relate this flux constraint to the element voltage - current relationship we add the *basic definition* of voltage across any inductor, $v_L$, as the _time derivative of the inductor magnetic flux_,$\lambda_L$  :
+
+p=. $v_L$ = $\frac{d\lambda_L}{dt}$
+
+hence, for the inductor:
+
+p=. $v_L$ =  $\frac{d}{dt}[Li_L]$
+
+by differentiation by parts:
+
+p=. $v_L$ = $L\frac{d}{dt}[i_L]$ + $i_L\frac{d}{dt}$ $L$
+
+but in our circuits inductance L is a constant and hence the 2nd term is zero, so the _inductor circuit element current-voltage constraint_ is:
+
+p=. $v_L(t)$ = $L\frac{d}{dt} i_L(t)$
+
+This means the inductor element voltage, $v_L$, is proportional to the _time derivative_ of the inductor current, $i_L$.  This is a new type of constraint in that element voltage depends upon the _*rate that the current changes*_ and _not_ on the current value itself.  With this time derivative relationship, if there is no time variation (meaning the inductor current is constant) then the derivative is zero.  Hence, under _constant no-variation, equilibrium conditions the *inductor voltage is zero, a short circuit*_.
+
+
+Additionally, an inductor stores energy with a value, $U_L$, of: [Derived from $U$ = $p$ * $t$]
+
+p=. $U_L (t)$ = $\frac{1}{2}$ $L$ $i_L^2$$(t)$
+
+Notice, the stored energy in an inductor depends on the inductance value,$L$, but more importantly also on the _inductor current_, $i_L$.  Now consider the constraint on any energy storage element where the energy cannot change instantaneously.  Hence we find there is an _added constraint_ for inductors: _the inductor current *cannot* change instantaneously_, which means _the inductor current must be *continuous* with variation over time_.
+
+p=. Inductor Energy Constraint is: $\Rightarrow$ $i_L(t)$ is *always continuous.*
+
+We will find that this requirement for current continuity in an inductor is very significant, especially for switched circuits.  The current on an inductor must be the same immediately before to immediately after a switch closes or opens.
+
+** _*12.1.1 Capacitor-Current Waveform Example*_
+
+Because the time derivative represents the instantaneous slope, we can find the inductor voltage given we know the time waveform of the inductor current.  This derivative connection is depicted in "Figure 12.2":#figure12-2, which shows an example current waveform and the corresponding voltage for an inductor of 3 Henrys.
+
+
+p=(#figure12-2). !{width:70%}img/12/circuitsF12.2.jpg(Figure 12.2)!:img/12/circuitsF12.2.jpg
+_Figure 12.2  Example Current and Voltage Waveforms for an Inductor of 3 Henrys_
+
+The corresponding voltage waveform can be evaluated by considering each of the 5 distinct regions of constant slope in the given current waveform as discussed below:
+
+##In the time interval for t < 0:			The inductor current is given to be a constant value, and hence the inductor voltage, vC, is zero.
+##In the time interval from 0 to 1 second:	The inductor current is changing at a constant rate of slope 5 amps / 1 sec, and hence the inductor voltage is 3 x 5 = 15 volts.
+##In the time interval from 1 to 3 seconds:	The inductor current is a fixed constant of 5 amps, and hence the time derivative is zero, so the inductor voltage is zero.
+##In the time interval from 3 to 5 seconds:	The inductor current is again changing, this time it is reducing at a constant rate of -5 amps in 2 seconds, and hence the inductor voltage is 3 x (-5/2) = -7.5 volts.
+##For time greater that 5 seconds:		The inductor current is constant so the voltage is again zero.  Notice the inductor i-v relationship is very similar to that for the capacitor, Chapter 11, except the current and voltage are interchanged and the constant is Henrys instead of Farads.
+
+
+h4(#chapter12-switched-RL). 12.2 - Resistor-Inductor Switched Circuits, Transient Time Response
+
+At this point we now combine the various circuit elements in one circuit and determine a transient time response, one where the inductive energy storage strongly influences the voltages and currents.  To understand this energy effect we consider a Thevenin-like circuit connected to a single inductor, "Figure 12.3":#figure12-3.
+
+
+p=(#figure12-3). !{width:60%}img/12/circuitsF12.3.jpg(Figure 12.3)!:img/12/circuitsF12.3.jpg
+_Figure 12.3  Resistor-Inductor Series Circuit with Switch_
+
+This series fixed voltage source, $V_S$, and resistor, $R$, represents a Thevenin equivalent circuit for a more complex linear network.  Hence, this simple $R-L$ circuit represents a more complex problem where the complex circuit surrounding an inductor is represented by its' Thevenin equivalent.  Here the inductor voltage and current are identified, $v_L(t)$ and $i_L(t)$, and the resistor voltage and current, $v_R(t)$ and $i_R(t)$, are also identified.  We can proceed to solve this circuit by direct application of the element and circuit constraints.
+
+*Before: $t$ = 0, with the switch open:*
+The inductor voltage, $v_L$, must be zero since there is no connected path to any other elements.  But zero inductor voltage (by the inductor constraint) in general requires a constant inductor current, $i_L(t)$ = constant.  The value of this constant current will be set by any prior connections to the inductor, and here it is taken to be zero, $i_L(t=0-)$ = 0.
+
+*At: t = 0+, just after the switch closes:*
+By the energy constraint, the inductor current cannot change instantaneously, and thus:
+
+p=. $i_L(t=0+)$ = $i_L(t=0-)$ = 0
+
+*After: t = 0: further after the switch closure:*
+The circuit constraint, KVL, requires the voltage around a closed loop path must be zero and thus we can write:
+
+p=. $\sum_{\ \mbox(loop)} v_{drops}$ = 0
+
+thus:
+
+p=. $-V_S$ + $v_R$ + $v_L$ = 0 ........ or ........ $v_L$ + $v_R$ = $V_S$
+
+Here we recognize that the circuit has a single loop so the resistor current, $i_R$, must equal the inductor current $i_L$.  And now by substitution into this KVL the resistor and inductor constraint relations for $v_L$ and $v_R$:
+
+p=. $L\frac{di_L}{dt}$ + $i_LR$ = $V_S$
+
+dividing, we obtain:
+
+p=. $\frac{di_L}{dt}$ + $\frac{R}{L}$$i_L$ = $\frac{V_S}{L}$
+
+collecting terms:
+
+p=. $\frac{di_L}{dt}$ + $\frac{1}{\frac{L}{R}}$$i_L(t)$ = $\frac{\frac{V_S}{R}}{\frac{L}{R}}$ ... [Eq'n 12-3]
+
+This equation is a _differential equation_, and more specifically it is a linear, constant coefficient differential equation of first order.  Hence in 'short-hand' it is a 1st-order LCCDE.  It describes the inductor current for all time greater than zero (after the switch is closed).  Notice all terms of such an equation must have the same units, here the units for each of the three terms is amps/sec.  The corresponding generic equation form is:
+
+p=. $\frac{di_L(t)}{dt} + \frac{1}{\tau} i_L(t)$ = $K$ (= constant)
+
+where, the constant tau ($\tau$ ) must have the units of time to match the units of the derivative term, so  $\tau$ (tau) = $\frac{L}$$R$ (henry/ohm = seconds).   For our inductor circuit with series resistor the time constant, tau, is:
+
+p=. $\tau$ = $\frac{L}{R}$
+
+This LCCDE has a general solution for a fixed source of the form: [see also Chapter 11]
+
+p=. $i_L(t)$ = $A$ $e^\frac{-t}{\tau}$ + B
+
+The exponential term is inherent to _*ALL*_ 1st order LCCDE systems and is often referred to as the '*homogeneous*' part of the solution.  In this case the second term, the constant B, is selected to match the drive, which here is a constant.  This second term of the general solution is often referred to as the '*particular*' part of the solution, since it is chosen to match the drive of the problem.  Note the exponential function was discussed in Section 11.4 and is shown graphically in Figure 11-12.
+
+**	*12.2.1  _Convenient Form for the Universal Switch Response Inductor Current*_
+
+This LCCDE has the same general form of solution for a switched inductor problem as was found for the switched capacitor voltage, but here the solution is for the inductor current, iL(t). The switched solution is of the universal form:
+
+p=. $i_L(t)$ = $(i_{Linit} - i_{Lfnl})$ $e^\frac{-t}{\tau}$ + $i_{Lfnl}$ ... [Eq'n 12-4]
+
+As was shown with the capacitor energy storage element series circuit, Section 11, the solution for the inductor problem requires the calculation of 3 constant terms; in this case the _initial value_ of the inductor current, $i_{L-init}$ , the _final value_ of the inductor current, $i_{L-fnl}$, and the _time-constant_ ,$\tau$  , for the exponential response.  The time-constant, $\tau$  (tau) = $L/R$, where this '$R$' value is the Thevenin equivalent resistance for the circuit as connected _*at the inductor*_ (for the switch position associated with the time-constant value).
+
+
+h4(#chapter12-example-switchedRL). 12.3 - Example Resistor-Inductor Switched Circuits
+
+We can apply our solution method to the switched $R-L$ (Series Resistor-Inductor) circuit problem.  Using the basic structure of "Figure 12.3":#figure12-3 with numerical values consider the circuit in "Figure 12.4":#figure12-4, where we seek to calculate the voltage $v_{out(t)}.  Now $v_{out(t)} is the voltage across the inductor, but our inductor circuit equation _concerns the inductor current_, not the inductor voltage, so we have some extra work necessary to get $v_{out(t)}.
+
+
+p=(#figure12-4). !{width:60%}img/12/circuitsF12.4.jpg(Figure 12.4)!:img/12/circuitsF12.4.jpg
+_Figure 12.4  Example Switched R-L Circuit_
+
+The solution method we will take here is a 2-step process.  Because our LCCDE for the series resistor-inductor circuit is for the inductor current we will need to (1) first solve for the _inductor current_, $i_L(t)$, AND THEN, (2) calculate the inductor voltage by KVL from difference of the fixed voltage source and the resistor voltage, $v_R(t)$ for $t$ > 0:
+
