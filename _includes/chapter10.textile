@@ -72,7 +72,7 @@ p=. $V_C$ = $(\frac{1k}{2k}) 1$ = $\frac{1}{2}$ _volts_
 
 Hence, the output voltage, $V_{out}$, is:
 
-p=. $V_{out}$ = $(-2k)$ $5$ $[(\frac{1}{2})(mA)]$ = 5 _volts_
+p=. $V_{out}$ = $(-2k)$ $5$ $[(\frac{1}{2})(mA)]$ = -5 _volts_
 
 ** *10.2.3  Example: Dependent Current Source Amplifier*
 
