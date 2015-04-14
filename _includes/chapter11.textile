@@ -100,7 +100,7 @@ p=. $i_C$ = $\frac{dQ_C}{dt}$ = $\frac{d}{dt}[CV_C]$
 
 by differentiation by parts:
 
-p=. $i_C$ = $C\frac{d}{dt}[V_C]$ = $V_C\frac{d}{dt}$ $C$
+p=. $i_C$ = $C\frac{d}{dt}[V_C]$ + $V_C\frac{d}{dt}$ $C$
 
 but in our circuits capacitance $C$ is a constant and hence the 2nd term is zero, so the capacitor circuit element current-voltage constraint is:
 
@@ -110,11 +110,11 @@ This means the capacitor element current, $i_C$, is proportional to the _time de
 
 Additionally, a capacitor stores energy with a value, $U_C$, of: [Derived from $U$ = $p$ * $t$]
 
-p=. $U_C (t)$ = $\frac{1}{2}$ $C$ $V_C^2$$(t)$
+p=. $U_C (t)$ = $\frac{1}{2}$ $C$ $v_C^2$$(t)$
 
-Notice, the stored energy in a capacitor depends on the capacitance value, but more importantly also on the _capacitor voltage_, $V_C$.  Now consider the constraint on any energy storage element where the energy cannot change instantaneously.  Hence we find there is an _added constraint_ for capacitors: _the capacitor voltage *cannot* change instantaneously__, which means _the capacitor voltage must be *continuous* with variation over time_.
+Notice, the stored energy in a capacitor depends on the capacitance value,$C$, but more importantly also on the _capacitor voltage_, $v_C$.  Now consider the constraint on any energy storage element where the energy cannot change instantaneously.  Hence we find there is an _added constraint_ for capacitors: _the capacitor voltage *cannot* change instantaneously__, which means _the capacitor voltage must be *continuous* with variation over time_.
 
-p=. Capacitor Energy Constraint is: $\Rightarrow$ $V_C(t)$ is *always continuous.*
+p=. Inductor Energy Constraint is: $\Rightarrow$ $V_C(t)$ is *always continuous.*
 
 We will find that this requirement for voltage continuity on a capacitor is very significant, especially for switched circuits.  The voltage on a capacitor must be the same immediately before to immediately after a switch closes or opens.
 
