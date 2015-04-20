@@ -155,15 +155,15 @@ _Figure 12.5  Transient Inductor Current, Example Switched R-L Circuit_
 
 Since we have $i_L(t)$, we can now solve for the output voltage by ohm's law for the resistor voltage and KVL to obtain $v_{out}(t)$ as:
 
-p=. $v_{out}(t)$ = 8 - $[3kohm]$ $[8/3(1 - e^{\frac{-t}{0.667})]$  .....  for $t$ > 0
+p=. $v_{out}(t)$ = 8 - $[3kohm]$ [8/3 $(1 - e^{\frac{-t}{0.667}})$]  .....  for $t$ > 0
 
 or
 
-p=. $v_{out}(t)$ = 8 - $8$ $(1 - e^{\frac{-t}{0.667})$  .....  for $t$ > 0
+p=. $v_{out}(t)$ = 8 - 8 $[1 - e^{\frac{-t}{0.667}}]$  .....  for $t$ > 0
 
 and reducing:
 
-p=. $v_{out}(t)$ = 8 $e^{\frac{-t}{0.667}$ volts  .....  for $t$ > 0,  $t$ in milliseconds
+p=. $v_{out}(t)$ = $8 e^{\frac{-t}{0.667}}$ volts  .....  for $t$ > 0,  $t$ in milliseconds
 
 The graphical plot for this output voltage is shown in "Figure 12.6":#figure12-6 and is a decaying response curve.
 
