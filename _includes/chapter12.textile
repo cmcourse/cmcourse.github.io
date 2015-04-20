@@ -155,15 +155,15 @@ _Figure 12.5  Transient Inductor Current, Example Switched R-L Circuit_
 
 Since we have $i_L(t)$, we can now solve for the output voltage by ohm's law for the resistor voltage and KVL to obtain $v_{out}(t)$ as:
 
-p=. $v_{out}(t)$ = 8 - $[3kohm][8/3(1 - e^{\frac{-t}{0.667})]$  .....  for $t$ > 0
+p=. $v_{out}(t)$ = 8 - $[3kohm]$ $[8/3(1 - e^{\frac{-t}{0.667})]$  .....  for $t$ > 0
 
 or
 
-p=. $v_{out}(t)$ = 8 - $8(1 - e^{\frac{-t}{0.667})$  .....  for $t$ > 0
+p=. $v_{out}(t)$ = 8 - $8$ $(1 - e^{\frac{-t}{0.667})$  .....  for $t$ > 0
 
 and reducing:
 
-p=. $v_{out}(t)$ = 8 e^{\frac{-t}{0.667}$ volts  .....  for $t$ > 0,  $t$ in milliseconds
+p=. $v_{out}(t)$ = 8 $e^{\frac{-t}{0.667}$ volts  .....  for $t$ > 0,  $t$ in milliseconds
 
 The graphical plot for this output voltage is shown in "Figure 12.6":#figure12-6 and is a decaying response curve.
 
@@ -173,6 +173,6 @@ _Figure 12.6  Transient Output Voltage Response, Example Switched R-L Circuit_
 
 For this switched R-L example the inductor current starts from the initial value of zero and rises as an exponential curve to the equilibrium final current value of 8/3 mA.  _During the same time_, the output voltage ( = the inductor voltage) instantaneously jumps from zero to 8 volts when the switch closes; and then decays as an exponential curve to its' final value of zero volts.  This zero volt value is 'logical' since *in equilibrium the inductor MUST be zero volts*, ( d/dt terms are zero) so the output voltage MUST be zero volts.
 
-Notice the time-constant for the loop current and the output voltage *is the same* !  The fact is *ALL currents and voltages*, _which vary, will vary with the SAME time-constant in any given fixed linear circuit_.  In this case the time-constant is 2/3 millisecond.  *There is only one time-constant for any first order linear circuit configuration*.  For a single inductor circuit driven by a switched 'Thevenin' voltage source with series resistance, this time-constant is $L/R_{th}$.
+Notice the time-constant for the loop current and the output voltage *is the same* !  The fact is *ALL currents and voltages*, which vary, will vary with the SAME time-constant in any given fixed linear circuit.  In this case the time-constant is 2/3 millisecond.  *There is only one time-constant for any first order linear circuit configuration*.  For a single inductor circuit driven by a switched 'Thevenin' voltage source with series resistance, this time-constant is $L/R_{th}$.
 
 
