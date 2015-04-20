@@ -76,7 +76,7 @@ where $U$ is energy.  Now consider power, $p$, at some finite amount of power, $
 
 p=. $\Delta U$ = $(p_0)$ $(\Delta t)$
 
-Now if $\Delta t$ $\Rightarrow$ zero, in other words an instantaneous change, the  $\Delta U$ $\Rightarrow$  zero too.  This simply reveals that _we cannot change energy in something instantaneously_ !!!
+Now if $\Delta t$ $\Rightarrow$ zero, in other words an instantaneous change, the  $\Delta U$ $\Rightarrow$  zero too.  This simply reveals that for finite power _we cannot change energy in something instantaneously_ !!!
 
 <h3>
 p=. *It takes time to change energy !* </h3>
