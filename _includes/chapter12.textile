@@ -10,7 +10,7 @@ Consider a new kind of circuit energy storage element, the _inductor_.  This is 
 p=(#figure12-1). !{width:50%}img/12/circuitsF12.1.jpg(Figure 12.1)!:img/12/circuitsF12.1.jpg
 _Figure 12.1  Inductor Symbol and Inductor Constraint_
 
-The inductor element symbol uses the same polarity convention used by all our circuit elements; positive current is directed toward the positive polarity of the element voltage.  The basic circuit constraint for an inductor is unusual because it relates the magnetic flux held by the inductor as a constant times the inductor current.  The constant, $L$, is called the inductance.  The units are: flux in Webers, inductance $L$ in Henrys, and current in Amps.  To relate this flux constraint to the element voltage - current relationship we add the *basic definition* of voltage across any inductor, $v_L$, as the _time derivative of the inductor magnetic flux_,$\lambda_L$  :
+The inductor element symbol uses the same polarity convention used by all our circuit elements; positive current is directed toward the positive polarity of the element voltage.  The basic circuit constraint for an inductor is unusual because it relates the magnetic flux held by the inductor as a constant times the inductor current.  The constant, $L$, is called the inductance.  The units are: flux in Webers, inductance $L$ in Henrys, and current in Amps.  To relate this flux constraint to the element voltage - current relationship we add the *basic definition* of voltage across any inductor, $v_L$, as the time derivative of the inductor magnetic flux, $\lambda_L$  :
 
 p=. $v_L$ = $\frac{d\lambda_L}{dt}$
 
