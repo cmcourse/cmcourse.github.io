@@ -22,7 +22,7 @@ by differentiation by parts:
 
 p=. $v_L$ = $L\frac{d}{dt}[i_L]$ + $i_L\frac{d}{dt}$ $[L]$
 
-but in our circuits inductance L is a constant and hence the 2nd term is zero, so the _inductor circuit element current-voltage constraint_ is:
+but in our circuits inductance $L$ is a constant and hence the 2nd term is zero, so the _inductor circuit element current-voltage constraint_ is:
 
 p=. $v_L(t)$ = $L\frac{d}{dt} i_L(t)$
 
@@ -184,7 +184,7 @@ The solution process we just used in the above example can now be extended to mo
 p=(#figure12-7). !{width:60%}img/12/circuitsF12.7.jpg(Figure 12.7)!:img/12/circuitsF12.7.jpg
 _Figure 12.7  Complex Switched R-L Circuit Example_
 
-Lets again solve for the inductor current for $t$ > 0.  This problem has the switch _initially closed_ a long time before the switch SW *opens* at $t$ = 0.  Using the 3 'key-values'; the initial value is (from $t$ = 0-) iL(0-) = 12volts/20ohms = 0.6 amp = $i_L(0+)$.  To get this value we used the equilibrium state before $t$ = 0, which requires $i_L(0-)$ = $i_L(0+)$.  This is seen in the equivalent circuit of "Figure 12.8a":#figure12-8a.
+Lets again solve for the inductor current for $t$ > 0.  This problem has the switch _initially closed_ a long time before the switch SW *opens* at $t$ = 0.  Using the 3 'key-values'; the initial value is (from $t$ = 0-) $i_L(0-)$ = 12volts/20ohms = 0.6 amp = $i_L(0+)$.  To get this value we used the equilibrium state before $t$ = 0, which requires $i_L(0-)$ = $i_L(0+)$.  This is seen in the equivalent circuit of "Figure 12.8a":#figure12-8a.
 
 The final value for $i_L$ = $i_L(\infin)$, and also must be zero based on the equivalent circuit of Figure "Figure 12.8b":#figure12-8b and the inductor _in equilibrium_ and hence zero volts.
 
@@ -204,7 +204,7 @@ _Figure 12.8b  Final Value Equivalent Circuit, at $t$ > ∞_
 p=(#figure12-8c). !{width:60%}img/12/circuitsF12.8c.jpg(Figure 12.8c)!:img/12/circuitsF12.8c.jpg
 _Figure 12.8c  Time-Constant Equivalent Circuit, at $t$ > 0_
 
-Now apply these values to our universal response and we get the inductor current, iL(t) to be:
+Now apply these values to our universal response and we get the inductor current, $i_L(t)$ to be:
 
 p=. $i_L(t)$ = (0.6)$e^{\frac{-t}{3}}$ ampere  .....  for $t$ > 0,  ...  _t in millisec_
 
@@ -217,7 +217,7 @@ _Figure 12.9  Inductor Transient Current for $t$ > 0 (Switch Open)_
 To reiterate, the current in the inductor, $i_L$, when $t$ = 0- must be continuous (since the stored energy in the inductor cannot change instantaneously) and thus cannot change at time $t$ = 0+.  However, the circuit has changed due to the switch SW opening.  This means ALL the inductor current at $t$ = 0+ IS NOW FORCED to go through the 1kohm resistor, "Figure 12.10":#figure12-10, because there is now just a single loop. And this causes an instantaneous jump in the voltage at the output to a huge voltage magnitude of 1kohm x 0.6amp = *600 volts !!!!  (A voltage spike.)  WATCH OUT, HIGH VOLTAGE !!!*
 
 
-p=(#figure12-10). !{width:90%}img/12/circuitsF12.10.jpg(Figure 12.10)!:img/12/circuitsF12.10.jpg
+p=(#figure12-10). !{width:80%}img/12/circuitsF12.10.jpg(Figure 12.10)!:img/12/circuitsF12.10.jpg
 _Figure 12.10  Transient Voltage Spike when Switch Opens at $t$ = 0+_
 
 Actually the voltage peak, $v_{out}(0+)$, is negative  (-600 volts) because the inductor current $i_L(0+)$ is positive 0.6 amps and circulates *up* through the 1kohm resistor and thereby cause $v_{out}$ to be negative.
@@ -230,4 +230,4 @@ _Figure 12.11  Pulse Output Voltage of Example Complex Switched R–L Circuit_
 
 For inductors, interrupting an inductive current yields a 'spike' of voltage that can be very high.  Automotive coil ignition systems use this concept to produce the voltage spike that causes the spark at the spark-plug.  An inductive 'spike' voltage circuit is also a common form of circuit used to ignite the xenon flash unit in many cameras or to produce a flash of light from an LED.
 
-
+In this Chapter we have seen that inductive energy storage elements add an important means to cause a controlled transition from an initial state to a final state.  Capacitors and inductors both provide a controlled transtion, where as capacitors strongly influence the capacitor voltage (Chapter 11), inductors strongly influence the inductor current.
