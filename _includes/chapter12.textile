@@ -109,7 +109,11 @@ p=. $i_L(t)$ = $A$ $e^\frac{-t}{\tau}$ + B
 
 The exponential term is inherent to _*ALL*_ 1st order LCCDE systems and is often referred to as the '*homogeneous*' part of the solution.  In this case the second term, the constant B, is selected to match the drive, which here is a constant.  This second term of the general solution is often referred to as the '*particular*' part of the solution, since it is chosen to match the drive of the problem.  Note the exponential function was discussed in Section 11.4 and is shown graphically in Figure 11-12.
 
-**	_*12.2.1  Convenient Form for the Universal Switch Response Inductor Current*_
+
+** *_12.1.1 Inductor-Current Waveform Example_*
+
+
+** *_12.2.1  Convenient Form for the Universal Switch Response Inductor Current_*
 
 This LCCDE has the same general form of solution for a switched inductor problem as was found for the switched capacitor voltage, but here the solution is for the inductor current, iL(t). The switched solution is of the universal form:
 
