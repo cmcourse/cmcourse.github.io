@@ -49,11 +49,11 @@ _Figure 12.2  Example Current and Voltage Waveforms for an Inductor of 3 Henrys_
 
 The corresponding voltage waveform can be evaluated by considering each of the 5 distinct regions of constant slope in the given current waveform as discussed below:
 
-## In the time interval for t < 0:			The inductor current is given to be a constant value, and hence the inductor voltage, vC, is zero.
+## In the time interval for $t$ < 0: The inductor current is given to be a constant value, and hence the inductor voltage, $v_C$, is zero.
 ## In the time interval from 0 to 1 second:	The inductor current is changing at a constant rate of slope 5 amps / 1 sec, and hence the inductor voltage is 3 x 5 = 15 volts.
-## In the time interval from 1 to 3 seconds:	The inductor current is a fixed constant of 5 amps, and hence the time derivative is zero, so the inductor voltage is zero.
-## In the time interval from 3 to 5 seconds:	The inductor current is again changing, this time it is reducing at a constant rate of -5 amps in 2 seconds, and hence the inductor voltage is 3 x (-5/2) = -7.5 volts.
-## For time greater that 5 seconds:		The inductor current is constant so the voltage is again zero.  Notice the inductor i-v relationship is very similar to that for the capacitor, Chapter 11, except the current and voltage are interchanged and the constant is Henrys instead of Farads.
+## In the time interval from 1 to 3 seconds: The inductor current is a fixed constant of 5 amps, and hence the time derivative is zero, so the inductor voltage is zero.
+## In the time interval from 3 to 5 seconds: The inductor current is again changing, this time it is reducing at a constant rate of -5 amps in 2 seconds, and hence the inductor voltage is 3 x (-5/2) = -7.5 volts.
+## For time greater that 5 seconds:	The inductor current is constant so the voltage is again zero.  Notice the inductor $i-v$ relationship is very similar to that for the capacitor, Chapter 11, except the current and voltage are interchanged and the constant is Henrys instead of Farads.
 
 
 h4(#chapter12-switched-RL). 12.2 - Resistor-Inductor Switched Circuits, Transient Time Response
@@ -69,12 +69,12 @@ This series fixed voltage source, $V_S$, and resistor, $R$, represents a Theveni
 *Before: $t$ = 0, with the switch open:*
 The inductor voltage, $v_L$, must be zero since there is no connected path to any other elements.  But zero inductor voltage (by the inductor constraint) in general requires a constant inductor current, $i_L(t)$ = constant.  The value of this constant current will be set by any prior connections to the inductor, and here it is taken to be zero, $i_L(t=0-)$ = 0.
 
-*At: t = 0+, just after the switch closes:*
+*At: $t$ = 0+, just after the switch closes:*
 By the energy constraint, the inductor current cannot change instantaneously, and thus:
 
 p=. $i_L(t=0+)$ = $i_L(t=0-)$ = 0
 
-*After: t = 0: further after the switch closure:*
+*After: $t$ = 0: further after the switch closure:*
 The circuit constraint, KVL, requires the voltage around a closed loop path must be zero and thus we can write:
 
 p=. $$\sum_{\ \mbox(closed-loop)} v_{drops} = 0$$
@@ -112,7 +112,7 @@ The exponential term is inherent to _*ALL*_ 1st order LCCDE systems and is often
 
 ** *_12.2.1  Convenient Form for the Universal Switch Response Inductor Current_*
 
-This LCCDE has the same general form of solution for a switched inductor problem as was found for the switched capacitor voltage, but here the solution is for the inductor current, iL(t). The switched solution is of the universal form:
+This LCCDE has the same general form of solution for a switched inductor problem as was found for the switched capacitor voltage, but here the solution is for the inductor current, $i_L(t)$. The switched solution is of the universal form:
 
 p=. $i_L(t)$ = $(i_{L-init} - i_{L-fnl})$ $e^\frac{-t}{\tau}$ + $i_{L-fnl}$ ... [Eq'n 12-4]
 
@@ -133,7 +133,7 @@ p=. $v_{out}(t)$ = 8 - $v_R(t)$ = 8 - $Ri_L(t)$ ..... for $t$ > 0
 
 To solve this problem for the inductor current $i_L(t)$ after the switch closes, we need to know (1) the _initial value_ of the inductor current just before the switch closes at $t$ = 0.  Here it is given that: just before $t$ = 0 we know $i_L(0-)$ = 0.  Then, since the energy constraint for a inductor requires a continuous inductor current, we therefore know just after $t$ = 0, $i_L(0+)$, must also be zero.  This $t$ = 0+ value of zero is the _initial value_ of the inductor current response.
 
-Additionally, we need to know (2) the _final value_ of the inductor current.  To find this we need to recognize that the final value means there is no further change, in other words the circuit is in equilibrium.  But 'equilibrium' means all d/dt (time derivative) terms must be zero since *in equilibrium nothing is changing*.  Equilibrium thus means there can be no voltage across the inductor. [see Eq'n 12-1]  For our circuit in "Figure 12.4":#figure12-4 zero inductor voltage also requires that all of the 8 volt fixed source voltage is across the 3k resistor.  This means the _final value_ of the inductor current by Ohm's law at the 3k resistor is the fixed voltage source, 8 volts, divided by the resistor 3kohm, 8v/3kohm = 8/3 milliamp.
+Additionally, we need to know (2) the _final value_ of the inductor current.  To find this we need to recognize that the final value means there is no further change, in other words the circuit is in equilibrium.  But 'equilibrium' means all $d/dt$ (time derivative) terms must be zero since *in equilibrium nothing is changing*.  Equilibrium thus means there can be no voltage across the inductor. [see Eq'n 12-1]  For our circuit in "Figure 12.4":#figure12-4 zero inductor voltage also requires that all of the 8 volt fixed source voltage is across the 3k resistor.  This means the _final value_ of the inductor current by Ohm's law at the 3k resistor is the fixed voltage source, 8 volts, divided by the resistor 3kohm, 8v/3kohm = 8/3 milliamp.
 
 And finally (3) we consider the _time-constant_ for our circuit.  The time-constant, tau, is simply $L/R_{th}$ (with switch closed) or for this circuit 2H/3kohm = 2/3 x 10-3 sec, or 2/3 millisecond.
 
@@ -171,7 +171,7 @@ The graphical plot for this output voltage is shown in "Figure 12.6":#figure12-6
 p=(#figure12-6). !{width:60%}img/12/circuitsF12.6.jpg(Figure 12.6)!:img/12/circuitsF12.6.jpg
 _Figure 12.6  Transient Output Voltage Response, Example Switched R-L Circuit_
 
-For this switched R-L example the inductor current starts from the initial value of zero and rises as an exponential curve to the equilibrium final current value of 8/3 mA.  _During the same time_, the output voltage ( = the inductor voltage) instantaneously jumps from zero to 8 volts when the switch closes; and then decays as an exponential curve to its' final value of zero volts.  This zero volt value is 'logical' since *in equilibrium the inductor MUST be zero volts*, ( d/dt terms are zero) so the output voltage MUST be zero volts.
+For this switched R-L example the inductor current starts from the initial value of zero and rises as an exponential curve to the equilibrium final current value of 8/3 mA.  _During the same time_, the output voltage ( = the inductor voltage) instantaneously jumps from zero to 8 volts when the switch closes; and then decays as an exponential curve to its' final value of zero volts.  This zero volt value is 'logical' since *in equilibrium the inductor MUST be zero volts*, ( $d/dt$ terms are zero) so the output voltage MUST be zero volts.
 
 Notice the time-constant for the loop current and the output voltage *is the same* !  The fact is *ALL currents and voltages*, which vary, will vary with the SAME time-constant in any given fixed linear circuit.  In this case the time-constant is 2/3 millisecond.  *There is only one time-constant for any first order linear circuit configuration*.  For a single inductor circuit driven by a switched 'Thevenin' voltage source with series resistance, this time-constant is $L/R_{th}$.
 
@@ -186,19 +186,17 @@ _Figure 12.7  Complex Switched R-L Circuit Example_
 
 Lets again solve for the inductor current for $t$ > 0.  This problem has the switch _initially closed_ a long time before the switch SW *opens* at $t$ = 0.  Using the 3 'key-values'; the initial value is (from $t$ = 0-) $i_L(0-)$ = 12volts/20ohms = 0.6 amp = $i_L(0+)$.  To get this value we used the equilibrium state before $t$ = 0, which requires $i_L(0-)$ = $i_L(0+)$.  This is seen in the equivalent circuit of "Figure 12.8a":#figure12-8a.
 
-The final value for $i_L$ = $i_L(\infty)$, and also must be zero based on the equivalent circuit of Figure "Figure 12.8b":#figure12-8b and the inductor _in equilibrium_ and hence zero volts.
-
-The time-constant for the circuit during the time $t$ > 0, is just the Thevenin equivalent resistance as seen by the inductor, "Figure 12.8c":#figure12-8c, and since the *switch SW is open*, $R_{th}$ = 1kohm.  Hence tau = 3H / 1kohm = 3 millisec.
-
 
 p=(#figure12-8a). !{width:60%}img/12/circuitsF12.8a.jpg(Figure 12.8a)!:img/12/circuitsF12.8a.jpg
 _Figure 12.8a  Initial Value Equivalent Circuit, at $t$ = 0-_
 
+The final value for $i_L$ = $i_L(\infty)$, and also must be zero based on the equivalent circuit of Figure "Figure 12.8b":#figure12-8b and the inductor _in equilibrium_ and hence zero volts.
 
 
 p=(#figure12-8b). !{width:60%}img/12/circuitsF12.8b.jpg(Figure 12.8b)!:img/12/circuitsF12.8b.jpg
-_Figure 12.8b  Final Value Equivalent Circuit, at $t$ > ∞_
+_Figure 12.8b  Final Value Equivalent Circuit, at $t$ > $\infty$_
 
+The time-constant for the circuit during the time $t$ > 0, is just the Thevenin equivalent resistance as seen by the inductor, "Figure 12.8c":#figure12-8c, and since the *switch SW is open*, $R_{th}$ = 1kohm.  Hence tau = 3H / 1kohm = 3 millisec.
 
 
 p=(#figure12-8c). !{width:60%}img/12/circuitsF12.8c.jpg(Figure 12.8c)!:img/12/circuitsF12.8c.jpg
