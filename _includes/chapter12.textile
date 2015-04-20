@@ -186,7 +186,7 @@ _Figure 12.7  Complex Switched R-L Circuit Example_
 
 Lets again solve for the inductor current for $t$ > 0.  This problem has the switch _initially closed_ a long time before the switch SW *opens* at $t$ = 0.  Using the 3 'key-values'; the initial value is (from $t$ = 0-) $i_L(0-)$ = 12volts/20ohms = 0.6 amp = $i_L(0+)$.  To get this value we used the equilibrium state before $t$ = 0, which requires $i_L(0-)$ = $i_L(0+)$.  This is seen in the equivalent circuit of "Figure 12.8a":#figure12-8a.
 
-The final value for $i_L$ = $i_L(\infin)$, and also must be zero based on the equivalent circuit of Figure "Figure 12.8b":#figure12-8b and the inductor _in equilibrium_ and hence zero volts.
+The final value for $i_L$ = $i_L(\infty)$, and also must be zero based on the equivalent circuit of Figure "Figure 12.8b":#figure12-8b and the inductor _in equilibrium_ and hence zero volts.
 
 The time-constant for the circuit during the time $t$ > 0, is just the Thevenin equivalent resistance as seen by the inductor, "Figure 12.8c":#figure12-8c, and since the *switch SW is open*, $R_{th}$ = 1kohm.  Hence tau = 3H / 1kohm = 3 millisec.
 
