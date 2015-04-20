@@ -121,7 +121,7 @@ As was shown with the capacitor energy storage element series circuit, Section 1
 
 h4(#chapter12-example-switchedRL). 12.3 - Example Resistor-Inductor Switched Circuits
 
-We can apply our solution method to the switched $R-L$ (Series Resistor-Inductor) circuit problem.  Using the basic structure of "Figure 12.3":#figure12-3 with numerical values consider the circuit in "Figure 12.4":#figure12-4, where we seek to calculate the voltage $v_{out(t)}$.  Now $v_{out(t)}$ is the voltage across the inductor, but our inductor circuit equation _concerns the inductor current_, not the inductor voltage, so we have some extra work necessary to get $v_{out(t)}$.
+We can apply our solution method to the switched $R-L$ (Series Resistor-Inductor) circuit problem.  Using the basic structure of "Figure 12.3":#figure12-3 with numerical values consider the circuit in "Figure 12.4":#figure12-4, where we seek to calculate the voltage $v_{out}(t)$.  Now $v_{out}(t)$ is the voltage across the inductor, but our inductor circuit equation concerns the _inductor current_, not the inductor voltage, so we have some extra work necessary to get $v_{out}(t)$.
 
 
 p=(#figure12-4). !{width:60%}img/12/circuitsF12.4.jpg(Figure 12.4)!:img/12/circuitsF12.4.jpg
@@ -129,3 +129,28 @@ _Figure 12.4  Example Switched R-L Circuit_
 
 The solution method we will take here is a 2-step process.  Because our LCCDE for the series resistor-inductor circuit is for the inductor current we will need to (1) first solve for the inductor current, $i_L(t)$, AND THEN, (2) calculate the inductor voltage by KVL from difference of the fixed voltage source, $V_S$, and the resistor voltage, $v_R(t)$ for $t$ > 0:
 
+p=. $v_{out}(t)$ = 8 - $v_R(t)$ = 8 - $Ri_L(t)$ ..... for $t$ > 0
+
+To solve this problem for the inductor current $i_L(t)$ after the switch closes, we need to know (1) the _initial value_ of the inductor current just before the switch closes at $t$ = 0.  Here it is given that: just before $t$ = 0 we know $i_L(0-)$ = 0.  Then, since the energy constraint for a inductor requires a continuous inductor current, we therefore know just after $t$ = 0, $i_L(0+)$, must also be zero.  This $t$ = 0+ value of zero is the _initial value_ of the inductor current response.
+
+Additionally, we need to know (2) the _final value_ of the inductor current.  To find this we need to recognize that the final value means there is no further change, in other words the circuit is in equilibrium.  But 'equilibrium' means all d/dt (time derivative) terms must be zero since *in equilibrium nothing is changing*.  Equilibrium thus means there can be no voltage across the inductor. [see Eq’n 12-1]  For our circuit in "Figure 12.4":#figure12-4 zero inductor voltage also requires that all of the 8 volt fixed source voltage is across the 3k resistor.  This means the _final value_ of the inductor current by Ohm's law at the 3k resistor is the fixed voltage source, 8 volts, divided by the resistor 3kohm, 8v/3kohm = 8/3 milliamp.
+
+And finally (3) we consider the _time-constant_ for our circuit.  The time-constant, tau, is simply $L/R_{th}$ (with switch closed) or for this circuit 2H/3kohm = 2/3 x 10-3 sec, or 2/3 millisecond.
+
+By substitution of our three 'key values' into the general form of solution we get:
+
+p=. $i_L(t)$ = $[0 - 8/3]$ $e^{\frac{-t}{0.667}}$ + $8/3$ milliampere  ..... for $t$ > 0
+
+or
+
+p=. $i_L(t)$ = $8/3$ $(1 - e^{\frac{-t}{0.667}})$ milliampere  ..... for $t$ > 0
+
+with $t$ in milliseconds.
+
+This inductor current is depicted in F"Figure 12.5":#figure12-5.  It is a rising response curve.
+
+
+p=(#figure12-5). !{width:60%}img/12/circuitsF12.5.jpg(Figure 12.5)!:img/12/circuitsF12.5.jpg
+_Figure 12.5  Transient Inductor Current, Example Switched R-L Circuit_
+
+Since we have $i_L(t)$, we can now solve for the output voltage by ohm's law for the resistor voltage and KVL to obtain $v_{out}(t)$ as:
