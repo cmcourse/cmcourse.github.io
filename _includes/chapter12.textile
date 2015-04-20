@@ -77,9 +77,7 @@ p=. $i_L(t=0+)$ = $i_L(t=0-)$ = 0
 *After: t = 0: further after the switch closure:*
 The circuit constraint, KVL, requires the voltage around a closed loop path must be zero and thus we can write:
 
-p=. $$\sum_{\ \mbox(loop)} v_{drops}$$ = 0
-
-p=. $$P_{total} = \sum_{ \ \mbox(all-branches)} (v_k) (i_k) = 0$$
+p=. $$\sum_{\ \mbox(closed-loop)} v_{drops} = 0$$
 
 thus:
 
@@ -101,7 +99,7 @@ This equation is a _differential equation_, and more specifically it is a linear
 
 p=. $\frac{di_L(t)}{dt} + \frac{1}{\tau} i_L(t)$ = $K$ (= constant)
 
-where, the constant tau ($\tau$ ) must have the units of time to match the units of the derivative term, so  $\tau$ (tau) = $\frac{L}$$R$ (henry/ohm = seconds).   For our inductor circuit with series resistor the time constant, tau, is:
+where, the constant tau ($\tau$ ) must have the units of time to match the units of the derivative term, so  $\tau$ (tau) = $\frac{L}{R}$ (henry/ohm = seconds).   For our inductor circuit with series resistor the time constant, tau, is:
 
 p=. $\tau$ = $\frac{L}{R}$
 
@@ -111,13 +109,13 @@ p=. $i_L(t)$ = $A$ $e^\frac{-t}{\tau}$ + B
 
 The exponential term is inherent to _*ALL*_ 1st order LCCDE systems and is often referred to as the '*homogeneous*' part of the solution.  In this case the second term, the constant B, is selected to match the drive, which here is a constant.  This second term of the general solution is often referred to as the '*particular*' part of the solution, since it is chosen to match the drive of the problem.  Note the exponential function was discussed in Section 11.4 and is shown graphically in Figure 11-12.
 
-**	*12.2.1  _Convenient Form for the Universal Switch Response Inductor Current*_
+**	_*12.2.1  Convenient Form for the Universal Switch Response Inductor Current*_
 
 This LCCDE has the same general form of solution for a switched inductor problem as was found for the switched capacitor voltage, but here the solution is for the inductor current, iL(t). The switched solution is of the universal form:
 
 p=. $i_L(t)$ = $(i_{Linit} - i_{Lfnl})$ $e^\frac{-t}{\tau}$ + $i_{Lfnl}$ ... [Eq'n 12-4]
 
-As was shown with the capacitor energy storage element series circuit, Section 11, the solution for the inductor problem requires the calculation of 3 constant terms; in this case the _initial value_ of the inductor current, $i_{L-init}$ , the _final value_ of the inductor current, $i_{L-fnl}$, and the _time-constant_ ,$\tau$  , for the exponential response.  The time-constant, $\tau$  (tau) = $L/R$, where this '$R$' value is the Thevenin equivalent resistance for the circuit as connected _*at the inductor*_ (for the switch position associated with the time-constant value).
+As was shown with the capacitor energy storage element series circuit, Section 11, the solution for this inductor problem requires the calculation of 3 constant terms; the _initial value_ of the inductor current, $i_{L-init}$ , the _final value_ of the inductor current, $i_{L-fnl}$, and the _time-constant_ ,$\tau$  , for the exponential response.  The time-constant, $\tau$  (tau) = $L/R$, where this '$R$' value is the Thevenin equivalent resistance for the circuit as connected _*at the inductor*_ (for the switch position associated with the time-constant value).
 
 
 h4(#chapter12-example-switchedRL). 12.3 - Example Resistor-Inductor Switched Circuits
