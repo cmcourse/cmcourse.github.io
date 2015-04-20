@@ -110,14 +110,11 @@ p=. $i_L(t)$ = $A$ $e^\frac{-t}{\tau}$ + B
 The exponential term is inherent to _*ALL*_ 1st order LCCDE systems and is often referred to as the '*homogeneous*' part of the solution.  In this case the second term, the constant B, is selected to match the drive, which here is a constant.  This second term of the general solution is often referred to as the '*particular*' part of the solution, since it is chosen to match the drive of the problem.  Note the exponential function was discussed in Section 11.4 and is shown graphically in Figure 11-12.
 
 
-** *_12.1.1 Inductor-Current Waveform Example_*
-
-
 ** *_12.2.1  Convenient Form for the Universal Switch Response Inductor Current_*
 
 This LCCDE has the same general form of solution for a switched inductor problem as was found for the switched capacitor voltage, but here the solution is for the inductor current, iL(t). The switched solution is of the universal form:
 
-p=. $i_L(t)$ = $(i_{Linit} - i_{Lfnl})$ $e^\frac{-t}{\tau}$ + $i_{Lfnl}$ ... [Eq'n 12-4]
+p=. $i_L(t)$ = $(i_{L-init} - i_{L-fnl})$ $e^\frac{-t}{\tau}$ + $i_{L-fnl}$ ... [Eq'n 12-4]
 
 As was shown with the capacitor energy storage element series circuit, Section 11, the solution for this inductor problem requires the calculation of 3 constant terms; the _initial value_ of the inductor current, $i_{L-init}$ , the _final value_ of the inductor current, $i_{L-fnl}$, and the _time-constant_ ,$\tau$  , for the exponential response.  The time-constant, $\tau$  (tau) = $L/R$, where this '$R$' value is the Thevenin equivalent resistance for the circuit as connected _*at the inductor*_ (for the switch position associated with the time-constant value).
 
@@ -130,5 +127,5 @@ We can apply our solution method to the switched $R-L$ (Series Resistor-Inductor
 p=(#figure12-4). !{width:60%}img/12/circuitsF12.4.jpg(Figure 12.4)!:img/12/circuitsF12.4.jpg
 _Figure 12.4  Example Switched R-L Circuit_
 
-The solution method we will take here is a 2-step process.  Because our LCCDE for the series resistor-inductor circuit is for the inductor current we will need to (1) first solve for the _inductor current_, $i_L(t)$, AND THEN, (2) calculate the inductor voltage by KVL from difference of the fixed voltage source and the resistor voltage, $v_R(t)$ for $t$ > 0:
+The solution method we will take here is a 2-step process.  Because our LCCDE for the series resistor-inductor circuit is for the inductor current we will need to (1) first solve for the inductor current, $i_L(t)$, AND THEN, (2) calculate the inductor voltage by KVL from difference of the fixed voltage source, $V__S$, and the resistor voltage, $v_R(t)$ for $t$ > 0:
 
