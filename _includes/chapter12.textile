@@ -77,7 +77,9 @@ p=. $i_L(t=0+)$ = $i_L(t=0-)$ = 0
 *After: t = 0: further after the switch closure:*
 The circuit constraint, KVL, requires the voltage around a closed loop path must be zero and thus we can write:
 
-p=. $\sum_{\ \mbox(loop)} v_{drops}$ = 0
+p=. $$\sum_{\ \mbox(loop)} v_{drops}$$ = 0
+
+p=. $$P_{total} = \sum_{ \ \mbox(all-branches)} (v_k) (i_k) = 0$$
 
 thus:
 
