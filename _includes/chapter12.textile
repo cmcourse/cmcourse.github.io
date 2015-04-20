@@ -121,11 +121,11 @@ As was shown with the capacitor energy storage element series circuit, Section 1
 
 h4(#chapter12-example-switchedRL). 12.3 - Example Resistor-Inductor Switched Circuits
 
-We can apply our solution method to the switched $R-L$ (Series Resistor-Inductor) circuit problem.  Using the basic structure of "Figure 12.3":#figure12-3 with numerical values consider the circuit in "Figure 12.4":#figure12-4, where we seek to calculate the voltage $v_{out(t)}.  Now $v_{out(t)} is the voltage across the inductor, but our inductor circuit equation _concerns the inductor current_, not the inductor voltage, so we have some extra work necessary to get $v_{out(t)}.
+We can apply our solution method to the switched $R-L$ (Series Resistor-Inductor) circuit problem.  Using the basic structure of "Figure 12.3":#figure12-3 with numerical values consider the circuit in "Figure 12.4":#figure12-4, where we seek to calculate the voltage $v_{out(t)}$.  Now $v_{out(t)}$ is the voltage across the inductor, but our inductor circuit equation _concerns the inductor current_, not the inductor voltage, so we have some extra work necessary to get $v_{out(t)}$.
 
 
 p=(#figure12-4). !{width:60%}img/12/circuitsF12.4.jpg(Figure 12.4)!:img/12/circuitsF12.4.jpg
 _Figure 12.4  Example Switched R-L Circuit_
 
-The solution method we will take here is a 2-step process.  Because our LCCDE for the series resistor-inductor circuit is for the inductor current we will need to (1) first solve for the inductor current, $i_L(t)$, AND THEN, (2) calculate the inductor voltage by KVL from difference of the fixed voltage source, $V__S$, and the resistor voltage, $v_R(t)$ for $t$ > 0:
+The solution method we will take here is a 2-step process.  Because our LCCDE for the series resistor-inductor circuit is for the inductor current we will need to (1) first solve for the inductor current, $i_L(t)$, AND THEN, (2) calculate the inductor voltage by KVL from difference of the fixed voltage source, $V_S$, and the resistor voltage, $v_R(t)$ for $t$ > 0:
 
