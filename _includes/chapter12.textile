@@ -176,3 +176,7 @@ For this switched R-L example the inductor current starts from the initial value
 Notice the time-constant for the loop current and the output voltage *is the same* !  The fact is *ALL currents and voltages*, which vary, will vary with the SAME time-constant in any given fixed linear circuit.  In this case the time-constant is 2/3 millisecond.  *There is only one time-constant for any first order linear circuit configuration*.  For a single inductor circuit driven by a switched 'Thevenin' voltage source with series resistance, this time-constant is $L/R_{th}$.
 
 
+h4(#chapter12-thevenin-switchedRL). 12.4 - Thevenin Equivalent: Resistor-Inductor Switched Circuits
+
+
+
