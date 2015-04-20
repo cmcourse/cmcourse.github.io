@@ -30,7 +30,7 @@ p=. $i_C$ = $C_{eq}$ $\frac{dv_C}{dt}$
 
 so
 
-p=.	$\frac{dv_C}{dt}$ = $\frac{i_C}{C_{eq}}$
+p=. $\frac{dv_C}{dt}$ = $\frac{i_C}{C_{eq}}$
 
 but by KVL:
 
@@ -46,7 +46,8 @@ p=. $\frac{1}{C_{eq}}$ = $(\frac{1}{C_1} + \frac{1}{C_2})$  .....  Eq'n 13.1
 
 This equation gives the equivalent capacitance for _two capacitors connected in series_.  And by extension the equivalent for *'N' capacitors in series* is:
 
-p=. $\frac{1}{C_{eq}}$ = $(\frac{1}{C_1} + \frac{1}{C_2} + - - - + \frac{1}{C_N})$
+<h4>
+p=. $\frac{1}{C_{eq}}$ = $(\frac{1}{C_1} + \frac{1}{C_2} + - - - + \frac{1}{C_N})$ </h4>
 
 Notice this capacitor _series equivalent_ is the same form obtained for the _equivalent with resistors in parallel_.  To decrease a capacitance, just add more capacitors in series.
 
