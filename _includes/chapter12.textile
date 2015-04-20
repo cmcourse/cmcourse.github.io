@@ -39,7 +39,7 @@ p=. Inductor Energy Constraint is: $\Rightarrow$ $i_L(t)$ is *always continuous.
 
 We will find that this requirement for current continuity in an inductor is very significant, especially for switched circuits.  The current carried by an inductor must be the same from immediately before to immediately after a switch closes or opens.
 
-** _*12.1.1 Inductor-Current Waveform Example*_
+** *_12.1.1 Inductor-Current Waveform Example_*
 
 Because the time derivative represents the instantaneous slope, we can find the inductor voltage given we know the time waveform of the inductor current.  This derivative connection is depicted in "Figure 12.2":#figure12-2, which shows an example current waveform and the corresponding voltage for an inductor of 3 Henrys.
 
