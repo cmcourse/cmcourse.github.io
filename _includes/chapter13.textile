@@ -45,7 +45,6 @@ Hence,
 p=. $\frac{1}{C_{eq}}$ = $(\frac{1}{C_1} + \frac{1}{C_2})$  .....  Eq'n 13.1
 
 This equation gives the equivalent capacitance for _two capacitors connected in series_.  And by extension the equivalent for *'N' capacitors in series* is:
-
 <h4>
 p=. $\frac{1}{C_{eq}}$ = $(\frac{1}{C_1} + \frac{1}{C_2} + - - - + \frac{1}{C_N})$ </h4>
 
@@ -81,8 +80,8 @@ Hence:
 p=. $C_{eq}$ = $C_1$ + $C_2$
 
 This equation gives the equivalent capacitance for two capacitors in parallel.  And by extension the equivalent for *'N' capacitors in parallel* is:
-
-p=. $C_{eq}$ = $C_1$ + $C_2$ + - - -  +$C_N$
+<h4>
+p=. $C_{eq}$ = $C_1$ + $C_2$ + - - -  +$C_N$</h4>
 
 Notice this capacitor parallel equivalent is the _same form_ obtained for the equivalent with resistors in series, they add.  To increase a capacitance, just connect additional capacitors in parallel.
 
