@@ -81,9 +81,10 @@ Now if $\Delta t$ $\Rightarrow$ zero, in other words an instantaneous change, th
 <h3>
 p=. *It takes time to change energy !* </h3>
 
+ 
 ** _*3.2.1 The Impulse Exception*_
 
-While it is abnormal to consider the possibility of 'infinite' power, there is one exception that can be useful; the exception is a source called an impulse, $/delta(t)$.  The impulse source can effectively provide infinite power in esentially zero time such that the amount of charge held by a capacitor changes in near zero time.  This near instant deposition of charge will cause the capacitor voltage to exhibit a step increase in voltage in near zero time.  The requirement for this impulse is that the product of current times time is finite yet it ocurrs in a time very short compared to the response of the circuit.  Thus the impulse source enables a step increase in capacitor voltage before the other circuit elements can change.  The impulse is useful since it represents another way that a circuit is given a transient 'kick', yet unlike a step change source, the impulse has only the near zero time of impact and no sustained drive.  The impulse enables the circuit to reveal it's characterisitc response.
+While it is unusual to consider the possibility of a step change in energy since it requires 'infinite' power, there is one exception that can be useful; a source called an _impulse_, $\delta(t)$.  The impulse source can effectively provide infinite power in esentially zero time such that the amount of charge held by a capacitor changes in effectively zero time.  This near instant deposition of charge will cause the capacitor voltage to exhibit a step change in voltage.  The requirement for this impulse is that the product (current x time) is finite and yet it occurs in a time very short compared to the response of the circuit.  Thus the impulse source enables a step increase in capacitor voltage without the change of other circuit values.  The impulse is useful since it represents another form of transient that can 'kick' the circuit to respond, yet unlike a step change source, the impulse has action only during the near zero time of impact and no sustained drive before or afterward.  The impulse source causes a circuit to reveal it's characterisitc response.
 
 
 h4(#chapter11-capacitor-element). 11.3 - Capacitor, an Energy Storage Circuit Element
