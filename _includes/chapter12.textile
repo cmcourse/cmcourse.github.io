@@ -178,5 +178,56 @@ Notice the time-constant for the loop current and the output voltage *is the sam
 
 h4(#chapter12-thevenin-switchedRL). 12.4 - Thevenin Equivalent: Resistor-Inductor Switched Circuits
 
+The solution process we just used in the above example can now be extended to more complex circuits with a single inductor and multiple resistors.  Consider the circuit in "Figure 12.7":#figure12-7.  It produces a sudden pulse of high voltage and is similar to the 'ignition circuit' used to cause a spark in an internal combustion engine, ie. a circuit used in most all gasoline powered cars.
+
+
+p=(#figure12-7). !{width:60%}img/12/circuitsF12.7.jpg(Figure 12.7)!:img/12/circuitsF12.7.jpg
+_Figure 12.7  Complex Switched R-L Circuit Example_
+
+Lets again solve for the inductor current for $t$ > 0.  This problem has the switch _initially closed_ a long time before the switch SW *opens* at $t$ = 0.  Using the 3 'key-values'; the initial value is (from $t$ = 0-) iL(0-) = 12volts/20ohms = 0.6 amp = $i_L(0+)$.  To get this value we used the equilibrium state before $t$ = 0, which requires $i_L(0-)$ = $i_L(0+)$.  This is seen in the equivalent circuit of "Figure 12.8a":#figure12-8a.
+
+The final value for $i_L$ = $i_L(\infin)$, and also must be zero based on the equivalent circuit of Figure "Figure 12.8b":#figure12-8b and the inductor _in equilibrium_ and hence zero volts.
+
+The time-constant for the circuit during the time $t$ > 0, is just the Thevenin equivalent resistance as seen by the inductor, "Figure 12.8c":#figure12-8c, and since the *switch SW is open*, $R_{th}$ = 1kohm.  Hence tau = 3H / 1kohm = 3 millisec.
+
+
+p=(#figure12-8a). !{width:60%}img/12/circuitsF12.8a.jpg(Figure 12.8a)!:img/12/circuitsF12.8a.jpg
+_Figure 12.8a  Initial Value Equivalent Circuit, at $t$ = 0-_
+
+
+
+p=(#figure12-8b). !{width:60%}img/12/circuitsF12.8b.jpg(Figure 12.8b)!:img/12/circuitsF12.8b.jpg
+_Figure 12.8b  Final Value Equivalent Circuit, at $t$ > ∞_
+
+
+
+p=(#figure12-8c). !{width:60%}img/12/circuitsF12.8c.jpg(Figure 12.8c)!:img/12/circuitsF12.8c.jpg
+_Figure 12.8c  Time-Constant Equivalent Circuit, at $t$ > 0_
+
+Now apply these values to our universal response and we get the inductor current, iL(t) to be:
+
+p=. $i_L(t)$ = (0.6)$e^{\frac{-t}{3}}$ ampere  .....  for $t$ > 0,  ...  _t in millisec_
+
+This decaying exponential inductor current is depicted in "Figure 12.9":#figure12-9.
+
+
+p=(#figure12-9). !{width:60%}img/12/circuitsF12.9.jpg(Figure 12.9)!:img/12/circuitsF12.9.jpg
+_Figure 12.9  Inductor Transient Current for $t$ > 0 (Switch Open)_
+
+To reiterate, the current in the inductor, $i_L$, when $t$ = 0- must be continuous (since the stored energy in the inductor cannot change instantaneously) and thus cannot change at time $t$ = 0+.  However, the circuit has changed due to the switch SW opening.  This means ALL the inductor current at $t$ = 0+ IS NOW FORCED to go through the 1kohm resistor, "Figure 12.10":#figure12-10, because there is now just a single loop. And this causes an instantaneous jump in the voltage at the output to a huge voltage magnitude of 1kohm x 0.6amp = *600 volts !!!!  (A voltage spike.)  WATCH OUT, HIGH VOLTAGE !!!*
+
+
+p=(#figure12-10). !{width:90%}img/12/circuitsF12.10.jpg(Figure 12.10)!:img/12/circuitsF12.10.jpg
+_Figure 12.10  Transient Voltage Spike when Switch Opens at $t$ = 0+_
+
+Actually the voltage peak, $v_{out}(0+)$, is negative  (-600 volts) because the inductor current $i_L(0+)$ is positive 0.6 amps and circulates *up* through the 1kohm resistor and thereby cause $v_{out}$ to be negative.
+
+The output voltage must decay to zero with the switch open after the circuit again reaches _equilibrium_ for $t$ > 0, namely the inductor acts as a short-circuit when there is no change with time and the output voltage is thus zero again.  The sudden jump and subsequent decay with time with a 1st order time constant, corresponds to the output voltage being a decaying exponential, "Figure 12.11":#figure12-11.
+
+
+p=(#figure12-11). !{width:60%}img/12/circuitsF12.11.jpg(Figure 12.11)!:img/12/circuitsF12.11.jpg
+_Figure 12.11  Pulse Output Voltage of Example Complex Switched R–L Circuit_
+
+For inductors, interrupting an inductive current yields a 'spike' of voltage that can be very high.  Automotive coil ignition systems use this concept to produce the voltage spike that causes the spark at the spark-plug.  An inductive 'spike' voltage circuit is also a common form of circuit used to ignite the xenon flash unit in many cameras or to produce a flash of light from an LED.
 
 
