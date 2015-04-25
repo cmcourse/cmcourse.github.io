@@ -214,7 +214,7 @@ Consider the example group of inductors in "Figure 13.6":#figure13-6.
 p=(#figure13-6). !{width:50%}img/13/circuitsF13.6.jpg(Figure 13.6)!:img/13/circuitsF13.6.jpg
 _Figure 13.6  Example Inductor Series-Parallel Reduction_
 
-To reduce this group of inductors, first (A) recognize that the three 2µH inductors are connected in parallel, so they can be replaced by a single equivalent 2/3 $\mu$H inductor, "Figure 13.6a":#figure13-6a.
+To reduce this group of inductors, first (A) recognize that the three 2$\mu$H inductors are connected in parallel, so they can be replaced by a single equivalent 2/3 $\mu$H inductor, "Figure 13.6a":#figure13-6a.
 
 
 p=(#figure13-6a). !{width:50%}img/13/circuitsF13.6a.jpg(Figure 13.6a)!:img/13/circuitsF13.6a.jpg
@@ -226,7 +226,7 @@ p=. $L_{eq}$ = $L_1$ + $L_2$
 
 or with values;
 
-p=. $L_{eq}$ = $\frac{2}{3}$ $\mu$H + 1H = 1H
+p=. $L_{eq}$ = $\frac{2}{3}$ $\mu$H + 1H $\approx$ 1H
 
 The resultant equivalent is essentially 1H for practical purposes where 3 decimal places are sufficient because a $\mu$H is a million times smaller than a H.  The resultant equivalent circuit reduces to just two inductors, "Figure 13.6b":#figure13-6b
 
@@ -234,13 +234,13 @@ The resultant equivalent is essentially 1H for practical purposes where 3 decima
 p=(#figure13-6b). !{width:50%}img/13/circuitsF13.6b.jpg(Figure 13.6b)!:img/13/circuitsF13.6b.jpg
 _Figure 13.6b  Second Reduction of Inductor Group to Two Inductors_
 
-And finally, (C) since these two inductors have the same voltage and are in-parallel, so their equivalent value is determined by:
+And finally, {(C)} since these two inductors have the same voltage and are in-parallel, so their equivalent value is determined by:
 
 p=. $L_{eq}$ = $\frac{(L_1)(L_2)}{L_1 + L_2}$
 
 so with values:
 
-p=. $L_{eq}$ = $\frac{(3x10^{-6})(1)}{3x10^{-6}+1}$ = $\frac{3x10^{-6}}{1.000003}$ = 3 $\mu H$
+p=. $L_{eq}$ = $\frac{(3x10^{-6})(1)}{3x10^{-6}+1}$ = $\frac{3x10^{-6}}{1.000003}$ $\approx$ 3 $\mu$H
 
 to yield the final single inductor equivalent of 3 $\mu$H, "Figure 13.6c":#figure13-6c.
 
