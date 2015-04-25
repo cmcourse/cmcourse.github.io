@@ -214,7 +214,7 @@ Consider the example group of inductors in "Figure 13.6":#figure13-6.
 p=(#figure13-6). !{width:50%}img/13/circuitsF13.6.jpg(Figure 13.6)!:img/13/circuitsF13.6.jpg
 _Figure 13.6  Example Inductor Series-Parallel Reduction_
 
-To reduce this group of inductors, first (A) recognize that the three 2µH inductors are connected in parallel, so they can be replaced by a single equivalent 2/3 µH inductor, "Figure 13.6a":#figure13-6a.
+To reduce this group of inductors, first (A) recognize that the three 2µH inductors are connected in parallel, so they can be replaced by a single equivalent 2/3 $\mu$H inductor, "Figure 13.6a":#figure13-6a.
 
 
 p=(#figure13-6a). !{width:50%}img/13/circuitsF13.6a.jpg(Figure 13.6a)!:img/13/circuitsF13.6a.jpg
@@ -240,13 +240,13 @@ p=. $L_{eq}$ = $\frac{(L_1)(L_2)}{L_1 + L_2}$
 
 so with values:
 
-p=. $L_{eq}$ = 4\frac{(3x10^{-6})(1)}{3x10^{-6}+1}$ = $\frac{3x10^{-6}}{1.000003}$ = 3 $\mu H$
+p=. $L_{eq}$ = $\frac{(3x10^{-6})(1)}{3x10^{-6}+1}$ = $\frac{3x10^{-6}}{1.000003}$ = 3 $\mu H$
 
-to yield the final single inductor equivalent of 3 µH, "Figure 13.6c":#figure13-6c.
+to yield the final single inductor equivalent of 3 $\mu$H, "Figure 13.6c":#figure13-6c.
 
 
 p=(#figure13-6c). !{width:45%}img/13/circuitsF13.6c.jpg(Figure 13.6c)!:img/13/circuitsF13.6c.jpg
 _Figure 13.6c  Single Inductor Equivalent_
 
-By the method of reduction for inductors, the original circuit with 5 inductors is reduced to an equivalent single inductor, at terminals A-A', of 3 $\mu H$.
+By the method of reduction for inductors, the original circuit with 5 inductors is reduced to an equivalent single inductor, at terminals A-A', of 3 $\mu$H.
 
