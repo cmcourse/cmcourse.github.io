@@ -234,7 +234,7 @@ The resultant equivalent is essentially 1H for practical purposes where 3 decima
 p=(#figure13-6b). !{width:50%}img/13/circuitsF13.6b.jpg(Figure 13.6b)!:img/13/circuitsF13.6b.jpg
 _Figure 13.6b  Second Reduction of Inductor Group to Two Inductors_
 
-And finally, {(C)} since these two inductors have the same voltage and are in-parallel, so their equivalent value is determined by:
+And finally, C, since these two inductors have the same voltage and are in-parallel, so their equivalent value is determined by:
 
 p=. $L_{eq}$ = $\frac{(L_1)(L_2)}{L_1 + L_2}$
 
