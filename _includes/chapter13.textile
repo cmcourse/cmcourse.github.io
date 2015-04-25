@@ -121,13 +121,13 @@ _Figure 13.3b  Second Reduction of Capacitor Group_
 And finally, (C) since these two capacitors have the same voltage and are _in-parallel_, their values add to yield the final single capacitor equivalent of 9 µF, "Figure 13.3c":#figure13-3c.
 
 
-p=(#figure13-3c). !{width:30%}img/13/circuitsF13.3c.jpg(Figure 13.3c)!:img/13/circuitsF13.3c.jpg
+p=(#figure13-3c). !{width:35%}img/13/circuitsF13.3c.jpg(Figure 13.3c)!:img/13/circuitsF13.3c.jpg
 _Figure 13.3c  Final Reduction to Single Capacitor Equivalent_
 
 The original circuit of 5 capacitors is thus reduced to a single capacitor of value 9 $\mu F$.  From the terminals A-A', the single capacitor yields the same $i-v$ characteristic as occurs for the original 5 capacitor circuit at terminals A-A'.
 
 
-h4(#chapter13-mulitple-inductors). 13.2 - Multiple-Inductor Equivalents
+h4(#chapter13-multiple-inductors). 13.2 - Multiple-Inductor Equivalents
 
 In this Section we consider how to reduce multiple inductor energy storage elements into a single corresponding equivalent.  At this time we consider circuits with only inductors. At another time you will encounter circuits with _both_ capacitors and inductors simultaneously in the same circuit.
 
@@ -160,7 +160,7 @@ p=. $L_{eq}$ = $L_1$ + $L_2$
 This equation gives the equivalent inductance for _two inductors in series_.  And by extension the equivalent for *'N' inductors in series* is:
 
 <h4>
-p=. $L_{eq}$ = $L_1$ + $L_2$ + --- + $L_N$
+p=. $L_{eq}$ = $L_1$ + $L_2$ + --- + $L_N$</h4>
 
 Notice this inductor series equivalent is the same form obtained for the series equivalent for resistors.  To increase an inductance value, just add more inductors in series.
 
@@ -199,7 +199,8 @@ p=. $\frac{1}{L_{eq}}$ = $\frac{1}{L_1}$ + $\frac{1}{L_2}$
 
 This equation gives the equivalent inductance for two inductors in parallel.  And by extension the equivalent for *'N' inductors in parallel* is:
 
-p=. $\frac{1}{L_{eq}}$ = $\frac{1}{L_1}$ + $\frac{1}{L_2}$ + --- + $\frac{1}{L_N}$
+<h4>
+p=. $\frac{1}{L_{eq}}$ = $\frac{1}{L_1}$ + $\frac{1}{L_2}$ + --- + $\frac{1}{L_N}$</h4>
 
 Notice this inductor parallel equivalent is the same form obtained for the equivalent of parallel resistors.  To decrease an inductance value, just connect additional inductors in parallel.
 
@@ -219,7 +220,7 @@ To reduce this group of inductors, first (A) recognize that the three 2µH induc
 p=(#figure13-6a). !{width:50%}img/13/circuitsF13.6a.jpg(Figure 13.6a)!:img/13/circuitsF13.6a.jpg
 _Figure 13.6a  First Reduction for Inductor Group_
 
-Next (B) two inductors (the 2/3 µH and 1H) are seen to have the same current and thus are in-series.  So this series combination is just:
+Next (B) two inductors (the 2/3 $\mu$H and 1H) are seen to have the same current and thus are in-series.  So this series combination is just:
 
 p=. $L_{eq}$ = $L_1$ + $L_2$
 
