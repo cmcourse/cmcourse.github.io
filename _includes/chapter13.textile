@@ -98,13 +98,13 @@ Consider the example group of capacitors in "Figure 13.3":#figure13-3.
 p=(#figure13-3). !{width:50%}img/13/circuitsF13.3.jpg(Figure 13.3)!:img/13/circuitsF13.3.jpg
 _Figure 13.3  Example Capacitor Series-Parallel Reduction_
 
-To reduce this group of capacitors, (A) first recognize that the three 2µF capacitors are connected _in-parallel_, so they can be replaced by a single equivalent 6 µF capacitor, "Figure 13.3a":#figure13-3a.
+To reduce this group of capacitors, (A) first recognize that the three 2$\mu$F capacitors are connected _in-parallel_, so they can be replaced by a single equivalent 6 $\mu$F capacitor, "Figure 13.3a":#figure13-3a.
 
 
 p=(#figure13-3a). !{width:50%}img/13/circuitsF13.3a.jpg(Figure 13.3a)!:img/13/circuitsF13.3a.jpg
 _Figure 13.3a  First Reduction for Capacitor Group_
 
-Next (B) two capacitors (the 6µF and 1F) are seen to have the same current and thus are in-series.  But these two have very different capacitance values so the series combination is just:
+Next (B) two capacitors (the 6$\mu$F and 1F) are seen to have the same current and thus are in-series.  But these two have very different capacitance values so the series combination is just:
 
 p=. $C_{eq}$ = $\frac{C_1 C_2}{C_1 + C_2}$
 
@@ -112,13 +112,13 @@ so with values:
 
 p=. $C_{eq}$ = $\frac{6x10^{-6} x 1}{(6x10^{-6}+1)}$ = $\frac{6x10^{-6}}{1.000006}$
 
-The resultant equivalent is essentially 6µF for practical purposes, often 3 decimal places is sufficient accuracy.  The resultant equivalent circuit reduces to just two capacitors, "Figure 13.3b":#figure13-3b.
+The resultant equivalent is essentially 6$\mu$F for practical purposes, often 3 decimal places is sufficient accuracy.  The resultant equivalent circuit reduces to just two capacitors, "Figure 13.3b":#figure13-3b.
 
 
 p=(#figure13-3b). !{width:45%}img/13/circuitsF13.3b.jpg(Figure 13.3b)!:img/13/circuitsF13.3b.jpg
 _Figure 13.3b  Second Reduction of Capacitor Group_
 
-And finally, (C) since these two capacitors have the same voltage and are _in-parallel_, their values add to yield the final single capacitor equivalent of 9 µF, "Figure 13.3c":#figure13-3c.
+And finally, (C) since these two capacitors have the same voltage and are _in-parallel_, their values add to yield the final single capacitor equivalent of 9 $\mu$F, "Figure 13.3c":#figure13-3c.
 
 
 p=(#figure13-3c). !{width:35%}img/13/circuitsF13.3c.jpg(Figure 13.3c)!:img/13/circuitsF13.3c.jpg
