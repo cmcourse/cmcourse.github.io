@@ -36,7 +36,7 @@ These new 'Rule-2' constraints come from physical limits which the real world im
 <h4>
 p=(#eq3-1). $$\sum_{j=1 \ \mbox(all - branches)}^{m} i_j = 0$$ </h4>
 
-p=. ($i_j$ = current _leaving_ node on branch '$j$')  Eq'n 3.1 
+p=. ($i_j$ = current _leaving_ node on branch '$j$') ..... Eq'n 3.1 
 
 Here the currents $i_j$ are the $m$ branch currents that leave the node.  This constraint can be illustrated by a 4-branch node example, as shown in "Figure 3.3":#figure3-3,
 
@@ -45,7 +45,7 @@ _Figure 3.3  Kirchoff's Current Law Applied at an Example 4-Branch Node_
 
 and the corresponding Kirchoff's Current Law "Eq'n. 3.2":#eq3-2.
 
-p=(#eq3-2). $(i_1 - i_2 + i_3 + i_4) = 0$  Eq'n 3.2
+p=(#eq3-2). $(i_1 - i_2 + i_3 + i_4) = 0$ ..... Eq'n 3.2
 
 Notice that there is a negative sign '$-i_2$' in this equation.  Recall we must sum all the currents _leaving_ the node, but '$i_2$' is defined by the current arrow as entering, so therefore '$-i_2$' is the current leaving via branch 2.  Also notice that "Figure 3.3":#figure3-3 is just a portion of a complete circuit that is not fully shown.  The current $i_4$ in resistor $R_4$ cannot disappear into no-where, and the same for the other branch currents.  There must be more of the circuit not depicted in "Figure 3.3":#figure3-3.  So a key point of this is that Kirchoff’s Current Law applies to *_any node_* independent of the remainder of the circuit, so it is completely accurate to write "Eq'n. 3.2":#eq3-2 with only the local knowledge at that node, and without knowledge of other parts of the circuit.
 
@@ -105,7 +105,7 @@ Being conserved, means that if a node 'A' is at a voltage $V_A$, then if we foll
 <h4>
 p=(#eqn3-3). $$\sum_{j=1 \ \mbox(closed - loop)}^{m} v_j = 0$$ </h4>
 
-p=. ($v_j$ = _branch voltage-drop_ on element '$j$' in loop)  Eq'n 3-3        
+p=. ($v_j$ = _branch voltage-drop_ on element '$j$' in loop) ..... Eq'n 3-3        
 
 Here the element voltage 'drops', $v_j$, are for each of all the '_m_' elements *in the closed loop*.  This can be illustrated by a 4-element loop example, as depicted in "Figure 3.4":#figure3-4,
 
@@ -114,7 +114,7 @@ _Figure 3.4  Kirchoff's Voltage Law Applied to an Example 4-Element Loop_
 
 and the corresponding Kirchoff's Voltage Law "Eq'n. 3.4":#eq3-4.
 
-p=(#eq3-4). $(-V_1 + V_2 + V_3 + V_4) = 0$  Eq'n 3.4
+p=(#eq3-4). $(-V_1 + V_2 + V_3 + V_4) = 0$ ..... Eq'n 3.4
 
 To follow this loop, consider that we start our loop-path at node 'n1' (at the lower left).  If we take a clock-wise loop-path from node n1, to node n2, to node n3, to node n4, and then back again to node n1; then the _sum of the *element voltage drops* along that path must be zero_.  These element voltages are:
 
@@ -146,7 +146,7 @@ There is another 'circuit' constraint that is related not to either voltage or c
 p=(#eq3-5). $$\sum_{j=1 \ \mbox(all-elements)}^{m} P_j = 0$$ </h4>
 
 
-p=. ($P_j$ is the power dissipated in the '$j$' element)  Eq'n 3.5
+p=. ($P_j$ is the power dissipated in the '$j$' element) ..... Eq'n 3.5
 
 Here the summation must be over *all elements in the circuit*.
 

@@ -14,7 +14,7 @@ _Figure 2.1  The Fixed Voltage Source Circuit Element, with Value '$V_S$'_
 
 The mathematical form of the constraint, which this voltage source imposes between voltage and current at it's terminals is given by "Eq'n. 2.1":#eq2-1.
 
-p=(#eq2-1). $(v_{n1} - v_{n2}) - V_S = 0$ _Eq'n 2.1_
+p=(#eq2-1). $(v_{n1} - v_{n2}) - V_S = 0$ .....  Eq'n 2.1
 
 Eq'n 2.1 simply states the voltage difference between node 1 and node 2, $(v_{n1} - v_{n2})$, is a fixed constant value of '$V_S$', and does not change with the current in the source, $i_S$.
 
@@ -40,9 +40,9 @@ These three conventions can be demonstrated by considering a general circuit ele
 p=(#figure2-3). !{width:50%}img/2/circuitsF2.3.jpg(Figure 2.3)!:img/2/circuitsF2.3.jpg
 _Figure 2.3  A General Circuit Element with Circuit Element Conventions_
 
-Here these conventions are applied to the general element by (1) electrical connections with two nodes, node 1 and node 2; (2) the element current, $i_X$, is defined by the arrow direction to be from left-to-right when positive, and (3) the element current, $i_X$, direction arrow is pointed toward the positive terminal for the _element voltage_, $v_X$.  Note mathematically the element voltage, $v_X$, is simply the difference of the voltage at node 1 minus the voltage at node 2, "Eq'n. 2.2":#eq2-2.
+Here these conventions are applied to the general element by (1) electrical connections with two nodes, node 1 and node 2; (2) the element current, $i_X$, is defined by the arrow direction to be from left-to-right when positive, and (3) the element current, $i_X$, direction arrow is pointed toward the positive terminal for the *element voltage*, $v_X$.  Note mathematically the element voltage, $v_X$, is simply the difference of the voltage at node 1 minus the voltage at node 2, "Eq'n. 2.2":#eq2-2.
 
-p=(#eq2-2). $(v_{n1} - v_{n2}) = v_X$       _Eq'n 2.2_
+p=(#eq2-2). $(v_{n1} - v_{n2}) = v_X$  ..... Eq'n 2.2
 
 These conventions for nodes, currents and polarity apply independent of the physical orientation or graphical drawing of an element, see "Figure 2.4":#figure2-4.  Both of these representations for an element are consistent with the above three element conventions.
 
@@ -55,7 +55,7 @@ h4. 2.3 - Power in Circuit Elements
 
 The reason for the polarity convention, where positive current direction is *always* pointed into the defined positive voltage terminal on the element is to have a consistent definition of power.  This is because power is the *product* of *current times voltage*.  So with the polarity convention we can ALWAYS state that the *power dissipated* by an element is just the product $(i_X * v_X)$, or $(v_X * i_X)$, "Eq'n. 2.3":#eq2-3.
 
-p=(#eq2-3). $P_X = v_X * i_X$      _Eq'n 2.3_
+p=(#eq2-3). $P_X = v_X * i_X$ .....  Eq'n 2.3
 
 Power is in units of watts when the voltage is in units of volts, and current is in units of amperes.  Electric power is 'dissipated' has the meaning that a _positive value_ of the product represent power $(v_X * i_X)$ consumed by the element [and converted from electrical energy into some other form of energy; for example heat, or mechanical motion if a motor].  Power is often a very important practical and useful quantity.  It also represents wasted energy if the element yields heat when it is not a desired outcome of the circuit.
 
@@ -77,7 +77,7 @@ _Figure 2.6  The Resistor Circuit Element with Resistance $R$_
 
 The direction of the element current is chosen (as always) to be consistent with our required element conventions, here positive element current, $i_R$, is into the element from the $v_{n1}$ node of the voltage difference of $(v_{n1}-v_{n2})$.  With this polarity convention, the mathematical formulation for the element constraint imposed by a resistor, is given by "Eq'n. 2.4":#eq2-4.
 
-p=(#eq2-4). $(v_{n1}  - v_{n2}) - i_R R = 0$   _Eq'n 2.4_
+p=(#eq2-4). $(v_{n1}  - v_{n2}) - i_R R = 0$  ..... Eq'n 2.4
 
 Here and for all voltages and currents we need to use a consistent set of units.  Current is expressed in the standard unit of _amperes_, while voltage is expressed in the standard unit of _volts_ for all our circuit elements.  In the case of the resistor the constant $R$ is in the units of _ohms_. $R$ is called the resistance value of the resistor.  Eq'n 2.4 is also known as Ohm's Law.
 
@@ -96,7 +96,7 @@ p=. $v_R - i_R  R = 0$
 
 Or as "Eq'n. 2.5":#eq2-5:
 
-p=. $v_R = i_R R$  _Eq'n 2.5_
+p=. $v_R = i_R R$  ..... Eq'n 2.5
 
 This commonly used form for the resistor element voltage-current constraint relation is called _Ohm's Law_.
 
@@ -112,7 +112,7 @@ _Figure 2.8  The Fixed Current Source Circuit Element, $'I_S'$_
 The mathematical form of the constraint, which this fixed current source imposes between voltage and current at it's terminals is given by "Eq'n. 2.6":#eq2-6.  Again we keep the element polarity convention that positive current is defined into the positive polarity of the element voltage, $v_S$.  The direction of the currrent $I_S$ is defined by the arrow in the current source.
 
 
-p=(#eq2-6). $i_S - I_S = 0$     _Eq'n 2.6_
+p=(#eq2-6). $i_S - I_S = 0$  ..... Eq'n 2.6
 
 This "Eq'n. 2.6":#eq2-6 simply states the current from node 1 to node 2 is a constant fixed value of $I_S$ amperes, and *does not change with the amount of voltage across the element source*, $(v_{n1} - v_{n2}) = v_S$.
 
