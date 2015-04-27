@@ -140,7 +140,7 @@ This circuit has more that 1 path, and more than 2 nodes, so the whole 'group' i
 The first thing when trying to reduce a circuit is to identify if ANY localized _sub-portion_ of the circuit satisfies either single-path or single-node-pair constraints.  In "Figure 6.12":#figure6-12 we can see that resistors $R_1$ and $R_3$ are both connected to the same two nodes, and thus are _'in-parallel'_; and hence we can reduce them to a single equivalent resistor, Req-a.  This is depicted in "Figure 6.13":#figure6-13.  BE CAREFUL, _resistors $R_1$ and $R_2$ are NOT in series_ because they are not in a single-path. That is, $R_1$ and $R_2$ *DO NOT have the same current*.  On the other hand, resistors $R_1$ and $R_3$ DO CONNECT TO THE SAME TWO NODES so they are in _parallel_.
 
 p=(#figure6-13). !{width:85%}img/6/circuitsF6.13.jpg(Figure 6.13)!:img/6/circuitsF6.13.jpg
-_Figure13-A ............. Figure 13-B ............. Figure 13-C_
+_Figure13-A .................. Figure 13-B .................. Figure 13-C_
 _Figure 6.13  Sequential Reduction of a Mixed Configuration_
 
 So we can calculate the value of $R_{eq-a}$  (as $R_1$ and $R_3$ in parallel) from eq'n 6.4 as:
