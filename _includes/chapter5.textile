@@ -61,7 +61,7 @@ and by substitution: $v_{n2}(\frac{1}{R_1} + \frac{1}{R_2}) = \frac{V_S}{R_1}$
 
 so finally, "Eq'n. 5.2":#eq5-2: <h3>
 	
-p=(#eq5-2).  $v_{n2} = \frac{R_2}{(R_1 + R_2)} v_{n1}$  </h3>
+p=(#eq5-2).  $v_{n2} = \frac{R_2}{(R_1 + R_2)} v_{n1}$  </h3> ..... Eq'n 5.2
 
 This result reveals that while the voltage at node n1 is the source voltage, $V_S$, the voltage at node n2, $v_{n2}$, is a _constant fraction_ of the fixed source voltage $V_S$.  The fraction value is determined only by the resistor resistance values $R_1$ and $R_2$.
 
@@ -88,11 +88,11 @@ _Figure 5.4  Photosensitive Resistor_
 
 The key difference for this element is that the resistance value, $R_{ph}$, changes with the intensity of light that shines on the element.  Thus the formula for the constraint, "Eq'n. 5.3":#eq5-3 is the same as "Eq'n. 2.4":#eq2-4, except the value of resistor $R_{ph}$ changes with the amount of incident light.
 
-p=(#eq5-3). $(v_{n1} - v_{n2}) - i_R R_{ph} = 0$  Eq'n 5.3
+p=(#eq5-3). $(v_{n1} - v_{n2}) - i_R R_{ph} = 0$ ..... Eq'n 5.3
 
 Usually the photo-resistance value, $R_{ph}$, decreases as the light intensity increases.  For example, if the light intensity is normalized to full sun light, $S = 1$, (suns), then $R_{ph}$ would be of the form:
 
-p=(eq5-4). $R_{ph} = \frac{100}{S}$  - ohms Eq'n 5.4
+p=(eq5-4). $R_{ph} = \frac{100}{S}$  - ohms ..... Eq'n 5.4
 
 For this relation, as the light intensity *decreases*, $S$ gets smaller and $R_{ph}$ *gets larger*.  So for indoor conditions, at $S = 0.01$ then the value of $R_{ph}$ increases to 10,000 ohms.
 
@@ -105,7 +105,7 @@ _Figure 5.5  Photo-Sensitive Circuit, Detects Light Intensity_
 
 To find out the light response, we first recognize this circuit as a single-loop circuit series connection restriction. Thus, we can apply the _voltage divider_ "Eq'n. 5.2":#eq5-2 to this single loop structure, and thereby directly write the output response equation of "Eq'n. 5.5":#eq5-5.  Here the photo-resistor value decreases as the light intensity increases, and hence the voltage at the output, $v_{out}$, also decreases as light intensity increases.  Thus, as calculated below the circuit of Figure 5.5 yields an _output voltage that decreases as the light increases_, an inverse relationship.
 
-p=(#eq5-5). $V_{out} = $  $(\frac{R_{ph}}{(R_m + R_{ph})})  V_S$  Eq'n 5.5
+p=(#eq5-5). $V_{out} = $  $(\frac{R_{ph}}{(R_m + R_{ph})})  V_S$ ..... Eq'n 5.5
 
 By substitution, using "Eq'n. 5.4":#eq5-4 in "Eq'n. 5.5":#eq5-5, and when $SR_m >> 100$, (i.e. at brighter light levels, larger $S$) we get an output voltage, which is inversely related to the light strength $S$, given the fixed voltage source, $V_S$, is a constant.
 
@@ -123,7 +123,7 @@ _Figure 5.6  Alternate Photo-Sensitive Circuit, Detect Light Intensity_
 
 We can apply the voltage divider equation, and now get the output response of "Eq'n. 5.6":#eq5-6.  So in this case the voltage at the output, $v_{out}$, increases as the photo-resistor value decreases, and correspondingly when the light intensity increases.  Thus the circuit of "Figure 5.6":#figure5-6 yields an _output voltage that increases as the light increases_.
 
-p=(#eq5-6). $V_{out} = \frac{R_m}{(R_m + R_{ph})} V_S$  Eq'n 5.6
+p=(#eq5-6). $V_{out} = \frac{R_m}{(R_m + R_{ph})} V_S$ ..... Eq'n 5.6
 
 and, by substitution of "Eq'n. 5.4":#eq5-4 for the photo-sensitive resistor we obtain:
 
@@ -133,7 +133,7 @@ So the output voltage is about proportional to the light level, $S$, provided we
 
 Already with a simple single-loop circuit we can create a light-sensitive voltage and thus make a light detection circuit.  Furthermore, with a minor change of only the circuit position of the resistors we can change the voltage response from either increasing or decreasing as the light intensity increases.  By simple application of our constraint based analysis methods we can get distinct expressions for the actual expected voltage response.
 
-Note that our analysis in this case has taken a simplified solution approach, the last "Eq'ns 5.5":#eq5-5: and "Eq'n. 5.6":#eq5-6 and were found, not by complete constraint analysis, but rather by recognition that the problem circuit was the specialized configuration of the voltage divider.  We therefore could apply the voltage divider result and did not have to calculate a solution from the element constraint equations.  The recognition of the voltage divider configuration is a convenient and often used short-cut to a circuit solution.
+Note that our analysis in this case has taken a simplified solution approach, the last "Eq'ns 5.5":#eq5-5: and "Eq'n. 5.6":#eq5-6 were found, not by complete constraint analysis, but rather by recognition that the problem circuit was the specialized configuration of the voltage divider.  We therefore could apply the voltage divider result and did not have to calculate a solution from the element constraint equations.  The recognition of the voltage divider configuration is a convenient and often used short-cut to a circuit solution.
 
 <a class="anchor" id="chapter5-parallel-connection"></a>
 
@@ -212,18 +212,18 @@ and
 
 p=. $\frac{i_{R2}}{i_S}$ = $\frac{V_S/R_2}{\frac{(R_1+R_2)}{R_1R_2} V_S}$ = $\frac{R_2}{R_1+R_2}$
 
-The source voltage terms in numerator and denominator cancel, and this result reveals that the total current , $i_S$, splits into two currents, $i_{R1}$ and $i_{R2}$, according to the resistor values $R_1$ and R_2$ as follows:
+The source voltage terms in numerator and denominator cancel, and this result reveals that the total current , $i_S$, splits into two currents, $i_{R1}$ and $i_{R2}$, according to the resistor values $R_1$ and $R_2$ as follows:
 
 <h4>
-p=. $i_{R1} = (\frac{R_2}{R_1+R_2}) i_S$ </h4>
+p=. $i_{R1} = (\frac{R_2}{R_1+R_2}) i_S$ </h4> ..... Eq'n 5.7
 and
 
 <h4>
-p=. $i_{R2} = (\frac{R_1}{R_1+R_2}) i_S$ </h4>
+p=. $i_{R2} = (\frac{R_1}{R_1+R_2}) i_S$ </h4> ..... Eq'n 5.8
 
 We see that each resistor current is a fixed fraction of the total current, and thus this circuit is often termed a *_current divider_*.
 
-_TAKE CARE:_ The current in $R_1$ depends on the ratio of ${R_2}/(R_1+R_2)$, while the current in $R_2$ depends upon the ratio ${R_1}/(R_1+R_2)$.
+_TAKE CARE:_ The current in $R_1$ depends on the ratio of ${R_2}/(R_1+R_2)$, Eq'n 5.7, while the current in $R_2$ depends upon the ratio ${R_1}/(R_1+R_2)$, Eq'n 5.8.
 
 The current divider structure is not found as frequently in many circuits as compared to the voltage divider in Section 5.3, none-the-less it is a useful circuit toplogy to know and understand.
 
