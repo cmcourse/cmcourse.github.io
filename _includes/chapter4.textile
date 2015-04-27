@@ -204,7 +204,7 @@ The mesh method, instead of relying on KCL, the current constraint at nodes, use
 p=(#figure4-4). !{width:52%}img/4/circuitsF4.4.jpg(Figure 4.4)!:img/4/circuitsF4.4.jpg
 _Figure 4.4  Loop Meshes in Example Problem_
 
-Note here we consider all _individual element voltages_, $V_{R1}, V_{R2}$, etc., and loop currents $i_A$ and $i_B$ , and *not* the individual element currents nor node voltages.  For the loops, there is a 3rd possible loop, Loop-C, that follows the 'exterior' path around $R_1$, I_{S2}, R_3$, and $V_{S1}$.  However, it is not an independent since Loop-A and Loop-B already involve all those elements, so loop-C has no new information and is therefore redundant and not needed.
+Note here we consider all *individual element voltages*, $V_{R1}, V_{R2}$, etc., and *loop currents* $i_A$ and $i_B$ , and *not* the individual element currents nor node voltages.  For the loops, there is a 3rd possible loop, Loop-C, that follows the 'exterior' path around $R_1$, I_{S2}, R_3$, and $V_{S1}$.  However, it is not an independent since Loop-A and Loop-B already involve all those elements, so loop-C has no new information and is therefore redundant and not needed.
 
 The loop equations (_sum voltage drops_) for these two independent meshes are, for:
 
